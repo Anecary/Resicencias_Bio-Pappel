@@ -28,35 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvPuestos = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPuestos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvPuestos
-            // 
-            this.dgvPuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPuestos.Location = new System.Drawing.Point(134, 75);
-            this.dgvPuestos.Name = "dgvPuestos";
-            this.dgvPuestos.Size = new System.Drawing.Size(240, 150);
-            this.dgvPuestos.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvPuestos);
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPuestos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvPuestos;
     }
 }
 
