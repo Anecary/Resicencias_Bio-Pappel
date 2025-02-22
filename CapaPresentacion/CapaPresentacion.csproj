@@ -57,6 +57,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Empleados\frmNewEmpleados2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\frmNewEmpleados2.Designer.cs">
+      <DependentUpon>frmNewEmpleados2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados\frmNewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\frmNewEmployee.Designer.cs">
+      <DependentUpon>frmNewEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigacion_Accidentes\frmConsultaAccidentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigacion_Accidentes\frmConsultaAccidentes.Designer.cs">
+      <DependentUpon>frmConsultaAccidentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigacion_Accidentes\frmNewAccidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigacion_Accidentes\frmNewAccidente.Designer.cs">
+      <DependentUpon>frmNewAccidente.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +89,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Empleados\frmNewEmpleados2.resx">
+      <DependentUpon>frmNewEmpleados2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\frmNewEmployee.resx">
+      <DependentUpon>frmNewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +130,10 @@
       <Project>{e7e6399e-5f91-4d90-bf01-c356601a656f}</Project>
       <Name>CapaNegocios</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Expediente\" />
+    <Folder Include="Nota_Medica\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
