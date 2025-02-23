@@ -87,6 +87,12 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nota_Medica\frmNotaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nota_Medica\frmNotaMedica.Designer.cs">
+      <DependentUpon>frmNotaMedica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Empleados\frmNewEmpleados2.resx">
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nota_Medica\frmNotaMedica.resx">
+      <DependentUpon>frmNotaMedica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,7 +142,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Expediente\" />
-    <Folder Include="Nota_Medica\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

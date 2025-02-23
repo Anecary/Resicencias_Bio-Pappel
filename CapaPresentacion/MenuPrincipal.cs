@@ -134,5 +134,16 @@ namespace CapaPresentacion
             openChildForm(new Empleados.frmNewEmpleados2());
             hideSubMenu();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Nota_Medica.frmNotaMedica());
+            hideSubMenu();
+        }
+
+        private void btnNotaMedica_Click(object sender, EventArgs e)
+        {
+            showSubMenu(pSubmenuNotaMedica);
+        }
     }
 }
