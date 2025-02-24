@@ -47,27 +47,20 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
         {
-            pDatosPersonales.Visible = true;
+            pNuevaConsultaMedica.Visible = true;
             pConsultaExpMedico.Visible = false;
         }
 
         private void btnConsultaExpMedico_Click(object sender, EventArgs e)
         {
-            pDatosPersonales.Visible = false;
+            pNuevaConsultaMedica.Visible = false;
             pConsultaExpMedico.Visible = true;
-        }
-
-        private void btnConsultaHistoricos_Click(object sender, EventArgs e)
-        {
-            pDatosPersonales.Visible = false;
-            pConsultaExpMedico.Visible = false;
         }
 
         private void frmNotaMedica_Load(object sender, EventArgs e)
         {
-            pDatosPersonales.Visible = true;
+            pNuevaConsultaMedica.Visible = true;
             pConsultaExpMedico.Visible = false;
         }
-
     }
 }

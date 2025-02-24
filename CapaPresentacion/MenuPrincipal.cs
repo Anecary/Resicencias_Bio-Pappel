@@ -135,7 +135,7 @@ namespace CapaPresentacion
             hideSubMenu();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
         {
             openChildForm(new Nota_Medica.frmNotaMedica());
             hideSubMenu();
@@ -144,6 +144,12 @@ namespace CapaPresentacion
         private void btnNotaMedica_Click(object sender, EventArgs e)
         {
             showSubMenu(pSubmenuNotaMedica);
+        }
+
+        private void btnConsultarHistorico_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Nota_Medica.frmConsultaHistorico());
+            hideSubMenu();
         }
     }
 }

@@ -39,6 +39,7 @@
             this.pSubmenuCumplimientoLegal = new System.Windows.Forms.Panel();
             this.btnCumpliminetoLegal = new System.Windows.Forms.Button();
             this.pSubmenuNotaMedica = new System.Windows.Forms.Panel();
+            this.btnNuevaNotaMedica = new System.Windows.Forms.Button();
             this.btnNotaMedica = new System.Windows.Forms.Button();
             this.pSubmenuExpediente = new System.Windows.Forms.Panel();
             this.btnExpediente = new System.Windows.Forms.Button();
@@ -55,7 +56,7 @@
             this.pInicio = new MaterialSkin.Controls.MaterialCard();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnNuevaNotaMedica = new System.Windows.Forms.Button();
+            this.btnConsultarHistorico = new System.Windows.Forms.Button();
             this.pMenu.SuspendLayout();
             this.pSubmenuEmpleados.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
@@ -87,7 +88,7 @@
             this.pMenu.Controls.Add(this.pLogo);
             this.pMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pMenu.Location = new System.Drawing.Point(0, 0);
-            this.pMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pMenu.Name = "pMenu";
             this.pMenu.Size = new System.Drawing.Size(333, 814);
             this.pMenu.TabIndex = 0;
@@ -95,8 +96,8 @@
             // pSubmenuReportes
             // 
             this.pSubmenuReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 1049);
-            this.pSubmenuReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 1082);
+            this.pSubmenuReportes.Margin = new System.Windows.Forms.Padding(4);
             this.pSubmenuReportes.Name = "pSubmenuReportes";
             this.pSubmenuReportes.Size = new System.Drawing.Size(333, 43);
             this.pSubmenuReportes.TabIndex = 15;
@@ -111,8 +112,8 @@
             this.btnReportes.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 987);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReportes.Location = new System.Drawing.Point(0, 1020);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnReportes.Size = new System.Drawing.Size(333, 62);
@@ -128,8 +129,8 @@
             this.pSubmenuEmpleados.Controls.Add(this.btnConsEmpleados);
             this.pSubmenuEmpleados.Controls.Add(this.btnNuevoEmpleado);
             this.pSubmenuEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuEmpleados.Location = new System.Drawing.Point(0, 716);
-            this.pSubmenuEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pSubmenuEmpleados.Location = new System.Drawing.Point(0, 749);
+            this.pSubmenuEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.pSubmenuEmpleados.Name = "pSubmenuEmpleados";
             this.pSubmenuEmpleados.Size = new System.Drawing.Size(333, 271);
             this.pSubmenuEmpleados.TabIndex = 13;
@@ -144,7 +145,7 @@
             this.btnConsEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnConsEmpleados.Image")));
             this.btnConsEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsEmpleados.Location = new System.Drawing.Point(0, 43);
-            this.btnConsEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsEmpleados.Name = "btnConsEmpleados";
             this.btnConsEmpleados.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.btnConsEmpleados.Size = new System.Drawing.Size(333, 43);
@@ -164,7 +165,7 @@
             this.btnNuevoEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevoEmpleado.Image")));
             this.btnNuevoEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevoEmpleado.Location = new System.Drawing.Point(0, 0);
-            this.btnNuevoEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevoEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevoEmpleado.Name = "btnNuevoEmpleado";
             this.btnNuevoEmpleado.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.btnNuevoEmpleado.Size = new System.Drawing.Size(333, 43);
@@ -184,8 +185,8 @@
             this.btnEmpleados.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 654);
-            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 687);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnEmpleados.Size = new System.Drawing.Size(333, 62);
@@ -200,8 +201,8 @@
             // 
             this.pSubmenuCumplimientoLegal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.pSubmenuCumplimientoLegal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuCumplimientoLegal.Location = new System.Drawing.Point(0, 611);
-            this.pSubmenuCumplimientoLegal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pSubmenuCumplimientoLegal.Location = new System.Drawing.Point(0, 644);
+            this.pSubmenuCumplimientoLegal.Margin = new System.Windows.Forms.Padding(4);
             this.pSubmenuCumplimientoLegal.Name = "pSubmenuCumplimientoLegal";
             this.pSubmenuCumplimientoLegal.Size = new System.Drawing.Size(333, 43);
             this.pSubmenuCumplimientoLegal.TabIndex = 11;
@@ -216,8 +217,8 @@
             this.btnCumpliminetoLegal.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCumpliminetoLegal.Image = ((System.Drawing.Image)(resources.GetObject("btnCumpliminetoLegal.Image")));
             this.btnCumpliminetoLegal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCumpliminetoLegal.Location = new System.Drawing.Point(0, 549);
-            this.btnCumpliminetoLegal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCumpliminetoLegal.Location = new System.Drawing.Point(0, 582);
+            this.btnCumpliminetoLegal.Margin = new System.Windows.Forms.Padding(4);
             this.btnCumpliminetoLegal.Name = "btnCumpliminetoLegal";
             this.btnCumpliminetoLegal.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnCumpliminetoLegal.Size = new System.Drawing.Size(333, 62);
@@ -230,14 +231,35 @@
             // pSubmenuNotaMedica
             // 
             this.pSubmenuNotaMedica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.pSubmenuNotaMedica.Controls.Add(this.btnConsultarHistorico);
             this.pSubmenuNotaMedica.Controls.Add(this.btnNuevaNotaMedica);
             this.pSubmenuNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSubmenuNotaMedica.Location = new System.Drawing.Point(0, 497);
-            this.pSubmenuNotaMedica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pSubmenuNotaMedica.Margin = new System.Windows.Forms.Padding(4);
             this.pSubmenuNotaMedica.Name = "pSubmenuNotaMedica";
-            this.pSubmenuNotaMedica.Size = new System.Drawing.Size(333, 52);
+            this.pSubmenuNotaMedica.Size = new System.Drawing.Size(333, 85);
             this.pSubmenuNotaMedica.TabIndex = 9;
             this.pSubmenuNotaMedica.Visible = false;
+            // 
+            // btnNuevaNotaMedica
+            // 
+            this.btnNuevaNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNuevaNotaMedica.FlatAppearance.BorderSize = 0;
+            this.btnNuevaNotaMedica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevaNotaMedica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevaNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevaNotaMedica.Image")));
+            this.btnNuevaNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevaNotaMedica.Location = new System.Drawing.Point(0, 0);
+            this.btnNuevaNotaMedica.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNuevaNotaMedica.Name = "btnNuevaNotaMedica";
+            this.btnNuevaNotaMedica.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnNuevaNotaMedica.Size = new System.Drawing.Size(333, 43);
+            this.btnNuevaNotaMedica.TabIndex = 1;
+            this.btnNuevaNotaMedica.Text = " Nueva Nota Médica";
+            this.btnNuevaNotaMedica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevaNotaMedica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNuevaNotaMedica.UseVisualStyleBackColor = true;
+            this.btnNuevaNotaMedica.Click += new System.EventHandler(this.btnNuevaNotaMedica_Click);
             // 
             // btnNotaMedica
             // 
@@ -249,7 +271,7 @@
             this.btnNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNotaMedica.Image")));
             this.btnNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNotaMedica.Location = new System.Drawing.Point(0, 435);
-            this.btnNotaMedica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNotaMedica.Margin = new System.Windows.Forms.Padding(4);
             this.btnNotaMedica.Name = "btnNotaMedica";
             this.btnNotaMedica.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnNotaMedica.Size = new System.Drawing.Size(333, 62);
@@ -265,7 +287,7 @@
             this.pSubmenuExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.pSubmenuExpediente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSubmenuExpediente.Location = new System.Drawing.Point(0, 399);
-            this.pSubmenuExpediente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pSubmenuExpediente.Margin = new System.Windows.Forms.Padding(4);
             this.pSubmenuExpediente.Name = "pSubmenuExpediente";
             this.pSubmenuExpediente.Size = new System.Drawing.Size(333, 36);
             this.pSubmenuExpediente.TabIndex = 7;
@@ -281,7 +303,7 @@
             this.btnExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnExpediente.Image")));
             this.btnExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExpediente.Location = new System.Drawing.Point(0, 337);
-            this.btnExpediente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExpediente.Margin = new System.Windows.Forms.Padding(4);
             this.btnExpediente.Name = "btnExpediente";
             this.btnExpediente.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnExpediente.Size = new System.Drawing.Size(333, 62);
@@ -299,7 +321,7 @@
             this.pSubmenuAccidentes.Controls.Add(this.btnNewAccidente);
             this.pSubmenuAccidentes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSubmenuAccidentes.Location = new System.Drawing.Point(0, 247);
-            this.pSubmenuAccidentes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pSubmenuAccidentes.Margin = new System.Windows.Forms.Padding(4);
             this.pSubmenuAccidentes.Name = "pSubmenuAccidentes";
             this.pSubmenuAccidentes.Size = new System.Drawing.Size(333, 90);
             this.pSubmenuAccidentes.TabIndex = 5;
@@ -314,7 +336,7 @@
             this.btnConsultarAccidentes.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultarAccidentes.Image")));
             this.btnConsultarAccidentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultarAccidentes.Location = new System.Drawing.Point(0, 43);
-            this.btnConsultarAccidentes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConsultarAccidentes.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultarAccidentes.Name = "btnConsultarAccidentes";
             this.btnConsultarAccidentes.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.btnConsultarAccidentes.Size = new System.Drawing.Size(333, 43);
@@ -334,7 +356,7 @@
             this.btnNewAccidente.Image = ((System.Drawing.Image)(resources.GetObject("btnNewAccidente.Image")));
             this.btnNewAccidente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNewAccidente.Location = new System.Drawing.Point(0, 0);
-            this.btnNewAccidente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewAccidente.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewAccidente.Name = "btnNewAccidente";
             this.btnNewAccidente.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.btnNewAccidente.Size = new System.Drawing.Size(333, 43);
@@ -355,7 +377,7 @@
             this.btnInvAccidente.Image = ((System.Drawing.Image)(resources.GetObject("btnInvAccidente.Image")));
             this.btnInvAccidente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInvAccidente.Location = new System.Drawing.Point(0, 185);
-            this.btnInvAccidente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInvAccidente.Margin = new System.Windows.Forms.Padding(4);
             this.btnInvAccidente.Name = "btnInvAccidente";
             this.btnInvAccidente.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnInvAccidente.Size = new System.Drawing.Size(333, 62);
@@ -376,7 +398,7 @@
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(0, 123);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnHome.Size = new System.Drawing.Size(333, 62);
@@ -393,7 +415,7 @@
             this.pLogo.Controls.Add(this.pictureBox1);
             this.pLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pLogo.Location = new System.Drawing.Point(0, 0);
-            this.pLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pLogo.Name = "pLogo";
             this.pLogo.Size = new System.Drawing.Size(333, 123);
             this.pLogo.TabIndex = 0;
@@ -403,7 +425,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(333, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -416,7 +438,7 @@
             this.psuperior.Controls.Add(this.btnCerrar);
             this.psuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.psuperior.Location = new System.Drawing.Point(333, 0);
-            this.psuperior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.psuperior.Margin = new System.Windows.Forms.Padding(4);
             this.psuperior.Name = "psuperior";
             this.psuperior.Size = new System.Drawing.Size(1246, 36);
             this.psuperior.TabIndex = 1;
@@ -432,7 +454,7 @@
             this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCerrar.IconSize = 30;
             this.btnCerrar.Location = new System.Drawing.Point(1191, 0);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(55, 36);
             this.btnCerrar.TabIndex = 0;
@@ -444,7 +466,7 @@
             this.pContenedor.Controls.Add(this.pInicio);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(333, 36);
-            this.pContenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pContenedor.Margin = new System.Windows.Forms.Padding(4);
             this.pContenedor.Name = "pContenedor";
             this.pContenedor.Size = new System.Drawing.Size(1246, 778);
             this.pContenedor.TabIndex = 2;
@@ -479,32 +501,32 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(357, 219);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(539, 276);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // btnNuevaNotaMedica
+            // btnConsultarHistorico
             // 
-            this.btnNuevaNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNuevaNotaMedica.FlatAppearance.BorderSize = 0;
-            this.btnNuevaNotaMedica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevaNotaMedica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevaNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevaNotaMedica.Image")));
-            this.btnNuevaNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevaNotaMedica.Location = new System.Drawing.Point(0, 0);
-            this.btnNuevaNotaMedica.Margin = new System.Windows.Forms.Padding(4);
-            this.btnNuevaNotaMedica.Name = "btnNuevaNotaMedica";
-            this.btnNuevaNotaMedica.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnNuevaNotaMedica.Size = new System.Drawing.Size(333, 43);
-            this.btnNuevaNotaMedica.TabIndex = 1;
-            this.btnNuevaNotaMedica.Text = " Nueva Nota Médica";
-            this.btnNuevaNotaMedica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevaNotaMedica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNuevaNotaMedica.UseVisualStyleBackColor = true;
-            this.btnNuevaNotaMedica.Click += new System.EventHandler(this.button1_Click);
+            this.btnConsultarHistorico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultarHistorico.FlatAppearance.BorderSize = 0;
+            this.btnConsultarHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultarHistorico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarHistorico.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultarHistorico.Image")));
+            this.btnConsultarHistorico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarHistorico.Location = new System.Drawing.Point(0, 43);
+            this.btnConsultarHistorico.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultarHistorico.Name = "btnConsultarHistorico";
+            this.btnConsultarHistorico.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnConsultarHistorico.Size = new System.Drawing.Size(333, 43);
+            this.btnConsultarHistorico.TabIndex = 2;
+            this.btnConsultarHistorico.Text = "Consultar Históricos";
+            this.btnConsultarHistorico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarHistorico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsultarHistorico.UseVisualStyleBackColor = true;
+            this.btnConsultarHistorico.Click += new System.EventHandler(this.btnConsultarHistorico_Click);
             // 
             // frmMenu
             // 
@@ -515,7 +537,7 @@
             this.Controls.Add(this.psuperior);
             this.Controls.Add(this.pMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -563,6 +585,7 @@
         private System.Windows.Forms.Button btnConsEmpleados;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNuevaNotaMedica;
+        private System.Windows.Forms.Button btnConsultarHistorico;
     }
 }
 
