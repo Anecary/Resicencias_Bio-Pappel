@@ -69,6 +69,18 @@
     <Compile Include="Empleados\frmNewEmployee.Designer.cs">
       <DependentUpon>frmNewEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empleados\frmPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\frmPuestos.Designer.cs">
+      <DependentUpon>frmPuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados\frmSecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\frmSecciones.Designer.cs">
+      <DependentUpon>frmSecciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Investigacion_Accidentes\frmConsultaAccidentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados\frmNewEmployee.resx">
       <DependentUpon>frmNewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\frmPuestos.resx">
+      <DependentUpon>frmPuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\frmSecciones.resx">
+      <DependentUpon>frmSecciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

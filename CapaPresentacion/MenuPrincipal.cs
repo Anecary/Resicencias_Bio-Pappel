@@ -151,5 +151,17 @@ namespace CapaPresentacion
             openChildForm(new Nota_Medica.frmConsultaHistorico());
             hideSubMenu();
         }
+
+        private void btnPuestos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Empleados.frmPuestos());
+            hideSubMenu();
+        }
+
+        private void btnSecciones_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Empleados.frmSecciones());
+            hideSubMenu();
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace CapaPresentacion
+﻿using System.Drawing;
+
+namespace CapaPresentacion
 {
     partial class frmMenu
     {
@@ -33,12 +35,15 @@
             this.pSubmenuReportes = new System.Windows.Forms.Panel();
             this.btnReportes = new System.Windows.Forms.Button();
             this.pSubmenuEmpleados = new System.Windows.Forms.Panel();
+            this.btnSecciones = new System.Windows.Forms.Button();
+            this.btnPuestos = new System.Windows.Forms.Button();
             this.btnConsEmpleados = new System.Windows.Forms.Button();
             this.btnNuevoEmpleado = new System.Windows.Forms.Button();
             this.btnEmpleados = new System.Windows.Forms.Button();
             this.pSubmenuCumplimientoLegal = new System.Windows.Forms.Panel();
             this.btnCumpliminetoLegal = new System.Windows.Forms.Button();
             this.pSubmenuNotaMedica = new System.Windows.Forms.Panel();
+            this.btnConsultarHistorico = new System.Windows.Forms.Button();
             this.btnNuevaNotaMedica = new System.Windows.Forms.Button();
             this.btnNotaMedica = new System.Windows.Forms.Button();
             this.pSubmenuExpediente = new System.Windows.Forms.Panel();
@@ -56,7 +61,6 @@
             this.pInicio = new MaterialSkin.Controls.MaterialCard();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnConsultarHistorico = new System.Windows.Forms.Button();
             this.pMenu.SuspendLayout();
             this.pSubmenuEmpleados.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
@@ -96,7 +100,7 @@
             // pSubmenuReportes
             // 
             this.pSubmenuReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 1082);
+            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 985);
             this.pSubmenuReportes.Margin = new System.Windows.Forms.Padding(4);
             this.pSubmenuReportes.Name = "pSubmenuReportes";
             this.pSubmenuReportes.Size = new System.Drawing.Size(333, 43);
@@ -112,7 +116,7 @@
             this.btnReportes.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 1020);
+            this.btnReportes.Location = new System.Drawing.Point(0, 923);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
@@ -126,15 +130,57 @@
             // pSubmenuEmpleados
             // 
             this.pSubmenuEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.pSubmenuEmpleados.Controls.Add(this.btnSecciones);
+            this.pSubmenuEmpleados.Controls.Add(this.btnPuestos);
             this.pSubmenuEmpleados.Controls.Add(this.btnConsEmpleados);
             this.pSubmenuEmpleados.Controls.Add(this.btnNuevoEmpleado);
             this.pSubmenuEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSubmenuEmpleados.Location = new System.Drawing.Point(0, 749);
             this.pSubmenuEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.pSubmenuEmpleados.Name = "pSubmenuEmpleados";
-            this.pSubmenuEmpleados.Size = new System.Drawing.Size(333, 271);
+            this.pSubmenuEmpleados.Size = new System.Drawing.Size(333, 174);
             this.pSubmenuEmpleados.TabIndex = 13;
             this.pSubmenuEmpleados.Visible = false;
+            // 
+            // btnSecciones
+            // 
+            this.btnSecciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSecciones.FlatAppearance.BorderSize = 0;
+            this.btnSecciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSecciones.Image = ((System.Drawing.Image)(resources.GetObject("btnSecciones.Image")));
+            this.btnSecciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecciones.Location = new System.Drawing.Point(0, 129);
+            this.btnSecciones.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSecciones.Name = "btnSecciones";
+            this.btnSecciones.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnSecciones.Size = new System.Drawing.Size(333, 43);
+            this.btnSecciones.TabIndex = 4;
+            this.btnSecciones.Text = "Secciones";
+            this.btnSecciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSecciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSecciones.UseVisualStyleBackColor = true;
+            this.btnSecciones.Click += new System.EventHandler(this.btnSecciones_Click);
+            // 
+            // btnPuestos
+            // 
+            this.btnPuestos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPuestos.FlatAppearance.BorderSize = 0;
+            this.btnPuestos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPuestos.Image = ((System.Drawing.Image)(resources.GetObject("btnPuestos.Image")));
+            this.btnPuestos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPuestos.Location = new System.Drawing.Point(0, 86);
+            this.btnPuestos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPuestos.Name = "btnPuestos";
+            this.btnPuestos.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnPuestos.Size = new System.Drawing.Size(333, 43);
+            this.btnPuestos.TabIndex = 3;
+            this.btnPuestos.Text = "Puestos";
+            this.btnPuestos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPuestos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPuestos.UseVisualStyleBackColor = true;
+            this.btnPuestos.Click += new System.EventHandler(this.btnPuestos_Click);
             // 
             // btnConsEmpleados
             // 
@@ -240,6 +286,26 @@
             this.pSubmenuNotaMedica.Size = new System.Drawing.Size(333, 85);
             this.pSubmenuNotaMedica.TabIndex = 9;
             this.pSubmenuNotaMedica.Visible = false;
+            // 
+            // btnConsultarHistorico
+            // 
+            this.btnConsultarHistorico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultarHistorico.FlatAppearance.BorderSize = 0;
+            this.btnConsultarHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultarHistorico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarHistorico.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultarHistorico.Image")));
+            this.btnConsultarHistorico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarHistorico.Location = new System.Drawing.Point(0, 43);
+            this.btnConsultarHistorico.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultarHistorico.Name = "btnConsultarHistorico";
+            this.btnConsultarHistorico.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnConsultarHistorico.Size = new System.Drawing.Size(333, 43);
+            this.btnConsultarHistorico.TabIndex = 2;
+            this.btnConsultarHistorico.Text = "Consultar Históricos";
+            this.btnConsultarHistorico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarHistorico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsultarHistorico.UseVisualStyleBackColor = true;
+            this.btnConsultarHistorico.Click += new System.EventHandler(this.btnConsultarHistorico_Click);
             // 
             // btnNuevaNotaMedica
             // 
@@ -508,26 +574,6 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // btnConsultarHistorico
-            // 
-            this.btnConsultarHistorico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultarHistorico.FlatAppearance.BorderSize = 0;
-            this.btnConsultarHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultarHistorico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarHistorico.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultarHistorico.Image")));
-            this.btnConsultarHistorico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultarHistorico.Location = new System.Drawing.Point(0, 43);
-            this.btnConsultarHistorico.Margin = new System.Windows.Forms.Padding(4);
-            this.btnConsultarHistorico.Name = "btnConsultarHistorico";
-            this.btnConsultarHistorico.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnConsultarHistorico.Size = new System.Drawing.Size(333, 43);
-            this.btnConsultarHistorico.TabIndex = 2;
-            this.btnConsultarHistorico.Text = "Consultar Históricos";
-            this.btnConsultarHistorico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultarHistorico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnConsultarHistorico.UseVisualStyleBackColor = true;
-            this.btnConsultarHistorico.Click += new System.EventHandler(this.btnConsultarHistorico_Click);
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -586,6 +632,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNuevaNotaMedica;
         private System.Windows.Forms.Button btnConsultarHistorico;
+        private System.Windows.Forms.Button btnSecciones;
+        private System.Windows.Forms.Button btnPuestos;
     }
 }
 
