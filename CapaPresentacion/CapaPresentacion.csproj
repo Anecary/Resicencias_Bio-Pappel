@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
@@ -57,17 +60,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Empleados\frmAltaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\frmAltaEmpleado.Designer.cs">
+      <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados\frmConsultarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\frmConsultarEmpleados.Designer.cs">
+      <DependentUpon>frmConsultarEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleados\frmNewEmpleados2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Empleados\frmNewEmpleados2.Designer.cs">
       <DependentUpon>frmNewEmpleados2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Empleados\frmNewEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Empleados\frmNewEmployee.Designer.cs">
-      <DependentUpon>frmNewEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Empleados\frmPuestos.cs">
       <SubType>Form</SubType>
@@ -113,17 +122,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Empleados\frmAltaEmpleado.resx">
+      <DependentUpon>frmAltaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\frmConsultarEmpleados.resx">
+      <DependentUpon>frmConsultarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empleados\frmNewEmpleados2.resx">
       <DependentUpon>frmNewEmpleados2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Empleados\frmNewEmployee.resx">
-      <DependentUpon>frmNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados\frmPuestos.resx">
       <DependentUpon>frmPuestos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados\frmSecciones.resx">
       <DependentUpon>frmSecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigacion_Accidentes\frmNewAccidente.resx">
+      <DependentUpon>frmNewAccidente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

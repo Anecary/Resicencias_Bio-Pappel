@@ -28,8 +28,7 @@ namespace CapaPresentacion.Empleados
 
         private void frmNewEmpleados2_Load(object sender, EventArgs e)
         {
-            pDatosPersonales.Visible = true;
-            pDatosLaborales.Visible = false;
+            
         }
 
         private void btnMouseEnter(Object sender, EventArgs e)
@@ -45,18 +44,6 @@ namespace CapaPresentacion.Empleados
         private void btnMouseLeave(Object sender, EventArgs e)
         {
             pSeccionesDatos.Controls.Remove(p);
-        }
-
-        private void btnInfoPersonal_Click(object sender, EventArgs e)
-        {
-            pDatosPersonales.Visible = true;
-            pDatosLaborales.Visible = false;
-        }
-
-        private void btnInfoLaboral_Click(object sender, EventArgs e)
-        {
-            pDatosLaborales.Visible = true;
-            pDatosPersonales.Visible = false;
         }
     }
 }
