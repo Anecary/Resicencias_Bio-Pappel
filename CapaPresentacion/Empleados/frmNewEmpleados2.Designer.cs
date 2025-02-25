@@ -33,12 +33,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedor = new System.Windows.Forms.Panel();
-            this.pSeccionesDatos = new System.Windows.Forms.Panel();
-            this.btnInfoLaboral = new System.Windows.Forms.Button();
-            this.btnInfoPersonal = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pDatosPersonales = new System.Windows.Forms.Panel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
@@ -58,21 +52,27 @@
             this.materialTextBox17 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialTextBox18 = new MaterialSkin.Controls.MaterialTextBox();
             this.pDatosLaborales = new System.Windows.Forms.Panel();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.btnGrabar = new MaterialSkin.Controls.MaterialButton();
+            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialComboBox2 = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
-            this.btnGrabar = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.pSeccionesDatos = new System.Windows.Forms.Panel();
+            this.btnInfoLaboral = new System.Windows.Forms.Button();
+            this.btnInfoPersonal = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.pContenedor.SuspendLayout();
-            this.pSeccionesDatos.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.pDatosPersonales.SuspendLayout();
             this.pDatosLaborales.SuspendLayout();
+            this.pSeccionesDatos.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -108,93 +108,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(934, 632);
+            this.panel1.Size = new System.Drawing.Size(1050, 759);
             this.panel1.TabIndex = 4;
             // 
             // pContenedor
             // 
-            this.pContenedor.Controls.Add(this.pDatosLaborales);
             this.pContenedor.Controls.Add(this.pDatosPersonales);
+            this.pContenedor.Controls.Add(this.pDatosLaborales);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(0, 145);
             this.pContenedor.Name = "pContenedor";
-            this.pContenedor.Size = new System.Drawing.Size(929, 482);
+            this.pContenedor.Size = new System.Drawing.Size(1045, 609);
             this.pContenedor.TabIndex = 8;
-            // 
-            // pSeccionesDatos
-            // 
-            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.pSeccionesDatos.Controls.Add(this.btnInfoLaboral);
-            this.pSeccionesDatos.Controls.Add(this.btnInfoPersonal);
-            this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 100);
-            this.pSeccionesDatos.Name = "pSeccionesDatos";
-            this.pSeccionesDatos.Size = new System.Drawing.Size(929, 45);
-            this.pSeccionesDatos.TabIndex = 5;
-            // 
-            // btnInfoLaboral
-            // 
-            this.btnInfoLaboral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInfoLaboral.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInfoLaboral.FlatAppearance.BorderSize = 0;
-            this.btnInfoLaboral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfoLaboral.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoLaboral.ForeColor = System.Drawing.Color.White;
-            this.btnInfoLaboral.Location = new System.Drawing.Point(473, 0);
-            this.btnInfoLaboral.Name = "btnInfoLaboral";
-            this.btnInfoLaboral.Size = new System.Drawing.Size(160, 40);
-            this.btnInfoLaboral.TabIndex = 3;
-            this.btnInfoLaboral.Text = "Datos Laborales";
-            this.btnInfoLaboral.UseVisualStyleBackColor = true;
-            this.btnInfoLaboral.Click += new System.EventHandler(this.btnInfoLaboral_Click);
-            this.btnInfoLaboral.MouseEnter += new System.EventHandler(this.btnMouseEnter);
-            this.btnInfoLaboral.MouseLeave += new System.EventHandler(this.btnMouseLeave);
-            // 
-            // btnInfoPersonal
-            // 
-            this.btnInfoPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInfoPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInfoPersonal.FlatAppearance.BorderSize = 0;
-            this.btnInfoPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfoPersonal.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnInfoPersonal.Location = new System.Drawing.Point(310, 0);
-            this.btnInfoPersonal.Name = "btnInfoPersonal";
-            this.btnInfoPersonal.Size = new System.Drawing.Size(160, 40);
-            this.btnInfoPersonal.TabIndex = 2;
-            this.btnInfoPersonal.Text = "Datos Personales";
-            this.btnInfoPersonal.UseVisualStyleBackColor = true;
-            this.btnInfoPersonal.Click += new System.EventHandler(this.btnInfoPersonal_Click);
-            this.btnInfoPersonal.MouseEnter += new System.EventHandler(this.btnMouseEnter);
-            this.btnInfoPersonal.MouseLeave += new System.EventHandler(this.btnMouseLeave);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(929, 100);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 627);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(929, 5);
-            this.panel5.TabIndex = 7;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(929, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 632);
-            this.panel3.TabIndex = 6;
             // 
             // pDatosPersonales
             // 
@@ -215,7 +140,7 @@
             this.pDatosPersonales.Controls.Add(this.materialTextBox16);
             this.pDatosPersonales.Controls.Add(this.materialTextBox17);
             this.pDatosPersonales.Controls.Add(this.materialTextBox18);
-            this.pDatosPersonales.Location = new System.Drawing.Point(0, 0);
+            this.pDatosPersonales.Location = new System.Drawing.Point(195, 28);
             this.pDatosPersonales.Name = "pDatosPersonales";
             this.pDatosPersonales.Size = new System.Drawing.Size(929, 482);
             this.pDatosPersonales.TabIndex = 34;
@@ -254,15 +179,15 @@
             this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox8.Depth = 0;
             this.materialTextBox8.Enabled = false;
-            this.materialTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox8.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox8.Hint = "NSS: ";
             this.materialTextBox8.LeadingIcon = null;
-            this.materialTextBox8.Location = new System.Drawing.Point(476, 191);
+            this.materialTextBox8.Location = new System.Drawing.Point(463, 191);
             this.materialTextBox8.MaxLength = 18;
             this.materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox8.Multiline = false;
             this.materialTextBox8.Name = "materialTextBox8";
-            this.materialTextBox8.Size = new System.Drawing.Size(380, 50);
+            this.materialTextBox8.Size = new System.Drawing.Size(393, 50);
             this.materialTextBox8.TabIndex = 73;
             this.materialTextBox8.Text = "";
             this.materialTextBox8.TrailingIcon = null;
@@ -289,7 +214,7 @@
             this.materialTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox9.Depth = 0;
             this.materialTextBox9.Enabled = false;
-            this.materialTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox9.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox9.Hint = "Número: ";
             this.materialTextBox9.LeadingIcon = null;
             this.materialTextBox9.Location = new System.Drawing.Point(44, 392);
@@ -308,15 +233,15 @@
             this.materialTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox10.Depth = 0;
             this.materialTextBox10.Enabled = false;
-            this.materialTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox10.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox10.Hint = "Calle: ";
             this.materialTextBox10.LeadingIcon = null;
-            this.materialTextBox10.Location = new System.Drawing.Point(476, 325);
+            this.materialTextBox10.Location = new System.Drawing.Point(463, 325);
             this.materialTextBox10.MaxLength = 18;
             this.materialTextBox10.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox10.Multiline = false;
             this.materialTextBox10.Name = "materialTextBox10";
-            this.materialTextBox10.Size = new System.Drawing.Size(380, 50);
+            this.materialTextBox10.Size = new System.Drawing.Size(393, 50);
             this.materialTextBox10.TabIndex = 70;
             this.materialTextBox10.Text = "";
             this.materialTextBox10.TrailingIcon = null;
@@ -327,7 +252,7 @@
             this.materialTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox11.Depth = 0;
             this.materialTextBox11.Enabled = false;
-            this.materialTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox11.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox11.Hint = "Colonia:";
             this.materialTextBox11.LeadingIcon = null;
             this.materialTextBox11.Location = new System.Drawing.Point(44, 325);
@@ -346,15 +271,15 @@
             this.materialTextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox12.Depth = 0;
             this.materialTextBox12.Enabled = false;
-            this.materialTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox12.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox12.Hint = "Municipio/Alcaldia: ";
             this.materialTextBox12.LeadingIcon = null;
-            this.materialTextBox12.Location = new System.Drawing.Point(476, 258);
+            this.materialTextBox12.Location = new System.Drawing.Point(463, 258);
             this.materialTextBox12.MaxLength = 18;
             this.materialTextBox12.MouseState = MaterialSkin.MouseState.OUT;
             this.materialTextBox12.Multiline = false;
             this.materialTextBox12.Name = "materialTextBox12";
-            this.materialTextBox12.Size = new System.Drawing.Size(380, 50);
+            this.materialTextBox12.Size = new System.Drawing.Size(393, 50);
             this.materialTextBox12.TabIndex = 68;
             this.materialTextBox12.Text = "";
             this.materialTextBox12.TrailingIcon = null;
@@ -365,7 +290,7 @@
             this.materialTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox13.Depth = 0;
             this.materialTextBox13.Enabled = false;
-            this.materialTextBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox13.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox13.Hint = "Estado:";
             this.materialTextBox13.LeadingIcon = null;
             this.materialTextBox13.Location = new System.Drawing.Point(246, 258);
@@ -384,7 +309,7 @@
             this.materialTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox14.Depth = 0;
             this.materialTextBox14.Enabled = false;
-            this.materialTextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox14.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox14.Hint = "Código Postal:";
             this.materialTextBox14.LeadingIcon = null;
             this.materialTextBox14.Location = new System.Drawing.Point(44, 258);
@@ -455,7 +380,7 @@
             this.materialTextBox15.AnimateReadOnly = false;
             this.materialTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox15.Depth = 0;
-            this.materialTextBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox15.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox15.Hint = "Nombre(s)";
             this.materialTextBox15.LeadingIcon = null;
             this.materialTextBox15.Location = new System.Drawing.Point(44, 58);
@@ -474,7 +399,7 @@
             this.materialTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox16.Depth = 0;
             this.materialTextBox16.Enabled = false;
-            this.materialTextBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox16.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox16.Hint = "Teléfono:";
             this.materialTextBox16.LeadingIcon = null;
             this.materialTextBox16.Location = new System.Drawing.Point(44, 125);
@@ -493,7 +418,7 @@
             this.materialTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox17.Depth = 0;
             this.materialTextBox17.Enabled = false;
-            this.materialTextBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox17.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox17.Hint = "Apellido Paterno:";
             this.materialTextBox17.LeadingIcon = null;
             this.materialTextBox17.Location = new System.Drawing.Point(463, 58);
@@ -512,7 +437,7 @@
             this.materialTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox18.Depth = 0;
             this.materialTextBox18.Enabled = false;
-            this.materialTextBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox18.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox18.Hint = "Apellido Materno:";
             this.materialTextBox18.LeadingIcon = null;
             this.materialTextBox18.Location = new System.Drawing.Point(674, 58);
@@ -535,10 +460,85 @@
             this.pDatosLaborales.Controls.Add(this.dateTimePicker1);
             this.pDatosLaborales.Controls.Add(this.materialTextBox1);
             this.pDatosLaborales.Controls.Add(this.materialComboBox2);
-            this.pDatosLaborales.Location = new System.Drawing.Point(0, 0);
+            this.pDatosLaborales.Location = new System.Drawing.Point(21, 70);
             this.pDatosLaborales.Name = "pDatosLaborales";
             this.pDatosLaborales.Size = new System.Drawing.Size(929, 482);
             this.pDatosLaborales.TabIndex = 35;
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSize = false;
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
+            this.materialButton1.Location = new System.Drawing.Point(453, 422);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(122, 50);
+            this.materialButton1.TabIndex = 58;
+            this.materialButton1.Text = "Cancelar";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = true;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.AutoSize = false;
+            this.btnGrabar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGrabar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGrabar.Depth = 0;
+            this.btnGrabar.HighEmphasis = true;
+            this.btnGrabar.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Icon")));
+            this.btnGrabar.Location = new System.Drawing.Point(300, 422);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGrabar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnGrabar.Size = new System.Drawing.Size(124, 50);
+            this.btnGrabar.TabIndex = 57;
+            this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGrabar.UseAccentColor = true;
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            // 
+            // materialTextBox2
+            // 
+            this.materialTextBox2.AnimateReadOnly = false;
+            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox2.Depth = 0;
+            this.materialTextBox2.Enabled = false;
+            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox2.Hint = "Turno: ";
+            this.materialTextBox2.LeadingIcon = null;
+            this.materialTextBox2.Location = new System.Drawing.Point(453, 140);
+            this.materialTextBox2.MaxLength = 18;
+            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox2.Multiline = false;
+            this.materialTextBox2.Name = "materialTextBox2";
+            this.materialTextBox2.Size = new System.Drawing.Size(333, 50);
+            this.materialTextBox2.TabIndex = 56;
+            this.materialTextBox2.Text = "";
+            this.materialTextBox2.TrailingIcon = null;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel1.ForeColor = System.Drawing.Color.Green;
+            this.materialLabel1.HighEmphasis = true;
+            this.materialLabel1.Location = new System.Drawing.Point(12, 16);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(181, 29);
+            this.materialLabel1.TabIndex = 55;
+            this.materialLabel1.Text = "Datos Laborales:";
+            this.materialLabel1.UseAccent = true;
             // 
             // materialLabel6
             // 
@@ -566,7 +566,7 @@
             this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox1.Depth = 0;
             this.materialTextBox1.Enabled = false;
-            this.materialTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox1.Hint = "Numero de Nomina: ";
             this.materialTextBox1.LeadingIcon = null;
             this.materialTextBox1.Location = new System.Drawing.Point(44, 73);
@@ -602,86 +602,86 @@
             this.materialComboBox2.StartIndex = 0;
             this.materialComboBox2.TabIndex = 51;
             // 
-            // materialLabel1
+            // pSeccionesDatos
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel1.ForeColor = System.Drawing.Color.Green;
-            this.materialLabel1.HighEmphasis = true;
-            this.materialLabel1.Location = new System.Drawing.Point(12, 16);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(181, 29);
-            this.materialLabel1.TabIndex = 55;
-            this.materialLabel1.Text = "Datos Laborales:";
-            this.materialLabel1.UseAccent = true;
+            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.pSeccionesDatos.Controls.Add(this.btnInfoLaboral);
+            this.pSeccionesDatos.Controls.Add(this.btnInfoPersonal);
+            this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 100);
+            this.pSeccionesDatos.Name = "pSeccionesDatos";
+            this.pSeccionesDatos.Size = new System.Drawing.Size(1045, 45);
+            this.pSeccionesDatos.TabIndex = 5;
             // 
-            // materialTextBox2
+            // btnInfoLaboral
             // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Enabled = false;
-            this.materialTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.Hint = "Turno: ";
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(453, 140);
-            this.materialTextBox2.MaxLength = 18;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(333, 50);
-            this.materialTextBox2.TabIndex = 56;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
+            this.btnInfoLaboral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInfoLaboral.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInfoLaboral.FlatAppearance.BorderSize = 0;
+            this.btnInfoLaboral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfoLaboral.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfoLaboral.ForeColor = System.Drawing.Color.White;
+            this.btnInfoLaboral.Location = new System.Drawing.Point(652, 5);
+            this.btnInfoLaboral.Name = "btnInfoLaboral";
+            this.btnInfoLaboral.Size = new System.Drawing.Size(276, 40);
+            this.btnInfoLaboral.TabIndex = 3;
+            this.btnInfoLaboral.Text = "Datos Laborales";
+            this.btnInfoLaboral.UseVisualStyleBackColor = true;
+            this.btnInfoLaboral.Click += new System.EventHandler(this.btnInfoLaboral_Click);
+            this.btnInfoLaboral.MouseEnter += new System.EventHandler(this.btnMouseEnter);
+            this.btnInfoLaboral.MouseLeave += new System.EventHandler(this.btnMouseLeave);
             // 
-            // btnGrabar
+            // btnInfoPersonal
             // 
-            this.btnGrabar.AutoSize = false;
-            this.btnGrabar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGrabar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGrabar.Depth = 0;
-            this.btnGrabar.HighEmphasis = true;
-            this.btnGrabar.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Icon")));
-            this.btnGrabar.Location = new System.Drawing.Point(300, 422);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGrabar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGrabar.Size = new System.Drawing.Size(124, 50);
-            this.btnGrabar.TabIndex = 57;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGrabar.UseAccentColor = true;
-            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnInfoPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInfoPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInfoPersonal.FlatAppearance.BorderSize = 0;
+            this.btnInfoPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfoPersonal.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfoPersonal.ForeColor = System.Drawing.Color.White;
+            this.btnInfoPersonal.Location = new System.Drawing.Point(311, 5);
+            this.btnInfoPersonal.Name = "btnInfoPersonal";
+            this.btnInfoPersonal.Size = new System.Drawing.Size(276, 40);
+            this.btnInfoPersonal.TabIndex = 2;
+            this.btnInfoPersonal.Text = "Datos Personales";
+            this.btnInfoPersonal.UseVisualStyleBackColor = true;
+            this.btnInfoPersonal.Click += new System.EventHandler(this.btnInfoPersonal_Click);
+            this.btnInfoPersonal.MouseEnter += new System.EventHandler(this.btnMouseEnter);
+            this.btnInfoPersonal.MouseLeave += new System.EventHandler(this.btnMouseLeave);
             // 
-            // materialButton1
+            // panel2
             // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
-            this.materialButton1.Location = new System.Drawing.Point(453, 422);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(122, 50);
-            this.materialButton1.TabIndex = 58;
-            this.materialButton1.Text = "Cancelar";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = true;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1045, 100);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 754);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1045, 5);
+            this.panel5.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1045, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 759);
+            this.panel3.TabIndex = 6;
             // 
             // frmNewEmpleados2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 632);
+            this.ClientSize = new System.Drawing.Size(1050, 759);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNewEmpleados2";
@@ -689,13 +689,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.pContenedor.ResumeLayout(false);
-            this.pSeccionesDatos.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.pDatosPersonales.ResumeLayout(false);
             this.pDatosPersonales.PerformLayout();
             this.pDatosLaborales.ResumeLayout(false);
             this.pDatosLaborales.PerformLayout();
+            this.pSeccionesDatos.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

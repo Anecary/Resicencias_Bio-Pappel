@@ -125,14 +125,13 @@ namespace CapaPresentacion
 
         private void btnNuevoEmpleado_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmNewEmployee());
+            openChildForm(new Empleados.frmNewEmpleados2());
             hideSubMenu();
         }
 
         private void btnConsEmpleados_Click(object sender, EventArgs e)
         {
-            openChildForm(new Empleados.frmNewEmpleados2());
-            hideSubMenu();
+            
         }
     }
 }
