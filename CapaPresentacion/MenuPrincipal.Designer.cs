@@ -37,6 +37,7 @@ namespace CapaPresentacion
             this.pSubmenuEmpleados = new System.Windows.Forms.Panel();
             this.btnSecciones = new System.Windows.Forms.Button();
             this.btnPuestos = new System.Windows.Forms.Button();
+            this.btnActualizarEmpleado = new System.Windows.Forms.Button();
             this.btnConsultarEmpleados = new System.Windows.Forms.Button();
             this.btnAltaEmpleados = new System.Windows.Forms.Button();
             this.btnNuevoEmpleado = new System.Windows.Forms.Button();
@@ -102,7 +103,7 @@ namespace CapaPresentacion
             // pSubmenuReportes
             // 
             this.pSubmenuReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 836);
+            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 876);
             this.pSubmenuReportes.Name = "pSubmenuReportes";
             this.pSubmenuReportes.Size = new System.Drawing.Size(233, 35);
             this.pSubmenuReportes.TabIndex = 15;
@@ -117,7 +118,7 @@ namespace CapaPresentacion
             this.btnReportes.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 786);
+            this.btnReportes.Location = new System.Drawing.Point(0, 826);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnReportes.Size = new System.Drawing.Size(233, 50);
@@ -132,13 +133,14 @@ namespace CapaPresentacion
             this.pSubmenuEmpleados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.pSubmenuEmpleados.Controls.Add(this.btnSecciones);
             this.pSubmenuEmpleados.Controls.Add(this.btnPuestos);
+            this.pSubmenuEmpleados.Controls.Add(this.btnActualizarEmpleado);
             this.pSubmenuEmpleados.Controls.Add(this.btnConsultarEmpleados);
             this.pSubmenuEmpleados.Controls.Add(this.btnAltaEmpleados);
             this.pSubmenuEmpleados.Controls.Add(this.btnNuevoEmpleado);
             this.pSubmenuEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSubmenuEmpleados.Location = new System.Drawing.Point(0, 606);
             this.pSubmenuEmpleados.Name = "pSubmenuEmpleados";
-            this.pSubmenuEmpleados.Size = new System.Drawing.Size(233, 180);
+            this.pSubmenuEmpleados.Size = new System.Drawing.Size(233, 220);
             this.pSubmenuEmpleados.TabIndex = 13;
             this.pSubmenuEmpleados.Visible = false;
             // 
@@ -150,7 +152,7 @@ namespace CapaPresentacion
             this.btnSecciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSecciones.Image = ((System.Drawing.Image)(resources.GetObject("btnSecciones.Image")));
             this.btnSecciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSecciones.Location = new System.Drawing.Point(0, 140);
+            this.btnSecciones.Location = new System.Drawing.Point(0, 175);
             this.btnSecciones.Name = "btnSecciones";
             this.btnSecciones.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnSecciones.Size = new System.Drawing.Size(233, 35);
@@ -169,7 +171,7 @@ namespace CapaPresentacion
             this.btnPuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPuestos.Image = ((System.Drawing.Image)(resources.GetObject("btnPuestos.Image")));
             this.btnPuestos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPuestos.Location = new System.Drawing.Point(0, 105);
+            this.btnPuestos.Location = new System.Drawing.Point(0, 140);
             this.btnPuestos.Name = "btnPuestos";
             this.btnPuestos.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnPuestos.Size = new System.Drawing.Size(233, 35);
@@ -179,6 +181,25 @@ namespace CapaPresentacion
             this.btnPuestos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPuestos.UseVisualStyleBackColor = true;
             this.btnPuestos.Click += new System.EventHandler(this.btnPuestos_Click);
+            // 
+            // btnActualizarEmpleado
+            // 
+            this.btnActualizarEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnActualizarEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnActualizarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizarEmpleado.Image")));
+            this.btnActualizarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarEmpleado.Location = new System.Drawing.Point(0, 105);
+            this.btnActualizarEmpleado.Name = "btnActualizarEmpleado";
+            this.btnActualizarEmpleado.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnActualizarEmpleado.Size = new System.Drawing.Size(233, 35);
+            this.btnActualizarEmpleado.TabIndex = 6;
+            this.btnActualizarEmpleado.Text = " Actualizar Empleado";
+            this.btnActualizarEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnActualizarEmpleado.UseVisualStyleBackColor = true;
+            this.btnActualizarEmpleado.Click += new System.EventHandler(this.btnActualizarEmpleado_Click);
             // 
             // btnConsultarEmpleados
             // 
@@ -212,7 +233,7 @@ namespace CapaPresentacion
             this.btnAltaEmpleados.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnAltaEmpleados.Size = new System.Drawing.Size(233, 35);
             this.btnAltaEmpleados.TabIndex = 2;
-            this.btnAltaEmpleados.Text = "Altas Empleado";
+            this.btnAltaEmpleados.Text = " Altas Empleado";
             this.btnAltaEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAltaEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAltaEmpleados.UseVisualStyleBackColor = true;
@@ -638,6 +659,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Button btnConsultarEmpleados;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnActualizarEmpleado;
     }
 }
 
