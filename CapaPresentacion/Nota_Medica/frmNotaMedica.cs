@@ -62,5 +62,10 @@ namespace CapaPresentacion.Nota_Medica
             pNuevaConsultaMedica.Visible = true;
             pConsultaExpMedico.Visible = false;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
