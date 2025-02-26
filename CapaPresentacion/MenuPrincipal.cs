@@ -125,16 +125,24 @@ namespace CapaPresentacion
 
         private void btnNuevoEmpleado_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmNewEmployee());
-            hideSubMenu();
-        }
-
-        private void btnConsEmpleados_Click(object sender, EventArgs e)
-        {
             openChildForm(new Empleados.frmNewEmpleados2());
             hideSubMenu();
         }
+        private void btnAltaEmpleados_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Empleados.frmAltaEmpleado());
+            hideSubMenu();
+        }
 
+        private void btnConsultarEmpleados_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Empleados.frmConsultarEmpleados());
+            hideSubMenu();
+        }
+        private void btnActualizarEmpleado_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Empleados.frmAltaEmpleado());
+        }
         private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
         {
             openChildForm(new Nota_Medica.frmNotaMedica());
@@ -163,5 +171,7 @@ namespace CapaPresentacion
             openChildForm(new Empleados.frmSecciones());
             hideSubMenu();
         }
+
+
     }
 }

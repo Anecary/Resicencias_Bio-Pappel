@@ -1,22 +1,25 @@
-﻿using System;
+﻿using MaterialSkin;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using MaterialSkin;
-using MaterialSkin.Controls;
 
 namespace CapaPresentacion.Empleados
 {
-    public partial class frmNewEmpleados2 : Form
+    public partial class frmAltaEmpleado : Form
     {
         private MaterialSkinManager materialSkinManager;
-        private Panel p = new Panel(); 
-
-        public frmNewEmpleados2()
+        public frmAltaEmpleado()
         {
             InitializeComponent();
 
             materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT; 
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(
                 Primary.Blue800, // Color primario
                 Primary.Blue900, // Color de fondo oscuro
@@ -24,6 +27,7 @@ namespace CapaPresentacion.Empleados
                 Accent.LightBlue200, // Color de acento
                 TextShade.WHITE // Color del texto
             );
+
             panel3.Paint += new PaintEventHandler(Panel1_Paint);
         }
         private void Panel1_Paint(object sender, PaintEventArgs e)
@@ -50,9 +54,14 @@ namespace CapaPresentacion.Empleados
                 e.Graphics.DrawLine(pen, panel.Width, radius, panel.Width, panel.Height - radius);
             }
         }
-        private void frmNewEmpleados2_Load(object sender, EventArgs e)
+        private void materialComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void materialComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

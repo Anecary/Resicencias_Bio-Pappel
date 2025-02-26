@@ -9,15 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion.Investigacion_Accidentes
+namespace CapaPresentacion.Empleados
 {
-    public partial class frmConsultaAccidentes : Form
+    public partial class frmConsultarEmpleados : Form
     {
         private MaterialSkinManager materialSkinManager;
         private Panel p = new Panel();
-        public frmConsultaAccidentes()
+        public frmConsultarEmpleados()
         {
             InitializeComponent();
+            pConsultaGeneral.Visible = true;
+            pConsultaIndividual.Visible = false;
 
             materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -28,28 +30,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 Accent.LightBlue200, // Color de acento
                 TextShade.WHITE // Color del texto
             );
-
-            panel1.Paint += new PaintEventHandler(Panel1_Paint);
+            panel3.Paint += new PaintEventHandler(Panel1_Paint);
             panel4.Paint += new PaintEventHandler(Panel1_Paint);
-            panel6.Paint += new PaintEventHandler(Panel1_Paint);
-            panel7.Paint += new PaintEventHandler(Panel1_Paint);
-            panel14.Paint += new PaintEventHandler(Panel1_Paint);
-            panel15.Paint += new PaintEventHandler(Panel1_Paint);
-            panel26.Paint += new PaintEventHandler(Panel1_Paint);
-            panel27.Paint += new PaintEventHandler(Panel1_Paint);
-            panel28.Paint += new PaintEventHandler(Panel1_Paint);
-            panel29.Paint += new PaintEventHandler(Panel1_Paint);
-            panel31.Paint += new PaintEventHandler(Panel1_Paint);
-            panel32.Paint += new PaintEventHandler(Panel1_Paint);
-            panel33.Paint += new PaintEventHandler(Panel1_Paint);
-
-            pDatosGenerales.Visible = true;
-            pDetallesAccidente.Visible = false;
-            pFactoresSeguridad.Visible = false;
-            pControlAcciones.Visible = false;
-            pSeguimientoCaso.Visible = false;
+            panel5.Paint += new PaintEventHandler(Panel1_Paint);
         }
-
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
             Panel panel = sender as Panel;
@@ -79,7 +63,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             Button btn = sender as Button;
             pSeccionesDatos.Controls.Add(p);
             p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
-            p.Size = new Size(185, 5); // Tamaño del panel
+            p.Size = new Size(180, 5); // Tamaño del panel
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
 
@@ -88,41 +72,18 @@ namespace CapaPresentacion.Investigacion_Accidentes
         {
             pSeccionesDatos.Controls.Remove(p);
         }
-        private void MostrarPanel(Panel panelAMostrar)
+
+
+        private void btnConsultaIndividual_Click(object sender, EventArgs e)
         {
-
-            pDatosGenerales.Visible = false;
-            pDetallesAccidente.Visible = false;
-            pFactoresSeguridad.Visible = false;
-            pControlAcciones.Visible = false;
-            pSeguimientoCaso.Visible = false;
-
-            panelAMostrar.Visible = true;
+            pConsultaGeneral.Visible = false;
+            pConsultaIndividual.Visible = true;
         }
 
-        private void btnDatosGenerales_Click(object sender, EventArgs e)
+        private void btnConsultaGral_Click(object sender, EventArgs e)
         {
-            MostrarPanel(pDatosGenerales);
-        }
-
-        private void btnDetallesAccidente_Click(object sender, EventArgs e)
-        {
-            MostrarPanel(pDetallesAccidente);
-        }
-
-        private void btnFactoresSeguridad_Click(object sender, EventArgs e)
-        {
-            MostrarPanel(pFactoresSeguridad);
-        }
-
-        private void btnSeguimientoCaso_Click(object sender, EventArgs e)
-        {
-            MostrarPanel(pSeguimientoCaso);
-        }
-
-        private void btnControlAcciones_Click(object sender, EventArgs e)
-        {
-            MostrarPanel(pControlAcciones);
+            pConsultaGeneral.Visible = true;
+            pConsultaIndividual.Visible = false;
         }
     }
 }
