@@ -54,20 +54,5 @@ namespace CapaPresentacion.Empleados
         {
             
         }
-
-        private void btnMouseEnter(Object sender, EventArgs e)
-        {
-            Button btn = sender as Button;
-            pSeccionesDatos.Controls.Add(p);
-            p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
-            p.Size = new Size(160, 5); // Tamaño del panel
-            p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
-        }
-
-        // Método para eliminar el panel cuando el mouse sale del área del botón
-        private void btnMouseLeave(Object sender, EventArgs e)
-        {
-            pSeccionesDatos.Controls.Remove(p);
-        }
     }
 }
