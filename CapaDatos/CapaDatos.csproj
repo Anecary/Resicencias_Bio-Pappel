@@ -97,6 +97,7 @@
     <Compile Include="EmpleadosDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PuestosDAO.cs" />
+    <Compile Include="SeccionesDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
