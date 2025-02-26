@@ -2353,6 +2353,9 @@
             this.btnControlAcciones.TabIndex = 9;
             this.btnControlAcciones.Text = "Control de Acciones";
             this.btnControlAcciones.UseVisualStyleBackColor = true;
+            this.btnControlAcciones.Click += new System.EventHandler(this.btnControlAcciones_Click);
+            this.btnControlAcciones.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnControlAcciones.Leave += new System.EventHandler(this.btnMouseLeave);
             // 
             // btnSeguimientoCaso
             // 
@@ -2367,6 +2370,9 @@
             this.btnSeguimientoCaso.TabIndex = 8;
             this.btnSeguimientoCaso.Text = "Seguimiento del Caso";
             this.btnSeguimientoCaso.UseVisualStyleBackColor = true;
+            this.btnSeguimientoCaso.Click += new System.EventHandler(this.btnSeguimientoCaso_Click);
+            this.btnSeguimientoCaso.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnSeguimientoCaso.Leave += new System.EventHandler(this.btnMouseLeave);
             // 
             // btnFactoresSeguridad
             // 
@@ -2381,6 +2387,9 @@
             this.btnFactoresSeguridad.TabIndex = 7;
             this.btnFactoresSeguridad.Text = "Factores de Seguridad";
             this.btnFactoresSeguridad.UseVisualStyleBackColor = true;
+            this.btnFactoresSeguridad.Click += new System.EventHandler(this.btnFactoresSeguridad_Click);
+            this.btnFactoresSeguridad.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnFactoresSeguridad.Leave += new System.EventHandler(this.btnMouseLeave);
             // 
             // btnDetallesAccidente
             // 
@@ -2395,6 +2404,9 @@
             this.btnDetallesAccidente.TabIndex = 6;
             this.btnDetallesAccidente.Text = "Detalles del Accidente";
             this.btnDetallesAccidente.UseVisualStyleBackColor = true;
+            this.btnDetallesAccidente.Click += new System.EventHandler(this.btnDetallesAccidente_Click);
+            this.btnDetallesAccidente.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnDetallesAccidente.Leave += new System.EventHandler(this.btnMouseLeave);
             // 
             // btnDatosGenerales
             // 
@@ -2409,6 +2421,9 @@
             this.btnDatosGenerales.TabIndex = 5;
             this.btnDatosGenerales.Text = "Datos Generales";
             this.btnDatosGenerales.UseVisualStyleBackColor = true;
+            this.btnDatosGenerales.Click += new System.EventHandler(this.btnDatosGenerales_Click);
+            this.btnDatosGenerales.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnDatosGenerales.Leave += new System.EventHandler(this.btnMouseLeave);
             // 
             // panel2
             // 
@@ -2532,9 +2547,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
             this.label1.Location = new System.Drawing.Point(8, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(648, 33);
+            this.label1.Size = new System.Drawing.Size(654, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Modificar Reporte de Investigación de Accidente \r\n";
+            this.label1.Text = "Consultar Reporte de Investigación de Accidente \r\n";
             // 
             // pictureBox2
             // 

@@ -102,6 +102,12 @@
     <Compile Include="Investigacion_Accidentes\frmConsultaAccidentes.Designer.cs">
       <DependentUpon>frmConsultaAccidentes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Investigacion_Accidentes\frmModificarAccidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigacion_Accidentes\frmModificarAccidente.Designer.cs">
+      <DependentUpon>frmModificarAccidente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Investigacion_Accidentes\frmNewAccidente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados\frmSecciones.resx">
       <DependentUpon>frmSecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigacion_Accidentes\frmConsultaAccidentes.resx">
+      <DependentUpon>frmConsultaAccidentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigacion_Accidentes\frmModificarAccidente.resx">
+      <DependentUpon>frmModificarAccidente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Investigacion_Accidentes\frmNewAccidente.resx">
       <DependentUpon>frmNewAccidente.cs</DependentUpon>
