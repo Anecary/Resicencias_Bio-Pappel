@@ -35,8 +35,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.cmbPuestos = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
+            this.cmbTurno = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtNoNomina = new MaterialSkin.Controls.MaterialTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtDomicilio = new MaterialSkin.Controls.MaterialTextBox();
             this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
@@ -50,6 +50,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtIdPuesto = new MaterialSkin.Controls.MaterialTextBox();
             this.panel1.SuspendLayout();
             this.pDatosLaborales.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -78,20 +79,21 @@
             this.pDatosLaborales.Controls.Add(this.materialButton1);
             this.pDatosLaborales.Controls.Add(this.btnGrabar);
             this.pDatosLaborales.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pDatosLaborales.Location = new System.Drawing.Point(0, 189);
+            this.pDatosLaborales.Location = new System.Drawing.Point(0, 153);
             this.pDatosLaborales.Name = "pDatosLaborales";
-            this.pDatosLaborales.Size = new System.Drawing.Size(945, 565);
+            this.pDatosLaborales.Size = new System.Drawing.Size(945, 601);
             this.pDatosLaborales.TabIndex = 36;
             this.pDatosLaborales.Paint += new System.Windows.Forms.PaintEventHandler(this.pDatosLaborales_Paint);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.txtIdPuesto);
             this.panel4.Controls.Add(this.dateTimePicker1);
             this.panel4.Controls.Add(this.materialLabel6);
             this.panel4.Controls.Add(this.cmbPuestos);
-            this.panel4.Controls.Add(this.materialComboBox1);
-            this.panel4.Controls.Add(this.materialTextBox3);
+            this.panel4.Controls.Add(this.cmbTurno);
+            this.panel4.Controls.Add(this.txtNoNomina);
             this.panel4.Location = new System.Drawing.Point(17, 244);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(916, 193);
@@ -126,6 +128,7 @@
             this.cmbPuestos.DropDownHeight = 174;
             this.cmbPuestos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPuestos.DropDownWidth = 121;
+            this.cmbPuestos.Enabled = false;
             this.cmbPuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cmbPuestos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cmbPuestos.FormattingEnabled = true;
@@ -141,51 +144,53 @@
             this.cmbPuestos.TabIndex = 51;
             this.cmbPuestos.SelectedIndexChanged += new System.EventHandler(this.materialComboBox2_SelectedIndexChanged);
             // 
-            // materialComboBox1
+            // cmbTurno
             // 
-            this.materialComboBox1.AutoResize = false;
-            this.materialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox1.Depth = 0;
-            this.materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox1.DropDownHeight = 174;
-            this.materialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox1.DropDownWidth = 121;
-            this.materialComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox1.FormattingEnabled = true;
-            this.materialComboBox1.Hint = "Turno";
-            this.materialComboBox1.IntegralHeight = false;
-            this.materialComboBox1.ItemHeight = 43;
-            this.materialComboBox1.Items.AddRange(new object[] {
+            this.cmbTurno.AutoResize = false;
+            this.cmbTurno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbTurno.Depth = 0;
+            this.cmbTurno.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbTurno.DropDownHeight = 174;
+            this.cmbTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTurno.DropDownWidth = 121;
+            this.cmbTurno.Enabled = false;
+            this.cmbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmbTurno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbTurno.FormattingEnabled = true;
+            this.cmbTurno.Hint = "Turno";
+            this.cmbTurno.IntegralHeight = false;
+            this.cmbTurno.ItemHeight = 43;
+            this.cmbTurno.Items.AddRange(new object[] {
             "Matutino",
             "Vespertino",
             "Nocturno"});
-            this.materialComboBox1.Location = new System.Drawing.Point(62, 117);
-            this.materialComboBox1.MaxDropDownItems = 4;
-            this.materialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox1.Name = "materialComboBox1";
-            this.materialComboBox1.Size = new System.Drawing.Size(254, 49);
-            this.materialComboBox1.StartIndex = 0;
-            this.materialComboBox1.TabIndex = 60;
-            this.materialComboBox1.SelectedIndexChanged += new System.EventHandler(this.materialComboBox1_SelectedIndexChanged);
+            this.cmbTurno.Location = new System.Drawing.Point(62, 117);
+            this.cmbTurno.MaxDropDownItems = 4;
+            this.cmbTurno.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbTurno.Name = "cmbTurno";
+            this.cmbTurno.Size = new System.Drawing.Size(254, 49);
+            this.cmbTurno.StartIndex = 0;
+            this.cmbTurno.TabIndex = 60;
+            this.cmbTurno.SelectedIndexChanged += new System.EventHandler(this.materialComboBox1_SelectedIndexChanged);
             // 
-            // materialTextBox3
+            // txtNoNomina
             // 
-            this.materialTextBox3.AnimateReadOnly = false;
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.Hint = "Numero de Nomina: ";
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.Location = new System.Drawing.Point(62, 15);
-            this.materialTextBox3.MaxLength = 18;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(254, 50);
-            this.materialTextBox3.TabIndex = 59;
-            this.materialTextBox3.Text = "";
-            this.materialTextBox3.TrailingIcon = null;
+            this.txtNoNomina.AnimateReadOnly = false;
+            this.txtNoNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNoNomina.Depth = 0;
+            this.txtNoNomina.Enabled = false;
+            this.txtNoNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNoNomina.Hint = "Numero de Nomina: ";
+            this.txtNoNomina.LeadingIcon = null;
+            this.txtNoNomina.Location = new System.Drawing.Point(62, 15);
+            this.txtNoNomina.MaxLength = 18;
+            this.txtNoNomina.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNoNomina.Multiline = false;
+            this.txtNoNomina.Name = "txtNoNomina";
+            this.txtNoNomina.Size = new System.Drawing.Size(254, 50);
+            this.txtNoNomina.TabIndex = 59;
+            this.txtNoNomina.Text = "";
+            this.txtNoNomina.TrailingIcon = null;
             // 
             // panel3
             // 
@@ -205,6 +210,7 @@
             this.txtDomicilio.AnimateReadOnly = false;
             this.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDomicilio.Depth = 0;
+            this.txtDomicilio.Enabled = false;
             this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDomicilio.Hint = "Domicilio: ";
             this.txtDomicilio.LeadingIcon = null;
@@ -223,6 +229,7 @@
             this.txtTelefono.AnimateReadOnly = false;
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefono.Depth = 0;
+            this.txtTelefono.Enabled = false;
             this.txtTelefono.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTelefono.Hint = "Teléfono: ";
             this.txtTelefono.LeadingIcon = null;
@@ -333,7 +340,7 @@
             this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
             this.pSeccionesDatos.Controls.Add(this.label2);
             this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 144);
+            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 108);
             this.pSeccionesDatos.Name = "pSeccionesDatos";
             this.pSeccionesDatos.Size = new System.Drawing.Size(945, 45);
             this.pSeccionesDatos.TabIndex = 7;
@@ -356,7 +363,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(945, 144);
+            this.panel2.Size = new System.Drawing.Size(945, 108);
             this.panel2.TabIndex = 6;
             // 
             // label1
@@ -376,10 +383,29 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(253, 144);
+            this.pictureBox2.Size = new System.Drawing.Size(253, 108);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            // 
+            // txtIdPuesto
+            // 
+            this.txtIdPuesto.AnimateReadOnly = false;
+            this.txtIdPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdPuesto.Depth = 0;
+            this.txtIdPuesto.Enabled = false;
+            this.txtIdPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdPuesto.Hint = "Numero de Nomina: ";
+            this.txtIdPuesto.LeadingIcon = null;
+            this.txtIdPuesto.Location = new System.Drawing.Point(371, 73);
+            this.txtIdPuesto.MaxLength = 18;
+            this.txtIdPuesto.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtIdPuesto.Multiline = false;
+            this.txtIdPuesto.Name = "txtIdPuesto";
+            this.txtIdPuesto.Size = new System.Drawing.Size(254, 50);
+            this.txtIdPuesto.TabIndex = 61;
+            this.txtIdPuesto.Text = "";
+            this.txtIdPuesto.TrailingIcon = null;
             // 
             // frmAltaEmpleado
             // 
@@ -419,13 +445,14 @@
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton btnGrabar;
         private System.Windows.Forms.Label label2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
+        private MaterialSkin.Controls.MaterialTextBox txtNoNomina;
         private System.Windows.Forms.Panel panel3;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
+        private MaterialSkin.Controls.MaterialComboBox cmbTurno;
         private MaterialSkin.Controls.MaterialTextBox txtNombreCompleto;
         private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
         private MaterialSkin.Controls.MaterialTextBox txtTelefono;
         private System.Windows.Forms.Panel panel4;
         private MaterialSkin.Controls.MaterialTextBox txtDomicilio;
+        private MaterialSkin.Controls.MaterialTextBox txtIdPuesto;
     }
 }

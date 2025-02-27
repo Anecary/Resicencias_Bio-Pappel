@@ -58,6 +58,42 @@ namespace CapaDatos
             }
         }
 
+        public void altaEmpleado(
+            string nss,
+            string numero_nomina,
+            DateTime fecha_ingreso_puesto,
+            DateTime fecha_ingreso_empresa,
+            char turno,
+            int idPuesto,
+            char estado)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("ActuDatosLaborales",connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("p_nss", nss);
+                        command.Parameters.AddWithValue("p_numero_nomina", numero_nomina);
+                        command.Parameters.AddWithValue("p_idPuesto_Actual", idPuesto);
+                        command.Parameters.AddWithValue("p_fecha_ingreso_puesto", fecha_ingreso_puesto);
+                        command.Parameters.AddWithValue("p_fecha_ingreso_empresa", fecha_ingreso_empresa);
+                        command.Parameters.AddWithValue("p_turno", turno);
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al dar de alta al empleado: " + ex.Message);
+            }
+        }
+
         public (string nombreCompleto, string telefono, string domicilio, string estado) BusquedaParaActualizar(string nss)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))

@@ -33,6 +33,25 @@ namespace CapaNegocios
             }
         }
 
+        public void altaEmpleado(
+            string nss,
+            string numero_nomina,
+            DateTime fecha_ingreso_puesto,
+            DateTime fecha_ingreso_empresa,
+            char turno,
+            int idPuesto,
+            char estado)
+        {
+            try
+            {
+                empleadosDAO.altaEmpleado(nss,numero_nomina,fecha_ingreso_puesto,fecha_ingreso_empresa,turno,idPuesto,estado);
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception("Error en la capa de negocios: " + ex.Message);
+            }
+        }
+
         public (string nombreCompleto, string telefono, string domicilio, string estado) ObtenerEmpleadoPorNSS(string nss)
         {
             if (string.IsNullOrWhiteSpace(nss))

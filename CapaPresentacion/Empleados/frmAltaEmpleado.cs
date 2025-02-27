@@ -96,6 +96,12 @@ namespace CapaPresentacion.Empleados
                 txtTelefono.Text = datosEmpleado.telefono;
                 txtDomicilio.Text = datosEmpleado.domicilio;
 
+                txtNoNomina.Enabled = true;
+                cmbPuestos.Enabled = true;
+                cmbTurno.Enabled = true;
+                txtNssBusqueda.Enabled = false;
+                materialFloatingActionButton2.Enabled = false;
+
             }
             catch (Exception ex)
             {
@@ -105,35 +111,63 @@ namespace CapaPresentacion.Empleados
 
         private void materialComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbPuestos.SelectedItem != null)
+            {
+                string puestoSeleccionado = cmbPuestos.SelectedItem.ToString();
+                int idPuesto = negociosP.ObtenerIdPuestoPorNombre(puestoSeleccionado);
 
+                // Guardar en un TextBox invisible
+                txtIdPuesto.Text = idPuesto.ToString();
+            }
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Verificación de campos vacíos
+                if (string.IsNullOrWhiteSpace(txtNoNomina.Text) ||
+                    cmbPuestos.SelectedItem == null ||
+                    cmbTurno.SelectedItem == null)
+                {
+                    MessageBox.Show("Todos los campos son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Detiene la ejecución si hay campos vacíos
+                }
+                string nss = txtNssBusqueda.Text;
+                string numero_nomina = txtNoNomina.Text.Trim();
+                DateTime fecha_ingreso_puesto = dateTimePicker1.Value;
+                DateTime fecha_ingreso_empresa = dateTimePicker1.Value;
+                char turno = cmbTurno.SelectedItem.ToString()[0];
+                int idPuesto = int.Parse(txtIdPuesto.Text);
+                char estado = 'A';
 
+                negocios.altaEmpleado(nss,numero_nomina,fecha_ingreso_puesto,fecha_ingreso_empresa,turno,idPuesto,estado);
+                MessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                LimpiarControles();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void CargarPuestos()
         {
             try
             {
-                // Llama al método de la capa de negocios para obtener los puestos
-                var puestos = negociosP.ObtenerPuestosLista();
+                var puestos = negociosP.ObtenerNombresPuestos();
 
-                // Limpiar el ComboBox antes de llenarlo
-                cmbPuestos.Items.Clear();
-
-                // Cargar los puestos
-                cmbPuestos.DisplayMember = "Text";  // Lo que se muestra en el ComboBox
-                cmbPuestos.ValueMember = "Value";   // El valor asociado
-
-                // Agregar los puestos al ComboBox
-                foreach (var puesto in puestos)
+                if (puestos == null || puestos.Count == 0)
                 {
-                    cmbPuestos.Items.Add(new { Text = puesto.puesto, Value = puesto.idPuesto });
+                    MessageBox.Show("No hay puestos disponibles.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
 
-                // Opcional: Seleccionar el primer item o hacer alguna otra configuración
+                cmbPuestos.DataSource = null;
+                cmbPuestos.DataSource = puestos; // Solo los nombres de los puestos
+
                 cmbPuestos.SelectedIndex = 0;
             }
             catch (Exception ex)
@@ -145,6 +179,22 @@ namespace CapaPresentacion.Empleados
         private void pDatosLaborales_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void LimpiarControles()
+        {
+            txtNssBusqueda.Text = "";
+            txtNssBusqueda.Enabled = true;
+            materialFloatingActionButton2.Enabled = true;
+            txtNombreCompleto.Text = "";
+            txtTelefono.Text = "";
+            txtDomicilio.Text = "";
+            txtNoNomina.Text = "";
+            txtNoNomina.Enabled = true;
+            cmbPuestos.SelectedIndex = 0;
+            cmbPuestos.Enabled = false;
+            cmbTurno.SelectedIndex = 0;
+            cmbTurno.Enabled = false;
         }
     }
 }

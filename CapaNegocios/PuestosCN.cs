@@ -56,16 +56,14 @@ namespace CapaNegocios
             }
         }
 
-        public List<(int idPuesto, string puesto)> ObtenerPuestosLista()
+        public List<string> ObtenerNombresPuestos()
         {
-            try
-            {
-                return puestosDAO.ObtenerPuestos(); // Llama al método de la capa de datos
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error en la capa de negocios: " + ex.Message);
-            }
+            return puestosDAO.ObtenerNombresPuestos();
+        }
+
+        public int ObtenerIdPuestoPorNombre(string nombrePuesto)
+        {
+            return puestosDAO.ObtenerIdPuestoPorNombre(nombrePuesto);
         }
     }
 }
