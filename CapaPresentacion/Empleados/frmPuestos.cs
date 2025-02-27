@@ -110,5 +110,10 @@ namespace CapaPresentacion.Empleados
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void pPuestos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
