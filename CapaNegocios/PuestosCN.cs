@@ -55,5 +55,17 @@ namespace CapaNegocios
                 throw new Exception("Error en la capa de negocios: " + ex.Message);
             }
         }
+
+        public List<(int idPuesto, string puesto)> ObtenerPuestosLista()
+        {
+            try
+            {
+                return puestosDAO.ObtenerPuestos(); // Llama al método de la capa de datos
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error en la capa de negocios: " + ex.Message);
+            }
+        }
     }
 }

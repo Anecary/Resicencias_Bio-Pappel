@@ -109,5 +109,38 @@ namespace CapaDatos
                 }
             }
         }
+
+        public List<(int idPuesto, string puesto)> ObtenerPuestos()
+        {
+            List<(int, string)> puestos = new List<(int, string)>();
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    string query = "SELECT idPuesto, puesto FROM puestos"; // Ajusta el nombre de la tabla y columnas si es necesario
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                // Agregar los resultados a la lista
+                                puestos.Add((reader.GetInt32("idPuesto"), reader.GetString("puesto")));
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al obtener los puestos: " + ex.Message);
+                }
+            }
+
+            return puestos; // Devuelve la lista de puestos
+        }
     }
 }

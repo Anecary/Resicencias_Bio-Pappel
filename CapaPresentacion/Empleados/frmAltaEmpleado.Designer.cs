@@ -34,15 +34,15 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialComboBox2 = new MaterialSkin.Controls.MaterialComboBox();
+            this.cmbPuestos = new MaterialSkin.Controls.MaterialComboBox();
             this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtDomicilio = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNombreCompleto = new MaterialSkin.Controls.MaterialTextBox();
             this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNssBusqueda = new MaterialSkin.Controls.MaterialTextBox();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.btnGrabar = new MaterialSkin.Controls.MaterialButton();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
@@ -78,17 +78,18 @@
             this.pDatosLaborales.Controls.Add(this.materialButton1);
             this.pDatosLaborales.Controls.Add(this.btnGrabar);
             this.pDatosLaborales.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pDatosLaborales.Location = new System.Drawing.Point(0, 145);
+            this.pDatosLaborales.Location = new System.Drawing.Point(0, 189);
             this.pDatosLaborales.Name = "pDatosLaborales";
-            this.pDatosLaborales.Size = new System.Drawing.Size(945, 609);
+            this.pDatosLaborales.Size = new System.Drawing.Size(945, 565);
             this.pDatosLaborales.TabIndex = 36;
+            this.pDatosLaborales.Paint += new System.Windows.Forms.PaintEventHandler(this.pDatosLaborales_Paint);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.Controls.Add(this.dateTimePicker1);
             this.panel4.Controls.Add(this.materialLabel6);
-            this.panel4.Controls.Add(this.materialComboBox2);
+            this.panel4.Controls.Add(this.cmbPuestos);
             this.panel4.Controls.Add(this.materialComboBox1);
             this.panel4.Controls.Add(this.materialTextBox3);
             this.panel4.Location = new System.Drawing.Point(17, 244);
@@ -116,29 +117,29 @@
             this.materialLabel6.TabIndex = 54;
             this.materialLabel6.Text = "Fecha de Ingreso:";
             // 
-            // materialComboBox2
+            // cmbPuestos
             // 
-            this.materialComboBox2.AutoResize = false;
-            this.materialComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox2.Depth = 0;
-            this.materialComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox2.DropDownHeight = 174;
-            this.materialComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox2.DropDownWidth = 121;
-            this.materialComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox2.FormattingEnabled = true;
-            this.materialComboBox2.Hint = "Puestos";
-            this.materialComboBox2.IntegralHeight = false;
-            this.materialComboBox2.ItemHeight = 43;
-            this.materialComboBox2.Location = new System.Drawing.Point(371, 117);
-            this.materialComboBox2.MaxDropDownItems = 4;
-            this.materialComboBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox2.Name = "materialComboBox2";
-            this.materialComboBox2.Size = new System.Drawing.Size(497, 49);
-            this.materialComboBox2.StartIndex = 0;
-            this.materialComboBox2.TabIndex = 51;
-            this.materialComboBox2.SelectedIndexChanged += new System.EventHandler(this.materialComboBox2_SelectedIndexChanged);
+            this.cmbPuestos.AutoResize = false;
+            this.cmbPuestos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbPuestos.Depth = 0;
+            this.cmbPuestos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbPuestos.DropDownHeight = 174;
+            this.cmbPuestos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPuestos.DropDownWidth = 121;
+            this.cmbPuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmbPuestos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbPuestos.FormattingEnabled = true;
+            this.cmbPuestos.Hint = "Puestos";
+            this.cmbPuestos.IntegralHeight = false;
+            this.cmbPuestos.ItemHeight = 43;
+            this.cmbPuestos.Location = new System.Drawing.Point(371, 117);
+            this.cmbPuestos.MaxDropDownItems = 4;
+            this.cmbPuestos.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbPuestos.Name = "cmbPuestos";
+            this.cmbPuestos.Size = new System.Drawing.Size(497, 49);
+            this.cmbPuestos.StartIndex = 0;
+            this.cmbPuestos.TabIndex = 51;
+            this.cmbPuestos.SelectedIndexChanged += new System.EventHandler(this.materialComboBox2_SelectedIndexChanged);
             // 
             // materialComboBox1
             // 
@@ -189,70 +190,70 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.materialTextBox5);
-            this.panel3.Controls.Add(this.materialTextBox4);
-            this.panel3.Controls.Add(this.materialTextBox2);
+            this.panel3.Controls.Add(this.txtDomicilio);
+            this.panel3.Controls.Add(this.txtTelefono);
+            this.panel3.Controls.Add(this.txtNombreCompleto);
             this.panel3.Controls.Add(this.materialFloatingActionButton2);
-            this.panel3.Controls.Add(this.materialTextBox1);
+            this.panel3.Controls.Add(this.txtNssBusqueda);
             this.panel3.Location = new System.Drawing.Point(17, 40);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(916, 181);
             this.panel3.TabIndex = 60;
             // 
-            // materialTextBox5
+            // txtDomicilio
             // 
-            this.materialTextBox5.AnimateReadOnly = false;
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox5.Hint = "Domicilio: ";
-            this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.Location = new System.Drawing.Point(361, 105);
-            this.materialTextBox5.MaxLength = 18;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(497, 50);
-            this.materialTextBox5.TabIndex = 98;
-            this.materialTextBox5.Text = "";
-            this.materialTextBox5.TrailingIcon = null;
+            this.txtDomicilio.AnimateReadOnly = false;
+            this.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDomicilio.Depth = 0;
+            this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDomicilio.Hint = "Domicilio: ";
+            this.txtDomicilio.LeadingIcon = null;
+            this.txtDomicilio.Location = new System.Drawing.Point(361, 105);
+            this.txtDomicilio.MaxLength = 18;
+            this.txtDomicilio.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDomicilio.Multiline = false;
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(497, 50);
+            this.txtDomicilio.TabIndex = 98;
+            this.txtDomicilio.Text = "";
+            this.txtDomicilio.TrailingIcon = null;
             // 
-            // materialTextBox4
+            // txtTelefono
             // 
-            this.materialTextBox4.AnimateReadOnly = false;
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox4.Hint = "Teléfono: ";
-            this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.Location = new System.Drawing.Point(52, 105);
-            this.materialTextBox4.MaxLength = 18;
-            this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox4.Multiline = false;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.Size = new System.Drawing.Size(254, 50);
-            this.materialTextBox4.TabIndex = 97;
-            this.materialTextBox4.Text = "";
-            this.materialTextBox4.TrailingIcon = null;
+            this.txtTelefono.AnimateReadOnly = false;
+            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono.Depth = 0;
+            this.txtTelefono.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTelefono.Hint = "Teléfono: ";
+            this.txtTelefono.LeadingIcon = null;
+            this.txtTelefono.Location = new System.Drawing.Point(52, 105);
+            this.txtTelefono.MaxLength = 18;
+            this.txtTelefono.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTelefono.Multiline = false;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(254, 50);
+            this.txtTelefono.TabIndex = 97;
+            this.txtTelefono.Text = "";
+            this.txtTelefono.TrailingIcon = null;
             // 
-            // materialTextBox2
+            // txtNombreCompleto
             // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Enabled = false;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.Hint = "Nombre del Colaborador: ";
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(361, 25);
-            this.materialTextBox2.MaxLength = 18;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(497, 50);
-            this.materialTextBox2.TabIndex = 96;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
+            this.txtNombreCompleto.AnimateReadOnly = false;
+            this.txtNombreCompleto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombreCompleto.Depth = 0;
+            this.txtNombreCompleto.Enabled = false;
+            this.txtNombreCompleto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreCompleto.Hint = "Nombre del Colaborador: ";
+            this.txtNombreCompleto.LeadingIcon = null;
+            this.txtNombreCompleto.Location = new System.Drawing.Point(361, 25);
+            this.txtNombreCompleto.MaxLength = 18;
+            this.txtNombreCompleto.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreCompleto.Multiline = false;
+            this.txtNombreCompleto.Name = "txtNombreCompleto";
+            this.txtNombreCompleto.Size = new System.Drawing.Size(497, 50);
+            this.txtNombreCompleto.TabIndex = 96;
+            this.txtNombreCompleto.Text = "";
+            this.txtNombreCompleto.TrailingIcon = null;
             // 
             // materialFloatingActionButton2
             // 
@@ -268,23 +269,23 @@
             this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
             this.materialFloatingActionButton2.Click += new System.EventHandler(this.materialFloatingActionButton2_Click);
             // 
-            // materialTextBox1
+            // txtNssBusqueda
             // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.Hint = "NSS: ";
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(52, 25);
-            this.materialTextBox1.MaxLength = 18;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(194, 50);
-            this.materialTextBox1.TabIndex = 52;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
+            this.txtNssBusqueda.AnimateReadOnly = false;
+            this.txtNssBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNssBusqueda.Depth = 0;
+            this.txtNssBusqueda.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNssBusqueda.Hint = "NSS: ";
+            this.txtNssBusqueda.LeadingIcon = null;
+            this.txtNssBusqueda.Location = new System.Drawing.Point(52, 25);
+            this.txtNssBusqueda.MaxLength = 18;
+            this.txtNssBusqueda.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNssBusqueda.Multiline = false;
+            this.txtNssBusqueda.Name = "txtNssBusqueda";
+            this.txtNssBusqueda.Size = new System.Drawing.Size(194, 50);
+            this.txtNssBusqueda.TabIndex = 52;
+            this.txtNssBusqueda.Text = "";
+            this.txtNssBusqueda.TrailingIcon = null;
             // 
             // materialButton1
             // 
@@ -332,7 +333,7 @@
             this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
             this.pSeccionesDatos.Controls.Add(this.label2);
             this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 100);
+            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 144);
             this.pSeccionesDatos.Name = "pSeccionesDatos";
             this.pSeccionesDatos.Size = new System.Drawing.Size(945, 45);
             this.pSeccionesDatos.TabIndex = 7;
@@ -355,7 +356,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(945, 100);
+            this.panel2.Size = new System.Drawing.Size(945, 144);
             this.panel2.TabIndex = 6;
             // 
             // label1
@@ -375,7 +376,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(253, 100);
+            this.pictureBox2.Size = new System.Drawing.Size(253, 144);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -413,18 +414,18 @@
         private System.Windows.Forms.Panel pDatosLaborales;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox2;
+        private MaterialSkin.Controls.MaterialTextBox txtNssBusqueda;
+        private MaterialSkin.Controls.MaterialComboBox cmbPuestos;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton btnGrabar;
         private System.Windows.Forms.Label label2;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
         private System.Windows.Forms.Panel panel3;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
+        private MaterialSkin.Controls.MaterialTextBox txtNombreCompleto;
         private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
+        private MaterialSkin.Controls.MaterialTextBox txtTelefono;
         private System.Windows.Forms.Panel panel4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
+        private MaterialSkin.Controls.MaterialTextBox txtDomicilio;
     }
 }

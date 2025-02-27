@@ -57,5 +57,43 @@ namespace CapaDatos
                 }
             }
         }
+
+        public (string nombreCompleto, string telefono, string domicilio, string estado) BusquedaParaActualizar(string nss)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("obtNSS", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("p_nss", nss);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read()) // Si hay resultados
+                            {
+                                string nombreCompleto = reader.GetString("nombre_completo");
+                                string telefono = reader.GetString("telefono");
+                                string domicilio = reader.GetString("dom");
+                                string estado = reader.GetString("estado");
+
+                                return (nombreCompleto, telefono, domicilio, estado);
+                            }
+                            else
+                            {
+                                throw new Exception("No se encontró un empleado con ese NSS.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al buscar el empleado: " + ex.Message);
+                }
+            }
+        }
     }
 }
