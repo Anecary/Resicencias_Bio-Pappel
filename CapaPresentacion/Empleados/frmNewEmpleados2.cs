@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using CapaNegocios;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
@@ -8,6 +9,7 @@ namespace CapaPresentacion.Empleados
 {
     public partial class frmNewEmpleados2 : Form
     {
+        private EmpleadosCN negocios = new EmpleadosCN();
         private MaterialSkinManager materialSkinManager;
         private Panel p = new Panel(); 
 
@@ -53,6 +55,92 @@ namespace CapaPresentacion.Empleados
         private void frmNewEmpleados2_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Verificación de campos vacíos
+                if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                    string.IsNullOrWhiteSpace(txtApellidoP.Text) ||
+                    string.IsNullOrWhiteSpace(txtApellidoM.Text) ||
+                    cmbSexo.SelectedItem == null ||
+                    cmbEstadoCivil.SelectedItem == null ||
+                    string.IsNullOrWhiteSpace(txtNss.Text) ||
+                    string.IsNullOrWhiteSpace(txtRFC.Text) ||
+                    string.IsNullOrWhiteSpace(txtCalle.Text) ||
+                    string.IsNullOrWhiteSpace(txtNumero.Text) ||
+                    string.IsNullOrWhiteSpace(txtColonia.Text) ||
+                    string.IsNullOrWhiteSpace(txtCp.Text) ||
+                    string.IsNullOrWhiteSpace(txtMunicipio.Text) ||
+                    string.IsNullOrWhiteSpace(txtEstado.Text) ||
+                    string.IsNullOrWhiteSpace(txtTelefono.Text))
+                {
+                    MessageBox.Show("Todos los campos son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Detiene la ejecución si hay campos vacíos
+                }
+
+                // Verificación de formato en campo numérico
+                if (!int.TryParse(txtNumero.Text, out int domicilioNumero))
+                {
+                    MessageBox.Show("El número de domicilio debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Obtener valores después de la validación
+                string nombre = txtNombre.Text.Trim();
+                string apellidoPaterno = txtApellidoP.Text.Trim();
+                string apellidoMaterno = txtApellidoM.Text.Trim();
+                DateTime fechaNacimiento = dateTimePicker2.Value;
+                char sexo = cmbSexo.SelectedItem.ToString()[0];
+                string estadoCivil = cmbEstadoCivil.SelectedItem.ToString();
+                string nss = txtNss.Text.Trim();
+                string rfc = txtRFC.Text.Trim();
+                string domicilioCalle = txtCalle.Text.Trim();
+                string domicilioColonia = txtColonia.Text.Trim();
+                string domicilioCP = txtCp.Text.Trim();
+                string domicilioCiudad = txtMunicipio.Text.Trim();
+                string domicilioEstado = txtEstado.Text.Trim();
+                string telefono = txtTelefono.Text.Trim();
+
+                // Llamada al método de negocios para insertar el empleado
+                negocios.InsertarEmpleado(
+                    nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, sexo,
+                    estadoCivil, nss, rfc, domicilioCalle, domicilioNumero,
+                    domicilioColonia, domicilioCP, domicilioCiudad, domicilioEstado, telefono);
+
+                // Mensaje de éxito
+                MessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Limpiar controles
+                LimpiarControles();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void LimpiarControles()
+        {
+            // Limpia todos los controles de entrada
+            txtNombre.Clear();
+            txtApellidoP.Clear();
+            txtApellidoM.Clear();
+            dateTimePicker2.Value = DateTime.Now;
+            cmbSexo.SelectedIndex = -1;
+            cmbEstadoCivil.SelectedIndex = -1;
+            txtNss.Clear();
+            txtRFC.Clear();
+            txtCalle.Clear();
+            txtNumero.Clear();
+            txtColonia.Clear();
+            txtCp.Clear();
+            txtMunicipio.Clear();
+            txtEstado.Clear();
+            txtTelefono.Clear();
         }
     }
 }

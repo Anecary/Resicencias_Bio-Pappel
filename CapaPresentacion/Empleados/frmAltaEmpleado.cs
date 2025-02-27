@@ -59,7 +59,17 @@ namespace CapaPresentacion.Empleados
 
         }
 
+        private void materialFloatingActionButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void materialComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
         {
 
         }
