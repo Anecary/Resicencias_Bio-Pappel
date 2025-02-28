@@ -48,7 +48,7 @@ namespace CapaDatos
 
         public DataTable ConsultaGeneral(string nombreProcedimiento)
         {
-            {
+            
                 DataTable dataTable = new DataTable();
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -79,7 +79,7 @@ namespace CapaDatos
 
                 return dataTable;
 
-            }
+            
         }
 
         public void InsertarPuesto(string puesto)

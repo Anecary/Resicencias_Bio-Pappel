@@ -1,4 +1,5 @@
-﻿using MaterialSkin;
+﻿using CapaNegocios;
+using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +14,13 @@ namespace CapaPresentacion.Empleados
 {
     public partial class frmConsultarEmpleados : Form
     {
+        private EmpleadosCN negocios = new EmpleadosCN();
         private MaterialSkinManager materialSkinManager;
         private Panel p = new Panel();
         public frmConsultarEmpleados()
         {
             InitializeComponent();
+            this.Load += new EventHandler(frmAltaEmpleado_Load);
             pConsultaGeneral.Visible = true;
             pConsultaIndividual.Visible = false;
 
@@ -84,6 +87,62 @@ namespace CapaPresentacion.Empleados
         {
             pConsultaGeneral.Visible = true;
             pConsultaIndividual.Visible = false;
+        }
+        private void frmAltaEmpleado_Load(object sender, EventArgs e)
+        {
+            // Código para cargar los puestos u otros datos aquí
+            try
+            {
+                // Llama al método de la capa de negocios para obtener los puestos
+                DataTable empleados = negocios.ObtenerPuestos();
+
+                // Asigna el DataTable al DataGridView
+                dataGridView1.DataSource = empleados;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void materialFloatingActionButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String numero_nomina = txtNoNomina.Text;
+
+                if (string.IsNullOrEmpty(numero_nomina))
+                {
+                    MessageBox.Show("Por favor, ingrese un Numero de nomina.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var datosEmpleado = negocios.consultaIndividual(numero_nomina);
+
+                txtNombre.Text = datosEmpleado.nombreCompleto;
+                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
+                txtSexo.Text = datosEmpleado.sexo.ToString();
+                txtNss.Text = datosEmpleado.nss.ToString();
+                txtEstadoCivil.Text = datosEmpleado.estado_civil.ToString();
+                txtDomicilio.Text = datosEmpleado.domicilio.ToString();
+                txtCp.Text = datosEmpleado.domicilio_CP.ToString();
+                txtTelefono.Text = datosEmpleado.telefono.ToString();
+
+                txtTurno.Text = datosEmpleado.turno.ToString();
+                txtAntiguedad.Text = datosEmpleado.antiguedad.ToString();
+                txtPuesto.Text = datosEmpleado.puesto.ToString();
+                txtFechaIngreso.Text = datosEmpleado.fecha_ingreso_empresa.ToString("yyyy-MM-dd");
+
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
     }
 }

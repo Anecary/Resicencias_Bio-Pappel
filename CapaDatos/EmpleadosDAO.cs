@@ -131,5 +131,85 @@ namespace CapaDatos
                 }
             }
         }
+
+        public DataTable consultaGeneral () 
+        {
+            DataTable dataTable = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    // Crea un comando para ejecutar el procedimiento almacenado
+                    using (MySqlCommand command = new MySqlCommand("ConsulGe", connection))
+                    {
+                        // Indica que es un procedimiento almacenado
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        // Crea un adaptador para llenar el DataTable
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                        {
+                            // Llena el DataTable con los resultados del procedimiento
+                            adapter.Fill(dataTable);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al ejecutar el procedimiento almacenado: " + ex.Message);
+                }
+            }
+
+            return dataTable;
+
+        }
+        public (string nombreCompleto, DateTime fecha_nac , char sexo , string nss , string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa) ConsultaIndivisual(string numero_nomina)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("ConsIndi", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("a_numero_nomina", numero_nomina);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read()) // Si hay resultados
+                            {
+                                string nombreCompleto = reader.GetString("nombre_completo");
+                                DateTime fecha_nac = reader.GetDateTime("fecha_nacimiento");
+                                char sexo = reader.GetChar("sexo");
+                                string nss = reader.GetString("nss");
+                                string estado_civil = reader.GetString("estado_civil");
+                                string domicilio = reader.GetString("dom");
+                                string domicilio_CP = reader.GetString("domicilio_CP");
+                                string telefono = reader.GetString("telefono");
+                                char turno = reader.GetChar("turno");
+                                string puesto = reader.GetString("puesto");  // Reemplaza si "puesto" puede ser NULL
+                                int antiguedad = reader.GetInt32("antiguedad");
+                                DateTime fecha_ingreso_empresa = reader.GetDateTime("fecha_ingreso_empresa");
+
+
+                                return (nombreCompleto, fecha_nac, sexo, nss, estado_civil, domicilio, domicilio_CP,telefono, turno, puesto, antiguedad, fecha_ingreso_empresa);
+                            }
+                            else
+                            {
+                                throw new Exception("No se encontró un empleado con ese NSS.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al buscar el empleado: " + ex.Message);
+                }
+            }
+        }
     }
 }

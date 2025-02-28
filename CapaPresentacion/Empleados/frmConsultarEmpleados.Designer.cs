@@ -34,24 +34,25 @@
             this.pConsultaIndividual = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtFechaIngreso = new MaterialSkin.Controls.MaterialTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.materialTextBox13 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox14 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox15 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtAntiguedad = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtPuesto = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtTurno = new MaterialSkin.Controls.MaterialTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNoNomina = new MaterialSkin.Controls.MaterialTextBox();
             this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.materialTextBox9 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox6 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtCp = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtDomicilio = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNss = new MaterialSkin.Controls.MaterialTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.materialTextBox8 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox7 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtEstadoCivil = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtSexo = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtFechaNac = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNombre = new MaterialSkin.Controls.MaterialTextBox();
             this.pConsultaGeneral = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -61,7 +62,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.materialTextBox10 = new MaterialSkin.Controls.MaterialTextBox();
             this.panel1.SuspendLayout();
             this.paContenedor.SuspendLayout();
             this.pConsultaIndividual.SuspendLayout();
@@ -123,15 +123,33 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.materialTextBox10);
+            this.panel4.Controls.Add(this.txtFechaIngreso);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.materialTextBox13);
-            this.panel4.Controls.Add(this.materialTextBox14);
-            this.panel4.Controls.Add(this.materialTextBox15);
+            this.panel4.Controls.Add(this.txtAntiguedad);
+            this.panel4.Controls.Add(this.txtPuesto);
+            this.panel4.Controls.Add(this.txtTurno);
             this.panel4.Location = new System.Drawing.Point(17, 490);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(883, 201);
             this.panel4.TabIndex = 104;
+            // 
+            // txtFechaIngreso
+            // 
+            this.txtFechaIngreso.AnimateReadOnly = false;
+            this.txtFechaIngreso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFechaIngreso.Depth = 0;
+            this.txtFechaIngreso.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFechaIngreso.Hint = "Fecha de ingreso:";
+            this.txtFechaIngreso.LeadingIcon = null;
+            this.txtFechaIngreso.Location = new System.Drawing.Point(369, 130);
+            this.txtFechaIngreso.MaxLength = 18;
+            this.txtFechaIngreso.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtFechaIngreso.Multiline = false;
+            this.txtFechaIngreso.Name = "txtFechaIngreso";
+            this.txtFechaIngreso.Size = new System.Drawing.Size(489, 50);
+            this.txtFechaIngreso.TabIndex = 101;
+            this.txtFechaIngreso.Text = "";
+            this.txtFechaIngreso.TrailingIcon = null;
             // 
             // label5
             // 
@@ -144,65 +162,65 @@
             this.label5.TabIndex = 96;
             this.label5.Text = "Datos Laborales:";
             // 
-            // materialTextBox13
+            // txtAntiguedad
             // 
-            this.materialTextBox13.AnimateReadOnly = false;
-            this.materialTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox13.Depth = 0;
-            this.materialTextBox13.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox13.Hint = "Antigüedad:";
-            this.materialTextBox13.LeadingIcon = null;
-            this.materialTextBox13.Location = new System.Drawing.Point(52, 131);
-            this.materialTextBox13.MaxLength = 18;
-            this.materialTextBox13.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox13.Multiline = false;
-            this.materialTextBox13.Name = "materialTextBox13";
-            this.materialTextBox13.Size = new System.Drawing.Size(282, 50);
-            this.materialTextBox13.TabIndex = 100;
-            this.materialTextBox13.Text = "";
-            this.materialTextBox13.TrailingIcon = null;
+            this.txtAntiguedad.AnimateReadOnly = false;
+            this.txtAntiguedad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAntiguedad.Depth = 0;
+            this.txtAntiguedad.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAntiguedad.Hint = "Antigüedad:";
+            this.txtAntiguedad.LeadingIcon = null;
+            this.txtAntiguedad.Location = new System.Drawing.Point(52, 131);
+            this.txtAntiguedad.MaxLength = 18;
+            this.txtAntiguedad.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtAntiguedad.Multiline = false;
+            this.txtAntiguedad.Name = "txtAntiguedad";
+            this.txtAntiguedad.Size = new System.Drawing.Size(282, 50);
+            this.txtAntiguedad.TabIndex = 100;
+            this.txtAntiguedad.Text = "";
+            this.txtAntiguedad.TrailingIcon = null;
             // 
-            // materialTextBox14
+            // txtPuesto
             // 
-            this.materialTextBox14.AnimateReadOnly = false;
-            this.materialTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox14.Depth = 0;
-            this.materialTextBox14.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox14.Hint = "Puesto Actual:";
-            this.materialTextBox14.LeadingIcon = null;
-            this.materialTextBox14.Location = new System.Drawing.Point(369, 59);
-            this.materialTextBox14.MaxLength = 18;
-            this.materialTextBox14.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox14.Multiline = false;
-            this.materialTextBox14.Name = "materialTextBox14";
-            this.materialTextBox14.Size = new System.Drawing.Size(489, 50);
-            this.materialTextBox14.TabIndex = 99;
-            this.materialTextBox14.Text = "";
-            this.materialTextBox14.TrailingIcon = null;
+            this.txtPuesto.AnimateReadOnly = false;
+            this.txtPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPuesto.Depth = 0;
+            this.txtPuesto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPuesto.Hint = "Puesto Actual:";
+            this.txtPuesto.LeadingIcon = null;
+            this.txtPuesto.Location = new System.Drawing.Point(369, 59);
+            this.txtPuesto.MaxLength = 18;
+            this.txtPuesto.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtPuesto.Multiline = false;
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Size = new System.Drawing.Size(489, 50);
+            this.txtPuesto.TabIndex = 99;
+            this.txtPuesto.Text = "";
+            this.txtPuesto.TrailingIcon = null;
             // 
-            // materialTextBox15
+            // txtTurno
             // 
-            this.materialTextBox15.AnimateReadOnly = false;
-            this.materialTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox15.Depth = 0;
-            this.materialTextBox15.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox15.Hint = "Turno:";
-            this.materialTextBox15.LeadingIcon = null;
-            this.materialTextBox15.Location = new System.Drawing.Point(52, 59);
-            this.materialTextBox15.MaxLength = 18;
-            this.materialTextBox15.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox15.Multiline = false;
-            this.materialTextBox15.Name = "materialTextBox15";
-            this.materialTextBox15.Size = new System.Drawing.Size(282, 50);
-            this.materialTextBox15.TabIndex = 98;
-            this.materialTextBox15.Text = "";
-            this.materialTextBox15.TrailingIcon = null;
+            this.txtTurno.AnimateReadOnly = false;
+            this.txtTurno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTurno.Depth = 0;
+            this.txtTurno.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTurno.Hint = "Turno:";
+            this.txtTurno.LeadingIcon = null;
+            this.txtTurno.Location = new System.Drawing.Point(52, 59);
+            this.txtTurno.MaxLength = 18;
+            this.txtTurno.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTurno.Multiline = false;
+            this.txtTurno.Name = "txtTurno";
+            this.txtTurno.Size = new System.Drawing.Size(282, 50);
+            this.txtTurno.TabIndex = 98;
+            this.txtTurno.Text = "";
+            this.txtTurno.TrailingIcon = null;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.materialTextBox3);
+            this.panel3.Controls.Add(this.txtNoNomina);
             this.panel3.Controls.Add(this.materialFloatingActionButton2);
             this.panel3.Location = new System.Drawing.Point(17, 13);
             this.panel3.Name = "panel3";
@@ -220,23 +238,23 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Colaborador a Consultar";
             // 
-            // materialTextBox3
+            // txtNoNomina
             // 
-            this.materialTextBox3.AnimateReadOnly = false;
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.Hint = "Numero de Nomina: ";
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.Location = new System.Drawing.Point(52, 47);
-            this.materialTextBox3.MaxLength = 18;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(208, 50);
-            this.materialTextBox3.TabIndex = 59;
-            this.materialTextBox3.Text = "";
-            this.materialTextBox3.TrailingIcon = null;
+            this.txtNoNomina.AnimateReadOnly = false;
+            this.txtNoNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNoNomina.Depth = 0;
+            this.txtNoNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNoNomina.Hint = "Numero de Nomina: ";
+            this.txtNoNomina.LeadingIcon = null;
+            this.txtNoNomina.Location = new System.Drawing.Point(52, 47);
+            this.txtNoNomina.MaxLength = 18;
+            this.txtNoNomina.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNoNomina.Multiline = false;
+            this.txtNoNomina.Name = "txtNoNomina";
+            this.txtNoNomina.Size = new System.Drawing.Size(208, 50);
+            this.txtNoNomina.TabIndex = 59;
+            this.txtNoNomina.Text = "";
+            this.txtNoNomina.TrailingIcon = null;
             // 
             // materialFloatingActionButton2
             // 
@@ -250,95 +268,96 @@
             this.materialFloatingActionButton2.TabIndex = 95;
             this.materialFloatingActionButton2.Text = "materialFloatingActionButton2";
             this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
+            this.materialFloatingActionButton2.Click += new System.EventHandler(this.materialFloatingActionButton2_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.Controls.Add(this.materialTextBox9);
-            this.panel5.Controls.Add(this.materialTextBox6);
-            this.panel5.Controls.Add(this.materialTextBox5);
-            this.panel5.Controls.Add(this.materialTextBox4);
+            this.panel5.Controls.Add(this.txtTelefono);
+            this.panel5.Controls.Add(this.txtCp);
+            this.panel5.Controls.Add(this.txtDomicilio);
+            this.panel5.Controls.Add(this.txtNss);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.materialTextBox8);
-            this.panel5.Controls.Add(this.materialTextBox7);
-            this.panel5.Controls.Add(this.materialTextBox1);
-            this.panel5.Controls.Add(this.materialTextBox2);
+            this.panel5.Controls.Add(this.txtEstadoCivil);
+            this.panel5.Controls.Add(this.txtSexo);
+            this.panel5.Controls.Add(this.txtFechaNac);
+            this.panel5.Controls.Add(this.txtNombre);
             this.panel5.Location = new System.Drawing.Point(17, 134);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(883, 332);
             this.panel5.TabIndex = 61;
             // 
-            // materialTextBox9
+            // txtTelefono
             // 
-            this.materialTextBox9.AnimateReadOnly = false;
-            this.materialTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox9.Depth = 0;
-            this.materialTextBox9.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox9.Hint = "Teléfono:";
-            this.materialTextBox9.LeadingIcon = null;
-            this.materialTextBox9.Location = new System.Drawing.Point(283, 267);
-            this.materialTextBox9.MaxLength = 18;
-            this.materialTextBox9.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox9.Multiline = false;
-            this.materialTextBox9.Name = "materialTextBox9";
-            this.materialTextBox9.Size = new System.Drawing.Size(266, 50);
-            this.materialTextBox9.TabIndex = 106;
-            this.materialTextBox9.Text = "";
-            this.materialTextBox9.TrailingIcon = null;
+            this.txtTelefono.AnimateReadOnly = false;
+            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono.Depth = 0;
+            this.txtTelefono.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTelefono.Hint = "Teléfono:";
+            this.txtTelefono.LeadingIcon = null;
+            this.txtTelefono.Location = new System.Drawing.Point(283, 267);
+            this.txtTelefono.MaxLength = 18;
+            this.txtTelefono.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTelefono.Multiline = false;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(266, 50);
+            this.txtTelefono.TabIndex = 106;
+            this.txtTelefono.Text = "";
+            this.txtTelefono.TrailingIcon = null;
             // 
-            // materialTextBox6
+            // txtCp
             // 
-            this.materialTextBox6.AnimateReadOnly = false;
-            this.materialTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox6.Depth = 0;
-            this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox6.Hint = "Código Postal:";
-            this.materialTextBox6.LeadingIcon = null;
-            this.materialTextBox6.Location = new System.Drawing.Point(52, 267);
-            this.materialTextBox6.MaxLength = 18;
-            this.materialTextBox6.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox6.Multiline = false;
-            this.materialTextBox6.Name = "materialTextBox6";
-            this.materialTextBox6.Size = new System.Drawing.Size(214, 50);
-            this.materialTextBox6.TabIndex = 105;
-            this.materialTextBox6.Text = "";
-            this.materialTextBox6.TrailingIcon = null;
+            this.txtCp.AnimateReadOnly = false;
+            this.txtCp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCp.Depth = 0;
+            this.txtCp.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCp.Hint = "Código Postal:";
+            this.txtCp.LeadingIcon = null;
+            this.txtCp.Location = new System.Drawing.Point(52, 267);
+            this.txtCp.MaxLength = 18;
+            this.txtCp.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCp.Multiline = false;
+            this.txtCp.Name = "txtCp";
+            this.txtCp.Size = new System.Drawing.Size(214, 50);
+            this.txtCp.TabIndex = 105;
+            this.txtCp.Text = "";
+            this.txtCp.TrailingIcon = null;
             // 
-            // materialTextBox5
+            // txtDomicilio
             // 
-            this.materialTextBox5.AnimateReadOnly = false;
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox5.Hint = "Domicilio:";
-            this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.Location = new System.Drawing.Point(52, 200);
-            this.materialTextBox5.MaxLength = 18;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(806, 50);
-            this.materialTextBox5.TabIndex = 104;
-            this.materialTextBox5.Text = "";
-            this.materialTextBox5.TrailingIcon = null;
+            this.txtDomicilio.AnimateReadOnly = false;
+            this.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDomicilio.Depth = 0;
+            this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDomicilio.Hint = "Domicilio:";
+            this.txtDomicilio.LeadingIcon = null;
+            this.txtDomicilio.Location = new System.Drawing.Point(52, 200);
+            this.txtDomicilio.MaxLength = 18;
+            this.txtDomicilio.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDomicilio.Multiline = false;
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(806, 50);
+            this.txtDomicilio.TabIndex = 104;
+            this.txtDomicilio.Text = "";
+            this.txtDomicilio.TrailingIcon = null;
             // 
-            // materialTextBox4
+            // txtNss
             // 
-            this.materialTextBox4.AnimateReadOnly = false;
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox4.Hint = "Número de Seguro:";
-            this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.Location = new System.Drawing.Point(283, 127);
-            this.materialTextBox4.MaxLength = 18;
-            this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox4.Multiline = false;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.Size = new System.Drawing.Size(266, 50);
-            this.materialTextBox4.TabIndex = 103;
-            this.materialTextBox4.Text = "";
-            this.materialTextBox4.TrailingIcon = null;
+            this.txtNss.AnimateReadOnly = false;
+            this.txtNss.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNss.Depth = 0;
+            this.txtNss.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNss.Hint = "Número de Seguro:";
+            this.txtNss.LeadingIcon = null;
+            this.txtNss.Location = new System.Drawing.Point(283, 127);
+            this.txtNss.MaxLength = 18;
+            this.txtNss.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNss.Multiline = false;
+            this.txtNss.Name = "txtNss";
+            this.txtNss.Size = new System.Drawing.Size(266, 50);
+            this.txtNss.TabIndex = 103;
+            this.txtNss.Text = "";
+            this.txtNss.TrailingIcon = null;
             // 
             // label4
             // 
@@ -351,77 +370,77 @@
             this.label4.TabIndex = 96;
             this.label4.Text = "Datos Personales:";
             // 
-            // materialTextBox8
+            // txtEstadoCivil
             // 
-            this.materialTextBox8.AnimateReadOnly = false;
-            this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox8.Depth = 0;
-            this.materialTextBox8.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox8.Hint = "Estado Civil:";
-            this.materialTextBox8.LeadingIcon = null;
-            this.materialTextBox8.Location = new System.Drawing.Point(576, 127);
-            this.materialTextBox8.MaxLength = 18;
-            this.materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox8.Multiline = false;
-            this.materialTextBox8.Name = "materialTextBox8";
-            this.materialTextBox8.Size = new System.Drawing.Size(282, 50);
-            this.materialTextBox8.TabIndex = 102;
-            this.materialTextBox8.Text = "";
-            this.materialTextBox8.TrailingIcon = null;
+            this.txtEstadoCivil.AnimateReadOnly = false;
+            this.txtEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEstadoCivil.Depth = 0;
+            this.txtEstadoCivil.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEstadoCivil.Hint = "Estado Civil:";
+            this.txtEstadoCivil.LeadingIcon = null;
+            this.txtEstadoCivil.Location = new System.Drawing.Point(576, 127);
+            this.txtEstadoCivil.MaxLength = 18;
+            this.txtEstadoCivil.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEstadoCivil.Multiline = false;
+            this.txtEstadoCivil.Name = "txtEstadoCivil";
+            this.txtEstadoCivil.Size = new System.Drawing.Size(282, 50);
+            this.txtEstadoCivil.TabIndex = 102;
+            this.txtEstadoCivil.Text = "";
+            this.txtEstadoCivil.TrailingIcon = null;
             // 
-            // materialTextBox7
+            // txtSexo
             // 
-            this.materialTextBox7.AnimateReadOnly = false;
-            this.materialTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox7.Depth = 0;
-            this.materialTextBox7.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox7.Hint = "Sexo:";
-            this.materialTextBox7.LeadingIcon = null;
-            this.materialTextBox7.Location = new System.Drawing.Point(52, 127);
-            this.materialTextBox7.MaxLength = 18;
-            this.materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox7.Multiline = false;
-            this.materialTextBox7.Name = "materialTextBox7";
-            this.materialTextBox7.Size = new System.Drawing.Size(214, 50);
-            this.materialTextBox7.TabIndex = 101;
-            this.materialTextBox7.Text = "";
-            this.materialTextBox7.TrailingIcon = null;
+            this.txtSexo.AnimateReadOnly = false;
+            this.txtSexo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSexo.Depth = 0;
+            this.txtSexo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSexo.Hint = "Sexo:";
+            this.txtSexo.LeadingIcon = null;
+            this.txtSexo.Location = new System.Drawing.Point(52, 127);
+            this.txtSexo.MaxLength = 18;
+            this.txtSexo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSexo.Multiline = false;
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Size = new System.Drawing.Size(214, 50);
+            this.txtSexo.TabIndex = 101;
+            this.txtSexo.Text = "";
+            this.txtSexo.TrailingIcon = null;
             // 
-            // materialTextBox1
+            // txtFechaNac
             // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.Hint = "Fecha de Nacimiento:";
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(576, 61);
-            this.materialTextBox1.MaxLength = 18;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(282, 50);
-            this.materialTextBox1.TabIndex = 97;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
+            this.txtFechaNac.AnimateReadOnly = false;
+            this.txtFechaNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFechaNac.Depth = 0;
+            this.txtFechaNac.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFechaNac.Hint = "Fecha de Nacimiento:";
+            this.txtFechaNac.LeadingIcon = null;
+            this.txtFechaNac.Location = new System.Drawing.Point(576, 61);
+            this.txtFechaNac.MaxLength = 18;
+            this.txtFechaNac.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtFechaNac.Multiline = false;
+            this.txtFechaNac.Name = "txtFechaNac";
+            this.txtFechaNac.Size = new System.Drawing.Size(282, 50);
+            this.txtFechaNac.TabIndex = 97;
+            this.txtFechaNac.Text = "";
+            this.txtFechaNac.TrailingIcon = null;
             // 
-            // materialTextBox2
+            // txtNombre
             // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.Hint = "Nombre del Colaborador: ";
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(52, 61);
-            this.materialTextBox2.MaxLength = 18;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(497, 50);
-            this.materialTextBox2.TabIndex = 96;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
+            this.txtNombre.AnimateReadOnly = false;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombre.Depth = 0;
+            this.txtNombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombre.Hint = "Nombre del Colaborador: ";
+            this.txtNombre.LeadingIcon = null;
+            this.txtNombre.Location = new System.Drawing.Point(52, 61);
+            this.txtNombre.MaxLength = 18;
+            this.txtNombre.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombre.Multiline = false;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(497, 50);
+            this.txtNombre.TabIndex = 96;
+            this.txtNombre.Text = "";
+            this.txtNombre.TrailingIcon = null;
             // 
             // pConsultaGeneral
             // 
@@ -450,6 +469,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(855, 353);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pSeccionesDatos
             // 
@@ -530,24 +550,6 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // materialTextBox10
-            // 
-            this.materialTextBox10.AnimateReadOnly = false;
-            this.materialTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox10.Depth = 0;
-            this.materialTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox10.Hint = "Fecha de ingreso:";
-            this.materialTextBox10.LeadingIcon = null;
-            this.materialTextBox10.Location = new System.Drawing.Point(369, 130);
-            this.materialTextBox10.MaxLength = 18;
-            this.materialTextBox10.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox10.Multiline = false;
-            this.materialTextBox10.Name = "materialTextBox10";
-            this.materialTextBox10.Size = new System.Drawing.Size(489, 50);
-            this.materialTextBox10.TabIndex = 101;
-            this.materialTextBox10.Text = "";
-            this.materialTextBox10.TrailingIcon = null;
-            // 
             // frmConsultarEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -594,24 +596,24 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
+        private MaterialSkin.Controls.MaterialTextBox txtFechaNac;
+        private MaterialSkin.Controls.MaterialTextBox txtNombre;
         private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
+        private MaterialSkin.Controls.MaterialTextBox txtNoNomina;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox8;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox7;
+        private MaterialSkin.Controls.MaterialTextBox txtEstadoCivil;
+        private MaterialSkin.Controls.MaterialTextBox txtSexo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox13;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox14;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox15;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox9;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox6;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox10;
+        private MaterialSkin.Controls.MaterialTextBox txtAntiguedad;
+        private MaterialSkin.Controls.MaterialTextBox txtPuesto;
+        private MaterialSkin.Controls.MaterialTextBox txtTurno;
+        private MaterialSkin.Controls.MaterialTextBox txtTelefono;
+        private MaterialSkin.Controls.MaterialTextBox txtCp;
+        private MaterialSkin.Controls.MaterialTextBox txtDomicilio;
+        private MaterialSkin.Controls.MaterialTextBox txtNss;
+        private MaterialSkin.Controls.MaterialTextBox txtFechaIngreso;
     }
 }
