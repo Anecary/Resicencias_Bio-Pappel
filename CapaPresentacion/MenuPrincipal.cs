@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,20 +20,110 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             customizeDesign();
+            //pInicio.Visible = true;
+            foreach (Control control in this.Controls)
+            {
+                if (control is Button) // Solo los controles que son botones
+                {
+                    Button btn = (Button)control;
+                    btn.MouseEnter += button_MouseOver;
+                    btn.MouseDown += button_MouseDown;
+                    btn.MouseLeave += button_MouseLeave;
+                }
+            }
+
+            panel4.Paint += new PaintEventHandler(panel_Paint);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        //Movimiento del Formulario
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+        private void psuperior_MouseDown(object sender, MouseEventArgs e)
         {
-            
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void frmMenu_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pLogo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
         private void SetInitialView()
         {
             pInicio.Visible = true; 
+        }
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+                activeForm = null; 
+            }
+
+            SetInitialView();
         }
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+        }
+
+        private void btnRestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnRestaurar.Visible = false;
+            btnMaximizar.Visible = true;
+        }
+
+        // Cambiar el color de fondo y de texto cuando el mouse está sobre el botón
+        private void button_MouseOver(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackColor = Color.FromArgb(51, 181, 253);  
+            btn.ForeColor = Color.FromArgb(0, 0, 0);   
+        }
+
+        // Cambiar el color de fondo y de texto cuando el mouse es presionado sobre el botón
+        private void button_MouseDown(object sender, MouseEventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackColor = Color.FromArgb(51, 181, 253);   
+            btn.ForeColor = Color.FromArgb(0, 0, 0);                   
+        }
+
+        // Restablecer los colores cuando el mouse ya no está sobre el botón
+        private void button_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackColor = Color.FromArgb(22, 104, 179);      
+            btn.ForeColor = Color.White;
+        }
+
+
+
+
+
         private Form activeForm = null;
         private void openChildForm(Form childForm)
         {
@@ -76,6 +168,7 @@ namespace CapaPresentacion
                 pSubmenuReportes.Visible = false;
 
         }
+
         private void showSubMenu(Panel subMenu)
         {
             if (subMenu.Visible == false)
@@ -86,16 +179,7 @@ namespace CapaPresentacion
             else
                 subMenu.Visible = false;
         }
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-                activeForm = null; 
-            }
-
-            SetInitialView();
-        }
+        
         private void btnInvAccidente_Click(object sender, EventArgs e)
         {
             showSubMenu(pSubmenuAccidentes);
@@ -172,6 +256,37 @@ namespace CapaPresentacion
             hideSubMenu();
         }
 
+        private void btnCumpliminetoLegal_Click(object sender, EventArgs e)
+        {
+            showSubMenu(pSubmenuCumplimientoLegal);
+        }
 
+ 
+    private void panel_Paint(object sender, PaintEventArgs e)
+    {
+        Panel panel = sender as Panel;
+        if (panel != null)
+        {
+            // Definir el radio de los bordes redondeados
+            int radius = 20;
+
+            // Crear un `GraphicsPath` para el área recortada del panel
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(0, 0, radius * 2, radius * 2, 180, 90);
+            path.AddArc(panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
+            path.AddArc(panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+            path.AddArc(0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
+            path.CloseFigure();
+
+            // Aplicar el área recortada al panel
+            panel.Region = new Region(path);
+
+            // Dibujar el borde con el color deseado
+            Pen pen = new Pen(Color.FromArgb(255, 255, 255), 3); // Cambia el color aquí
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.DrawPath(pen, path);
+        }
     }
+
+}
 }
