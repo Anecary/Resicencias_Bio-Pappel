@@ -56,17 +56,18 @@ namespace CapaPresentacion
             this.btnInvAccidente = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pLogo = new System.Windows.Forms.Panel();
+            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.psuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
+            this.btnRestaurar = new System.Windows.Forms.Button();
+            this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.pContenedor = new System.Windows.Forms.Panel();
             this.pInicio = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnMaximizar = new System.Windows.Forms.Button();
-            this.btnRestaurar = new System.Windows.Forms.Button();
-            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.pMenu.SuspendLayout();
             this.pSubmenuEmpleados.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
@@ -561,6 +562,21 @@ namespace CapaPresentacion
             this.pLogo.TabIndex = 0;
             this.pLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pLogo_MouseDown);
             // 
+            // botonPersonalizado1
+            // 
+            this.botonPersonalizado1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
+            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
+            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
+            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
+            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 34);
+            this.botonPersonalizado1.Name = "botonPersonalizado1";
+            this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
+            this.botonPersonalizado1.TabIndex = 2;
+            this.botonPersonalizado1.UseVisualStyleBackColor = false;
+            // 
             // psuperior
             // 
             this.psuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
@@ -592,6 +608,41 @@ namespace CapaPresentacion
             this.btnMinimizar.UseVisualStyleBackColor = true;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.AutoSize = true;
+            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRestaurar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnRestaurar.FlatAppearance.BorderSize = 0;
+            this.btnRestaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
+            this.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
+            this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
+            this.btnRestaurar.Location = new System.Drawing.Point(812, 0);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(46, 29);
+            this.btnRestaurar.TabIndex = 4;
+            this.btnRestaurar.UseVisualStyleBackColor = true;
+            this.btnRestaurar.Visible = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.AutoSize = true;
+            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximizar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMaximizar.FlatAppearance.BorderSize = 0;
+            this.btnMaximizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
+            this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
+            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(858, 0);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(46, 29);
+            this.btnMaximizar.TabIndex = 3;
+            this.btnMaximizar.UseVisualStyleBackColor = true;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            // 
             // btnCerrar
             // 
             this.btnCerrar.AutoSize = true;
@@ -611,9 +662,11 @@ namespace CapaPresentacion
             // 
             // pContenedor
             // 
+            this.pContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pContenedor.BackColor = System.Drawing.Color.White;
             this.pContenedor.Controls.Add(this.pInicio);
-            this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(250, 29);
             this.pContenedor.Name = "pContenedor";
             this.pContenedor.Size = new System.Drawing.Size(945, 666);
@@ -622,18 +675,29 @@ namespace CapaPresentacion
             // pInicio
             // 
             this.pInicio.Controls.Add(this.pictureBox2);
+            this.pInicio.Controls.Add(this.panel4);
             this.pInicio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pInicio.Location = new System.Drawing.Point(0, 0);
             this.pInicio.Name = "pInicio";
             this.pInicio.Size = new System.Drawing.Size(945, 666);
             this.pInicio.TabIndex = 1;
             // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
+            this.panel4.Location = new System.Drawing.Point(6, 91);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(906, 88);
+            this.panel4.TabIndex = 19;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(312, 149);
+            this.pictureBox2.Location = new System.Drawing.Point(527, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(404, 224);
+            this.pictureBox2.Size = new System.Drawing.Size(412, 82);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -656,56 +720,6 @@ namespace CapaPresentacion
             this.panel2.Size = new System.Drawing.Size(945, 5);
             this.panel2.TabIndex = 4;
             // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.AutoSize = true;
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMaximizar.FlatAppearance.BorderSize = 0;
-            this.btnMaximizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
-            this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
-            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(858, 0);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(46, 29);
-            this.btnMaximizar.TabIndex = 3;
-            this.btnMaximizar.UseVisualStyleBackColor = true;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
-            // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.AutoSize = true;
-            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnRestaurar.FlatAppearance.BorderSize = 0;
-            this.btnRestaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
-            this.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
-            this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(812, 0);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(46, 29);
-            this.btnRestaurar.TabIndex = 4;
-            this.btnRestaurar.UseVisualStyleBackColor = true;
-            this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
-            // 
-            // botonPersonalizado1
-            // 
-            this.botonPersonalizado1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
-            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
-            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
-            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
-            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 34);
-            this.botonPersonalizado1.Name = "botonPersonalizado1";
-            this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
-            this.botonPersonalizado1.TabIndex = 2;
-            this.botonPersonalizado1.UseVisualStyleBackColor = false;
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -717,6 +731,8 @@ namespace CapaPresentacion
             this.Controls.Add(this.psuperior);
             this.Controls.Add(this.pMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1200, 700);
+            this.MinimumSize = new System.Drawing.Size(1200, 700);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmMenu_MouseDown);
@@ -772,6 +788,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnRestaurar;
         private System.Windows.Forms.Button btnMaximizar;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

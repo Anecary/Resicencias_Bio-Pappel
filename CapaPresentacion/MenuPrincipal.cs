@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -19,7 +20,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             customizeDesign();
-
+            //pInicio.Visible = true;
             foreach (Control control in this.Controls)
             {
                 if (control is Button) // Solo los controles que son botones
@@ -30,6 +31,8 @@ namespace CapaPresentacion
                     btn.MouseLeave += button_MouseLeave;
                 }
             }
+
+            panel4.Paint += new PaintEventHandler(panel_Paint);
         }
 
         //Movimiento del Formulario
@@ -258,6 +261,32 @@ namespace CapaPresentacion
             showSubMenu(pSubmenuCumplimientoLegal);
         }
 
+ 
+    private void panel_Paint(object sender, PaintEventArgs e)
+    {
+        Panel panel = sender as Panel;
+        if (panel != null)
+        {
+            // Definir el radio de los bordes redondeados
+            int radius = 20;
 
+            // Crear un `GraphicsPath` para el área recortada del panel
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(0, 0, radius * 2, radius * 2, 180, 90);
+            path.AddArc(panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
+            path.AddArc(panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+            path.AddArc(0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
+            path.CloseFigure();
+
+            // Aplicar el área recortada al panel
+            panel.Region = new Region(path);
+
+            // Dibujar el borde con el color deseado
+            Pen pen = new Pen(Color.FromArgb(255, 255, 255), 3); // Cambia el color aquí
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.DrawPath(pen, path);
+        }
     }
+
+}
 }
