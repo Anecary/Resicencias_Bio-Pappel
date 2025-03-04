@@ -101,5 +101,50 @@ namespace CapaNegocios
 
             return datos;  // Devuelve los datos separados
         }
+
+        public (string nombreCompleto, DateTime fecha_nac, char sexo, string nss, string estado_civil, string domicilio_CP,
+            string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero, string telefono, char turno, DateTime fecha ,string puesto) ConsultaIndivisualActualizar(string numero_nomina)
+        {
+            if (string.IsNullOrWhiteSpace(numero_nomina))
+            {
+                throw new Exception("El numero de nomina no puede estar vacío.");
+            }
+
+            // Llama a la capa de datos para obtener los valores
+            var datos = empleadosDAO.ConsultaIndivisualActualizar(numero_nomina);
+
+            if (string.IsNullOrEmpty(datos.nombreCompleto)) // Si no se encontró un empleado
+            {
+                throw new Exception("No se encontró un empleado con el numero de nomina proporcionado.");
+            }
+
+            return datos;  // Devuelve los datos separados
+        }
+
+        public void actualizarEmpleado(
+            string numero_nomina,
+            DateTime fecha_nueva,
+            string estado_civil,
+            string domicilio_CP,
+            string domicilio_estado,
+            string domicilio_ciudad,
+            string domicilio_colonia,
+            string domicilio_calle,
+            int domicilio_numero,
+            string telefono,
+            char turno,
+            string puesto)
+        {
+            try
+            {
+                empleadosDAO.actualizarEmpleado(numero_nomina, fecha_nueva, estado_civil, domicilio_CP, domicilio_estado, domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero, telefono ,turno, puesto);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error en la capa de negocios: " + ex.Message);
+            }
+        }
+
+
     }
 }

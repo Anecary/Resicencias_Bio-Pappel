@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Pqc.Crypto.Lms;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -209,6 +210,104 @@ namespace CapaDatos
                 {
                     throw new Exception("Error al buscar el empleado: " + ex.Message);
                 }
+            }
+        }
+
+        public (string nombreCompleto, DateTime fecha_nac, char sexo, string nss,string estado_civil, string domicilio_CP, 
+            string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero, string telefono, char turno, DateTime fecha ,string puesto) ConsultaIndivisualActualizar(string numero_nomina)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("ObtenEmple", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("p_numero_nomina", numero_nomina);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read()) // Si hay resultados
+                            {
+                                
+                                string nombreCompleto = reader.GetString("nombre_completo");
+                                DateTime fecha_nac = reader.GetDateTime("Fecha_Nacimiento");
+                                char sexo = reader.GetChar("Sexo");
+                                string nss = reader.GetString("Numero_Seguro");
+                                string estado_civil = reader.GetString("Estado_Civil");
+                                string domicilio_CP = reader.GetString("Codigo_Postal");          
+                                string domicilio_estado = reader.GetString("Estado");
+                                string domicilio_ciudad = reader.GetString("Ciudad");
+                                string domicilio_colonia = reader.GetString("Colonia");
+                                string domicilio_calle = reader.GetString("Calle");
+                                string domicilio_numero = reader.GetInt32("Numero").ToString();
+                                string telefono = reader.GetString("Telefono");
+                                char turno = reader.GetString("Turno")[0];
+                                DateTime fecha = reader.GetDateTime("Fecha");
+                                string puesto = reader.GetString("Puesto");  // Reemplaza si "puesto" puede ser NULL
+                                return (nombreCompleto, fecha_nac, sexo, nss, estado_civil, domicilio_CP, domicilio_estado,domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero ,telefono, turno, fecha,puesto);
+                            }
+                            else
+                            {
+                                throw new Exception("No se encontró un empleado con ese NSS.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al buscar el empleado: " + ex.Message);
+                }
+            }
+
+        }
+
+        public void actualizarEmpleado(
+            string numero_nomina,
+            DateTime fecha_nueva,
+            string estado_civil,
+            string domicilio_CP,
+            string domicilio_estado,
+            string domicilio_ciudad,
+            string domicilio_colonia,
+            string domicilio_calle,
+            int domicilio_numero,
+            string telefono,
+            char turno,
+            string puesto)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("ActuEmple", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("p_numero_nomina", numero_nomina);
+                        command.Parameters.AddWithValue("p_turno", turno);
+                        command.Parameters.AddWithValue("p_nombre_puesto", puesto);
+                        command.Parameters.AddWithValue("p_fecha_ingreso_puesto", fecha_nueva);
+                        command.Parameters.AddWithValue("p_estado_civil", estado_civil);
+                        command.Parameters.AddWithValue("p_domicilio_Calle", domicilio_calle);
+                        command.Parameters.AddWithValue("p_domicilio_Numero", domicilio_numero);
+                        command.Parameters.AddWithValue("p_domicilio_Colonia", domicilio_colonia);
+                        command.Parameters.AddWithValue("p_domicilio_CP", domicilio_CP);
+                        command.Parameters.AddWithValue("p_domicilio_Ciudad", domicilio_ciudad);
+                        command.Parameters.AddWithValue("p_domicilio_Estado", domicilio_estado);
+                        command.Parameters.AddWithValue("p_telefono", telefono);
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al dar de alta al empleado: " + ex.Message);
             }
         }
     }
