@@ -55,5 +55,9 @@ namespace CapaNegocios
                 throw new Exception("Error en la capa de negocios: " + ex.Message);
             }
         }
+        public DataSet ConcultaGeneral2()
+        {
+            return seccionDAO.ConcultaGeneral2();
+        }
     }
 }

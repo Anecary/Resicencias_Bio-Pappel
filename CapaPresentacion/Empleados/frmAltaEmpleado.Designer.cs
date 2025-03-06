@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pDatosLaborales = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtIdPuesto = new MaterialSkin.Controls.MaterialTextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.cmbPuestos = new MaterialSkin.Controls.MaterialComboBox();
@@ -50,7 +51,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtIdPuesto = new MaterialSkin.Controls.MaterialTextBox();
             this.panel1.SuspendLayout();
             this.pDatosLaborales.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -98,6 +98,26 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(916, 193);
             this.panel4.TabIndex = 61;
+            // 
+            // txtIdPuesto
+            // 
+            this.txtIdPuesto.AnimateReadOnly = false;
+            this.txtIdPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdPuesto.Depth = 0;
+            this.txtIdPuesto.Enabled = false;
+            this.txtIdPuesto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdPuesto.Hint = "Numero de Nomina: ";
+            this.txtIdPuesto.LeadingIcon = null;
+            this.txtIdPuesto.Location = new System.Drawing.Point(371, 73);
+            this.txtIdPuesto.MaxLength = 18;
+            this.txtIdPuesto.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtIdPuesto.Multiline = false;
+            this.txtIdPuesto.Name = "txtIdPuesto";
+            this.txtIdPuesto.Size = new System.Drawing.Size(254, 50);
+            this.txtIdPuesto.TabIndex = 61;
+            this.txtIdPuesto.Text = "";
+            this.txtIdPuesto.TrailingIcon = null;
+            this.txtIdPuesto.Visible = false;
             // 
             // dateTimePicker1
             // 
@@ -164,7 +184,7 @@
             "Matutino",
             "Vespertino",
             "Nocturno"});
-            this.cmbTurno.Location = new System.Drawing.Point(62, 117);
+            this.cmbTurno.Location = new System.Drawing.Point(52, 117);
             this.cmbTurno.MaxDropDownItems = 4;
             this.cmbTurno.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbTurno.Name = "cmbTurno";
@@ -182,7 +202,7 @@
             this.txtNoNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNoNomina.Hint = "Numero de Nomina: ";
             this.txtNoNomina.LeadingIcon = null;
-            this.txtNoNomina.Location = new System.Drawing.Point(62, 15);
+            this.txtNoNomina.Location = new System.Drawing.Point(52, 15);
             this.txtNoNomina.MaxLength = 18;
             this.txtNoNomina.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNoNomina.Multiline = false;
@@ -387,25 +407,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
-            // 
-            // txtIdPuesto
-            // 
-            this.txtIdPuesto.AnimateReadOnly = false;
-            this.txtIdPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdPuesto.Depth = 0;
-            this.txtIdPuesto.Enabled = false;
-            this.txtIdPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtIdPuesto.Hint = "Numero de Nomina: ";
-            this.txtIdPuesto.LeadingIcon = null;
-            this.txtIdPuesto.Location = new System.Drawing.Point(371, 73);
-            this.txtIdPuesto.MaxLength = 18;
-            this.txtIdPuesto.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtIdPuesto.Multiline = false;
-            this.txtIdPuesto.Name = "txtIdPuesto";
-            this.txtIdPuesto.Size = new System.Drawing.Size(254, 50);
-            this.txtIdPuesto.TabIndex = 61;
-            this.txtIdPuesto.Text = "";
-            this.txtIdPuesto.TrailingIcon = null;
             // 
             // frmAltaEmpleado
             // 

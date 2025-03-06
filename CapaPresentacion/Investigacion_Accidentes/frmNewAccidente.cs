@@ -3,19 +3,27 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocios;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using Newtonsoft.Json;
 
 namespace CapaPresentacion.Investigacion_Accidentes
 {
     public partial class frmNewAccidente : Form
     {
+
         private MaterialSkinManager materialSkinManager;
         private Panel p = new Panel();
+
+        EmpleadosCN empleadosCN = new EmpleadosCN();
+        AccidentesCN accidentesCN = new AccidentesCN();
+        SeccionesCN seccionesCN = new SeccionesCN();
         public frmNewAccidente()
         {
             InitializeComponent();
@@ -33,7 +41,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             panel4.Paint += new PaintEventHandler(Panel1_Paint);
             panel6.Paint += new PaintEventHandler(Panel1_Paint);
             panel7.Paint += new PaintEventHandler(Panel1_Paint);
-            panel14.Paint += new PaintEventHandler(Panel1_Paint); 
+            panel14.Paint += new PaintEventHandler(Panel1_Paint);
             panel15.Paint += new PaintEventHandler(Panel1_Paint);
             panel26.Paint += new PaintEventHandler(Panel1_Paint);
             panel27.Paint += new PaintEventHandler(Panel1_Paint);
@@ -58,20 +66,21 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 // Definir el radio de los bordes redondeados
                 int radius = 20;
 
-                // Crear un pincel para el borde
-                Pen pen = new Pen(Color.Blue, 3); // Color y grosor del borde
+                // Crear un `GraphicsPath` para el área recortada del panel
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius * 2, radius * 2, 180, 90);
+                path.AddArc(panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
+                path.AddArc(panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+                path.AddArc(0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
+                path.CloseFigure();
 
-                // Dibujar los bordes redondeados
-                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                e.Graphics.DrawArc(pen, 0, 0, radius * 2, radius * 2, 180, 90);
-                e.Graphics.DrawArc(pen, panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
-                e.Graphics.DrawArc(pen, 0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
-                e.Graphics.DrawArc(pen, panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+                // Aplicar el área recortada al panel
+                panel.Region = new Region(path);
 
-                e.Graphics.DrawLine(pen, radius, 0, panel.Width - radius, 0);
-                e.Graphics.DrawLine(pen, radius, panel.Height, panel.Width - radius, panel.Height);
-                e.Graphics.DrawLine(pen, 0, radius, 0, panel.Height - radius);
-                e.Graphics.DrawLine(pen, panel.Width, radius, panel.Width, panel.Height - radius);
+                // Dibujar el borde con el color deseado
+                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                e.Graphics.DrawPath(pen, path);
             }
         }
         private void btnMouseEnter(Object sender, EventArgs e)
@@ -90,7 +99,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
         }
         private void MostrarPanel(Panel panelAMostrar)
         {
-            
+
             pDatosGenerales.Visible = false;
             pDetallesAccidente.Visible = false;
             pFactoresSeguridad.Visible = false;
@@ -124,5 +133,437 @@ namespace CapaPresentacion.Investigacion_Accidentes
         {
             MostrarPanel(pControlAcciones);
         }
+
+        private void frmNewAccidente_Load(object sender, EventArgs e)
+        {
+            //Combo para la seccion A es decir para guardar IdSeccion_A
+            cboxSecciones.SelectedIndexChanged -= cboxSecciones_SelectedIndexChanged;
+            cboxSecciones.DataSource = seccionesCN.ConcultaGeneral2().Tables["Secciones"];
+            cboxSecciones.DisplayMember = "seccion";
+            cboxSecciones.ValueMember = "idseccion";
+            cboxSecciones.SelectedIndexChanged += cboxSecciones_SelectedIndexChanged;
+
+            //Combo para la seccion B es decir para guardar IdSeccion_B
+            cboxSeccionesB.SelectedIndexChanged -= cboxSeccionesB_SelectedIndexChanged;
+            cboxSeccionesB.DataSource = seccionesCN.ConcultaGeneral2().Tables["Secciones"];
+            cboxSeccionesB.DisplayMember = "seccion";
+            cboxSeccionesB.ValueMember = "idseccion";
+            cboxSeccionesB.SelectedIndexChanged += cboxSeccionesB_SelectedIndexChanged;
+
+            cargarRiesgos();
+            cargarActosInseguros();
+            cargarCondicionesInseguras();
+
+        }
+        public void cargarRiesgos()
+        {
+            //Combo para cargar Riesgos
+            cboxRiesgos.SelectedIndexChanged -= cboxRiesgos_SelectedIndexChanged;
+            cboxRiesgos.DataSource = accidentesCN.ConcultaRiesgos().Tables["Riesgos"];
+            cboxRiesgos.DisplayMember = "riesgo";
+            cboxRiesgos.ValueMember = "idriesgo";
+            cboxRiesgos.SelectedIndexChanged += cboxRiesgos_SelectedIndexChanged;
+        }
+        public void cargarActosInseguros()
+        {
+            //Combo para cargar Actos inseguros
+            cboxActoInseguro.SelectedIndexChanged -= cboxActoInseguro_SelectedIndexChanged;
+            cboxActoInseguro.DataSource = accidentesCN.ConcultaActosInseguros().Tables["ActosInseguros"];
+            cboxActoInseguro.DisplayMember = "acto_inseguro";
+            cboxActoInseguro.ValueMember = "idActo_Inseguro";
+            cboxActoInseguro.SelectedIndexChanged += cboxActoInseguro_SelectedIndexChanged;
+        }
+        public void cargarCondicionesInseguras()
+        {
+            //Combo para cargar Condiciones inseguras
+            cboxCondicionesInseguras.SelectedIndexChanged -= cboxCondicionesInseguras_SelectedIndexChanged;
+            cboxCondicionesInseguras.DataSource = accidentesCN.ConcultaCondicionesInseguras().Tables["CondicionesInseguras"];
+            cboxCondicionesInseguras.DisplayMember = "condicion_insegura";
+            cboxCondicionesInseguras.ValueMember = "idCondicion_insegura";
+            cboxCondicionesInseguras.SelectedIndexChanged += cboxCondicionesInseguras_SelectedIndexChanged;
+        }
+
+        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
+        {
+            DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
+            DataRow dr = t.Rows[0];
+
+            txtNombreEmpleado.Text =
+                (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
+                (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
+                (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
+
+            txtIdEmpleado.Text = dr["idEmpleado"].ToString();
+
+            DateTime fechaNacimiento = Convert.ToDateTime(dr["fecha_nacimiento"]);
+            DateTime fechaIngresoAlPuesto = Convert.ToDateTime(dr["fecha_ingreso_puesto"]);
+            DateTime fechaActual = DateTime.Now;
+
+            int edad = fechaActual.Year - fechaNacimiento.Year;
+            int antiguedad = fechaActual.Year - fechaIngresoAlPuesto.Year;
+
+            txtEdad.Text = edad.ToString();
+            txtPuesto.Text = dr["puesto"].ToString();
+            txtAntiguedad.Text = antiguedad.ToString();
+
+            txtNumNominaTestigo.Enabled = true;
+            btnBuscarTestigo.Enabled = true;
+
+        }
+
+        private void btnBuscarTestigo_Click(object sender, EventArgs e)
+        {
+
+            DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaTestigo.Text).Tables["ConsultaEmpleado"];
+            DataRow dr = t.Rows[0];
+
+            txtNombreTestigo.Text =
+                (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
+                (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
+                (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
+            txtIdEmpleadoTestigo.Text = dr["idEmpleado"].ToString();
+
+            btnAgregarTestigo.Enabled = true;
+        }
+
+        private void btnAgregarTestigo_Click(object sender, EventArgs e)
+        {
+            int idtestigo = 0;
+            bool testigoingresado = false;
+            for (int i = 0; i < dgvTestigos.Rows.Count - 1; i++)
+            {
+                idtestigo = Convert.ToInt32(dgvTestigos.Rows[i].Cells["IdEmpleadoTestigo"].Value);
+                if (Convert.ToInt32(txtIdEmpleadoTestigo.Text) == idtestigo)
+                {
+                    testigoingresado = true;
+                    MessageBox.Show("Este testigo ya ha sido registrado");
+                    break;
+                }
+            }
+            if (!testigoingresado)
+            {
+                dgvTestigos.Rows.Add(txtNumNominaTestigo.Text, txtNombreTestigo.Text, txtIdEmpleadoTestigo.Text);
+            }
+            txtIdEmpleadoTestigo.Text = "";
+            txtNombreTestigo.Text = "";
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            //Datos Generales
+            int noAccidente = Convert.ToInt32(txtNoAccidente.Text);
+            string condicion = txtCondicion.Text;
+            DateTime fechaRegistro = dtpFechaRegistro.Value;
+            int idEmpleado = 1;
+            int idPuesto = 1;
+            Boolean tiempoExtra = false;
+            tiempoExtra = rbtnHrsExtrasSi.Checked ? true : false;
+            string totalHrsExtras = txtTotalhrs.Text;
+            DateTime DiaDescansoPrevio = dtpDiaDescanso.Value;
+            string parteCuerpoAfectada = txtParteCuerpoAfectada.Text;
+            string trabajoDesempeñado = txtTrabajoDesempeñado.Text;
+            string tipoLesion = txtTipoLesion.Text;
+            string testigosJson = ConvertirTestigosAJson(dgvTestigos);
+
+            //Detalle Accidente
+            Boolean lesion30Dias = false;
+            lesion30Dias = rbtnlesion30DiasSi.Checked ? true : false;
+            Boolean lesion12Meses = false;
+            lesion12Meses = rbtnlesion12MesesSi.Checked ? true : false;
+            string proceso = cboxProceso.Text;
+            int idSeccionA = Convert.ToInt32(cboxSecciones.SelectedValue);
+            string lugarAccidente = txtLugarAccidente.Text;
+            string causanteLesion = txtObjCausanteLesion.Text;
+            string equipoProteccionUsado = txtEquipoProteccionUsado.Text;
+            string equipoProteccionNecesario = txtEquipoProteccionNecesario.Text;
+            string causaAccidente = cboxCausasAccidente.Text;
+            string descripcionAccidente = txtDescripcionAccidente.Text;
+            Boolean realizoTrabajoAntes = false;
+            realizoTrabajoAntes = rbtnRealizoTrabajoAntesSi.Checked ? true : false;
+            Boolean trabajoHabitual = false;
+            trabajoHabitual = rbtnTrabajoHabitualSi.Checked ? true : false;
+            Boolean trabajoProgramado = false;
+            trabajoProgramado = rbtnTrabajoProgramadoSi.Checked ? true : false;
+            Boolean trabajoNecesario = false;
+            trabajoNecesario = rbtnTrabajoNeccesarioSi.Checked ? true : false;
+            Boolean trabajoUrgente = false;
+            trabajoUrgente = rbtnTrabajoUrgenteSi.Checked ? true : false;
+            Boolean danosMateriales = false;
+            danosMateriales = rbtnDanosMaterialesSi.Checked ? true : false;
+            string equipoDanado = txtEquipoDanado.Text;
+            string sustituiblePor = txtSustituiblePor.Text;
+            int idSeccionB = Convert.ToInt32(cboxSeccionesB.SelectedValue);
+
+
+            //Factores de Seguridad
+            Boolean existenITRs = false;
+            existenITRs = rbtnExistenItrsSi.Checked ? true : false;
+            Boolean equipoAdecuado = false;
+            equipoAdecuado = rbtnEquipoAdecuadoSi.Checked ? true : false;
+            Boolean conociaTrabajo = false;
+            conociaTrabajo = rbtnConociaTrabajoSi.Checked ? true : false;
+            Boolean existiaSupervicion = false;
+            existiaSupervicion = rbtnExistiaSupervicionSi.Checked ? true : false;
+            string riesgosJson = ConvertirRiesgosAJson(dgvRiesgos);
+            //MessageBox.Show(riesgosJson);
+            string actosInsegurosJson = ConvertirActosInsegurosAJson(dgvActoInseguro);
+            //MessageBox.Show(actosInsegurosJson);
+            string condicionesInsegurasJson = ConvertirCondicionesInsegurasAJson(dgvCondicionInsegura);
+            //MessageBox.Show(condicionesInsegurasJson);
+
+
+            //int registr = accidentesCN.InsertarAccidentePrueba(noAccidente, condicion, fechaRegistro, testigosJson);
+
+            int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion,
+                lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
+                existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
+                idEmpleado, idPuesto, testigosJson);
+
+            if (registro == 0)
+            {
+                MessageBox.Show("No se insertó ningún registro. Verifica los datos.");
+            }
+
+        }
+
+        public string ConvertirTestigosAJson(DataGridView dgvTestigos)
+        {
+            List<Dictionary<string, object>> testigosList = new List<Dictionary<string, object>>();
+
+            for (int i = 0; i < dgvTestigos.Rows.Count; i++)
+            {
+                if (dgvTestigos.Rows[i].Cells["IdEmpleadoTestigo"].Value != null)
+                {
+                    Dictionary<string, object> testigo = new Dictionary<string, object>
+            {
+                { "IdTestigo", Convert.ToInt32(dgvTestigos.Rows[i].Cells["IdEmpleadoTestigo"].Value) }
+            };
+                    testigosList.Add(testigo);
+                }
+            }
+
+            return JsonConvert.SerializeObject(testigosList);  // Convertir la lista a JSON
+        }
+        public string ConvertirRiesgosAJson(DataGridView dgvRiesgos)
+        {
+            List<Dictionary<string, object>> riesgosList = new List<Dictionary<string, object>>();
+
+            for (int i = 0; i < dgvRiesgos.Rows.Count; i++)
+            {
+                if (dgvRiesgos.Rows[i].Cells["idRiesgo"].Value != null)
+                {
+                    Dictionary<string, object> testigo = new Dictionary<string, object>
+            {
+                { "IdRiesgo", Convert.ToInt32(dgvRiesgos.Rows[i].Cells["idRiesgo"].Value) }
+            };
+                    riesgosList.Add(testigo);
+                }
+            }
+
+            return JsonConvert.SerializeObject(riesgosList);  // Convertir la lista a JSON
+        }
+        public string ConvertirActosInsegurosAJson(DataGridView dgvActoInseguro)
+        {
+            List<Dictionary<string, object>> actosInsegurosList = new List<Dictionary<string, object>>();
+
+            for (int i = 0; i < dgvActoInseguro.Rows.Count; i++)
+            {
+                if (dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value != null)
+                {
+                    Dictionary<string, object> testigo = new Dictionary<string, object>
+                    {
+                        { "IdActoInseguro", Convert.ToInt32(dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value) }
+                    };
+                    actosInsegurosList.Add(testigo);
+                }
+            }
+
+            return JsonConvert.SerializeObject(actosInsegurosList);  // Convertir la lista a JSON
+        }
+        public string ConvertirCondicionesInsegurasAJson(DataGridView dgvCondicionesInseguras)
+        {
+            List<Dictionary<string, object>> condicionesInsegurasList = new List<Dictionary<string, object>>();
+
+            for (int i = 0; i < dgvCondicionesInseguras.Rows.Count; i++)
+            {
+                if (dgvCondicionesInseguras.Rows[i].Cells["idCondicionInsegura"].Value != null)
+                {
+                    Dictionary<string, object> testigo = new Dictionary<string, object>
+                    {
+                        { "IdCondicionesInseguras", Convert.ToInt32(dgvCondicionesInseguras.Rows[i].Cells["idCondicionInsegura"].Value) }
+                    };
+                    condicionesInsegurasList.Add(testigo);
+                }
+            }
+
+            return JsonConvert.SerializeObject(condicionesInsegurasList);  // Convertir la lista a JSON
+        }
+        private void cboxSecciones_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idSeccionA = Convert.ToInt32(cboxSecciones.SelectedValue);
+            MessageBox.Show(idSeccionA.ToString());
+        }
+
+        private void cboxSeccionesB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboxProceso_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboxRiesgos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboxRiesgos.Text == "Otro")
+            {
+                txtOtroRiesgo.Visible = true;
+                btnGrabarRiesgo.Visible = true;
+                btnAgregarRiesgo.Visible = false;
+            }
+            if (cboxRiesgos.Text != "Otro")
+            {
+                txtOtroRiesgo.Visible = false;
+                txtOtroRiesgo.Text = "";
+                btnGrabarRiesgo.Visible = false;
+                btnAgregarRiesgo.Visible = true;
+            }
+        }
+
+        private void cboxActoInseguro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboxActoInseguro.Text == "Otro")
+            {
+                txtOtroActoInseguro.Visible = true;
+                btnGrabarActoInseguro.Visible = true;
+                btnAgregarActoInseguro.Visible = false;
+            }
+            if (cboxActoInseguro.Text != "Otro")
+            {
+                txtOtroActoInseguro.Visible = false;
+                txtOtroActoInseguro.Text = "";
+                btnGrabarActoInseguro.Visible = false;
+                btnAgregarActoInseguro.Visible = true;
+            }
+        }
+
+        private void cboxCondicionesInseguras_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboxCondicionesInseguras.Text == "Otra")
+            {
+                txtOtraCondicion.Visible = true;
+                btnAgregarCondicion.Visible = false;
+                btnGrabarCondicionInsegura.Visible = true;
+            }
+            if (cboxCondicionesInseguras.Text != "Otra")
+            {
+                txtOtraCondicion.Visible = false;
+                txtOtraCondicion.Text = "";
+                btnGrabarCondicionInsegura.Visible = false;
+                btnAgregarCondicion.Visible = true;
+            }
+        }
+
+        private void btnGrabarRiesgo_Click(object sender, EventArgs e)
+        {
+            accidentesCN.InsertaNuevoRiesgo(txtOtroRiesgo.Text);
+
+            txtOtroRiesgo.Text = "";
+            txtOtroRiesgo.Visible = false;
+
+            btnAgregarRiesgo.Visible = true;
+            btnGrabarRiesgo.Visible = false;
+
+            cargarRiesgos();
+        }
+
+        private void btnAgregarRiesgo_Click(object sender, EventArgs e)
+        {
+            int idriesgo = 0;
+            bool riesgoIngresado = false;
+            for (int i = 0; i < dgvRiesgos.Rows.Count - 1; i++)
+            {
+                idriesgo = Convert.ToInt32(dgvRiesgos.Rows[i].Cells["idRiesgo"].Value);
+                if (Convert.ToInt32(cboxRiesgos.SelectedValue) == idriesgo)
+                {
+                    riesgoIngresado = true;
+                    MessageBox.Show("Este riesgo ya ha sido registrado");
+                    break;
+                }
+            }
+            if (!riesgoIngresado)
+            {
+                dgvRiesgos.Rows.Add(cboxRiesgos.SelectedValue, cboxRiesgos.Text);
+            }
+
+        }
+
+        private void btnAgregarActoInseguro_Click(object sender, EventArgs e)
+        {
+            int idActoInseguro = 0;
+            bool actoInseguroIngresado = false;
+            for (int i = 0; i < dgvActoInseguro.Rows.Count - 1; i++)
+            {
+                idActoInseguro = Convert.ToInt32(dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value);
+                if (Convert.ToInt32(cboxActoInseguro.SelectedValue) == idActoInseguro)
+                {
+                    actoInseguroIngresado = true;
+                    MessageBox.Show("Este Acto inseguro ya ha sido Ingresado");
+                    break;
+                }
+            }
+            if (!actoInseguroIngresado)
+            {
+                dgvActoInseguro.Rows.Add(cboxActoInseguro.SelectedValue, cboxActoInseguro.Text);
+            }
+        }
+
+        private void btnGrabarActoInseguro_Click(object sender, EventArgs e)
+        {
+            accidentesCN.InsertaNuevoActoInseguro(txtOtroActoInseguro.Text);
+
+            txtOtroActoInseguro.Text = "";
+            txtOtroActoInseguro.Visible = false;
+
+            btnAgregarActoInseguro.Visible = true;
+            btnGrabar.Visible = false;
+
+            cargarActosInseguros();
+        }
+
+        private void btnAgregarCondicion_Click(object sender, EventArgs e)
+        {
+            int idCondicionInsegura = 0;
+            bool condicionInseguraIngresada = false;
+            for (int i = 0; i < dgvCondicionInsegura.Rows.Count - 1; i++)
+            {
+                idCondicionInsegura = Convert.ToInt32(dgvCondicionInsegura.Rows[i].Cells["idCondicionInsegura"].Value);
+                if (Convert.ToInt32(cboxCondicionesInseguras.SelectedValue) == idCondicionInsegura)
+                {
+                    condicionInseguraIngresada = true;
+                    MessageBox.Show("Esta Condición insegura ya ha sido Ingresada");
+                    break;
+                }
+            }
+            if (!condicionInseguraIngresada)
+            {
+                dgvCondicionInsegura.Rows.Add(cboxCondicionesInseguras.SelectedValue, cboxCondicionesInseguras.Text);
+            }
+        }
+
+        private void btnGrabarCondicionInsegura_Click(object sender, EventArgs e)
+        {
+            accidentesCN.InsertaNuevaCondicionInsegura(txtOtraCondicion.Text);
+
+            txtOtraCondicion.Text = "";
+            txtOtraCondicion.Visible = false;
+
+            btnAgregarCondicion.Visible = true;
+            btnGrabarCondicionInsegura.Visible = false;
+
+            cargarCondicionesInseguras();
+        }
+
     }
 }

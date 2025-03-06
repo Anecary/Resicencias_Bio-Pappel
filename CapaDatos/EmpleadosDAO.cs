@@ -13,7 +13,10 @@ namespace CapaDatos
     public class EmpleadosDAO
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["Conection"].ConnectionString;
-
+        private conexion objconexion = new conexion();
+        private MySqlConnection conn;   
+        private MySqlDataAdapter adapter;
+        private MySqlCommand command;
         public void InsertarEmpleado(
             string nombre, string apellidoPaterno, string apellidoMaterno, DateTime fechaNacimiento,
             char sexo, string estadoCivil, string nss, string rfc, string domicilioCalle,
@@ -310,5 +313,24 @@ namespace CapaDatos
                 throw new Exception("Error al dar de alta al empleado: " + ex.Message);
             }
         }
+
+        public DataSet consultaEmpleadoNumNomina(string numNomina)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objconexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerEmpleadoPorNumNomina", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_numNomina = new MySqlParameter("@num_Nomina", MySqlDbType.VarChar);
+                p_numNomina.Direction = ParameterDirection.Input;
+                p_numNomina.Value = numNomina;
+                adapter.SelectCommand.Parameters.Add(p_numNomina);
+
+                adapter.Fill(data, "ConsultaEmpleado");
+                return data;
+            }
+        }
+
     }
 }

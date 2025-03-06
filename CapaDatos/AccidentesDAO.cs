@@ -1,0 +1,151 @@
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static Mysqlx.Expect.Open.Types;
+
+namespace CapaDatos
+{
+    public class AccidentesDAO
+    {
+        private conexion objConexion = new conexion();
+        private MySqlConnection conn;
+        private MySqlDataAdapter adapter;
+        private MySqlCommand comando;
+
+        public int InsertarAccidente(int noAccidente, string condicion, DateTime fechaRegistro, Boolean tiempoExtra, string totalHrsExtras, DateTime DiaDescansoPrevio, string parteCuerpoAfectada, string trabajoDesempeñado, string tipoLesion,
+           Boolean lesion30Dias, Boolean lesion12Meses, string proceso, int idSeccionA, string lugarAccidente, string causanteLesion, string equipoProteccionUsado, string equipoProteccionNecesario, string causaAccidente, string descripcionAccidente, Boolean realizoTrabajoAntes, Boolean trabajoHabitual, Boolean trabajoProgramado, Boolean trabajoNecesario, Boolean trabajoUrgente, Boolean danosMateriales, string equipoDanado, string sustituiblePor, int idSeccionB,
+           Boolean existenITRs, Boolean equipoAdecuado, Boolean conociaTrabajo, Boolean existiaSupervicion, string riesgosJson, string actosInsegurosJson, string condicionesInsegurasJson,
+           int idEmpleado, int idPuesto, string testigosJson)
+        {
+            try
+            {
+                conn = objConexion.Conecta();
+                MySqlCommand cmd = new MySqlCommand("InsertarInvestigacionAccidente", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                //Insercion de Datos Generales
+                cmd.Parameters.AddWithValue("@p_NoAccidente", noAccidente);
+                cmd.Parameters.AddWithValue("@p_Condicion", condicion);
+                cmd.Parameters.AddWithValue("@p_FechaRegistro", fechaRegistro);
+                cmd.Parameters.AddWithValue("@p_idEmpleado", idEmpleado);
+                cmd.Parameters.AddWithValue("@p_TiempoExtra", tiempoExtra);
+                cmd.Parameters.AddWithValue("@p_TotalHrsExtras", totalHrsExtras);
+                cmd.Parameters.AddWithValue("@p_idPuesto", idPuesto);
+                cmd.Parameters.AddWithValue("@p_DiaDescansoPrevio", DiaDescansoPrevio);
+                cmd.Parameters.AddWithValue("@p_ParteCuerpoAfectada", parteCuerpoAfectada);
+                cmd.Parameters.AddWithValue("@p_TrabajoDesempeñado", trabajoDesempeñado);
+                cmd.Parameters.AddWithValue("@p_TipoLesion", tipoLesion);
+                
+                //Insercion de Detalles Accidente 
+                cmd.Parameters.AddWithValue("@p_accidentes_previos_30_dias", lesion30Dias);
+                cmd.Parameters.AddWithValue("@p_accidentes_previos_12_meses", lesion12Meses);
+                cmd.Parameters.AddWithValue("@p_proceso", proceso);
+                cmd.Parameters.AddWithValue("@p_idSeccionA", idSeccionA);
+                cmd.Parameters.AddWithValue("@p_lugar_accidente", lugarAccidente);
+                cmd.Parameters.AddWithValue("@p_causa_Lesion", causanteLesion);
+                cmd.Parameters.AddWithValue("@p_equipo_Proteccion_usado", equipoProteccionUsado);
+                cmd.Parameters.AddWithValue("@p_equipo_Proteccion_Necesario", equipoProteccionNecesario);
+                cmd.Parameters.AddWithValue("@p_equipo_Proteccion_Necesario", causaAccidente);
+                cmd.Parameters.AddWithValue("@p_equipo_Proteccion_Necesario", descripcionAccidente);
+                cmd.Parameters.AddWithValue("@p_trabajo_Realizado_Antes", realizoTrabajoAntes);
+                cmd.Parameters.AddWithValue("@p_trabajo_Habitual", trabajoHabitual);
+                cmd.Parameters.AddWithValue("@p_trabajo_Programado", trabajoProgramado);
+                cmd.Parameters.AddWithValue("@p_trabajo_Necesario", trabajoNecesario);
+                cmd.Parameters.AddWithValue("@p_trabajo_Urgente", trabajoUrgente);
+                cmd.Parameters.AddWithValue("@p_danosMateriales", danosMateriales);
+                cmd.Parameters.AddWithValue("@p_pieza_equipo_danada", equipoDanado);
+                cmd.Parameters.AddWithValue("@p_sustituiblePor", sustituiblePor);
+                cmd.Parameters.AddWithValue("@p_idSeccionB", idSeccionB);
+
+                //Factores de Seguridad
+                cmd.Parameters.AddWithValue("@p_idSeccionB", idSeccionB);
+
+
+                cmd.Parameters.AddWithValue("@p_TestigosJson", testigosJson);
+
+                conn.Open();
+                int filasAfectadas = cmd.ExecuteNonQuery();
+
+                return filasAfectadas;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return -1;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public DataSet ConcultaRiesgos()
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("call ObtenerRiesgos", conn);
+                adapter.Fill(data, "Riesgos");
+                return data;
+            }
+        }
+        public DataSet ConcultaActosInseguros()
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("call ObtenerActosInseguros", conn);
+                adapter.Fill(data, "ActosInseguros");
+                return data;
+            }
+        }
+        public DataSet ConcultaCondicionesInseguras()
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("call ObtenerCondicionesInseguras", conn);
+                adapter.Fill(data, "CondicionesInseguras");
+                return data;
+            }
+        }
+        public int InsertaNuevoRiesgo(string nuevoRiesgo)
+        {
+            using(conn = objConexion.Conecta())
+            {
+                conn.Open();
+                comando = new MySqlCommand("InsertarRiesgo", conn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@p_riesgo", nuevoRiesgo);
+
+                return comando.ExecuteNonQuery();
+            }
+        }
+        public int InsertaNuevoActoInseguro(string nuevoActoInseguro)
+        {
+            using (conn = objConexion.Conecta())
+            {
+                conn.Open();
+                comando = new MySqlCommand("InsertarActoInseguro", conn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@p_acto_inseguro", nuevoActoInseguro);
+
+                return comando.ExecuteNonQuery();
+            }
+        }
+        public int InsertaNuevaCondicionInsegura(string nuevaCondicionInsegura)
+        {
+            using (conn = objConexion.Conecta())
+            {
+                conn.Open();
+                comando = new MySqlCommand("InsertarCondicionInsegura", conn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddWithValue("@p_condicion_insegura", nuevaCondicionInsegura);
+
+                return comando.ExecuteNonQuery();
+            }
+        }
+    }
+}

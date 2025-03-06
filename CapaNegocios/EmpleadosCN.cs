@@ -146,5 +146,10 @@ namespace CapaNegocios
         }
 
 
+        public DataSet ConsultaEmpleadoNumNomina(string numNomina)
+        {
+            return empleadosDAO.consultaEmpleadoNumNomina(numNomina);
+        }
+
     }
 }

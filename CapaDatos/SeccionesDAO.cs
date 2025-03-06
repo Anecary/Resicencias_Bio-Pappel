@@ -13,7 +13,9 @@ namespace CapaDatos
     public class SeccionesDAO
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["Conection"].ConnectionString;
-
+        private conexion objConexion = new conexion();
+        private MySqlConnection conn;
+        private MySqlDataAdapter adapter;
         public int ObtenerUltimoIdInsertado(string nombreTabla, string nombreColumnaId)
         {
             int ultimoId = 0;
@@ -106,6 +108,16 @@ namespace CapaDatos
                 {
                     throw new Exception("Error al insertar la seccion: " + ex.Message);
                 }
+            }
+        }
+        public DataSet ConcultaGeneral2()
+        {
+            using(DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("call ObtenerSecciones",conn);
+                adapter.Fill(data, "Secciones");
+                return data;
             }
         }
     }

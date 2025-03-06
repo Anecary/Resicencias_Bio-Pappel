@@ -1,0 +1,52 @@
+﻿using CapaDatos;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CapaNegocios
+{
+    public class AccidentesCN
+    {
+        AccidentesDAO accidentesDAO = new AccidentesDAO();
+        public int InsertarAccidente(int noAccidente, string condicion, DateTime fechaRegistro, Boolean tiempoExtra, string totalHrsExtras, DateTime DiaDescansoPrevio, string parteCuerpoAfectada, string trabajoDesempeñado, string tipoLesion, 
+            Boolean lesion30Dias, Boolean lesion12Meses, string proceso, int idSeccionA, string lugarAccidente, string causanteLesion, string equipoProteccionUsado, string equipoProteccionNecesario, string causaAccidente, string descripcionAccidente, Boolean realizoTrabajoAntes, Boolean trabajoHabitual, Boolean trabajoProgramado, Boolean trabajoNecesario, Boolean trabajoUrgente, Boolean danosMateriales, string equipoDanado, string sustituiblePor, int idSeccionB,
+            Boolean existenITRs, Boolean equipoAdecuado, Boolean conociaTrabajo, Boolean existiaSupervicion, string riesgosJson, string actosInsegurosJson, string condicionesInsegurasJson,
+            int idEmpleado, int idPuesto,  string testigosJson)
+        {
+            return accidentesDAO.InsertarAccidente(noAccidente, condicion, fechaRegistro, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion,
+                lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
+                existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
+                idEmpleado, idPuesto, testigosJson);
+        }
+
+        public DataSet ConcultaRiesgos()
+        {
+            return accidentesDAO.ConcultaRiesgos();
+        }
+
+        public DataSet ConcultaActosInseguros()
+        { 
+            return accidentesDAO.ConcultaActosInseguros();
+        }
+
+        public DataSet ConcultaCondicionesInseguras()
+        {
+            return accidentesDAO.ConcultaCondicionesInseguras();
+        }
+        public int InsertaNuevoRiesgo(string nuevoRiesgo)
+        {
+            return accidentesDAO.InsertaNuevoRiesgo(nuevoRiesgo);
+        }
+        public int InsertaNuevoActoInseguro(string nuevoActoInseguro)
+        {
+            return accidentesDAO.InsertaNuevoActoInseguro(nuevoActoInseguro);
+        }
+        public int InsertaNuevaCondicionInsegura(string nuevaCondicionInsegura)
+        {
+            return accidentesDAO.InsertaNuevaCondicionInsegura(nuevaCondicionInsegura);
+        }
+    }
+}

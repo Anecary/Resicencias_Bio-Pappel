@@ -89,8 +89,8 @@
             // 
             // paContenedor
             // 
-            this.paContenedor.Controls.Add(this.pConsultaIndividual);
             this.paContenedor.Controls.Add(this.pConsultaGeneral);
+            this.paContenedor.Controls.Add(this.pConsultaIndividual);
             this.paContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paContenedor.Location = new System.Drawing.Point(0, 145);
             this.paContenedor.Name = "paContenedor";
@@ -138,6 +138,7 @@
             this.txtFechaIngreso.AnimateReadOnly = false;
             this.txtFechaIngreso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFechaIngreso.Depth = 0;
+            this.txtFechaIngreso.Enabled = false;
             this.txtFechaIngreso.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFechaIngreso.Hint = "Fecha de ingreso:";
             this.txtFechaIngreso.LeadingIcon = null;
@@ -167,6 +168,7 @@
             this.txtAntiguedad.AnimateReadOnly = false;
             this.txtAntiguedad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAntiguedad.Depth = 0;
+            this.txtAntiguedad.Enabled = false;
             this.txtAntiguedad.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtAntiguedad.Hint = "Antigüedad:";
             this.txtAntiguedad.LeadingIcon = null;
@@ -185,6 +187,7 @@
             this.txtPuesto.AnimateReadOnly = false;
             this.txtPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPuesto.Depth = 0;
+            this.txtPuesto.Enabled = false;
             this.txtPuesto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPuesto.Hint = "Puesto Actual:";
             this.txtPuesto.LeadingIcon = null;
@@ -203,6 +206,7 @@
             this.txtTurno.AnimateReadOnly = false;
             this.txtTurno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTurno.Depth = 0;
+            this.txtTurno.Enabled = false;
             this.txtTurno.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTurno.Hint = "Turno:";
             this.txtTurno.LeadingIcon = null;
@@ -292,6 +296,7 @@
             this.txtTelefono.AnimateReadOnly = false;
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefono.Depth = 0;
+            this.txtTelefono.Enabled = false;
             this.txtTelefono.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTelefono.Hint = "Teléfono:";
             this.txtTelefono.LeadingIcon = null;
@@ -310,6 +315,7 @@
             this.txtCp.AnimateReadOnly = false;
             this.txtCp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCp.Depth = 0;
+            this.txtCp.Enabled = false;
             this.txtCp.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCp.Hint = "Código Postal:";
             this.txtCp.LeadingIcon = null;
@@ -328,6 +334,7 @@
             this.txtDomicilio.AnimateReadOnly = false;
             this.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDomicilio.Depth = 0;
+            this.txtDomicilio.Enabled = false;
             this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtDomicilio.Hint = "Domicilio:";
             this.txtDomicilio.LeadingIcon = null;
@@ -346,6 +353,7 @@
             this.txtNss.AnimateReadOnly = false;
             this.txtNss.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNss.Depth = 0;
+            this.txtNss.Enabled = false;
             this.txtNss.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNss.Hint = "Número de Seguro:";
             this.txtNss.LeadingIcon = null;
@@ -375,6 +383,7 @@
             this.txtEstadoCivil.AnimateReadOnly = false;
             this.txtEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEstadoCivil.Depth = 0;
+            this.txtEstadoCivil.Enabled = false;
             this.txtEstadoCivil.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEstadoCivil.Hint = "Estado Civil:";
             this.txtEstadoCivil.LeadingIcon = null;
@@ -393,6 +402,7 @@
             this.txtSexo.AnimateReadOnly = false;
             this.txtSexo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSexo.Depth = 0;
+            this.txtSexo.Enabled = false;
             this.txtSexo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtSexo.Hint = "Sexo:";
             this.txtSexo.LeadingIcon = null;
@@ -411,6 +421,7 @@
             this.txtFechaNac.AnimateReadOnly = false;
             this.txtFechaNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFechaNac.Depth = 0;
+            this.txtFechaNac.Enabled = false;
             this.txtFechaNac.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFechaNac.Hint = "Fecha de Nacimiento:";
             this.txtFechaNac.LeadingIcon = null;
@@ -429,6 +440,7 @@
             this.txtNombre.AnimateReadOnly = false;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Depth = 0;
+            this.txtNombre.Enabled = false;
             this.txtNombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombre.Hint = "Nombre del Colaborador: ";
             this.txtNombre.LeadingIcon = null;
@@ -465,6 +477,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.Location = new System.Drawing.Point(28, 64);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(855, 353);
