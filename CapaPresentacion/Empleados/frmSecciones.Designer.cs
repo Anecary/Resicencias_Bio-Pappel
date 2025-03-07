@@ -177,6 +177,7 @@ namespace CapaPresentacion.Empleados
             this.txtSeccion.TabIndex = 90;
             this.txtSeccion.Text = "";
             this.txtSeccion.TrailingIcon = null;
+            this.txtSeccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSeccion_KeyPress);
             // 
             // materialButton1
             // 
@@ -205,7 +206,7 @@ namespace CapaPresentacion.Empleados
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 224);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;

@@ -110,5 +110,13 @@ namespace CapaPresentacion.Empleados
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtSeccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Bloquear la entrada del número
+            }
+        }
     }
 }

@@ -58,10 +58,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label1.Location = new System.Drawing.Point(699, 45);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(466, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 69);
+            this.label1.Size = new System.Drawing.Size(165, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Puestos";
             // 
@@ -74,29 +73,26 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1401, 972);
+            this.panel1.Size = new System.Drawing.Size(934, 632);
             this.panel1.TabIndex = 4;
             // 
             // pContenedor
             // 
             this.pContenedor.Controls.Add(this.pPuestos);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pContenedor.Location = new System.Drawing.Point(0, 154);
-            this.pContenedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pContenedor.Location = new System.Drawing.Point(0, 100);
             this.pContenedor.Name = "pContenedor";
-            this.pContenedor.Size = new System.Drawing.Size(1393, 810);
+            this.pContenedor.Size = new System.Drawing.Size(929, 527);
             this.pContenedor.TabIndex = 8;
             // 
             // pPuestos
             // 
             this.pPuestos.AutoScroll = true;
             this.pPuestos.Controls.Add(this.materialCard1);
-            this.pPuestos.Location = new System.Drawing.Point(0, 2);
-            this.pPuestos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pPuestos.Location = new System.Drawing.Point(0, 1);
             this.pPuestos.Name = "pPuestos";
-            this.pPuestos.Size = new System.Drawing.Size(1394, 809);
+            this.pPuestos.Size = new System.Drawing.Size(929, 526);
             this.pPuestos.TabIndex = 34;
             this.pPuestos.Paint += new System.Windows.Forms.PaintEventHandler(this.pPuestos_Paint);
             // 
@@ -111,12 +107,12 @@
             this.materialCard1.Controls.Add(this.txtNoNomina);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(48, 43);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(15, 17, 15, 17);
+            this.materialCard1.Location = new System.Drawing.Point(32, 28);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(10, 11, 10, 11);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(15, 17, 15, 17);
-            this.materialCard1.Size = new System.Drawing.Size(1293, 726);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.materialCard1.Size = new System.Drawing.Size(862, 472);
             this.materialCard1.TabIndex = 0;
             // 
             // materialButton3
@@ -128,12 +124,12 @@
             this.materialButton3.Enabled = false;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton3.Icon")));
-            this.materialButton3.Location = new System.Drawing.Point(807, 617);
-            this.materialButton3.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.materialButton3.Location = new System.Drawing.Point(538, 401);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
             this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton3.Size = new System.Drawing.Size(183, 77);
+            this.materialButton3.Size = new System.Drawing.Size(122, 50);
             this.materialButton3.TabIndex = 94;
             this.materialButton3.Text = "Guardar";
             this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -149,12 +145,12 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton2.Icon")));
-            this.materialButton2.Location = new System.Drawing.Point(375, 617);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.materialButton2.Location = new System.Drawing.Point(250, 401);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
             this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(183, 77);
+            this.materialButton2.Size = new System.Drawing.Size(122, 50);
             this.materialButton2.TabIndex = 93;
             this.materialButton2.Text = "Nuevo";
             this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -170,12 +166,12 @@
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
-            this.materialButton1.Location = new System.Drawing.Point(453, 31);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
+            this.materialButton1.Location = new System.Drawing.Point(302, 20);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(183, 77);
+            this.materialButton1.Size = new System.Drawing.Size(122, 50);
             this.materialButton1.TabIndex = 91;
             this.materialButton1.Text = "Buscar";
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -191,16 +187,16 @@
             this.txtPuesto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPuesto.Hint = "Puesto:";
             this.txtPuesto.LeadingIcon = null;
-            this.txtPuesto.Location = new System.Drawing.Point(20, 169);
-            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPuesto.Location = new System.Drawing.Point(13, 110);
             this.txtPuesto.MaxLength = 30;
             this.txtPuesto.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPuesto.Multiline = false;
             this.txtPuesto.Name = "txtPuesto";
-            this.txtPuesto.Size = new System.Drawing.Size(398, 50);
+            this.txtPuesto.Size = new System.Drawing.Size(265, 50);
             this.txtPuesto.TabIndex = 92;
             this.txtPuesto.Text = "";
             this.txtPuesto.TrailingIcon = null;
+            this.txtPuesto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPuesto_KeyPress);
             // 
             // dataGridView1
             // 
@@ -208,12 +204,13 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 332);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 216);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1256, 212);
+            this.dataGridView1.Size = new System.Drawing.Size(837, 138);
             this.dataGridView1.TabIndex = 90;
             // 
             // txtNoNomina
@@ -225,13 +222,12 @@
             this.txtNoNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNoNomina.Hint = "Id. Puesto:";
             this.txtNoNomina.LeadingIcon = null;
-            this.txtNoNomina.Location = new System.Drawing.Point(20, 46);
-            this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNoNomina.Location = new System.Drawing.Point(13, 30);
             this.txtNoNomina.MaxLength = 18;
             this.txtNoNomina.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNoNomina.Multiline = false;
             this.txtNoNomina.Name = "txtNoNomina";
-            this.txtNoNomina.Size = new System.Drawing.Size(398, 50);
+            this.txtNoNomina.Size = new System.Drawing.Size(265, 50);
             this.txtNoNomina.TabIndex = 89;
             this.txtNoNomina.Text = "";
             this.txtNoNomina.TrailingIcon = null;
@@ -242,9 +238,8 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1393, 154);
+            this.panel2.Size = new System.Drawing.Size(929, 100);
             this.panel2.TabIndex = 4;
             // 
             // pictureBox2
@@ -252,9 +247,8 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(380, 154);
+            this.pictureBox2.Size = new System.Drawing.Size(253, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -263,30 +257,27 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 964);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel5.Location = new System.Drawing.Point(0, 627);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1393, 8);
+            this.panel5.Size = new System.Drawing.Size(929, 5);
             this.panel5.TabIndex = 7;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1393, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(929, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(8, 972);
+            this.panel3.Size = new System.Drawing.Size(5, 632);
             this.panel3.TabIndex = 6;
             // 
             // frmPuestos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1401, 972);
+            this.ClientSize = new System.Drawing.Size(934, 632);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmPuestos";
             this.Load += new System.EventHandler(this.frmPuestos_Load);
             this.panel1.ResumeLayout(false);

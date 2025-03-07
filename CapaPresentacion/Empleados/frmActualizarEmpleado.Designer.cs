@@ -33,6 +33,7 @@
             this.pConsultaIndividual = new System.Windows.Forms.Panel();
             this.btnActualizar = new MaterialSkin.Controls.MaterialButton();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cmbTurno = new MaterialSkin.Controls.MaterialComboBox();
             this.cmbPuesto = new MaterialSkin.Controls.MaterialComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,7 +59,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btmCancelar = new MaterialSkin.Controls.MaterialButton();
             this.pContenedorAct.SuspendLayout();
             this.pConsultaIndividual.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -83,6 +84,7 @@
             // pConsultaIndividual
             // 
             this.pConsultaIndividual.AutoScroll = true;
+            this.pConsultaIndividual.Controls.Add(this.btmCancelar);
             this.pConsultaIndividual.Controls.Add(this.btnActualizar);
             this.pConsultaIndividual.Controls.Add(this.panel4);
             this.pConsultaIndividual.Controls.Add(this.panel3);
@@ -126,6 +128,13 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(883, 146);
             this.panel4.TabIndex = 104;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(369, 27);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 114;
             // 
             // cmbTurno
             // 
@@ -556,12 +565,27 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // dateTimePicker1
+            // btmCancelar
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(369, 27);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 114;
+            this.btmCancelar.AutoSize = false;
+            this.btmCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btmCancelar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btmCancelar.Depth = 0;
+            this.btmCancelar.Enabled = false;
+            this.btmCancelar.HighEmphasis = true;
+            this.btmCancelar.Icon = ((System.Drawing.Image)(resources.GetObject("btmCancelar.Icon")));
+            this.btmCancelar.Location = new System.Drawing.Point(426, 664);
+            this.btmCancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btmCancelar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btmCancelar.Name = "btmCancelar";
+            this.btmCancelar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btmCancelar.Size = new System.Drawing.Size(140, 50);
+            this.btmCancelar.TabIndex = 106;
+            this.btmCancelar.Text = "Cancelar";
+            this.btmCancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btmCancelar.UseAccentColor = true;
+            this.btmCancelar.UseVisualStyleBackColor = true;
+            this.btmCancelar.Click += new System.EventHandler(this.btmCancelar_Click);
             // 
             // frmActualizarEmpleado
             // 
@@ -618,5 +642,6 @@
         private MaterialSkin.Controls.MaterialComboBox cmbTurno;
         private MaterialSkin.Controls.MaterialButton btnActualizar;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private MaterialSkin.Controls.MaterialButton btmCancelar;
     }
 }

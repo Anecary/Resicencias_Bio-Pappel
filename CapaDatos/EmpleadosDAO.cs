@@ -166,6 +166,73 @@ namespace CapaDatos
             return dataTable;
 
         }
+
+        public DataTable consultaGeneralInactivos()
+        {
+            DataTable dataTable = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    // Crea un comando para ejecutar el procedimiento almacenado
+                    using (MySqlCommand command = new MySqlCommand("ConsulGeInactivos", connection))
+                    {
+                        // Indica que es un procedimiento almacenado
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        // Crea un adaptador para llenar el DataTable
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                        {
+                            // Llena el DataTable con los resultados del procedimiento
+                            adapter.Fill(dataTable);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al ejecutar el procedimiento almacenado: " + ex.Message);
+                }
+            }
+
+            return dataTable;
+        }
+
+        public DataTable consultaGeneralActivos()
+        {
+            DataTable dataTable = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    // Crea un comando para ejecutar el procedimiento almacenado
+                    using (MySqlCommand command = new MySqlCommand("ConsulGeActivos", connection))
+                    {
+                        // Indica que es un procedimiento almacenado
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        // Crea un adaptador para llenar el DataTable
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                        {
+                            // Llena el DataTable con los resultados del procedimiento
+                            adapter.Fill(dataTable);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al ejecutar el procedimiento almacenado: " + ex.Message);
+                }
+            }
+
+            return dataTable;
+        }
+
         public (string nombreCompleto, DateTime fecha_nac , char sexo , string nss , string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa) ConsultaIndivisual(string numero_nomina)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -302,6 +369,7 @@ namespace CapaDatos
                         command.Parameters.AddWithValue("p_telefono", telefono);
 
                         command.ExecuteNonQuery();
+                        Console.WriteLine("Hola como estas?");
                     }
                 }
             }
