@@ -64,8 +64,8 @@ namespace CapaPresentacion
             this.btnCerrar = new System.Windows.Forms.Button();
             this.pContenedor = new System.Windows.Forms.Panel();
             this.pInicio = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pMenu.SuspendLayout();
@@ -682,16 +682,6 @@ namespace CapaPresentacion
             this.pInicio.Size = new System.Drawing.Size(945, 666);
             this.pInicio.TabIndex = 1;
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
-            this.panel4.Location = new System.Drawing.Point(6, 91);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(906, 88);
-            this.panel4.TabIndex = 19;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -701,6 +691,16 @@ namespace CapaPresentacion
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
+            this.panel4.Location = new System.Drawing.Point(6, 91);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(906, 88);
+            this.panel4.TabIndex = 19;
             // 
             // panel1
             // 

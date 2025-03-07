@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Navigation;
 using CapaNegocios;
+using CapaPresentacion.Restaurar_Y_Respaldar;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using Newtonsoft.Json;
@@ -55,6 +56,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             panel31.Paint += new PaintEventHandler(Panel1_Paint);
             panel32.Paint += new PaintEventHandler(Panel1_Paint);
             panel33.Paint += new PaintEventHandler(Panel1_Paint);
+            panel34.Paint += new PaintEventHandler(Panel1_Paint);
 
             pDatosGenerales.Visible = true;
             pDetallesAccidente.Visible = false;
@@ -182,67 +184,145 @@ namespace CapaPresentacion.Investigacion_Accidentes
         }
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
         {
-            DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
-            DataRow dr = t.Rows[0];
+            if (!string.IsNullOrWhiteSpace(txtNumeroNomina.Text))
+            {
+                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
 
-            txtNombreEmpleado.Text =
-                (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
-                (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
-                (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
+                if (t.Rows.Count > 0) 
+                {
+                    DataRow dr = t.Rows[0];
 
-            txtIdEmpleado.Text = dr["idEmpleado"].ToString();
+                    txtNombreEmpleado.Text =
+                        (dr["nombre"] as string ?? "") + " " +
+                        (dr["apellido_paterno"] as string ?? "") + " " +
+                        (dr["apellido_materno"] as string ?? "");
 
-            DateTime fechaNacimiento = Convert.ToDateTime(dr["fecha_nacimiento"]);
-            DateTime fechaIngresoAlPuesto = Convert.ToDateTime(dr["fecha_ingreso_puesto"]);
-            DateTime fechaActual = DateTime.Now;
+                    txtIdEmpleado.Text = dr["idEmpleado"].ToString();
 
-            int edad = fechaActual.Year - fechaNacimiento.Year;
-            int antiguedad = fechaActual.Year - fechaIngresoAlPuesto.Year;
+                    DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
+                    DateTime fechaIngresoAlPuesto = dr["fecha_ingreso_puesto"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_ingreso_puesto"]) : DateTime.MinValue;
+                    DateTime fechaActual = DateTime.Now;
 
-            txtEdad.Text = edad.ToString();
-            txtPuesto.Text = dr["puesto"].ToString();
-            txtAntiguedad.Text = antiguedad.ToString();
+                    int edad = 0;
+                    edad = fechaNacimiento != DateTime.MinValue
+                        ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(edad) ? 1 : 0)
+                        : 0;
 
-            txtNumNominaTestigo.Enabled = true;
-            btnBuscarTestigo.Enabled = true;
+                    // Calcular antigüedad correctamente
+                    //int antiguedad = 0;
+                    //antiguedad = fechaIngresoAlPuesto != DateTime.MinValue
+                    //    ? fechaActual.Year - fechaIngresoAlPuesto.Year - (fechaActual < fechaIngresoAlPuesto.AddYears(antiguedad) ? 1 : 0)
+                    //    : 0;
+
+
+                    int antiguedadAnios = 0;
+                    int antiguedadMeses = 0;
+
+                    if (fechaIngresoAlPuesto != DateTime.MinValue)
+                    {
+                        DateTime fechaIngreso = fechaIngresoAlPuesto;
+                        antiguedadAnios = fechaActual.Year - fechaIngreso.Year;
+                        if (fechaActual < fechaIngreso.AddYears(antiguedadAnios))
+                        {
+                            antiguedadAnios--;
+                        }
+                        antiguedadMeses = fechaActual.Month - fechaIngreso.Month;
+
+                        if (antiguedadMeses < 0)
+                        {
+                            antiguedadMeses += 12;
+                        }
+                    }
+                    string antiguedad = $"{antiguedadAnios} años {antiguedadMeses} meses";
+                    txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
+                    txtPuesto.Text = dr["puesto"] as string ?? "N/A";
+                    //txtAntiguedad.Text = antiguedad > 0 ? antiguedad.ToString() : "N/A";
+                    txtAntiguedad.Text = (antiguedadAnios > 0 || antiguedadMeses > 0) ? $"{antiguedadAnios} año(s) {antiguedadMeses} mes(es)" : "N/A";
+                    txtNumNominaTestigo.Enabled = true;
+                    btnBuscarTestigo.Enabled = true;
+                }
+                else
+                {
+                    MostrarNotificacion("Alerta", "Número de nómina no encontrado", Color.FromArgb(255, 152, 0), 3);
+                    txtNumeroNomina.Focus();
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                txtNumeroNomina.Focus();
+            }
+
+
 
         }
-
         private void btnBuscarTestigo_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrWhiteSpace(txtNumNominaTestigo.Text))
+            {
+                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaTestigo.Text).Tables["ConsultaEmpleado"];
 
-            DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaTestigo.Text).Tables["ConsultaEmpleado"];
-            DataRow dr = t.Rows[0];
+                if (t.Rows.Count > 0)
+                {
+                    DataRow dr = t.Rows[0];
 
-            txtNombreTestigo.Text =
-                (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
-                (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
-                (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
-            txtIdEmpleadoTestigo.Text = dr["idEmpleado"].ToString();
+                    txtNombreTestigo.Text =
+                        (dr["nombre"] as string ?? "") + " " +
+                        (dr["apellido_paterno"] as string ?? "") + " " +
+                        (dr["apellido_materno"] as string ?? "");
 
-            btnAgregarTestigo.Enabled = true;
+                    txtIdEmpleadoTestigo.Text = dr["idEmpleado"].ToString();
+                    btnAgregarTestigo.Enabled = true; 
+                }
+                else
+                {
+                    MostrarNotificacion("Alerta", "No se encontró un empleado con ese número de nómina", Color.FromArgb(255, 152, 0), 3);
+                    txtNombreTestigo.Clear();
+                    txtIdEmpleadoTestigo.Clear();
+                    btnAgregarTestigo.Enabled = false;
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Número de Nómina del Testigo' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                txtNumNominaTestigo.Focus();
+            }
+
         }
 
         private void btnAgregarTestigo_Click(object sender, EventArgs e)
         {
-            int idtestigo = 0;
-            bool testigoingresado = false;
-            for (int i = 0; i < dgvTestigos.Rows.Count - 1; i++)
+            if (!string.IsNullOrWhiteSpace(txtIdEmpleadoTestigo.Text) && !string.IsNullOrWhiteSpace(txtNombreTestigo.Text))
             {
-                idtestigo = Convert.ToInt32(dgvTestigos.Rows[i].Cells["IdEmpleadoTestigo"].Value);
-                if (Convert.ToInt32(txtIdEmpleadoTestigo.Text) == idtestigo)
+                int idtestigo = Convert.ToInt32(txtIdEmpleadoTestigo.Text);
+                bool testigoingresado = false;
+
+                for (int i = 0; i < dgvTestigos.Rows.Count; i++)
                 {
-                    testigoingresado = true;
-                    MessageBox.Show("Este testigo ya ha sido registrado");
-                    break;
+                    int idEmpleadoTestigo = Convert.ToInt32(dgvTestigos.Rows[i].Cells["IdEmpleadoTestigo"].Value);
+
+                    if (idtestigo == idEmpleadoTestigo)
+                    {
+                        testigoingresado = true;
+                        MostrarNotificacion("Alerta", "Este testigo ya ha sido registrado", Color.FromArgb(255, 152, 0), 3);
+                        break; 
+                    }
+                }
+
+                if (!testigoingresado)
+                {
+                    dgvTestigos.Rows.Add(txtNumNominaTestigo.Text, txtNombreTestigo.Text, txtIdEmpleadoTestigo.Text);
+
+                    txtIdEmpleadoTestigo.Text = "";
+                    txtNumNominaTestigo.Text = "";
+                    txtNombreTestigo.Text = "";
                 }
             }
-            if (!testigoingresado)
+            else
             {
-                dgvTestigos.Rows.Add(txtNumNominaTestigo.Text, txtNombreTestigo.Text, txtIdEmpleadoTestigo.Text);
+                MostrarNotificacion("Alerta", "Por favor, busque un testigo antes de agregarlo", Color.FromArgb(255, 152, 0), 3);
             }
-            txtIdEmpleadoTestigo.Text = "";
-            txtNombreTestigo.Text = "";
+
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
@@ -251,7 +331,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             int noAccidente = Convert.ToInt32(txtNoAccidente.Text);
             string condicion = txtCondicion.Text;
             DateTime fechaRegistro = dtpFechaRegistro.Value;
-            int idEmpleado = 1;
+            int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
             int idPuesto = 1;
             Boolean tiempoExtra = false;
             tiempoExtra = rbtnHrsExtrasSi.Checked ? true : false;
@@ -260,6 +340,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string parteCuerpoAfectada = txtParteCuerpoAfectada.Text;
             string trabajoDesempeñado = txtTrabajoDesempeñado.Text;
             string tipoLesion = txtTipoLesion.Text;
+            DateTime fecha_hora_Accidente = dtpFechaAccidente.Value.Date + dtpHoraAccidente.Value.TimeOfDay;
             string testigosJson = ConvertirTestigosAJson(dgvTestigos);
 
             //Detalle Accidente
@@ -322,18 +403,34 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string tratamiento = txtTratamiento.Text;
             string incapacidad = txtIncapacidad.Text;
 
+            //Control de Acciones
+            string accionesCorrectivasPropuestas = txtAccionesCorrectivasProp.Text;
+            string quienCorrectivasPropuesta = txtAccionesCorrectivasProp.Text;
+            string cuandoCorrectivasPropuestas = txtAccionesCorrectivasProp.Text;
+            string accionesPreventivasPropuestas = txtAccionesPreventivasProp.Text;
+            string quienPreventivoPropuesto = txtQuienPreventivas.Text;
+            string cuandoPreventivasPropuestas = txtCuandoPreventivas.Text;
+            string seguimiento = txtSeguimiento.Text;
+            DateTime fecha_Hora_Seguimiento = dtpFechaSeguimiento.Value.Date + dtpHoraSeguimiento.Value.TimeOfDay;
+            int empleadoSeguimiento = Convert.ToInt32(txtidNombreSST.Text);
+            DateTime fecha_Hora_recepcion = dtpFechaRecepcion.Value.Date + dtpHoraRecepcion.Value.TimeOfDay;
+            
 
-            //int registr = accidentesCN.InsertarAccidentePrueba(noAccidente, condicion, fechaRegistro, testigosJson);
 
-            int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion,
+            int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
                 lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
                 existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
                 empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
+                accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas,seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
                 idEmpleado, idPuesto, testigosJson);
 
-            if (registro == 0)
+            if (registro > 0)
             {
-                MessageBox.Show("No se insertó ningún registro. Verifica los datos.");
+                MessageBox.Show("No se pudo insertar el registro.");
+            }
+            else
+            {                
+                MessageBox.Show("Inserción exitosa. Se agregó el registro correctamente.");
             }
 
         }
@@ -512,174 +609,324 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
         private void btnGrabarRiesgo_Click(object sender, EventArgs e)
         {
-            accidentesCN.InsertaNuevoRiesgo(txtOtroRiesgo.Text);
 
-            txtOtroRiesgo.Text = "";
-            txtOtroRiesgo.Visible = false;
+            if (!string.IsNullOrWhiteSpace(txtOtroRiesgo.Text))
+            {
+                bool riesgoExistente = accidentesCN.VerificarRiesgoExiste(txtOtroRiesgo.Text);
 
-            btnAgregarRiesgo.Visible = true;
-            btnGrabarRiesgo.Visible = false;
+                if (riesgoExistente)
+                {
+                    MostrarNotificacion("Alerta", "Este riesgo ya está registrado", Color.FromArgb(255, 152, 0), 3);
+                }
+                else
+                {
+                    accidentesCN.InsertaNuevoRiesgo(txtOtroRiesgo.Text);
 
-            cargarRiesgos();
+                    txtOtroRiesgo.Text = "";
+                    txtOtroRiesgo.Visible = false;
+
+                    btnAgregarRiesgo.Visible = true;
+                    btnGrabarRiesgo.Visible = false;
+
+                    cargarRiesgos();
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Otro Riesgo' está vacío, por favor ingrese un riesgo", Color.FromArgb(255, 152, 0), 3);
+            }
+
+
         }
 
         private void btnAgregarRiesgo_Click(object sender, EventArgs e)
         {
-            int idriesgo = 0;
-            bool riesgoIngresado = false;
-            for (int i = 0; i < dgvRiesgos.Rows.Count - 1; i++)
+
+            if (cboxRiesgos.SelectedValue != null && !string.IsNullOrWhiteSpace(cboxRiesgos.SelectedValue.ToString()))
             {
-                idriesgo = Convert.ToInt32(dgvRiesgos.Rows[i].Cells["idRiesgo"].Value);
-                if (Convert.ToInt32(cboxRiesgos.SelectedValue) == idriesgo)
+                int idriesgoSeleccionado = Convert.ToInt32(cboxRiesgos.SelectedValue);
+                bool riesgoIngresado = false;
+                int idriesgo = 0;
+
+                for (int i = 0; i < dgvRiesgos.Rows.Count; i++)
                 {
-                    riesgoIngresado = true;
-                    MessageBox.Show("Este riesgo ya ha sido registrado");
-                    break;
+                    idriesgo = Convert.ToInt32(dgvRiesgos.Rows[i].Cells["idRiesgo"].Value);
+                    if (idriesgo == idriesgoSeleccionado)
+                    {
+                        riesgoIngresado = true;
+                        MostrarNotificacion("Alerta", "Este riesgo ya ha sido registrado", Color.FromArgb(255, 152, 0), 3);
+                        break;
+                    }
+                }
+
+                if (!riesgoIngresado)
+                {
+                    dgvRiesgos.Rows.Add(cboxRiesgos.SelectedValue, cboxRiesgos.Text);
                 }
             }
-            if (!riesgoIngresado)
+            else
             {
-                dgvRiesgos.Rows.Add(cboxRiesgos.SelectedValue, cboxRiesgos.Text);
+                MostrarNotificacion("Alerta", "Por favor, seleccione un riesgo válido", Color.FromArgb(255, 152, 0), 3);
             }
+
+
 
         }
 
         private void btnAgregarActoInseguro_Click(object sender, EventArgs e)
         {
-            int idActoInseguro = 0;
-            bool actoInseguroIngresado = false;
-            for (int i = 0; i < dgvActoInseguro.Rows.Count - 1; i++)
+            if (cboxActoInseguro.SelectedValue != null && !string.IsNullOrWhiteSpace(cboxActoInseguro.SelectedValue.ToString()))
             {
-                idActoInseguro = Convert.ToInt32(dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value);
-                if (Convert.ToInt32(cboxActoInseguro.SelectedValue) == idActoInseguro)
+                int idActoInseguroSeleccionado = Convert.ToInt32(cboxActoInseguro.SelectedValue);
+                bool actoInseguroIngresado = false;
+                int idActoInseguro = 0;
+
+                for (int i = 0; i < dgvActoInseguro.Rows.Count - 1; i++)
                 {
-                    actoInseguroIngresado = true;
-                    MessageBox.Show("Este Acto inseguro ya ha sido Ingresado");
-                    break;
+                    idActoInseguro = Convert.ToInt32(dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value);
+                    if (idActoInseguro == idActoInseguroSeleccionado)
+                    {
+                        actoInseguroIngresado = true;
+                        MostrarNotificacion("Alerta", "Este Acto Inseguro ya ha sido Ingresado", Color.FromArgb(255, 152, 0), 3);
+                        break;
+                    }
+                }
+                if (!actoInseguroIngresado)
+                {
+                    dgvActoInseguro.Rows.Add(cboxActoInseguro.SelectedValue, cboxActoInseguro.Text);
                 }
             }
-            if (!actoInseguroIngresado)
+            else
             {
-                dgvActoInseguro.Rows.Add(cboxActoInseguro.SelectedValue, cboxActoInseguro.Text);
+                MostrarNotificacion("Alerta", "Por favor, seleccione un Acto Inseguro válido", Color.FromArgb(255, 152, 0), 3);
             }
+
         }
 
         private void btnGrabarActoInseguro_Click(object sender, EventArgs e)
         {
-            accidentesCN.InsertaNuevoActoInseguro(txtOtroActoInseguro.Text);
+            if (!string.IsNullOrWhiteSpace(txtOtroActoInseguro.Text))
+            {
+                bool actoInseguroExistente = accidentesCN.VerificarActoInseguroExiste(txtOtroActoInseguro.Text);
 
-            txtOtroActoInseguro.Text = "";
-            txtOtroActoInseguro.Visible = false;
+                if (actoInseguroExistente)
+                {
+                    MostrarNotificacion("Alerta", "Este acto inseguro ya está registrado", Color.FromArgb(255, 152, 0), 3);
+                }
+                else
+                {
+                    accidentesCN.InsertaNuevoActoInseguro(txtOtroActoInseguro.Text);
 
-            btnAgregarActoInseguro.Visible = true;
-            btnGrabar.Visible = false;
+                    txtOtroActoInseguro.Text = "";
+                    txtOtroActoInseguro.Visible = false;
 
-            cargarActosInseguros();
+                    btnAgregarActoInseguro.Visible = true;
+                    btnGrabar.Visible = false;
+
+                    cargarActosInseguros();
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Otro Acto Inseguro' está vacío, por favor ingrese un acto inseguro", Color.FromArgb(255, 152, 0), 3);
+            }
+
         }
 
         private void btnAgregarCondicion_Click(object sender, EventArgs e)
         {
-            int idCondicionInsegura = 0;
-            bool condicionInseguraIngresada = false;
-            for (int i = 0; i < dgvCondicionInsegura.Rows.Count - 1; i++)
+            if (cboxCondicionesInseguras.SelectedValue != null && !string.IsNullOrWhiteSpace(cboxCondicionesInseguras.SelectedValue.ToString()))
             {
-                idCondicionInsegura = Convert.ToInt32(dgvCondicionInsegura.Rows[i].Cells["idCondicionInsegura"].Value);
-                if (Convert.ToInt32(cboxCondicionesInseguras.SelectedValue) == idCondicionInsegura)
+                int idCondicionInseguraSeleccionada = Convert.ToInt32(cboxCondicionesInseguras.SelectedValue);
+                bool condicionInseguraIngresada = false;
+                int idCondicionInsegura = 0;
+
+                for (int i = 0; i < dgvCondicionInsegura.Rows.Count - 1; i++)
                 {
-                    condicionInseguraIngresada = true;
-                    MessageBox.Show("Esta Condición insegura ya ha sido Ingresada");
-                    break;
+                    idCondicionInsegura = Convert.ToInt32(dgvCondicionInsegura.Rows[i].Cells["idCondicionInsegura"].Value);
+                    if (idCondicionInsegura == idCondicionInseguraSeleccionada)
+                    {
+                        condicionInseguraIngresada = true;
+                        MostrarNotificacion("Alerta", "Esta Condición Insegura ya ha sido Ingresada", Color.FromArgb(255, 152, 0), 3);
+                        break; 
+                    }
+                }
+
+                if (!condicionInseguraIngresada)
+                {
+                    dgvCondicionInsegura.Rows.Add(cboxCondicionesInseguras.SelectedValue, cboxCondicionesInseguras.Text);
                 }
             }
-            if (!condicionInseguraIngresada)
+            else
             {
-                dgvCondicionInsegura.Rows.Add(cboxCondicionesInseguras.SelectedValue, cboxCondicionesInseguras.Text);
+                MostrarNotificacion("Alerta", "Por favor, seleccione una Condición Insegura válida", Color.FromArgb(255, 152, 0), 3);
             }
+
         }
 
         private void btnGrabarCondicionInsegura_Click(object sender, EventArgs e)
         {
-            accidentesCN.InsertaNuevaCondicionInsegura(txtOtraCondicion.Text);
+            if (!string.IsNullOrWhiteSpace(txtOtraCondicion.Text))
+            {
+                bool condicionInseguraExistente = accidentesCN.VerificarCondicionInseguraExiste(txtOtraCondicion.Text);
 
-            txtOtraCondicion.Text = "";
-            txtOtraCondicion.Visible = false;
+                if (condicionInseguraExistente)
+                {
+                    MostrarNotificacion("Alerta", "Esta condición insegura ya está registrada", Color.FromArgb(255, 152, 0), 3);
+                }
+                else
+                {
+                    accidentesCN.InsertaNuevaCondicionInsegura(txtOtraCondicion.Text);
 
-            btnAgregarCondicion.Visible = true;
-            btnGrabarCondicionInsegura.Visible = false;
+                    txtOtraCondicion.Text = "";
+                    txtOtraCondicion.Visible = false;
 
-            cargarCondicionesInseguras();
+                    btnAgregarCondicion.Visible = true;
+                    btnGrabarCondicionInsegura.Visible = false;
+
+                    cargarCondicionesInseguras();
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Otra Condición Insegura' está vacío, por favor ingrese una condición", Color.FromArgb(255, 152, 0), 3);
+            }
+
         }
 
         private void btnBuscarEmpleadoConocimiento_Click(object sender, EventArgs e)
         {
-            DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaEmpleadoConocimiento.Text).Tables["ConsultaEmpleado"];
-            DataRow dr = t.Rows[0];
+            if (!string.IsNullOrWhiteSpace(txtNumNominaEmpleadoConocimiento.Text))
+            {
+                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaEmpleadoConocimiento.Text).Tables["ConsultaEmpleado"];
 
-            txtNombreEmpleadoConocimiento.Text =
-                (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
-                (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
-                (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
+                if (t.Rows.Count > 0)
+                {
+                    DataRow dr = t.Rows[0];
 
-            txtIdEmpleadoConocimiento.Text = dr["idEmpleado"].ToString();
+                    txtNombreEmpleadoConocimiento.Text =
+                        (dr["nombre"] as string ?? "") + " " +
+                        (dr["apellido_paterno"] as string ?? "") + " " +
+                        (dr["apellido_materno"] as string ?? "");
+
+                    txtIdEmpleadoConocimiento.Text = dr["idEmpleado"] != DBNull.Value ? dr["idEmpleado"].ToString() : "N/A";
+
+                    btnAgregarEmpleadoConocimiento.Enabled = true;
+                }
+                else
+                {
+                    MostrarNotificacion("Alerta", "No se encontró un empleado con ese número de nómina", Color.FromArgb(255, 152, 0), 3);
+                    txtNombreEmpleadoConocimiento.Clear();
+                    txtIdEmpleadoConocimiento.Clear();
+                    btnAgregarEmpleadoConocimiento.Enabled = false;
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                txtNumNominaEmpleadoConocimiento.Focus();
+            }
+
         }
 
         private void btnAgregarEmpleadoConocimiento_Click(object sender, EventArgs e)
         {
-            int idEmpleadoConocimiento = 0;
-            bool testigoingresado = false;
-            for (int i = 0; i < dgvEmpleadosConocimiento.Rows.Count - 1; i++)
+            if (!string.IsNullOrWhiteSpace(txtIdEmpleadoConocimiento.Text) && !string.IsNullOrWhiteSpace(txtNombreEmpleadoConocimiento.Text))
             {
-                idEmpleadoConocimiento = Convert.ToInt32(dgvEmpleadosConocimiento.Rows[i].Cells["idEmpleadoConocimiento"].Value);
-                if (Convert.ToInt32(txtIdEmpleadoConocimiento.Text) == idEmpleadoConocimiento)
+                int idEmpleadoConocimiento = Convert.ToInt32(txtIdEmpleadoConocimiento.Text);
+                bool testigoIngresado = false;
+
+                for (int i = 0; i < dgvEmpleadosConocimiento.Rows.Count; i++)
                 {
-                    testigoingresado = true;
-                    MessageBox.Show("Este testigo ya ha sido registrado");
-                    break;
+                    int idEnDataGrid = Convert.ToInt32(dgvEmpleadosConocimiento.Rows[i].Cells["idEmpleadoConocimiento"].Value);
+                    if (idEmpleadoConocimiento == idEnDataGrid)
+                    {
+                        testigoIngresado = true;
+                        MostrarNotificacion("Alerta", "Este empleado que tomo conocimiento ya ha sido registrado", Color.FromArgb(255, 152, 0), 3);
+                        break;
+                    }
+                }
+
+                if (!testigoIngresado)
+                {
+                    dgvEmpleadosConocimiento.Rows.Add(txtNumNominaEmpleadoConocimiento.Text, txtNombreEmpleadoConocimiento.Text, txtIdEmpleadoConocimiento.Text);
+
+                    txtIdEmpleadoConocimiento.Text = "";
+                    txtNombreEmpleadoConocimiento.Text = "";
+                    txtNumNominaEmpleadoConocimiento.Text = "";
                 }
             }
-            if (!testigoingresado)
+            else
             {
-                dgvEmpleadosConocimiento.Rows.Add(txtNumNominaEmpleadoConocimiento.Text, txtNombreEmpleadoConocimiento.Text, txtIdEmpleadoConocimiento.Text);
+                MostrarNotificacion("Alerta", "Por favor, busque un empleado antes de agregarlo", Color.FromArgb(255, 152, 0), 3);
             }
-            txtIdEmpleadoConocimiento.Text = "";
-            txtNombreEmpleadoConocimiento.Text = "";
-            txtNumNominaEmpleadoConocimiento.Text = "";
+
         }
 
         private void btnBuscarEmpleadoInvolucrado_Click(object sender, EventArgs e)
         {
-            DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaEmpleadoInvolucrado.Text).Tables["ConsultaEmpleado"];
-            DataRow dr = t.Rows[0];
+            if (!string.IsNullOrWhiteSpace(txtNumNominaEmpleadoInvolucrado.Text))
+            {
+                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaEmpleadoInvolucrado.Text).Tables["ConsultaEmpleado"];
 
-            txtNombreEmpleadoInvolucrado.Text =
-                (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
-                (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
-                (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
+                if (t.Rows.Count > 0)
+                {
+                    DataRow dr = t.Rows[0];
 
-            txtIdEmpleadoInvolucrado.Text = dr["idEmpleado"].ToString();
+                    txtNombreEmpleadoInvolucrado.Text =
+                        (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
+                        (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
+                        (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
+
+                    txtIdEmpleadoInvolucrado.Text = dr["idEmpleado"] != DBNull.Value ? dr["idEmpleado"].ToString() : "N/A";
+                }
+                else
+                {
+                    MostrarNotificacion("Alerta", "No se encontró un empleado con ese número de nómina", Color.FromArgb(255, 152, 0), 3);
+                    txtNombreEmpleadoInvolucrado.Clear();
+                    txtIdEmpleadoInvolucrado.Clear();
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                txtNumNominaEmpleadoInvolucrado.Focus();
+            }
+
         }
 
         private void btnAgregarEmpleadoInvolucrado_Click(object sender, EventArgs e)
         {
-            int idEmpleadoInvolucrado = 0;
-            bool testigoingresado = false;
-            for (int i = 0; i < dgvEmpleadosInvolucrados.Rows.Count - 1; i++)
+            if (!string.IsNullOrWhiteSpace(txtIdEmpleadoInvolucrado.Text) && !string.IsNullOrWhiteSpace(txtNombreEmpleadoInvolucrado.Text))
             {
-                idEmpleadoInvolucrado = Convert.ToInt32(dgvEmpleadosInvolucrados.Rows[i].Cells["IdEmpleadoInvolucrado"].Value);
-                if (Convert.ToInt32(txtIdEmpleadoInvolucrado.Text) == idEmpleadoInvolucrado)
+                int idEmpleadoInvolucrado = Convert.ToInt32(txtIdEmpleadoInvolucrado.Text);
+                bool testigoIngresado = false;
+
+                for (int i = 0; i < dgvEmpleadosInvolucrados.Rows.Count; i++)
                 {
-                    testigoingresado = true;
-                    MessageBox.Show("Este testigo ya ha sido registrado");
-                    break;
+                    int idEnDataGrid = Convert.ToInt32(dgvEmpleadosInvolucrados.Rows[i].Cells["IdEmpleadoInvolucrado"].Value);
+                    if (idEmpleadoInvolucrado == idEnDataGrid)
+                    {
+                        testigoIngresado = true;
+                        MostrarNotificacion("Alerta", "Este empleado ya ha sido registrado como involucrado", Color.FromArgb(255, 152, 0), 3);
+                        break;
+                    }
+                }
+
+                if (!testigoIngresado)
+                {
+                    dgvEmpleadosInvolucrados.Rows.Add(txtNumNominaEmpleadoInvolucrado.Text, txtNombreEmpleadoInvolucrado.Text, txtIdEmpleadoInvolucrado.Text);
+
+                    txtIdEmpleadoInvolucrado.Text = "";
+                    txtNombreEmpleadoInvolucrado.Text = "";
+                    txtNumNominaEmpleadoInvolucrado.Text = "";
                 }
             }
-            if (!testigoingresado)
+            else
             {
-                dgvEmpleadosInvolucrados.Rows.Add(txtNumNominaEmpleadoInvolucrado.Text, txtNombreEmpleadoInvolucrado.Text, txtIdEmpleadoInvolucrado.Text);
+                MostrarNotificacion("Alerta", "Por favor, busque un empleado antes de agregarlo como involucrado", Color.FromArgb(255, 152, 0), 3);
             }
-            txtIdEmpleadoInvolucrado.Text = "";
-            txtNombreEmpleadoInvolucrado.Text = "";
-            txtNumNominaEmpleadoInvolucrado.Text = "";
+
         }
 
         private void rbtnOtro_CheckedChanged(object sender, EventArgs e)
@@ -694,6 +941,80 @@ namespace CapaPresentacion.Investigacion_Accidentes
         private void btnPruebas_Click(object sender, EventArgs e)
         {
             MessageBox.Show(txtOtro.Text);
+        }
+        public void ValidacionNumeros(KeyPressEventArgs e)
+        {
+            // Permitir números del 0 al 9 y la tecla de retroceso
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back))
+            {
+                MostrarNotificacion("Alerta", "Solo se pueden introducir números", Color.FromArgb(255, 152, 0), 3);
+                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
+            }
+        }
+
+        
+        public void MostrarNotificacion(string titulo, string mensaje, Color color, int icono)
+        {
+            frmNotificacion c = new frmNotificacion("Bio-Pappel", titulo, mensaje, color, icono);
+            c.ShowDialog();
+        }
+
+        private void txtNoAccidente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumeros(e);
+        }
+
+        private void txtTotalhrs_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumeros(e);
+        }
+
+        private void btnBuscarEmpleadoSST_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtNumNomminaSST.Text))
+            {
+                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNomminaSST.Text).Tables["ConsultaEmpleado"];
+
+                if (t.Rows.Count > 0)
+                {
+                    DataRow dr = t.Rows[0];
+
+                    txtNombreSST.Text =
+                        (dr["nombre"] as string ?? "") + " " +
+                        (dr["apellido_paterno"] as string ?? "") + " " +
+                        (dr["apellido_materno"] as string ?? "");
+
+                    txtidNombreSST.Text = dr["idEmpleado"] != DBNull.Value ? dr["idEmpleado"].ToString() : "N/A";
+
+                }
+                else
+                {
+                    MostrarNotificacion("Alerta", "No se encontró un empleado con ese número de nómina", Color.FromArgb(255, 152, 0), 3);
+                    txtNombreSST.Clear();
+                    txtidNombreSST.Clear();
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                txtNumNomminaSST.Focus();
+            }
+        }
+
+        private void rbtnHrsExtrasSi_CheckedChanged(object sender, EventArgs e)
+        {
+            bool tiempoExtra = rbtnHrsExtrasSi.Checked;
+
+            if (tiempoExtra)
+            {
+                txtTotalhrs.Enabled = true;
+                txtTotalhrs.Clear();
+            }
+            else
+            {
+                txtTotalhrs.Text = "8";
+                txtTotalhrs.Enabled = false;
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using static Mysqlx.Expect.Open.Types;
 
@@ -16,10 +17,11 @@ namespace CapaDatos
         private MySqlDataAdapter adapter;
         private MySqlCommand comando;
 
-        public int InsertarAccidente(int noAccidente, string condicion, DateTime fechaRegistro, Boolean tiempoExtra, string totalHrsExtras, DateTime DiaDescansoPrevio, string parteCuerpoAfectada, string trabajoDesempeñado, string tipoLesion,
+        public int InsertarAccidente(int noAccidente, string condicion, DateTime fechaRegistro, Boolean tiempoExtra, string totalHrsExtras, DateTime DiaDescansoPrevio, string parteCuerpoAfectada, string trabajoDesempeñado, string tipoLesion, DateTime fecha_hora_Accidente,
            Boolean lesion30Dias, Boolean lesion12Meses, string proceso, int idSeccionA, string lugarAccidente, string causanteLesion, string equipoProteccionUsado, string equipoProteccionNecesario, string causaAccidente, string descripcionAccidente, Boolean realizoTrabajoAntes, Boolean trabajoHabitual, Boolean trabajoProgramado, Boolean trabajoNecesario, Boolean trabajoUrgente, Boolean danosMateriales, string equipoDanado, string sustituiblePor, int idSeccionB,
            Boolean existenITRs, Boolean equipoAdecuado, Boolean conociaTrabajo, Boolean existiaSupervicion, string riesgosJson, string actosInsegurosJson, string condicionesInsegurasJson,
            string empleadosConocimientoJson, string empleadosInvolucradosJson, Boolean continuaTrabajando, Boolean enviadoDomicilio, Boolean enviadoAtencionMedica, string otro, string diagnosticoFinal, string tratamiento, string incapacidad,
+           string accionesCorrectivasPropuestas, string quienCorrectivasPropuesta, string cuandoCorrectivasPropuestas, string accionesPreventivasPropuestas,string quienPreventivoPropuesto, string cuandoPreventivasPropuestas,string seguimiento, DateTime fecha_Hora_Seguimiento, int empleadoSeguimiento, DateTime fecha_Hora_recepcion,
            int idEmpleado, int idPuesto, string testigosJson)
         {
             try
@@ -39,6 +41,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_ParteCuerpoAfectada", parteCuerpoAfectada);
                 cmd.Parameters.AddWithValue("@p_TrabajoDesempeñado", trabajoDesempeñado);
                 cmd.Parameters.AddWithValue("@p_TipoLesion", tipoLesion);
+                cmd.Parameters.AddWithValue("@p_fecha_Hora_Accidente", fecha_hora_Accidente);
                 cmd.Parameters.AddWithValue("@p_TestigosJson", testigosJson);
 
                 //Insercion de Detalles Accidente 
@@ -83,6 +86,17 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_incapacidad", incapacidad);
 
 
+                //Control de Acciones
+                cmd.Parameters.AddWithValue("@p_acciones_correctivas_prop", accionesCorrectivasPropuestas);
+                cmd.Parameters.AddWithValue("@p_quien_accionesC", quienCorrectivasPropuesta);
+                cmd.Parameters.AddWithValue("@p_cuando_accionesC", cuandoCorrectivasPropuestas);
+                cmd.Parameters.AddWithValue("@p_acciones_preventivas_prop", accionesPreventivasPropuestas);
+                cmd.Parameters.AddWithValue("@p_quien_accionesP", quienPreventivoPropuesto);
+                cmd.Parameters.AddWithValue("@p_cuando_accionesP", cuandoPreventivasPropuestas);
+                cmd.Parameters.AddWithValue("@p_seguimiento", seguimiento);
+                cmd.Parameters.AddWithValue("@p_fecha_hora_cierre_acc_seg", fecha_Hora_Seguimiento);
+                cmd.Parameters.AddWithValue("@p_idEmpleadoProcesoSST", empleadoSeguimiento);
+                cmd.Parameters.AddWithValue("@p_fecha_Recepcion_Documento", fecha_Hora_recepcion);
 
                 conn.Open();
                 int filasAfectadas = cmd.ExecuteNonQuery();
@@ -91,7 +105,7 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                //Console.WriteLine(ex.ToString());
                 return -1;
             }
             finally
@@ -164,6 +178,38 @@ namespace CapaDatos
 
                 return comando.ExecuteNonQuery();
             }
+        }
+        public bool VerificarRiesgoExiste(string riesgo)
+        {
+            
+            conn = objConexion.Conecta();
+            comando = new MySqlCommand("call VerificarRiesgoExistente(@p_riesgo)", conn);
+            comando.Parameters.AddWithValue("@p_riesgo", riesgo);
+            conn.Open();
+            int count = Convert.ToInt32(comando.ExecuteScalar());
+            conn.Close();
+            return count > 0; 
+        }
+        public bool VerificarCondicionInseguraExiste(string condicionInsegura)
+        {
+
+            conn = objConexion.Conecta();
+            comando = new MySqlCommand("call VerificarCondicionesInsegurasExistente(@p_condicion_insegura)", conn);
+            comando.Parameters.AddWithValue("@p_condicion_insegura", condicionInsegura);
+            conn.Open();
+            int count = Convert.ToInt32(comando.ExecuteScalar());
+            conn.Close();
+            return count > 0;
+        }
+        public bool VerificarActoInseguroExiste(string actoInseguro)
+        {
+            conn = objConexion.Conecta();
+            comando = new MySqlCommand("call VerificarActosInsegurosExistente(@p_acto_inseguro)", conn);
+            comando.Parameters.AddWithValue("@p_acto_inseguro", actoInseguro);
+            conn.Open();
+            int count = Convert.ToInt32(comando.ExecuteScalar());
+            conn.Close();
+            return count > 0;
         }
     }
 }
