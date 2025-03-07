@@ -150,6 +150,6 @@ namespace CapaNegocios
         {
             return empleadosDAO.consultaEmpleadoNumNomina(numNomina);
         }
-
+        
     }
 }

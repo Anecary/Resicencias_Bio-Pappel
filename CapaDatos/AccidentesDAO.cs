@@ -211,5 +211,23 @@ namespace CapaDatos
             conn.Close();
             return count > 0;
         }
+
+        public DataSet consultaFechasAccidentesPorEmpleado(int idEmpleado)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerFechasAccidentesPorEmpleado", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idEmpleado = new MySqlParameter("@p_idEmpleado", MySqlDbType.Int32);
+                p_idEmpleado.Direction = ParameterDirection.Input;
+                p_idEmpleado.Value = idEmpleado;
+                adapter.SelectCommand.Parameters.Add(p_idEmpleado);
+
+                adapter.Fill(data, "ConsultaAccidentesXFecha");
+                return data;
+            }
+        }
     }
 }

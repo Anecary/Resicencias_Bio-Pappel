@@ -1,4 +1,6 @@
-﻿using MaterialSkin;
+﻿using CapaNegocios;
+using CapaPresentacion.Restaurar_Y_Respaldar;
+using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,9 @@ namespace CapaPresentacion.Investigacion_Accidentes
     {
         private MaterialSkinManager materialSkinManager;
         private Panel p = new Panel();
+
+        AccidentesCN accidentesCN = new AccidentesCN();
+        EmpleadosCN empleadosCN = new EmpleadosCN();
         public frmConsultaAccidentes()
         {
             InitializeComponent();
@@ -123,6 +128,134 @@ namespace CapaPresentacion.Investigacion_Accidentes
         private void btnControlAcciones_Click(object sender, EventArgs e)
         {
             MostrarPanel(pControlAcciones);
+        }
+
+        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtNumeroNomina.Text))
+            {
+                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
+
+                if (t.Rows.Count > 0)
+                {
+                    DataRow dr = t.Rows[0];
+
+                    txtNombreEmpleado.Text =
+                        (dr["nombre"] as string ?? "") + " " +
+                        (dr["apellido_paterno"] as string ?? "") + " " +
+                        (dr["apellido_materno"] as string ?? "");
+
+                    txtIdEmpleado.Text = dr["idEmpleado"].ToString();
+
+                    DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
+                    DateTime fechaIngresoAlPuesto = dr["fecha_ingreso_puesto"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_ingreso_puesto"]) : DateTime.MinValue;
+                    DateTime fechaActual = DateTime.Now;
+
+                    int edad = 0;
+                    edad = fechaNacimiento != DateTime.MinValue
+                        ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(edad) ? 1 : 0)
+                        : 0;
+
+                    // Calcular antigüedad correctamente
+                    //int antiguedad = 0;
+                    //antiguedad = fechaIngresoAlPuesto != DateTime.MinValue
+                    //    ? fechaActual.Year - fechaIngresoAlPuesto.Year - (fechaActual < fechaIngresoAlPuesto.AddYears(antiguedad) ? 1 : 0)
+                    //    : 0;
+
+
+                    int antiguedadAnios = 0;
+                    int antiguedadMeses = 0;
+
+                    if (fechaIngresoAlPuesto != DateTime.MinValue)
+                    {
+                        DateTime fechaIngreso = fechaIngresoAlPuesto;
+                        antiguedadAnios = fechaActual.Year - fechaIngreso.Year;
+                        if (fechaActual < fechaIngreso.AddYears(antiguedadAnios))
+                        {
+                            antiguedadAnios--;
+                        }
+                        antiguedadMeses = fechaActual.Month - fechaIngreso.Month;
+
+                        if (antiguedadMeses < 0)
+                        {
+                            antiguedadMeses += 12;
+                        }
+                    }
+                    string antiguedad = $"{antiguedadAnios} años {antiguedadMeses} meses";
+                    //txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
+                    //txtPuesto.Text = dr["puesto"] as string ?? "N/A";
+                    ////txtAntiguedad.Text = antiguedad > 0 ? antiguedad.ToString() : "N/A";
+                    //txtAntiguedad.Text = (antiguedadAnios > 0 || antiguedadMeses > 0) ? $"{antiguedadAnios} año(s) {antiguedadMeses} mes(es)" : "N/A";
+                    //txtNumNominaTestigo.Enabled = true;
+                    //btnBuscarTestigo.Enabled = true;
+                    cboxFechasAccidentes.SelectedIndexChanged -= cboxFechasAccidentes_SelectedIndexChanged;
+
+                    // Obtener la tabla de accidentes
+                    DataTable dtAccidentes = accidentesCN.consultaFechasAccidentesPorEmpleado(Convert.ToInt32(txtIdEmpleado.Text))
+                                              ?.Tables["ConsultaAccidentesXFecha"];
+
+                    if (dtAccidentes != null && dtAccidentes.Rows.Count > 0)
+                    {
+                        // Verificar si la columna formateada ya existe
+                        if (!dtAccidentes.Columns.Contains("fecha_Formateada"))
+                        {
+                            dtAccidentes.Columns.Add("fecha_Formateada", typeof(string));
+
+                            // Formatear cada fila
+                            foreach (DataRow row in dtAccidentes.Rows)
+                            {
+                                if (row["fecha_Registro"] != DBNull.Value)
+                                {
+                                    DateTime fecha = Convert.ToDateTime(row["fecha_Registro"]);
+                                    row["fecha_Formateada"] = fecha.ToString("dd-MM-yyyy");
+                                }
+                                else
+                                {
+                                    row["fecha_Formateada"] = "Fecha no disponible";
+                                }
+                            }
+                        }
+
+                        cboxFechasAccidentes.DataSource = dtAccidentes;
+                        cboxFechasAccidentes.DisplayMember = "fecha_Formateada"; // Mostrar la fecha formateada
+                        cboxFechasAccidentes.ValueMember = "idAccidente"; // Mantener el ID real
+                    }
+                    else
+                    {
+                        cboxFechasAccidentes.DataSource = null;
+                        MostrarNotificacion("Alerta", "Este empleado no tiene accidentes registrados.", Color.FromArgb(255, 152, 0), 3);
+                    }
+
+                    cboxFechasAccidentes.SelectedIndexChanged += cboxFechasAccidentes_SelectedIndexChanged;
+                }
+                else
+                {
+                    MostrarNotificacion("Alerta", "Número de nómina no encontrado", Color.FromArgb(255, 152, 0), 3);
+                    txtNumeroNomina.Focus();
+                    txtNombreEmpleado.Clear();
+                    txtIdEmpleado.Clear();
+                }
+            }
+            else
+            {
+                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                txtNumeroNomina.Focus();
+            }
+        }
+        public void MostrarNotificacion(string titulo, string mensaje, Color color, int icono)
+        {
+            frmNotificacion c = new frmNotificacion("Bio-Pappel", titulo, mensaje, color, icono);
+            c.ShowDialog();
+        }
+
+        private void frmConsultaAccidentes_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cboxFechasAccidentes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -245,6 +245,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 {
                     MostrarNotificacion("Alerta", "Número de nómina no encontrado", Color.FromArgb(255, 152, 0), 3);
                     txtNumeroNomina.Focus();
+                    txtNombreEmpleado.Clear();
+                    txtIdEmpleado.Clear();
                 }
             }
             else

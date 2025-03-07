@@ -63,5 +63,9 @@ namespace CapaNegocios
             return accidentesDAO.VerificarActoInseguroExiste(actoInseguro);
         }
 
+        public DataSet consultaFechasAccidentesPorEmpleado(int idEmpleado)
+        {
+            return accidentesDAO.consultaFechasAccidentesPorEmpleado(idEmpleado);   
+        }
     }
 }
