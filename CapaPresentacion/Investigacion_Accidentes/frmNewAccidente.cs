@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Navigation;
 using CapaNegocios;
 using MaterialSkin;
 using MaterialSkin.Controls;
@@ -43,6 +44,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
             panel7.Paint += new PaintEventHandler(Panel1_Paint);
             panel14.Paint += new PaintEventHandler(Panel1_Paint);
             panel15.Paint += new PaintEventHandler(Panel1_Paint);
+            panel17.Paint += new PaintEventHandler(Panel1_Paint);
+            panel18.Paint += new PaintEventHandler(Panel1_Paint);
+            panel19.Paint += new PaintEventHandler(Panel1_Paint);
+            panel20.Paint += new PaintEventHandler(Panel1_Paint);
             panel26.Paint += new PaintEventHandler(Panel1_Paint);
             panel27.Paint += new PaintEventHandler(Panel1_Paint);
             panel28.Paint += new PaintEventHandler(Panel1_Paint);
@@ -91,7 +96,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
             p.Size = new Size(185, 5); // Tamaño del panel
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
-
         // Método para eliminar el panel cuando el mouse sale del área del botón
         private void btnMouseLeave(Object sender, EventArgs e)
         {
@@ -108,32 +112,26 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
             panelAMostrar.Visible = true;
         }
-
         private void btnDatosGenerales_Click(object sender, EventArgs e)
         {
             MostrarPanel(pDatosGenerales);
         }
-
         private void btnDetallesAccidente_Click(object sender, EventArgs e)
         {
             MostrarPanel(pDetallesAccidente);
         }
-
         private void btnFactoresSeguridad_Click(object sender, EventArgs e)
         {
             MostrarPanel(pFactoresSeguridad);
         }
-
         private void btnSeguimientoCaso_Click(object sender, EventArgs e)
         {
             MostrarPanel(pSeguimientoCaso);
         }
-
         private void btnControlAcciones_Click(object sender, EventArgs e)
         {
             MostrarPanel(pControlAcciones);
         }
-
         private void frmNewAccidente_Load(object sender, EventArgs e)
         {
             //Combo para la seccion A es decir para guardar IdSeccion_A
@@ -182,7 +180,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
             cboxCondicionesInseguras.ValueMember = "idCondicion_insegura";
             cboxCondicionesInseguras.SelectedIndexChanged += cboxCondicionesInseguras_SelectedIndexChanged;
         }
-
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
         {
             DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
@@ -311,12 +308,27 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string condicionesInsegurasJson = ConvertirCondicionesInsegurasAJson(dgvCondicionInsegura);
             //MessageBox.Show(condicionesInsegurasJson);
 
+            //Seguimiento del caso
+            string empleadosConocimientoJson = ConvertirEnpleadosConocimientoAJson(dgvEmpleadosConocimiento);
+            string empleadosInvolucradosJson = ConvertirEnpleadosInvolucradosAJson(dgvEmpleadosInvolucrados);
+            Boolean continuaTrabajando = false;
+            continuaTrabajando = rbtnContinuaTrabajando.Checked ? true : false;
+            Boolean enviadoDomicilio = false;
+            enviadoDomicilio = rbtnEnviadoDomicilio.Checked ? true : false;
+            Boolean enviadoAtencionMedica= false;
+            enviadoAtencionMedica = rbtnEnviadoAtencionMedica.Checked ? true : false;
+            string otro = txtOtro.Text;
+            string diagnosticoFinal = txtDiagnosticoFinal.Text;
+            string tratamiento = txtTratamiento.Text;
+            string incapacidad = txtIncapacidad.Text;
+
 
             //int registr = accidentesCN.InsertarAccidentePrueba(noAccidente, condicion, fechaRegistro, testigosJson);
 
             int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion,
                 lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
                 existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
+                empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
                 idEmpleado, idPuesto, testigosJson);
 
             if (registro == 0)
@@ -352,11 +364,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
             {
                 if (dgvRiesgos.Rows[i].Cells["idRiesgo"].Value != null)
                 {
-                    Dictionary<string, object> testigo = new Dictionary<string, object>
+                    Dictionary<string, object> riesgos = new Dictionary<string, object>
             {
                 { "IdRiesgo", Convert.ToInt32(dgvRiesgos.Rows[i].Cells["idRiesgo"].Value) }
             };
-                    riesgosList.Add(testigo);
+                    riesgosList.Add(riesgos);
                 }
             }
 
@@ -370,11 +382,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
             {
                 if (dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value != null)
                 {
-                    Dictionary<string, object> testigo = new Dictionary<string, object>
+                    Dictionary<string, object> actosInseguros = new Dictionary<string, object>
                     {
                         { "IdActoInseguro", Convert.ToInt32(dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value) }
                     };
-                    actosInsegurosList.Add(testigo);
+                    actosInsegurosList.Add(actosInseguros);
                 }
             }
 
@@ -388,20 +400,53 @@ namespace CapaPresentacion.Investigacion_Accidentes
             {
                 if (dgvCondicionesInseguras.Rows[i].Cells["idCondicionInsegura"].Value != null)
                 {
-                    Dictionary<string, object> testigo = new Dictionary<string, object>
+                    Dictionary<string, object> condicionesInseguras = new Dictionary<string, object>
                     {
                         { "IdCondicionesInseguras", Convert.ToInt32(dgvCondicionesInseguras.Rows[i].Cells["idCondicionInsegura"].Value) }
                     };
-                    condicionesInsegurasList.Add(testigo);
+                    condicionesInsegurasList.Add(condicionesInseguras);
                 }
             }
 
             return JsonConvert.SerializeObject(condicionesInsegurasList);  // Convertir la lista a JSON
         }
+        public string ConvertirEnpleadosInvolucradosAJson(DataGridView dgvEmpleadosInvolucrados)
+        {
+            List<Dictionary<string, object>> empleadosInvolucradosList = new List<Dictionary<string, object>>();
+
+            for(int i = 0; i < dgvEmpleadosInvolucrados.Rows.Count; i++)
+            {
+                if (dgvEmpleadosInvolucrados.Rows[i].Cells["IdEmpleadoInvolucrado"].Value != null)
+                {
+                    Dictionary<string, object> empleadosInvolucrados = new Dictionary<string, object>
+                    {
+                        { "IdEmpleadoInvolucrado", Convert.ToInt32(dgvEmpleadosInvolucrados.Rows[i].Cells["IdEmpleadoInvolucrado"].Value) }
+                    };
+                    empleadosInvolucradosList.Add(empleadosInvolucrados);
+                }
+            }
+            return JsonConvert.SerializeObject(empleadosInvolucradosList);
+        }
+        public string ConvertirEnpleadosConocimientoAJson(DataGridView dgvEmpleadosConocimiento)
+        {
+            List<Dictionary<string, object>> empleadosConocimientoList = new List<Dictionary<string, object>>();
+
+            for (int i = 0; i < dgvEmpleadosConocimiento.Rows.Count; i++)
+            {
+                if (dgvEmpleadosConocimiento.Rows[i].Cells["idEmpleadoConocimiento"].Value != null)
+                {
+                    Dictionary<string, object> empleadosConocimiento = new Dictionary<string, object>
+                    {
+                        { "IdEmpleadoConocimiento", Convert.ToInt32(dgvEmpleadosConocimiento.Rows[i].Cells["idEmpleadoConocimiento"].Value) }
+                    };
+                    empleadosConocimientoList.Add(empleadosConocimiento);
+                }
+            }
+            return JsonConvert.SerializeObject(empleadosConocimientoList);
+        }
         private void cboxSecciones_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int idSeccionA = Convert.ToInt32(cboxSecciones.SelectedValue);
-            MessageBox.Show(idSeccionA.ToString());
+            
         }
 
         private void cboxSeccionesB_SelectedIndexChanged(object sender, EventArgs e)
@@ -565,5 +610,90 @@ namespace CapaPresentacion.Investigacion_Accidentes
             cargarCondicionesInseguras();
         }
 
+        private void btnBuscarEmpleadoConocimiento_Click(object sender, EventArgs e)
+        {
+            DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaEmpleadoConocimiento.Text).Tables["ConsultaEmpleado"];
+            DataRow dr = t.Rows[0];
+
+            txtNombreEmpleadoConocimiento.Text =
+                (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
+                (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
+                (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
+
+            txtIdEmpleadoConocimiento.Text = dr["idEmpleado"].ToString();
+        }
+
+        private void btnAgregarEmpleadoConocimiento_Click(object sender, EventArgs e)
+        {
+            int idEmpleadoConocimiento = 0;
+            bool testigoingresado = false;
+            for (int i = 0; i < dgvEmpleadosConocimiento.Rows.Count - 1; i++)
+            {
+                idEmpleadoConocimiento = Convert.ToInt32(dgvEmpleadosConocimiento.Rows[i].Cells["idEmpleadoConocimiento"].Value);
+                if (Convert.ToInt32(txtIdEmpleadoConocimiento.Text) == idEmpleadoConocimiento)
+                {
+                    testigoingresado = true;
+                    MessageBox.Show("Este testigo ya ha sido registrado");
+                    break;
+                }
+            }
+            if (!testigoingresado)
+            {
+                dgvEmpleadosConocimiento.Rows.Add(txtNumNominaEmpleadoConocimiento.Text, txtNombreEmpleadoConocimiento.Text, txtIdEmpleadoConocimiento.Text);
+            }
+            txtIdEmpleadoConocimiento.Text = "";
+            txtNombreEmpleadoConocimiento.Text = "";
+            txtNumNominaEmpleadoConocimiento.Text = "";
+        }
+
+        private void btnBuscarEmpleadoInvolucrado_Click(object sender, EventArgs e)
+        {
+            DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNominaEmpleadoInvolucrado.Text).Tables["ConsultaEmpleado"];
+            DataRow dr = t.Rows[0];
+
+            txtNombreEmpleadoInvolucrado.Text =
+                (dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : "") + " " +
+                (dr["apellido_paterno"] != DBNull.Value ? dr["apellido_paterno"].ToString() : "") + " " +
+                (dr["apellido_materno"] != DBNull.Value ? dr["apellido_materno"].ToString() : "");
+
+            txtIdEmpleadoInvolucrado.Text = dr["idEmpleado"].ToString();
+        }
+
+        private void btnAgregarEmpleadoInvolucrado_Click(object sender, EventArgs e)
+        {
+            int idEmpleadoInvolucrado = 0;
+            bool testigoingresado = false;
+            for (int i = 0; i < dgvEmpleadosInvolucrados.Rows.Count - 1; i++)
+            {
+                idEmpleadoInvolucrado = Convert.ToInt32(dgvEmpleadosInvolucrados.Rows[i].Cells["IdEmpleadoInvolucrado"].Value);
+                if (Convert.ToInt32(txtIdEmpleadoInvolucrado.Text) == idEmpleadoInvolucrado)
+                {
+                    testigoingresado = true;
+                    MessageBox.Show("Este testigo ya ha sido registrado");
+                    break;
+                }
+            }
+            if (!testigoingresado)
+            {
+                dgvEmpleadosInvolucrados.Rows.Add(txtNumNominaEmpleadoInvolucrado.Text, txtNombreEmpleadoInvolucrado.Text, txtIdEmpleadoInvolucrado.Text);
+            }
+            txtIdEmpleadoInvolucrado.Text = "";
+            txtNombreEmpleadoInvolucrado.Text = "";
+            txtNumNominaEmpleadoInvolucrado.Text = "";
+        }
+
+        private void rbtnOtro_CheckedChanged(object sender, EventArgs e)
+        {
+            txtOtro.Visible = rbtnOtro.Checked;
+            if (!rbtnOtro.Checked)
+            {
+                txtOtro.Text = ""; // Se limpia solo cuando el RadioButton se desmarca
+            }
+        }
+
+        private void btnPruebas_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(txtOtro.Text);
+        }
     }
 }

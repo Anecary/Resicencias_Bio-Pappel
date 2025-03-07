@@ -19,6 +19,7 @@ namespace CapaDatos
         public int InsertarAccidente(int noAccidente, string condicion, DateTime fechaRegistro, Boolean tiempoExtra, string totalHrsExtras, DateTime DiaDescansoPrevio, string parteCuerpoAfectada, string trabajoDesempeñado, string tipoLesion,
            Boolean lesion30Dias, Boolean lesion12Meses, string proceso, int idSeccionA, string lugarAccidente, string causanteLesion, string equipoProteccionUsado, string equipoProteccionNecesario, string causaAccidente, string descripcionAccidente, Boolean realizoTrabajoAntes, Boolean trabajoHabitual, Boolean trabajoProgramado, Boolean trabajoNecesario, Boolean trabajoUrgente, Boolean danosMateriales, string equipoDanado, string sustituiblePor, int idSeccionB,
            Boolean existenITRs, Boolean equipoAdecuado, Boolean conociaTrabajo, Boolean existiaSupervicion, string riesgosJson, string actosInsegurosJson, string condicionesInsegurasJson,
+           string empleadosConocimientoJson, string empleadosInvolucradosJson, Boolean continuaTrabajando, Boolean enviadoDomicilio, Boolean enviadoAtencionMedica, string otro, string diagnosticoFinal, string tratamiento, string incapacidad,
            int idEmpleado, int idPuesto, string testigosJson)
         {
             try
@@ -38,7 +39,8 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_ParteCuerpoAfectada", parteCuerpoAfectada);
                 cmd.Parameters.AddWithValue("@p_TrabajoDesempeñado", trabajoDesempeñado);
                 cmd.Parameters.AddWithValue("@p_TipoLesion", tipoLesion);
-                
+                cmd.Parameters.AddWithValue("@p_TestigosJson", testigosJson);
+
                 //Insercion de Detalles Accidente 
                 cmd.Parameters.AddWithValue("@p_accidentes_previos_30_dias", lesion30Dias);
                 cmd.Parameters.AddWithValue("@p_accidentes_previos_12_meses", lesion12Meses);
@@ -48,8 +50,8 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_causa_Lesion", causanteLesion);
                 cmd.Parameters.AddWithValue("@p_equipo_Proteccion_usado", equipoProteccionUsado);
                 cmd.Parameters.AddWithValue("@p_equipo_Proteccion_Necesario", equipoProteccionNecesario);
-                cmd.Parameters.AddWithValue("@p_equipo_Proteccion_Necesario", causaAccidente);
-                cmd.Parameters.AddWithValue("@p_equipo_Proteccion_Necesario", descripcionAccidente);
+                cmd.Parameters.AddWithValue("@p_causas_basicas_accidente", causaAccidente);
+                cmd.Parameters.AddWithValue("@p_descripcion_accidente", descripcionAccidente);
                 cmd.Parameters.AddWithValue("@p_trabajo_Realizado_Antes", realizoTrabajoAntes);
                 cmd.Parameters.AddWithValue("@p_trabajo_Habitual", trabajoHabitual);
                 cmd.Parameters.AddWithValue("@p_trabajo_Programado", trabajoProgramado);
@@ -61,10 +63,26 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_idSeccionB", idSeccionB);
 
                 //Factores de Seguridad
-                cmd.Parameters.AddWithValue("@p_idSeccionB", idSeccionB);
+                cmd.Parameters.AddWithValue("@p_ITRS_Trabajo", existenITRs);
+                cmd.Parameters.AddWithValue("@p_herramienta_equipo_adecuado", equipoAdecuado);
+                cmd.Parameters.AddWithValue("@p_ubicacion_conocida", conociaTrabajo);
+                cmd.Parameters.AddWithValue("@p_supervision", existiaSupervicion);
+                cmd.Parameters.AddWithValue("@p_riesgosJson", riesgosJson);
+                cmd.Parameters.AddWithValue("@p_actosInsegurosJson", actosInsegurosJson);
+                cmd.Parameters.AddWithValue("@p_condicionesInsegurasJson", condicionesInsegurasJson);
+
+                //Seguimiento del Caso
+                cmd.Parameters.AddWithValue("@p_empleadosConocimientoJson", empleadosConocimientoJson);
+                cmd.Parameters.AddWithValue("@p_empleadosInvolucradosJson", empleadosInvolucradosJson);
+                cmd.Parameters.AddWithValue("@p_continua_trabajando", continuaTrabajando);
+                cmd.Parameters.AddWithValue("@p_enviado_Domicilio", enviadoDomicilio);
+                cmd.Parameters.AddWithValue("@p_atencion_Medica", enviadoAtencionMedica);
+                cmd.Parameters.AddWithValue("@p_otro_diagnostico", otro);
+                cmd.Parameters.AddWithValue("@p_diagnostico_final", diagnosticoFinal);
+                cmd.Parameters.AddWithValue("@p_tratamiento", tratamiento);
+                cmd.Parameters.AddWithValue("@p_incapacidad", incapacidad);
 
 
-                cmd.Parameters.AddWithValue("@p_TestigosJson", testigosJson);
 
                 conn.Open();
                 int filasAfectadas = cmd.ExecuteNonQuery();
