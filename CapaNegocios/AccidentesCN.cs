@@ -67,5 +67,33 @@ namespace CapaNegocios
         {
             return accidentesDAO.consultaFechasAccidentesPorEmpleado(idEmpleado);   
         }
+        public DataSet consultarDetalleInvAccidente_ActosInseguros(int idAccidente)
+        {
+            return accidentesDAO.consultarDetalleInvAccidente_ActosInseguros(idAccidente);
+        }
+        public DataSet consultarDetalleInvAccidente_CondicionesInseguras(int idAccidente)
+        {
+            return accidentesDAO.consultarDetalleInvAccidente_CondicionesInseguras (idAccidente);
+        }
+        public DataSet consultarDetalleInvAccidente_Riesgos(int idAccidente)
+        {
+            return accidentesDAO.consultarDetalleInvAccidente_Riesgos (idAccidente);
+        }
+        public DataSet consultarDetalleInvAccidente_EmpleadosConocimiento(int idAccidente)
+        {
+            return accidentesDAO.consultarDetalleInvAccidente_EmpleadosConocimiento (idAccidente);  
+        }
+        public DataSet consultarDetalleInvAccidente_EmpleadosInvolucrados(int idAccidente)
+        {
+            return accidentesDAO.consultarDetalleInvAccidente_EmpleadosInvolucrados (idAccidente);
+        }
+        public DataSet consultarDetalleInvAccidente_EmpleadosTestigos(int idAccidente)
+        {
+            return accidentesDAO.consultarDetalleInvAccidente_EmpleadosTestigos (idAccidente);
+        }
+        public DataSet consultarInvAccidentePorID(int idAccidente)
+        {
+            return accidentesDAO.consultarInvAccidentePorID (idAccidente);
+        }
     }
 }

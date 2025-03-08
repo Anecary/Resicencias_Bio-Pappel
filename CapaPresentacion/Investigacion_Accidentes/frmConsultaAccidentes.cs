@@ -191,8 +191,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     cboxFechasAccidentes.SelectedIndexChanged -= cboxFechasAccidentes_SelectedIndexChanged;
 
                     // Obtener la tabla de accidentes
-                    DataTable dtAccidentes = accidentesCN.consultaFechasAccidentesPorEmpleado(Convert.ToInt32(txtIdEmpleado.Text))
-                                              ?.Tables["ConsultaAccidentesXFecha"];
+                    DataTable dtAccidentes = accidentesCN.consultaFechasAccidentesPorEmpleado(Convert.ToInt32(txtIdEmpleado.Text)) ?.Tables["ConsultaAccidentesXFecha"];
 
                     if (dtAccidentes != null && dtAccidentes.Rows.Count > 0)
                     {
@@ -255,7 +254,158 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
         private void cboxFechasAccidentes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            MessageBox.Show(cboxFechasAccidentes.SelectedValue.ToString());
+            dgvDetalleRiesgos.DataSource = accidentesCN.consultarDetalleInvAccidente_Riesgos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteRiesgos"];
+            dgvDetalleActosInseguros.DataSource = accidentesCN.consultarDetalleInvAccidente_ActosInseguros(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteActosInseguros"];
+            dgvDetalleCondicionesInseguras.DataSource = accidentesCN.consultarDetalleInvAccidente_CondicionesInseguras(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteCondicionesInseguras"];
+            dgvTestigos.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosTestigos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosTestigos"];
+            dgvEmpleadoConocimiento.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosConocimiento(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosConocimiento"];
+            dgvEmpleadosInvolucrados.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosInvolucrados(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosInvolucrados"];
+
+
+            DataTable t = accidentesCN.consultarInvAccidentePorID(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["InvestigacionAccidentePorID"];
+
+            if (t.Rows.Count > 0)
+            {
+                DataRow dr = t.Rows[0];
+
+                txtCondicion.Text = dr["condicion"].ToString();
+                txtNumAccidente.Text = dr["accidente_no"].ToString();
+                if (dr["tiempo_extra"] != DBNull.Value)
+                {
+                    rbtnTiempoExtra.Checked = Convert.ToBoolean(dr["tiempo_extra"]);
+                }
+                else
+                {
+                    rbtnTiempoExtra.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                txtTotalHrs.Text = dr["total_hrs_Extras"].ToString();
+                if (dr["dia_descanso_Previo"] != DBNull.Value)
+                {
+                    DateTime fecha = Convert.ToDateTime(dr["dia_descanso_Previo"]);
+                    txtDiaDescansoPrevio.Text = fecha.ToString("dddd, dd MMMM yyyy", new System.Globalization.CultureInfo("es-ES"));
+                }
+                else
+                {
+                    txtDiaDescansoPrevio.Text = "Sin fecha"; // O cualquier otro valor predeterminado
+                }
+                txtParteCuerpoAfectada.Text = dr["parte_cuerpo_afectada"].ToString();
+                txtTrabajoDesempenado.Text = dr["trabajo_Desempeñado"].ToString();
+                txtTipoLesion.Text = dr["tipo_Lesion"].ToString();
+
+                if (dr["accidentes_previos_30_dias"] != DBNull.Value)
+                {
+                    rbtnlesion30DiasSi.Checked = Convert.ToBoolean(dr["accidentes_previos_30_dias"]);
+                }
+                else
+                {
+                    rbtnlesion30DiasSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["accidentes_previos_12_meses"] != DBNull.Value)
+                {
+                    rbtnlesion12MesesSi.Checked = Convert.ToBoolean(dr["accidentes_previos_12_meses"]);
+                }
+                else
+                {
+                    rbtnlesion12MesesSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                txtProceso.Text = dr["proceso"].ToString();
+                txtSeccionA.Text = dr["seccion_A"].ToString();
+                txtLugarAccidente.Text = dr["lugar_Accidente"].ToString();
+                txtObjCausanteLesion.Text = dr["tipo_Lesion"].ToString();
+                txtEquipoProteccionUsado.Text = dr["equipo_Proteccion_usado"].ToString();
+                txtEquipoProteccionNecesario.Text = dr["equipo_Proteccion_Necesario"].ToString();
+                txtDescripcionAccidente.Text = dr["descripcion_accidente"].ToString();
+                txtCausaAccidente.Text= dr["causas_basicas_accidente"].ToString();
+                if (dr["trabajo_Realizado_Antes"] != DBNull.Value)
+                {
+                    rbtnRealizoTrabajoAntesSi.Checked = Convert.ToBoolean(dr["trabajo_Realizado_Antes"]);
+                }
+                else
+                {
+                    rbtnRealizoTrabajoAntesSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["trabajo_Habitual"] != DBNull.Value)
+                {
+                    rbtnTrabajoHabitualSi.Checked = Convert.ToBoolean(dr["trabajo_Habitual"]);
+                }
+                else
+                {
+                    rbtnTrabajoHabitualSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["trabajo_Programado"] != DBNull.Value)
+                {
+                    rbtnTrabajoProgramadoSi.Checked = Convert.ToBoolean(dr["trabajo_Programado"]);
+                }
+                else
+                {
+                    rbtnTrabajoProgramadoSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["trabajo_Necesario"] != DBNull.Value)
+                {
+                    rbtnTrabajoNeccesarioSi.Checked = Convert.ToBoolean(dr["trabajo_Necesario"]);
+                }
+                else
+                {
+                    rbtnTrabajoNeccesarioSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["trabajo_Urgente"] != DBNull.Value)
+                {
+                    rbtnTrabajoUrgenteSi.Checked = Convert.ToBoolean(dr["trabajo_Urgente"]);
+                }
+                else
+                {
+                    rbtnTrabajoUrgenteSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["danosMateriales"] != DBNull.Value)
+                {
+                    rbtnDanosMateriales.Checked = Convert.ToBoolean(dr["danosMateriales"]);
+                }
+                else
+                {
+                    rbtnDanosMateriales.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                txtEquipoDanado.Text = dr["pieza_equipo_danada"].ToString();
+                txtSustituiblePor.Text = dr["sustituiblePor"].ToString();
+                txtSeccionB.Text = dr["seccion_B"].ToString();
+                if (dr["ITRS_Trabajo"] != DBNull.Value)
+                {
+                    rbtnExistenItrsSi.Checked = Convert.ToBoolean(dr["ITRS_Trabajo"]);
+                }
+                else
+                {
+                    rbtnExistenItrsSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["danosMateriales"] != DBNull.Value)
+                {
+                    rbtnDanosMateriales.Checked = Convert.ToBoolean(dr["danosMateriales"]);
+                }
+                else
+                {
+                    rbtnDanosMateriales.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["danosMateriales"] != DBNull.Value)
+                {
+                    rbtnDanosMateriales.Checked = Convert.ToBoolean(dr["danosMateriales"]);
+                }
+                else
+                {
+                    rbtnDanosMateriales.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["danosMateriales"] != DBNull.Value)
+                {
+                    rbtnDanosMateriales.Checked = Convert.ToBoolean(dr["danosMateriales"]);
+                }
+                else
+                {
+                    rbtnDanosMateriales.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+
+
+
+
+
+            }
         }
     }
 }

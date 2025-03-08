@@ -75,18 +75,10 @@
             this.pFactoresSeguridad = new System.Windows.Forms.Panel();
             this.label39 = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.rbtnExistiaSupervicionNo = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtnExistiaSupervicionSi = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.rbtnConociaTrabajoNo = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtnConociaTrabajoSi = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.rbtnEquipoAdecuadoNo = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtnEquipoAdecuadoSi = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.rbtnExistenItrsNo = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtnExistenItrsSi = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtnEquipoAdecuadoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnConociaTrabajoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnExistiaSupervicionSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnExistenItrsSi = new CapaPresentacion.radioButtonPersonalizado();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
@@ -266,10 +258,6 @@
             this.panel4.SuspendLayout();
             this.pFactoresSeguridad.SuspendLayout();
             this.panel20.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCondicionInsegura)).BeginInit();
             this.panel18.SuspendLayout();
@@ -312,11 +300,11 @@
             // 
             // pContenedorAcc
             // 
-            this.pContenedorAcc.Controls.Add(this.pSeguimientoCaso);
-            this.pContenedorAcc.Controls.Add(this.pDetallesAccidente);
             this.pContenedorAcc.Controls.Add(this.pFactoresSeguridad);
             this.pContenedorAcc.Controls.Add(this.pDatosGenerales);
             this.pContenedorAcc.Controls.Add(this.pControlAcciones);
+            this.pContenedorAcc.Controls.Add(this.pSeguimientoCaso);
+            this.pContenedorAcc.Controls.Add(this.pDetallesAccidente);
             this.pContenedorAcc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedorAcc.Location = new System.Drawing.Point(0, 145);
             this.pContenedorAcc.Name = "pContenedorAcc";
@@ -352,7 +340,7 @@
             // 
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Transparent;
-            this.label26.Location = new System.Drawing.Point(-18, 846);
+            this.label26.Location = new System.Drawing.Point(-18, 793);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(144, 18);
             this.label26.TabIndex = 110;
@@ -1016,10 +1004,10 @@
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel20.Controls.Add(this.panel22);
-            this.panel20.Controls.Add(this.panel23);
-            this.panel20.Controls.Add(this.panel24);
-            this.panel20.Controls.Add(this.panel25);
+            this.panel20.Controls.Add(this.rbtnEquipoAdecuadoSi);
+            this.panel20.Controls.Add(this.rbtnConociaTrabajoSi);
+            this.panel20.Controls.Add(this.rbtnExistiaSupervicionSi);
+            this.panel20.Controls.Add(this.rbtnExistenItrsSi);
             this.panel20.Controls.Add(this.label37);
             this.panel20.Controls.Add(this.label38);
             this.panel20.Controls.Add(this.label40);
@@ -1029,168 +1017,56 @@
             this.panel20.Size = new System.Drawing.Size(906, 111);
             this.panel20.TabIndex = 100;
             // 
-            // panel22
+            // rbtnEquipoAdecuadoSi
             // 
-            this.panel22.Controls.Add(this.rbtnExistiaSupervicionNo);
-            this.panel22.Controls.Add(this.rbtnExistiaSupervicionSi);
-            this.panel22.Location = new System.Drawing.Point(709, 58);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(125, 45);
-            this.panel22.TabIndex = 110;
-            // 
-            // rbtnExistiaSupervicionNo
-            // 
-            this.rbtnExistiaSupervicionNo.AutoSize = true;
-            this.rbtnExistiaSupervicionNo.Depth = 0;
-            this.rbtnExistiaSupervicionNo.Location = new System.Drawing.Point(55, 0);
-            this.rbtnExistiaSupervicionNo.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnExistiaSupervicionNo.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnExistiaSupervicionNo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnExistiaSupervicionNo.Name = "rbtnExistiaSupervicionNo";
-            this.rbtnExistiaSupervicionNo.Ripple = true;
-            this.rbtnExistiaSupervicionNo.Size = new System.Drawing.Size(57, 37);
-            this.rbtnExistiaSupervicionNo.TabIndex = 1;
-            this.rbtnExistiaSupervicionNo.TabStop = true;
-            this.rbtnExistiaSupervicionNo.Text = "NO";
-            this.rbtnExistiaSupervicionNo.UseVisualStyleBackColor = true;
-            // 
-            // rbtnExistiaSupervicionSi
-            // 
-            this.rbtnExistiaSupervicionSi.AutoSize = true;
-            this.rbtnExistiaSupervicionSi.Depth = 0;
-            this.rbtnExistiaSupervicionSi.Location = new System.Drawing.Point(0, 0);
-            this.rbtnExistiaSupervicionSi.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnExistiaSupervicionSi.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnExistiaSupervicionSi.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnExistiaSupervicionSi.Name = "rbtnExistiaSupervicionSi";
-            this.rbtnExistiaSupervicionSi.Ripple = true;
-            this.rbtnExistiaSupervicionSi.Size = new System.Drawing.Size(49, 37);
-            this.rbtnExistiaSupervicionSi.TabIndex = 0;
-            this.rbtnExistiaSupervicionSi.TabStop = true;
-            this.rbtnExistiaSupervicionSi.Text = "SI";
-            this.rbtnExistiaSupervicionSi.UseVisualStyleBackColor = true;
-            // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.rbtnConociaTrabajoNo);
-            this.panel23.Controls.Add(this.rbtnConociaTrabajoSi);
-            this.panel23.Location = new System.Drawing.Point(709, 7);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(125, 45);
-            this.panel23.TabIndex = 109;
-            // 
-            // rbtnConociaTrabajoNo
-            // 
-            this.rbtnConociaTrabajoNo.AutoSize = true;
-            this.rbtnConociaTrabajoNo.Depth = 0;
-            this.rbtnConociaTrabajoNo.Location = new System.Drawing.Point(55, 0);
-            this.rbtnConociaTrabajoNo.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnConociaTrabajoNo.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnConociaTrabajoNo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnConociaTrabajoNo.Name = "rbtnConociaTrabajoNo";
-            this.rbtnConociaTrabajoNo.Ripple = true;
-            this.rbtnConociaTrabajoNo.Size = new System.Drawing.Size(57, 37);
-            this.rbtnConociaTrabajoNo.TabIndex = 1;
-            this.rbtnConociaTrabajoNo.TabStop = true;
-            this.rbtnConociaTrabajoNo.Text = "NO";
-            this.rbtnConociaTrabajoNo.UseVisualStyleBackColor = true;
+            this.rbtnEquipoAdecuadoSi.Location = new System.Drawing.Point(282, 63);
+            this.rbtnEquipoAdecuadoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnEquipoAdecuadoSi.Name = "rbtnEquipoAdecuadoSi";
+            this.rbtnEquipoAdecuadoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnEquipoAdecuadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnEquipoAdecuadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnEquipoAdecuadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnEquipoAdecuadoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnEquipoAdecuadoSi.TabIndex = 126;
+            this.rbtnEquipoAdecuadoSi.UseVisualStyleBackColor = true;
             // 
             // rbtnConociaTrabajoSi
             // 
-            this.rbtnConociaTrabajoSi.AutoSize = true;
-            this.rbtnConociaTrabajoSi.Depth = 0;
-            this.rbtnConociaTrabajoSi.Location = new System.Drawing.Point(0, 0);
-            this.rbtnConociaTrabajoSi.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnConociaTrabajoSi.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnConociaTrabajoSi.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtnConociaTrabajoSi.Location = new System.Drawing.Point(751, 12);
+            this.rbtnConociaTrabajoSi.MinimumSize = new System.Drawing.Size(45, 22);
             this.rbtnConociaTrabajoSi.Name = "rbtnConociaTrabajoSi";
-            this.rbtnConociaTrabajoSi.Ripple = true;
-            this.rbtnConociaTrabajoSi.Size = new System.Drawing.Size(49, 37);
-            this.rbtnConociaTrabajoSi.TabIndex = 0;
-            this.rbtnConociaTrabajoSi.TabStop = true;
-            this.rbtnConociaTrabajoSi.Text = "SI";
+            this.rbtnConociaTrabajoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnConociaTrabajoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnConociaTrabajoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnConociaTrabajoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnConociaTrabajoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnConociaTrabajoSi.TabIndex = 125;
             this.rbtnConociaTrabajoSi.UseVisualStyleBackColor = true;
             // 
-            // panel24
+            // rbtnExistiaSupervicionSi
             // 
-            this.panel24.Controls.Add(this.rbtnEquipoAdecuadoNo);
-            this.panel24.Controls.Add(this.rbtnEquipoAdecuadoSi);
-            this.panel24.Location = new System.Drawing.Point(256, 58);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(125, 45);
-            this.panel24.TabIndex = 109;
-            // 
-            // rbtnEquipoAdecuadoNo
-            // 
-            this.rbtnEquipoAdecuadoNo.AutoSize = true;
-            this.rbtnEquipoAdecuadoNo.Depth = 0;
-            this.rbtnEquipoAdecuadoNo.Location = new System.Drawing.Point(55, 0);
-            this.rbtnEquipoAdecuadoNo.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnEquipoAdecuadoNo.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnEquipoAdecuadoNo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnEquipoAdecuadoNo.Name = "rbtnEquipoAdecuadoNo";
-            this.rbtnEquipoAdecuadoNo.Ripple = true;
-            this.rbtnEquipoAdecuadoNo.Size = new System.Drawing.Size(57, 37);
-            this.rbtnEquipoAdecuadoNo.TabIndex = 1;
-            this.rbtnEquipoAdecuadoNo.TabStop = true;
-            this.rbtnEquipoAdecuadoNo.Text = "NO";
-            this.rbtnEquipoAdecuadoNo.UseVisualStyleBackColor = true;
-            // 
-            // rbtnEquipoAdecuadoSi
-            // 
-            this.rbtnEquipoAdecuadoSi.AutoSize = true;
-            this.rbtnEquipoAdecuadoSi.Depth = 0;
-            this.rbtnEquipoAdecuadoSi.Location = new System.Drawing.Point(0, 0);
-            this.rbtnEquipoAdecuadoSi.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnEquipoAdecuadoSi.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnEquipoAdecuadoSi.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnEquipoAdecuadoSi.Name = "rbtnEquipoAdecuadoSi";
-            this.rbtnEquipoAdecuadoSi.Ripple = true;
-            this.rbtnEquipoAdecuadoSi.Size = new System.Drawing.Size(49, 37);
-            this.rbtnEquipoAdecuadoSi.TabIndex = 0;
-            this.rbtnEquipoAdecuadoSi.TabStop = true;
-            this.rbtnEquipoAdecuadoSi.Text = "SI";
-            this.rbtnEquipoAdecuadoSi.UseVisualStyleBackColor = true;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.rbtnExistenItrsNo);
-            this.panel25.Controls.Add(this.rbtnExistenItrsSi);
-            this.panel25.Location = new System.Drawing.Point(256, 7);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(125, 45);
-            this.panel25.TabIndex = 108;
-            // 
-            // rbtnExistenItrsNo
-            // 
-            this.rbtnExistenItrsNo.AutoSize = true;
-            this.rbtnExistenItrsNo.Depth = 0;
-            this.rbtnExistenItrsNo.Location = new System.Drawing.Point(55, 0);
-            this.rbtnExistenItrsNo.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnExistenItrsNo.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnExistenItrsNo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnExistenItrsNo.Name = "rbtnExistenItrsNo";
-            this.rbtnExistenItrsNo.Ripple = true;
-            this.rbtnExistenItrsNo.Size = new System.Drawing.Size(57, 37);
-            this.rbtnExistenItrsNo.TabIndex = 1;
-            this.rbtnExistenItrsNo.TabStop = true;
-            this.rbtnExistenItrsNo.Text = "NO";
-            this.rbtnExistenItrsNo.UseVisualStyleBackColor = true;
+            this.rbtnExistiaSupervicionSi.Location = new System.Drawing.Point(751, 63);
+            this.rbtnExistiaSupervicionSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnExistiaSupervicionSi.Name = "rbtnExistiaSupervicionSi";
+            this.rbtnExistiaSupervicionSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnExistiaSupervicionSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnExistiaSupervicionSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnExistiaSupervicionSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnExistiaSupervicionSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnExistiaSupervicionSi.TabIndex = 124;
+            this.rbtnExistiaSupervicionSi.UseVisualStyleBackColor = true;
             // 
             // rbtnExistenItrsSi
             // 
-            this.rbtnExistenItrsSi.AutoSize = true;
-            this.rbtnExistenItrsSi.Depth = 0;
-            this.rbtnExistenItrsSi.Location = new System.Drawing.Point(0, 0);
-            this.rbtnExistenItrsSi.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnExistenItrsSi.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnExistenItrsSi.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtnExistenItrsSi.Location = new System.Drawing.Point(282, 12);
+            this.rbtnExistenItrsSi.MinimumSize = new System.Drawing.Size(45, 22);
             this.rbtnExistenItrsSi.Name = "rbtnExistenItrsSi";
-            this.rbtnExistenItrsSi.Ripple = true;
-            this.rbtnExistenItrsSi.Size = new System.Drawing.Size(49, 37);
-            this.rbtnExistenItrsSi.TabIndex = 0;
-            this.rbtnExistenItrsSi.TabStop = true;
-            this.rbtnExistenItrsSi.Text = "SI";
+            this.rbtnExistenItrsSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnExistenItrsSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnExistenItrsSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnExistenItrsSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnExistenItrsSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnExistenItrsSi.TabIndex = 123;
             this.rbtnExistenItrsSi.UseVisualStyleBackColor = true;
             // 
             // label37
@@ -1851,7 +1727,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 5403);
+            this.button2.Location = new System.Drawing.Point(728, 6729);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(180, 50);
             this.button2.TabIndex = 91;
@@ -3626,14 +3502,6 @@
             this.pFactoresSeguridad.ResumeLayout(false);
             this.pFactoresSeguridad.PerformLayout();
             this.panel20.ResumeLayout(false);
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCondicionInsegura)).EndInit();
@@ -3771,18 +3639,6 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel22;
-        private MaterialSkin.Controls.MaterialRadioButton rbtnExistiaSupervicionNo;
-        private MaterialSkin.Controls.MaterialRadioButton rbtnExistiaSupervicionSi;
-        private System.Windows.Forms.Panel panel23;
-        private MaterialSkin.Controls.MaterialRadioButton rbtnConociaTrabajoNo;
-        private MaterialSkin.Controls.MaterialRadioButton rbtnConociaTrabajoSi;
-        private System.Windows.Forms.Panel panel24;
-        private MaterialSkin.Controls.MaterialRadioButton rbtnEquipoAdecuadoNo;
-        private MaterialSkin.Controls.MaterialRadioButton rbtnEquipoAdecuadoSi;
-        private System.Windows.Forms.Panel panel25;
-        private MaterialSkin.Controls.MaterialRadioButton rbtnExistenItrsNo;
-        private MaterialSkin.Controls.MaterialRadioButton rbtnExistenItrsSi;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label40;
@@ -3910,5 +3766,9 @@
         private MaterialSkin.Controls.MaterialTextBox txtNombreSST;
         private MaterialSkin.Controls.MaterialFloatingActionButton btnBuscarEmpleadoSST;
         private MaterialSkin.Controls.MaterialTextBox txtNumNomminaSST;
+        private radioButtonPersonalizado rbtnEquipoAdecuadoSi;
+        private radioButtonPersonalizado rbtnConociaTrabajoSi;
+        private radioButtonPersonalizado rbtnExistiaSupervicionSi;
+        private radioButtonPersonalizado rbtnExistenItrsSi;
     }
 }

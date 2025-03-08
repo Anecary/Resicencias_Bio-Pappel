@@ -229,5 +229,124 @@ namespace CapaDatos
                 return data;
             }
         }
+        public DataSet consultarDetalleInvAccidente_ActosInseguros(int idAccidente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerDetalle_InvAccidenteActosInseguros", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idAccidente = new MySqlParameter("@p_idAccidente", MySqlDbType.Int32);
+                p_idAccidente.Direction = ParameterDirection.Input;
+                p_idAccidente.Value = idAccidente;
+                adapter.SelectCommand.Parameters.Add(p_idAccidente);
+
+                adapter.Fill(data, "Detalle_InvAccidenteActosInseguros");
+                return data;
+            }
+        }
+        public DataSet consultarDetalleInvAccidente_CondicionesInseguras(int idAccidente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerDetalle_InvAccidenteCondicionesInseguras", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idAccidente = new MySqlParameter("@p_idAccidente", MySqlDbType.Int32);
+                p_idAccidente.Direction = ParameterDirection.Input;
+                p_idAccidente.Value = idAccidente;
+                adapter.SelectCommand.Parameters.Add(p_idAccidente);
+
+                adapter.Fill(data, "Detalle_InvAccidenteCondicionesInseguras");
+                return data;
+            }
+        }
+        public DataSet consultarDetalleInvAccidente_Riesgos(int idAccidente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerDetalle_InvAccidenteRiesgos", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idAccidente = new MySqlParameter("@p_idAccidente", MySqlDbType.Int32);
+                p_idAccidente.Direction = ParameterDirection.Input;
+                p_idAccidente.Value = idAccidente;
+                adapter.SelectCommand.Parameters.Add(p_idAccidente);
+
+                adapter.Fill(data, "Detalle_InvAccidenteRiesgos");
+                return data;
+            }
+        }
+        public DataSet consultarDetalleInvAccidente_EmpleadosConocimiento(int idAccidente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerDetalle_EmpleadosConocimiento", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idAccidente = new MySqlParameter("@p_idAccidente", MySqlDbType.Int32);
+                p_idAccidente.Direction = ParameterDirection.Input;
+                p_idAccidente.Value = idAccidente;
+                adapter.SelectCommand.Parameters.Add(p_idAccidente);
+
+                adapter.Fill(data, "Detalle_InvAccidenteEmpleadosConocimiento");
+                return data;
+            }
+        }
+        public DataSet consultarDetalleInvAccidente_EmpleadosInvolucrados(int idAccidente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerDetalle_EmpleadosInvolucrados", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idAccidente = new MySqlParameter("@p_idAccidente", MySqlDbType.Int32);
+                p_idAccidente.Direction = ParameterDirection.Input;
+                p_idAccidente.Value = idAccidente;
+                adapter.SelectCommand.Parameters.Add(p_idAccidente);
+
+                adapter.Fill(data, "Detalle_InvAccidenteEmpleadosInvolucrados");
+                return data;
+            }
+        }
+        public DataSet consultarDetalleInvAccidente_EmpleadosTestigos(int idAccidente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerDetalle_EmpleadosTestigos", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idAccidente = new MySqlParameter("@p_idAccidente", MySqlDbType.Int32);
+                p_idAccidente.Direction = ParameterDirection.Input;
+                p_idAccidente.Value = idAccidente;
+                adapter.SelectCommand.Parameters.Add(p_idAccidente);
+
+                adapter.Fill(data, "Detalle_InvAccidenteEmpleadosTestigos");
+                return data;
+            }
+        }
+        public DataSet consultarInvAccidentePorID(int idAccidente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerInvestigacionAccidentePorID", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idAccidente = new MySqlParameter("@p_idAccidente", MySqlDbType.Int32);
+                p_idAccidente.Direction = ParameterDirection.Input;
+                p_idAccidente.Value = idAccidente;
+                adapter.SelectCommand.Parameters.Add(p_idAccidente);
+
+                adapter.Fill(data, "InvestigacionAccidentePorID");
+                return data;
+            }
+        }
     }
 }

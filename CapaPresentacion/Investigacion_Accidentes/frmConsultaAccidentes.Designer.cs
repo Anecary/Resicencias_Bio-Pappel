@@ -31,65 +31,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaAccidentes));
             this.pContenedorAccidentes = new System.Windows.Forms.Panel();
             this.pContenedorAcc = new System.Windows.Forms.Panel();
-            this.pSeguimientoCaso = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.materialMultiLineTextBox214 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label48 = new System.Windows.Forms.Label();
-            this.materialMultiLineTextBox213 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label47 = new System.Windows.Forms.Label();
-            this.materialMultiLineTextBox212 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label46 = new System.Windows.Forms.Label();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.materialTextBox8 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialRadioButton25 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton29 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton26 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton30 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox6 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialFloatingActionButton3 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.materialTextBox7 = new MaterialSkin.Controls.MaterialTextBox();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox4 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.materialTextBox5 = new MaterialSkin.Controls.MaterialTextBox();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.label42 = new System.Windows.Forms.Label();
             this.pDatosGenerales = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cboxFechasAccidentes = new MaterialSkin.Controls.MaterialComboBox();
             this.btnBuscarEmpleado = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.txtNumeroNomina = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNombreEmpleado = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtIdEmpleado = new MaterialSkin.Controls.MaterialTextBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.materialMultiLineTextBox23 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.materialMultiLineTextBox25 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.materialMultiLineTextBox26 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.txtDiaDescansoPrevio = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtTipoLesion = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.txtTrabajoDesempenado = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.txtParteCuerpoAfectada = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.materialTextBox14 = new MaterialSkin.Controls.MaterialTextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTextBox15 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTextBox16 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox17 = new MaterialSkin.Controls.MaterialTextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.materialRadioButton3 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton4 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.txtTotalHrs = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.txtEdad = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNombreEmpleado = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox22 = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNumAccidente = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtCondicion = new MaterialSkin.Controls.MaterialTextBox();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvTestigos = new System.Windows.Forms.DataGridView();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -98,52 +66,11 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.materialComboBox3 = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialMultiLineTextBox211 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.txtSustituiblePor = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.label31 = new System.Windows.Forms.Label();
-            this.materialMultiLineTextBox210 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.txtEquipoDanado = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.label30 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.materialRadioButton13 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton14 = new MaterialSkin.Controls.MaterialRadioButton();
             this.label29 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.materialRadioButton11 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton12 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.materialRadioButton9 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton10 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.materialRadioButton7 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton8 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.materialRadioButton5 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton6 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.materialRadioButton2 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.materialTextBox11 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox10 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialMultiLineTextBox29 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label15 = new System.Windows.Forms.Label();
-            this.materialMultiLineTextBox28 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label14 = new System.Windows.Forms.Label();
-            this.materialMultiLineTextBox24 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label12 = new System.Windows.Forms.Label();
-            this.materialMultiLineTextBox27 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label13 = new System.Windows.Forms.Label();
-            this.materialMultiLineTextBox22 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label11 = new System.Windows.Forms.Label();
-            this.materialMultiLineTextBox21 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label10 = new System.Windows.Forms.Label();
             this.pControlAcciones = new System.Windows.Forms.Panel();
             this.label61 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
@@ -172,25 +99,38 @@
             this.label49 = new System.Windows.Forms.Label();
             this.pFactoresSeguridad = new System.Windows.Forms.Panel();
             this.label39 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.materialTextBox3 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox9 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dgvDetalleCondicionesInseguras = new System.Windows.Forms.DataGridView();
             this.label36 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgvDetalleActosInseguros = new System.Windows.Forms.DataGridView();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDetalleRiesgos = new System.Windows.Forms.DataGridView();
             this.label33 = new System.Windows.Forms.Label();
+            this.pSeguimientoCaso = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.materialMultiLineTextBox214 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label48 = new System.Windows.Forms.Label();
+            this.materialMultiLineTextBox213 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label47 = new System.Windows.Forms.Label();
+            this.materialMultiLineTextBox212 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label46 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.materialTextBox8 = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialRadioButton25 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.materialRadioButton29 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.materialRadioButton26 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.materialRadioButton30 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.dgvEmpleadosInvolucrados = new System.Windows.Forms.DataGridView();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.dgvEmpleadoConocimiento = new System.Windows.Forms.DataGridView();
+            this.label42 = new System.Windows.Forms.Label();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.btnControlAcciones = new System.Windows.Forms.Button();
             this.btnSeguimientoCaso = new System.Windows.Forms.Button();
@@ -209,48 +149,81 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtIdEmpleado = new MaterialSkin.Controls.MaterialTextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtDescripcionAccidente = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label62 = new System.Windows.Forms.Label();
+            this.txtEquipoProteccionNecesario = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtEquipoProteccionUsado = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtObjCausanteLesion = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtLugarAccidente = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtProceso = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtSeccionA = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtSeccionB = new MaterialSkin.Controls.MaterialTextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtCausaAccidente = new MaterialSkin.Controls.MaterialTextBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.rbtnEquipoAdecuadoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnConociaTrabajoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnExistiaSupervicionSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnExistenItrsSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTiempoExtra = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoUrgenteSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoNeccesarioSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoProgramadoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoHabitualSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnRealizoTrabajoAntesSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnlesion12MesesSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnlesion30DiasSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnDanosMateriales = new CapaPresentacion.radioButtonPersonalizado();
             this.pContenedorAccidentes.SuspendLayout();
             this.pContenedorAcc.SuspendLayout();
-            this.pSeguimientoCaso.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            this.panel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.pDatosGenerales.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel14.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTestigos)).BeginInit();
             this.pDetallesAccidente.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.pControlAcciones.SuspendLayout();
             this.panel33.SuspendLayout();
             this.panel32.SuspendLayout();
             this.panel31.SuspendLayout();
             this.pFactoresSeguridad.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleCondicionesInseguras)).BeginInit();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleActosInseguros)).BeginInit();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleRiesgos)).BeginInit();
+            this.pSeguimientoCaso.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleadosInvolucrados)).BeginInit();
+            this.panel27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleadoConocimiento)).BeginInit();
             this.pSeccionesDatos.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // pContenedorAccidentes
@@ -267,473 +240,16 @@
             // 
             // pContenedorAcc
             // 
-            this.pContenedorAcc.Controls.Add(this.pDatosGenerales);
-            this.pContenedorAcc.Controls.Add(this.pDetallesAccidente);
             this.pContenedorAcc.Controls.Add(this.pControlAcciones);
             this.pContenedorAcc.Controls.Add(this.pFactoresSeguridad);
             this.pContenedorAcc.Controls.Add(this.pSeguimientoCaso);
+            this.pContenedorAcc.Controls.Add(this.pDatosGenerales);
+            this.pContenedorAcc.Controls.Add(this.pDetallesAccidente);
             this.pContenedorAcc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedorAcc.Location = new System.Drawing.Point(0, 145);
             this.pContenedorAcc.Name = "pContenedorAcc";
             this.pContenedorAcc.Size = new System.Drawing.Size(945, 521);
             this.pContenedorAcc.TabIndex = 14;
-            // 
-            // pSeguimientoCaso
-            // 
-            this.pSeguimientoCaso.AutoScroll = true;
-            this.pSeguimientoCaso.Controls.Add(this.label45);
-            this.pSeguimientoCaso.Controls.Add(this.panel29);
-            this.pSeguimientoCaso.Controls.Add(this.panel28);
-            this.pSeguimientoCaso.Controls.Add(this.panel26);
-            this.pSeguimientoCaso.Controls.Add(this.panel27);
-            this.pSeguimientoCaso.Controls.Add(this.label42);
-            this.pSeguimientoCaso.Location = new System.Drawing.Point(0, 0);
-            this.pSeguimientoCaso.Name = "pSeguimientoCaso";
-            this.pSeguimientoCaso.Size = new System.Drawing.Size(945, 521);
-            this.pSeguimientoCaso.TabIndex = 16;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(-4, 907);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(65, 20);
-            this.label45.TabIndex = 103;
-            this.label45.Text = "Código";
-            // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel29.Controls.Add(this.materialMultiLineTextBox214);
-            this.panel29.Controls.Add(this.label48);
-            this.panel29.Controls.Add(this.materialMultiLineTextBox213);
-            this.panel29.Controls.Add(this.label47);
-            this.panel29.Controls.Add(this.materialMultiLineTextBox212);
-            this.panel29.Controls.Add(this.label46);
-            this.panel29.Location = new System.Drawing.Point(11, 610);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(914, 290);
-            this.panel29.TabIndex = 102;
-            // 
-            // materialMultiLineTextBox214
-            // 
-            this.materialMultiLineTextBox214.AnimateReadOnly = false;
-            this.materialMultiLineTextBox214.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox214.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox214.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox214.Depth = 0;
-            this.materialMultiLineTextBox214.HideSelection = true;
-            this.materialMultiLineTextBox214.Location = new System.Drawing.Point(17, 217);
-            this.materialMultiLineTextBox214.MaxLength = 32767;
-            this.materialMultiLineTextBox214.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox214.Name = "materialMultiLineTextBox214";
-            this.materialMultiLineTextBox214.PasswordChar = '\0';
-            this.materialMultiLineTextBox214.ReadOnly = false;
-            this.materialMultiLineTextBox214.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox214.SelectedText = "";
-            this.materialMultiLineTextBox214.SelectionLength = 0;
-            this.materialMultiLineTextBox214.SelectionStart = 0;
-            this.materialMultiLineTextBox214.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox214.Size = new System.Drawing.Size(876, 59);
-            this.materialMultiLineTextBox214.TabIndex = 105;
-            this.materialMultiLineTextBox214.TabStop = false;
-            this.materialMultiLineTextBox214.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox214.UseSystemPasswordChar = false;
-            // 
-            // label48
-            // 
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label48.Location = new System.Drawing.Point(17, 196);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(156, 18);
-            this.label48.TabIndex = 104;
-            this.label48.Text = "Incapacidad:";
-            // 
-            // materialMultiLineTextBox213
-            // 
-            this.materialMultiLineTextBox213.AnimateReadOnly = false;
-            this.materialMultiLineTextBox213.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox213.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox213.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox213.Depth = 0;
-            this.materialMultiLineTextBox213.HideSelection = true;
-            this.materialMultiLineTextBox213.Location = new System.Drawing.Point(17, 129);
-            this.materialMultiLineTextBox213.MaxLength = 32767;
-            this.materialMultiLineTextBox213.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox213.Name = "materialMultiLineTextBox213";
-            this.materialMultiLineTextBox213.PasswordChar = '\0';
-            this.materialMultiLineTextBox213.ReadOnly = false;
-            this.materialMultiLineTextBox213.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox213.SelectedText = "";
-            this.materialMultiLineTextBox213.SelectionLength = 0;
-            this.materialMultiLineTextBox213.SelectionStart = 0;
-            this.materialMultiLineTextBox213.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox213.Size = new System.Drawing.Size(876, 59);
-            this.materialMultiLineTextBox213.TabIndex = 103;
-            this.materialMultiLineTextBox213.TabStop = false;
-            this.materialMultiLineTextBox213.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox213.UseSystemPasswordChar = false;
-            // 
-            // label47
-            // 
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label47.Location = new System.Drawing.Point(17, 108);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(156, 18);
-            this.label47.TabIndex = 102;
-            this.label47.Text = "Tratamiento:";
-            // 
-            // materialMultiLineTextBox212
-            // 
-            this.materialMultiLineTextBox212.AnimateReadOnly = false;
-            this.materialMultiLineTextBox212.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox212.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox212.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox212.Depth = 0;
-            this.materialMultiLineTextBox212.HideSelection = true;
-            this.materialMultiLineTextBox212.Location = new System.Drawing.Point(17, 40);
-            this.materialMultiLineTextBox212.MaxLength = 32767;
-            this.materialMultiLineTextBox212.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox212.Name = "materialMultiLineTextBox212";
-            this.materialMultiLineTextBox212.PasswordChar = '\0';
-            this.materialMultiLineTextBox212.ReadOnly = false;
-            this.materialMultiLineTextBox212.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox212.SelectedText = "";
-            this.materialMultiLineTextBox212.SelectionLength = 0;
-            this.materialMultiLineTextBox212.SelectionStart = 0;
-            this.materialMultiLineTextBox212.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox212.Size = new System.Drawing.Size(876, 59);
-            this.materialMultiLineTextBox212.TabIndex = 101;
-            this.materialMultiLineTextBox212.TabStop = false;
-            this.materialMultiLineTextBox212.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox212.UseSystemPasswordChar = false;
-            // 
-            // label46
-            // 
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label46.Location = new System.Drawing.Point(17, 19);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(156, 18);
-            this.label46.TabIndex = 100;
-            this.label46.Text = "Diagnóstico Final:";
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel28.Controls.Add(this.materialTextBox8);
-            this.panel28.Controls.Add(this.materialRadioButton25);
-            this.panel28.Controls.Add(this.materialRadioButton29);
-            this.panel28.Controls.Add(this.materialRadioButton26);
-            this.panel28.Controls.Add(this.materialRadioButton30);
-            this.panel28.Location = new System.Drawing.Point(10, 524);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(916, 67);
-            this.panel28.TabIndex = 101;
-            // 
-            // materialTextBox8
-            // 
-            this.materialTextBox8.AnimateReadOnly = false;
-            this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox8.Depth = 0;
-            this.materialTextBox8.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox8.Hint = "Otro";
-            this.materialTextBox8.LeadingIcon = null;
-            this.materialTextBox8.Location = new System.Drawing.Point(709, 4);
-            this.materialTextBox8.MaxLength = 18;
-            this.materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox8.Multiline = false;
-            this.materialTextBox8.Name = "materialTextBox8";
-            this.materialTextBox8.Size = new System.Drawing.Size(197, 50);
-            this.materialTextBox8.TabIndex = 97;
-            this.materialTextBox8.Text = "";
-            this.materialTextBox8.TrailingIcon = null;
-            this.materialTextBox8.Visible = false;
-            // 
-            // materialRadioButton25
-            // 
-            this.materialRadioButton25.AutoSize = true;
-            this.materialRadioButton25.Depth = 0;
-            this.materialRadioButton25.Location = new System.Drawing.Point(638, 11);
-            this.materialRadioButton25.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton25.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton25.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton25.Name = "materialRadioButton25";
-            this.materialRadioButton25.Ripple = true;
-            this.materialRadioButton25.Size = new System.Drawing.Size(65, 37);
-            this.materialRadioButton25.TabIndex = 1;
-            this.materialRadioButton25.TabStop = true;
-            this.materialRadioButton25.Text = "Otro";
-            this.materialRadioButton25.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton29
-            // 
-            this.materialRadioButton29.AutoSize = true;
-            this.materialRadioButton29.Depth = 0;
-            this.materialRadioButton29.Location = new System.Drawing.Point(194, 11);
-            this.materialRadioButton29.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton29.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton29.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton29.Name = "materialRadioButton29";
-            this.materialRadioButton29.Ripple = true;
-            this.materialRadioButton29.Size = new System.Drawing.Size(195, 37);
-            this.materialRadioButton29.TabIndex = 1;
-            this.materialRadioButton29.TabStop = true;
-            this.materialRadioButton29.Text = "Enviado a su domicilio";
-            this.materialRadioButton29.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton26
-            // 
-            this.materialRadioButton26.AutoSize = true;
-            this.materialRadioButton26.Depth = 0;
-            this.materialRadioButton26.Location = new System.Drawing.Point(402, 11);
-            this.materialRadioButton26.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton26.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton26.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton26.Name = "materialRadioButton26";
-            this.materialRadioButton26.Ripple = true;
-            this.materialRadioButton26.Size = new System.Drawing.Size(226, 37);
-            this.materialRadioButton26.TabIndex = 0;
-            this.materialRadioButton26.TabStop = true;
-            this.materialRadioButton26.Text = "Enviado a atención médica";
-            this.materialRadioButton26.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton30
-            // 
-            this.materialRadioButton30.AutoSize = true;
-            this.materialRadioButton30.Depth = 0;
-            this.materialRadioButton30.Location = new System.Drawing.Point(1, 11);
-            this.materialRadioButton30.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton30.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton30.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton30.Name = "materialRadioButton30";
-            this.materialRadioButton30.Ripple = true;
-            this.materialRadioButton30.Size = new System.Drawing.Size(180, 37);
-            this.materialRadioButton30.TabIndex = 0;
-            this.materialRadioButton30.TabStop = true;
-            this.materialRadioButton30.Text = "Continua trabajando";
-            this.materialRadioButton30.UseVisualStyleBackColor = true;
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel26.Controls.Add(this.label44);
-            this.panel26.Controls.Add(this.materialButton5);
-            this.panel26.Controls.Add(this.materialTextBox6);
-            this.panel26.Controls.Add(this.materialFloatingActionButton3);
-            this.panel26.Controls.Add(this.materialTextBox7);
-            this.panel26.Controls.Add(this.dataGridView6);
-            this.panel26.Location = new System.Drawing.Point(10, 280);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(916, 229);
-            this.panel26.TabIndex = 97;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label44.Location = new System.Drawing.Point(9, 7);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(275, 20);
-            this.label44.TabIndex = 24;
-            this.label44.Text = "Nombre del personal involucrado:";
-            // 
-            // materialButton5
-            // 
-            this.materialButton5.AutoSize = false;
-            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton5.Depth = 0;
-            this.materialButton5.HighEmphasis = true;
-            this.materialButton5.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton5.Icon")));
-            this.materialButton5.Location = new System.Drawing.Point(770, 35);
-            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton5.Name = "materialButton5";
-            this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton5.Size = new System.Drawing.Size(124, 50);
-            this.materialButton5.TabIndex = 96;
-            this.materialButton5.Text = "Agregar";
-            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton5.UseAccentColor = true;
-            this.materialButton5.UseVisualStyleBackColor = true;
-            // 
-            // materialTextBox6
-            // 
-            this.materialTextBox6.AnimateReadOnly = false;
-            this.materialTextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox6.Depth = 0;
-            this.materialTextBox6.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox6.Hint = "Nombre de colaborador involucrado: ";
-            this.materialTextBox6.LeadingIcon = null;
-            this.materialTextBox6.Location = new System.Drawing.Point(246, 34);
-            this.materialTextBox6.MaxLength = 18;
-            this.materialTextBox6.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox6.Multiline = false;
-            this.materialTextBox6.Name = "materialTextBox6";
-            this.materialTextBox6.Size = new System.Drawing.Size(502, 50);
-            this.materialTextBox6.TabIndex = 95;
-            this.materialTextBox6.Text = "";
-            this.materialTextBox6.TrailingIcon = null;
-            // 
-            // materialFloatingActionButton3
-            // 
-            this.materialFloatingActionButton3.Depth = 0;
-            this.materialFloatingActionButton3.Enabled = false;
-            this.materialFloatingActionButton3.Icon = ((System.Drawing.Image)(resources.GetObject("materialFloatingActionButton3.Icon")));
-            this.materialFloatingActionButton3.Location = new System.Drawing.Point(184, 40);
-            this.materialFloatingActionButton3.Mini = true;
-            this.materialFloatingActionButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton3.Name = "materialFloatingActionButton3";
-            this.materialFloatingActionButton3.Size = new System.Drawing.Size(40, 40);
-            this.materialFloatingActionButton3.TabIndex = 94;
-            this.materialFloatingActionButton3.Text = "materialFloatingActionButton3";
-            this.materialFloatingActionButton3.UseVisualStyleBackColor = true;
-            // 
-            // materialTextBox7
-            // 
-            this.materialTextBox7.AnimateReadOnly = false;
-            this.materialTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox7.Depth = 0;
-            this.materialTextBox7.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox7.Hint = "No. Nomina: ";
-            this.materialTextBox7.LeadingIcon = null;
-            this.materialTextBox7.Location = new System.Drawing.Point(8, 34);
-            this.materialTextBox7.MaxLength = 18;
-            this.materialTextBox7.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox7.Multiline = false;
-            this.materialTextBox7.Name = "materialTextBox7";
-            this.materialTextBox7.Size = new System.Drawing.Size(159, 50);
-            this.materialTextBox7.TabIndex = 92;
-            this.materialTextBox7.Text = "";
-            this.materialTextBox7.TrailingIcon = null;
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(8, 106);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(889, 118);
-            this.dataGridView6.TabIndex = 91;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel27.Controls.Add(this.label43);
-            this.panel27.Controls.Add(this.materialButton4);
-            this.panel27.Controls.Add(this.materialTextBox4);
-            this.panel27.Controls.Add(this.materialFloatingActionButton2);
-            this.panel27.Controls.Add(this.materialTextBox5);
-            this.panel27.Controls.Add(this.dataGridView5);
-            this.panel27.Location = new System.Drawing.Point(10, 34);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(916, 229);
-            this.panel27.TabIndex = 95;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label43.Location = new System.Drawing.Point(9, 7);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(408, 20);
-            this.label43.TabIndex = 24;
-            this.label43.Text = "Persona(s) que tomo conocimiento de los hechos:";
-            // 
-            // materialButton4
-            // 
-            this.materialButton4.AutoSize = false;
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.HighEmphasis = true;
-            this.materialButton4.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton4.Icon")));
-            this.materialButton4.Location = new System.Drawing.Point(770, 35);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton4.Size = new System.Drawing.Size(124, 50);
-            this.materialButton4.TabIndex = 96;
-            this.materialButton4.Text = "Agregar";
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton4.UseAccentColor = true;
-            this.materialButton4.UseVisualStyleBackColor = true;
-            // 
-            // materialTextBox4
-            // 
-            this.materialTextBox4.AnimateReadOnly = false;
-            this.materialTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox4.Depth = 0;
-            this.materialTextBox4.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox4.Hint = "Nombre de colaborador con conocimiento de los hechos: ";
-            this.materialTextBox4.LeadingIcon = null;
-            this.materialTextBox4.Location = new System.Drawing.Point(246, 34);
-            this.materialTextBox4.MaxLength = 18;
-            this.materialTextBox4.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox4.Multiline = false;
-            this.materialTextBox4.Name = "materialTextBox4";
-            this.materialTextBox4.Size = new System.Drawing.Size(502, 50);
-            this.materialTextBox4.TabIndex = 95;
-            this.materialTextBox4.Text = "";
-            this.materialTextBox4.TrailingIcon = null;
-            // 
-            // materialFloatingActionButton2
-            // 
-            this.materialFloatingActionButton2.Depth = 0;
-            this.materialFloatingActionButton2.Enabled = false;
-            this.materialFloatingActionButton2.Icon = ((System.Drawing.Image)(resources.GetObject("materialFloatingActionButton2.Icon")));
-            this.materialFloatingActionButton2.Location = new System.Drawing.Point(184, 40);
-            this.materialFloatingActionButton2.Mini = true;
-            this.materialFloatingActionButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton2.Name = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.Size = new System.Drawing.Size(40, 40);
-            this.materialFloatingActionButton2.TabIndex = 94;
-            this.materialFloatingActionButton2.Text = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialTextBox5
-            // 
-            this.materialTextBox5.AnimateReadOnly = false;
-            this.materialTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox5.Depth = 0;
-            this.materialTextBox5.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox5.Hint = "No. Nomina: ";
-            this.materialTextBox5.LeadingIcon = null;
-            this.materialTextBox5.Location = new System.Drawing.Point(8, 34);
-            this.materialTextBox5.MaxLength = 18;
-            this.materialTextBox5.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox5.Multiline = false;
-            this.materialTextBox5.Name = "materialTextBox5";
-            this.materialTextBox5.Size = new System.Drawing.Size(159, 50);
-            this.materialTextBox5.TabIndex = 92;
-            this.materialTextBox5.Text = "";
-            this.materialTextBox5.TrailingIcon = null;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(8, 106);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(889, 118);
-            this.dataGridView5.TabIndex = 91;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label42.Location = new System.Drawing.Point(5, 6);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(242, 25);
-            this.label42.TabIndex = 22;
-            this.label42.Text = "Seguimiento del Caso";
             // 
             // pDatosGenerales
             // 
@@ -758,7 +274,7 @@
             this.panel1.Controls.Add(this.txtNumeroNomina);
             this.panel1.Controls.Add(this.txtNombreEmpleado);
             this.panel1.Controls.Add(this.txtIdEmpleado);
-            this.panel1.Location = new System.Drawing.Point(12, 41);
+            this.panel1.Location = new System.Drawing.Point(6, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(909, 100);
             this.panel1.TabIndex = 95;
@@ -806,7 +322,7 @@
             this.txtNumeroNomina.AnimateReadOnly = false;
             this.txtNumeroNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumeroNomina.Depth = 0;
-            this.txtNumeroNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNumeroNomina.Hint = "No. Nómina: ";
             this.txtNumeroNomina.LeadingIcon = null;
             this.txtNumeroNomina.Location = new System.Drawing.Point(16, 24);
@@ -819,106 +335,167 @@
             this.txtNumeroNomina.Text = "";
             this.txtNumeroNomina.TrailingIcon = null;
             // 
+            // txtNombreEmpleado
+            // 
+            this.txtNombreEmpleado.AnimateReadOnly = false;
+            this.txtNombreEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombreEmpleado.Depth = 0;
+            this.txtNombreEmpleado.Enabled = false;
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreEmpleado.Hint = "Nombre: ";
+            this.txtNombreEmpleado.LeadingIcon = null;
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(281, 24);
+            this.txtNombreEmpleado.MaxLength = 18;
+            this.txtNombreEmpleado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreEmpleado.Multiline = false;
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(345, 50);
+            this.txtNombreEmpleado.TabIndex = 91;
+            this.txtNombreEmpleado.Text = "";
+            this.txtNombreEmpleado.TrailingIcon = null;
+            // 
+            // txtIdEmpleado
+            // 
+            this.txtIdEmpleado.AnimateReadOnly = false;
+            this.txtIdEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdEmpleado.Depth = 0;
+            this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleado.Hint = "Id Empleado:";
+            this.txtIdEmpleado.LeadingIcon = null;
+            this.txtIdEmpleado.Location = new System.Drawing.Point(382, 23);
+            this.txtIdEmpleado.MaxLength = 18;
+            this.txtIdEmpleado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtIdEmpleado.Multiline = false;
+            this.txtIdEmpleado.Name = "txtIdEmpleado";
+            this.txtIdEmpleado.Size = new System.Drawing.Size(127, 50);
+            this.txtIdEmpleado.TabIndex = 111;
+            this.txtIdEmpleado.Text = "";
+            this.txtIdEmpleado.TrailingIcon = null;
+            this.txtIdEmpleado.Visible = false;
+            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel14.Controls.Add(this.materialMultiLineTextBox23);
-            this.panel14.Controls.Add(this.materialMultiLineTextBox25);
-            this.panel14.Controls.Add(this.materialMultiLineTextBox26);
+            this.panel14.Controls.Add(this.txtDiaDescansoPrevio);
+            this.panel14.Controls.Add(this.rbtnTiempoExtra);
+            this.panel14.Controls.Add(this.txtTipoLesion);
+            this.panel14.Controls.Add(this.txtTrabajoDesempenado);
+            this.panel14.Controls.Add(this.txtParteCuerpoAfectada);
             this.panel14.Controls.Add(this.label19);
             this.panel14.Controls.Add(this.label20);
             this.panel14.Controls.Add(this.materialTextBox14);
             this.panel14.Controls.Add(this.label21);
-            this.panel14.Controls.Add(this.dateTimePicker3);
             this.panel14.Controls.Add(this.materialLabel4);
             this.panel14.Controls.Add(this.materialTextBox15);
             this.panel14.Controls.Add(this.materialLabel5);
             this.panel14.Controls.Add(this.materialTextBox16);
-            this.panel14.Controls.Add(this.materialTextBox17);
-            this.panel14.Controls.Add(this.groupBox2);
+            this.panel14.Controls.Add(this.txtTotalHrs);
             this.panel14.Controls.Add(this.materialLabel7);
             this.panel14.Controls.Add(this.txtEdad);
-            this.panel14.Controls.Add(this.materialTextBox21);
-            this.panel14.Controls.Add(this.materialTextBox22);
-            this.panel14.Location = new System.Drawing.Point(11, 156);
+            this.panel14.Controls.Add(this.txtNumAccidente);
+            this.panel14.Controls.Add(this.txtCondicion);
+            this.panel14.Enabled = false;
+            this.panel14.Location = new System.Drawing.Point(5, 152);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(912, 473);
             this.panel14.TabIndex = 93;
             // 
-            // materialMultiLineTextBox23
+            // txtDiaDescansoPrevio
             // 
-            this.materialMultiLineTextBox23.AnimateReadOnly = false;
-            this.materialMultiLineTextBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox23.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox23.Depth = 0;
-            this.materialMultiLineTextBox23.HideSelection = true;
-            this.materialMultiLineTextBox23.Location = new System.Drawing.Point(12, 395);
-            this.materialMultiLineTextBox23.MaxLength = 32767;
-            this.materialMultiLineTextBox23.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox23.Name = "materialMultiLineTextBox23";
-            this.materialMultiLineTextBox23.PasswordChar = '\0';
-            this.materialMultiLineTextBox23.ReadOnly = false;
-            this.materialMultiLineTextBox23.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox23.SelectedText = "";
-            this.materialMultiLineTextBox23.SelectionLength = 0;
-            this.materialMultiLineTextBox23.SelectionStart = 0;
-            this.materialMultiLineTextBox23.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox23.Size = new System.Drawing.Size(889, 60);
-            this.materialMultiLineTextBox23.TabIndex = 107;
-            this.materialMultiLineTextBox23.TabStop = false;
-            this.materialMultiLineTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox23.UseSystemPasswordChar = false;
+            this.txtDiaDescansoPrevio.AnimateReadOnly = false;
+            this.txtDiaDescansoPrevio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDiaDescansoPrevio.Depth = 0;
+            this.txtDiaDescansoPrevio.Enabled = false;
+            this.txtDiaDescansoPrevio.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDiaDescansoPrevio.Hint = "Dia de descanso: ";
+            this.txtDiaDescansoPrevio.LeadingIcon = null;
+            this.txtDiaDescansoPrevio.Location = new System.Drawing.Point(280, 135);
+            this.txtDiaDescansoPrevio.MaxLength = 18;
+            this.txtDiaDescansoPrevio.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDiaDescansoPrevio.Multiline = false;
+            this.txtDiaDescansoPrevio.Name = "txtDiaDescansoPrevio";
+            this.txtDiaDescansoPrevio.Size = new System.Drawing.Size(319, 50);
+            this.txtDiaDescansoPrevio.TabIndex = 125;
+            this.txtDiaDescansoPrevio.Text = "";
+            this.txtDiaDescansoPrevio.TrailingIcon = null;
             // 
-            // materialMultiLineTextBox25
+            // txtTipoLesion
             // 
-            this.materialMultiLineTextBox25.AnimateReadOnly = false;
-            this.materialMultiLineTextBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox25.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox25.Depth = 0;
-            this.materialMultiLineTextBox25.HideSelection = true;
-            this.materialMultiLineTextBox25.Location = new System.Drawing.Point(9, 303);
-            this.materialMultiLineTextBox25.MaxLength = 32767;
-            this.materialMultiLineTextBox25.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox25.Name = "materialMultiLineTextBox25";
-            this.materialMultiLineTextBox25.PasswordChar = '\0';
-            this.materialMultiLineTextBox25.ReadOnly = false;
-            this.materialMultiLineTextBox25.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox25.SelectedText = "";
-            this.materialMultiLineTextBox25.SelectionLength = 0;
-            this.materialMultiLineTextBox25.SelectionStart = 0;
-            this.materialMultiLineTextBox25.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox25.Size = new System.Drawing.Size(892, 60);
-            this.materialMultiLineTextBox25.TabIndex = 106;
-            this.materialMultiLineTextBox25.TabStop = false;
-            this.materialMultiLineTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox25.UseSystemPasswordChar = false;
+            this.txtTipoLesion.AnimateReadOnly = false;
+            this.txtTipoLesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtTipoLesion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtTipoLesion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTipoLesion.Depth = 0;
+            this.txtTipoLesion.Enabled = false;
+            this.txtTipoLesion.HideSelection = true;
+            this.txtTipoLesion.Location = new System.Drawing.Point(12, 395);
+            this.txtTipoLesion.MaxLength = 32767;
+            this.txtTipoLesion.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTipoLesion.Name = "txtTipoLesion";
+            this.txtTipoLesion.PasswordChar = '\0';
+            this.txtTipoLesion.ReadOnly = false;
+            this.txtTipoLesion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtTipoLesion.SelectedText = "";
+            this.txtTipoLesion.SelectionLength = 0;
+            this.txtTipoLesion.SelectionStart = 0;
+            this.txtTipoLesion.ShortcutsEnabled = true;
+            this.txtTipoLesion.Size = new System.Drawing.Size(889, 60);
+            this.txtTipoLesion.TabIndex = 107;
+            this.txtTipoLesion.TabStop = false;
+            this.txtTipoLesion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTipoLesion.UseSystemPasswordChar = false;
             // 
-            // materialMultiLineTextBox26
+            // txtTrabajoDesempenado
             // 
-            this.materialMultiLineTextBox26.AnimateReadOnly = false;
-            this.materialMultiLineTextBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox26.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox26.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox26.Depth = 0;
-            this.materialMultiLineTextBox26.HideSelection = true;
-            this.materialMultiLineTextBox26.Location = new System.Drawing.Point(9, 214);
-            this.materialMultiLineTextBox26.MaxLength = 32767;
-            this.materialMultiLineTextBox26.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox26.Name = "materialMultiLineTextBox26";
-            this.materialMultiLineTextBox26.PasswordChar = '\0';
-            this.materialMultiLineTextBox26.ReadOnly = false;
-            this.materialMultiLineTextBox26.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox26.SelectedText = "";
-            this.materialMultiLineTextBox26.SelectionLength = 0;
-            this.materialMultiLineTextBox26.SelectionStart = 0;
-            this.materialMultiLineTextBox26.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox26.Size = new System.Drawing.Size(892, 60);
-            this.materialMultiLineTextBox26.TabIndex = 105;
-            this.materialMultiLineTextBox26.TabStop = false;
-            this.materialMultiLineTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox26.UseSystemPasswordChar = false;
+            this.txtTrabajoDesempenado.AnimateReadOnly = false;
+            this.txtTrabajoDesempenado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtTrabajoDesempenado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtTrabajoDesempenado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTrabajoDesempenado.Depth = 0;
+            this.txtTrabajoDesempenado.Enabled = false;
+            this.txtTrabajoDesempenado.HideSelection = true;
+            this.txtTrabajoDesempenado.Location = new System.Drawing.Point(9, 303);
+            this.txtTrabajoDesempenado.MaxLength = 32767;
+            this.txtTrabajoDesempenado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTrabajoDesempenado.Name = "txtTrabajoDesempenado";
+            this.txtTrabajoDesempenado.PasswordChar = '\0';
+            this.txtTrabajoDesempenado.ReadOnly = false;
+            this.txtTrabajoDesempenado.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtTrabajoDesempenado.SelectedText = "";
+            this.txtTrabajoDesempenado.SelectionLength = 0;
+            this.txtTrabajoDesempenado.SelectionStart = 0;
+            this.txtTrabajoDesempenado.ShortcutsEnabled = true;
+            this.txtTrabajoDesempenado.Size = new System.Drawing.Size(892, 60);
+            this.txtTrabajoDesempenado.TabIndex = 106;
+            this.txtTrabajoDesempenado.TabStop = false;
+            this.txtTrabajoDesempenado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTrabajoDesempenado.UseSystemPasswordChar = false;
+            // 
+            // txtParteCuerpoAfectada
+            // 
+            this.txtParteCuerpoAfectada.AnimateReadOnly = false;
+            this.txtParteCuerpoAfectada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtParteCuerpoAfectada.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtParteCuerpoAfectada.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtParteCuerpoAfectada.Depth = 0;
+            this.txtParteCuerpoAfectada.Enabled = false;
+            this.txtParteCuerpoAfectada.HideSelection = true;
+            this.txtParteCuerpoAfectada.Location = new System.Drawing.Point(9, 214);
+            this.txtParteCuerpoAfectada.MaxLength = 32767;
+            this.txtParteCuerpoAfectada.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtParteCuerpoAfectada.Name = "txtParteCuerpoAfectada";
+            this.txtParteCuerpoAfectada.PasswordChar = '\0';
+            this.txtParteCuerpoAfectada.ReadOnly = false;
+            this.txtParteCuerpoAfectada.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtParteCuerpoAfectada.SelectedText = "";
+            this.txtParteCuerpoAfectada.SelectionLength = 0;
+            this.txtParteCuerpoAfectada.SelectionStart = 0;
+            this.txtParteCuerpoAfectada.ShortcutsEnabled = true;
+            this.txtParteCuerpoAfectada.Size = new System.Drawing.Size(892, 60);
+            this.txtParteCuerpoAfectada.TabIndex = 105;
+            this.txtParteCuerpoAfectada.TabStop = false;
+            this.txtParteCuerpoAfectada.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtParteCuerpoAfectada.UseSystemPasswordChar = false;
             // 
             // label19
             // 
@@ -947,7 +524,8 @@
             this.materialTextBox14.AnimateReadOnly = false;
             this.materialTextBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox14.Depth = 0;
-            this.materialTextBox14.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox14.Enabled = false;
+            this.materialTextBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox14.Hint = "Turno:";
             this.materialTextBox14.LeadingIcon = null;
             this.materialTextBox14.Location = new System.Drawing.Point(779, 12);
@@ -971,19 +549,12 @@
             this.label21.TabIndex = 101;
             this.label21.Text = "Parte del Cuerpo Afectada";
             // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(276, 143);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(326, 20);
-            this.dateTimePicker3.TabIndex = 100;
-            // 
             // materialLabel4
             // 
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel4.ForeColor = System.Drawing.Color.Green;
-            this.materialLabel4.Location = new System.Drawing.Point(9, 132);
+            this.materialLabel4.Location = new System.Drawing.Point(9, 138);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(261, 43);
@@ -996,7 +567,8 @@
             this.materialTextBox15.AnimateReadOnly = false;
             this.materialTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox15.Depth = 0;
-            this.materialTextBox15.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox15.Enabled = false;
+            this.materialTextBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox15.LeadingIcon = null;
             this.materialTextBox15.Location = new System.Drawing.Point(779, 76);
             this.materialTextBox15.MaxLength = 18;
@@ -1026,7 +598,8 @@
             this.materialTextBox16.AnimateReadOnly = false;
             this.materialTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.materialTextBox16.Depth = 0;
-            this.materialTextBox16.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox16.Enabled = false;
+            this.materialTextBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.materialTextBox16.Hint = "Puesto: ";
             this.materialTextBox16.LeadingIcon = null;
             this.materialTextBox16.Location = new System.Drawing.Point(392, 77);
@@ -1039,66 +612,24 @@
             this.materialTextBox16.Text = "";
             this.materialTextBox16.TrailingIcon = null;
             // 
-            // materialTextBox17
+            // txtTotalHrs
             // 
-            this.materialTextBox17.AnimateReadOnly = false;
-            this.materialTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox17.Depth = 0;
-            this.materialTextBox17.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox17.Hint = "Total de Hrs: ";
-            this.materialTextBox17.LeadingIcon = null;
-            this.materialTextBox17.Location = new System.Drawing.Point(234, 77);
-            this.materialTextBox17.MaxLength = 18;
-            this.materialTextBox17.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox17.Multiline = false;
-            this.materialTextBox17.Name = "materialTextBox17";
-            this.materialTextBox17.Size = new System.Drawing.Size(135, 50);
-            this.materialTextBox17.TabIndex = 95;
-            this.materialTextBox17.Text = "";
-            this.materialTextBox17.TrailingIcon = null;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.materialRadioButton3);
-            this.groupBox2.Controls.Add(this.materialRadioButton4);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Location = new System.Drawing.Point(102, 80);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(126, 45);
-            this.groupBox2.TabIndex = 94;
-            this.groupBox2.TabStop = false;
-            // 
-            // materialRadioButton3
-            // 
-            this.materialRadioButton3.AutoSize = true;
-            this.materialRadioButton3.Depth = 0;
-            this.materialRadioButton3.Location = new System.Drawing.Point(60, 6);
-            this.materialRadioButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton3.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton3.Name = "materialRadioButton3";
-            this.materialRadioButton3.Ripple = true;
-            this.materialRadioButton3.Size = new System.Drawing.Size(57, 37);
-            this.materialRadioButton3.TabIndex = 63;
-            this.materialRadioButton3.TabStop = true;
-            this.materialRadioButton3.Text = "NO";
-            this.materialRadioButton3.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton4
-            // 
-            this.materialRadioButton4.AutoSize = true;
-            this.materialRadioButton4.Depth = 0;
-            this.materialRadioButton4.Location = new System.Drawing.Point(2, 6);
-            this.materialRadioButton4.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton4.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton4.Name = "materialRadioButton4";
-            this.materialRadioButton4.Ripple = true;
-            this.materialRadioButton4.Size = new System.Drawing.Size(49, 37);
-            this.materialRadioButton4.TabIndex = 62;
-            this.materialRadioButton4.TabStop = true;
-            this.materialRadioButton4.Text = "SI";
-            this.materialRadioButton4.UseVisualStyleBackColor = true;
+            this.txtTotalHrs.AnimateReadOnly = false;
+            this.txtTotalHrs.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalHrs.Depth = 0;
+            this.txtTotalHrs.Enabled = false;
+            this.txtTotalHrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTotalHrs.Hint = "Total de Hrs: ";
+            this.txtTotalHrs.LeadingIcon = null;
+            this.txtTotalHrs.Location = new System.Drawing.Point(234, 77);
+            this.txtTotalHrs.MaxLength = 18;
+            this.txtTotalHrs.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTotalHrs.Multiline = false;
+            this.txtTotalHrs.Name = "txtTotalHrs";
+            this.txtTotalHrs.Size = new System.Drawing.Size(135, 50);
+            this.txtTotalHrs.TabIndex = 95;
+            this.txtTotalHrs.Text = "";
+            this.txtTotalHrs.TrailingIcon = null;
             // 
             // materialLabel7
             // 
@@ -1118,7 +649,8 @@
             this.txtEdad.AnimateReadOnly = false;
             this.txtEdad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEdad.Depth = 0;
-            this.txtEdad.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEdad.Enabled = false;
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEdad.Hint = "Edad: ";
             this.txtEdad.LeadingIcon = null;
             this.txtEdad.Location = new System.Drawing.Point(611, 12);
@@ -1131,84 +663,69 @@
             this.txtEdad.Text = "";
             this.txtEdad.TrailingIcon = null;
             // 
-            // txtNombreEmpleado
+            // txtNumAccidente
             // 
-            this.txtNombreEmpleado.AnimateReadOnly = false;
-            this.txtNombreEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreEmpleado.Depth = 0;
-            this.txtNombreEmpleado.Enabled = false;
-            this.txtNombreEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNombreEmpleado.Hint = "Nombre: ";
-            this.txtNombreEmpleado.LeadingIcon = null;
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(281, 24);
-            this.txtNombreEmpleado.MaxLength = 18;
-            this.txtNombreEmpleado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNombreEmpleado.Multiline = false;
-            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(345, 50);
-            this.txtNombreEmpleado.TabIndex = 91;
-            this.txtNombreEmpleado.Text = "";
-            this.txtNombreEmpleado.TrailingIcon = null;
+            this.txtNumAccidente.AnimateReadOnly = false;
+            this.txtNumAccidente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNumAccidente.Depth = 0;
+            this.txtNumAccidente.Enabled = false;
+            this.txtNumAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumAccidente.Hint = "Accidente No.: ";
+            this.txtNumAccidente.LeadingIcon = null;
+            this.txtNumAccidente.Location = new System.Drawing.Point(168, 12);
+            this.txtNumAccidente.MaxLength = 18;
+            this.txtNumAccidente.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNumAccidente.Multiline = false;
+            this.txtNumAccidente.Name = "txtNumAccidente";
+            this.txtNumAccidente.Size = new System.Drawing.Size(431, 50);
+            this.txtNumAccidente.TabIndex = 87;
+            this.txtNumAccidente.Text = "";
+            this.txtNumAccidente.TrailingIcon = null;
             // 
-            // materialTextBox21
+            // txtCondicion
             // 
-            this.materialTextBox21.AnimateReadOnly = false;
-            this.materialTextBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox21.Hint = "Accidente No.: ";
-            this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(168, 12);
-            this.materialTextBox21.MaxLength = 18;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Multiline = false;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.Size = new System.Drawing.Size(431, 50);
-            this.materialTextBox21.TabIndex = 87;
-            this.materialTextBox21.Text = "";
-            this.materialTextBox21.TrailingIcon = null;
-            // 
-            // materialTextBox22
-            // 
-            this.materialTextBox22.AnimateReadOnly = false;
-            this.materialTextBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox22.Depth = 0;
-            this.materialTextBox22.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox22.Hint = "Condición: ";
-            this.materialTextBox22.LeadingIcon = null;
-            this.materialTextBox22.Location = new System.Drawing.Point(7, 12);
-            this.materialTextBox22.MaxLength = 18;
-            this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox22.Multiline = false;
-            this.materialTextBox22.Name = "materialTextBox22";
-            this.materialTextBox22.Size = new System.Drawing.Size(144, 50);
-            this.materialTextBox22.TabIndex = 86;
-            this.materialTextBox22.Text = "";
-            this.materialTextBox22.TrailingIcon = null;
+            this.txtCondicion.AnimateReadOnly = false;
+            this.txtCondicion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCondicion.Depth = 0;
+            this.txtCondicion.Enabled = false;
+            this.txtCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCondicion.Hint = "Condición: ";
+            this.txtCondicion.LeadingIcon = null;
+            this.txtCondicion.Location = new System.Drawing.Point(7, 12);
+            this.txtCondicion.MaxLength = 18;
+            this.txtCondicion.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCondicion.Multiline = false;
+            this.txtCondicion.Name = "txtCondicion";
+            this.txtCondicion.Size = new System.Drawing.Size(144, 50);
+            this.txtCondicion.TabIndex = 86;
+            this.txtCondicion.Text = "";
+            this.txtCondicion.TrailingIcon = null;
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel15.Controls.Add(this.dataGridView2);
-            this.panel15.Location = new System.Drawing.Point(12, 681);
+            this.panel15.Controls.Add(this.dgvTestigos);
+            this.panel15.Location = new System.Drawing.Point(6, 677);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(912, 190);
             this.panel15.TabIndex = 94;
             // 
-            // dataGridView2
+            // dgvTestigos
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(11, 28);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(889, 150);
-            this.dataGridView2.TabIndex = 91;
+            this.dgvTestigos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTestigos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTestigos.Enabled = false;
+            this.dgvTestigos.Location = new System.Drawing.Point(11, 28);
+            this.dgvTestigos.Name = "dgvTestigos";
+            this.dgvTestigos.Size = new System.Drawing.Size(889, 150);
+            this.dgvTestigos.TabIndex = 91;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label17.Location = new System.Drawing.Point(8, 645);
+            this.label17.Location = new System.Drawing.Point(2, 641);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(235, 25);
             this.label17.TabIndex = 93;
@@ -1217,10 +734,12 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(426, 816);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(-7, 876);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 13);
+            this.label16.Size = new System.Drawing.Size(119, 13);
             this.label16.TabIndex = 92;
+            this.label16.Text = "hola mundo como estas";
             // 
             // button2
             // 
@@ -1231,7 +750,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 1936);
+            this.button2.Location = new System.Drawing.Point(728, 4123);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(0, 50);
             this.button2.TabIndex = 91;
@@ -1244,7 +763,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label18.Location = new System.Drawing.Point(10, 11);
+            this.label18.Location = new System.Drawing.Point(4, 7);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(188, 25);
             this.label18.TabIndex = 16;
@@ -1253,12 +772,11 @@
             // pDetallesAccidente
             // 
             this.pDetallesAccidente.AutoScroll = true;
+            this.pDetallesAccidente.Controls.Add(this.panel6);
+            this.pDetallesAccidente.Controls.Add(this.panel4);
             this.pDetallesAccidente.Controls.Add(this.label32);
             this.pDetallesAccidente.Controls.Add(this.label26);
             this.pDetallesAccidente.Controls.Add(this.panel7);
-            this.pDetallesAccidente.Controls.Add(this.label23);
-            this.pDetallesAccidente.Controls.Add(this.panel6);
-            this.pDetallesAccidente.Controls.Add(this.panel4);
             this.pDetallesAccidente.Location = new System.Drawing.Point(0, 0);
             this.pDetallesAccidente.Name = "pDetallesAccidente";
             this.pDetallesAccidente.Size = new System.Drawing.Size(945, 521);
@@ -1269,7 +787,7 @@
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label32.Location = new System.Drawing.Point(17, 12);
+            this.label32.Location = new System.Drawing.Point(12, 276);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(235, 24);
             this.label32.TabIndex = 16;
@@ -1278,8 +796,8 @@
             // label26
             // 
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label26.Location = new System.Drawing.Point(-18, 737);
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(-23, 1037);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(144, 18);
             this.label26.TabIndex = 110;
@@ -1288,65 +806,43 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel7.Controls.Add(this.materialComboBox3);
-            this.panel7.Controls.Add(this.materialMultiLineTextBox211);
+            this.panel7.Controls.Add(this.rbtnDanosMateriales);
+            this.panel7.Controls.Add(this.txtSeccionB);
+            this.panel7.Controls.Add(this.txtSustituiblePor);
             this.panel7.Controls.Add(this.label31);
-            this.panel7.Controls.Add(this.materialMultiLineTextBox210);
+            this.panel7.Controls.Add(this.txtEquipoDanado);
             this.panel7.Controls.Add(this.label30);
-            this.panel7.Controls.Add(this.panel13);
             this.panel7.Controls.Add(this.label29);
-            this.panel7.Location = new System.Drawing.Point(469, 473);
+            this.panel7.Location = new System.Drawing.Point(464, 773);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(445, 266);
             this.panel7.TabIndex = 104;
             // 
-            // materialComboBox3
+            // txtSustituiblePor
             // 
-            this.materialComboBox3.AutoResize = false;
-            this.materialComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox3.Depth = 0;
-            this.materialComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox3.DropDownHeight = 174;
-            this.materialComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox3.DropDownWidth = 121;
-            this.materialComboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox3.FormattingEnabled = true;
-            this.materialComboBox3.Hint = "Sección";
-            this.materialComboBox3.IntegralHeight = false;
-            this.materialComboBox3.ItemHeight = 43;
-            this.materialComboBox3.Location = new System.Drawing.Point(13, 213);
-            this.materialComboBox3.MaxDropDownItems = 4;
-            this.materialComboBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox3.Name = "materialComboBox3";
-            this.materialComboBox3.Size = new System.Drawing.Size(422, 49);
-            this.materialComboBox3.StartIndex = 0;
-            this.materialComboBox3.TabIndex = 116;
-            // 
-            // materialMultiLineTextBox211
-            // 
-            this.materialMultiLineTextBox211.AnimateReadOnly = false;
-            this.materialMultiLineTextBox211.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox211.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox211.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox211.Depth = 0;
-            this.materialMultiLineTextBox211.HideSelection = true;
-            this.materialMultiLineTextBox211.Location = new System.Drawing.Point(13, 151);
-            this.materialMultiLineTextBox211.MaxLength = 32767;
-            this.materialMultiLineTextBox211.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox211.Name = "materialMultiLineTextBox211";
-            this.materialMultiLineTextBox211.PasswordChar = '\0';
-            this.materialMultiLineTextBox211.ReadOnly = false;
-            this.materialMultiLineTextBox211.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox211.SelectedText = "";
-            this.materialMultiLineTextBox211.SelectionLength = 0;
-            this.materialMultiLineTextBox211.SelectionStart = 0;
-            this.materialMultiLineTextBox211.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox211.Size = new System.Drawing.Size(421, 51);
-            this.materialMultiLineTextBox211.TabIndex = 115;
-            this.materialMultiLineTextBox211.TabStop = false;
-            this.materialMultiLineTextBox211.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox211.UseSystemPasswordChar = false;
+            this.txtSustituiblePor.AnimateReadOnly = false;
+            this.txtSustituiblePor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtSustituiblePor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtSustituiblePor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSustituiblePor.Depth = 0;
+            this.txtSustituiblePor.Enabled = false;
+            this.txtSustituiblePor.HideSelection = true;
+            this.txtSustituiblePor.Location = new System.Drawing.Point(13, 151);
+            this.txtSustituiblePor.MaxLength = 32767;
+            this.txtSustituiblePor.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSustituiblePor.Name = "txtSustituiblePor";
+            this.txtSustituiblePor.PasswordChar = '\0';
+            this.txtSustituiblePor.ReadOnly = false;
+            this.txtSustituiblePor.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSustituiblePor.SelectedText = "";
+            this.txtSustituiblePor.SelectionLength = 0;
+            this.txtSustituiblePor.SelectionStart = 0;
+            this.txtSustituiblePor.ShortcutsEnabled = true;
+            this.txtSustituiblePor.Size = new System.Drawing.Size(421, 51);
+            this.txtSustituiblePor.TabIndex = 115;
+            this.txtSustituiblePor.TabStop = false;
+            this.txtSustituiblePor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSustituiblePor.UseSystemPasswordChar = false;
             // 
             // label31
             // 
@@ -1358,30 +854,31 @@
             this.label31.TabIndex = 114;
             this.label31.Text = "Sustituible por:";
             // 
-            // materialMultiLineTextBox210
+            // txtEquipoDanado
             // 
-            this.materialMultiLineTextBox210.AnimateReadOnly = false;
-            this.materialMultiLineTextBox210.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox210.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox210.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox210.Depth = 0;
-            this.materialMultiLineTextBox210.HideSelection = true;
-            this.materialMultiLineTextBox210.Location = new System.Drawing.Point(13, 77);
-            this.materialMultiLineTextBox210.MaxLength = 32767;
-            this.materialMultiLineTextBox210.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox210.Name = "materialMultiLineTextBox210";
-            this.materialMultiLineTextBox210.PasswordChar = '\0';
-            this.materialMultiLineTextBox210.ReadOnly = false;
-            this.materialMultiLineTextBox210.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox210.SelectedText = "";
-            this.materialMultiLineTextBox210.SelectionLength = 0;
-            this.materialMultiLineTextBox210.SelectionStart = 0;
-            this.materialMultiLineTextBox210.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox210.Size = new System.Drawing.Size(421, 51);
-            this.materialMultiLineTextBox210.TabIndex = 113;
-            this.materialMultiLineTextBox210.TabStop = false;
-            this.materialMultiLineTextBox210.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox210.UseSystemPasswordChar = false;
+            this.txtEquipoDanado.AnimateReadOnly = false;
+            this.txtEquipoDanado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtEquipoDanado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtEquipoDanado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEquipoDanado.Depth = 0;
+            this.txtEquipoDanado.Enabled = false;
+            this.txtEquipoDanado.HideSelection = true;
+            this.txtEquipoDanado.Location = new System.Drawing.Point(13, 77);
+            this.txtEquipoDanado.MaxLength = 32767;
+            this.txtEquipoDanado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEquipoDanado.Name = "txtEquipoDanado";
+            this.txtEquipoDanado.PasswordChar = '\0';
+            this.txtEquipoDanado.ReadOnly = false;
+            this.txtEquipoDanado.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtEquipoDanado.SelectedText = "";
+            this.txtEquipoDanado.SelectionLength = 0;
+            this.txtEquipoDanado.SelectionStart = 0;
+            this.txtEquipoDanado.ShortcutsEnabled = true;
+            this.txtEquipoDanado.Size = new System.Drawing.Size(421, 51);
+            this.txtEquipoDanado.TabIndex = 113;
+            this.txtEquipoDanado.TabStop = false;
+            this.txtEquipoDanado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEquipoDanado.UseSystemPasswordChar = false;
             // 
             // label30
             // 
@@ -1393,47 +890,6 @@
             this.label30.TabIndex = 112;
             this.label30.Text = "Equipo,pieza, maquinaria dañada:";
             // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.materialRadioButton13);
-            this.panel13.Controls.Add(this.materialRadioButton14);
-            this.panel13.Location = new System.Drawing.Point(191, 9);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(125, 45);
-            this.panel13.TabIndex = 111;
-            // 
-            // materialRadioButton13
-            // 
-            this.materialRadioButton13.AutoSize = true;
-            this.materialRadioButton13.Depth = 0;
-            this.materialRadioButton13.Location = new System.Drawing.Point(55, 0);
-            this.materialRadioButton13.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton13.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton13.Name = "materialRadioButton13";
-            this.materialRadioButton13.Ripple = true;
-            this.materialRadioButton13.Size = new System.Drawing.Size(57, 37);
-            this.materialRadioButton13.TabIndex = 1;
-            this.materialRadioButton13.TabStop = true;
-            this.materialRadioButton13.Text = "NO";
-            this.materialRadioButton13.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton14
-            // 
-            this.materialRadioButton14.AutoSize = true;
-            this.materialRadioButton14.Depth = 0;
-            this.materialRadioButton14.Location = new System.Drawing.Point(0, 0);
-            this.materialRadioButton14.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton14.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton14.Name = "materialRadioButton14";
-            this.materialRadioButton14.Ripple = true;
-            this.materialRadioButton14.Size = new System.Drawing.Size(49, 37);
-            this.materialRadioButton14.TabIndex = 0;
-            this.materialRadioButton14.TabStop = true;
-            this.materialRadioButton14.Text = "SI";
-            this.materialRadioButton14.UseVisualStyleBackColor = true;
-            // 
             // label29
             // 
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1443,555 +899,6 @@
             this.label29.Size = new System.Drawing.Size(182, 18);
             this.label29.TabIndex = 110;
             this.label29.Text = "Hubo daños materiales:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(520, 610);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(0, 13);
-            this.label23.TabIndex = 100;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.panel12);
-            this.panel6.Controls.Add(this.panel11);
-            this.panel6.Controls.Add(this.panel10);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Controls.Add(this.label28);
-            this.panel6.Controls.Add(this.label27);
-            this.panel6.Controls.Add(this.label25);
-            this.panel6.Controls.Add(this.label24);
-            this.panel6.Controls.Add(this.label22);
-            this.panel6.Location = new System.Drawing.Point(14, 473);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(445, 266);
-            this.panel6.TabIndex = 99;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.materialRadioButton11);
-            this.panel12.Controls.Add(this.materialRadioButton12);
-            this.panel12.Location = new System.Drawing.Point(278, 211);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(125, 45);
-            this.panel12.TabIndex = 111;
-            // 
-            // materialRadioButton11
-            // 
-            this.materialRadioButton11.AutoSize = true;
-            this.materialRadioButton11.Depth = 0;
-            this.materialRadioButton11.Location = new System.Drawing.Point(55, 0);
-            this.materialRadioButton11.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton11.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton11.Name = "materialRadioButton11";
-            this.materialRadioButton11.Ripple = true;
-            this.materialRadioButton11.Size = new System.Drawing.Size(57, 37);
-            this.materialRadioButton11.TabIndex = 1;
-            this.materialRadioButton11.TabStop = true;
-            this.materialRadioButton11.Text = "NO";
-            this.materialRadioButton11.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton12
-            // 
-            this.materialRadioButton12.AutoSize = true;
-            this.materialRadioButton12.Depth = 0;
-            this.materialRadioButton12.Location = new System.Drawing.Point(0, 0);
-            this.materialRadioButton12.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton12.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton12.Name = "materialRadioButton12";
-            this.materialRadioButton12.Ripple = true;
-            this.materialRadioButton12.Size = new System.Drawing.Size(49, 37);
-            this.materialRadioButton12.TabIndex = 0;
-            this.materialRadioButton12.TabStop = true;
-            this.materialRadioButton12.Text = "SI";
-            this.materialRadioButton12.UseVisualStyleBackColor = true;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.materialRadioButton9);
-            this.panel11.Controls.Add(this.materialRadioButton10);
-            this.panel11.Location = new System.Drawing.Point(278, 159);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(125, 45);
-            this.panel11.TabIndex = 110;
-            // 
-            // materialRadioButton9
-            // 
-            this.materialRadioButton9.AutoSize = true;
-            this.materialRadioButton9.Depth = 0;
-            this.materialRadioButton9.Location = new System.Drawing.Point(55, 0);
-            this.materialRadioButton9.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton9.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton9.Name = "materialRadioButton9";
-            this.materialRadioButton9.Ripple = true;
-            this.materialRadioButton9.Size = new System.Drawing.Size(57, 37);
-            this.materialRadioButton9.TabIndex = 1;
-            this.materialRadioButton9.TabStop = true;
-            this.materialRadioButton9.Text = "NO";
-            this.materialRadioButton9.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton10
-            // 
-            this.materialRadioButton10.AutoSize = true;
-            this.materialRadioButton10.Depth = 0;
-            this.materialRadioButton10.Location = new System.Drawing.Point(0, 0);
-            this.materialRadioButton10.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton10.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton10.Name = "materialRadioButton10";
-            this.materialRadioButton10.Ripple = true;
-            this.materialRadioButton10.Size = new System.Drawing.Size(49, 37);
-            this.materialRadioButton10.TabIndex = 0;
-            this.materialRadioButton10.TabStop = true;
-            this.materialRadioButton10.Text = "SI";
-            this.materialRadioButton10.UseVisualStyleBackColor = true;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.materialRadioButton7);
-            this.panel10.Controls.Add(this.materialRadioButton8);
-            this.panel10.Location = new System.Drawing.Point(278, 107);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(125, 45);
-            this.panel10.TabIndex = 109;
-            // 
-            // materialRadioButton7
-            // 
-            this.materialRadioButton7.AutoSize = true;
-            this.materialRadioButton7.Depth = 0;
-            this.materialRadioButton7.Location = new System.Drawing.Point(55, 0);
-            this.materialRadioButton7.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton7.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton7.Name = "materialRadioButton7";
-            this.materialRadioButton7.Ripple = true;
-            this.materialRadioButton7.Size = new System.Drawing.Size(57, 37);
-            this.materialRadioButton7.TabIndex = 1;
-            this.materialRadioButton7.TabStop = true;
-            this.materialRadioButton7.Text = "NO";
-            this.materialRadioButton7.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton8
-            // 
-            this.materialRadioButton8.AutoSize = true;
-            this.materialRadioButton8.Depth = 0;
-            this.materialRadioButton8.Location = new System.Drawing.Point(0, 0);
-            this.materialRadioButton8.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton8.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton8.Name = "materialRadioButton8";
-            this.materialRadioButton8.Ripple = true;
-            this.materialRadioButton8.Size = new System.Drawing.Size(49, 37);
-            this.materialRadioButton8.TabIndex = 0;
-            this.materialRadioButton8.TabStop = true;
-            this.materialRadioButton8.Text = "SI";
-            this.materialRadioButton8.UseVisualStyleBackColor = true;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.materialRadioButton5);
-            this.panel9.Controls.Add(this.materialRadioButton6);
-            this.panel9.Location = new System.Drawing.Point(278, 55);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(125, 45);
-            this.panel9.TabIndex = 109;
-            // 
-            // materialRadioButton5
-            // 
-            this.materialRadioButton5.AutoSize = true;
-            this.materialRadioButton5.Depth = 0;
-            this.materialRadioButton5.Location = new System.Drawing.Point(55, 0);
-            this.materialRadioButton5.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton5.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton5.Name = "materialRadioButton5";
-            this.materialRadioButton5.Ripple = true;
-            this.materialRadioButton5.Size = new System.Drawing.Size(57, 37);
-            this.materialRadioButton5.TabIndex = 1;
-            this.materialRadioButton5.TabStop = true;
-            this.materialRadioButton5.Text = "NO";
-            this.materialRadioButton5.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton6
-            // 
-            this.materialRadioButton6.AutoSize = true;
-            this.materialRadioButton6.Depth = 0;
-            this.materialRadioButton6.Location = new System.Drawing.Point(0, 0);
-            this.materialRadioButton6.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton6.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton6.Name = "materialRadioButton6";
-            this.materialRadioButton6.Ripple = true;
-            this.materialRadioButton6.Size = new System.Drawing.Size(49, 37);
-            this.materialRadioButton6.TabIndex = 0;
-            this.materialRadioButton6.TabStop = true;
-            this.materialRadioButton6.Text = "SI";
-            this.materialRadioButton6.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.materialRadioButton2);
-            this.panel8.Controls.Add(this.materialRadioButton1);
-            this.panel8.Location = new System.Drawing.Point(278, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(125, 45);
-            this.panel8.TabIndex = 108;
-            // 
-            // materialRadioButton2
-            // 
-            this.materialRadioButton2.AutoSize = true;
-            this.materialRadioButton2.Depth = 0;
-            this.materialRadioButton2.Location = new System.Drawing.Point(55, 0);
-            this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton2.Name = "materialRadioButton2";
-            this.materialRadioButton2.Ripple = true;
-            this.materialRadioButton2.Size = new System.Drawing.Size(57, 37);
-            this.materialRadioButton2.TabIndex = 1;
-            this.materialRadioButton2.TabStop = true;
-            this.materialRadioButton2.Text = "NO";
-            this.materialRadioButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialRadioButton1
-            // 
-            this.materialRadioButton1.AutoSize = true;
-            this.materialRadioButton1.Depth = 0;
-            this.materialRadioButton1.Location = new System.Drawing.Point(0, 0);
-            this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton1.Name = "materialRadioButton1";
-            this.materialRadioButton1.Ripple = true;
-            this.materialRadioButton1.Size = new System.Drawing.Size(49, 37);
-            this.materialRadioButton1.TabIndex = 0;
-            this.materialRadioButton1.TabStop = true;
-            this.materialRadioButton1.Text = "SI";
-            this.materialRadioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label28
-            // 
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label28.Location = new System.Drawing.Point(9, 172);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(144, 18);
-            this.label28.TabIndex = 107;
-            this.label28.Text = "Trabajo necesario";
-            // 
-            // label27
-            // 
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label27.Location = new System.Drawing.Point(9, 120);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(163, 18);
-            this.label27.TabIndex = 106;
-            this.label27.Text = "Trabajo programado";
-            // 
-            // label25
-            // 
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label25.Location = new System.Drawing.Point(9, 224);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(144, 18);
-            this.label25.TabIndex = 104;
-            this.label25.Text = "Trabajo urgente";
-            // 
-            // label24
-            // 
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label24.Location = new System.Drawing.Point(9, 68);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(144, 18);
-            this.label24.TabIndex = 103;
-            this.label24.Text = "Trabajo habitual";
-            // 
-            // label22
-            // 
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label22.Location = new System.Drawing.Point(9, 16);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(280, 18);
-            this.label22.TabIndex = 103;
-            this.label22.Text = "A realizado el trabajo anteriormente";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.materialTextBox11);
-            this.panel4.Controls.Add(this.materialTextBox10);
-            this.panel4.Controls.Add(this.materialMultiLineTextBox29);
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Controls.Add(this.materialMultiLineTextBox28);
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.materialMultiLineTextBox24);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.materialMultiLineTextBox27);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Controls.Add(this.materialMultiLineTextBox22);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.materialMultiLineTextBox21);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Location = new System.Drawing.Point(14, 41);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(900, 417);
-            this.panel4.TabIndex = 98;
-            // 
-            // materialTextBox11
-            // 
-            this.materialTextBox11.AnimateReadOnly = false;
-            this.materialTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox11.Depth = 0;
-            this.materialTextBox11.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox11.Hint = "Sección: ";
-            this.materialTextBox11.LeadingIcon = null;
-            this.materialTextBox11.Location = new System.Drawing.Point(455, 139);
-            this.materialTextBox11.MaxLength = 18;
-            this.materialTextBox11.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox11.Multiline = false;
-            this.materialTextBox11.Name = "materialTextBox11";
-            this.materialTextBox11.Size = new System.Drawing.Size(434, 50);
-            this.materialTextBox11.TabIndex = 113;
-            this.materialTextBox11.Text = "";
-            this.materialTextBox11.TrailingIcon = null;
-            // 
-            // materialTextBox10
-            // 
-            this.materialTextBox10.AnimateReadOnly = false;
-            this.materialTextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox10.Depth = 0;
-            this.materialTextBox10.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox10.Hint = "Proceso: ";
-            this.materialTextBox10.LeadingIcon = null;
-            this.materialTextBox10.Location = new System.Drawing.Point(9, 139);
-            this.materialTextBox10.MaxLength = 18;
-            this.materialTextBox10.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox10.Multiline = false;
-            this.materialTextBox10.Name = "materialTextBox10";
-            this.materialTextBox10.Size = new System.Drawing.Size(434, 50);
-            this.materialTextBox10.TabIndex = 112;
-            this.materialTextBox10.Text = "";
-            this.materialTextBox10.TrailingIcon = null;
-            // 
-            // materialMultiLineTextBox29
-            // 
-            this.materialMultiLineTextBox29.AnimateReadOnly = false;
-            this.materialMultiLineTextBox29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox29.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox29.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox29.Depth = 0;
-            this.materialMultiLineTextBox29.HideSelection = true;
-            this.materialMultiLineTextBox29.Location = new System.Drawing.Point(455, 328);
-            this.materialMultiLineTextBox29.MaxLength = 32767;
-            this.materialMultiLineTextBox29.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox29.Name = "materialMultiLineTextBox29";
-            this.materialMultiLineTextBox29.PasswordChar = '\0';
-            this.materialMultiLineTextBox29.ReadOnly = false;
-            this.materialMultiLineTextBox29.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox29.SelectedText = "";
-            this.materialMultiLineTextBox29.SelectionLength = 0;
-            this.materialMultiLineTextBox29.SelectionStart = 0;
-            this.materialMultiLineTextBox29.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox29.Size = new System.Drawing.Size(434, 77);
-            this.materialMultiLineTextBox29.TabIndex = 111;
-            this.materialMultiLineTextBox29.TabStop = false;
-            this.materialMultiLineTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox29.UseSystemPasswordChar = false;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label15.Location = new System.Drawing.Point(455, 308);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(413, 17);
-            this.label15.TabIndex = 110;
-            this.label15.Text = "Equipo de Protección Personal Necesario\r\n:";
-            // 
-            // materialMultiLineTextBox28
-            // 
-            this.materialMultiLineTextBox28.AnimateReadOnly = false;
-            this.materialMultiLineTextBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox28.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox28.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox28.Depth = 0;
-            this.materialMultiLineTextBox28.HideSelection = true;
-            this.materialMultiLineTextBox28.Location = new System.Drawing.Point(9, 328);
-            this.materialMultiLineTextBox28.MaxLength = 32767;
-            this.materialMultiLineTextBox28.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox28.Name = "materialMultiLineTextBox28";
-            this.materialMultiLineTextBox28.PasswordChar = '\0';
-            this.materialMultiLineTextBox28.ReadOnly = false;
-            this.materialMultiLineTextBox28.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox28.SelectedText = "";
-            this.materialMultiLineTextBox28.SelectionLength = 0;
-            this.materialMultiLineTextBox28.SelectionStart = 0;
-            this.materialMultiLineTextBox28.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox28.Size = new System.Drawing.Size(434, 77);
-            this.materialMultiLineTextBox28.TabIndex = 109;
-            this.materialMultiLineTextBox28.TabStop = false;
-            this.materialMultiLineTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox28.UseSystemPasswordChar = false;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label14.Location = new System.Drawing.Point(455, 208);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(413, 17);
-            this.label14.TabIndex = 108;
-            this.label14.Text = "Objeto, Equipo, sustancia que causo la lesión";
-            // 
-            // materialMultiLineTextBox24
-            // 
-            this.materialMultiLineTextBox24.AnimateReadOnly = false;
-            this.materialMultiLineTextBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox24.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox24.Depth = 0;
-            this.materialMultiLineTextBox24.HideSelection = true;
-            this.materialMultiLineTextBox24.Location = new System.Drawing.Point(455, 228);
-            this.materialMultiLineTextBox24.MaxLength = 32767;
-            this.materialMultiLineTextBox24.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox24.Name = "materialMultiLineTextBox24";
-            this.materialMultiLineTextBox24.PasswordChar = '\0';
-            this.materialMultiLineTextBox24.ReadOnly = false;
-            this.materialMultiLineTextBox24.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox24.SelectedText = "";
-            this.materialMultiLineTextBox24.SelectionLength = 0;
-            this.materialMultiLineTextBox24.SelectionStart = 0;
-            this.materialMultiLineTextBox24.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox24.Size = new System.Drawing.Size(434, 77);
-            this.materialMultiLineTextBox24.TabIndex = 105;
-            this.materialMultiLineTextBox24.TabStop = false;
-            this.materialMultiLineTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox24.UseSystemPasswordChar = false;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label12.Location = new System.Drawing.Point(6, 308);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(413, 17);
-            this.label12.TabIndex = 104;
-            this.label12.Text = "Equipo de Protección Personal Usado:";
-            // 
-            // materialMultiLineTextBox27
-            // 
-            this.materialMultiLineTextBox27.AnimateReadOnly = false;
-            this.materialMultiLineTextBox27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox27.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox27.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox27.Depth = 0;
-            this.materialMultiLineTextBox27.HideSelection = true;
-            this.materialMultiLineTextBox27.Location = new System.Drawing.Point(9, 228);
-            this.materialMultiLineTextBox27.MaxLength = 32767;
-            this.materialMultiLineTextBox27.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox27.Name = "materialMultiLineTextBox27";
-            this.materialMultiLineTextBox27.PasswordChar = '\0';
-            this.materialMultiLineTextBox27.ReadOnly = false;
-            this.materialMultiLineTextBox27.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox27.SelectedText = "";
-            this.materialMultiLineTextBox27.SelectionLength = 0;
-            this.materialMultiLineTextBox27.SelectionStart = 0;
-            this.materialMultiLineTextBox27.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox27.Size = new System.Drawing.Size(434, 77);
-            this.materialMultiLineTextBox27.TabIndex = 103;
-            this.materialMultiLineTextBox27.TabStop = false;
-            this.materialMultiLineTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox27.UseSystemPasswordChar = false;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label13.Location = new System.Drawing.Point(9, 208);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(413, 17);
-            this.label13.TabIndex = 102;
-            this.label13.Text = "Lugar del accidente";
-            // 
-            // materialMultiLineTextBox22
-            // 
-            this.materialMultiLineTextBox22.AnimateReadOnly = false;
-            this.materialMultiLineTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox22.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox22.Depth = 0;
-            this.materialMultiLineTextBox22.HideSelection = true;
-            this.materialMultiLineTextBox22.Location = new System.Drawing.Point(455, 50);
-            this.materialMultiLineTextBox22.MaxLength = 32767;
-            this.materialMultiLineTextBox22.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox22.Name = "materialMultiLineTextBox22";
-            this.materialMultiLineTextBox22.PasswordChar = '\0';
-            this.materialMultiLineTextBox22.ReadOnly = false;
-            this.materialMultiLineTextBox22.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox22.SelectedText = "";
-            this.materialMultiLineTextBox22.SelectionLength = 0;
-            this.materialMultiLineTextBox22.SelectionStart = 0;
-            this.materialMultiLineTextBox22.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox22.Size = new System.Drawing.Size(434, 77);
-            this.materialMultiLineTextBox22.TabIndex = 101;
-            this.materialMultiLineTextBox22.TabStop = false;
-            this.materialMultiLineTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox22.UseSystemPasswordChar = false;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label11.Location = new System.Drawing.Point(455, 14);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(413, 33);
-            this.label11.TabIndex = 100;
-            this.label11.Text = "Hay accidentes en los últimos 12 meses en el Proceso o a la persona lesionada:";
-            // 
-            // materialMultiLineTextBox21
-            // 
-            this.materialMultiLineTextBox21.AnimateReadOnly = false;
-            this.materialMultiLineTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox21.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox21.Depth = 0;
-            this.materialMultiLineTextBox21.HideSelection = true;
-            this.materialMultiLineTextBox21.Location = new System.Drawing.Point(9, 50);
-            this.materialMultiLineTextBox21.MaxLength = 32767;
-            this.materialMultiLineTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox21.Name = "materialMultiLineTextBox21";
-            this.materialMultiLineTextBox21.PasswordChar = '\0';
-            this.materialMultiLineTextBox21.ReadOnly = false;
-            this.materialMultiLineTextBox21.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox21.SelectedText = "";
-            this.materialMultiLineTextBox21.SelectionLength = 0;
-            this.materialMultiLineTextBox21.SelectionStart = 0;
-            this.materialMultiLineTextBox21.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox21.Size = new System.Drawing.Size(434, 77);
-            this.materialMultiLineTextBox21.TabIndex = 99;
-            this.materialMultiLineTextBox21.TabStop = false;
-            this.materialMultiLineTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox21.UseSystemPasswordChar = false;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label10.Location = new System.Drawing.Point(9, 14);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(413, 33);
-            this.label10.TabIndex = 98;
-            this.label10.Text = "Hay incidentes en los últimos 30 días en el Proceso o a la persona lesionada:";
             // 
             // pControlAcciones
             // 
@@ -2411,8 +1318,8 @@
             // pFactoresSeguridad
             // 
             this.pFactoresSeguridad.AutoScroll = true;
-            this.pFactoresSeguridad.Controls.Add(this.label39);
             this.pFactoresSeguridad.Controls.Add(this.panel20);
+            this.pFactoresSeguridad.Controls.Add(this.label39);
             this.pFactoresSeguridad.Controls.Add(this.panel19);
             this.pFactoresSeguridad.Controls.Add(this.panel18);
             this.pFactoresSeguridad.Controls.Add(this.label35);
@@ -2425,154 +1332,32 @@
             // label39
             // 
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label39.Location = new System.Drawing.Point(460, 727);
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(-8, 915);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(144, 18);
             this.label39.TabIndex = 111;
             this.label39.Text = "Trabajo necesario";
             // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel20.Controls.Add(this.materialTextBox3);
-            this.panel20.Controls.Add(this.materialTextBox9);
-            this.panel20.Controls.Add(this.materialTextBox2);
-            this.panel20.Controls.Add(this.materialTextBox1);
-            this.panel20.Controls.Add(this.label37);
-            this.panel20.Controls.Add(this.label38);
-            this.panel20.Controls.Add(this.label40);
-            this.panel20.Controls.Add(this.label41);
-            this.panel20.Location = new System.Drawing.Point(16, 608);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(906, 111);
-            this.panel20.TabIndex = 100;
-            // 
-            // materialTextBox3
-            // 
-            this.materialTextBox3.AnimateReadOnly = false;
-            this.materialTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox3.Depth = 0;
-            this.materialTextBox3.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox3.LeadingIcon = null;
-            this.materialTextBox3.Location = new System.Drawing.Point(731, 62);
-            this.materialTextBox3.MaxLength = 18;
-            this.materialTextBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox3.Multiline = false;
-            this.materialTextBox3.Name = "materialTextBox3";
-            this.materialTextBox3.Size = new System.Drawing.Size(124, 50);
-            this.materialTextBox3.TabIndex = 111;
-            this.materialTextBox3.Text = "";
-            this.materialTextBox3.TrailingIcon = null;
-            // 
-            // materialTextBox9
-            // 
-            this.materialTextBox9.AnimateReadOnly = false;
-            this.materialTextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox9.Depth = 0;
-            this.materialTextBox9.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox9.LeadingIcon = null;
-            this.materialTextBox9.Location = new System.Drawing.Point(731, 8);
-            this.materialTextBox9.MaxLength = 18;
-            this.materialTextBox9.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox9.Multiline = false;
-            this.materialTextBox9.Name = "materialTextBox9";
-            this.materialTextBox9.Size = new System.Drawing.Size(124, 50);
-            this.materialTextBox9.TabIndex = 110;
-            this.materialTextBox9.Text = "";
-            this.materialTextBox9.TrailingIcon = null;
-            // 
-            // materialTextBox2
-            // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(259, 58);
-            this.materialTextBox2.MaxLength = 18;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Size = new System.Drawing.Size(124, 50);
-            this.materialTextBox2.TabIndex = 109;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
-            // 
-            // materialTextBox1
-            // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(259, 8);
-            this.materialTextBox1.MaxLength = 18;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(124, 50);
-            this.materialTextBox1.TabIndex = 108;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
-            // 
-            // label37
-            // 
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label37.Location = new System.Drawing.Point(487, 71);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(144, 18);
-            this.label37.TabIndex = 107;
-            this.label37.Text = "Existía supervisión";
-            // 
-            // label38
-            // 
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label38.Location = new System.Drawing.Point(487, 20);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(221, 18);
-            this.label38.TabIndex = 106;
-            this.label38.Text = "Conocía el trabajador el lugar";
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label40.Location = new System.Drawing.Point(9, 71);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(254, 18);
-            this.label40.TabIndex = 103;
-            this.label40.Text = "Herramientas y equipo adecuado";
-            // 
-            // label41
-            // 
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label41.Location = new System.Drawing.Point(9, 20);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(280, 18);
-            this.label41.TabIndex = 103;
-            this.label41.Text = "Existen ITR\'s de Trabajo";
-            // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel19.Controls.Add(this.dataGridView4);
+            this.panel19.Controls.Add(this.dgvDetalleCondicionesInseguras);
             this.panel19.Controls.Add(this.label36);
-            this.panel19.Location = new System.Drawing.Point(16, 413);
+            this.panel19.Location = new System.Drawing.Point(11, 614);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(906, 169);
             this.panel19.TabIndex = 78;
             // 
-            // dataGridView4
+            // dgvDetalleCondicionesInseguras
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(29, 33);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(837, 127);
-            this.dataGridView4.TabIndex = 18;
+            this.dgvDetalleCondicionesInseguras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDetalleCondicionesInseguras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalleCondicionesInseguras.Enabled = false;
+            this.dgvDetalleCondicionesInseguras.Location = new System.Drawing.Point(29, 33);
+            this.dgvDetalleCondicionesInseguras.Name = "dgvDetalleCondicionesInseguras";
+            this.dgvDetalleCondicionesInseguras.Size = new System.Drawing.Size(837, 127);
+            this.dgvDetalleCondicionesInseguras.TabIndex = 18;
             // 
             // label36
             // 
@@ -2581,27 +1366,29 @@
             this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
             this.label36.Location = new System.Drawing.Point(5, 10);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(404, 20);
+            this.label36.Size = new System.Drawing.Size(456, 20);
             this.label36.TabIndex = 17;
-            this.label36.Text = "Actos Inseguros en la Realización de la Actividad";
+            this.label36.Text = "Condiciones Inseguras en la Realización de la Actividad";
             // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel18.Controls.Add(this.dataGridView3);
+            this.panel18.Controls.Add(this.dgvDetalleActosInseguros);
             this.panel18.Controls.Add(this.label34);
-            this.panel18.Location = new System.Drawing.Point(16, 226);
+            this.panel18.Location = new System.Drawing.Point(11, 427);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(906, 169);
             this.panel18.TabIndex = 77;
             // 
-            // dataGridView3
+            // dgvDetalleActosInseguros
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(28, 32);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(838, 127);
-            this.dataGridView3.TabIndex = 18;
+            this.dgvDetalleActosInseguros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDetalleActosInseguros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalleActosInseguros.Enabled = false;
+            this.dgvDetalleActosInseguros.Location = new System.Drawing.Point(28, 32);
+            this.dgvDetalleActosInseguros.Name = "dgvDetalleActosInseguros";
+            this.dgvDetalleActosInseguros.Size = new System.Drawing.Size(838, 127);
+            this.dgvDetalleActosInseguros.TabIndex = 18;
             // 
             // label34
             // 
@@ -2619,7 +1406,7 @@
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label35.Location = new System.Drawing.Point(15, 8);
+            this.label35.Location = new System.Drawing.Point(10, 209);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(251, 25);
             this.label35.TabIndex = 21;
@@ -2628,20 +1415,22 @@
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel17.Controls.Add(this.dataGridView1);
+            this.panel17.Controls.Add(this.dgvDetalleRiesgos);
             this.panel17.Controls.Add(this.label33);
-            this.panel17.Location = new System.Drawing.Point(16, 39);
+            this.panel17.Location = new System.Drawing.Point(11, 240);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(906, 169);
             this.panel17.TabIndex = 18;
             // 
-            // dataGridView1
+            // dgvDetalleRiesgos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 30);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(837, 127);
-            this.dataGridView1.TabIndex = 18;
+            this.dgvDetalleRiesgos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDetalleRiesgos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalleRiesgos.Enabled = false;
+            this.dgvDetalleRiesgos.Location = new System.Drawing.Point(29, 30);
+            this.dgvDetalleRiesgos.Name = "dgvDetalleRiesgos";
+            this.dgvDetalleRiesgos.Size = new System.Drawing.Size(837, 127);
+            this.dgvDetalleRiesgos.TabIndex = 18;
             // 
             // label33
             // 
@@ -2653,6 +1442,317 @@
             this.label33.Size = new System.Drawing.Size(188, 20);
             this.label33.TabIndex = 17;
             this.label33.Text = "Riesgos del Accidente";
+            // 
+            // pSeguimientoCaso
+            // 
+            this.pSeguimientoCaso.AutoScroll = true;
+            this.pSeguimientoCaso.Controls.Add(this.label45);
+            this.pSeguimientoCaso.Controls.Add(this.panel29);
+            this.pSeguimientoCaso.Controls.Add(this.panel28);
+            this.pSeguimientoCaso.Controls.Add(this.panel26);
+            this.pSeguimientoCaso.Controls.Add(this.panel27);
+            this.pSeguimientoCaso.Controls.Add(this.label42);
+            this.pSeguimientoCaso.Location = new System.Drawing.Point(0, 0);
+            this.pSeguimientoCaso.Name = "pSeguimientoCaso";
+            this.pSeguimientoCaso.Size = new System.Drawing.Size(945, 521);
+            this.pSeguimientoCaso.TabIndex = 16;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(-4, 860);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(65, 20);
+            this.label45.TabIndex = 103;
+            this.label45.Text = "Código";
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel29.Controls.Add(this.materialMultiLineTextBox214);
+            this.panel29.Controls.Add(this.label48);
+            this.panel29.Controls.Add(this.materialMultiLineTextBox213);
+            this.panel29.Controls.Add(this.label47);
+            this.panel29.Controls.Add(this.materialMultiLineTextBox212);
+            this.panel29.Controls.Add(this.label46);
+            this.panel29.Location = new System.Drawing.Point(11, 570);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(914, 290);
+            this.panel29.TabIndex = 102;
+            // 
+            // materialMultiLineTextBox214
+            // 
+            this.materialMultiLineTextBox214.AnimateReadOnly = false;
+            this.materialMultiLineTextBox214.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialMultiLineTextBox214.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialMultiLineTextBox214.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.materialMultiLineTextBox214.Depth = 0;
+            this.materialMultiLineTextBox214.HideSelection = true;
+            this.materialMultiLineTextBox214.Location = new System.Drawing.Point(17, 217);
+            this.materialMultiLineTextBox214.MaxLength = 32767;
+            this.materialMultiLineTextBox214.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialMultiLineTextBox214.Name = "materialMultiLineTextBox214";
+            this.materialMultiLineTextBox214.PasswordChar = '\0';
+            this.materialMultiLineTextBox214.ReadOnly = false;
+            this.materialMultiLineTextBox214.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.materialMultiLineTextBox214.SelectedText = "";
+            this.materialMultiLineTextBox214.SelectionLength = 0;
+            this.materialMultiLineTextBox214.SelectionStart = 0;
+            this.materialMultiLineTextBox214.ShortcutsEnabled = true;
+            this.materialMultiLineTextBox214.Size = new System.Drawing.Size(876, 59);
+            this.materialMultiLineTextBox214.TabIndex = 105;
+            this.materialMultiLineTextBox214.TabStop = false;
+            this.materialMultiLineTextBox214.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialMultiLineTextBox214.UseSystemPasswordChar = false;
+            // 
+            // label48
+            // 
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label48.Location = new System.Drawing.Point(17, 196);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(156, 18);
+            this.label48.TabIndex = 104;
+            this.label48.Text = "Incapacidad:";
+            // 
+            // materialMultiLineTextBox213
+            // 
+            this.materialMultiLineTextBox213.AnimateReadOnly = false;
+            this.materialMultiLineTextBox213.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialMultiLineTextBox213.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialMultiLineTextBox213.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.materialMultiLineTextBox213.Depth = 0;
+            this.materialMultiLineTextBox213.HideSelection = true;
+            this.materialMultiLineTextBox213.Location = new System.Drawing.Point(17, 129);
+            this.materialMultiLineTextBox213.MaxLength = 32767;
+            this.materialMultiLineTextBox213.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialMultiLineTextBox213.Name = "materialMultiLineTextBox213";
+            this.materialMultiLineTextBox213.PasswordChar = '\0';
+            this.materialMultiLineTextBox213.ReadOnly = false;
+            this.materialMultiLineTextBox213.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.materialMultiLineTextBox213.SelectedText = "";
+            this.materialMultiLineTextBox213.SelectionLength = 0;
+            this.materialMultiLineTextBox213.SelectionStart = 0;
+            this.materialMultiLineTextBox213.ShortcutsEnabled = true;
+            this.materialMultiLineTextBox213.Size = new System.Drawing.Size(876, 59);
+            this.materialMultiLineTextBox213.TabIndex = 103;
+            this.materialMultiLineTextBox213.TabStop = false;
+            this.materialMultiLineTextBox213.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialMultiLineTextBox213.UseSystemPasswordChar = false;
+            // 
+            // label47
+            // 
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label47.Location = new System.Drawing.Point(17, 108);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(156, 18);
+            this.label47.TabIndex = 102;
+            this.label47.Text = "Tratamiento:";
+            // 
+            // materialMultiLineTextBox212
+            // 
+            this.materialMultiLineTextBox212.AnimateReadOnly = false;
+            this.materialMultiLineTextBox212.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialMultiLineTextBox212.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialMultiLineTextBox212.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.materialMultiLineTextBox212.Depth = 0;
+            this.materialMultiLineTextBox212.HideSelection = true;
+            this.materialMultiLineTextBox212.Location = new System.Drawing.Point(17, 40);
+            this.materialMultiLineTextBox212.MaxLength = 32767;
+            this.materialMultiLineTextBox212.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialMultiLineTextBox212.Name = "materialMultiLineTextBox212";
+            this.materialMultiLineTextBox212.PasswordChar = '\0';
+            this.materialMultiLineTextBox212.ReadOnly = false;
+            this.materialMultiLineTextBox212.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.materialMultiLineTextBox212.SelectedText = "";
+            this.materialMultiLineTextBox212.SelectionLength = 0;
+            this.materialMultiLineTextBox212.SelectionStart = 0;
+            this.materialMultiLineTextBox212.ShortcutsEnabled = true;
+            this.materialMultiLineTextBox212.Size = new System.Drawing.Size(876, 59);
+            this.materialMultiLineTextBox212.TabIndex = 101;
+            this.materialMultiLineTextBox212.TabStop = false;
+            this.materialMultiLineTextBox212.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialMultiLineTextBox212.UseSystemPasswordChar = false;
+            // 
+            // label46
+            // 
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label46.Location = new System.Drawing.Point(17, 19);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(156, 18);
+            this.label46.TabIndex = 100;
+            this.label46.Text = "Diagnóstico Final:";
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel28.Controls.Add(this.materialTextBox8);
+            this.panel28.Controls.Add(this.materialRadioButton25);
+            this.panel28.Controls.Add(this.materialRadioButton29);
+            this.panel28.Controls.Add(this.materialRadioButton26);
+            this.panel28.Controls.Add(this.materialRadioButton30);
+            this.panel28.Location = new System.Drawing.Point(12, 487);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(916, 67);
+            this.panel28.TabIndex = 101;
+            // 
+            // materialTextBox8
+            // 
+            this.materialTextBox8.AnimateReadOnly = false;
+            this.materialTextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTextBox8.Depth = 0;
+            this.materialTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox8.Hint = "Otro";
+            this.materialTextBox8.LeadingIcon = null;
+            this.materialTextBox8.Location = new System.Drawing.Point(709, 4);
+            this.materialTextBox8.MaxLength = 18;
+            this.materialTextBox8.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox8.Multiline = false;
+            this.materialTextBox8.Name = "materialTextBox8";
+            this.materialTextBox8.Size = new System.Drawing.Size(197, 50);
+            this.materialTextBox8.TabIndex = 97;
+            this.materialTextBox8.Text = "";
+            this.materialTextBox8.TrailingIcon = null;
+            this.materialTextBox8.Visible = false;
+            // 
+            // materialRadioButton25
+            // 
+            this.materialRadioButton25.AutoSize = true;
+            this.materialRadioButton25.Depth = 0;
+            this.materialRadioButton25.Location = new System.Drawing.Point(638, 11);
+            this.materialRadioButton25.Margin = new System.Windows.Forms.Padding(0);
+            this.materialRadioButton25.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialRadioButton25.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRadioButton25.Name = "materialRadioButton25";
+            this.materialRadioButton25.Ripple = true;
+            this.materialRadioButton25.Size = new System.Drawing.Size(65, 37);
+            this.materialRadioButton25.TabIndex = 1;
+            this.materialRadioButton25.TabStop = true;
+            this.materialRadioButton25.Text = "Otro";
+            this.materialRadioButton25.UseVisualStyleBackColor = true;
+            // 
+            // materialRadioButton29
+            // 
+            this.materialRadioButton29.AutoSize = true;
+            this.materialRadioButton29.Depth = 0;
+            this.materialRadioButton29.Location = new System.Drawing.Point(194, 11);
+            this.materialRadioButton29.Margin = new System.Windows.Forms.Padding(0);
+            this.materialRadioButton29.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialRadioButton29.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRadioButton29.Name = "materialRadioButton29";
+            this.materialRadioButton29.Ripple = true;
+            this.materialRadioButton29.Size = new System.Drawing.Size(195, 37);
+            this.materialRadioButton29.TabIndex = 1;
+            this.materialRadioButton29.TabStop = true;
+            this.materialRadioButton29.Text = "Enviado a su domicilio";
+            this.materialRadioButton29.UseVisualStyleBackColor = true;
+            // 
+            // materialRadioButton26
+            // 
+            this.materialRadioButton26.AutoSize = true;
+            this.materialRadioButton26.Depth = 0;
+            this.materialRadioButton26.Location = new System.Drawing.Point(402, 11);
+            this.materialRadioButton26.Margin = new System.Windows.Forms.Padding(0);
+            this.materialRadioButton26.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialRadioButton26.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRadioButton26.Name = "materialRadioButton26";
+            this.materialRadioButton26.Ripple = true;
+            this.materialRadioButton26.Size = new System.Drawing.Size(226, 37);
+            this.materialRadioButton26.TabIndex = 0;
+            this.materialRadioButton26.TabStop = true;
+            this.materialRadioButton26.Text = "Enviado a atención médica";
+            this.materialRadioButton26.UseVisualStyleBackColor = true;
+            // 
+            // materialRadioButton30
+            // 
+            this.materialRadioButton30.AutoSize = true;
+            this.materialRadioButton30.Depth = 0;
+            this.materialRadioButton30.Location = new System.Drawing.Point(1, 11);
+            this.materialRadioButton30.Margin = new System.Windows.Forms.Padding(0);
+            this.materialRadioButton30.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialRadioButton30.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRadioButton30.Name = "materialRadioButton30";
+            this.materialRadioButton30.Ripple = true;
+            this.materialRadioButton30.Size = new System.Drawing.Size(180, 37);
+            this.materialRadioButton30.TabIndex = 0;
+            this.materialRadioButton30.TabStop = true;
+            this.materialRadioButton30.Text = "Continua trabajando";
+            this.materialRadioButton30.UseVisualStyleBackColor = true;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel26.Controls.Add(this.label44);
+            this.panel26.Controls.Add(this.dgvEmpleadosInvolucrados);
+            this.panel26.Location = new System.Drawing.Point(11, 294);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(916, 171);
+            this.panel26.TabIndex = 97;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label44.Location = new System.Drawing.Point(9, 7);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(275, 20);
+            this.label44.TabIndex = 24;
+            this.label44.Text = "Nombre del personal involucrado:";
+            // 
+            // dgvEmpleadosInvolucrados
+            // 
+            this.dgvEmpleadosInvolucrados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmpleadosInvolucrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmpleadosInvolucrados.Location = new System.Drawing.Point(11, 38);
+            this.dgvEmpleadosInvolucrados.Name = "dgvEmpleadosInvolucrados";
+            this.dgvEmpleadosInvolucrados.Size = new System.Drawing.Size(889, 118);
+            this.dgvEmpleadosInvolucrados.TabIndex = 91;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel27.Controls.Add(this.label43);
+            this.panel27.Controls.Add(this.dgvEmpleadoConocimiento);
+            this.panel27.Location = new System.Drawing.Point(10, 114);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(916, 162);
+            this.panel27.TabIndex = 95;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label43.Location = new System.Drawing.Point(9, 7);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(408, 20);
+            this.label43.TabIndex = 24;
+            this.label43.Text = "Persona(s) que tomo conocimiento de los hechos:";
+            // 
+            // dgvEmpleadoConocimiento
+            // 
+            this.dgvEmpleadoConocimiento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmpleadoConocimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmpleadoConocimiento.Location = new System.Drawing.Point(12, 37);
+            this.dgvEmpleadoConocimiento.Name = "dgvEmpleadoConocimiento";
+            this.dgvEmpleadoConocimiento.Size = new System.Drawing.Size(889, 112);
+            this.dgvEmpleadoConocimiento.TabIndex = 91;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label42.Location = new System.Drawing.Point(5, 86);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(242, 25);
+            this.label42.TabIndex = 22;
+            this.label42.Text = "Seguimiento del Caso";
             // 
             // pSeccionesDatos
             // 
@@ -2890,24 +1990,614 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // txtIdEmpleado
+            // panel4
             // 
-            this.txtIdEmpleado.AnimateReadOnly = false;
-            this.txtIdEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdEmpleado.Depth = 0;
-            this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtIdEmpleado.Hint = "Id Empleado:";
-            this.txtIdEmpleado.LeadingIcon = null;
-            this.txtIdEmpleado.Location = new System.Drawing.Point(382, 23);
-            this.txtIdEmpleado.MaxLength = 18;
-            this.txtIdEmpleado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtIdEmpleado.Multiline = false;
-            this.txtIdEmpleado.Name = "txtIdEmpleado";
-            this.txtIdEmpleado.Size = new System.Drawing.Size(127, 50);
-            this.txtIdEmpleado.TabIndex = 111;
-            this.txtIdEmpleado.Text = "";
-            this.txtIdEmpleado.TrailingIcon = null;
-            this.txtIdEmpleado.Visible = false;
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.txtCausaAccidente);
+            this.panel4.Controls.Add(this.txtSeccionA);
+            this.panel4.Controls.Add(this.txtProceso);
+            this.panel4.Controls.Add(this.rbtnlesion12MesesSi);
+            this.panel4.Controls.Add(this.rbtnlesion30DiasSi);
+            this.panel4.Controls.Add(this.txtDescripcionAccidente);
+            this.panel4.Controls.Add(this.label62);
+            this.panel4.Controls.Add(this.txtEquipoProteccionNecesario);
+            this.panel4.Controls.Add(this.label15);
+            this.panel4.Controls.Add(this.txtEquipoProteccionUsado);
+            this.panel4.Controls.Add(this.label14);
+            this.panel4.Controls.Add(this.txtObjCausanteLesion);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.txtLugarAccidente);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Location = new System.Drawing.Point(9, 304);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(900, 454);
+            this.panel4.TabIndex = 111;
+            // 
+            // txtDescripcionAccidente
+            // 
+            this.txtDescripcionAccidente.AnimateReadOnly = false;
+            this.txtDescripcionAccidente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtDescripcionAccidente.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDescripcionAccidente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDescripcionAccidente.Depth = 0;
+            this.txtDescripcionAccidente.Enabled = false;
+            this.txtDescripcionAccidente.HideSelection = true;
+            this.txtDescripcionAccidente.Location = new System.Drawing.Point(9, 361);
+            this.txtDescripcionAccidente.MaxLength = 32767;
+            this.txtDescripcionAccidente.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDescripcionAccidente.Name = "txtDescripcionAccidente";
+            this.txtDescripcionAccidente.PasswordChar = '\0';
+            this.txtDescripcionAccidente.ReadOnly = false;
+            this.txtDescripcionAccidente.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDescripcionAccidente.SelectedText = "";
+            this.txtDescripcionAccidente.SelectionLength = 0;
+            this.txtDescripcionAccidente.SelectionStart = 0;
+            this.txtDescripcionAccidente.ShortcutsEnabled = true;
+            this.txtDescripcionAccidente.Size = new System.Drawing.Size(434, 77);
+            this.txtDescripcionAccidente.TabIndex = 116;
+            this.txtDescripcionAccidente.TabStop = false;
+            this.txtDescripcionAccidente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDescripcionAccidente.UseSystemPasswordChar = false;
+            // 
+            // label62
+            // 
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label62.Location = new System.Drawing.Point(9, 341);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(413, 17);
+            this.label62.TabIndex = 115;
+            this.label62.Text = "Descripción de como sucedio el accidente:";
+            // 
+            // txtEquipoProteccionNecesario
+            // 
+            this.txtEquipoProteccionNecesario.AnimateReadOnly = false;
+            this.txtEquipoProteccionNecesario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtEquipoProteccionNecesario.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtEquipoProteccionNecesario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEquipoProteccionNecesario.Depth = 0;
+            this.txtEquipoProteccionNecesario.Enabled = false;
+            this.txtEquipoProteccionNecesario.HideSelection = true;
+            this.txtEquipoProteccionNecesario.Location = new System.Drawing.Point(455, 261);
+            this.txtEquipoProteccionNecesario.MaxLength = 32767;
+            this.txtEquipoProteccionNecesario.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEquipoProteccionNecesario.Name = "txtEquipoProteccionNecesario";
+            this.txtEquipoProteccionNecesario.PasswordChar = '\0';
+            this.txtEquipoProteccionNecesario.ReadOnly = false;
+            this.txtEquipoProteccionNecesario.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtEquipoProteccionNecesario.SelectedText = "";
+            this.txtEquipoProteccionNecesario.SelectionLength = 0;
+            this.txtEquipoProteccionNecesario.SelectionStart = 0;
+            this.txtEquipoProteccionNecesario.ShortcutsEnabled = true;
+            this.txtEquipoProteccionNecesario.Size = new System.Drawing.Size(434, 77);
+            this.txtEquipoProteccionNecesario.TabIndex = 111;
+            this.txtEquipoProteccionNecesario.TabStop = false;
+            this.txtEquipoProteccionNecesario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEquipoProteccionNecesario.UseSystemPasswordChar = false;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label15.Location = new System.Drawing.Point(455, 241);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(413, 17);
+            this.label15.TabIndex = 110;
+            this.label15.Text = "Equipo de Protección Personal Necesario\r\n:";
+            // 
+            // txtEquipoProteccionUsado
+            // 
+            this.txtEquipoProteccionUsado.AnimateReadOnly = false;
+            this.txtEquipoProteccionUsado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtEquipoProteccionUsado.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtEquipoProteccionUsado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEquipoProteccionUsado.Depth = 0;
+            this.txtEquipoProteccionUsado.Enabled = false;
+            this.txtEquipoProteccionUsado.HideSelection = true;
+            this.txtEquipoProteccionUsado.Location = new System.Drawing.Point(9, 261);
+            this.txtEquipoProteccionUsado.MaxLength = 32767;
+            this.txtEquipoProteccionUsado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEquipoProteccionUsado.Name = "txtEquipoProteccionUsado";
+            this.txtEquipoProteccionUsado.PasswordChar = '\0';
+            this.txtEquipoProteccionUsado.ReadOnly = false;
+            this.txtEquipoProteccionUsado.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtEquipoProteccionUsado.SelectedText = "";
+            this.txtEquipoProteccionUsado.SelectionLength = 0;
+            this.txtEquipoProteccionUsado.SelectionStart = 0;
+            this.txtEquipoProteccionUsado.ShortcutsEnabled = true;
+            this.txtEquipoProteccionUsado.Size = new System.Drawing.Size(434, 77);
+            this.txtEquipoProteccionUsado.TabIndex = 109;
+            this.txtEquipoProteccionUsado.TabStop = false;
+            this.txtEquipoProteccionUsado.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEquipoProteccionUsado.UseSystemPasswordChar = false;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label14.Location = new System.Drawing.Point(455, 141);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(413, 17);
+            this.label14.TabIndex = 108;
+            this.label14.Text = "Objeto, Equipo, sustancia que causo la lesión";
+            // 
+            // txtObjCausanteLesion
+            // 
+            this.txtObjCausanteLesion.AnimateReadOnly = false;
+            this.txtObjCausanteLesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtObjCausanteLesion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtObjCausanteLesion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtObjCausanteLesion.Depth = 0;
+            this.txtObjCausanteLesion.Enabled = false;
+            this.txtObjCausanteLesion.HideSelection = true;
+            this.txtObjCausanteLesion.Location = new System.Drawing.Point(455, 161);
+            this.txtObjCausanteLesion.MaxLength = 32767;
+            this.txtObjCausanteLesion.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtObjCausanteLesion.Name = "txtObjCausanteLesion";
+            this.txtObjCausanteLesion.PasswordChar = '\0';
+            this.txtObjCausanteLesion.ReadOnly = false;
+            this.txtObjCausanteLesion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtObjCausanteLesion.SelectedText = "";
+            this.txtObjCausanteLesion.SelectionLength = 0;
+            this.txtObjCausanteLesion.SelectionStart = 0;
+            this.txtObjCausanteLesion.ShortcutsEnabled = true;
+            this.txtObjCausanteLesion.Size = new System.Drawing.Size(434, 77);
+            this.txtObjCausanteLesion.TabIndex = 105;
+            this.txtObjCausanteLesion.TabStop = false;
+            this.txtObjCausanteLesion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtObjCausanteLesion.UseSystemPasswordChar = false;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label12.Location = new System.Drawing.Point(6, 241);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(413, 17);
+            this.label12.TabIndex = 104;
+            this.label12.Text = "Equipo de Protección Personal Usado:";
+            // 
+            // txtLugarAccidente
+            // 
+            this.txtLugarAccidente.AnimateReadOnly = false;
+            this.txtLugarAccidente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtLugarAccidente.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtLugarAccidente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLugarAccidente.Depth = 0;
+            this.txtLugarAccidente.Enabled = false;
+            this.txtLugarAccidente.HideSelection = true;
+            this.txtLugarAccidente.Location = new System.Drawing.Point(9, 161);
+            this.txtLugarAccidente.MaxLength = 32767;
+            this.txtLugarAccidente.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtLugarAccidente.Name = "txtLugarAccidente";
+            this.txtLugarAccidente.PasswordChar = '\0';
+            this.txtLugarAccidente.ReadOnly = false;
+            this.txtLugarAccidente.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtLugarAccidente.SelectedText = "";
+            this.txtLugarAccidente.SelectionLength = 0;
+            this.txtLugarAccidente.SelectionStart = 0;
+            this.txtLugarAccidente.ShortcutsEnabled = true;
+            this.txtLugarAccidente.Size = new System.Drawing.Size(434, 77);
+            this.txtLugarAccidente.TabIndex = 103;
+            this.txtLugarAccidente.TabStop = false;
+            this.txtLugarAccidente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtLugarAccidente.UseSystemPasswordChar = false;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label13.Location = new System.Drawing.Point(9, 141);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(413, 17);
+            this.label13.TabIndex = 102;
+            this.label13.Text = "Lugar del accidente";
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label11.Location = new System.Drawing.Point(455, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(285, 37);
+            this.label11.TabIndex = 100;
+            this.label11.Text = "Hay accidentes en los últimos 12 meses en el Proceso o a la persona lesionada:";
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label10.Location = new System.Drawing.Point(9, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(298, 35);
+            this.label10.TabIndex = 98;
+            this.label10.Text = "Hay incidentes en los últimos 30 días en el Proceso o a la persona lesionada:";
+            // 
+            // txtProceso
+            // 
+            this.txtProceso.AnimateReadOnly = false;
+            this.txtProceso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProceso.Depth = 0;
+            this.txtProceso.Enabled = false;
+            this.txtProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtProceso.Hint = "Proceso:";
+            this.txtProceso.LeadingIcon = null;
+            this.txtProceso.Location = new System.Drawing.Point(9, 72);
+            this.txtProceso.MaxLength = 50;
+            this.txtProceso.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtProceso.Multiline = false;
+            this.txtProceso.Name = "txtProceso";
+            this.txtProceso.Size = new System.Drawing.Size(436, 50);
+            this.txtProceso.TabIndex = 121;
+            this.txtProceso.Text = "";
+            this.txtProceso.TrailingIcon = null;
+            // 
+            // txtSeccionA
+            // 
+            this.txtSeccionA.AnimateReadOnly = false;
+            this.txtSeccionA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSeccionA.Depth = 0;
+            this.txtSeccionA.Enabled = false;
+            this.txtSeccionA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSeccionA.Hint = "Sección:";
+            this.txtSeccionA.LeadingIcon = null;
+            this.txtSeccionA.Location = new System.Drawing.Point(455, 72);
+            this.txtSeccionA.MaxLength = 50;
+            this.txtSeccionA.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSeccionA.Multiline = false;
+            this.txtSeccionA.Name = "txtSeccionA";
+            this.txtSeccionA.Size = new System.Drawing.Size(436, 50);
+            this.txtSeccionA.TabIndex = 122;
+            this.txtSeccionA.Text = "";
+            this.txtSeccionA.TrailingIcon = null;
+            // 
+            // txtSeccionB
+            // 
+            this.txtSeccionB.AnimateReadOnly = false;
+            this.txtSeccionB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSeccionB.Depth = 0;
+            this.txtSeccionB.Enabled = false;
+            this.txtSeccionB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSeccionB.Hint = "Sección:";
+            this.txtSeccionB.LeadingIcon = null;
+            this.txtSeccionB.Location = new System.Drawing.Point(13, 211);
+            this.txtSeccionB.MaxLength = 50;
+            this.txtSeccionB.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSeccionB.Multiline = false;
+            this.txtSeccionB.Name = "txtSeccionB";
+            this.txtSeccionB.Size = new System.Drawing.Size(421, 50);
+            this.txtSeccionB.TabIndex = 123;
+            this.txtSeccionB.Text = "";
+            this.txtSeccionB.TrailingIcon = null;
+            this.txtSeccionB.Visible = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel6.Controls.Add(this.rbtnTrabajoUrgenteSi);
+            this.panel6.Controls.Add(this.rbtnTrabajoNeccesarioSi);
+            this.panel6.Controls.Add(this.rbtnTrabajoProgramadoSi);
+            this.panel6.Controls.Add(this.rbtnTrabajoHabitualSi);
+            this.panel6.Controls.Add(this.rbtnRealizoTrabajoAntesSi);
+            this.panel6.Controls.Add(this.label28);
+            this.panel6.Controls.Add(this.label27);
+            this.panel6.Controls.Add(this.label25);
+            this.panel6.Controls.Add(this.label24);
+            this.panel6.Controls.Add(this.label22);
+            this.panel6.Location = new System.Drawing.Point(9, 773);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(445, 266);
+            this.panel6.TabIndex = 112;
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label28.Location = new System.Drawing.Point(9, 172);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(144, 18);
+            this.label28.TabIndex = 107;
+            this.label28.Text = "Trabajo necesario";
+            // 
+            // label27
+            // 
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label27.Location = new System.Drawing.Point(9, 120);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(163, 18);
+            this.label27.TabIndex = 106;
+            this.label27.Text = "Trabajo programado";
+            // 
+            // label25
+            // 
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label25.Location = new System.Drawing.Point(9, 224);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(144, 18);
+            this.label25.TabIndex = 104;
+            this.label25.Text = "Trabajo urgente";
+            // 
+            // label24
+            // 
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label24.Location = new System.Drawing.Point(9, 68);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(144, 18);
+            this.label24.TabIndex = 103;
+            this.label24.Text = "Trabajo habitual";
+            // 
+            // label22
+            // 
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label22.Location = new System.Drawing.Point(9, 16);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(280, 18);
+            this.label22.TabIndex = 103;
+            this.label22.Text = "A realizado el trabajo anteriormente";
+            // 
+            // txtCausaAccidente
+            // 
+            this.txtCausaAccidente.AnimateReadOnly = false;
+            this.txtCausaAccidente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCausaAccidente.Depth = 0;
+            this.txtCausaAccidente.Enabled = false;
+            this.txtCausaAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCausaAccidente.Hint = "Causa del Accidente:";
+            this.txtCausaAccidente.LeadingIcon = null;
+            this.txtCausaAccidente.Location = new System.Drawing.Point(455, 361);
+            this.txtCausaAccidente.MaxLength = 50;
+            this.txtCausaAccidente.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtCausaAccidente.Multiline = false;
+            this.txtCausaAccidente.Name = "txtCausaAccidente";
+            this.txtCausaAccidente.Size = new System.Drawing.Size(436, 50);
+            this.txtCausaAccidente.TabIndex = 123;
+            this.txtCausaAccidente.Text = "";
+            this.txtCausaAccidente.TrailingIcon = null;
+            this.txtCausaAccidente.Visible = false;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel20.Controls.Add(this.rbtnEquipoAdecuadoSi);
+            this.panel20.Controls.Add(this.rbtnConociaTrabajoSi);
+            this.panel20.Controls.Add(this.rbtnExistiaSupervicionSi);
+            this.panel20.Controls.Add(this.rbtnExistenItrsSi);
+            this.panel20.Controls.Add(this.label37);
+            this.panel20.Controls.Add(this.label38);
+            this.panel20.Controls.Add(this.label40);
+            this.panel20.Controls.Add(this.label41);
+            this.panel20.Location = new System.Drawing.Point(11, 801);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(906, 111);
+            this.panel20.TabIndex = 112;
+            // 
+            // label37
+            // 
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label37.Location = new System.Drawing.Point(487, 71);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(144, 18);
+            this.label37.TabIndex = 107;
+            this.label37.Text = "Existía supervisión";
+            // 
+            // label38
+            // 
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label38.Location = new System.Drawing.Point(487, 20);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(221, 18);
+            this.label38.TabIndex = 106;
+            this.label38.Text = "Conocía el trabajador el lugar";
+            // 
+            // label40
+            // 
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label40.Location = new System.Drawing.Point(9, 71);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(254, 18);
+            this.label40.TabIndex = 103;
+            this.label40.Text = "Herramientas y equipo adecuado";
+            // 
+            // label41
+            // 
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label41.Location = new System.Drawing.Point(9, 20);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(280, 18);
+            this.label41.TabIndex = 103;
+            this.label41.Text = "Existen ITR\'s de Trabajo";
+            // 
+            // rbtnEquipoAdecuadoSi
+            // 
+            this.rbtnEquipoAdecuadoSi.Enabled = false;
+            this.rbtnEquipoAdecuadoSi.Location = new System.Drawing.Point(282, 63);
+            this.rbtnEquipoAdecuadoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnEquipoAdecuadoSi.Name = "rbtnEquipoAdecuadoSi";
+            this.rbtnEquipoAdecuadoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnEquipoAdecuadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnEquipoAdecuadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnEquipoAdecuadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnEquipoAdecuadoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnEquipoAdecuadoSi.TabIndex = 126;
+            this.rbtnEquipoAdecuadoSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnConociaTrabajoSi
+            // 
+            this.rbtnConociaTrabajoSi.Enabled = false;
+            this.rbtnConociaTrabajoSi.Location = new System.Drawing.Point(751, 12);
+            this.rbtnConociaTrabajoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnConociaTrabajoSi.Name = "rbtnConociaTrabajoSi";
+            this.rbtnConociaTrabajoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnConociaTrabajoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnConociaTrabajoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnConociaTrabajoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnConociaTrabajoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnConociaTrabajoSi.TabIndex = 125;
+            this.rbtnConociaTrabajoSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnExistiaSupervicionSi
+            // 
+            this.rbtnExistiaSupervicionSi.Enabled = false;
+            this.rbtnExistiaSupervicionSi.Location = new System.Drawing.Point(751, 63);
+            this.rbtnExistiaSupervicionSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnExistiaSupervicionSi.Name = "rbtnExistiaSupervicionSi";
+            this.rbtnExistiaSupervicionSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnExistiaSupervicionSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnExistiaSupervicionSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnExistiaSupervicionSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnExistiaSupervicionSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnExistiaSupervicionSi.TabIndex = 124;
+            this.rbtnExistiaSupervicionSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnExistenItrsSi
+            // 
+            this.rbtnExistenItrsSi.Enabled = false;
+            this.rbtnExistenItrsSi.Location = new System.Drawing.Point(282, 12);
+            this.rbtnExistenItrsSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnExistenItrsSi.Name = "rbtnExistenItrsSi";
+            this.rbtnExistenItrsSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnExistenItrsSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnExistenItrsSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnExistenItrsSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnExistenItrsSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnExistenItrsSi.TabIndex = 123;
+            this.rbtnExistenItrsSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTiempoExtra
+            // 
+            this.rbtnTiempoExtra.Enabled = false;
+            this.rbtnTiempoExtra.Location = new System.Drawing.Point(129, 85);
+            this.rbtnTiempoExtra.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTiempoExtra.Name = "rbtnTiempoExtra";
+            this.rbtnTiempoExtra.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTiempoExtra.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTiempoExtra.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTiempoExtra.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTiempoExtra.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTiempoExtra.TabIndex = 124;
+            this.rbtnTiempoExtra.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoUrgenteSi
+            // 
+            this.rbtnTrabajoUrgenteSi.Enabled = false;
+            this.rbtnTrabajoUrgenteSi.Location = new System.Drawing.Point(320, 216);
+            this.rbtnTrabajoUrgenteSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoUrgenteSi.Name = "rbtnTrabajoUrgenteSi";
+            this.rbtnTrabajoUrgenteSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoUrgenteSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoUrgenteSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTrabajoUrgenteSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoUrgenteSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoUrgenteSi.TabIndex = 124;
+            this.rbtnTrabajoUrgenteSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoNeccesarioSi
+            // 
+            this.rbtnTrabajoNeccesarioSi.Enabled = false;
+            this.rbtnTrabajoNeccesarioSi.Location = new System.Drawing.Point(320, 164);
+            this.rbtnTrabajoNeccesarioSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoNeccesarioSi.Name = "rbtnTrabajoNeccesarioSi";
+            this.rbtnTrabajoNeccesarioSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoNeccesarioSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoNeccesarioSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTrabajoNeccesarioSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoNeccesarioSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoNeccesarioSi.TabIndex = 123;
+            this.rbtnTrabajoNeccesarioSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoProgramadoSi
+            // 
+            this.rbtnTrabajoProgramadoSi.Enabled = false;
+            this.rbtnTrabajoProgramadoSi.Location = new System.Drawing.Point(320, 112);
+            this.rbtnTrabajoProgramadoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoProgramadoSi.Name = "rbtnTrabajoProgramadoSi";
+            this.rbtnTrabajoProgramadoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoProgramadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoProgramadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTrabajoProgramadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoProgramadoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoProgramadoSi.TabIndex = 122;
+            this.rbtnTrabajoProgramadoSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoHabitualSi
+            // 
+            this.rbtnTrabajoHabitualSi.Enabled = false;
+            this.rbtnTrabajoHabitualSi.Location = new System.Drawing.Point(320, 60);
+            this.rbtnTrabajoHabitualSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoHabitualSi.Name = "rbtnTrabajoHabitualSi";
+            this.rbtnTrabajoHabitualSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoHabitualSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoHabitualSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTrabajoHabitualSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoHabitualSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoHabitualSi.TabIndex = 121;
+            this.rbtnTrabajoHabitualSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnRealizoTrabajoAntesSi
+            // 
+            this.rbtnRealizoTrabajoAntesSi.Enabled = false;
+            this.rbtnRealizoTrabajoAntesSi.Location = new System.Drawing.Point(320, 8);
+            this.rbtnRealizoTrabajoAntesSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnRealizoTrabajoAntesSi.Name = "rbtnRealizoTrabajoAntesSi";
+            this.rbtnRealizoTrabajoAntesSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnRealizoTrabajoAntesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnRealizoTrabajoAntesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnRealizoTrabajoAntesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnRealizoTrabajoAntesSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnRealizoTrabajoAntesSi.TabIndex = 120;
+            this.rbtnRealizoTrabajoAntesSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnlesion12MesesSi
+            // 
+            this.rbtnlesion12MesesSi.Enabled = false;
+            this.rbtnlesion12MesesSi.Location = new System.Drawing.Point(779, 18);
+            this.rbtnlesion12MesesSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnlesion12MesesSi.Name = "rbtnlesion12MesesSi";
+            this.rbtnlesion12MesesSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnlesion12MesesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnlesion12MesesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnlesion12MesesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnlesion12MesesSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnlesion12MesesSi.TabIndex = 120;
+            this.rbtnlesion12MesesSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnlesion30DiasSi
+            // 
+            this.rbtnlesion30DiasSi.Enabled = false;
+            this.rbtnlesion30DiasSi.Location = new System.Drawing.Point(333, 18);
+            this.rbtnlesion30DiasSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnlesion30DiasSi.Name = "rbtnlesion30DiasSi";
+            this.rbtnlesion30DiasSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnlesion30DiasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnlesion30DiasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnlesion30DiasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnlesion30DiasSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnlesion30DiasSi.TabIndex = 119;
+            this.rbtnlesion30DiasSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnDanosMateriales
+            // 
+            this.rbtnDanosMateriales.Enabled = false;
+            this.rbtnDanosMateriales.Location = new System.Drawing.Point(229, 14);
+            this.rbtnDanosMateriales.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnDanosMateriales.Name = "rbtnDanosMateriales";
+            this.rbtnDanosMateriales.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnDanosMateriales.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnDanosMateriales.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnDanosMateriales.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnDanosMateriales.Size = new System.Drawing.Size(83, 34);
+            this.rbtnDanosMateriales.TabIndex = 125;
+            this.rbtnDanosMateriales.UseVisualStyleBackColor = true;
             // 
             // frmConsultaAccidentes
             // 
@@ -2921,43 +2611,16 @@
             this.Load += new System.EventHandler(this.frmConsultaAccidentes_Load);
             this.pContenedorAccidentes.ResumeLayout(false);
             this.pContenedorAcc.ResumeLayout(false);
-            this.pSeguimientoCaso.ResumeLayout(false);
-            this.pSeguimientoCaso.PerformLayout();
-            this.panel29.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
-            this.panel28.PerformLayout();
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            this.panel27.ResumeLayout(false);
-            this.panel27.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.pDatosGenerales.ResumeLayout(false);
             this.pDatosGenerales.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTestigos)).EndInit();
             this.pDetallesAccidente.ResumeLayout(false);
             this.pDetallesAccidente.PerformLayout();
             this.panel7.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel4.ResumeLayout(false);
             this.pControlAcciones.ResumeLayout(false);
             this.pControlAcciones.PerformLayout();
             this.panel33.ResumeLayout(false);
@@ -2967,22 +2630,35 @@
             this.panel31.PerformLayout();
             this.pFactoresSeguridad.ResumeLayout(false);
             this.pFactoresSeguridad.PerformLayout();
-            this.panel20.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleCondicionesInseguras)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleActosInseguros)).EndInit();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleRiesgos)).EndInit();
+            this.pSeguimientoCaso.ResumeLayout(false);
+            this.pSeguimientoCaso.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel28.ResumeLayout(false);
+            this.panel28.PerformLayout();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleadosInvolucrados)).EndInit();
+            this.panel27.ResumeLayout(false);
+            this.panel27.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleadoConocimiento)).EndInit();
             this.pSeccionesDatos.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3033,98 +2709,50 @@
         private MaterialSkin.Controls.MaterialRadioButton materialRadioButton30;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dgvEmpleadosInvolucrados;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel pDetallesAccidente;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Panel panel7;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox3;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox211;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtSustituiblePor;
         private System.Windows.Forms.Label label31;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox210;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtEquipoDanado;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Panel panel13;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton13;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton14;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel12;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton11;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton12;
-        private System.Windows.Forms.Panel panel11;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton9;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton10;
-        private System.Windows.Forms.Panel panel10;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton7;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton8;
-        private System.Windows.Forms.Panel panel9;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton5;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton6;
-        private System.Windows.Forms.Panel panel8;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton2;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Panel panel4;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox29;
-        private System.Windows.Forms.Label label15;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox28;
-        private System.Windows.Forms.Label label14;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox24;
-        private System.Windows.Forms.Label label12;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox27;
-        private System.Windows.Forms.Label label13;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox22;
-        private System.Windows.Forms.Label label11;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox21;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel pFactoresSeguridad;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dgvDetalleCondicionesInseguras;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dgvDetalleActosInseguros;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDetalleRiesgos;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel pDatosGenerales;
         private System.Windows.Forms.Panel panel14;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox23;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox25;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox26;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtTipoLesion;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtTrabajoDesempenado;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtParteCuerpoAfectada;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox14;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox15;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox16;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox17;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton3;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton4;
+        private MaterialSkin.Controls.MaterialTextBox txtTotalHrs;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private MaterialSkin.Controls.MaterialTextBox txtEdad;
         private MaterialSkin.Controls.MaterialTextBox txtNombreEmpleado;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox21;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox22;
+        private MaterialSkin.Controls.MaterialTextBox txtNumAccidente;
+        private MaterialSkin.Controls.MaterialTextBox txtCondicion;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvTestigos;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button2;
@@ -3148,27 +2776,55 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox222;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox3;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox9;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox11;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox10;
-        private MaterialSkin.Controls.MaterialButton materialButton5;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox6;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton3;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Label label43;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox4;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox5;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dgvEmpleadoConocimiento;
         private MaterialSkin.Controls.MaterialTextBox txtNumeroNomina;
         private MaterialSkin.Controls.MaterialComboBox cboxFechasAccidentes;
         private MaterialSkin.Controls.MaterialFloatingActionButton btnBuscarEmpleado;
         private MaterialSkin.Controls.MaterialTextBox txtIdEmpleado;
+        private radioButtonPersonalizado rbtnTiempoExtra;
+        private MaterialSkin.Controls.MaterialTextBox txtDiaDescansoPrevio;
+        private System.Windows.Forms.Panel panel4;
+        private radioButtonPersonalizado rbtnlesion12MesesSi;
+        private radioButtonPersonalizado rbtnlesion30DiasSi;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtDescripcionAccidente;
+        private System.Windows.Forms.Label label62;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtEquipoProteccionNecesario;
+        private System.Windows.Forms.Label label15;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtEquipoProteccionUsado;
+        private System.Windows.Forms.Label label14;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtObjCausanteLesion;
+        private System.Windows.Forms.Label label12;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtLugarAccidente;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private MaterialSkin.Controls.MaterialTextBox txtSeccionA;
+        private MaterialSkin.Controls.MaterialTextBox txtProceso;
+        private MaterialSkin.Controls.MaterialTextBox txtSeccionB;
+        private System.Windows.Forms.Panel panel6;
+        private radioButtonPersonalizado rbtnTrabajoUrgenteSi;
+        private radioButtonPersonalizado rbtnTrabajoNeccesarioSi;
+        private radioButtonPersonalizado rbtnTrabajoProgramadoSi;
+        private radioButtonPersonalizado rbtnTrabajoHabitualSi;
+        private radioButtonPersonalizado rbtnRealizoTrabajoAntesSi;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label22;
+        private radioButtonPersonalizado rbtnDanosMateriales;
+        private MaterialSkin.Controls.MaterialTextBox txtCausaAccidente;
+        private System.Windows.Forms.Panel panel20;
+        private radioButtonPersonalizado rbtnEquipoAdecuadoSi;
+        private radioButtonPersonalizado rbtnConociaTrabajoSi;
+        private radioButtonPersonalizado rbtnExistiaSupervicionSi;
+        private radioButtonPersonalizado rbtnExistenItrsSi;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
     }
 }
