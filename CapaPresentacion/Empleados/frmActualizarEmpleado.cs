@@ -141,6 +141,7 @@ namespace CapaPresentacion.Empleados
                 string domicilio_colonia = txtColonia.Text.Trim();
                 string domicilio_calle = txtCalle.Text.Trim();
                 int domicilio_numero = int.Parse(txtNumero.Text);
+
                 string telefono = txtTelefono.Text.Trim();
                 string puesto = cmbPuesto.Text.Trim();
 
