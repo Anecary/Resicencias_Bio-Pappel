@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,20 +64,21 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 // Definir el radio de los bordes redondeados
                 int radius = 20;
 
-                // Crear un pincel para el borde
-                Pen pen = new Pen(Color.Blue, 3); // Color y grosor del borde
+                // Crear un `GraphicsPath` para el área recortada del panel
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius * 2, radius * 2, 180, 90);
+                path.AddArc(panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
+                path.AddArc(panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+                path.AddArc(0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
+                path.CloseFigure();
 
-                // Dibujar los bordes redondeados
-                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                e.Graphics.DrawArc(pen, 0, 0, radius * 2, radius * 2, 180, 90);
-                e.Graphics.DrawArc(pen, panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
-                e.Graphics.DrawArc(pen, 0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
-                e.Graphics.DrawArc(pen, panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+                // Aplicar el área recortada al panel
+                panel.Region = new Region(path);
 
-                e.Graphics.DrawLine(pen, radius, 0, panel.Width - radius, 0);
-                e.Graphics.DrawLine(pen, radius, panel.Height, panel.Width - radius, panel.Height);
-                e.Graphics.DrawLine(pen, 0, radius, 0, panel.Height - radius);
-                e.Graphics.DrawLine(pen, panel.Width, radius, panel.Width, panel.Height - radius);
+                // Dibujar el borde con el color deseado
+                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                e.Graphics.DrawPath(pen, path);
             }
         }
         private void btnMouseEnter(Object sender, EventArgs e)
@@ -104,32 +106,26 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
             panelAMostrar.Visible = true;
         }
-
         private void btnDatosGenerales_Click(object sender, EventArgs e)
         {
             MostrarPanel(pDatosGenerales);
         }
-
         private void btnDetallesAccidente_Click(object sender, EventArgs e)
         {
             MostrarPanel(pDetallesAccidente);
         }
-
         private void btnFactoresSeguridad_Click(object sender, EventArgs e)
         {
             MostrarPanel(pFactoresSeguridad);
         }
-
         private void btnSeguimientoCaso_Click(object sender, EventArgs e)
         {
             MostrarPanel(pSeguimientoCaso);
         }
-
         private void btnControlAcciones_Click(object sender, EventArgs e)
         {
             MostrarPanel(pControlAcciones);
         }
-
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtNumeroNomina.Text))
@@ -376,31 +372,71 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 {
                     rbtnExistenItrsSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
                 }
-                if (dr["danosMateriales"] != DBNull.Value)
+                if (dr["herramienta_equipo_adecuado"] != DBNull.Value)
                 {
-                    rbtnDanosMateriales.Checked = Convert.ToBoolean(dr["danosMateriales"]);
+                    rbtnEquipoAdecuadoSi.Checked = Convert.ToBoolean(dr["herramienta_equipo_adecuado"]);
                 }
                 else
                 {
-                    rbtnDanosMateriales.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                    rbtnEquipoAdecuadoSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
                 }
-                if (dr["danosMateriales"] != DBNull.Value)
+                if (dr["ubicacion_conocida"] != DBNull.Value)
                 {
-                    rbtnDanosMateriales.Checked = Convert.ToBoolean(dr["danosMateriales"]);
-                }
-                else
-                {
-                    rbtnDanosMateriales.Checked = false; // Opcional, en caso de que el valor sea nulo.
-                }
-                if (dr["danosMateriales"] != DBNull.Value)
-                {
-                    rbtnDanosMateriales.Checked = Convert.ToBoolean(dr["danosMateriales"]);
+                    rbtnConociaTrabajoSi.Checked = Convert.ToBoolean(dr["ubicacion_conocida"]);
                 }
                 else
                 {
-                    rbtnDanosMateriales.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                    rbtnConociaTrabajoSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                if (dr["supervision"] != DBNull.Value)
+                {
+                    rbtnExistiaSupervicionSi.Checked = Convert.ToBoolean(dr["supervision"]);
+                }
+                else
+                {
+                    rbtnExistiaSupervicionSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                //-------------------------------------------------------------------------------------------------
+                if (dr["continua_trabajando"] != DBNull.Value)
+                {
+                    rbtnContinuaTrabajando.Checked = Convert.ToBoolean(dr["continua_trabajando"]);
+                }
+                else
+                {
+                    rbtnContinuaTrabajando.Checked = false; // Opcional, en caso de que el valor sea nulo.
                 }
 
+                if (dr["enviado_Domicilio"] != DBNull.Value)
+                {
+                    rbtnEnviadoDomicilio.Checked = Convert.ToBoolean(dr["enviado_Domicilio"]);
+                }
+                else
+                {
+                    rbtnEnviadoDomicilio.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+
+                if (dr["atencion_Medica"] != DBNull.Value)
+                {
+                    rbtnAtencionMedica.Checked = Convert.ToBoolean(dr["atencion_Medica"]);
+                }
+                else
+                {
+                    rbtnAtencionMedica.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+
+                if (dr["otro_diagnostico"] != DBNull.Value)
+                {
+                    txtOtro.Text = dr["otro_diagnostico"].ToString();
+                    txtOtro.Enabled = true;
+                    rbtnExistiaSupervicionSi.Checked = true;
+                }
+                else
+                {
+                    rbtnExistiaSupervicionSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                }
+                txtDiagnosticoFinal.Text = dr["diagnostico_final"].ToString();
+                txtTratamiento.Text = dr["tratamiento"].ToString();
+                txtincapacidad.Text = dr["incapacidad"].ToString();
 
 
 
