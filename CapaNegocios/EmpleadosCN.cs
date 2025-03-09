@@ -84,6 +84,32 @@ namespace CapaNegocios
             }
         }
 
+        public DataTable consultaGeneralInactivos()
+        {
+            try
+            {
+                // Llama al método de la capa de datos para ejecutar el procedimiento almacenado
+                return empleadosDAO.consultaGeneralInactivos();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error en la capa de negocios: " + ex.Message);
+            }
+        }
+        public DataTable consultaGeneralActivo()
+        {
+            try
+            {
+                // Llama al método de la capa de datos para ejecutar el procedimiento almacenado
+                return empleadosDAO.consultaGeneralActivos();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error en la capa de negocios: " + ex.Message);
+            }
+        }
+
+
         public (string nombreCompleto, DateTime fecha_nac, char sexo, string nss, string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa) consultaIndividual(string numero_nomina)
         {
             if (string.IsNullOrWhiteSpace(numero_nomina))
@@ -137,6 +163,7 @@ namespace CapaNegocios
         {
             try
             {
+                Console.WriteLine("Hola");
                 empleadosDAO.actualizarEmpleado(numero_nomina, fecha_nueva, estado_civil, domicilio_CP, domicilio_estado, domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero, telefono ,turno, puesto);
             }
             catch (Exception ex)

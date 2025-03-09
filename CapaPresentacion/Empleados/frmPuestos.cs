@@ -115,5 +115,13 @@ namespace CapaPresentacion.Empleados
         {
 
         }
+
+        private void txtPuesto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Bloquear la entrada del número
+            }
+        }
     }
 }

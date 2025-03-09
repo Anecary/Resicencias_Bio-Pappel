@@ -142,5 +142,21 @@ namespace CapaPresentacion.Empleados
             txtEstado.Clear();
             txtTelefono.Clear();
         }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Bloquear la entrada del número
+            }
+        }
+
+        private void txtCp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Bloquear la entrada del número
+            }
+        }
     }
 }

@@ -34,6 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pDatosPersonales = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtRFC = new MaterialSkin.Controls.MaterialTextBox();
             this.txtNombre = new MaterialSkin.Controls.MaterialTextBox();
             this.txtApellidoM = new MaterialSkin.Controls.MaterialTextBox();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
@@ -55,7 +56,6 @@
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtRFC = new MaterialSkin.Controls.MaterialTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.pDatosPersonales.SuspendLayout();
@@ -133,6 +133,24 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(847, 410);
             this.panel3.TabIndex = 77;
+            // 
+            // txtRFC
+            // 
+            this.txtRFC.AnimateReadOnly = false;
+            this.txtRFC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRFC.Depth = 0;
+            this.txtRFC.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRFC.Hint = "RFC: ";
+            this.txtRFC.LeadingIcon = null;
+            this.txtRFC.Location = new System.Drawing.Point(433, 150);
+            this.txtRFC.MaxLength = 18;
+            this.txtRFC.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRFC.Multiline = false;
+            this.txtRFC.Name = "txtRFC";
+            this.txtRFC.Size = new System.Drawing.Size(380, 50);
+            this.txtRFC.TabIndex = 75;
+            this.txtRFC.Text = "";
+            this.txtRFC.TrailingIcon = null;
             // 
             // txtNombre
             // 
@@ -236,6 +254,7 @@
             this.txtTelefono.TabIndex = 59;
             this.txtTelefono.Text = "";
             this.txtTelefono.TrailingIcon = null;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // materialCheckbox2
             // 
@@ -269,7 +288,7 @@
             this.txtNumero.Hint = "Número: ";
             this.txtNumero.LeadingIcon = null;
             this.txtNumero.Location = new System.Drawing.Point(14, 349);
-            this.txtNumero.MaxLength = 18;
+            this.txtNumero.MaxLength = 8;
             this.txtNumero.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNumero.Multiline = false;
             this.txtNumero.Name = "txtNumero";
@@ -377,7 +396,7 @@
             this.txtCp.Hint = "Código Postal:";
             this.txtCp.LeadingIcon = null;
             this.txtCp.Location = new System.Drawing.Point(14, 215);
-            this.txtCp.MaxLength = 18;
+            this.txtCp.MaxLength = 5;
             this.txtCp.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCp.Multiline = false;
             this.txtCp.Name = "txtCp";
@@ -385,6 +404,7 @@
             this.txtCp.TabIndex = 66;
             this.txtCp.Text = "";
             this.txtCp.TrailingIcon = null;
+            this.txtCp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCp_KeyPress);
             // 
             // txtMunicipio
             // 
@@ -493,24 +513,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(934, 100);
             this.panel2.TabIndex = 4;
-            // 
-            // txtRFC
-            // 
-            this.txtRFC.AnimateReadOnly = false;
-            this.txtRFC.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRFC.Depth = 0;
-            this.txtRFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtRFC.Hint = "RFC: ";
-            this.txtRFC.LeadingIcon = null;
-            this.txtRFC.Location = new System.Drawing.Point(433, 150);
-            this.txtRFC.MaxLength = 18;
-            this.txtRFC.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtRFC.Multiline = false;
-            this.txtRFC.Name = "txtRFC";
-            this.txtRFC.Size = new System.Drawing.Size(380, 50);
-            this.txtRFC.TabIndex = 75;
-            this.txtRFC.Text = "";
-            this.txtRFC.TrailingIcon = null;
             // 
             // frmNewEmpleados2
             // 

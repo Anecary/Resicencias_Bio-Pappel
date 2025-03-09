@@ -146,5 +146,52 @@ namespace CapaPresentacion.Empleados
 
             }
         }
+        private void rbtTodos_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // Llama al método de la capa de negocios para obtener los puestos
+                DataTable empleados = negocios.ObtenerPuestos();
+
+                // Asigna el DataTable al DataGridView
+                dataGridView1.DataSource = empleados;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void rbtInactivos_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // Llama al método de la capa de negocios para obtener los puestos
+                DataTable empleados = negocios.consultaGeneralInactivos();
+
+                // Asigna el DataTable al DataGridView
+                dataGridView1.DataSource = empleados;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void rbtActivos_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // Llama al método de la capa de negocios para obtener los puestos
+                DataTable empleados = negocios.consultaGeneralActivo();
+
+                // Asigna el DataTable al DataGridView
+                dataGridView1.DataSource = empleados;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

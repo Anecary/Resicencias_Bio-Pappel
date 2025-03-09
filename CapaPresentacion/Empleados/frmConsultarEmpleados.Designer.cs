@@ -62,6 +62,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.rbtTodos = new System.Windows.Forms.RadioButton();
+            this.rbtInactivos = new System.Windows.Forms.RadioButton();
+            this.rbtActivos = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.paContenedor.SuspendLayout();
             this.pConsultaIndividual.SuspendLayout();
@@ -456,6 +459,9 @@
             // 
             // pConsultaGeneral
             // 
+            this.pConsultaGeneral.Controls.Add(this.rbtActivos);
+            this.pConsultaGeneral.Controls.Add(this.rbtInactivos);
+            this.pConsultaGeneral.Controls.Add(this.rbtTodos);
             this.pConsultaGeneral.Controls.Add(this.label2);
             this.pConsultaGeneral.Controls.Add(this.dataGridView1);
             this.pConsultaGeneral.Location = new System.Drawing.Point(0, 0);
@@ -478,7 +484,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Enabled = false;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 110);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(855, 353);
             this.dataGridView1.TabIndex = 0;
@@ -563,6 +569,41 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // rbtTodos
+            // 
+            this.rbtTodos.AutoSize = true;
+            this.rbtTodos.Checked = true;
+            this.rbtTodos.Location = new System.Drawing.Point(26, 70);
+            this.rbtTodos.Name = "rbtTodos";
+            this.rbtTodos.Size = new System.Drawing.Size(55, 17);
+            this.rbtTodos.TabIndex = 2;
+            this.rbtTodos.TabStop = true;
+            this.rbtTodos.Text = "Todos";
+            this.rbtTodos.UseVisualStyleBackColor = true;
+            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
+            // 
+            // rbtInactivos
+            // 
+            this.rbtInactivos.AutoSize = true;
+            this.rbtInactivos.Location = new System.Drawing.Point(149, 70);
+            this.rbtInactivos.Name = "rbtInactivos";
+            this.rbtInactivos.Size = new System.Drawing.Size(68, 17);
+            this.rbtInactivos.TabIndex = 3;
+            this.rbtInactivos.Text = "Inactivos";
+            this.rbtInactivos.UseVisualStyleBackColor = true;
+            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
+            // 
+            // rbtActivos
+            // 
+            this.rbtActivos.AutoSize = true;
+            this.rbtActivos.Location = new System.Drawing.Point(283, 70);
+            this.rbtActivos.Name = "rbtActivos";
+            this.rbtActivos.Size = new System.Drawing.Size(60, 17);
+            this.rbtActivos.TabIndex = 4;
+            this.rbtActivos.Text = "Activos";
+            this.rbtActivos.UseVisualStyleBackColor = true;
+            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
+            // 
             // frmConsultarEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -628,5 +669,8 @@
         private MaterialSkin.Controls.MaterialTextBox txtDomicilio;
         private MaterialSkin.Controls.MaterialTextBox txtNss;
         private MaterialSkin.Controls.MaterialTextBox txtFechaIngreso;
+        private System.Windows.Forms.RadioButton rbtActivos;
+        private System.Windows.Forms.RadioButton rbtInactivos;
+        private System.Windows.Forms.RadioButton rbtTodos;
     }
 }
