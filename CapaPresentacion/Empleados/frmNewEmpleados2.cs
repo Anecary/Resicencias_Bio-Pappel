@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using CapaNegocios;
 using MaterialSkin;
@@ -36,20 +37,21 @@ namespace CapaPresentacion.Empleados
                 // Definir el radio de los bordes redondeados
                 int radius = 20;
 
-                // Crear un pincel para el borde
-                Pen pen = new Pen(Color.Blue, 3); // Color y grosor del borde
+                // Crear un `GraphicsPath` para el área recortada del panel
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius * 2, radius * 2, 180, 90);
+                path.AddArc(panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
+                path.AddArc(panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+                path.AddArc(0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
+                path.CloseFigure();
 
-                // Dibujar los bordes redondeados
-                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                e.Graphics.DrawArc(pen, 0, 0, radius * 2, radius * 2, 180, 90);
-                e.Graphics.DrawArc(pen, panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
-                e.Graphics.DrawArc(pen, 0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
-                e.Graphics.DrawArc(pen, panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+                // Aplicar el área recortada al panel
+                panel.Region = new Region(path);
 
-                e.Graphics.DrawLine(pen, radius, 0, panel.Width - radius, 0);
-                e.Graphics.DrawLine(pen, radius, panel.Height, panel.Width - radius, panel.Height);
-                e.Graphics.DrawLine(pen, 0, radius, 0, panel.Height - radius);
-                e.Graphics.DrawLine(pen, panel.Width, radius, panel.Width, panel.Height - radius);
+                // Dibujar el borde con el color deseado
+                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                e.Graphics.DrawPath(pen, path);
             }
         }
         private void frmNewEmpleados2_Load(object sender, EventArgs e)

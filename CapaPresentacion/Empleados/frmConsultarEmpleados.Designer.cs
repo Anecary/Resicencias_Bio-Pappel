@@ -28,16 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpleados));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.paContenedor = new System.Windows.Forms.Panel();
-            this.pConsultaGeneral = new System.Windows.Forms.Panel();
-            this.rbtActivos = new System.Windows.Forms.RadioButton();
-            this.rbtInactivos = new System.Windows.Forms.RadioButton();
-            this.rbtTodos = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pContenedor = new System.Windows.Forms.Panel();
             this.pConsultaIndividual = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -60,6 +56,13 @@
             this.txtSexo = new MaterialSkin.Controls.MaterialTextBox();
             this.txtFechaNac = new MaterialSkin.Controls.MaterialTextBox();
             this.txtNombre = new MaterialSkin.Controls.MaterialTextBox();
+            this.pConsultaGeneral = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.rbtActivos = new System.Windows.Forms.RadioButton();
+            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
+            this.rbtInactivos = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rbtTodos = new System.Windows.Forms.RadioButton();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.btnConsultaIndividual = new System.Windows.Forms.Button();
             this.btnConsultaGral = new System.Windows.Forms.Button();
@@ -67,13 +70,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.paContenedor.SuspendLayout();
-            this.pConsultaGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pContenedor.SuspendLayout();
             this.pConsultaIndividual.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.pConsultaGeneral.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.pSeccionesDatos.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -82,101 +86,24 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.paContenedor);
+            this.panel1.Controls.Add(this.pContenedor);
             this.panel1.Controls.Add(this.pSeccionesDatos);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(929, 715);
+            this.panel1.Size = new System.Drawing.Size(934, 632);
             this.panel1.TabIndex = 0;
             // 
-            // paContenedor
+            // pContenedor
             // 
-            this.paContenedor.Controls.Add(this.pConsultaGeneral);
-            this.paContenedor.Controls.Add(this.pConsultaIndividual);
-            this.paContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paContenedor.Location = new System.Drawing.Point(0, 145);
-            this.paContenedor.Name = "paContenedor";
-            this.paContenedor.Size = new System.Drawing.Size(929, 570);
-            this.paContenedor.TabIndex = 10;
-            // 
-            // pConsultaGeneral
-            // 
-            this.pConsultaGeneral.Controls.Add(this.rbtActivos);
-            this.pConsultaGeneral.Controls.Add(this.rbtInactivos);
-            this.pConsultaGeneral.Controls.Add(this.rbtTodos);
-            this.pConsultaGeneral.Controls.Add(this.label2);
-            this.pConsultaGeneral.Controls.Add(this.dataGridView1);
-            this.pConsultaGeneral.Location = new System.Drawing.Point(0, 0);
-            this.pConsultaGeneral.Name = "pConsultaGeneral";
-            this.pConsultaGeneral.Size = new System.Drawing.Size(929, 570);
-            this.pConsultaGeneral.TabIndex = 1;
-            // 
-            // rbtActivos
-            // 
-            this.rbtActivos.AutoSize = true;
-            this.rbtActivos.Location = new System.Drawing.Point(283, 70);
-            this.rbtActivos.Name = "rbtActivos";
-            this.rbtActivos.Size = new System.Drawing.Size(60, 17);
-            this.rbtActivos.TabIndex = 4;
-            this.rbtActivos.Text = "Activos";
-            this.rbtActivos.UseVisualStyleBackColor = true;
-            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
-            // 
-            // rbtInactivos
-            // 
-            this.rbtInactivos.AutoSize = true;
-            this.rbtInactivos.Location = new System.Drawing.Point(149, 70);
-            this.rbtInactivos.Name = "rbtInactivos";
-            this.rbtInactivos.Size = new System.Drawing.Size(68, 17);
-            this.rbtInactivos.TabIndex = 3;
-            this.rbtInactivos.Text = "Inactivos";
-            this.rbtInactivos.UseVisualStyleBackColor = true;
-            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
-            // 
-            // rbtTodos
-            // 
-            this.rbtTodos.AutoSize = true;
-            this.rbtTodos.Checked = true;
-            this.rbtTodos.Location = new System.Drawing.Point(26, 70);
-            this.rbtTodos.Name = "rbtTodos";
-            this.rbtTodos.Size = new System.Drawing.Size(55, 17);
-            this.rbtTodos.TabIndex = 2;
-            this.rbtTodos.TabStop = true;
-            this.rbtTodos.Text = "Todos";
-            this.rbtTodos.UseVisualStyleBackColor = true;
-            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label2.Location = new System.Drawing.Point(21, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(370, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Todos los Colaboradores Activos";
-            // 
-            // dataGridView1
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Enabled = false;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(855, 353);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.pContenedor.Controls.Add(this.pConsultaGeneral);
+            this.pContenedor.Controls.Add(this.pConsultaIndividual);
+            this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pContenedor.Location = new System.Drawing.Point(0, 145);
+            this.pContenedor.Name = "pContenedor";
+            this.pContenedor.Size = new System.Drawing.Size(934, 487);
+            this.pContenedor.TabIndex = 10;
             // 
             // pConsultaIndividual
             // 
@@ -187,17 +114,17 @@
             this.pConsultaIndividual.Controls.Add(this.panel5);
             this.pConsultaIndividual.Location = new System.Drawing.Point(0, 0);
             this.pConsultaIndividual.Name = "pConsultaIndividual";
-            this.pConsultaIndividual.Size = new System.Drawing.Size(926, 570);
+            this.pConsultaIndividual.Size = new System.Drawing.Size(934, 487);
             this.pConsultaIndividual.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label6.Location = new System.Drawing.Point(-43, 713);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(-43, 700);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(194, 29);
+            this.label6.Size = new System.Drawing.Size(130, 20);
             this.label6.TabIndex = 101;
             this.label6.Text = "Datos Laborales:";
             // 
@@ -535,6 +462,117 @@
             this.txtNombre.Text = "";
             this.txtNombre.TrailingIcon = null;
             // 
+            // pConsultaGeneral
+            // 
+            this.pConsultaGeneral.Controls.Add(this.panel6);
+            this.pConsultaGeneral.Location = new System.Drawing.Point(0, 0);
+            this.pConsultaGeneral.Name = "pConsultaGeneral";
+            this.pConsultaGeneral.Size = new System.Drawing.Size(934, 487);
+            this.pConsultaGeneral.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel6.Controls.Add(this.rbtActivos);
+            this.panel6.Controls.Add(this.dgvEmpleados);
+            this.panel6.Controls.Add(this.rbtInactivos);
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Controls.Add(this.rbtTodos);
+            this.panel6.Location = new System.Drawing.Point(18, 18);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(894, 477);
+            this.panel6.TabIndex = 5;
+            // 
+            // rbtActivos
+            // 
+            this.rbtActivos.AutoSize = true;
+            this.rbtActivos.Location = new System.Drawing.Point(274, 64);
+            this.rbtActivos.Name = "rbtActivos";
+            this.rbtActivos.Size = new System.Drawing.Size(60, 17);
+            this.rbtActivos.TabIndex = 4;
+            this.rbtActivos.Text = "Activos";
+            this.rbtActivos.UseVisualStyleBackColor = true;
+            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
+            // 
+            // dgvEmpleados
+            // 
+            this.dgvEmpleados.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dgvEmpleados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.dgvEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEmpleados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvEmpleados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvEmpleados.ColumnHeadersHeight = 45;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleados.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvEmpleados.EnableHeadersVisualStyles = false;
+            this.dgvEmpleados.Location = new System.Drawing.Point(17, 104);
+            this.dgvEmpleados.Name = "dgvEmpleados";
+            this.dgvEmpleados.ReadOnly = true;
+            this.dgvEmpleados.RowHeadersVisible = false;
+            this.dgvEmpleados.RowTemplate.Height = 35;
+            this.dgvEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmpleados.Size = new System.Drawing.Size(855, 353);
+            this.dgvEmpleados.TabIndex = 0;
+            this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // rbtInactivos
+            // 
+            this.rbtInactivos.AutoSize = true;
+            this.rbtInactivos.Location = new System.Drawing.Point(140, 64);
+            this.rbtInactivos.Name = "rbtInactivos";
+            this.rbtInactivos.Size = new System.Drawing.Size(68, 17);
+            this.rbtInactivos.TabIndex = 3;
+            this.rbtInactivos.Text = "Inactivos";
+            this.rbtInactivos.UseVisualStyleBackColor = true;
+            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label2.Location = new System.Drawing.Point(12, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(370, 29);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Todos los Colaboradores Activos";
+            // 
+            // rbtTodos
+            // 
+            this.rbtTodos.AutoSize = true;
+            this.rbtTodos.Checked = true;
+            this.rbtTodos.Location = new System.Drawing.Point(17, 64);
+            this.rbtTodos.Name = "rbtTodos";
+            this.rbtTodos.Size = new System.Drawing.Size(55, 17);
+            this.rbtTodos.TabIndex = 2;
+            this.rbtTodos.TabStop = true;
+            this.rbtTodos.Text = "Todos";
+            this.rbtTodos.UseVisualStyleBackColor = true;
+            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
+            // 
             // pSeccionesDatos
             // 
             this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
@@ -543,7 +581,7 @@
             this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSeccionesDatos.Location = new System.Drawing.Point(0, 100);
             this.pSeccionesDatos.Name = "pSeccionesDatos";
-            this.pSeccionesDatos.Size = new System.Drawing.Size(929, 45);
+            this.pSeccionesDatos.Size = new System.Drawing.Size(934, 45);
             this.pSeccionesDatos.TabIndex = 9;
             // 
             // btnConsultaIndividual
@@ -556,7 +594,7 @@
             this.btnConsultaIndividual.ForeColor = System.Drawing.Color.White;
             this.btnConsultaIndividual.Location = new System.Drawing.Point(461, 0);
             this.btnConsultaIndividual.Name = "btnConsultaIndividual";
-            this.btnConsultaIndividual.Size = new System.Drawing.Size(180, 40);
+            this.btnConsultaIndividual.Size = new System.Drawing.Size(185, 40);
             this.btnConsultaIndividual.TabIndex = 4;
             this.btnConsultaIndividual.Text = "Consulta Individual";
             this.btnConsultaIndividual.UseVisualStyleBackColor = true;
@@ -574,7 +612,7 @@
             this.btnConsultaGral.ForeColor = System.Drawing.Color.White;
             this.btnConsultaGral.Location = new System.Drawing.Point(279, 0);
             this.btnConsultaGral.Name = "btnConsultaGral";
-            this.btnConsultaGral.Size = new System.Drawing.Size(180, 40);
+            this.btnConsultaGral.Size = new System.Drawing.Size(185, 40);
             this.btnConsultaGral.TabIndex = 3;
             this.btnConsultaGral.Text = "Consulta General";
             this.btnConsultaGral.UseVisualStyleBackColor = true;
@@ -589,7 +627,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(929, 100);
+            this.panel2.Size = new System.Drawing.Size(934, 100);
             this.panel2.TabIndex = 8;
             // 
             // label1
@@ -618,16 +656,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 715);
+            this.ClientSize = new System.Drawing.Size(934, 632);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConsultarEmpleados";
             this.Text = "frmConsultarEmpleados";
             this.panel1.ResumeLayout(false);
-            this.paContenedor.ResumeLayout(false);
-            this.pConsultaGeneral.ResumeLayout(false);
-            this.pConsultaGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pContenedor.ResumeLayout(false);
             this.pConsultaIndividual.ResumeLayout(false);
             this.pConsultaIndividual.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -636,6 +671,10 @@
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.pConsultaGeneral.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.pSeccionesDatos.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -652,12 +691,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel paContenedor;
+        private System.Windows.Forms.Panel pContenedor;
         private System.Windows.Forms.Button btnConsultaIndividual;
         private System.Windows.Forms.Panel pConsultaGeneral;
         private System.Windows.Forms.Panel pConsultaIndividual;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvEmpleados;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
         private MaterialSkin.Controls.MaterialTextBox txtFechaNac;
@@ -682,5 +721,6 @@
         private System.Windows.Forms.RadioButton rbtActivos;
         private System.Windows.Forms.RadioButton rbtInactivos;
         private System.Windows.Forms.RadioButton rbtTodos;
+        private System.Windows.Forms.Panel panel6;
     }
 }

@@ -37,6 +37,9 @@ namespace CapaPresentacion.Empleados
             panel3.Paint += new PaintEventHandler(Panel1_Paint);
             panel4.Paint += new PaintEventHandler(Panel1_Paint);
             panel5.Paint += new PaintEventHandler(Panel1_Paint);
+            panel6.Paint += new PaintEventHandler(Panel1_Paint);
+
+
         }
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -99,7 +102,8 @@ namespace CapaPresentacion.Empleados
                 DataTable empleados = negocios.ObtenerPuestos();
 
                 // Asigna el DataTable al DataGridView
-                dataGridView1.DataSource = empleados;
+                dgvEmpleados.DataSource = empleados;
+                dgvEmpleados.ClearSelection();
             }
             catch (Exception ex)
             {
@@ -154,7 +158,7 @@ namespace CapaPresentacion.Empleados
                 DataTable empleados = negocios.ObtenerPuestos();
 
                 // Asigna el DataTable al DataGridView
-                dataGridView1.DataSource = empleados;
+                dgvEmpleados.DataSource = empleados;
             }
             catch (Exception ex)
             {
@@ -170,7 +174,8 @@ namespace CapaPresentacion.Empleados
                 DataTable empleados = negocios.consultaGeneralInactivos();
 
                 // Asigna el DataTable al DataGridView
-                dataGridView1.DataSource = empleados;
+                dgvEmpleados.DataSource = empleados;
+                
             }
             catch (Exception ex)
             {
@@ -186,7 +191,7 @@ namespace CapaPresentacion.Empleados
                 DataTable empleados = negocios.consultaGeneralActivo();
 
                 // Asigna el DataTable al DataGridView
-                dataGridView1.DataSource = empleados;
+                dgvEmpleados.DataSource = empleados;
             }
             catch (Exception ex)
             {
