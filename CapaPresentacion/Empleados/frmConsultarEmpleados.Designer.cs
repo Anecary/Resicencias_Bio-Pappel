@@ -28,9 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpleados));
             this.panel1 = new System.Windows.Forms.Panel();
             this.paContenedor = new System.Windows.Forms.Panel();
+            this.pConsultaGeneral = new System.Windows.Forms.Panel();
+            this.rbtActivos = new System.Windows.Forms.RadioButton();
+            this.rbtInactivos = new System.Windows.Forms.RadioButton();
+            this.rbtTodos = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pConsultaIndividual = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -53,26 +60,20 @@
             this.txtSexo = new MaterialSkin.Controls.MaterialTextBox();
             this.txtFechaNac = new MaterialSkin.Controls.MaterialTextBox();
             this.txtNombre = new MaterialSkin.Controls.MaterialTextBox();
-            this.pConsultaGeneral = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.btnConsultaIndividual = new System.Windows.Forms.Button();
             this.btnConsultaGral = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.rbtTodos = new System.Windows.Forms.RadioButton();
-            this.rbtInactivos = new System.Windows.Forms.RadioButton();
-            this.rbtActivos = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.paContenedor.SuspendLayout();
+            this.pConsultaGeneral.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pConsultaIndividual.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.pConsultaGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pSeccionesDatos.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -99,6 +100,83 @@
             this.paContenedor.Name = "paContenedor";
             this.paContenedor.Size = new System.Drawing.Size(929, 570);
             this.paContenedor.TabIndex = 10;
+            // 
+            // pConsultaGeneral
+            // 
+            this.pConsultaGeneral.Controls.Add(this.rbtActivos);
+            this.pConsultaGeneral.Controls.Add(this.rbtInactivos);
+            this.pConsultaGeneral.Controls.Add(this.rbtTodos);
+            this.pConsultaGeneral.Controls.Add(this.label2);
+            this.pConsultaGeneral.Controls.Add(this.dataGridView1);
+            this.pConsultaGeneral.Location = new System.Drawing.Point(0, 0);
+            this.pConsultaGeneral.Name = "pConsultaGeneral";
+            this.pConsultaGeneral.Size = new System.Drawing.Size(929, 570);
+            this.pConsultaGeneral.TabIndex = 1;
+            // 
+            // rbtActivos
+            // 
+            this.rbtActivos.AutoSize = true;
+            this.rbtActivos.Location = new System.Drawing.Point(283, 70);
+            this.rbtActivos.Name = "rbtActivos";
+            this.rbtActivos.Size = new System.Drawing.Size(60, 17);
+            this.rbtActivos.TabIndex = 4;
+            this.rbtActivos.Text = "Activos";
+            this.rbtActivos.UseVisualStyleBackColor = true;
+            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
+            // 
+            // rbtInactivos
+            // 
+            this.rbtInactivos.AutoSize = true;
+            this.rbtInactivos.Location = new System.Drawing.Point(149, 70);
+            this.rbtInactivos.Name = "rbtInactivos";
+            this.rbtInactivos.Size = new System.Drawing.Size(68, 17);
+            this.rbtInactivos.TabIndex = 3;
+            this.rbtInactivos.Text = "Inactivos";
+            this.rbtInactivos.UseVisualStyleBackColor = true;
+            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
+            // 
+            // rbtTodos
+            // 
+            this.rbtTodos.AutoSize = true;
+            this.rbtTodos.Checked = true;
+            this.rbtTodos.Location = new System.Drawing.Point(26, 70);
+            this.rbtTodos.Name = "rbtTodos";
+            this.rbtTodos.Size = new System.Drawing.Size(55, 17);
+            this.rbtTodos.TabIndex = 2;
+            this.rbtTodos.TabStop = true;
+            this.rbtTodos.Text = "Todos";
+            this.rbtTodos.UseVisualStyleBackColor = true;
+            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label2.Location = new System.Drawing.Point(21, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(370, 29);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Todos los Colaboradores Activos";
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Enabled = false;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(26, 110);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(855, 353);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pConsultaIndividual
             // 
@@ -457,39 +535,6 @@
             this.txtNombre.Text = "";
             this.txtNombre.TrailingIcon = null;
             // 
-            // pConsultaGeneral
-            // 
-            this.pConsultaGeneral.Controls.Add(this.rbtActivos);
-            this.pConsultaGeneral.Controls.Add(this.rbtInactivos);
-            this.pConsultaGeneral.Controls.Add(this.rbtTodos);
-            this.pConsultaGeneral.Controls.Add(this.label2);
-            this.pConsultaGeneral.Controls.Add(this.dataGridView1);
-            this.pConsultaGeneral.Location = new System.Drawing.Point(0, 0);
-            this.pConsultaGeneral.Name = "pConsultaGeneral";
-            this.pConsultaGeneral.Size = new System.Drawing.Size(929, 570);
-            this.pConsultaGeneral.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label2.Location = new System.Drawing.Point(21, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(370, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Todos los Colaboradores Activos";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Enabled = false;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(855, 353);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // pSeccionesDatos
             // 
             this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
@@ -569,41 +614,6 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // rbtTodos
-            // 
-            this.rbtTodos.AutoSize = true;
-            this.rbtTodos.Checked = true;
-            this.rbtTodos.Location = new System.Drawing.Point(26, 70);
-            this.rbtTodos.Name = "rbtTodos";
-            this.rbtTodos.Size = new System.Drawing.Size(55, 17);
-            this.rbtTodos.TabIndex = 2;
-            this.rbtTodos.TabStop = true;
-            this.rbtTodos.Text = "Todos";
-            this.rbtTodos.UseVisualStyleBackColor = true;
-            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
-            // 
-            // rbtInactivos
-            // 
-            this.rbtInactivos.AutoSize = true;
-            this.rbtInactivos.Location = new System.Drawing.Point(149, 70);
-            this.rbtInactivos.Name = "rbtInactivos";
-            this.rbtInactivos.Size = new System.Drawing.Size(68, 17);
-            this.rbtInactivos.TabIndex = 3;
-            this.rbtInactivos.Text = "Inactivos";
-            this.rbtInactivos.UseVisualStyleBackColor = true;
-            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
-            // 
-            // rbtActivos
-            // 
-            this.rbtActivos.AutoSize = true;
-            this.rbtActivos.Location = new System.Drawing.Point(283, 70);
-            this.rbtActivos.Name = "rbtActivos";
-            this.rbtActivos.Size = new System.Drawing.Size(60, 17);
-            this.rbtActivos.TabIndex = 4;
-            this.rbtActivos.Text = "Activos";
-            this.rbtActivos.UseVisualStyleBackColor = true;
-            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
-            // 
             // frmConsultarEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -615,6 +625,9 @@
             this.Text = "frmConsultarEmpleados";
             this.panel1.ResumeLayout(false);
             this.paContenedor.ResumeLayout(false);
+            this.pConsultaGeneral.ResumeLayout(false);
+            this.pConsultaGeneral.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pConsultaIndividual.ResumeLayout(false);
             this.pConsultaIndividual.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -623,9 +636,6 @@
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.pConsultaGeneral.ResumeLayout(false);
-            this.pConsultaGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pSeccionesDatos.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

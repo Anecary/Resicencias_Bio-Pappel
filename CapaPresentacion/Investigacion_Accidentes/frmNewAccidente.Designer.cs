@@ -29,50 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNewAccidente));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedorAcc = new System.Windows.Forms.Panel();
-            this.pFactoresSeguridad = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.rbtnEquipoAdecuadoSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnConociaTrabajoSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnExistiaSupervicionSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnExistenItrsSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.btnGrabarCondicionInsegura = new MaterialSkin.Controls.MaterialButton();
-            this.btnAgregarCondicion = new MaterialSkin.Controls.MaterialButton();
-            this.txtOtraCondicion = new MaterialSkin.Controls.MaterialTextBox();
-            this.dgvCondicionInsegura = new System.Windows.Forms.DataGridView();
-            this.idCondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesCondiciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cboxCondicionesInseguras = new MaterialSkin.Controls.MaterialComboBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.btnAgregarActoInseguro = new MaterialSkin.Controls.MaterialButton();
-            this.btnGrabarActoInseguro = new MaterialSkin.Controls.MaterialButton();
-            this.txtOtroActoInseguro = new MaterialSkin.Controls.MaterialTextBox();
-            this.dgvActoInseguro = new System.Windows.Forms.DataGridView();
-            this.idActoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.actoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesActosInseguros = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cboxActoInseguro = new MaterialSkin.Controls.MaterialComboBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btnAgregarRiesgo = new MaterialSkin.Controls.MaterialButton();
-            this.btnGrabarRiesgo = new MaterialSkin.Controls.MaterialButton();
-            this.txtOtroRiesgo = new MaterialSkin.Controls.MaterialTextBox();
-            this.dgvRiesgos = new System.Windows.Forms.DataGridView();
-            this.idRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.riesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesriesgos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cboxRiesgos = new MaterialSkin.Controls.MaterialComboBox();
-            this.label33 = new System.Windows.Forms.Label();
             this.pDatosGenerales = new System.Windows.Forms.Panel();
             this.topePagina = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -83,13 +60,8 @@
             this.btnBuscarTestigo = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.txtNumNominaTestigo = new MaterialSkin.Controls.MaterialTextBox();
             this.dgvTestigos = new System.Windows.Forms.DataGridView();
-            this.numNomina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdEmpleadoTestigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.acciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.rbtnHrsExtrasSi = new CapaPresentacion.radioButtonPersonalizado();
             this.dtpHoraAccidente = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaAccidente = new System.Windows.Forms.DateTimePicker();
             this.dtpDiaDescanso = new System.Windows.Forms.DateTimePicker();
@@ -155,10 +127,6 @@
             this.panel26 = new System.Windows.Forms.Panel();
             this.txtIdEmpleadoInvolucrado = new MaterialSkin.Controls.MaterialTextBox();
             this.dgvEmpleadosInvolucrados = new System.Windows.Forms.DataGridView();
-            this.numNominaEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAgregarEmpleadoInvolucrado = new MaterialSkin.Controls.MaterialButton();
             this.label44 = new System.Windows.Forms.Label();
             this.txtNombreEmpleadoInvolucrado = new MaterialSkin.Controls.MaterialTextBox();
@@ -178,6 +146,7 @@
             this.rbtnEnviadoDomicilio = new MaterialSkin.Controls.MaterialRadioButton();
             this.rbtnEnviadoAtencionMedica = new MaterialSkin.Controls.MaterialRadioButton();
             this.rbtnContinuaTrabajando = new MaterialSkin.Controls.MaterialRadioButton();
+            this.label42 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
             this.btnAgregarEmpleadoConocimiento = new MaterialSkin.Controls.MaterialButton();
             this.txtIdEmpleadoConocimiento = new MaterialSkin.Controls.MaterialTextBox();
@@ -185,17 +154,11 @@
             this.txtNumNominaEmpleadoConocimiento = new MaterialSkin.Controls.MaterialTextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.dgvEmpleadosConocimiento = new System.Windows.Forms.DataGridView();
-            this.numNominaEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtNombreEmpleadoConocimiento = new MaterialSkin.Controls.MaterialTextBox();
-            this.label42 = new System.Windows.Forms.Label();
             this.pDetallesAccidente = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.rbtnDanosMaterialesSi = new CapaPresentacion.radioButtonPersonalizado();
             this.cboxSeccionesB = new MaterialSkin.Controls.MaterialComboBox();
             this.txtSustituiblePor = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.label31 = new System.Windows.Forms.Label();
@@ -204,19 +167,12 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.rbtnTrabajoUrgenteSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnTrabajoNeccesarioSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnTrabajoProgramadoSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnTrabajoHabitualSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnRealizoTrabajoAntesSi = new CapaPresentacion.radioButtonPersonalizado();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.rbtnlesion12MesesSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnlesion30DiasSi = new CapaPresentacion.radioButtonPersonalizado();
             this.txtDescripcionAccidente = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.label62 = new System.Windows.Forms.Label();
             this.cboxCausasAccidente = new MaterialSkin.Controls.MaterialComboBox();
@@ -232,6 +188,35 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pFactoresSeguridad = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.btnGrabarCondicionInsegura = new MaterialSkin.Controls.MaterialButton();
+            this.btnAgregarCondicion = new MaterialSkin.Controls.MaterialButton();
+            this.txtOtraCondicion = new MaterialSkin.Controls.MaterialTextBox();
+            this.dgvCondicionInsegura = new System.Windows.Forms.DataGridView();
+            this.cboxCondicionesInseguras = new MaterialSkin.Controls.MaterialComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.btnGrabarActoInseguro = new MaterialSkin.Controls.MaterialButton();
+            this.btnAgregarActoInseguro = new MaterialSkin.Controls.MaterialButton();
+            this.txtOtroActoInseguro = new MaterialSkin.Controls.MaterialTextBox();
+            this.dgvActoInseguro = new System.Windows.Forms.DataGridView();
+            this.cboxActoInseguro = new MaterialSkin.Controls.MaterialComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.btnGrabarRiesgo = new MaterialSkin.Controls.MaterialButton();
+            this.btnAgregarRiesgo = new MaterialSkin.Controls.MaterialButton();
+            this.txtOtroRiesgo = new MaterialSkin.Controls.MaterialTextBox();
+            this.dgvRiesgos = new System.Windows.Forms.DataGridView();
+            this.cboxRiesgos = new MaterialSkin.Controls.MaterialComboBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.btnControlAcciones = new System.Windows.Forms.Button();
             this.btnSeguimientoCaso = new System.Windows.Forms.Button();
@@ -250,16 +235,43 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.numNominaEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesConocimiento = new System.Windows.Forms.DataGridViewImageColumn();
+            this.numNominaEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewImageColumn();
+            this.idActoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.actoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesActosInseguros = new System.Windows.Forms.DataGridViewImageColumn();
+            this.idRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.riesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesriesgos = new System.Windows.Forms.DataGridViewImageColumn();
+            this.idCondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesCondiciones = new System.Windows.Forms.DataGridViewImageColumn();
+            this.numNomina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdEmpleadoTestigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.acciones = new System.Windows.Forms.DataGridViewImageColumn();
+            this.rbtnHrsExtrasSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnDanosMaterialesSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoUrgenteSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoNeccesarioSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoProgramadoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoHabitualSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnRealizoTrabajoAntesSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnlesion12MesesSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnlesion30DiasSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnEquipoAdecuadoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnConociaTrabajoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnExistiaSupervicionSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnExistenItrsSi = new CapaPresentacion.radioButtonPersonalizado();
             this.panel1.SuspendLayout();
             this.pContenedorAcc.SuspendLayout();
-            this.pFactoresSeguridad.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCondicionInsegura)).BeginInit();
-            this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvActoInseguro)).BeginInit();
-            this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRiesgos)).BeginInit();
             this.pDatosGenerales.SuspendLayout();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTestigos)).BeginInit();
@@ -280,6 +292,14 @@
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.pFactoresSeguridad.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCondicionInsegura)).BeginInit();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActoInseguro)).BeginInit();
+            this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiesgos)).BeginInit();
             this.pSeccionesDatos.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -300,578 +320,16 @@
             // 
             // pContenedorAcc
             // 
-            this.pContenedorAcc.Controls.Add(this.pDetallesAccidente);
-            this.pContenedorAcc.Controls.Add(this.pFactoresSeguridad);
             this.pContenedorAcc.Controls.Add(this.pDatosGenerales);
             this.pContenedorAcc.Controls.Add(this.pControlAcciones);
             this.pContenedorAcc.Controls.Add(this.pSeguimientoCaso);
+            this.pContenedorAcc.Controls.Add(this.pDetallesAccidente);
+            this.pContenedorAcc.Controls.Add(this.pFactoresSeguridad);
             this.pContenedorAcc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedorAcc.Location = new System.Drawing.Point(0, 145);
             this.pContenedorAcc.Name = "pContenedorAcc";
             this.pContenedorAcc.Size = new System.Drawing.Size(945, 521);
             this.pContenedorAcc.TabIndex = 13;
-            // 
-            // pFactoresSeguridad
-            // 
-            this.pFactoresSeguridad.AutoScroll = true;
-            this.pFactoresSeguridad.Controls.Add(this.label39);
-            this.pFactoresSeguridad.Controls.Add(this.panel20);
-            this.pFactoresSeguridad.Controls.Add(this.panel19);
-            this.pFactoresSeguridad.Controls.Add(this.panel18);
-            this.pFactoresSeguridad.Controls.Add(this.label35);
-            this.pFactoresSeguridad.Controls.Add(this.panel17);
-            this.pFactoresSeguridad.Location = new System.Drawing.Point(0, 0);
-            this.pFactoresSeguridad.Name = "pFactoresSeguridad";
-            this.pFactoresSeguridad.Size = new System.Drawing.Size(945, 526);
-            this.pFactoresSeguridad.TabIndex = 15;
-            // 
-            // label39
-            // 
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Transparent;
-            this.label39.Location = new System.Drawing.Point(3, 728);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(144, 18);
-            this.label39.TabIndex = 111;
-            this.label39.Text = "Trabajo necesario";
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel20.Controls.Add(this.rbtnEquipoAdecuadoSi);
-            this.panel20.Controls.Add(this.rbtnConociaTrabajoSi);
-            this.panel20.Controls.Add(this.rbtnExistiaSupervicionSi);
-            this.panel20.Controls.Add(this.rbtnExistenItrsSi);
-            this.panel20.Controls.Add(this.label37);
-            this.panel20.Controls.Add(this.label38);
-            this.panel20.Controls.Add(this.label40);
-            this.panel20.Controls.Add(this.label41);
-            this.panel20.Location = new System.Drawing.Point(16, 608);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(906, 111);
-            this.panel20.TabIndex = 100;
-            // 
-            // rbtnEquipoAdecuadoSi
-            // 
-            this.rbtnEquipoAdecuadoSi.Location = new System.Drawing.Point(282, 63);
-            this.rbtnEquipoAdecuadoSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnEquipoAdecuadoSi.Name = "rbtnEquipoAdecuadoSi";
-            this.rbtnEquipoAdecuadoSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnEquipoAdecuadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnEquipoAdecuadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnEquipoAdecuadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnEquipoAdecuadoSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnEquipoAdecuadoSi.TabIndex = 126;
-            this.rbtnEquipoAdecuadoSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnConociaTrabajoSi
-            // 
-            this.rbtnConociaTrabajoSi.Location = new System.Drawing.Point(751, 12);
-            this.rbtnConociaTrabajoSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnConociaTrabajoSi.Name = "rbtnConociaTrabajoSi";
-            this.rbtnConociaTrabajoSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnConociaTrabajoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnConociaTrabajoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnConociaTrabajoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnConociaTrabajoSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnConociaTrabajoSi.TabIndex = 125;
-            this.rbtnConociaTrabajoSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnExistiaSupervicionSi
-            // 
-            this.rbtnExistiaSupervicionSi.Location = new System.Drawing.Point(751, 63);
-            this.rbtnExistiaSupervicionSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnExistiaSupervicionSi.Name = "rbtnExistiaSupervicionSi";
-            this.rbtnExistiaSupervicionSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnExistiaSupervicionSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnExistiaSupervicionSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnExistiaSupervicionSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnExistiaSupervicionSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnExistiaSupervicionSi.TabIndex = 124;
-            this.rbtnExistiaSupervicionSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnExistenItrsSi
-            // 
-            this.rbtnExistenItrsSi.Location = new System.Drawing.Point(282, 12);
-            this.rbtnExistenItrsSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnExistenItrsSi.Name = "rbtnExistenItrsSi";
-            this.rbtnExistenItrsSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnExistenItrsSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnExistenItrsSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnExistenItrsSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnExistenItrsSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnExistenItrsSi.TabIndex = 123;
-            this.rbtnExistenItrsSi.UseVisualStyleBackColor = true;
-            // 
-            // label37
-            // 
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label37.Location = new System.Drawing.Point(487, 71);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(144, 18);
-            this.label37.TabIndex = 107;
-            this.label37.Text = "Existía supervisión";
-            // 
-            // label38
-            // 
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label38.Location = new System.Drawing.Point(487, 20);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(221, 18);
-            this.label38.TabIndex = 106;
-            this.label38.Text = "Conocía el trabajador el lugar";
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label40.Location = new System.Drawing.Point(9, 71);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(254, 18);
-            this.label40.TabIndex = 103;
-            this.label40.Text = "Herramientas y equipo adecuado";
-            // 
-            // label41
-            // 
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label41.Location = new System.Drawing.Point(9, 20);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(280, 18);
-            this.label41.TabIndex = 103;
-            this.label41.Text = "Existen ITR\'s de Trabajo";
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel19.Controls.Add(this.btnGrabarCondicionInsegura);
-            this.panel19.Controls.Add(this.btnAgregarCondicion);
-            this.panel19.Controls.Add(this.txtOtraCondicion);
-            this.panel19.Controls.Add(this.dgvCondicionInsegura);
-            this.panel19.Controls.Add(this.cboxCondicionesInseguras);
-            this.panel19.Controls.Add(this.label36);
-            this.panel19.Location = new System.Drawing.Point(16, 413);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(906, 169);
-            this.panel19.TabIndex = 78;
-            // 
-            // btnGrabarCondicionInsegura
-            // 
-            this.btnGrabarCondicionInsegura.AutoSize = false;
-            this.btnGrabarCondicionInsegura.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGrabarCondicionInsegura.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGrabarCondicionInsegura.Depth = 0;
-            this.btnGrabarCondicionInsegura.HighEmphasis = true;
-            this.btnGrabarCondicionInsegura.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabarCondicionInsegura.Icon")));
-            this.btnGrabarCondicionInsegura.Location = new System.Drawing.Point(400, 97);
-            this.btnGrabarCondicionInsegura.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGrabarCondicionInsegura.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGrabarCondicionInsegura.Name = "btnGrabarCondicionInsegura";
-            this.btnGrabarCondicionInsegura.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGrabarCondicionInsegura.Size = new System.Drawing.Size(124, 50);
-            this.btnGrabarCondicionInsegura.TabIndex = 81;
-            this.btnGrabarCondicionInsegura.Text = "Grabar";
-            this.btnGrabarCondicionInsegura.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGrabarCondicionInsegura.UseAccentColor = true;
-            this.btnGrabarCondicionInsegura.UseVisualStyleBackColor = true;
-            this.btnGrabarCondicionInsegura.Visible = false;
-            this.btnGrabarCondicionInsegura.Click += new System.EventHandler(this.btnGrabarCondicionInsegura_Click);
-            // 
-            // btnAgregarCondicion
-            // 
-            this.btnAgregarCondicion.AutoSize = false;
-            this.btnAgregarCondicion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAgregarCondicion.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnAgregarCondicion.Depth = 0;
-            this.btnAgregarCondicion.HighEmphasis = true;
-            this.btnAgregarCondicion.Icon = ((System.Drawing.Image)(resources.GetObject("btnAgregarCondicion.Icon")));
-            this.btnAgregarCondicion.Location = new System.Drawing.Point(400, 32);
-            this.btnAgregarCondicion.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAgregarCondicion.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAgregarCondicion.Name = "btnAgregarCondicion";
-            this.btnAgregarCondicion.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAgregarCondicion.Size = new System.Drawing.Size(124, 50);
-            this.btnAgregarCondicion.TabIndex = 80;
-            this.btnAgregarCondicion.Text = "Agregar";
-            this.btnAgregarCondicion.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnAgregarCondicion.UseAccentColor = true;
-            this.btnAgregarCondicion.UseVisualStyleBackColor = true;
-            this.btnAgregarCondicion.Click += new System.EventHandler(this.btnAgregarCondicion_Click);
-            // 
-            // txtOtraCondicion
-            // 
-            this.txtOtraCondicion.AnimateReadOnly = false;
-            this.txtOtraCondicion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOtraCondicion.Depth = 0;
-            this.txtOtraCondicion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtOtraCondicion.Hint = "Otra Condicion Inseguras";
-            this.txtOtraCondicion.LeadingIcon = null;
-            this.txtOtraCondicion.Location = new System.Drawing.Point(9, 97);
-            this.txtOtraCondicion.MaxLength = 50;
-            this.txtOtraCondicion.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtOtraCondicion.Multiline = false;
-            this.txtOtraCondicion.Name = "txtOtraCondicion";
-            this.txtOtraCondicion.Size = new System.Drawing.Size(375, 50);
-            this.txtOtraCondicion.TabIndex = 19;
-            this.txtOtraCondicion.Text = "";
-            this.txtOtraCondicion.TrailingIcon = null;
-            this.txtOtraCondicion.Visible = false;
-            // 
-            // dgvCondicionInsegura
-            // 
-            this.dgvCondicionInsegura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCondicionInsegura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCondicionInsegura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idCondicionInsegura,
-            this.CondicionInsegura,
-            this.accionesCondiciones});
-            this.dgvCondicionInsegura.Location = new System.Drawing.Point(536, 33);
-            this.dgvCondicionInsegura.Name = "dgvCondicionInsegura";
-            this.dgvCondicionInsegura.Size = new System.Drawing.Size(360, 127);
-            this.dgvCondicionInsegura.TabIndex = 18;
-            // 
-            // idCondicionInsegura
-            // 
-            this.idCondicionInsegura.HeaderText = "Id Consición Insegura";
-            this.idCondicionInsegura.Name = "idCondicionInsegura";
-            // 
-            // CondicionInsegura
-            // 
-            this.CondicionInsegura.HeaderText = "Condición Insegura";
-            this.CondicionInsegura.Name = "CondicionInsegura";
-            // 
-            // accionesCondiciones
-            // 
-            this.accionesCondiciones.HeaderText = "";
-            this.accionesCondiciones.Name = "accionesCondiciones";
-            // 
-            // cboxCondicionesInseguras
-            // 
-            this.cboxCondicionesInseguras.AutoResize = false;
-            this.cboxCondicionesInseguras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxCondicionesInseguras.Depth = 0;
-            this.cboxCondicionesInseguras.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxCondicionesInseguras.DropDownHeight = 174;
-            this.cboxCondicionesInseguras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxCondicionesInseguras.DropDownWidth = 121;
-            this.cboxCondicionesInseguras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxCondicionesInseguras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxCondicionesInseguras.FormattingEnabled = true;
-            this.cboxCondicionesInseguras.Hint = "Condiciones Inseguras";
-            this.cboxCondicionesInseguras.IntegralHeight = false;
-            this.cboxCondicionesInseguras.ItemHeight = 43;
-            this.cboxCondicionesInseguras.Location = new System.Drawing.Point(9, 33);
-            this.cboxCondicionesInseguras.MaxDropDownItems = 4;
-            this.cboxCondicionesInseguras.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxCondicionesInseguras.Name = "cboxCondicionesInseguras";
-            this.cboxCondicionesInseguras.Size = new System.Drawing.Size(375, 49);
-            this.cboxCondicionesInseguras.StartIndex = 0;
-            this.cboxCondicionesInseguras.TabIndex = 0;
-            this.cboxCondicionesInseguras.SelectedIndexChanged += new System.EventHandler(this.cboxCondicionesInseguras_SelectedIndexChanged);
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label36.Location = new System.Drawing.Point(5, 10);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(456, 20);
-            this.label36.TabIndex = 17;
-            this.label36.Text = "Condiciones Inseguras en la Realización de la Actividad";
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel18.Controls.Add(this.btnAgregarActoInseguro);
-            this.panel18.Controls.Add(this.btnGrabarActoInseguro);
-            this.panel18.Controls.Add(this.txtOtroActoInseguro);
-            this.panel18.Controls.Add(this.dgvActoInseguro);
-            this.panel18.Controls.Add(this.cboxActoInseguro);
-            this.panel18.Controls.Add(this.label34);
-            this.panel18.Location = new System.Drawing.Point(16, 226);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(906, 169);
-            this.panel18.TabIndex = 77;
-            // 
-            // btnAgregarActoInseguro
-            // 
-            this.btnAgregarActoInseguro.AutoSize = false;
-            this.btnAgregarActoInseguro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAgregarActoInseguro.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnAgregarActoInseguro.Depth = 0;
-            this.btnAgregarActoInseguro.HighEmphasis = true;
-            this.btnAgregarActoInseguro.Icon = ((System.Drawing.Image)(resources.GetObject("btnAgregarActoInseguro.Icon")));
-            this.btnAgregarActoInseguro.Location = new System.Drawing.Point(400, 32);
-            this.btnAgregarActoInseguro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAgregarActoInseguro.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAgregarActoInseguro.Name = "btnAgregarActoInseguro";
-            this.btnAgregarActoInseguro.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAgregarActoInseguro.Size = new System.Drawing.Size(124, 50);
-            this.btnAgregarActoInseguro.TabIndex = 80;
-            this.btnAgregarActoInseguro.Text = "Agregar";
-            this.btnAgregarActoInseguro.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnAgregarActoInseguro.UseAccentColor = true;
-            this.btnAgregarActoInseguro.UseVisualStyleBackColor = true;
-            this.btnAgregarActoInseguro.Click += new System.EventHandler(this.btnAgregarActoInseguro_Click);
-            // 
-            // btnGrabarActoInseguro
-            // 
-            this.btnGrabarActoInseguro.AutoSize = false;
-            this.btnGrabarActoInseguro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGrabarActoInseguro.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGrabarActoInseguro.Depth = 0;
-            this.btnGrabarActoInseguro.HighEmphasis = true;
-            this.btnGrabarActoInseguro.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabarActoInseguro.Icon")));
-            this.btnGrabarActoInseguro.Location = new System.Drawing.Point(400, 95);
-            this.btnGrabarActoInseguro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGrabarActoInseguro.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGrabarActoInseguro.Name = "btnGrabarActoInseguro";
-            this.btnGrabarActoInseguro.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGrabarActoInseguro.Size = new System.Drawing.Size(124, 50);
-            this.btnGrabarActoInseguro.TabIndex = 79;
-            this.btnGrabarActoInseguro.Text = "Grabar";
-            this.btnGrabarActoInseguro.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGrabarActoInseguro.UseAccentColor = true;
-            this.btnGrabarActoInseguro.UseVisualStyleBackColor = true;
-            this.btnGrabarActoInseguro.Visible = false;
-            this.btnGrabarActoInseguro.Click += new System.EventHandler(this.btnGrabarActoInseguro_Click);
-            // 
-            // txtOtroActoInseguro
-            // 
-            this.txtOtroActoInseguro.AnimateReadOnly = false;
-            this.txtOtroActoInseguro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOtroActoInseguro.Depth = 0;
-            this.txtOtroActoInseguro.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtOtroActoInseguro.Hint = "Otro Actos Inseguros";
-            this.txtOtroActoInseguro.LeadingIcon = null;
-            this.txtOtroActoInseguro.Location = new System.Drawing.Point(9, 97);
-            this.txtOtroActoInseguro.MaxLength = 50;
-            this.txtOtroActoInseguro.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtOtroActoInseguro.Multiline = false;
-            this.txtOtroActoInseguro.Name = "txtOtroActoInseguro";
-            this.txtOtroActoInseguro.Size = new System.Drawing.Size(375, 50);
-            this.txtOtroActoInseguro.TabIndex = 19;
-            this.txtOtroActoInseguro.Text = "";
-            this.txtOtroActoInseguro.TrailingIcon = null;
-            this.txtOtroActoInseguro.Visible = false;
-            // 
-            // dgvActoInseguro
-            // 
-            this.dgvActoInseguro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvActoInseguro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvActoInseguro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idActoInseguro,
-            this.actoInseguro,
-            this.accionesActosInseguros});
-            this.dgvActoInseguro.Location = new System.Drawing.Point(536, 33);
-            this.dgvActoInseguro.Name = "dgvActoInseguro";
-            this.dgvActoInseguro.Size = new System.Drawing.Size(360, 127);
-            this.dgvActoInseguro.TabIndex = 18;
-            // 
-            // idActoInseguro
-            // 
-            this.idActoInseguro.HeaderText = "Id Acto Inseguro";
-            this.idActoInseguro.Name = "idActoInseguro";
-            // 
-            // actoInseguro
-            // 
-            this.actoInseguro.HeaderText = "Acto Inseguro";
-            this.actoInseguro.Name = "actoInseguro";
-            // 
-            // accionesActosInseguros
-            // 
-            this.accionesActosInseguros.HeaderText = "";
-            this.accionesActosInseguros.Name = "accionesActosInseguros";
-            // 
-            // cboxActoInseguro
-            // 
-            this.cboxActoInseguro.AutoResize = false;
-            this.cboxActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxActoInseguro.Depth = 0;
-            this.cboxActoInseguro.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxActoInseguro.DropDownHeight = 174;
-            this.cboxActoInseguro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxActoInseguro.DropDownWidth = 121;
-            this.cboxActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxActoInseguro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxActoInseguro.FormattingEnabled = true;
-            this.cboxActoInseguro.Hint = "Actos Inseguros";
-            this.cboxActoInseguro.IntegralHeight = false;
-            this.cboxActoInseguro.ItemHeight = 43;
-            this.cboxActoInseguro.Location = new System.Drawing.Point(9, 33);
-            this.cboxActoInseguro.MaxDropDownItems = 4;
-            this.cboxActoInseguro.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxActoInseguro.Name = "cboxActoInseguro";
-            this.cboxActoInseguro.Size = new System.Drawing.Size(375, 49);
-            this.cboxActoInseguro.StartIndex = 0;
-            this.cboxActoInseguro.TabIndex = 0;
-            this.cboxActoInseguro.SelectedIndexChanged += new System.EventHandler(this.cboxActoInseguro_SelectedIndexChanged);
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label34.Location = new System.Drawing.Point(5, 10);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(404, 20);
-            this.label34.TabIndex = 17;
-            this.label34.Text = "Actos Inseguros en la Realización de la Actividad";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label35.Location = new System.Drawing.Point(15, 8);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(251, 25);
-            this.label35.TabIndex = 21;
-            this.label35.Text = "Factores de Seguridad";
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel17.Controls.Add(this.btnAgregarRiesgo);
-            this.panel17.Controls.Add(this.btnGrabarRiesgo);
-            this.panel17.Controls.Add(this.txtOtroRiesgo);
-            this.panel17.Controls.Add(this.dgvRiesgos);
-            this.panel17.Controls.Add(this.cboxRiesgos);
-            this.panel17.Controls.Add(this.label33);
-            this.panel17.Location = new System.Drawing.Point(16, 39);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(906, 169);
-            this.panel17.TabIndex = 18;
-            // 
-            // btnAgregarRiesgo
-            // 
-            this.btnAgregarRiesgo.AutoSize = false;
-            this.btnAgregarRiesgo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnAgregarRiesgo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnAgregarRiesgo.Depth = 0;
-            this.btnAgregarRiesgo.HighEmphasis = true;
-            this.btnAgregarRiesgo.Icon = ((System.Drawing.Image)(resources.GetObject("btnAgregarRiesgo.Icon")));
-            this.btnAgregarRiesgo.Location = new System.Drawing.Point(400, 34);
-            this.btnAgregarRiesgo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnAgregarRiesgo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnAgregarRiesgo.Name = "btnAgregarRiesgo";
-            this.btnAgregarRiesgo.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnAgregarRiesgo.Size = new System.Drawing.Size(124, 50);
-            this.btnAgregarRiesgo.TabIndex = 79;
-            this.btnAgregarRiesgo.Text = "Agregar";
-            this.btnAgregarRiesgo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnAgregarRiesgo.UseAccentColor = true;
-            this.btnAgregarRiesgo.UseVisualStyleBackColor = true;
-            this.btnAgregarRiesgo.Click += new System.EventHandler(this.btnAgregarRiesgo_Click);
-            // 
-            // btnGrabarRiesgo
-            // 
-            this.btnGrabarRiesgo.AutoSize = false;
-            this.btnGrabarRiesgo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGrabarRiesgo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGrabarRiesgo.Depth = 0;
-            this.btnGrabarRiesgo.HighEmphasis = true;
-            this.btnGrabarRiesgo.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabarRiesgo.Icon")));
-            this.btnGrabarRiesgo.Location = new System.Drawing.Point(400, 95);
-            this.btnGrabarRiesgo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGrabarRiesgo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGrabarRiesgo.Name = "btnGrabarRiesgo";
-            this.btnGrabarRiesgo.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGrabarRiesgo.Size = new System.Drawing.Size(124, 50);
-            this.btnGrabarRiesgo.TabIndex = 78;
-            this.btnGrabarRiesgo.Text = "Grabar";
-            this.btnGrabarRiesgo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGrabarRiesgo.UseAccentColor = true;
-            this.btnGrabarRiesgo.UseVisualStyleBackColor = true;
-            this.btnGrabarRiesgo.Visible = false;
-            this.btnGrabarRiesgo.Click += new System.EventHandler(this.btnGrabarRiesgo_Click);
-            // 
-            // txtOtroRiesgo
-            // 
-            this.txtOtroRiesgo.AnimateReadOnly = false;
-            this.txtOtroRiesgo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOtroRiesgo.Depth = 0;
-            this.txtOtroRiesgo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtOtroRiesgo.Hint = "Otro Riesgo";
-            this.txtOtroRiesgo.LeadingIcon = null;
-            this.txtOtroRiesgo.Location = new System.Drawing.Point(9, 97);
-            this.txtOtroRiesgo.MaxLength = 50;
-            this.txtOtroRiesgo.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtOtroRiesgo.Multiline = false;
-            this.txtOtroRiesgo.Name = "txtOtroRiesgo";
-            this.txtOtroRiesgo.Size = new System.Drawing.Size(375, 50);
-            this.txtOtroRiesgo.TabIndex = 19;
-            this.txtOtroRiesgo.Text = "";
-            this.txtOtroRiesgo.TrailingIcon = null;
-            this.txtOtroRiesgo.Visible = false;
-            // 
-            // dgvRiesgos
-            // 
-            this.dgvRiesgos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvRiesgos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRiesgos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idRiesgo,
-            this.riesgo,
-            this.accionesriesgos});
-            this.dgvRiesgos.Location = new System.Drawing.Point(536, 33);
-            this.dgvRiesgos.Name = "dgvRiesgos";
-            this.dgvRiesgos.Size = new System.Drawing.Size(360, 127);
-            this.dgvRiesgos.TabIndex = 18;
-            // 
-            // idRiesgo
-            // 
-            this.idRiesgo.HeaderText = "id Riesgo";
-            this.idRiesgo.Name = "idRiesgo";
-            // 
-            // riesgo
-            // 
-            this.riesgo.HeaderText = "Riesgos";
-            this.riesgo.Name = "riesgo";
-            // 
-            // accionesriesgos
-            // 
-            this.accionesriesgos.HeaderText = "";
-            this.accionesriesgos.Name = "accionesriesgos";
-            // 
-            // cboxRiesgos
-            // 
-            this.cboxRiesgos.AutoResize = false;
-            this.cboxRiesgos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxRiesgos.Depth = 0;
-            this.cboxRiesgos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxRiesgos.DropDownHeight = 174;
-            this.cboxRiesgos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxRiesgos.DropDownWidth = 121;
-            this.cboxRiesgos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxRiesgos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxRiesgos.FormattingEnabled = true;
-            this.cboxRiesgos.Hint = "Riesgo";
-            this.cboxRiesgos.IntegralHeight = false;
-            this.cboxRiesgos.ItemHeight = 43;
-            this.cboxRiesgos.Items.AddRange(new object[] {
-            "Otro"});
-            this.cboxRiesgos.Location = new System.Drawing.Point(9, 33);
-            this.cboxRiesgos.MaxDropDownItems = 4;
-            this.cboxRiesgos.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxRiesgos.Name = "cboxRiesgos";
-            this.cboxRiesgos.Size = new System.Drawing.Size(375, 49);
-            this.cboxRiesgos.StartIndex = 0;
-            this.cboxRiesgos.TabIndex = 0;
-            this.cboxRiesgos.SelectedIndexChanged += new System.EventHandler(this.cboxRiesgos_SelectedIndexChanged);
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label33.Location = new System.Drawing.Point(5, 10);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(188, 20);
-            this.label33.TabIndex = 17;
-            this.label33.Text = "Riesgos del Accidente";
             // 
             // pDatosGenerales
             // 
@@ -890,7 +348,7 @@
             this.topePagina.AutoSize = true;
             this.topePagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topePagina.ForeColor = System.Drawing.Color.Transparent;
-            this.topePagina.Location = new System.Drawing.Point(-3, 953);
+            this.topePagina.Location = new System.Drawing.Point(-2, 935);
             this.topePagina.Name = "topePagina";
             this.topePagina.Size = new System.Drawing.Size(111, 16);
             this.topePagina.TabIndex = 105;
@@ -906,9 +364,9 @@
             this.panel15.Controls.Add(this.btnBuscarTestigo);
             this.panel15.Controls.Add(this.txtNumNominaTestigo);
             this.panel15.Controls.Add(this.dgvTestigos);
-            this.panel15.Location = new System.Drawing.Point(6, 657);
+            this.panel15.Location = new System.Drawing.Point(9, 653);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(916, 234);
+            this.panel15.Size = new System.Drawing.Size(916, 275);
             this.panel15.TabIndex = 94;
             // 
             // txtIdEmpleadoTestigo
@@ -917,7 +375,7 @@
             this.txtIdEmpleadoTestigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdEmpleadoTestigo.Depth = 0;
             this.txtIdEmpleadoTestigo.Enabled = false;
-            this.txtIdEmpleadoTestigo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleadoTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleadoTestigo.Hint = "Id Empleado Testigo: ";
             this.txtIdEmpleadoTestigo.LeadingIcon = null;
             this.txtIdEmpleadoTestigo.Location = new System.Drawing.Point(589, 24);
@@ -936,7 +394,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label17.Location = new System.Drawing.Point(7, 5);
+            this.label17.Location = new System.Drawing.Point(13, 5);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(235, 25);
             this.label17.TabIndex = 93;
@@ -951,7 +409,7 @@
             this.btnAgregarTestigo.Enabled = false;
             this.btnAgregarTestigo.HighEmphasis = true;
             this.btnAgregarTestigo.Icon = ((System.Drawing.Image)(resources.GetObject("btnAgregarTestigo.Icon")));
-            this.btnAgregarTestigo.Location = new System.Drawing.Point(770, 37);
+            this.btnAgregarTestigo.Location = new System.Drawing.Point(776, 37);
             this.btnAgregarTestigo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAgregarTestigo.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAgregarTestigo.Name = "btnAgregarTestigo";
@@ -970,10 +428,10 @@
             this.txtNombreTestigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreTestigo.Depth = 0;
             this.txtNombreTestigo.Enabled = false;
-            this.txtNombreTestigo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreTestigo.Hint = "Nombre del Testigo: ";
             this.txtNombreTestigo.LeadingIcon = null;
-            this.txtNombreTestigo.Location = new System.Drawing.Point(246, 36);
+            this.txtNombreTestigo.Location = new System.Drawing.Point(252, 36);
             this.txtNombreTestigo.MaxLength = 18;
             this.txtNombreTestigo.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNombreTestigo.Multiline = false;
@@ -988,7 +446,7 @@
             this.btnBuscarTestigo.Depth = 0;
             this.btnBuscarTestigo.Enabled = false;
             this.btnBuscarTestigo.Icon = ((System.Drawing.Image)(resources.GetObject("btnBuscarTestigo.Icon")));
-            this.btnBuscarTestigo.Location = new System.Drawing.Point(184, 42);
+            this.btnBuscarTestigo.Location = new System.Drawing.Point(190, 42);
             this.btnBuscarTestigo.Mini = true;
             this.btnBuscarTestigo.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnBuscarTestigo.Name = "btnBuscarTestigo";
@@ -1004,10 +462,10 @@
             this.txtNumNominaTestigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumNominaTestigo.Depth = 0;
             this.txtNumNominaTestigo.Enabled = false;
-            this.txtNumNominaTestigo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumNominaTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNumNominaTestigo.Hint = "No. Nomina: ";
             this.txtNumNominaTestigo.LeadingIcon = null;
-            this.txtNumNominaTestigo.Location = new System.Drawing.Point(8, 36);
+            this.txtNumNominaTestigo.Location = new System.Drawing.Point(14, 36);
             this.txtNumNominaTestigo.MaxLength = 18;
             this.txtNumNominaTestigo.MouseState = MaterialSkin.MouseState.OUT;
             this.txtNumNominaTestigo.Multiline = false;
@@ -1019,38 +477,50 @@
             // 
             // dgvTestigos
             // 
+            this.dgvTestigos.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvTestigos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTestigos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvTestigos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTestigos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.dgvTestigos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTestigos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvTestigos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTestigos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvTestigos.ColumnHeadersHeight = 40;
             this.dgvTestigos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numNomina,
             this.Column1,
             this.IdEmpleadoTestigo,
             this.acciones});
-            this.dgvTestigos.Enabled = false;
-            this.dgvTestigos.Location = new System.Drawing.Point(8, 108);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTestigos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvTestigos.EnableHeadersVisualStyles = false;
+            this.dgvTestigos.Location = new System.Drawing.Point(14, 108);
             this.dgvTestigos.Name = "dgvTestigos";
-            this.dgvTestigos.Size = new System.Drawing.Size(889, 117);
+            this.dgvTestigos.ReadOnly = true;
+            this.dgvTestigos.RowHeadersVisible = false;
+            this.dgvTestigos.RowTemplate.Height = 35;
+            this.dgvTestigos.Size = new System.Drawing.Size(889, 155);
             this.dgvTestigos.TabIndex = 91;
-            // 
-            // numNomina
-            // 
-            this.numNomina.HeaderText = "Numero de Nomina";
-            this.numNomina.Name = "numNomina";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nombre Del Testigo";
-            this.Column1.Name = "Column1";
-            // 
-            // IdEmpleadoTestigo
-            // 
-            this.IdEmpleadoTestigo.HeaderText = "IdTestigo";
-            this.IdEmpleadoTestigo.Name = "IdEmpleadoTestigo";
-            // 
-            // acciones
-            // 
-            this.acciones.HeaderText = "";
-            this.acciones.Name = "acciones";
+            this.dgvTestigos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTestigos_CellClick);
             // 
             // button2
             // 
@@ -1061,7 +531,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 6950);
+            this.button2.Location = new System.Drawing.Point(728, 17587);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(180, 50);
             this.button2.TabIndex = 91;
@@ -1100,24 +570,10 @@
             this.panel14.Controls.Add(this.txtNumeroNomina);
             this.panel14.Controls.Add(this.txtNoAccidente);
             this.panel14.Controls.Add(this.txtCondicion);
-            this.panel14.Location = new System.Drawing.Point(5, 15);
+            this.panel14.Location = new System.Drawing.Point(8, 11);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(917, 626);
             this.panel14.TabIndex = 93;
-            // 
-            // rbtnHrsExtrasSi
-            // 
-            this.rbtnHrsExtrasSi.Location = new System.Drawing.Point(132, 177);
-            this.rbtnHrsExtrasSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnHrsExtrasSi.Name = "rbtnHrsExtrasSi";
-            this.rbtnHrsExtrasSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnHrsExtrasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnHrsExtrasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnHrsExtrasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnHrsExtrasSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnHrsExtrasSi.TabIndex = 122;
-            this.rbtnHrsExtrasSi.UseVisualStyleBackColor = true;
-            this.rbtnHrsExtrasSi.CheckedChanged += new System.EventHandler(this.rbtnHrsExtrasSi_CheckedChanged);
             // 
             // dtpHoraAccidente
             // 
@@ -1219,7 +675,7 @@
             this.txtIdEmpleado.AnimateReadOnly = false;
             this.txtIdEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdEmpleado.Depth = 0;
-            this.txtIdEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleado.Hint = "Id Empleado: ";
             this.txtIdEmpleado.LeadingIcon = null;
             this.txtIdEmpleado.Location = new System.Drawing.Point(444, 105);
@@ -1350,7 +806,7 @@
             this.txtTurno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTurno.Depth = 0;
             this.txtTurno.Enabled = false;
-            this.txtTurno.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTurno.Hint = "Turno:";
             this.txtTurno.LeadingIcon = null;
             this.txtTurno.Location = new System.Drawing.Point(764, 106);
@@ -1380,7 +836,7 @@
             this.txtAntiguedad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAntiguedad.Depth = 0;
             this.txtAntiguedad.Enabled = false;
-            this.txtAntiguedad.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAntiguedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtAntiguedad.LeadingIcon = null;
             this.txtAntiguedad.Location = new System.Drawing.Point(735, 165);
             this.txtAntiguedad.MaxLength = 18;
@@ -1398,7 +854,7 @@
             this.txtPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPuesto.Depth = 0;
             this.txtPuesto.Enabled = false;
-            this.txtPuesto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPuesto.Hint = "Puesto: ";
             this.txtPuesto.LeadingIcon = null;
             this.txtPuesto.Location = new System.Drawing.Point(394, 166);
@@ -1437,7 +893,7 @@
             this.txtEdad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEdad.Depth = 0;
             this.txtEdad.Enabled = false;
-            this.txtEdad.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEdad.Hint = "Edad: ";
             this.txtEdad.LeadingIcon = null;
             this.txtEdad.Location = new System.Drawing.Point(617, 106);
@@ -1456,7 +912,7 @@
             this.txtNombreEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreEmpleado.Depth = 0;
             this.txtNombreEmpleado.Enabled = false;
-            this.txtNombreEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpleado.Hint = "Nombre: ";
             this.txtNombreEmpleado.LeadingIcon = null;
             this.txtNombreEmpleado.Location = new System.Drawing.Point(216, 107);
@@ -1474,7 +930,7 @@
             this.txtNumeroNomina.AnimateReadOnly = false;
             this.txtNumeroNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumeroNomina.Depth = 0;
-            this.txtNumeroNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNumeroNomina.Hint = "No. Nomina: ";
             this.txtNumeroNomina.LeadingIcon = null;
             this.txtNumeroNomina.Location = new System.Drawing.Point(11, 107);
@@ -1486,13 +942,14 @@
             this.txtNumeroNomina.TabIndex = 88;
             this.txtNumeroNomina.Text = "";
             this.txtNumeroNomina.TrailingIcon = null;
+            this.txtNumeroNomina.TextChanged += new System.EventHandler(this.txtNumeroNomina_TextChanged);
             // 
             // txtNoAccidente
             // 
             this.txtNoAccidente.AnimateReadOnly = false;
             this.txtNoAccidente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNoAccidente.Depth = 0;
-            this.txtNoAccidente.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNoAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNoAccidente.Hint = "Accidente No: ";
             this.txtNoAccidente.LeadingIcon = null;
             this.txtNoAccidente.Location = new System.Drawing.Point(181, 48);
@@ -1504,6 +961,7 @@
             this.txtNoAccidente.TabIndex = 87;
             this.txtNoAccidente.Text = "";
             this.txtNoAccidente.TrailingIcon = null;
+            this.txtNoAccidente.TextChanged += new System.EventHandler(this.txtNoAccidente_TextChanged);
             this.txtNoAccidente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoAccidente_KeyPress);
             // 
             // txtCondicion
@@ -1511,7 +969,7 @@
             this.txtCondicion.AnimateReadOnly = false;
             this.txtCondicion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCondicion.Depth = 0;
-            this.txtCondicion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtCondicion.Hint = "Condición: ";
             this.txtCondicion.LeadingIcon = null;
             this.txtCondicion.Location = new System.Drawing.Point(11, 48);
@@ -1545,7 +1003,7 @@
             this.panel34.Controls.Add(this.dtpHoraRecepcion);
             this.panel34.Controls.Add(this.dtpFechaRecepcion);
             this.panel34.Controls.Add(this.label58);
-            this.panel34.Location = new System.Drawing.Point(4, 593);
+            this.panel34.Location = new System.Drawing.Point(4, 1203);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(916, 100);
             this.panel34.TabIndex = 118;
@@ -1581,7 +1039,7 @@
             // 
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.ForeColor = System.Drawing.Color.Transparent;
-            this.label61.Location = new System.Drawing.Point(5, 813);
+            this.label61.Location = new System.Drawing.Point(5, 1423);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(156, 18);
             this.label61.TabIndex = 117;
@@ -1596,7 +1054,7 @@
             this.btnGrabar.Depth = 0;
             this.btnGrabar.HighEmphasis = true;
             this.btnGrabar.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Icon")));
-            this.btnGrabar.Location = new System.Drawing.Point(336, 760);
+            this.btnGrabar.Location = new System.Drawing.Point(336, 1370);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnGrabar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGrabar.Name = "btnGrabar";
@@ -1621,7 +1079,7 @@
             this.panel33.Controls.Add(this.label59);
             this.panel33.Controls.Add(this.txtSeguimiento);
             this.panel33.Controls.Add(this.label60);
-            this.panel33.Location = new System.Drawing.Point(4, 369);
+            this.panel33.Location = new System.Drawing.Point(4, 979);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(916, 210);
             this.panel33.TabIndex = 113;
@@ -1632,7 +1090,7 @@
             this.txtidNombreSST.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtidNombreSST.Depth = 0;
             this.txtidNombreSST.Enabled = false;
-            this.txtidNombreSST.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtidNombreSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtidNombreSST.Hint = "No. Nomina: ";
             this.txtidNombreSST.LeadingIcon = null;
             this.txtidNombreSST.Location = new System.Drawing.Point(714, 142);
@@ -1652,7 +1110,7 @@
             this.txtNombreSST.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreSST.Depth = 0;
             this.txtNombreSST.Enabled = false;
-            this.txtNombreSST.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreSST.Hint = "Nombre Proceso SST";
             this.txtNombreSST.LeadingIcon = null;
             this.txtNombreSST.Location = new System.Drawing.Point(264, 142);
@@ -1683,7 +1141,7 @@
             this.txtNumNomminaSST.AnimateReadOnly = false;
             this.txtNumNomminaSST.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumNomminaSST.Depth = 0;
-            this.txtNumNomminaSST.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumNomminaSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNumNomminaSST.Hint = "No. Nomina: ";
             this.txtNumNomminaSST.LeadingIcon = null;
             this.txtNumNomminaSST.Location = new System.Drawing.Point(26, 142);
@@ -1768,7 +1226,7 @@
             this.panel32.Controls.Add(this.txtAccionesPreventivasProp);
             this.panel32.Controls.Add(this.label56);
             this.panel32.Controls.Add(this.label57);
-            this.panel32.Location = new System.Drawing.Point(5, 207);
+            this.panel32.Location = new System.Drawing.Point(5, 817);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(916, 146);
             this.panel32.TabIndex = 112;
@@ -1899,7 +1357,7 @@
             this.panel31.Controls.Add(this.txtAccionesCorrectivasProp);
             this.panel31.Controls.Add(this.label51);
             this.panel31.Controls.Add(this.label50);
-            this.panel31.Location = new System.Drawing.Point(6, 44);
+            this.panel31.Location = new System.Drawing.Point(6, 654);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(916, 146);
             this.panel31.TabIndex = 24;
@@ -2025,7 +1483,7 @@
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label49.Location = new System.Drawing.Point(9, 15);
+            this.label49.Location = new System.Drawing.Point(9, 625);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(224, 25);
             this.label49.TabIndex = 23;
@@ -2038,8 +1496,8 @@
             this.pSeguimientoCaso.Controls.Add(this.label45);
             this.pSeguimientoCaso.Controls.Add(this.panel29);
             this.pSeguimientoCaso.Controls.Add(this.panel28);
-            this.pSeguimientoCaso.Controls.Add(this.panel27);
             this.pSeguimientoCaso.Controls.Add(this.label42);
+            this.pSeguimientoCaso.Controls.Add(this.panel27);
             this.pSeguimientoCaso.Location = new System.Drawing.Point(0, 0);
             this.pSeguimientoCaso.Name = "pSeguimientoCaso";
             this.pSeguimientoCaso.Size = new System.Drawing.Size(945, 526);
@@ -2055,7 +1513,7 @@
             this.panel26.Controls.Add(this.txtNombreEmpleadoInvolucrado);
             this.panel26.Controls.Add(this.btnBuscarEmpleadoInvolucrado);
             this.panel26.Controls.Add(this.txtNumNominaEmpleadoInvolucrado);
-            this.panel26.Location = new System.Drawing.Point(10, 297);
+            this.panel26.Location = new System.Drawing.Point(11, 298);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(916, 237);
             this.panel26.TabIndex = 101;
@@ -2065,7 +1523,7 @@
             this.txtIdEmpleadoInvolucrado.AnimateReadOnly = false;
             this.txtIdEmpleadoInvolucrado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdEmpleadoInvolucrado.Depth = 0;
-            this.txtIdEmpleadoInvolucrado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleadoInvolucrado.LeadingIcon = null;
             this.txtIdEmpleadoInvolucrado.Location = new System.Drawing.Point(656, 33);
             this.txtIdEmpleadoInvolucrado.MaxLength = 50;
@@ -2080,37 +1538,49 @@
             // 
             // dgvEmpleadosInvolucrados
             // 
+            this.dgvEmpleadosInvolucrados.AllowUserToAddRows = false;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEmpleadosInvolucrados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvEmpleadosInvolucrados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvEmpleadosInvolucrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmpleadosInvolucrados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.dgvEmpleadosInvolucrados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEmpleadosInvolucrados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvEmpleadosInvolucrados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleadosInvolucrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvEmpleadosInvolucrados.ColumnHeadersHeight = 45;
             this.dgvEmpleadosInvolucrados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numNominaEmpleadoInvolucrado,
             this.nombreEmpleadoInvolucrado,
             this.IdEmpleadoInvolucrado,
             this.accionesEmpleadoInvolucrado});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmpleadosInvolucrados.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvEmpleadosInvolucrados.EnableHeadersVisualStyles = false;
             this.dgvEmpleadosInvolucrados.Location = new System.Drawing.Point(13, 106);
             this.dgvEmpleadosInvolucrados.Name = "dgvEmpleadosInvolucrados";
+            this.dgvEmpleadosInvolucrados.RowHeadersVisible = false;
+            this.dgvEmpleadosInvolucrados.RowTemplate.Height = 35;
             this.dgvEmpleadosInvolucrados.Size = new System.Drawing.Size(889, 118);
             this.dgvEmpleadosInvolucrados.TabIndex = 101;
-            // 
-            // numNominaEmpleadoInvolucrado
-            // 
-            this.numNominaEmpleadoInvolucrado.HeaderText = "Numero Nomina";
-            this.numNominaEmpleadoInvolucrado.Name = "numNominaEmpleadoInvolucrado";
-            // 
-            // nombreEmpleadoInvolucrado
-            // 
-            this.nombreEmpleadoInvolucrado.HeaderText = "Nombre";
-            this.nombreEmpleadoInvolucrado.Name = "nombreEmpleadoInvolucrado";
-            // 
-            // IdEmpleadoInvolucrado
-            // 
-            this.IdEmpleadoInvolucrado.HeaderText = "Id Empleado Involucrado";
-            this.IdEmpleadoInvolucrado.Name = "IdEmpleadoInvolucrado";
-            // 
-            // accionesEmpleadoInvolucrado
-            // 
-            this.accionesEmpleadoInvolucrado.HeaderText = "";
-            this.accionesEmpleadoInvolucrado.Name = "accionesEmpleadoInvolucrado";
+            this.dgvEmpleadosInvolucrados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleadosInvolucrados_CellClick);
             // 
             // btnAgregarEmpleadoInvolucrado
             // 
@@ -2149,7 +1619,7 @@
             this.txtNombreEmpleadoInvolucrado.AnimateReadOnly = false;
             this.txtNombreEmpleadoInvolucrado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreEmpleadoInvolucrado.Depth = 0;
-            this.txtNombreEmpleadoInvolucrado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpleadoInvolucrado.Hint = "Nombre de colaborador Involucrado";
             this.txtNombreEmpleadoInvolucrado.LeadingIcon = null;
             this.txtNombreEmpleadoInvolucrado.Location = new System.Drawing.Point(254, 33);
@@ -2180,7 +1650,7 @@
             this.txtNumNominaEmpleadoInvolucrado.AnimateReadOnly = false;
             this.txtNumNominaEmpleadoInvolucrado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumNominaEmpleadoInvolucrado.Depth = 0;
-            this.txtNumNominaEmpleadoInvolucrado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumNominaEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNumNominaEmpleadoInvolucrado.Hint = "No. Nomina: ";
             this.txtNumNominaEmpleadoInvolucrado.LeadingIcon = null;
             this.txtNumNominaEmpleadoInvolucrado.Location = new System.Drawing.Point(16, 33);
@@ -2198,7 +1668,7 @@
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(4, 923);
+            this.label45.Location = new System.Drawing.Point(8, 924);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(65, 20);
             this.label45.TabIndex = 103;
@@ -2213,7 +1683,7 @@
             this.panel29.Controls.Add(this.label47);
             this.panel29.Controls.Add(this.txtDiagnosticoFinal);
             this.panel29.Controls.Add(this.label46);
-            this.panel29.Location = new System.Drawing.Point(9, 630);
+            this.panel29.Location = new System.Drawing.Point(10, 631);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(914, 290);
             this.panel29.TabIndex = 102;
@@ -2331,7 +1801,7 @@
             this.panel28.Controls.Add(this.rbtnEnviadoDomicilio);
             this.panel28.Controls.Add(this.rbtnEnviadoAtencionMedica);
             this.panel28.Controls.Add(this.rbtnContinuaTrabajando);
-            this.panel28.Location = new System.Drawing.Point(9, 549);
+            this.panel28.Location = new System.Drawing.Point(10, 550);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(916, 67);
             this.panel28.TabIndex = 101;
@@ -2341,7 +1811,7 @@
             this.txtOtro.AnimateReadOnly = false;
             this.txtOtro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOtro.Depth = 0;
-            this.txtOtro.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtOtro.Hint = "Otro";
             this.txtOtro.LeadingIcon = null;
             this.txtOtro.Location = new System.Drawing.Point(714, 8);
@@ -2420,6 +1890,17 @@
             this.rbtnContinuaTrabajando.Text = "Continua trabajando";
             this.rbtnContinuaTrabajando.UseVisualStyleBackColor = true;
             // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label42.Location = new System.Drawing.Point(6, 7);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(242, 25);
+            this.label42.TabIndex = 22;
+            this.label42.Text = "Seguimiento del Caso";
+            // 
             // panel27
             // 
             this.panel27.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -2430,7 +1911,7 @@
             this.panel27.Controls.Add(this.label43);
             this.panel27.Controls.Add(this.dgvEmpleadosConocimiento);
             this.panel27.Controls.Add(this.txtNombreEmpleadoConocimiento);
-            this.panel27.Location = new System.Drawing.Point(10, 34);
+            this.panel27.Location = new System.Drawing.Point(11, 35);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(916, 237);
             this.panel27.TabIndex = 95;
@@ -2461,7 +1942,7 @@
             this.txtIdEmpleadoConocimiento.AnimateReadOnly = false;
             this.txtIdEmpleadoConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdEmpleadoConocimiento.Depth = 0;
-            this.txtIdEmpleadoConocimiento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleadoConocimiento.LeadingIcon = null;
             this.txtIdEmpleadoConocimiento.Location = new System.Drawing.Point(660, 33);
             this.txtIdEmpleadoConocimiento.MaxLength = 50;
@@ -2493,7 +1974,7 @@
             this.txtNumNominaEmpleadoConocimiento.AnimateReadOnly = false;
             this.txtNumNominaEmpleadoConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumNominaEmpleadoConocimiento.Depth = 0;
-            this.txtNumNominaEmpleadoConocimiento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumNominaEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNumNominaEmpleadoConocimiento.Hint = "No. Nomina: ";
             this.txtNumNominaEmpleadoConocimiento.LeadingIcon = null;
             this.txtNumNominaEmpleadoConocimiento.Location = new System.Drawing.Point(16, 33);
@@ -2519,44 +2000,57 @@
             // 
             // dgvEmpleadosConocimiento
             // 
+            this.dgvEmpleadosConocimiento.AllowUserToAddRows = false;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleadosConocimiento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvEmpleadosConocimiento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvEmpleadosConocimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmpleadosConocimiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.dgvEmpleadosConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEmpleadosConocimiento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvEmpleadosConocimiento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleadosConocimiento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvEmpleadosConocimiento.ColumnHeadersHeight = 40;
             this.dgvEmpleadosConocimiento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numNominaEmpleadoConocimiento,
             this.nombreEmpleadoConocimiento,
             this.idEmpleadoConocimiento,
             this.accionesConocimiento});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleadosConocimiento.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvEmpleadosConocimiento.EnableHeadersVisualStyles = false;
             this.dgvEmpleadosConocimiento.Location = new System.Drawing.Point(13, 106);
             this.dgvEmpleadosConocimiento.Name = "dgvEmpleadosConocimiento";
+            this.dgvEmpleadosConocimiento.RowHeadersVisible = false;
+            this.dgvEmpleadosConocimiento.RowTemplate.Height = 35;
             this.dgvEmpleadosConocimiento.Size = new System.Drawing.Size(889, 118);
             this.dgvEmpleadosConocimiento.TabIndex = 91;
-            // 
-            // numNominaEmpleadoConocimiento
-            // 
-            this.numNominaEmpleadoConocimiento.HeaderText = "Numero Nomina";
-            this.numNominaEmpleadoConocimiento.Name = "numNominaEmpleadoConocimiento";
-            // 
-            // nombreEmpleadoConocimiento
-            // 
-            this.nombreEmpleadoConocimiento.HeaderText = "Nombre";
-            this.nombreEmpleadoConocimiento.Name = "nombreEmpleadoConocimiento";
-            // 
-            // idEmpleadoConocimiento
-            // 
-            this.idEmpleadoConocimiento.HeaderText = "Id Empleado Conocimiento";
-            this.idEmpleadoConocimiento.Name = "idEmpleadoConocimiento";
-            // 
-            // accionesConocimiento
-            // 
-            this.accionesConocimiento.HeaderText = "";
-            this.accionesConocimiento.Name = "accionesConocimiento";
+            this.dgvEmpleadosConocimiento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleadosConocimiento_CellClick);
             // 
             // txtNombreEmpleadoConocimiento
             // 
             this.txtNombreEmpleadoConocimiento.AnimateReadOnly = false;
             this.txtNombreEmpleadoConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreEmpleadoConocimiento.Depth = 0;
-            this.txtNombreEmpleadoConocimiento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpleadoConocimiento.Hint = "Nombre de colaborador con conocimiento de los hechos: ";
             this.txtNombreEmpleadoConocimiento.LeadingIcon = null;
             this.txtNombreEmpleadoConocimiento.Location = new System.Drawing.Point(254, 33);
@@ -2568,17 +2062,6 @@
             this.txtNombreEmpleadoConocimiento.TabIndex = 99;
             this.txtNombreEmpleadoConocimiento.Text = "";
             this.txtNombreEmpleadoConocimiento.TrailingIcon = null;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label42.Location = new System.Drawing.Point(5, 6);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(242, 25);
-            this.label42.TabIndex = 22;
-            this.label42.Text = "Seguimiento del Caso";
             // 
             // pDetallesAccidente
             // 
@@ -2629,19 +2112,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(445, 266);
             this.panel7.TabIndex = 104;
-            // 
-            // rbtnDanosMaterialesSi
-            // 
-            this.rbtnDanosMaterialesSi.Location = new System.Drawing.Point(248, 14);
-            this.rbtnDanosMaterialesSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnDanosMaterialesSi.Name = "rbtnDanosMaterialesSi";
-            this.rbtnDanosMaterialesSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnDanosMaterialesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnDanosMaterialesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnDanosMaterialesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnDanosMaterialesSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnDanosMaterialesSi.TabIndex = 125;
-            this.rbtnDanosMaterialesSi.UseVisualStyleBackColor = true;
             // 
             // cboxSeccionesB
             // 
@@ -2773,71 +2243,6 @@
             this.panel6.Size = new System.Drawing.Size(445, 266);
             this.panel6.TabIndex = 99;
             // 
-            // rbtnTrabajoUrgenteSi
-            // 
-            this.rbtnTrabajoUrgenteSi.Location = new System.Drawing.Point(320, 216);
-            this.rbtnTrabajoUrgenteSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTrabajoUrgenteSi.Name = "rbtnTrabajoUrgenteSi";
-            this.rbtnTrabajoUrgenteSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTrabajoUrgenteSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTrabajoUrgenteSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnTrabajoUrgenteSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTrabajoUrgenteSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTrabajoUrgenteSi.TabIndex = 124;
-            this.rbtnTrabajoUrgenteSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnTrabajoNeccesarioSi
-            // 
-            this.rbtnTrabajoNeccesarioSi.Location = new System.Drawing.Point(320, 164);
-            this.rbtnTrabajoNeccesarioSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTrabajoNeccesarioSi.Name = "rbtnTrabajoNeccesarioSi";
-            this.rbtnTrabajoNeccesarioSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTrabajoNeccesarioSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTrabajoNeccesarioSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnTrabajoNeccesarioSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTrabajoNeccesarioSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTrabajoNeccesarioSi.TabIndex = 123;
-            this.rbtnTrabajoNeccesarioSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnTrabajoProgramadoSi
-            // 
-            this.rbtnTrabajoProgramadoSi.Location = new System.Drawing.Point(320, 112);
-            this.rbtnTrabajoProgramadoSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTrabajoProgramadoSi.Name = "rbtnTrabajoProgramadoSi";
-            this.rbtnTrabajoProgramadoSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTrabajoProgramadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTrabajoProgramadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnTrabajoProgramadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTrabajoProgramadoSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTrabajoProgramadoSi.TabIndex = 122;
-            this.rbtnTrabajoProgramadoSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnTrabajoHabitualSi
-            // 
-            this.rbtnTrabajoHabitualSi.Location = new System.Drawing.Point(320, 60);
-            this.rbtnTrabajoHabitualSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTrabajoHabitualSi.Name = "rbtnTrabajoHabitualSi";
-            this.rbtnTrabajoHabitualSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTrabajoHabitualSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTrabajoHabitualSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnTrabajoHabitualSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTrabajoHabitualSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTrabajoHabitualSi.TabIndex = 121;
-            this.rbtnTrabajoHabitualSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnRealizoTrabajoAntesSi
-            // 
-            this.rbtnRealizoTrabajoAntesSi.Location = new System.Drawing.Point(320, 8);
-            this.rbtnRealizoTrabajoAntesSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnRealizoTrabajoAntesSi.Name = "rbtnRealizoTrabajoAntesSi";
-            this.rbtnRealizoTrabajoAntesSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnRealizoTrabajoAntesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnRealizoTrabajoAntesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnRealizoTrabajoAntesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnRealizoTrabajoAntesSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnRealizoTrabajoAntesSi.TabIndex = 120;
-            this.rbtnRealizoTrabajoAntesSi.UseVisualStyleBackColor = true;
-            // 
             // label28
             // 
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2913,32 +2318,6 @@
             this.panel4.Size = new System.Drawing.Size(900, 454);
             this.panel4.TabIndex = 98;
             // 
-            // rbtnlesion12MesesSi
-            // 
-            this.rbtnlesion12MesesSi.Location = new System.Drawing.Point(779, 18);
-            this.rbtnlesion12MesesSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnlesion12MesesSi.Name = "rbtnlesion12MesesSi";
-            this.rbtnlesion12MesesSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnlesion12MesesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnlesion12MesesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnlesion12MesesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnlesion12MesesSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnlesion12MesesSi.TabIndex = 120;
-            this.rbtnlesion12MesesSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnlesion30DiasSi
-            // 
-            this.rbtnlesion30DiasSi.Location = new System.Drawing.Point(333, 18);
-            this.rbtnlesion30DiasSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnlesion30DiasSi.Name = "rbtnlesion30DiasSi";
-            this.rbtnlesion30DiasSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnlesion30DiasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnlesion30DiasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.rbtnlesion30DiasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnlesion30DiasSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnlesion30DiasSi.TabIndex = 119;
-            this.rbtnlesion30DiasSi.UseVisualStyleBackColor = true;
-            // 
             // txtDescripcionAccidente
             // 
             this.txtDescripcionAccidente.AnimateReadOnly = false;
@@ -2947,7 +2326,7 @@
             this.txtDescripcionAccidente.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescripcionAccidente.Depth = 0;
             this.txtDescripcionAccidente.HideSelection = true;
-            this.txtDescripcionAccidente.Location = new System.Drawing.Point(9, 354);
+            this.txtDescripcionAccidente.Location = new System.Drawing.Point(9, 361);
             this.txtDescripcionAccidente.MaxLength = 32767;
             this.txtDescripcionAccidente.MouseState = MaterialSkin.MouseState.OUT;
             this.txtDescripcionAccidente.Name = "txtDescripcionAccidente";
@@ -2968,7 +2347,7 @@
             // 
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label62.Location = new System.Drawing.Point(9, 334);
+            this.label62.Location = new System.Drawing.Point(9, 341);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(413, 17);
             this.label62.TabIndex = 115;
@@ -3005,7 +2384,7 @@
             "Operación",
             "Estruc./inst.",
             "Transp./Vehic."});
-            this.cboxCausasAccidente.Location = new System.Drawing.Point(455, 354);
+            this.cboxCausasAccidente.Location = new System.Drawing.Point(455, 361);
             this.cboxCausasAccidente.MaxDropDownItems = 4;
             this.cboxCausasAccidente.MouseState = MaterialSkin.MouseState.OUT;
             this.cboxCausasAccidente.Name = "cboxCausasAccidente";
@@ -3246,6 +2625,576 @@
             this.label10.TabIndex = 98;
             this.label10.Text = "Hay incidentes en los últimos 30 días en el Proceso o a la persona lesionada:";
             // 
+            // pFactoresSeguridad
+            // 
+            this.pFactoresSeguridad.AutoScroll = true;
+            this.pFactoresSeguridad.Controls.Add(this.label39);
+            this.pFactoresSeguridad.Controls.Add(this.panel20);
+            this.pFactoresSeguridad.Controls.Add(this.panel19);
+            this.pFactoresSeguridad.Controls.Add(this.panel18);
+            this.pFactoresSeguridad.Controls.Add(this.label35);
+            this.pFactoresSeguridad.Controls.Add(this.panel17);
+            this.pFactoresSeguridad.Location = new System.Drawing.Point(0, 0);
+            this.pFactoresSeguridad.Name = "pFactoresSeguridad";
+            this.pFactoresSeguridad.Size = new System.Drawing.Size(945, 526);
+            this.pFactoresSeguridad.TabIndex = 15;
+            // 
+            // label39
+            // 
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Transparent;
+            this.label39.Location = new System.Drawing.Point(-3, 1020);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(144, 18);
+            this.label39.TabIndex = 111;
+            this.label39.Text = "Trabajo necesario";
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel20.Controls.Add(this.rbtnEquipoAdecuadoSi);
+            this.panel20.Controls.Add(this.rbtnConociaTrabajoSi);
+            this.panel20.Controls.Add(this.rbtnExistiaSupervicionSi);
+            this.panel20.Controls.Add(this.rbtnExistenItrsSi);
+            this.panel20.Controls.Add(this.label37);
+            this.panel20.Controls.Add(this.label38);
+            this.panel20.Controls.Add(this.label40);
+            this.panel20.Controls.Add(this.label41);
+            this.panel20.Location = new System.Drawing.Point(6, 903);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(906, 111);
+            this.panel20.TabIndex = 100;
+            // 
+            // label37
+            // 
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label37.Location = new System.Drawing.Point(487, 71);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(144, 18);
+            this.label37.TabIndex = 107;
+            this.label37.Text = "Existía supervisión";
+            // 
+            // label38
+            // 
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label38.Location = new System.Drawing.Point(487, 20);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(221, 18);
+            this.label38.TabIndex = 106;
+            this.label38.Text = "Conocía el trabajador el lugar";
+            // 
+            // label40
+            // 
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label40.Location = new System.Drawing.Point(9, 71);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(254, 18);
+            this.label40.TabIndex = 103;
+            this.label40.Text = "Herramientas y equipo adecuado";
+            // 
+            // label41
+            // 
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label41.Location = new System.Drawing.Point(9, 20);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(280, 18);
+            this.label41.TabIndex = 103;
+            this.label41.Text = "Existen ITR\'s de Trabajo";
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel19.Controls.Add(this.btnGrabarCondicionInsegura);
+            this.panel19.Controls.Add(this.btnAgregarCondicion);
+            this.panel19.Controls.Add(this.txtOtraCondicion);
+            this.panel19.Controls.Add(this.dgvCondicionInsegura);
+            this.panel19.Controls.Add(this.cboxCondicionesInseguras);
+            this.panel19.Controls.Add(this.label36);
+            this.panel19.Location = new System.Drawing.Point(5, 719);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(906, 169);
+            this.panel19.TabIndex = 78;
+            // 
+            // btnGrabarCondicionInsegura
+            // 
+            this.btnGrabarCondicionInsegura.AutoSize = false;
+            this.btnGrabarCondicionInsegura.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGrabarCondicionInsegura.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGrabarCondicionInsegura.Depth = 0;
+            this.btnGrabarCondicionInsegura.HighEmphasis = true;
+            this.btnGrabarCondicionInsegura.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabarCondicionInsegura.Icon")));
+            this.btnGrabarCondicionInsegura.Location = new System.Drawing.Point(400, 97);
+            this.btnGrabarCondicionInsegura.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGrabarCondicionInsegura.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGrabarCondicionInsegura.Name = "btnGrabarCondicionInsegura";
+            this.btnGrabarCondicionInsegura.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnGrabarCondicionInsegura.Size = new System.Drawing.Size(124, 50);
+            this.btnGrabarCondicionInsegura.TabIndex = 83;
+            this.btnGrabarCondicionInsegura.Text = "Grabar";
+            this.btnGrabarCondicionInsegura.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGrabarCondicionInsegura.UseAccentColor = true;
+            this.btnGrabarCondicionInsegura.UseVisualStyleBackColor = true;
+            this.btnGrabarCondicionInsegura.Visible = false;
+            this.btnGrabarCondicionInsegura.Click += new System.EventHandler(this.btnGrabarCondicionInsegura_Click);
+            // 
+            // btnAgregarCondicion
+            // 
+            this.btnAgregarCondicion.AutoSize = false;
+            this.btnAgregarCondicion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAgregarCondicion.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnAgregarCondicion.Depth = 0;
+            this.btnAgregarCondicion.HighEmphasis = true;
+            this.btnAgregarCondicion.Icon = ((System.Drawing.Image)(resources.GetObject("btnAgregarCondicion.Icon")));
+            this.btnAgregarCondicion.Location = new System.Drawing.Point(400, 32);
+            this.btnAgregarCondicion.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAgregarCondicion.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAgregarCondicion.Name = "btnAgregarCondicion";
+            this.btnAgregarCondicion.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnAgregarCondicion.Size = new System.Drawing.Size(124, 50);
+            this.btnAgregarCondicion.TabIndex = 82;
+            this.btnAgregarCondicion.Text = "Agregar";
+            this.btnAgregarCondicion.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnAgregarCondicion.UseAccentColor = true;
+            this.btnAgregarCondicion.UseVisualStyleBackColor = true;
+            this.btnAgregarCondicion.Click += new System.EventHandler(this.btnAgregarCondicion_Click);
+            // 
+            // txtOtraCondicion
+            // 
+            this.txtOtraCondicion.AnimateReadOnly = false;
+            this.txtOtraCondicion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOtraCondicion.Depth = 0;
+            this.txtOtraCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtOtraCondicion.Hint = "Otra Condicion Inseguras";
+            this.txtOtraCondicion.LeadingIcon = null;
+            this.txtOtraCondicion.Location = new System.Drawing.Point(9, 97);
+            this.txtOtraCondicion.MaxLength = 50;
+            this.txtOtraCondicion.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtOtraCondicion.Multiline = false;
+            this.txtOtraCondicion.Name = "txtOtraCondicion";
+            this.txtOtraCondicion.Size = new System.Drawing.Size(375, 50);
+            this.txtOtraCondicion.TabIndex = 19;
+            this.txtOtraCondicion.Text = "";
+            this.txtOtraCondicion.TrailingIcon = null;
+            this.txtOtraCondicion.Visible = false;
+            // 
+            // dgvCondicionInsegura
+            // 
+            this.dgvCondicionInsegura.AllowUserToAddRows = false;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCondicionInsegura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvCondicionInsegura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCondicionInsegura.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.dgvCondicionInsegura.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvCondicionInsegura.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvCondicionInsegura.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCondicionInsegura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvCondicionInsegura.ColumnHeadersHeight = 45;
+            this.dgvCondicionInsegura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idCondicionInsegura,
+            this.CondicionInsegura,
+            this.accionesCondiciones});
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCondicionInsegura.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvCondicionInsegura.EnableHeadersVisualStyles = false;
+            this.dgvCondicionInsegura.Location = new System.Drawing.Point(536, 33);
+            this.dgvCondicionInsegura.Name = "dgvCondicionInsegura";
+            this.dgvCondicionInsegura.ReadOnly = true;
+            this.dgvCondicionInsegura.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCondicionInsegura.RowHeadersVisible = false;
+            this.dgvCondicionInsegura.RowTemplate.Height = 35;
+            this.dgvCondicionInsegura.Size = new System.Drawing.Size(360, 127);
+            this.dgvCondicionInsegura.TabIndex = 18;
+            this.dgvCondicionInsegura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCondicionInsegura_CellClick);
+            // 
+            // cboxCondicionesInseguras
+            // 
+            this.cboxCondicionesInseguras.AutoResize = false;
+            this.cboxCondicionesInseguras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxCondicionesInseguras.Depth = 0;
+            this.cboxCondicionesInseguras.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxCondicionesInseguras.DropDownHeight = 174;
+            this.cboxCondicionesInseguras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxCondicionesInseguras.DropDownWidth = 121;
+            this.cboxCondicionesInseguras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxCondicionesInseguras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxCondicionesInseguras.FormattingEnabled = true;
+            this.cboxCondicionesInseguras.Hint = "Condiciones Inseguras";
+            this.cboxCondicionesInseguras.IntegralHeight = false;
+            this.cboxCondicionesInseguras.ItemHeight = 43;
+            this.cboxCondicionesInseguras.Location = new System.Drawing.Point(9, 33);
+            this.cboxCondicionesInseguras.MaxDropDownItems = 4;
+            this.cboxCondicionesInseguras.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxCondicionesInseguras.Name = "cboxCondicionesInseguras";
+            this.cboxCondicionesInseguras.Size = new System.Drawing.Size(375, 49);
+            this.cboxCondicionesInseguras.StartIndex = 0;
+            this.cboxCondicionesInseguras.TabIndex = 0;
+            this.cboxCondicionesInseguras.SelectedIndexChanged += new System.EventHandler(this.cboxCondicionesInseguras_SelectedIndexChanged);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label36.Location = new System.Drawing.Point(5, 10);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(456, 20);
+            this.label36.TabIndex = 17;
+            this.label36.Text = "Condiciones Inseguras en la Realización de la Actividad";
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel18.Controls.Add(this.btnGrabarActoInseguro);
+            this.panel18.Controls.Add(this.btnAgregarActoInseguro);
+            this.panel18.Controls.Add(this.txtOtroActoInseguro);
+            this.panel18.Controls.Add(this.dgvActoInseguro);
+            this.panel18.Controls.Add(this.cboxActoInseguro);
+            this.panel18.Controls.Add(this.label34);
+            this.panel18.Location = new System.Drawing.Point(6, 521);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(906, 169);
+            this.panel18.TabIndex = 77;
+            // 
+            // btnGrabarActoInseguro
+            // 
+            this.btnGrabarActoInseguro.AutoSize = false;
+            this.btnGrabarActoInseguro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGrabarActoInseguro.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGrabarActoInseguro.Depth = 0;
+            this.btnGrabarActoInseguro.HighEmphasis = true;
+            this.btnGrabarActoInseguro.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabarActoInseguro.Icon")));
+            this.btnGrabarActoInseguro.Location = new System.Drawing.Point(400, 97);
+            this.btnGrabarActoInseguro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGrabarActoInseguro.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGrabarActoInseguro.Name = "btnGrabarActoInseguro";
+            this.btnGrabarActoInseguro.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnGrabarActoInseguro.Size = new System.Drawing.Size(124, 50);
+            this.btnGrabarActoInseguro.TabIndex = 82;
+            this.btnGrabarActoInseguro.Text = "Grabar";
+            this.btnGrabarActoInseguro.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGrabarActoInseguro.UseAccentColor = true;
+            this.btnGrabarActoInseguro.UseVisualStyleBackColor = true;
+            this.btnGrabarActoInseguro.Visible = false;
+            this.btnGrabarActoInseguro.Click += new System.EventHandler(this.btnGrabarActoInseguro_Click);
+            // 
+            // btnAgregarActoInseguro
+            // 
+            this.btnAgregarActoInseguro.AutoSize = false;
+            this.btnAgregarActoInseguro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAgregarActoInseguro.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnAgregarActoInseguro.Depth = 0;
+            this.btnAgregarActoInseguro.HighEmphasis = true;
+            this.btnAgregarActoInseguro.Icon = ((System.Drawing.Image)(resources.GetObject("btnAgregarActoInseguro.Icon")));
+            this.btnAgregarActoInseguro.Location = new System.Drawing.Point(400, 32);
+            this.btnAgregarActoInseguro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAgregarActoInseguro.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAgregarActoInseguro.Name = "btnAgregarActoInseguro";
+            this.btnAgregarActoInseguro.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnAgregarActoInseguro.Size = new System.Drawing.Size(124, 50);
+            this.btnAgregarActoInseguro.TabIndex = 81;
+            this.btnAgregarActoInseguro.Text = "Agregar";
+            this.btnAgregarActoInseguro.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnAgregarActoInseguro.UseAccentColor = true;
+            this.btnAgregarActoInseguro.UseVisualStyleBackColor = true;
+            this.btnAgregarActoInseguro.Click += new System.EventHandler(this.btnAgregarActoInseguro_Click);
+            // 
+            // txtOtroActoInseguro
+            // 
+            this.txtOtroActoInseguro.AnimateReadOnly = false;
+            this.txtOtroActoInseguro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOtroActoInseguro.Depth = 0;
+            this.txtOtroActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtOtroActoInseguro.Hint = "Otro Actos Inseguros";
+            this.txtOtroActoInseguro.LeadingIcon = null;
+            this.txtOtroActoInseguro.Location = new System.Drawing.Point(9, 97);
+            this.txtOtroActoInseguro.MaxLength = 50;
+            this.txtOtroActoInseguro.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtOtroActoInseguro.Multiline = false;
+            this.txtOtroActoInseguro.Name = "txtOtroActoInseguro";
+            this.txtOtroActoInseguro.Size = new System.Drawing.Size(375, 50);
+            this.txtOtroActoInseguro.TabIndex = 19;
+            this.txtOtroActoInseguro.Text = "";
+            this.txtOtroActoInseguro.TrailingIcon = null;
+            this.txtOtroActoInseguro.Visible = false;
+            // 
+            // dgvActoInseguro
+            // 
+            this.dgvActoInseguro.AllowUserToAddRows = false;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvActoInseguro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgvActoInseguro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvActoInseguro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.dgvActoInseguro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvActoInseguro.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvActoInseguro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvActoInseguro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgvActoInseguro.ColumnHeadersHeight = 45;
+            this.dgvActoInseguro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idActoInseguro,
+            this.actoInseguro,
+            this.accionesActosInseguros});
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvActoInseguro.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dgvActoInseguro.EnableHeadersVisualStyles = false;
+            this.dgvActoInseguro.Location = new System.Drawing.Point(536, 33);
+            this.dgvActoInseguro.Name = "dgvActoInseguro";
+            this.dgvActoInseguro.ReadOnly = true;
+            this.dgvActoInseguro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvActoInseguro.RowHeadersVisible = false;
+            this.dgvActoInseguro.RowTemplate.Height = 35;
+            this.dgvActoInseguro.Size = new System.Drawing.Size(360, 127);
+            this.dgvActoInseguro.TabIndex = 18;
+            this.dgvActoInseguro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvActoInseguro_CellClick);
+            // 
+            // cboxActoInseguro
+            // 
+            this.cboxActoInseguro.AutoResize = false;
+            this.cboxActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxActoInseguro.Depth = 0;
+            this.cboxActoInseguro.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxActoInseguro.DropDownHeight = 174;
+            this.cboxActoInseguro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxActoInseguro.DropDownWidth = 121;
+            this.cboxActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxActoInseguro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxActoInseguro.FormattingEnabled = true;
+            this.cboxActoInseguro.Hint = "Actos Inseguros";
+            this.cboxActoInseguro.IntegralHeight = false;
+            this.cboxActoInseguro.ItemHeight = 43;
+            this.cboxActoInseguro.Location = new System.Drawing.Point(9, 33);
+            this.cboxActoInseguro.MaxDropDownItems = 4;
+            this.cboxActoInseguro.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxActoInseguro.Name = "cboxActoInseguro";
+            this.cboxActoInseguro.Size = new System.Drawing.Size(375, 49);
+            this.cboxActoInseguro.StartIndex = 0;
+            this.cboxActoInseguro.TabIndex = 0;
+            this.cboxActoInseguro.SelectedIndexChanged += new System.EventHandler(this.cboxActoInseguro_SelectedIndexChanged);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label34.Location = new System.Drawing.Point(5, 10);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(404, 20);
+            this.label34.TabIndex = 17;
+            this.label34.Text = "Actos Inseguros en la Realización de la Actividad";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label35.Location = new System.Drawing.Point(5, 303);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(251, 25);
+            this.label35.TabIndex = 21;
+            this.label35.Text = "Factores de Seguridad";
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel17.Controls.Add(this.btnGrabarRiesgo);
+            this.panel17.Controls.Add(this.btnAgregarRiesgo);
+            this.panel17.Controls.Add(this.txtOtroRiesgo);
+            this.panel17.Controls.Add(this.dgvRiesgos);
+            this.panel17.Controls.Add(this.cboxRiesgos);
+            this.panel17.Controls.Add(this.label33);
+            this.panel17.Location = new System.Drawing.Point(5, 332);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(906, 169);
+            this.panel17.TabIndex = 18;
+            // 
+            // btnGrabarRiesgo
+            // 
+            this.btnGrabarRiesgo.AutoSize = false;
+            this.btnGrabarRiesgo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGrabarRiesgo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnGrabarRiesgo.Depth = 0;
+            this.btnGrabarRiesgo.HighEmphasis = true;
+            this.btnGrabarRiesgo.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabarRiesgo.Icon")));
+            this.btnGrabarRiesgo.Location = new System.Drawing.Point(400, 97);
+            this.btnGrabarRiesgo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnGrabarRiesgo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnGrabarRiesgo.Name = "btnGrabarRiesgo";
+            this.btnGrabarRiesgo.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnGrabarRiesgo.Size = new System.Drawing.Size(124, 50);
+            this.btnGrabarRiesgo.TabIndex = 81;
+            this.btnGrabarRiesgo.Text = "Grabar";
+            this.btnGrabarRiesgo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnGrabarRiesgo.UseAccentColor = true;
+            this.btnGrabarRiesgo.UseVisualStyleBackColor = true;
+            this.btnGrabarRiesgo.Visible = false;
+            this.btnGrabarRiesgo.Click += new System.EventHandler(this.btnGrabarRiesgo_Click);
+            // 
+            // btnAgregarRiesgo
+            // 
+            this.btnAgregarRiesgo.AutoSize = false;
+            this.btnAgregarRiesgo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAgregarRiesgo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnAgregarRiesgo.Depth = 0;
+            this.btnAgregarRiesgo.HighEmphasis = true;
+            this.btnAgregarRiesgo.Icon = ((System.Drawing.Image)(resources.GetObject("btnAgregarRiesgo.Icon")));
+            this.btnAgregarRiesgo.Location = new System.Drawing.Point(400, 32);
+            this.btnAgregarRiesgo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAgregarRiesgo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAgregarRiesgo.Name = "btnAgregarRiesgo";
+            this.btnAgregarRiesgo.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnAgregarRiesgo.Size = new System.Drawing.Size(124, 50);
+            this.btnAgregarRiesgo.TabIndex = 80;
+            this.btnAgregarRiesgo.Text = "Agregar";
+            this.btnAgregarRiesgo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnAgregarRiesgo.UseAccentColor = true;
+            this.btnAgregarRiesgo.UseVisualStyleBackColor = true;
+            this.btnAgregarRiesgo.Click += new System.EventHandler(this.btnAgregarRiesgo_Click);
+            // 
+            // txtOtroRiesgo
+            // 
+            this.txtOtroRiesgo.AnimateReadOnly = false;
+            this.txtOtroRiesgo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOtroRiesgo.Depth = 0;
+            this.txtOtroRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtOtroRiesgo.Hint = "Otro Riesgo";
+            this.txtOtroRiesgo.LeadingIcon = null;
+            this.txtOtroRiesgo.Location = new System.Drawing.Point(9, 97);
+            this.txtOtroRiesgo.MaxLength = 50;
+            this.txtOtroRiesgo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtOtroRiesgo.Multiline = false;
+            this.txtOtroRiesgo.Name = "txtOtroRiesgo";
+            this.txtOtroRiesgo.Size = new System.Drawing.Size(375, 50);
+            this.txtOtroRiesgo.TabIndex = 19;
+            this.txtOtroRiesgo.Text = "";
+            this.txtOtroRiesgo.TrailingIcon = null;
+            this.txtOtroRiesgo.Visible = false;
+            // 
+            // dgvRiesgos
+            // 
+            this.dgvRiesgos.AllowUserToAddRows = false;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiesgos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.dgvRiesgos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRiesgos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.dgvRiesgos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRiesgos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvRiesgos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiesgos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dgvRiesgos.ColumnHeadersHeight = 45;
+            this.dgvRiesgos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idRiesgo,
+            this.riesgo,
+            this.accionesriesgos});
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiesgos.DefaultCellStyle = dataGridViewCellStyle19;
+            this.dgvRiesgos.EnableHeadersVisualStyles = false;
+            this.dgvRiesgos.Location = new System.Drawing.Point(536, 33);
+            this.dgvRiesgos.Name = "dgvRiesgos";
+            this.dgvRiesgos.ReadOnly = true;
+            this.dgvRiesgos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvRiesgos.RowHeadersVisible = false;
+            this.dgvRiesgos.RowTemplate.Height = 35;
+            this.dgvRiesgos.Size = new System.Drawing.Size(360, 127);
+            this.dgvRiesgos.TabIndex = 18;
+            this.dgvRiesgos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRiesgos_CellClick);
+            // 
+            // cboxRiesgos
+            // 
+            this.cboxRiesgos.AutoResize = false;
+            this.cboxRiesgos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxRiesgos.Depth = 0;
+            this.cboxRiesgos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxRiesgos.DropDownHeight = 174;
+            this.cboxRiesgos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxRiesgos.DropDownWidth = 121;
+            this.cboxRiesgos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxRiesgos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxRiesgos.FormattingEnabled = true;
+            this.cboxRiesgos.Hint = "Riesgo";
+            this.cboxRiesgos.IntegralHeight = false;
+            this.cboxRiesgos.ItemHeight = 43;
+            this.cboxRiesgos.Items.AddRange(new object[] {
+            "Otro"});
+            this.cboxRiesgos.Location = new System.Drawing.Point(9, 33);
+            this.cboxRiesgos.MaxDropDownItems = 4;
+            this.cboxRiesgos.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxRiesgos.Name = "cboxRiesgos";
+            this.cboxRiesgos.Size = new System.Drawing.Size(375, 49);
+            this.cboxRiesgos.StartIndex = 0;
+            this.cboxRiesgos.TabIndex = 0;
+            this.cboxRiesgos.SelectedIndexChanged += new System.EventHandler(this.cboxRiesgos_SelectedIndexChanged);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label33.Location = new System.Drawing.Point(5, 10);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(188, 20);
+            this.label33.TabIndex = 17;
+            this.label33.Text = "Riesgos del Accidente";
+            // 
             // pSeccionesDatos
             // 
             this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
@@ -3482,6 +3431,336 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn1.Width = 180;
+            // 
+            // numNominaEmpleadoConocimiento
+            // 
+            this.numNominaEmpleadoConocimiento.HeaderText = "Numero Nomina";
+            this.numNominaEmpleadoConocimiento.Name = "numNominaEmpleadoConocimiento";
+            // 
+            // nombreEmpleadoConocimiento
+            // 
+            this.nombreEmpleadoConocimiento.HeaderText = "Nombre";
+            this.nombreEmpleadoConocimiento.Name = "nombreEmpleadoConocimiento";
+            // 
+            // idEmpleadoConocimiento
+            // 
+            this.idEmpleadoConocimiento.HeaderText = "Id Empleado Conocimiento";
+            this.idEmpleadoConocimiento.Name = "idEmpleadoConocimiento";
+            this.idEmpleadoConocimiento.Visible = false;
+            // 
+            // accionesConocimiento
+            // 
+            this.accionesConocimiento.HeaderText = "";
+            this.accionesConocimiento.Image = ((System.Drawing.Image)(resources.GetObject("accionesConocimiento.Image")));
+            this.accionesConocimiento.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesConocimiento.Name = "accionesConocimiento";
+            this.accionesConocimiento.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesConocimiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // numNominaEmpleadoInvolucrado
+            // 
+            this.numNominaEmpleadoInvolucrado.HeaderText = "Numero Nomina";
+            this.numNominaEmpleadoInvolucrado.Name = "numNominaEmpleadoInvolucrado";
+            // 
+            // nombreEmpleadoInvolucrado
+            // 
+            this.nombreEmpleadoInvolucrado.HeaderText = "Nombre";
+            this.nombreEmpleadoInvolucrado.Name = "nombreEmpleadoInvolucrado";
+            // 
+            // IdEmpleadoInvolucrado
+            // 
+            this.IdEmpleadoInvolucrado.HeaderText = "Id Empleado Involucrado";
+            this.IdEmpleadoInvolucrado.Name = "IdEmpleadoInvolucrado";
+            this.IdEmpleadoInvolucrado.Visible = false;
+            // 
+            // accionesEmpleadoInvolucrado
+            // 
+            this.accionesEmpleadoInvolucrado.HeaderText = "";
+            this.accionesEmpleadoInvolucrado.Image = ((System.Drawing.Image)(resources.GetObject("accionesEmpleadoInvolucrado.Image")));
+            this.accionesEmpleadoInvolucrado.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesEmpleadoInvolucrado.Name = "accionesEmpleadoInvolucrado";
+            this.accionesEmpleadoInvolucrado.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesEmpleadoInvolucrado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // idActoInseguro
+            // 
+            this.idActoInseguro.HeaderText = "Id Acto Inseguro";
+            this.idActoInseguro.Name = "idActoInseguro";
+            this.idActoInseguro.ReadOnly = true;
+            this.idActoInseguro.Visible = false;
+            // 
+            // actoInseguro
+            // 
+            this.actoInseguro.HeaderText = "Acto Inseguro";
+            this.actoInseguro.Name = "actoInseguro";
+            this.actoInseguro.ReadOnly = true;
+            // 
+            // accionesActosInseguros
+            // 
+            this.accionesActosInseguros.HeaderText = "";
+            this.accionesActosInseguros.Image = ((System.Drawing.Image)(resources.GetObject("accionesActosInseguros.Image")));
+            this.accionesActosInseguros.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesActosInseguros.Name = "accionesActosInseguros";
+            this.accionesActosInseguros.ReadOnly = true;
+            this.accionesActosInseguros.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesActosInseguros.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // idRiesgo
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.idRiesgo.DefaultCellStyle = dataGridViewCellStyle18;
+            this.idRiesgo.HeaderText = "id Riesgo";
+            this.idRiesgo.Name = "idRiesgo";
+            this.idRiesgo.ReadOnly = true;
+            this.idRiesgo.Visible = false;
+            // 
+            // riesgo
+            // 
+            this.riesgo.HeaderText = "Riesgos";
+            this.riesgo.Name = "riesgo";
+            this.riesgo.ReadOnly = true;
+            // 
+            // accionesriesgos
+            // 
+            this.accionesriesgos.HeaderText = "";
+            this.accionesriesgos.Image = ((System.Drawing.Image)(resources.GetObject("accionesriesgos.Image")));
+            this.accionesriesgos.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesriesgos.Name = "accionesriesgos";
+            this.accionesriesgos.ReadOnly = true;
+            this.accionesriesgos.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesriesgos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // idCondicionInsegura
+            // 
+            this.idCondicionInsegura.HeaderText = "Id Consición Insegura";
+            this.idCondicionInsegura.Name = "idCondicionInsegura";
+            this.idCondicionInsegura.ReadOnly = true;
+            this.idCondicionInsegura.Visible = false;
+            // 
+            // CondicionInsegura
+            // 
+            this.CondicionInsegura.HeaderText = "Condición Insegura";
+            this.CondicionInsegura.Name = "CondicionInsegura";
+            this.CondicionInsegura.ReadOnly = true;
+            // 
+            // accionesCondiciones
+            // 
+            this.accionesCondiciones.HeaderText = "";
+            this.accionesCondiciones.Image = ((System.Drawing.Image)(resources.GetObject("accionesCondiciones.Image")));
+            this.accionesCondiciones.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesCondiciones.Name = "accionesCondiciones";
+            this.accionesCondiciones.ReadOnly = true;
+            this.accionesCondiciones.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesCondiciones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // numNomina
+            // 
+            this.numNomina.HeaderText = "Numero de Nomina";
+            this.numNomina.Name = "numNomina";
+            this.numNomina.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nombre Del Testigo";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // IdEmpleadoTestigo
+            // 
+            this.IdEmpleadoTestigo.HeaderText = "IdTestigo";
+            this.IdEmpleadoTestigo.Name = "IdEmpleadoTestigo";
+            this.IdEmpleadoTestigo.ReadOnly = true;
+            this.IdEmpleadoTestigo.Visible = false;
+            // 
+            // acciones
+            // 
+            this.acciones.HeaderText = "";
+            this.acciones.Image = ((System.Drawing.Image)(resources.GetObject("acciones.Image")));
+            this.acciones.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.acciones.Name = "acciones";
+            this.acciones.ReadOnly = true;
+            this.acciones.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.acciones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // rbtnHrsExtrasSi
+            // 
+            this.rbtnHrsExtrasSi.Location = new System.Drawing.Point(132, 177);
+            this.rbtnHrsExtrasSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnHrsExtrasSi.Name = "rbtnHrsExtrasSi";
+            this.rbtnHrsExtrasSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnHrsExtrasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnHrsExtrasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnHrsExtrasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnHrsExtrasSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnHrsExtrasSi.TabIndex = 122;
+            this.rbtnHrsExtrasSi.UseVisualStyleBackColor = true;
+            this.rbtnHrsExtrasSi.CheckedChanged += new System.EventHandler(this.rbtnHrsExtrasSi_CheckedChanged);
+            // 
+            // rbtnDanosMaterialesSi
+            // 
+            this.rbtnDanosMaterialesSi.Location = new System.Drawing.Point(248, 14);
+            this.rbtnDanosMaterialesSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnDanosMaterialesSi.Name = "rbtnDanosMaterialesSi";
+            this.rbtnDanosMaterialesSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnDanosMaterialesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnDanosMaterialesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnDanosMaterialesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnDanosMaterialesSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnDanosMaterialesSi.TabIndex = 125;
+            this.rbtnDanosMaterialesSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoUrgenteSi
+            // 
+            this.rbtnTrabajoUrgenteSi.Location = new System.Drawing.Point(320, 216);
+            this.rbtnTrabajoUrgenteSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoUrgenteSi.Name = "rbtnTrabajoUrgenteSi";
+            this.rbtnTrabajoUrgenteSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoUrgenteSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoUrgenteSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTrabajoUrgenteSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoUrgenteSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoUrgenteSi.TabIndex = 124;
+            this.rbtnTrabajoUrgenteSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoNeccesarioSi
+            // 
+            this.rbtnTrabajoNeccesarioSi.Location = new System.Drawing.Point(320, 164);
+            this.rbtnTrabajoNeccesarioSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoNeccesarioSi.Name = "rbtnTrabajoNeccesarioSi";
+            this.rbtnTrabajoNeccesarioSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoNeccesarioSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoNeccesarioSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTrabajoNeccesarioSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoNeccesarioSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoNeccesarioSi.TabIndex = 123;
+            this.rbtnTrabajoNeccesarioSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoProgramadoSi
+            // 
+            this.rbtnTrabajoProgramadoSi.Location = new System.Drawing.Point(320, 112);
+            this.rbtnTrabajoProgramadoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoProgramadoSi.Name = "rbtnTrabajoProgramadoSi";
+            this.rbtnTrabajoProgramadoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoProgramadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoProgramadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTrabajoProgramadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoProgramadoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoProgramadoSi.TabIndex = 122;
+            this.rbtnTrabajoProgramadoSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoHabitualSi
+            // 
+            this.rbtnTrabajoHabitualSi.Location = new System.Drawing.Point(320, 60);
+            this.rbtnTrabajoHabitualSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoHabitualSi.Name = "rbtnTrabajoHabitualSi";
+            this.rbtnTrabajoHabitualSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoHabitualSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoHabitualSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnTrabajoHabitualSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoHabitualSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoHabitualSi.TabIndex = 121;
+            this.rbtnTrabajoHabitualSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnRealizoTrabajoAntesSi
+            // 
+            this.rbtnRealizoTrabajoAntesSi.Location = new System.Drawing.Point(320, 8);
+            this.rbtnRealizoTrabajoAntesSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnRealizoTrabajoAntesSi.Name = "rbtnRealizoTrabajoAntesSi";
+            this.rbtnRealizoTrabajoAntesSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnRealizoTrabajoAntesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnRealizoTrabajoAntesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnRealizoTrabajoAntesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnRealizoTrabajoAntesSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnRealizoTrabajoAntesSi.TabIndex = 120;
+            this.rbtnRealizoTrabajoAntesSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnlesion12MesesSi
+            // 
+            this.rbtnlesion12MesesSi.Location = new System.Drawing.Point(779, 18);
+            this.rbtnlesion12MesesSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnlesion12MesesSi.Name = "rbtnlesion12MesesSi";
+            this.rbtnlesion12MesesSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnlesion12MesesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnlesion12MesesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnlesion12MesesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnlesion12MesesSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnlesion12MesesSi.TabIndex = 120;
+            this.rbtnlesion12MesesSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnlesion30DiasSi
+            // 
+            this.rbtnlesion30DiasSi.Location = new System.Drawing.Point(333, 18);
+            this.rbtnlesion30DiasSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnlesion30DiasSi.Name = "rbtnlesion30DiasSi";
+            this.rbtnlesion30DiasSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnlesion30DiasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnlesion30DiasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnlesion30DiasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnlesion30DiasSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnlesion30DiasSi.TabIndex = 119;
+            this.rbtnlesion30DiasSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnEquipoAdecuadoSi
+            // 
+            this.rbtnEquipoAdecuadoSi.Location = new System.Drawing.Point(282, 63);
+            this.rbtnEquipoAdecuadoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnEquipoAdecuadoSi.Name = "rbtnEquipoAdecuadoSi";
+            this.rbtnEquipoAdecuadoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnEquipoAdecuadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnEquipoAdecuadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnEquipoAdecuadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnEquipoAdecuadoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnEquipoAdecuadoSi.TabIndex = 126;
+            this.rbtnEquipoAdecuadoSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnConociaTrabajoSi
+            // 
+            this.rbtnConociaTrabajoSi.Location = new System.Drawing.Point(751, 12);
+            this.rbtnConociaTrabajoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnConociaTrabajoSi.Name = "rbtnConociaTrabajoSi";
+            this.rbtnConociaTrabajoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnConociaTrabajoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnConociaTrabajoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnConociaTrabajoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnConociaTrabajoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnConociaTrabajoSi.TabIndex = 125;
+            this.rbtnConociaTrabajoSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnExistiaSupervicionSi
+            // 
+            this.rbtnExistiaSupervicionSi.Location = new System.Drawing.Point(751, 63);
+            this.rbtnExistiaSupervicionSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnExistiaSupervicionSi.Name = "rbtnExistiaSupervicionSi";
+            this.rbtnExistiaSupervicionSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnExistiaSupervicionSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnExistiaSupervicionSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnExistiaSupervicionSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnExistiaSupervicionSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnExistiaSupervicionSi.TabIndex = 124;
+            this.rbtnExistiaSupervicionSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnExistenItrsSi
+            // 
+            this.rbtnExistenItrsSi.Location = new System.Drawing.Point(282, 12);
+            this.rbtnExistenItrsSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnExistenItrsSi.Name = "rbtnExistenItrsSi";
+            this.rbtnExistenItrsSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnExistenItrsSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnExistenItrsSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.rbtnExistenItrsSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnExistenItrsSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnExistenItrsSi.TabIndex = 123;
+            this.rbtnExistenItrsSi.UseVisualStyleBackColor = true;
+            // 
             // frmNewAccidente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3494,18 +3773,6 @@
             this.Load += new System.EventHandler(this.frmNewAccidente_Load);
             this.panel1.ResumeLayout(false);
             this.pContenedorAcc.ResumeLayout(false);
-            this.pFactoresSeguridad.ResumeLayout(false);
-            this.pFactoresSeguridad.PerformLayout();
-            this.panel20.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCondicionInsegura)).EndInit();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvActoInseguro)).EndInit();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRiesgos)).EndInit();
             this.pDatosGenerales.ResumeLayout(false);
             this.pDatosGenerales.PerformLayout();
             this.panel15.ResumeLayout(false);
@@ -3537,6 +3804,18 @@
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.pFactoresSeguridad.ResumeLayout(false);
+            this.pFactoresSeguridad.PerformLayout();
+            this.panel20.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCondicionInsegura)).EndInit();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvActoInseguro)).EndInit();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiesgos)).EndInit();
             this.pSeccionesDatos.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -3695,19 +3974,6 @@
         private MaterialSkin.Controls.MaterialFloatingActionButton btnBuscarEmpleado;
         private MaterialSkin.Controls.MaterialTextBox txtIdEmpleadoTestigo;
         private MaterialSkin.Controls.MaterialTextBox txtIdEmpleado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numNomina;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdEmpleadoTestigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn acciones;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idRiesgo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn riesgo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accionesriesgos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idActoInseguro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn actoInseguro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accionesActosInseguros;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idCondicionInsegura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CondicionInsegura;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accionesCondiciones;
         private MaterialSkin.Controls.MaterialComboBox cboxCausasAccidente;
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtDescripcionAccidente;
         private System.Windows.Forms.Label label62;
@@ -3721,14 +3987,6 @@
         private System.Windows.Forms.DataGridView dgvEmpleadosInvolucrados;
         private MaterialSkin.Controls.MaterialTextBox txtIdEmpleadoInvolucrado;
         private MaterialSkin.Controls.MaterialTextBox txtIdEmpleadoConocimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numNominaEmpleadoInvolucrado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEmpleadoInvolucrado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdEmpleadoInvolucrado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accionesEmpleadoInvolucrado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numNominaEmpleadoConocimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEmpleadoConocimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idEmpleadoConocimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accionesConocimiento;
         private System.Windows.Forms.Label topePagina;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label66;
@@ -3741,12 +3999,6 @@
         private System.Windows.Forms.DateTimePicker dtpHoraAccidente;
         private System.Windows.Forms.Label label61;
         private MaterialSkin.Controls.MaterialButton btnGrabar;
-        private MaterialSkin.Controls.MaterialButton btnAgregarCondicion;
-        private MaterialSkin.Controls.MaterialButton btnAgregarActoInseguro;
-        private MaterialSkin.Controls.MaterialButton btnGrabarActoInseguro;
-        private MaterialSkin.Controls.MaterialButton btnAgregarRiesgo;
-        private MaterialSkin.Controls.MaterialButton btnGrabarRiesgo;
-        private MaterialSkin.Controls.MaterialButton btnGrabarCondicionInsegura;
         private MaterialSkin.Controls.MaterialButton btnAgregarEmpleadoConocimiento;
         private MaterialSkin.Controls.MaterialButton btnAgregarEmpleadoInvolucrado;
         private radioButtonPersonalizado rbtnlesion12MesesSi;
@@ -3770,5 +4022,33 @@
         private radioButtonPersonalizado rbtnConociaTrabajoSi;
         private radioButtonPersonalizado rbtnExistiaSupervicionSi;
         private radioButtonPersonalizado rbtnExistenItrsSi;
+        private MaterialSkin.Controls.MaterialButton btnAgregarActoInseguro;
+        private MaterialSkin.Controls.MaterialButton btnAgregarRiesgo;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private MaterialSkin.Controls.MaterialButton btnGrabarCondicionInsegura;
+        private MaterialSkin.Controls.MaterialButton btnAgregarCondicion;
+        private MaterialSkin.Controls.MaterialButton btnGrabarActoInseguro;
+        private MaterialSkin.Controls.MaterialButton btnGrabarRiesgo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numNominaEmpleadoConocimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEmpleadoConocimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idEmpleadoConocimiento;
+        private System.Windows.Forms.DataGridViewImageColumn accionesConocimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numNominaEmpleadoInvolucrado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEmpleadoInvolucrado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdEmpleadoInvolucrado;
+        private System.Windows.Forms.DataGridViewImageColumn accionesEmpleadoInvolucrado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idActoInseguro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn actoInseguro;
+        private System.Windows.Forms.DataGridViewImageColumn accionesActosInseguros;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idRiesgo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn riesgo;
+        private System.Windows.Forms.DataGridViewImageColumn accionesriesgos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idCondicionInsegura;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CondicionInsegura;
+        private System.Windows.Forms.DataGridViewImageColumn accionesCondiciones;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numNomina;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdEmpleadoTestigo;
+        private System.Windows.Forms.DataGridViewImageColumn acciones;
     }
 }

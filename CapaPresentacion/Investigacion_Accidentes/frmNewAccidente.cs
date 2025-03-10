@@ -26,6 +26,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
         EmpleadosCN empleadosCN = new EmpleadosCN();
         AccidentesCN accidentesCN = new AccidentesCN();
         SeccionesCN seccionesCN = new SeccionesCN();
+
+
         public frmNewAccidente()
         {
             InitializeComponent();
@@ -103,9 +105,59 @@ namespace CapaPresentacion.Investigacion_Accidentes
         {
             pSeccionesDatos.Controls.Remove(p);
         }
-        private void MostrarPanel(Panel panelAMostrar)
-        {
 
+
+        private Dictionary<Button, bool> panelVisitado = new Dictionary<Button, bool>();
+
+        // Variable para almacenar el panel y botón actual
+        private Panel panelActual = null;
+        private Button botonActual = null;
+
+        private void ActualizarColorBoton(Button boton, Control parentControl)          
+        {
+            // Si el panel nunca ha sido visitado, mantener el color original
+            if (!panelVisitado.ContainsKey(boton)) return;
+
+            bool hayCamposVacíos = HayTextBoxVacios(parentControl);
+
+            // Cambiar color solo si el panel ya se visitó
+            boton.BackColor = hayCamposVacíos ? Color.Red : Color.FromArgb(27, 77, 141);
+        }
+
+        // Método recursivo para buscar TextBox dentro de cualquier control (incluidos paneles anidados)
+        private bool HayTextBoxVacios(Control parentControl)
+        {
+            foreach (Control ctrl in parentControl.Controls)
+            {
+                if (ctrl is TextBox txt)
+                {
+                    if (string.IsNullOrWhiteSpace(txt.Text)) // Si está vacío o solo tiene espacios
+                        return true;
+                }
+                else if (ctrl.HasChildren) // Si el control tiene hijos, revisamos dentro de él
+                {
+                    if (HayTextBoxVacios(ctrl))
+                        return true;
+                }
+            }
+            return false; // No se encontraron campos vacíos
+        }
+
+        private void MostrarPanel(Panel panelAMostrar, Button botonPresionado)
+        {
+            // Si hay un panel activo, verificar si tiene campos vacíos antes de cambiar
+            if (panelActual != null && botonActual != null && panelActual != panelAMostrar)
+            {
+                ActualizarColorBoton(botonActual, panelActual);
+            }
+
+            // Marcar este botón como visitado
+            if (!panelVisitado.ContainsKey(botonPresionado))
+            {
+                panelVisitado[botonPresionado] = true;
+            }
+
+            // Ocultar todos los paneles y mostrar el deseado
             pDatosGenerales.Visible = false;
             pDetallesAccidente.Visible = false;
             pFactoresSeguridad.Visible = false;
@@ -113,48 +165,76 @@ namespace CapaPresentacion.Investigacion_Accidentes
             pSeguimientoCaso.Visible = false;
 
             panelAMostrar.Visible = true;
+            panelActual = panelAMostrar;
+            botonActual = botonPresionado;
         }
+
         private void btnDatosGenerales_Click(object sender, EventArgs e)
         {
-            MostrarPanel(pDatosGenerales);
+            MostrarPanel(pDatosGenerales, btnDatosGenerales);
         }
+
         private void btnDetallesAccidente_Click(object sender, EventArgs e)
         {
-            MostrarPanel(pDetallesAccidente);
+            MostrarPanel(pDetallesAccidente, btnDetallesAccidente);
         }
+
         private void btnFactoresSeguridad_Click(object sender, EventArgs e)
         {
-            MostrarPanel(pFactoresSeguridad);
+            MostrarPanel(pFactoresSeguridad, btnFactoresSeguridad);
         }
+
         private void btnSeguimientoCaso_Click(object sender, EventArgs e)
         {
-            MostrarPanel(pSeguimientoCaso);
+            MostrarPanel(pSeguimientoCaso, btnSeguimientoCaso);
         }
+
         private void btnControlAcciones_Click(object sender, EventArgs e)
         {
-            MostrarPanel(pControlAcciones);
+            MostrarPanel(pControlAcciones, btnControlAcciones);
         }
+
         private void frmNewAccidente_Load(object sender, EventArgs e)
         {
-            //Combo para la seccion A es decir para guardar IdSeccion_A
+            // Inicializar el diccionario con los botones
+            panelVisitado[btnDatosGenerales] = false;
+            panelVisitado[btnDetallesAccidente] = false;
+            panelVisitado[btnFactoresSeguridad] = false;
+            panelVisitado[btnSeguimientoCaso] = false;
+            panelVisitado[btnControlAcciones] = false;
+
+            
+
+            //Combo para la sección A
             cboxSecciones.SelectedIndexChanged -= cboxSecciones_SelectedIndexChanged;
             cboxSecciones.DataSource = seccionesCN.ConcultaGeneral2().Tables["Secciones"];
             cboxSecciones.DisplayMember = "seccion";
             cboxSecciones.ValueMember = "idseccion";
+            if (cboxSecciones.Items.Count > 0)
+            {
+                cboxSecciones.SelectedIndex = 0;
+            }
             cboxSecciones.SelectedIndexChanged += cboxSecciones_SelectedIndexChanged;
 
-            //Combo para la seccion B es decir para guardar IdSeccion_B
+            //Combo para la sección B
             cboxSeccionesB.SelectedIndexChanged -= cboxSeccionesB_SelectedIndexChanged;
             cboxSeccionesB.DataSource = seccionesCN.ConcultaGeneral2().Tables["Secciones"];
             cboxSeccionesB.DisplayMember = "seccion";
             cboxSeccionesB.ValueMember = "idseccion";
+            if (cboxSeccionesB.Items.Count > 0)
+            {
+                cboxSeccionesB.SelectedIndex = 0;
+            }
             cboxSeccionesB.SelectedIndexChanged += cboxSeccionesB_SelectedIndexChanged;
 
             cargarRiesgos();
             cargarActosInseguros();
             cargarCondicionesInseguras();
 
+            panelActual = pDatosGenerales;
+            botonActual = btnDatosGenerales;
         }
+
         public void cargarRiesgos()
         {
             //Combo para cargar Riesgos
@@ -162,6 +242,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
             cboxRiesgos.DataSource = accidentesCN.ConcultaRiesgos().Tables["Riesgos"];
             cboxRiesgos.DisplayMember = "riesgo";
             cboxRiesgos.ValueMember = "idriesgo";
+            if (cboxRiesgos.Items.Count > 0)
+            {
+                cboxRiesgos.SelectedIndex = 0;
+            }
             cboxRiesgos.SelectedIndexChanged += cboxRiesgos_SelectedIndexChanged;
         }
         public void cargarActosInseguros()
@@ -171,6 +255,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
             cboxActoInseguro.DataSource = accidentesCN.ConcultaActosInseguros().Tables["ActosInseguros"];
             cboxActoInseguro.DisplayMember = "acto_inseguro";
             cboxActoInseguro.ValueMember = "idActo_Inseguro";
+            if (cboxActoInseguro.Items.Count > 0)
+            {
+                cboxActoInseguro.SelectedIndex = 0;
+            }
             cboxActoInseguro.SelectedIndexChanged += cboxActoInseguro_SelectedIndexChanged;
         }
         public void cargarCondicionesInseguras()
@@ -180,6 +268,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
             cboxCondicionesInseguras.DataSource = accidentesCN.ConcultaCondicionesInseguras().Tables["CondicionesInseguras"];
             cboxCondicionesInseguras.DisplayMember = "condicion_insegura";
             cboxCondicionesInseguras.ValueMember = "idCondicion_insegura";
+            if (cboxCondicionesInseguras.Items.Count > 0)
+            {
+                cboxCondicionesInseguras.SelectedIndex = 0;
+            }
             cboxCondicionesInseguras.SelectedIndexChanged += cboxCondicionesInseguras_SelectedIndexChanged;
         }
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
@@ -237,13 +329,14 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
                     txtPuesto.Text = dr["puesto"] as string ?? "N/A";
                     //txtAntiguedad.Text = antiguedad > 0 ? antiguedad.ToString() : "N/A";
-                    txtAntiguedad.Text = (antiguedadAnios > 0 || antiguedadMeses > 0) ? $"{antiguedadAnios} año(s) {antiguedadMeses} mes(es)" : "N/A";
+                    txtAntiguedad.Text = (antiguedadAnios > 0 || antiguedadMeses > 0) ? $"{antiguedadAnios} año(s) {antiguedadMeses} mes(es)" : "0 meses";
                     txtNumNominaTestigo.Enabled = true;
                     btnBuscarTestigo.Enabled = true;
                 }
                 else
                 {
-                    MostrarNotificacion("Alerta", "Número de nómina no encontrado", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show(" Número de nómina no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                     txtNumeroNomina.Focus();
                     txtNombreEmpleado.Clear();
                     txtIdEmpleado.Clear();
@@ -251,12 +344,9 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show(" Por favor ingrese un Número de Nómina para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNumeroNomina.Focus();
             }
-
-
-
         }
         private void btnBuscarTestigo_Click(object sender, EventArgs e)
         {
@@ -278,7 +368,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 }
                 else
                 {
-                    MostrarNotificacion("Alerta", "No se encontró un empleado con ese número de nómina", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show("No se encontró ningun empleado con ese número de nómina ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtNombreTestigo.Clear();
                     txtIdEmpleadoTestigo.Clear();
                     btnAgregarTestigo.Enabled = false;
@@ -286,7 +376,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Número de Nómina del Testigo' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show(" Por favor, ingrese el Número de Nómina para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNumNominaTestigo.Focus();
             }
 
@@ -306,7 +396,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     if (idtestigo == idEmpleadoTestigo)
                     {
                         testigoingresado = true;
-                        MostrarNotificacion("Alerta", "Este testigo ya ha sido registrado", Color.FromArgb(255, 152, 0), 3);
+                        var result = RJMessageBox.Show(" Este testigo ya ha sido registrado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                         break; 
                     }
                 }
@@ -322,13 +413,25 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "Por favor, busque un testigo antes de agregarlo", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show(" Por favor, busque un testigo antes de agregarlo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
 
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            // Validaciones previas antes de convertir a entero
+            if (string.IsNullOrWhiteSpace(txtNoAccidente.Text) ||
+                string.IsNullOrWhiteSpace(txtIdEmpleado.Text) ||
+                string.IsNullOrWhiteSpace(txtidNombreSST.Text) ||
+                string.IsNullOrWhiteSpace(txtIncapacidad.Text))
+            {
+                var result = RJMessageBox.Show(" Existen campos vacíos, llénelos para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return; // Detiene la ejecución si hay campos vacíos
+            }
+
             //Datos Generales
             int noAccidente = Convert.ToInt32(txtNoAccidente.Text);
             string condicion = txtCondicion.Text;
@@ -344,6 +447,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string tipoLesion = txtTipoLesion.Text;
             DateTime fecha_hora_Accidente = dtpFechaAccidente.Value.Date + dtpHoraAccidente.Value.TimeOfDay;
             string testigosJson = ConvertirTestigosAJson(dgvTestigos);
+
+
 
             //Detalle Accidente
             Boolean lesion30Dias = false;
@@ -374,7 +479,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string sustituiblePor = txtSustituiblePor.Text;
             int idSeccionB = Convert.ToInt32(cboxSeccionesB.SelectedValue);
 
-
+            
             //Factores de Seguridad
             Boolean existenITRs = false;
             existenITRs = rbtnExistenItrsSi.Checked ? true : false;
@@ -391,6 +496,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string condicionesInsegurasJson = ConvertirCondicionesInsegurasAJson(dgvCondicionInsegura);
             //MessageBox.Show(condicionesInsegurasJson);
 
+
             //Seguimiento del caso
             string empleadosConocimientoJson = ConvertirEnpleadosConocimientoAJson(dgvEmpleadosConocimiento);
             string empleadosInvolucradosJson = ConvertirEnpleadosInvolucradosAJson(dgvEmpleadosInvolucrados);
@@ -405,10 +511,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string tratamiento = txtTratamiento.Text;
             string incapacidad = txtIncapacidad.Text;
 
+
             //Control de Acciones
             string accionesCorrectivasPropuestas = txtAccionesCorrectivasProp.Text;
-            string quienCorrectivasPropuesta = txtAccionesCorrectivasProp.Text;
-            string cuandoCorrectivasPropuestas = txtAccionesCorrectivasProp.Text;
+            string quienCorrectivasPropuesta = txtQuienCorrectivas.Text;
+            string cuandoCorrectivasPropuestas = txtCuandoCorrectivas.Text;
             string accionesPreventivasPropuestas = txtAccionesPreventivasProp.Text;
             string quienPreventivoPropuesto = txtQuienPreventivas.Text;
             string cuandoPreventivasPropuestas = txtCuandoPreventivas.Text;
@@ -416,25 +523,42 @@ namespace CapaPresentacion.Investigacion_Accidentes
             DateTime fecha_Hora_Seguimiento = dtpFechaSeguimiento.Value.Date + dtpHoraSeguimiento.Value.TimeOfDay;
             int empleadoSeguimiento = Convert.ToInt32(txtidNombreSST.Text);
             DateTime fecha_Hora_recepcion = dtpFechaRecepcion.Value.Date + dtpHoraRecepcion.Value.TimeOfDay;
-            
 
-
-            int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
-                lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
-                existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
-                empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
-                accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas,seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
-                idEmpleado, idPuesto, testigosJson);
-
-            if (registro > 0)
+            if (!string.IsNullOrWhiteSpace(txtCondicion.Text) || !string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) || !string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) || !string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
+                !string.IsNullOrWhiteSpace(txtLugarAccidente.Text) || !string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text) || !string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) || !string.IsNullOrWhiteSpace(txtEquipoDanado.Text) || !string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
+                !string.IsNullOrWhiteSpace(txtOtro.Text) || !string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) || !string.IsNullOrWhiteSpace(txtTratamiento.Text) || !string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
+                !string.IsNullOrWhiteSpace(txtAccionesCorrectivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
+                )
             {
-                MessageBox.Show("No se pudo insertar el registro.");
+                int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
+               lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
+               existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
+               empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
+               accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas, seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
+               idEmpleado, idPuesto, testigosJson);
+                if (registro > 0)
+                {
+                    MostrarPanel(pDatosGenerales, btnDatosGenerales);
+                    var result = RJMessageBox.Show(" El Reporte de Accidente se ha guardado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Llamada al método para limpiar todos los controles en el formulario
+                    LimpiarControles(this);
+                    txtNumeroNomina.Focus();
+                    txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtTurno.Clear();txtEdad.Clear();txtPuesto.Clear(); txtAntiguedad.Clear();
+
+
+                }
+                else
+                {
+                    var result = RJMessageBox.Show(" No se ha podido grabar el Reporte de Accidente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
-            {                
-                MessageBox.Show("Inserción exitosa. Se agregó el registro correctamente.");
-            }
+            {
+                var result = RJMessageBox.Show(" Existen campos vacios, llénelos para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+                txtNumeroNomina.Focus();
+            }
         }
 
         public string ConvertirTestigosAJson(DataGridView dgvTestigos)
@@ -618,7 +742,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
                 if (riesgoExistente)
                 {
-                    MostrarNotificacion("Alerta", "Este riesgo ya está registrado", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show("Error, Este riesgo ya está registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -635,7 +759,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Otro Riesgo' está vacío, por favor ingrese un riesgo", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("El campo 'Otro Riesgo' está vacío, por favor ingrese un riesgo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
@@ -656,7 +780,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     if (idriesgo == idriesgoSeleccionado)
                     {
                         riesgoIngresado = true;
-                        MostrarNotificacion("Alerta", "Este riesgo ya ha sido registrado", Color.FromArgb(255, 152, 0), 3);
+                        //MostrarNotificacion("Alerta", "Este riesgo ya ha sido registrado", Color.FromArgb(255, 152, 0), 3);
+                        //labelDialogResult.Text = "Dialog Box Result";
+                        var result = RJMessageBox.Show("Este riesgo ya ha sido registrado", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        //labelDialogResult.Text = result.ToString() + " Selected";
                         break;
                     }
                 }
@@ -668,7 +795,9 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "Por favor, seleccione un riesgo válido", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Por favor, seleccione un riesgo válido", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //labelDialogResult.Text = result.ToString() + " Selected";
+                //MostrarNotificacion("Alerta", "Por favor, seleccione un riesgo válido", Color.FromArgb(255, 152, 0), 3);
             }
 
 
@@ -689,7 +818,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     if (idActoInseguro == idActoInseguroSeleccionado)
                     {
                         actoInseguroIngresado = true;
-                        MostrarNotificacion("Alerta", "Este Acto Inseguro ya ha sido Ingresado", Color.FromArgb(255, 152, 0), 3);
+                        var result = RJMessageBox.Show("Este Acto Inseguro ya ha sido Ingresado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        //MostrarNotificacion("Alerta", , Color.FromArgb(255, 152, 0), 3);
                         break;
                     }
                 }
@@ -700,7 +830,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "Por favor, seleccione un Acto Inseguro válido", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Por favor, seleccione un Acto Inseguro válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -713,7 +843,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
                 if (actoInseguroExistente)
                 {
-                    MostrarNotificacion("Alerta", "Este acto inseguro ya está registrado", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show("Este acto inseguro ya está registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -730,7 +860,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Otro Acto Inseguro' está vacío, por favor ingrese un acto inseguro", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("El campo 'Otro Acto Inseguro' está vacío, por favor ingrese un acto inseguro", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -749,7 +879,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     if (idCondicionInsegura == idCondicionInseguraSeleccionada)
                     {
                         condicionInseguraIngresada = true;
-                        MostrarNotificacion("Alerta", "Esta Condición Insegura ya ha sido Ingresada", Color.FromArgb(255, 152, 0), 3);
+                        var result = RJMessageBox.Show("Esta Condición Insegura ya ha sido Ingresada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         break; 
                     }
                 }
@@ -761,7 +891,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "Por favor, seleccione una Condición Insegura válida", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Por favor, seleccione una Condición Insegura válida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
 
         }
@@ -774,7 +905,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
                 if (condicionInseguraExistente)
                 {
-                    MostrarNotificacion("Alerta", "Esta condición insegura ya está registrada", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show("Esta condición insegura ya está registrada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -791,7 +922,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Otra Condición Insegura' está vacío, por favor ingrese una condición", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("El campo 'Otra Condición Insegura' está vacío, por favor ingrese una condición", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -817,7 +948,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 }
                 else
                 {
-                    MostrarNotificacion("Alerta", "No se encontró un empleado con ese número de nómina", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show("No se encontró ningun empleado con ese número de nómina", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtNombreEmpleadoConocimiento.Clear();
                     txtIdEmpleadoConocimiento.Clear();
                     btnAgregarEmpleadoConocimiento.Enabled = false;
@@ -825,7 +956,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Por favor, ingrese el número de nomina para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNumNominaEmpleadoConocimiento.Focus();
             }
 
@@ -844,7 +975,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     if (idEmpleadoConocimiento == idEnDataGrid)
                     {
                         testigoIngresado = true;
-                        MostrarNotificacion("Alerta", "Este empleado que tomo conocimiento ya ha sido registrado", Color.FromArgb(255, 152, 0), 3);
+                        var result = RJMessageBox.Show("Este empleado que tomo conocimiento ya ha sido registrado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                         break;
                     }
                 }
@@ -860,7 +992,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "Por favor, busque un empleado antes de agregarlo", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Por favor, busque un empleado antes de agregarlo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
 
         }
@@ -884,14 +1017,14 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 }
                 else
                 {
-                    MostrarNotificacion("Alerta", "No se encontró un empleado con ese número de nómina", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show("No se encontró ningun empleado con ese número de nómina", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtNombreEmpleadoInvolucrado.Clear();
                     txtIdEmpleadoInvolucrado.Clear();
                 }
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Por favor, ingrese un número de nómina para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNumNominaEmpleadoInvolucrado.Focus();
             }
 
@@ -910,7 +1043,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     if (idEmpleadoInvolucrado == idEnDataGrid)
                     {
                         testigoIngresado = true;
-                        MostrarNotificacion("Alerta", "Este empleado ya ha sido registrado como involucrado", Color.FromArgb(255, 152, 0), 3);
+                        var result = RJMessageBox.Show("Este empleado ya ha sido registrado como involucrado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                         break;
                     }
                 }
@@ -926,7 +1060,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "Por favor, busque un empleado antes de agregarlo como involucrado", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Por favor, busque un empleado antes de agregarlo como involucrado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
 
         }
@@ -946,31 +1081,42 @@ namespace CapaPresentacion.Investigacion_Accidentes
         }
         public void ValidacionNumeros(KeyPressEventArgs e)
         {
-            // Permitir números del 0 al 9 y la tecla de retroceso
-            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back))
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right))
             {
-                MostrarNotificacion("Alerta", "Solo se pueden introducir números", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 e.Handled = true; // Bloquea la entrada de caracteres no permitidos
             }
         }
-
-        
-        public void MostrarNotificacion(string titulo, string mensaje, Color color, int icono)
+        public void ValidacionNumerosTextChanged(Control txt)
         {
-            frmNotificacion c = new frmNotificacion("Bio-Pappel", titulo, mensaje, color, icono);
-            c.ShowDialog();
-        }
+            if (txt == null) return; // Previene posibles errores de referencia nula
 
+            // Verifica si el control es un MaterialTextBox y obtiene su texto
+            if (txt is MaterialSkin.Controls.MaterialTextBox materialTextBox)
+            {
+                if (!int.TryParse(materialTextBox.Text, out _) && !string.IsNullOrWhiteSpace(materialTextBox.Text))
+                {
+                    var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    // Deshabilita temporalmente el evento para evitar recursión infinita
+                    materialTextBox.TextChanged -= txtNoAccidente_TextChanged;
+                    materialTextBox.Clear(); // Limpia el campo
+                    materialTextBox.TextChanged += txtNoAccidente_TextChanged; // Reactiva el evento
+                }
+            }
+        }
         private void txtNoAccidente_KeyPress(object sender, KeyPressEventArgs e)
         {
             ValidacionNumeros(e);
         }
-
         private void txtTotalhrs_KeyPress(object sender, KeyPressEventArgs e)
         {
             ValidacionNumeros(e);
         }
-
         private void btnBuscarEmpleadoSST_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtNumNomminaSST.Text))
@@ -991,18 +1137,18 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 }
                 else
                 {
-                    MostrarNotificacion("Alerta", "No se encontró un empleado con ese número de nómina", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show("No se encontró un empleado con ese número de nómina", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                     txtNombreSST.Clear();
                     txtidNombreSST.Clear();
                 }
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("Por favor ingrese el Número de Nómina para continuar ", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNumNomminaSST.Focus();
             }
         }
-
         private void rbtnHrsExtrasSi_CheckedChanged(object sender, EventArgs e)
         {
             bool tiempoExtra = rbtnHrsExtrasSi.Checked;
@@ -1011,11 +1157,137 @@ namespace CapaPresentacion.Investigacion_Accidentes
             {
                 txtTotalhrs.Enabled = true;
                 txtTotalhrs.Clear();
+                txtTotalhrs.Focus();
             }
             else
             {
                 txtTotalhrs.Text = "8";
                 txtTotalhrs.Enabled = false;
+            }
+        }
+        private void LimpiarControles(Control parent)
+        {
+            foreach (Control ctrl in parent.Controls)
+            {
+                if (ctrl is TextBox txt)
+                {
+                    txt.Clear();
+                }
+                else if (ctrl is ComboBox cbx)
+                {
+                    cbx.SelectedIndex = 0;
+                }
+                else if (ctrl is CheckBox chk)
+                {
+                    chk.Checked = false;
+                }
+                else if (ctrl is DataGridView dgv)
+                {
+                    dgv.DataSource = null;
+                    dgv.Rows.Clear();
+                }
+                else
+                {
+                    // Si el control tiene controles hijos (como Paneles o GroupBox), llamar recursivamente
+                    if (ctrl.HasChildren)
+                    {
+                        LimpiarControles(ctrl);
+                    }
+                }
+            }
+        }
+
+        
+
+        private void txtNoAccidente_TextChanged(object sender, EventArgs e)
+        {
+            ValidacionNumerosTextChanged((Control)txtNoAccidente);
+        }
+        private void txtNumeroNomina_TextChanged(object sender, EventArgs e)
+        {
+            ValidacionNumerosTextChanged((Control)txtTotalhrs);
+        }
+
+        private void dgvActoInseguro_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 2) // Asegurar que es la columna 3 (índice 2)
+            {
+                // Confirmar antes de eliminar
+                var result = RJMessageBox.Show("¿Seguro que quieres eliminar este acto inseguro?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    dgvActoInseguro.Rows.RemoveAt(e.RowIndex); // Eliminar la fila
+                }
+            }
+        }
+
+        private void dgvRiesgos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 2) // Asegurar que es la columna 3 (índice 2)
+            {
+                // Confirmar antes de eliminar
+                var result = RJMessageBox.Show("¿Seguro que quieres eliminar este riesgo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    dgvRiesgos.Rows.RemoveAt(e.RowIndex); // Eliminar la fila
+                }
+            }
+        }
+
+        private void dgvCondicionInsegura_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 2) // Asegurar que es la columna 3 (índice 2)
+            {
+                // Confirmar antes de eliminar
+                var result = RJMessageBox.Show("¿Seguro que quieres eliminar esta condicion insegura?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    dgvCondicionInsegura.Rows.RemoveAt(e.RowIndex); // Eliminar la fila
+                }
+            }
+        }
+
+        private void dgvTestigos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 3) // Asegurar que es la columna 3 (índice 2)
+            {
+                // Confirmar antes de eliminar
+                var result = RJMessageBox.Show("¿Seguro que quieres eliminar a este testigo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    dgvTestigos.Rows.RemoveAt(e.RowIndex); // Eliminar la fila
+                }
+            }
+        }
+
+        private void dgvEmpleadosInvolucrados_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 3) 
+            {
+                var result = RJMessageBox.Show("¿Seguro que quieres eliminar a este colaborador involucrado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    dgvEmpleadosInvolucrados.Rows.RemoveAt(e.RowIndex); 
+                }
+            }
+        }
+
+        private void dgvEmpleadosConocimiento_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex == 3) // Asegurar que es la columna 3 (índice 2)
+            {
+                // Confirmar antes de eliminar
+                var result = RJMessageBox.Show("¿Seguro que quieres eliminar a este colaborador que tomo conocimiento del suceso?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    dgvEmpleadosConocimiento.Rows.RemoveAt(e.RowIndex); // Eliminar la fila
+                }
             }
         }
     }

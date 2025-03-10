@@ -35,10 +35,10 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.pRight = new System.Windows.Forms.Panel();
             this.pImagen = new System.Windows.Forms.Panel();
+            this.lblImagen = new System.Windows.Forms.Label();
             this.pbCrut = new System.Windows.Forms.PictureBox();
             this.pbErr = new System.Windows.Forms.PictureBox();
             this.pbSuc = new System.Windows.Forms.PictureBox();
-            this.lblImagen = new System.Windows.Forms.Label();
             this.pPrincipal.SuspendLayout();
             this.pImagen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCrut)).BeginInit();
@@ -106,13 +106,25 @@
             // 
             this.pImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
             this.pImagen.Controls.Add(this.lblImagen);
+            this.pImagen.Controls.Add(this.pbSuc);
             this.pImagen.Controls.Add(this.pbCrut);
             this.pImagen.Controls.Add(this.pbErr);
-            this.pImagen.Controls.Add(this.pbSuc);
             this.pImagen.Location = new System.Drawing.Point(1, 27);
             this.pImagen.Name = "pImagen";
             this.pImagen.Size = new System.Drawing.Size(182, 69);
             this.pImagen.TabIndex = 0;
+            // 
+            // lblImagen
+            // 
+            this.lblImagen.AutoSize = true;
+            this.lblImagen.Font = new System.Drawing.Font("Leelawadee UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImagen.Location = new System.Drawing.Point(65, 23);
+            this.lblImagen.Name = "lblImagen";
+            this.lblImagen.Size = new System.Drawing.Size(115, 31);
+            this.lblImagen.TabIndex = 4;
+            this.lblImagen.Text = "Actualizado";
+            this.lblImagen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblImagen.UseCompatibleTextRendering = true;
             // 
             // pbCrut
             // 
@@ -144,18 +156,6 @@
             this.pbSuc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSuc.TabIndex = 5;
             this.pbSuc.TabStop = false;
-            // 
-            // lblImagen
-            // 
-            this.lblImagen.AutoSize = true;
-            this.lblImagen.Font = new System.Drawing.Font("Leelawadee UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagen.Location = new System.Drawing.Point(65, 23);
-            this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(115, 31);
-            this.lblImagen.TabIndex = 4;
-            this.lblImagen.Text = "Actualizado";
-            this.lblImagen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblImagen.UseCompatibleTextRendering = true;
             // 
             // frmNotificacion
             // 

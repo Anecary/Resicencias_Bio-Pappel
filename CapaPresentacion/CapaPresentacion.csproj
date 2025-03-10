@@ -66,6 +66,12 @@
     <Compile Include="BotonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Diseno\frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diseno\frmMessageBox.Designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diseno\frmNotificacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,9 +155,13 @@
     <Compile Include="radioButtonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RJMessageBox.cs" />
     <Compile Include="selectorFechaPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Diseno\frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diseno\frmNotificacion.resx">
       <DependentUpon>frmNotificacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +251,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reloj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
