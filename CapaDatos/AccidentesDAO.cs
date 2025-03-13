@@ -1,7 +1,9 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -105,7 +107,8 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex.ToString());
+                Console.WriteLine("JAJAJAJAJJAJAJAJAJAJAJJAJAJAJAJAJJA");
+                Console.WriteLine(ex.ToString());
                 return -1;
             }
             finally
@@ -347,6 +350,37 @@ namespace CapaDatos
                 adapter.Fill(data, "InvestigacionAccidentePorID");
                 return data;
             }
+        }
+
+        /*---+++++AREA DE REPORTES+++++----*/
+        public DataTable ObtenerReporteAccidentes()
+        {
+            DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
+
+            using (MySqlConnection conn = objConexion.Conecta()) // Conectar a la BD
+            {
+                using (MySqlCommand cmd = new MySqlCommand("AccidentesPorAño", conn)) // Llamar al procedimiento almacenado correcto
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    try
+                    {
+                        conn.Open();
+
+                        // Ejecutar y llenar el DataTable
+                        using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        
+                    }
+                }
+            }
+
+            return dt; // Retornar el DataTable con los datos
         }
     }
 }

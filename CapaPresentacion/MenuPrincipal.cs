@@ -289,5 +289,10 @@ namespace CapaPresentacion
         }
     }
 
-}
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            Ejemplo_ ejemplo_ = new Ejemplo_();
+            ejemplo_.Show();
+        }
+    }
 }

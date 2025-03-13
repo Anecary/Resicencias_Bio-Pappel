@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Accidentes_Por_Año" targetNamespace="http://tempuri.org/Accidentes_Por_Año.xsd" xmlns:mstns="http://tempuri.org/Accidentes_Por_Año.xsd" xmlns="http://tempuri.org/Accidentes_Por_Año.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Accidentes_Por_Año" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="Accidentes_Por_Año" msprop:Generator_DataSetName="Accidentes_Por_Año">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReporteAccidentesPorAño" msprop:Generator_RowEvHandlerName="ReporteAccidentesPorAñoRowChangeEventHandler" msprop:Generator_RowDeletedName="ReporteAccidentesPorAñoRowDeleted" msprop:Generator_RowDeletingName="ReporteAccidentesPorAñoRowDeleting" msprop:Generator_RowEvArgName="ReporteAccidentesPorAñoRowChangeEvent" msprop:Generator_TablePropName="ReporteAccidentesPorAño" msprop:Generator_RowChangedName="ReporteAccidentesPorAñoRowChanged" msprop:Generator_RowChangingName="ReporteAccidentesPorAñoRowChanging" msprop:Generator_TableClassName="ReporteAccidentesPorAñoDataTable" msprop:Generator_RowClassName="ReporteAccidentesPorAñoRow" msprop:Generator_TableVarName="tableReporteAccidentesPorAño" msprop:Generator_UserTableName="ReporteAccidentesPorAño">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Año" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_ColumnVarNameInTable="columnAño" msprop:Generator_UserColumnName="Año" type="xs:string" minOccurs="0" />
+              <xs:element name="Ene" msprop:Generator_ColumnPropNameInRow="Ene" msprop:Generator_ColumnPropNameInTable="EneColumn" msprop:Generator_ColumnVarNameInTable="columnEne" msprop:Generator_UserColumnName="Ene" type="xs:string" minOccurs="0" />
+              <xs:element name="Feb" msprop:Generator_ColumnPropNameInRow="Feb" msprop:Generator_ColumnPropNameInTable="FebColumn" msprop:Generator_ColumnVarNameInTable="columnFeb" msprop:Generator_UserColumnName="Feb" type="xs:string" minOccurs="0" />
+              <xs:element name="Mar" msprop:Generator_ColumnPropNameInRow="Mar" msprop:Generator_ColumnPropNameInTable="MarColumn" msprop:Generator_ColumnVarNameInTable="columnMar" msprop:Generator_UserColumnName="Mar" type="xs:string" minOccurs="0" />
+              <xs:element name="Abr" msprop:Generator_ColumnPropNameInRow="Abr" msprop:Generator_ColumnPropNameInTable="AbrColumn" msprop:Generator_ColumnVarNameInTable="columnAbr" msprop:Generator_UserColumnName="Abr" type="xs:string" minOccurs="0" />
+              <xs:element name="May" msprop:Generator_ColumnPropNameInRow="May" msprop:Generator_ColumnPropNameInTable="MayColumn" msprop:Generator_ColumnVarNameInTable="columnMay" msprop:Generator_UserColumnName="May" type="xs:string" minOccurs="0" />
+              <xs:element name="Jun" msprop:Generator_ColumnPropNameInRow="Jun" msprop:Generator_ColumnPropNameInTable="JunColumn" msprop:Generator_ColumnVarNameInTable="columnJun" msprop:Generator_UserColumnName="Jun" type="xs:string" minOccurs="0" />
+              <xs:element name="Jul" msprop:Generator_ColumnPropNameInRow="Jul" msprop:Generator_ColumnPropNameInTable="JulColumn" msprop:Generator_ColumnVarNameInTable="columnJul" msprop:Generator_UserColumnName="Jul" type="xs:string" minOccurs="0" />
+              <xs:element name="Ago" msprop:Generator_ColumnPropNameInRow="Ago" msprop:Generator_ColumnPropNameInTable="AgoColumn" msprop:Generator_ColumnVarNameInTable="columnAgo" msprop:Generator_UserColumnName="Ago" type="xs:string" minOccurs="0" />
+              <xs:element name="Sep" msprop:Generator_ColumnPropNameInRow="Sep" msprop:Generator_ColumnPropNameInTable="SepColumn" msprop:Generator_ColumnVarNameInTable="columnSep" msprop:Generator_UserColumnName="Sep" type="xs:string" minOccurs="0" />
+              <xs:element name="Oct" msprop:Generator_ColumnPropNameInRow="Oct" msprop:Generator_ColumnPropNameInTable="OctColumn" msprop:Generator_ColumnVarNameInTable="columnOct" msprop:Generator_UserColumnName="Oct" type="xs:string" minOccurs="0" />
+              <xs:element name="Nov" msprop:Generator_ColumnPropNameInRow="Nov" msprop:Generator_ColumnPropNameInTable="NovColumn" msprop:Generator_ColumnVarNameInTable="columnNov" msprop:Generator_UserColumnName="Nov" type="xs:string" minOccurs="0" />
+              <xs:element name="Dic" msprop:Generator_ColumnPropNameInRow="Dic" msprop:Generator_ColumnPropNameInTable="DicColumn" msprop:Generator_ColumnVarNameInTable="columnDic" msprop:Generator_UserColumnName="Dic" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_UserColumnName="TOTAL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

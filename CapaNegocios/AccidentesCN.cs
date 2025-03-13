@@ -95,5 +95,15 @@ namespace CapaNegocios
         {
             return accidentesDAO.consultarInvAccidentePorID (idAccidente);
         }
+
+        public DataTable ObtenerReporteAccidentesBLL()
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes();
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
     }
 }
