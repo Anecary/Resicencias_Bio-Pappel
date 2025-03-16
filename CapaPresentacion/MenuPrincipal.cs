@@ -291,8 +291,13 @@ namespace CapaPresentacion
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            Ejemplo_ ejemplo_ = new Ejemplo_();
-            ejemplo_.Show();
+            showSubMenu(pSubmenuReportes);
+        }
+
+        private void btnReportesInvAccidentes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Reportes.frmReportes_Investigacion_Accidente());
+            hideSubMenu();
         }
     }
 }

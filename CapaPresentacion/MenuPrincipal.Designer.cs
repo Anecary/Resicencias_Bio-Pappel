@@ -33,15 +33,8 @@ namespace CapaPresentacion
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.pMenu = new System.Windows.Forms.Panel();
             this.pSubmenuReportes = new System.Windows.Forms.Panel();
+            this.btnReportesInvAccidentes = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
-            this.pSubmenuEmpleados = new System.Windows.Forms.Panel();
-            this.btnSecciones = new System.Windows.Forms.Button();
-            this.btnPuestos = new System.Windows.Forms.Button();
-            this.btnActualizarEmpleado = new System.Windows.Forms.Button();
-            this.btnConsultarEmpleados = new System.Windows.Forms.Button();
-            this.btnAltaEmpleados = new System.Windows.Forms.Button();
-            this.btnNuevoEmpleado = new System.Windows.Forms.Button();
-            this.btnEmpleados = new System.Windows.Forms.Button();
             this.pSubmenuCumplimientoLegal = new System.Windows.Forms.Panel();
             this.btnCumpliminetoLegal = new System.Windows.Forms.Button();
             this.pSubmenuNotaMedica = new System.Windows.Forms.Panel();
@@ -54,6 +47,14 @@ namespace CapaPresentacion
             this.btnConsultarAccidentes = new System.Windows.Forms.Button();
             this.btnNewAccidente = new System.Windows.Forms.Button();
             this.btnInvAccidente = new System.Windows.Forms.Button();
+            this.pSubmenuEmpleados = new System.Windows.Forms.Panel();
+            this.btnSecciones = new System.Windows.Forms.Button();
+            this.btnPuestos = new System.Windows.Forms.Button();
+            this.btnActualizarEmpleado = new System.Windows.Forms.Button();
+            this.btnConsultarEmpleados = new System.Windows.Forms.Button();
+            this.btnAltaEmpleados = new System.Windows.Forms.Button();
+            this.btnNuevoEmpleado = new System.Windows.Forms.Button();
+            this.btnEmpleados = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pLogo = new System.Windows.Forms.Panel();
             this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
@@ -69,9 +70,10 @@ namespace CapaPresentacion
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pMenu.SuspendLayout();
-            this.pSubmenuEmpleados.SuspendLayout();
+            this.pSubmenuReportes.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
             this.pSubmenuAccidentes.SuspendLayout();
+            this.pSubmenuEmpleados.SuspendLayout();
             this.pLogo.SuspendLayout();
             this.psuperior.SuspendLayout();
             this.pContenedor.SuspendLayout();
@@ -85,8 +87,6 @@ namespace CapaPresentacion
             this.pMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
             this.pMenu.Controls.Add(this.pSubmenuReportes);
             this.pMenu.Controls.Add(this.btnReportes);
-            this.pMenu.Controls.Add(this.pSubmenuEmpleados);
-            this.pMenu.Controls.Add(this.btnEmpleados);
             this.pMenu.Controls.Add(this.pSubmenuCumplimientoLegal);
             this.pMenu.Controls.Add(this.btnCumpliminetoLegal);
             this.pMenu.Controls.Add(this.pSubmenuNotaMedica);
@@ -95,6 +95,8 @@ namespace CapaPresentacion
             this.pMenu.Controls.Add(this.btnExpediente);
             this.pMenu.Controls.Add(this.pSubmenuAccidentes);
             this.pMenu.Controls.Add(this.btnInvAccidente);
+            this.pMenu.Controls.Add(this.pSubmenuEmpleados);
+            this.pMenu.Controls.Add(this.btnEmpleados);
             this.pMenu.Controls.Add(this.btnHome);
             this.pMenu.Controls.Add(this.pLogo);
             this.pMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -106,12 +108,33 @@ namespace CapaPresentacion
             // pSubmenuReportes
             // 
             this.pSubmenuReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuReportes.Controls.Add(this.btnReportesInvAccidentes);
             this.pSubmenuReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 876);
+            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 872);
             this.pSubmenuReportes.Name = "pSubmenuReportes";
-            this.pSubmenuReportes.Size = new System.Drawing.Size(233, 35);
+            this.pSubmenuReportes.Size = new System.Drawing.Size(233, 100);
             this.pSubmenuReportes.TabIndex = 15;
             this.pSubmenuReportes.Visible = false;
+            // 
+            // btnReportesInvAccidentes
+            // 
+            this.btnReportesInvAccidentes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportesInvAccidentes.FlatAppearance.BorderSize = 0;
+            this.btnReportesInvAccidentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportesInvAccidentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportesInvAccidentes.ForeColor = System.Drawing.Color.White;
+            this.btnReportesInvAccidentes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportesInvAccidentes.Image")));
+            this.btnReportesInvAccidentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportesInvAccidentes.Location = new System.Drawing.Point(0, 0);
+            this.btnReportesInvAccidentes.Name = "btnReportesInvAccidentes";
+            this.btnReportesInvAccidentes.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnReportesInvAccidentes.Size = new System.Drawing.Size(233, 35);
+            this.btnReportesInvAccidentes.TabIndex = 2;
+            this.btnReportesInvAccidentes.Text = " Reporte Accidentes";
+            this.btnReportesInvAccidentes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportesInvAccidentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReportesInvAccidentes.UseVisualStyleBackColor = true;
+            this.btnReportesInvAccidentes.Click += new System.EventHandler(this.btnReportesInvAccidentes_Click);
             // 
             // btnReportes
             // 
@@ -123,7 +146,7 @@ namespace CapaPresentacion
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 826);
+            this.btnReportes.Location = new System.Drawing.Point(0, 822);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnReportes.Size = new System.Drawing.Size(233, 50);
@@ -133,6 +156,228 @@ namespace CapaPresentacion
             this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // pSubmenuCumplimientoLegal
+            // 
+            this.pSubmenuCumplimientoLegal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuCumplimientoLegal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSubmenuCumplimientoLegal.Location = new System.Drawing.Point(0, 787);
+            this.pSubmenuCumplimientoLegal.Name = "pSubmenuCumplimientoLegal";
+            this.pSubmenuCumplimientoLegal.Size = new System.Drawing.Size(233, 35);
+            this.pSubmenuCumplimientoLegal.TabIndex = 11;
+            this.pSubmenuCumplimientoLegal.Visible = false;
+            // 
+            // btnCumpliminetoLegal
+            // 
+            this.btnCumpliminetoLegal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCumpliminetoLegal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCumpliminetoLegal.FlatAppearance.BorderSize = 0;
+            this.btnCumpliminetoLegal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCumpliminetoLegal.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCumpliminetoLegal.ForeColor = System.Drawing.Color.White;
+            this.btnCumpliminetoLegal.Image = ((System.Drawing.Image)(resources.GetObject("btnCumpliminetoLegal.Image")));
+            this.btnCumpliminetoLegal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCumpliminetoLegal.Location = new System.Drawing.Point(0, 737);
+            this.btnCumpliminetoLegal.Name = "btnCumpliminetoLegal";
+            this.btnCumpliminetoLegal.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnCumpliminetoLegal.Size = new System.Drawing.Size(233, 50);
+            this.btnCumpliminetoLegal.TabIndex = 10;
+            this.btnCumpliminetoLegal.Text = "Cumplimiento Legal";
+            this.btnCumpliminetoLegal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCumpliminetoLegal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCumpliminetoLegal.UseVisualStyleBackColor = true;
+            this.btnCumpliminetoLegal.Click += new System.EventHandler(this.btnCumpliminetoLegal_Click);
+            // 
+            // pSubmenuNotaMedica
+            // 
+            this.pSubmenuNotaMedica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuNotaMedica.Controls.Add(this.btnConsultarHistorico);
+            this.pSubmenuNotaMedica.Controls.Add(this.btnNuevaNotaMedica);
+            this.pSubmenuNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSubmenuNotaMedica.Location = new System.Drawing.Point(0, 668);
+            this.pSubmenuNotaMedica.Name = "pSubmenuNotaMedica";
+            this.pSubmenuNotaMedica.Size = new System.Drawing.Size(233, 69);
+            this.pSubmenuNotaMedica.TabIndex = 9;
+            this.pSubmenuNotaMedica.Visible = false;
+            // 
+            // btnConsultarHistorico
+            // 
+            this.btnConsultarHistorico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultarHistorico.FlatAppearance.BorderSize = 0;
+            this.btnConsultarHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultarHistorico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarHistorico.ForeColor = System.Drawing.Color.White;
+            this.btnConsultarHistorico.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultarHistorico.Image")));
+            this.btnConsultarHistorico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarHistorico.Location = new System.Drawing.Point(0, 35);
+            this.btnConsultarHistorico.Name = "btnConsultarHistorico";
+            this.btnConsultarHistorico.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnConsultarHistorico.Size = new System.Drawing.Size(233, 28);
+            this.btnConsultarHistorico.TabIndex = 2;
+            this.btnConsultarHistorico.Text = "Consultar Históricos";
+            this.btnConsultarHistorico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarHistorico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsultarHistorico.UseVisualStyleBackColor = true;
+            this.btnConsultarHistorico.Click += new System.EventHandler(this.btnConsultarHistorico_Click);
+            this.btnConsultarHistorico.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
+            this.btnConsultarHistorico.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.btnConsultarHistorico.MouseHover += new System.EventHandler(this.button_MouseOver);
+            // 
+            // btnNuevaNotaMedica
+            // 
+            this.btnNuevaNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNuevaNotaMedica.FlatAppearance.BorderSize = 0;
+            this.btnNuevaNotaMedica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevaNotaMedica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevaNotaMedica.ForeColor = System.Drawing.Color.White;
+            this.btnNuevaNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevaNotaMedica.Image")));
+            this.btnNuevaNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevaNotaMedica.Location = new System.Drawing.Point(0, 0);
+            this.btnNuevaNotaMedica.Name = "btnNuevaNotaMedica";
+            this.btnNuevaNotaMedica.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnNuevaNotaMedica.Size = new System.Drawing.Size(233, 35);
+            this.btnNuevaNotaMedica.TabIndex = 1;
+            this.btnNuevaNotaMedica.Text = " Nueva Nota Médica";
+            this.btnNuevaNotaMedica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevaNotaMedica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNuevaNotaMedica.UseVisualStyleBackColor = true;
+            this.btnNuevaNotaMedica.Click += new System.EventHandler(this.btnNuevaNotaMedica_Click);
+            this.btnNuevaNotaMedica.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
+            this.btnNuevaNotaMedica.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.btnNuevaNotaMedica.MouseHover += new System.EventHandler(this.button_MouseOver);
+            // 
+            // btnNotaMedica
+            // 
+            this.btnNotaMedica.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNotaMedica.FlatAppearance.BorderSize = 0;
+            this.btnNotaMedica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotaMedica.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotaMedica.ForeColor = System.Drawing.Color.White;
+            this.btnNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNotaMedica.Image")));
+            this.btnNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotaMedica.Location = new System.Drawing.Point(0, 618);
+            this.btnNotaMedica.Name = "btnNotaMedica";
+            this.btnNotaMedica.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnNotaMedica.Size = new System.Drawing.Size(233, 50);
+            this.btnNotaMedica.TabIndex = 8;
+            this.btnNotaMedica.Text = " Nota Médica";
+            this.btnNotaMedica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotaMedica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNotaMedica.UseVisualStyleBackColor = true;
+            this.btnNotaMedica.Click += new System.EventHandler(this.btnNotaMedica_Click);
+            // 
+            // pSubmenuExpediente
+            // 
+            this.pSubmenuExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuExpediente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSubmenuExpediente.Location = new System.Drawing.Point(0, 589);
+            this.pSubmenuExpediente.Name = "pSubmenuExpediente";
+            this.pSubmenuExpediente.Size = new System.Drawing.Size(233, 29);
+            this.pSubmenuExpediente.TabIndex = 7;
+            this.pSubmenuExpediente.Visible = false;
+            // 
+            // btnExpediente
+            // 
+            this.btnExpediente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExpediente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExpediente.FlatAppearance.BorderSize = 0;
+            this.btnExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpediente.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpediente.ForeColor = System.Drawing.Color.White;
+            this.btnExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnExpediente.Image")));
+            this.btnExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExpediente.Location = new System.Drawing.Point(0, 539);
+            this.btnExpediente.Name = "btnExpediente";
+            this.btnExpediente.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnExpediente.Size = new System.Drawing.Size(233, 50);
+            this.btnExpediente.TabIndex = 6;
+            this.btnExpediente.Text = " Expediente";
+            this.btnExpediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExpediente.UseVisualStyleBackColor = true;
+            this.btnExpediente.Click += new System.EventHandler(this.btnExpediente_Click);
+            // 
+            // pSubmenuAccidentes
+            // 
+            this.pSubmenuAccidentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuAccidentes.Controls.Add(this.btnConsultarAccidentes);
+            this.pSubmenuAccidentes.Controls.Add(this.btnNewAccidente);
+            this.pSubmenuAccidentes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSubmenuAccidentes.Location = new System.Drawing.Point(0, 466);
+            this.pSubmenuAccidentes.Name = "pSubmenuAccidentes";
+            this.pSubmenuAccidentes.Size = new System.Drawing.Size(233, 73);
+            this.pSubmenuAccidentes.TabIndex = 5;
+            this.pSubmenuAccidentes.Visible = false;
+            // 
+            // btnConsultarAccidentes
+            // 
+            this.btnConsultarAccidentes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsultarAccidentes.FlatAppearance.BorderSize = 0;
+            this.btnConsultarAccidentes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
+            this.btnConsultarAccidentes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
+            this.btnConsultarAccidentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultarAccidentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarAccidentes.ForeColor = System.Drawing.Color.White;
+            this.btnConsultarAccidentes.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultarAccidentes.Image")));
+            this.btnConsultarAccidentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarAccidentes.Location = new System.Drawing.Point(0, 35);
+            this.btnConsultarAccidentes.Name = "btnConsultarAccidentes";
+            this.btnConsultarAccidentes.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnConsultarAccidentes.Size = new System.Drawing.Size(233, 32);
+            this.btnConsultarAccidentes.TabIndex = 1;
+            this.btnConsultarAccidentes.Text = " Consultar Accidentes";
+            this.btnConsultarAccidentes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultarAccidentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsultarAccidentes.UseVisualStyleBackColor = true;
+            this.btnConsultarAccidentes.Click += new System.EventHandler(this.btnConsultarAccidentes_Click);
+            this.btnConsultarAccidentes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
+            this.btnConsultarAccidentes.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.btnConsultarAccidentes.MouseHover += new System.EventHandler(this.button_MouseOver);
+            // 
+            // btnNewAccidente
+            // 
+            this.btnNewAccidente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNewAccidente.FlatAppearance.BorderSize = 0;
+            this.btnNewAccidente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewAccidente.ForeColor = System.Drawing.Color.White;
+            this.btnNewAccidente.Image = ((System.Drawing.Image)(resources.GetObject("btnNewAccidente.Image")));
+            this.btnNewAccidente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewAccidente.Location = new System.Drawing.Point(0, 0);
+            this.btnNewAccidente.Name = "btnNewAccidente";
+            this.btnNewAccidente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnNewAccidente.Size = new System.Drawing.Size(233, 35);
+            this.btnNewAccidente.TabIndex = 0;
+            this.btnNewAccidente.Text = " Nuevo Accidente";
+            this.btnNewAccidente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewAccidente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNewAccidente.UseVisualStyleBackColor = true;
+            this.btnNewAccidente.Click += new System.EventHandler(this.btnNewAccidente_Click);
+            this.btnNewAccidente.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
+            this.btnNewAccidente.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.btnNewAccidente.MouseHover += new System.EventHandler(this.button_MouseOver);
+            // 
+            // btnInvAccidente
+            // 
+            this.btnInvAccidente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInvAccidente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInvAccidente.FlatAppearance.BorderSize = 0;
+            this.btnInvAccidente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInvAccidente.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInvAccidente.ForeColor = System.Drawing.Color.White;
+            this.btnInvAccidente.Image = ((System.Drawing.Image)(resources.GetObject("btnInvAccidente.Image")));
+            this.btnInvAccidente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInvAccidente.Location = new System.Drawing.Point(0, 416);
+            this.btnInvAccidente.Name = "btnInvAccidente";
+            this.btnInvAccidente.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnInvAccidente.Size = new System.Drawing.Size(233, 50);
+            this.btnInvAccidente.TabIndex = 4;
+            this.btnInvAccidente.Text = " Accidente";
+            this.btnInvAccidente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInvAccidente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInvAccidente.UseVisualStyleBackColor = true;
+            this.btnInvAccidente.Click += new System.EventHandler(this.btnInvAccidente_Click);
             // 
             // pSubmenuEmpleados
             // 
@@ -144,7 +389,7 @@ namespace CapaPresentacion
             this.pSubmenuEmpleados.Controls.Add(this.btnAltaEmpleados);
             this.pSubmenuEmpleados.Controls.Add(this.btnNuevoEmpleado);
             this.pSubmenuEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuEmpleados.Location = new System.Drawing.Point(0, 606);
+            this.pSubmenuEmpleados.Location = new System.Drawing.Point(0, 196);
             this.pSubmenuEmpleados.Name = "pSubmenuEmpleados";
             this.pSubmenuEmpleados.Size = new System.Drawing.Size(233, 220);
             this.pSubmenuEmpleados.TabIndex = 13;
@@ -298,7 +543,7 @@ namespace CapaPresentacion
             this.btnEmpleados.ForeColor = System.Drawing.Color.White;
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 556);
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 146);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnEmpleados.Size = new System.Drawing.Size(233, 50);
@@ -308,228 +553,6 @@ namespace CapaPresentacion
             this.btnEmpleados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEmpleados.UseVisualStyleBackColor = true;
             this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
-            // 
-            // pSubmenuCumplimientoLegal
-            // 
-            this.pSubmenuCumplimientoLegal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
-            this.pSubmenuCumplimientoLegal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuCumplimientoLegal.Location = new System.Drawing.Point(0, 521);
-            this.pSubmenuCumplimientoLegal.Name = "pSubmenuCumplimientoLegal";
-            this.pSubmenuCumplimientoLegal.Size = new System.Drawing.Size(233, 35);
-            this.pSubmenuCumplimientoLegal.TabIndex = 11;
-            this.pSubmenuCumplimientoLegal.Visible = false;
-            // 
-            // btnCumpliminetoLegal
-            // 
-            this.btnCumpliminetoLegal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCumpliminetoLegal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCumpliminetoLegal.FlatAppearance.BorderSize = 0;
-            this.btnCumpliminetoLegal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCumpliminetoLegal.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCumpliminetoLegal.ForeColor = System.Drawing.Color.White;
-            this.btnCumpliminetoLegal.Image = ((System.Drawing.Image)(resources.GetObject("btnCumpliminetoLegal.Image")));
-            this.btnCumpliminetoLegal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCumpliminetoLegal.Location = new System.Drawing.Point(0, 471);
-            this.btnCumpliminetoLegal.Name = "btnCumpliminetoLegal";
-            this.btnCumpliminetoLegal.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnCumpliminetoLegal.Size = new System.Drawing.Size(233, 50);
-            this.btnCumpliminetoLegal.TabIndex = 10;
-            this.btnCumpliminetoLegal.Text = "Cumplimiento Legal";
-            this.btnCumpliminetoLegal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCumpliminetoLegal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCumpliminetoLegal.UseVisualStyleBackColor = true;
-            this.btnCumpliminetoLegal.Click += new System.EventHandler(this.btnCumpliminetoLegal_Click);
-            // 
-            // pSubmenuNotaMedica
-            // 
-            this.pSubmenuNotaMedica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
-            this.pSubmenuNotaMedica.Controls.Add(this.btnConsultarHistorico);
-            this.pSubmenuNotaMedica.Controls.Add(this.btnNuevaNotaMedica);
-            this.pSubmenuNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuNotaMedica.Location = new System.Drawing.Point(0, 402);
-            this.pSubmenuNotaMedica.Name = "pSubmenuNotaMedica";
-            this.pSubmenuNotaMedica.Size = new System.Drawing.Size(233, 69);
-            this.pSubmenuNotaMedica.TabIndex = 9;
-            this.pSubmenuNotaMedica.Visible = false;
-            // 
-            // btnConsultarHistorico
-            // 
-            this.btnConsultarHistorico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultarHistorico.FlatAppearance.BorderSize = 0;
-            this.btnConsultarHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultarHistorico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarHistorico.ForeColor = System.Drawing.Color.White;
-            this.btnConsultarHistorico.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultarHistorico.Image")));
-            this.btnConsultarHistorico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultarHistorico.Location = new System.Drawing.Point(0, 35);
-            this.btnConsultarHistorico.Name = "btnConsultarHistorico";
-            this.btnConsultarHistorico.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnConsultarHistorico.Size = new System.Drawing.Size(233, 35);
-            this.btnConsultarHistorico.TabIndex = 2;
-            this.btnConsultarHistorico.Text = "Consultar Históricos";
-            this.btnConsultarHistorico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultarHistorico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnConsultarHistorico.UseVisualStyleBackColor = true;
-            this.btnConsultarHistorico.Click += new System.EventHandler(this.btnConsultarHistorico_Click);
-            this.btnConsultarHistorico.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
-            this.btnConsultarHistorico.MouseLeave += new System.EventHandler(this.button_MouseLeave);
-            this.btnConsultarHistorico.MouseHover += new System.EventHandler(this.button_MouseOver);
-            // 
-            // btnNuevaNotaMedica
-            // 
-            this.btnNuevaNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNuevaNotaMedica.FlatAppearance.BorderSize = 0;
-            this.btnNuevaNotaMedica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevaNotaMedica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevaNotaMedica.ForeColor = System.Drawing.Color.White;
-            this.btnNuevaNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevaNotaMedica.Image")));
-            this.btnNuevaNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevaNotaMedica.Location = new System.Drawing.Point(0, 0);
-            this.btnNuevaNotaMedica.Name = "btnNuevaNotaMedica";
-            this.btnNuevaNotaMedica.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnNuevaNotaMedica.Size = new System.Drawing.Size(233, 35);
-            this.btnNuevaNotaMedica.TabIndex = 1;
-            this.btnNuevaNotaMedica.Text = " Nueva Nota Médica";
-            this.btnNuevaNotaMedica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevaNotaMedica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNuevaNotaMedica.UseVisualStyleBackColor = true;
-            this.btnNuevaNotaMedica.Click += new System.EventHandler(this.btnNuevaNotaMedica_Click);
-            this.btnNuevaNotaMedica.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
-            this.btnNuevaNotaMedica.MouseLeave += new System.EventHandler(this.button_MouseLeave);
-            this.btnNuevaNotaMedica.MouseHover += new System.EventHandler(this.button_MouseOver);
-            // 
-            // btnNotaMedica
-            // 
-            this.btnNotaMedica.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNotaMedica.FlatAppearance.BorderSize = 0;
-            this.btnNotaMedica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotaMedica.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNotaMedica.ForeColor = System.Drawing.Color.White;
-            this.btnNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNotaMedica.Image")));
-            this.btnNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotaMedica.Location = new System.Drawing.Point(0, 352);
-            this.btnNotaMedica.Name = "btnNotaMedica";
-            this.btnNotaMedica.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnNotaMedica.Size = new System.Drawing.Size(233, 50);
-            this.btnNotaMedica.TabIndex = 8;
-            this.btnNotaMedica.Text = " Nota Médica";
-            this.btnNotaMedica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotaMedica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNotaMedica.UseVisualStyleBackColor = true;
-            this.btnNotaMedica.Click += new System.EventHandler(this.btnNotaMedica_Click);
-            // 
-            // pSubmenuExpediente
-            // 
-            this.pSubmenuExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
-            this.pSubmenuExpediente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuExpediente.Location = new System.Drawing.Point(0, 323);
-            this.pSubmenuExpediente.Name = "pSubmenuExpediente";
-            this.pSubmenuExpediente.Size = new System.Drawing.Size(233, 29);
-            this.pSubmenuExpediente.TabIndex = 7;
-            this.pSubmenuExpediente.Visible = false;
-            // 
-            // btnExpediente
-            // 
-            this.btnExpediente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExpediente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExpediente.FlatAppearance.BorderSize = 0;
-            this.btnExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpediente.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpediente.ForeColor = System.Drawing.Color.White;
-            this.btnExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnExpediente.Image")));
-            this.btnExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpediente.Location = new System.Drawing.Point(0, 273);
-            this.btnExpediente.Name = "btnExpediente";
-            this.btnExpediente.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnExpediente.Size = new System.Drawing.Size(233, 50);
-            this.btnExpediente.TabIndex = 6;
-            this.btnExpediente.Text = " Expediente";
-            this.btnExpediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExpediente.UseVisualStyleBackColor = true;
-            this.btnExpediente.Click += new System.EventHandler(this.btnExpediente_Click);
-            // 
-            // pSubmenuAccidentes
-            // 
-            this.pSubmenuAccidentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
-            this.pSubmenuAccidentes.Controls.Add(this.btnConsultarAccidentes);
-            this.pSubmenuAccidentes.Controls.Add(this.btnNewAccidente);
-            this.pSubmenuAccidentes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuAccidentes.Location = new System.Drawing.Point(0, 200);
-            this.pSubmenuAccidentes.Name = "pSubmenuAccidentes";
-            this.pSubmenuAccidentes.Size = new System.Drawing.Size(233, 73);
-            this.pSubmenuAccidentes.TabIndex = 5;
-            this.pSubmenuAccidentes.Visible = false;
-            // 
-            // btnConsultarAccidentes
-            // 
-            this.btnConsultarAccidentes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultarAccidentes.FlatAppearance.BorderSize = 0;
-            this.btnConsultarAccidentes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
-            this.btnConsultarAccidentes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
-            this.btnConsultarAccidentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultarAccidentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarAccidentes.ForeColor = System.Drawing.Color.White;
-            this.btnConsultarAccidentes.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultarAccidentes.Image")));
-            this.btnConsultarAccidentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultarAccidentes.Location = new System.Drawing.Point(0, 35);
-            this.btnConsultarAccidentes.Name = "btnConsultarAccidentes";
-            this.btnConsultarAccidentes.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnConsultarAccidentes.Size = new System.Drawing.Size(233, 35);
-            this.btnConsultarAccidentes.TabIndex = 1;
-            this.btnConsultarAccidentes.Text = " Consultar Accidentes";
-            this.btnConsultarAccidentes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultarAccidentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnConsultarAccidentes.UseVisualStyleBackColor = true;
-            this.btnConsultarAccidentes.Click += new System.EventHandler(this.btnConsultarAccidentes_Click);
-            this.btnConsultarAccidentes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
-            this.btnConsultarAccidentes.MouseLeave += new System.EventHandler(this.button_MouseLeave);
-            this.btnConsultarAccidentes.MouseHover += new System.EventHandler(this.button_MouseOver);
-            // 
-            // btnNewAccidente
-            // 
-            this.btnNewAccidente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNewAccidente.FlatAppearance.BorderSize = 0;
-            this.btnNewAccidente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewAccidente.ForeColor = System.Drawing.Color.White;
-            this.btnNewAccidente.Image = ((System.Drawing.Image)(resources.GetObject("btnNewAccidente.Image")));
-            this.btnNewAccidente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewAccidente.Location = new System.Drawing.Point(0, 0);
-            this.btnNewAccidente.Name = "btnNewAccidente";
-            this.btnNewAccidente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnNewAccidente.Size = new System.Drawing.Size(233, 35);
-            this.btnNewAccidente.TabIndex = 0;
-            this.btnNewAccidente.Text = " Nuevo Accidente";
-            this.btnNewAccidente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewAccidente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNewAccidente.UseVisualStyleBackColor = true;
-            this.btnNewAccidente.Click += new System.EventHandler(this.btnNewAccidente_Click);
-            this.btnNewAccidente.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button_MouseDown);
-            this.btnNewAccidente.MouseLeave += new System.EventHandler(this.button_MouseLeave);
-            this.btnNewAccidente.MouseHover += new System.EventHandler(this.button_MouseOver);
-            // 
-            // btnInvAccidente
-            // 
-            this.btnInvAccidente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInvAccidente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInvAccidente.FlatAppearance.BorderSize = 0;
-            this.btnInvAccidente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInvAccidente.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInvAccidente.ForeColor = System.Drawing.Color.White;
-            this.btnInvAccidente.Image = ((System.Drawing.Image)(resources.GetObject("btnInvAccidente.Image")));
-            this.btnInvAccidente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvAccidente.Location = new System.Drawing.Point(0, 150);
-            this.btnInvAccidente.Name = "btnInvAccidente";
-            this.btnInvAccidente.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnInvAccidente.Size = new System.Drawing.Size(233, 50);
-            this.btnInvAccidente.TabIndex = 4;
-            this.btnInvAccidente.Text = " Accidente";
-            this.btnInvAccidente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInvAccidente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnInvAccidente.UseVisualStyleBackColor = true;
-            this.btnInvAccidente.Click += new System.EventHandler(this.btnInvAccidente_Click);
             // 
             // btnHome
             // 
@@ -541,7 +564,7 @@ namespace CapaPresentacion
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 100);
+            this.btnHome.Location = new System.Drawing.Point(0, 96);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnHome.Size = new System.Drawing.Size(233, 50);
@@ -559,20 +582,20 @@ namespace CapaPresentacion
             this.pLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pLogo.Location = new System.Drawing.Point(0, 0);
             this.pLogo.Name = "pLogo";
-            this.pLogo.Size = new System.Drawing.Size(233, 100);
+            this.pLogo.Size = new System.Drawing.Size(233, 96);
             this.pLogo.TabIndex = 0;
             this.pLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pLogo_MouseDown);
             // 
             // botonPersonalizado1
             // 
-            this.botonPersonalizado1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
+            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
             this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
-            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(181)))), ((int)(((byte)(253)))));
+            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
             this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
-            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 34);
+            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 19);
             this.botonPersonalizado1.Name = "botonPersonalizado1";
             this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
             this.botonPersonalizado1.TabIndex = 2;
@@ -738,9 +761,10 @@ namespace CapaPresentacion
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmMenu_MouseDown);
             this.pMenu.ResumeLayout(false);
-            this.pSubmenuEmpleados.ResumeLayout(false);
+            this.pSubmenuReportes.ResumeLayout(false);
             this.pSubmenuNotaMedica.ResumeLayout(false);
             this.pSubmenuAccidentes.ResumeLayout(false);
+            this.pSubmenuEmpleados.ResumeLayout(false);
             this.pLogo.ResumeLayout(false);
             this.psuperior.ResumeLayout(false);
             this.psuperior.PerformLayout();
@@ -754,7 +778,6 @@ namespace CapaPresentacion
         #endregion
 
         private System.Windows.Forms.Panel pMenu;
-        private System.Windows.Forms.Panel pLogo;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel pSubmenuNotaMedica;
         private System.Windows.Forms.Button btnNotaMedica;
@@ -783,13 +806,15 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnActualizarEmpleado;
-        private BotonPersonalizado botonPersonalizado1;
         private System.Windows.Forms.Panel pInicio;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnRestaurar;
         private System.Windows.Forms.Button btnMaximizar;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pLogo;
+        private BotonPersonalizado botonPersonalizado1;
+        private System.Windows.Forms.Button btnReportesInvAccidentes;
     }
 }
 

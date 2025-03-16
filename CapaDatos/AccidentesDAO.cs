@@ -19,12 +19,12 @@ namespace CapaDatos
         private MySqlDataAdapter adapter;
         private MySqlCommand comando;
 
-        public int InsertarAccidente(int noAccidente, string condicion, DateTime fechaRegistro, Boolean tiempoExtra, string totalHrsExtras, DateTime DiaDescansoPrevio, string parteCuerpoAfectada, string trabajoDesempeñado, string tipoLesion, DateTime fecha_hora_Accidente,
+        public int InsertarAccidente(int noAccidente, string condicion, DateTime fechaRegistro, int idEmpleado, string puesto, string edad, string turno, Boolean tiempoExtra, string totalHrsExtras, DateTime DiaDescansoPrevio, string parteCuerpoAfectada, string trabajoDesempeñado, string tipoLesion, DateTime fecha_hora_Accidente,
            Boolean lesion30Dias, Boolean lesion12Meses, string proceso, int idSeccionA, string lugarAccidente, string causanteLesion, string equipoProteccionUsado, string equipoProteccionNecesario, string causaAccidente, string descripcionAccidente, Boolean realizoTrabajoAntes, Boolean trabajoHabitual, Boolean trabajoProgramado, Boolean trabajoNecesario, Boolean trabajoUrgente, Boolean danosMateriales, string equipoDanado, string sustituiblePor, int idSeccionB,
            Boolean existenITRs, Boolean equipoAdecuado, Boolean conociaTrabajo, Boolean existiaSupervicion, string riesgosJson, string actosInsegurosJson, string condicionesInsegurasJson,
            string empleadosConocimientoJson, string empleadosInvolucradosJson, Boolean continuaTrabajando, Boolean enviadoDomicilio, Boolean enviadoAtencionMedica, string otro, string diagnosticoFinal, string tratamiento, string incapacidad,
            string accionesCorrectivasPropuestas, string quienCorrectivasPropuesta, string cuandoCorrectivasPropuestas, string accionesPreventivasPropuestas,string quienPreventivoPropuesto, string cuandoPreventivasPropuestas,string seguimiento, DateTime fecha_Hora_Seguimiento, int empleadoSeguimiento, DateTime fecha_Hora_recepcion,
-           int idEmpleado, int idPuesto, string testigosJson)
+            string testigosJson)
         {
             try
             {
@@ -36,9 +36,11 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_Condicion", condicion);
                 cmd.Parameters.AddWithValue("@p_FechaRegistro", fechaRegistro);
                 cmd.Parameters.AddWithValue("@p_idEmpleado", idEmpleado);
+                cmd.Parameters.AddWithValue("@p_Puesto", puesto);
+                cmd.Parameters.AddWithValue("@p_Edad", edad);
+                cmd.Parameters.AddWithValue("@p_Turno", turno);
                 cmd.Parameters.AddWithValue("@p_TiempoExtra", tiempoExtra);
                 cmd.Parameters.AddWithValue("@p_TotalHrsExtras", totalHrsExtras);
-                cmd.Parameters.AddWithValue("@p_idPuesto", idPuesto);
                 cmd.Parameters.AddWithValue("@p_DiaDescansoPrevio", DiaDescansoPrevio);
                 cmd.Parameters.AddWithValue("@p_ParteCuerpoAfectada", parteCuerpoAfectada);
                 cmd.Parameters.AddWithValue("@p_TrabajoDesempeñado", trabajoDesempeñado);
@@ -348,6 +350,23 @@ namespace CapaDatos
                 adapter.SelectCommand.Parameters.Add(p_idAccidente);
 
                 adapter.Fill(data, "InvestigacionAccidentePorID");
+                return data;
+            }
+        }
+        public DataSet consultarInvAccidentesAcciones(int idAccidente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerInvestigacionAccidente_AccionesPorID", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idAccidente = new MySqlParameter("@p_idAccidente", MySqlDbType.Int32);
+                p_idAccidente.Direction = ParameterDirection.Input;
+                p_idAccidente.Value = idAccidente;
+                adapter.SelectCommand.Parameters.Add(p_idAccidente);
+
+                adapter.Fill(data, "InvestigacionAccidenteAcciones");
                 return data;
             }
         }

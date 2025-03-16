@@ -187,6 +187,12 @@
     <Compile Include="radioButtonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reportes\frmReportes_Investigacion_Accidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReportes_Investigacion_Accidente.Designer.cs">
+      <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
+    </Compile>
     <Compile Include="RJMessageBox.cs" />
     <Compile Include="selectorFechaPersonalizado.cs">
       <SubType>Component</SubType>
@@ -249,6 +255,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reportes\Accidentes_xAño.rdlc" />
+    <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
+      <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Datas_Sets\Accidentes_Por_Año.xsc">
       <DependentUpon>Accidentes_Por_Año.xsd</DependentUpon>
     </None>

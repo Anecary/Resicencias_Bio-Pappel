@@ -382,7 +382,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
 
         }
-
         private void btnAgregarTestigo_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtIdEmpleadoTestigo.Text) && !string.IsNullOrWhiteSpace(txtNombreTestigo.Text))
@@ -419,7 +418,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
 
         }
-
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             // Validaciones previas antes de convertir a entero
@@ -438,7 +436,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string condicion = txtCondicion.Text;
             DateTime fechaRegistro = dtpFechaRegistro.Value;
             int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
-            int idPuesto = 1;
+
+            string puesto = txtPuesto.Text;
+            string edad = txtEdad.Text;
+            string turno = CboxTurno.Text;
+
             Boolean tiempoExtra = false;
             tiempoExtra = rbtnHrsExtrasSi.Checked ? true : false;
             string totalHrsExtras = txtTotalhrs.Text;
@@ -531,21 +533,22 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 !string.IsNullOrWhiteSpace(txtAccionesCorrectivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
                 )
             {
-                int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
+                int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, idEmpleado, puesto, edad, turno, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
                lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
                existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
                empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
                accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas, seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
-               idEmpleado, idPuesto, testigosJson);
+                testigosJson);
                 if (registro > 0)
                 {
                     MostrarPanel(pDatosGenerales, btnDatosGenerales);
                     var result = RJMessageBox.Show(" El Reporte de Accidente se ha guardado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+
                     // Llamada al método para limpiar todos los controles en el formulario
                     LimpiarControles(this);
                     txtNumeroNomina.Focus();
-                    txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtTurno.Clear();txtEdad.Clear();txtPuesto.Clear(); txtAntiguedad.Clear();
+                    txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear();txtEdad.Clear();txtPuesto.Clear(); txtAntiguedad.Clear();
 
 
                 }

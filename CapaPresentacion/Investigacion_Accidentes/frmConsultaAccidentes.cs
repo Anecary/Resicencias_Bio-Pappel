@@ -41,6 +41,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
             panel7.Paint += new PaintEventHandler(Panel1_Paint);
             panel14.Paint += new PaintEventHandler(Panel1_Paint);
             panel15.Paint += new PaintEventHandler(Panel1_Paint);
+            panel17.Paint += new PaintEventHandler(Panel1_Paint);
+            panel18.Paint += new PaintEventHandler(Panel1_Paint);
+            panel19.Paint += new PaintEventHandler(Panel1_Paint);
+            panel20.Paint += new PaintEventHandler(Panel1_Paint);
             panel26.Paint += new PaintEventHandler(Panel1_Paint);
             panel27.Paint += new PaintEventHandler(Panel1_Paint);
             panel28.Paint += new PaintEventHandler(Panel1_Paint);
@@ -48,6 +52,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             panel31.Paint += new PaintEventHandler(Panel1_Paint);
             panel32.Paint += new PaintEventHandler(Panel1_Paint);
             panel33.Paint += new PaintEventHandler(Panel1_Paint);
+            panel34.Paint += new PaintEventHandler(Panel1_Paint);
 
             pDatosGenerales.Visible = true;
             pDetallesAccidente.Visible = false;
@@ -312,7 +317,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 txtEquipoProteccionUsado.Text = dr["equipo_Proteccion_usado"].ToString();
                 txtEquipoProteccionNecesario.Text = dr["equipo_Proteccion_Necesario"].ToString();
                 txtDescripcionAccidente.Text = dr["descripcion_accidente"].ToString();
-                txtCausaAccidente.Text= dr["causas_basicas_accidente"].ToString();
+                txtCausaAccidente.Text = dr["causas_basicas_accidente"].ToString();
                 if (dr["trabajo_Realizado_Antes"] != DBNull.Value)
                 {
                     rbtnRealizoTrabajoAntesSi.Checked = Convert.ToBoolean(dr["trabajo_Realizado_Antes"]);
@@ -437,11 +442,49 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 txtDiagnosticoFinal.Text = dr["diagnostico_final"].ToString();
                 txtTratamiento.Text = dr["tratamiento"].ToString();
                 txtincapacidad.Text = dr["incapacidad"].ToString();
+                txtFechaRecepcion.Text = Convert.ToDateTime(dr["fecha_Recepcion_Documento"]).ToString("dd/MMMM/yyyy");
 
 
 
 
             }
+            DataTable t2 = accidentesCN.consultarInvAccidentesAcciones(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["InvestigacionAccidenteAcciones"];
+
+            if (t2.Rows.Count > 0)
+            {
+                DataRow dr2 = t2.Rows[0];
+
+                txtAccionesCorrectivas.Text = dr2["acciones_Correctivas_prop"].ToString();
+                txtquienCorrectivas.Text = dr2["quien_accionesC"].ToString();
+                txtCuandoCorrectivas.Text = dr2["cuando_accionesC"].ToString();
+                txtAccionesPreventivas.Text = dr2["acciones_preventivas_prop"].ToString();
+                txtQuienPreventivas.Text = dr2["quien_accionesP"].ToString();
+                txtCuandoPreventivas.Text = dr2["cuando_accionesP"].ToString();
+
+                txtSeguimiento.Text = dr2["seguimiento"].ToString();
+                txtFechaHoraCierreAcciones.Text =Convert.ToDateTime( dr2["fecha_hora_Cierre_Acc_Seg"]).ToString("dd/MMMM/yyyy");
+                txtNombreProcesoSST.Text = dr2["Nombre"].ToString();
+            }
+        }
+
+        private void txtProceso_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSeccionA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnlesion30DiasSi_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnlesion12MesesSi_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
