@@ -9,10 +9,19 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="Accidentes_Por_Año" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="Accidentes_Por_Año" msprop:Generator_DataSetName="Accidentes_Por_Año">
+  <xs:element name="Accidentes_Por_Año" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Accidentes_Por_Año" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Accidentes_Por_Año">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ReporteAccidentesPorAño" msprop:Generator_RowEvHandlerName="ReporteAccidentesPorAñoRowChangeEventHandler" msprop:Generator_RowDeletedName="ReporteAccidentesPorAñoRowDeleted" msprop:Generator_RowDeletingName="ReporteAccidentesPorAñoRowDeleting" msprop:Generator_RowEvArgName="ReporteAccidentesPorAñoRowChangeEvent" msprop:Generator_TablePropName="ReporteAccidentesPorAño" msprop:Generator_RowChangedName="ReporteAccidentesPorAñoRowChanged" msprop:Generator_RowChangingName="ReporteAccidentesPorAñoRowChanging" msprop:Generator_TableClassName="ReporteAccidentesPorAñoDataTable" msprop:Generator_RowClassName="ReporteAccidentesPorAñoRow" msprop:Generator_TableVarName="tableReporteAccidentesPorAño" msprop:Generator_UserTableName="ReporteAccidentesPorAño">
+        <xs:element name="ReporteAccidentesPorAño" msprop:Generator_RowClassName="ReporteAccidentesPorAñoRow" msprop:Generator_RowEvHandlerName="ReporteAccidentesPorAñoRowChangeEventHandler" msprop:Generator_RowDeletedName="ReporteAccidentesPorAñoRowDeleted" msprop:Generator_RowDeletingName="ReporteAccidentesPorAñoRowDeleting" msprop:Generator_RowEvArgName="ReporteAccidentesPorAñoRowChangeEvent" msprop:Generator_TablePropName="ReporteAccidentesPorAño" msprop:Generator_RowChangedName="ReporteAccidentesPorAñoRowChanged" msprop:Generator_UserTableName="ReporteAccidentesPorAño" msprop:Generator_RowChangingName="ReporteAccidentesPorAñoRowChanging" msprop:Generator_TableClassName="ReporteAccidentesPorAñoDataTable" msprop:Generator_TableVarName="tableReporteAccidentesPorAño">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Año" msprop:Generator_UserColumnName="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnVarNameInTable="columnAño" type="xs:string" minOccurs="0" />
+              <xs:element name="Mes" msprop:Generator_UserColumnName="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Accidentes_auxiliar" msprop:Generator_RowEvHandlerName="Accidentes_auxiliarRowChangeEventHandler" msprop:Generator_RowDeletedName="Accidentes_auxiliarRowDeleted" msprop:Generator_RowDeletingName="Accidentes_auxiliarRowDeleting" msprop:Generator_RowEvArgName="Accidentes_auxiliarRowChangeEvent" msprop:Generator_TablePropName="Accidentes_auxiliar" msprop:Generator_RowChangedName="Accidentes_auxiliarRowChanged" msprop:Generator_RowChangingName="Accidentes_auxiliarRowChanging" msprop:Generator_TableClassName="Accidentes_auxiliarDataTable" msprop:Generator_RowClassName="Accidentes_auxiliarRow" msprop:Generator_TableVarName="tableAccidentes_auxiliar" msprop:Generator_UserTableName="Accidentes_auxiliar">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Año" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_ColumnVarNameInTable="columnAño" msprop:Generator_UserColumnName="Año" type="xs:string" minOccurs="0" />

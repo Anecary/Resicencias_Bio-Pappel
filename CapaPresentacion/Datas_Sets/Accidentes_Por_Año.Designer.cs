@@ -26,6 +26,8 @@ namespace CapaPresentacion.Datas_Sets {
         
         private ReporteAccidentesPorAñoDataTable tableReporteAccidentesPorAño;
         
+        private Accidentes_auxiliarDataTable tableAccidentes_auxiliar;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -57,6 +59,9 @@ namespace CapaPresentacion.Datas_Sets {
                 if ((ds.Tables["ReporteAccidentesPorAño"] != null)) {
                     base.Tables.Add(new ReporteAccidentesPorAñoDataTable(ds.Tables["ReporteAccidentesPorAño"]));
                 }
+                if ((ds.Tables["Accidentes_auxiliar"] != null)) {
+                    base.Tables.Add(new Accidentes_auxiliarDataTable(ds.Tables["Accidentes_auxiliar"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -82,6 +87,16 @@ namespace CapaPresentacion.Datas_Sets {
         public ReporteAccidentesPorAñoDataTable ReporteAccidentesPorAño {
             get {
                 return this.tableReporteAccidentesPorAño;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public Accidentes_auxiliarDataTable Accidentes_auxiliar {
+            get {
+                return this.tableAccidentes_auxiliar;
             }
         }
         
@@ -155,6 +170,9 @@ namespace CapaPresentacion.Datas_Sets {
                 if ((ds.Tables["ReporteAccidentesPorAño"] != null)) {
                     base.Tables.Add(new ReporteAccidentesPorAñoDataTable(ds.Tables["ReporteAccidentesPorAño"]));
                 }
+                if ((ds.Tables["Accidentes_auxiliar"] != null)) {
+                    base.Tables.Add(new Accidentes_auxiliarDataTable(ds.Tables["Accidentes_auxiliar"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -194,6 +212,12 @@ namespace CapaPresentacion.Datas_Sets {
                     this.tableReporteAccidentesPorAño.InitVars();
                 }
             }
+            this.tableAccidentes_auxiliar = ((Accidentes_auxiliarDataTable)(base.Tables["Accidentes_auxiliar"]));
+            if ((initTable == true)) {
+                if ((this.tableAccidentes_auxiliar != null)) {
+                    this.tableAccidentes_auxiliar.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -206,11 +230,19 @@ namespace CapaPresentacion.Datas_Sets {
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableReporteAccidentesPorAño = new ReporteAccidentesPorAñoDataTable();
             base.Tables.Add(this.tableReporteAccidentesPorAño);
+            this.tableAccidentes_auxiliar = new Accidentes_auxiliarDataTable();
+            base.Tables.Add(this.tableAccidentes_auxiliar);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeReporteAccidentesPorAño() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeAccidentes_auxiliar() {
             return false;
         }
         
@@ -272,6 +304,9 @@ namespace CapaPresentacion.Datas_Sets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void ReporteAccidentesPorAñoRowChangeEventHandler(object sender, ReporteAccidentesPorAñoRowChangeEvent e);
         
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void Accidentes_auxiliarRowChangeEventHandler(object sender, Accidentes_auxiliarRowChangeEvent e);
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
@@ -281,31 +316,9 @@ namespace CapaPresentacion.Datas_Sets {
             
             private global::System.Data.DataColumn columnAño;
             
-            private global::System.Data.DataColumn columnEne;
+            private global::System.Data.DataColumn columnMes;
             
-            private global::System.Data.DataColumn columnFeb;
-            
-            private global::System.Data.DataColumn columnMar;
-            
-            private global::System.Data.DataColumn columnAbr;
-            
-            private global::System.Data.DataColumn columnMay;
-            
-            private global::System.Data.DataColumn columnJun;
-            
-            private global::System.Data.DataColumn columnJul;
-            
-            private global::System.Data.DataColumn columnAgo;
-            
-            private global::System.Data.DataColumn columnSep;
-            
-            private global::System.Data.DataColumn columnOct;
-            
-            private global::System.Data.DataColumn columnNov;
-            
-            private global::System.Data.DataColumn columnDic;
-            
-            private global::System.Data.DataColumn columnTOTAL;
+            private global::System.Data.DataColumn columnCantidad;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -350,105 +363,17 @@ namespace CapaPresentacion.Datas_Sets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn EneColumn {
+            public global::System.Data.DataColumn MesColumn {
                 get {
-                    return this.columnEne;
+                    return this.columnMes;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FebColumn {
+            public global::System.Data.DataColumn CantidadColumn {
                 get {
-                    return this.columnFeb;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MarColumn {
-                get {
-                    return this.columnMar;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AbrColumn {
-                get {
-                    return this.columnAbr;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MayColumn {
-                get {
-                    return this.columnMay;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn JunColumn {
-                get {
-                    return this.columnJun;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn JulColumn {
-                get {
-                    return this.columnJul;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AgoColumn {
-                get {
-                    return this.columnAgo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SepColumn {
-                get {
-                    return this.columnSep;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OctColumn {
-                get {
-                    return this.columnOct;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn NovColumn {
-                get {
-                    return this.columnNov;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DicColumn {
-                get {
-                    return this.columnDic;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TOTALColumn {
-                get {
-                    return this.columnTOTAL;
+                    return this.columnCantidad;
                 }
             }
             
@@ -489,23 +414,12 @@ namespace CapaPresentacion.Datas_Sets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ReporteAccidentesPorAñoRow AddReporteAccidentesPorAñoRow(string Año, string Ene, string Feb, string Mar, string Abr, string May, string Jun, string Jul, string Ago, string Sep, string Oct, string Nov, string Dic, string TOTAL) {
+            public ReporteAccidentesPorAñoRow AddReporteAccidentesPorAñoRow(string Año, string Mes, string Cantidad) {
                 ReporteAccidentesPorAñoRow rowReporteAccidentesPorAñoRow = ((ReporteAccidentesPorAñoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Año,
-                        Ene,
-                        Feb,
-                        Mar,
-                        Abr,
-                        May,
-                        Jun,
-                        Jul,
-                        Ago,
-                        Sep,
-                        Oct,
-                        Nov,
-                        Dic,
-                        TOTAL};
+                        Mes,
+                        Cantidad};
                 rowReporteAccidentesPorAñoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowReporteAccidentesPorAñoRow);
                 return rowReporteAccidentesPorAñoRow;
@@ -529,19 +443,8 @@ namespace CapaPresentacion.Datas_Sets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnAño = base.Columns["Año"];
-                this.columnEne = base.Columns["Ene"];
-                this.columnFeb = base.Columns["Feb"];
-                this.columnMar = base.Columns["Mar"];
-                this.columnAbr = base.Columns["Abr"];
-                this.columnMay = base.Columns["May"];
-                this.columnJun = base.Columns["Jun"];
-                this.columnJul = base.Columns["Jul"];
-                this.columnAgo = base.Columns["Ago"];
-                this.columnSep = base.Columns["Sep"];
-                this.columnOct = base.Columns["Oct"];
-                this.columnNov = base.Columns["Nov"];
-                this.columnDic = base.Columns["Dic"];
-                this.columnTOTAL = base.Columns["TOTAL"];
+                this.columnMes = base.Columns["Mes"];
+                this.columnCantidad = base.Columns["Cantidad"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -549,32 +452,10 @@ namespace CapaPresentacion.Datas_Sets {
             private void InitClass() {
                 this.columnAño = new global::System.Data.DataColumn("Año", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAño);
-                this.columnEne = new global::System.Data.DataColumn("Ene", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEne);
-                this.columnFeb = new global::System.Data.DataColumn("Feb", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFeb);
-                this.columnMar = new global::System.Data.DataColumn("Mar", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMar);
-                this.columnAbr = new global::System.Data.DataColumn("Abr", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAbr);
-                this.columnMay = new global::System.Data.DataColumn("May", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMay);
-                this.columnJun = new global::System.Data.DataColumn("Jun", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnJun);
-                this.columnJul = new global::System.Data.DataColumn("Jul", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnJul);
-                this.columnAgo = new global::System.Data.DataColumn("Ago", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAgo);
-                this.columnSep = new global::System.Data.DataColumn("Sep", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSep);
-                this.columnOct = new global::System.Data.DataColumn("Oct", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOct);
-                this.columnNov = new global::System.Data.DataColumn("Nov", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNov);
-                this.columnDic = new global::System.Data.DataColumn("Dic", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDic);
-                this.columnTOTAL = new global::System.Data.DataColumn("TOTAL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTOTAL);
+                this.columnMes = new global::System.Data.DataColumn("Mes", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMes);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -702,6 +583,435 @@ namespace CapaPresentacion.Datas_Sets {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class Accidentes_auxiliarDataTable : global::System.Data.TypedTableBase<Accidentes_auxiliarRow> {
+            
+            private global::System.Data.DataColumn columnAño;
+            
+            private global::System.Data.DataColumn columnEne;
+            
+            private global::System.Data.DataColumn columnFeb;
+            
+            private global::System.Data.DataColumn columnMar;
+            
+            private global::System.Data.DataColumn columnAbr;
+            
+            private global::System.Data.DataColumn columnMay;
+            
+            private global::System.Data.DataColumn columnJun;
+            
+            private global::System.Data.DataColumn columnJul;
+            
+            private global::System.Data.DataColumn columnAgo;
+            
+            private global::System.Data.DataColumn columnSep;
+            
+            private global::System.Data.DataColumn columnOct;
+            
+            private global::System.Data.DataColumn columnNov;
+            
+            private global::System.Data.DataColumn columnDic;
+            
+            private global::System.Data.DataColumn columnTOTAL;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public Accidentes_auxiliarDataTable() {
+                this.TableName = "Accidentes_auxiliar";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal Accidentes_auxiliarDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected Accidentes_auxiliarDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AñoColumn {
+                get {
+                    return this.columnAño;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn EneColumn {
+                get {
+                    return this.columnEne;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FebColumn {
+                get {
+                    return this.columnFeb;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MarColumn {
+                get {
+                    return this.columnMar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AbrColumn {
+                get {
+                    return this.columnAbr;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MayColumn {
+                get {
+                    return this.columnMay;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn JunColumn {
+                get {
+                    return this.columnJun;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn JulColumn {
+                get {
+                    return this.columnJul;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AgoColumn {
+                get {
+                    return this.columnAgo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SepColumn {
+                get {
+                    return this.columnSep;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn OctColumn {
+                get {
+                    return this.columnOct;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NovColumn {
+                get {
+                    return this.columnNov;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DicColumn {
+                get {
+                    return this.columnDic;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TOTALColumn {
+                get {
+                    return this.columnTOTAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public Accidentes_auxiliarRow this[int index] {
+                get {
+                    return ((Accidentes_auxiliarRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event Accidentes_auxiliarRowChangeEventHandler Accidentes_auxiliarRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event Accidentes_auxiliarRowChangeEventHandler Accidentes_auxiliarRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event Accidentes_auxiliarRowChangeEventHandler Accidentes_auxiliarRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event Accidentes_auxiliarRowChangeEventHandler Accidentes_auxiliarRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddAccidentes_auxiliarRow(Accidentes_auxiliarRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public Accidentes_auxiliarRow AddAccidentes_auxiliarRow(string Año, string Ene, string Feb, string Mar, string Abr, string May, string Jun, string Jul, string Ago, string Sep, string Oct, string Nov, string Dic, string TOTAL) {
+                Accidentes_auxiliarRow rowAccidentes_auxiliarRow = ((Accidentes_auxiliarRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Año,
+                        Ene,
+                        Feb,
+                        Mar,
+                        Abr,
+                        May,
+                        Jun,
+                        Jul,
+                        Ago,
+                        Sep,
+                        Oct,
+                        Nov,
+                        Dic,
+                        TOTAL};
+                rowAccidentes_auxiliarRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAccidentes_auxiliarRow);
+                return rowAccidentes_auxiliarRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                Accidentes_auxiliarDataTable cln = ((Accidentes_auxiliarDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new Accidentes_auxiliarDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnAño = base.Columns["Año"];
+                this.columnEne = base.Columns["Ene"];
+                this.columnFeb = base.Columns["Feb"];
+                this.columnMar = base.Columns["Mar"];
+                this.columnAbr = base.Columns["Abr"];
+                this.columnMay = base.Columns["May"];
+                this.columnJun = base.Columns["Jun"];
+                this.columnJul = base.Columns["Jul"];
+                this.columnAgo = base.Columns["Ago"];
+                this.columnSep = base.Columns["Sep"];
+                this.columnOct = base.Columns["Oct"];
+                this.columnNov = base.Columns["Nov"];
+                this.columnDic = base.Columns["Dic"];
+                this.columnTOTAL = base.Columns["TOTAL"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnAño = new global::System.Data.DataColumn("Año", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAño);
+                this.columnEne = new global::System.Data.DataColumn("Ene", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEne);
+                this.columnFeb = new global::System.Data.DataColumn("Feb", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFeb);
+                this.columnMar = new global::System.Data.DataColumn("Mar", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMar);
+                this.columnAbr = new global::System.Data.DataColumn("Abr", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAbr);
+                this.columnMay = new global::System.Data.DataColumn("May", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMay);
+                this.columnJun = new global::System.Data.DataColumn("Jun", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJun);
+                this.columnJul = new global::System.Data.DataColumn("Jul", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnJul);
+                this.columnAgo = new global::System.Data.DataColumn("Ago", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAgo);
+                this.columnSep = new global::System.Data.DataColumn("Sep", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSep);
+                this.columnOct = new global::System.Data.DataColumn("Oct", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOct);
+                this.columnNov = new global::System.Data.DataColumn("Nov", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNov);
+                this.columnDic = new global::System.Data.DataColumn("Dic", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDic);
+                this.columnTOTAL = new global::System.Data.DataColumn("TOTAL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTOTAL);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public Accidentes_auxiliarRow NewAccidentes_auxiliarRow() {
+                return ((Accidentes_auxiliarRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new Accidentes_auxiliarRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(Accidentes_auxiliarRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.Accidentes_auxiliarRowChanged != null)) {
+                    this.Accidentes_auxiliarRowChanged(this, new Accidentes_auxiliarRowChangeEvent(((Accidentes_auxiliarRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.Accidentes_auxiliarRowChanging != null)) {
+                    this.Accidentes_auxiliarRowChanging(this, new Accidentes_auxiliarRowChangeEvent(((Accidentes_auxiliarRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.Accidentes_auxiliarRowDeleted != null)) {
+                    this.Accidentes_auxiliarRowDeleted(this, new Accidentes_auxiliarRowChangeEvent(((Accidentes_auxiliarRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.Accidentes_auxiliarRowDeleting != null)) {
+                    this.Accidentes_auxiliarRowDeleting(this, new Accidentes_auxiliarRowChangeEvent(((Accidentes_auxiliarRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveAccidentes_auxiliarRow(Accidentes_auxiliarRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Accidentes_Por_Año ds = new Accidentes_Por_Año();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "Accidentes_auxiliarDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class ReporteAccidentesPorAñoRow : global::System.Data.DataRow {
@@ -733,209 +1043,34 @@ namespace CapaPresentacion.Datas_Sets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Ene {
+            public string Mes {
                 get {
                     try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.EneColumn]));
+                        return ((string)(this[this.tableReporteAccidentesPorAño.MesColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ene\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Mes\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableReporteAccidentesPorAño.EneColumn] = value;
+                    this[this.tableReporteAccidentesPorAño.MesColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Feb {
+            public string Cantidad {
                 get {
                     try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.FebColumn]));
+                        return ((string)(this[this.tableReporteAccidentesPorAño.CantidadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Feb\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cantidad\' de la tabla \'ReporteAccidentesPorAño\' es DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableReporteAccidentesPorAño.FebColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Mar {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.MarColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Mar\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.MarColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Abr {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.AbrColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Abr\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.AbrColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string May {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.MayColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'May\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.MayColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Jun {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.JunColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Jun\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.JunColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Jul {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.JulColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Jul\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.JulColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Ago {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.AgoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ago\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.AgoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Sep {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.SepColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Sep\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.SepColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Oct {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.OctColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Oct\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.OctColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Nov {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.NovColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nov\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.NovColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Dic {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.DicColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Dic\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.DicColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string TOTAL {
-                get {
-                    try {
-                        return ((string)(this[this.tableReporteAccidentesPorAño.TOTALColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TOTAL\' de la tabla \'ReporteAccidentesPorAño\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableReporteAccidentesPorAño.TOTALColumn] = value;
+                    this[this.tableReporteAccidentesPorAño.CantidadColumn] = value;
                 }
             }
             
@@ -953,158 +1088,433 @@ namespace CapaPresentacion.Datas_Sets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMesNull() {
+                return this.IsNull(this.tableReporteAccidentesPorAño.MesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMesNull() {
+                this[this.tableReporteAccidentesPorAño.MesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableReporteAccidentesPorAño.CantidadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCantidadNull() {
+                this[this.tableReporteAccidentesPorAño.CantidadColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class Accidentes_auxiliarRow : global::System.Data.DataRow {
+            
+            private Accidentes_auxiliarDataTable tableAccidentes_auxiliar;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal Accidentes_auxiliarRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableAccidentes_auxiliar = ((Accidentes_auxiliarDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Año {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.AñoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Año\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.AñoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Ene {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.EneColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ene\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.EneColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Feb {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.FebColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Feb\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.FebColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Mar {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.MarColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Mar\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.MarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Abr {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.AbrColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Abr\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.AbrColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string May {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.MayColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'May\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.MayColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Jun {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.JunColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Jun\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.JunColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Jul {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.JulColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Jul\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.JulColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Ago {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.AgoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ago\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.AgoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Sep {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.SepColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Sep\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.SepColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Oct {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.OctColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Oct\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.OctColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Nov {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.NovColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nov\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.NovColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Dic {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.DicColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Dic\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.DicColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string TOTAL {
+                get {
+                    try {
+                        return ((string)(this[this.tableAccidentes_auxiliar.TOTALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TOTAL\' de la tabla \'Accidentes_auxiliar\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAccidentes_auxiliar.TOTALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAñoNull() {
+                return this.IsNull(this.tableAccidentes_auxiliar.AñoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAñoNull() {
+                this[this.tableAccidentes_auxiliar.AñoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsEneNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.EneColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.EneColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetEneNull() {
-                this[this.tableReporteAccidentesPorAño.EneColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.EneColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsFebNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.FebColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.FebColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetFebNull() {
-                this[this.tableReporteAccidentesPorAño.FebColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.FebColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsMarNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.MarColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.MarColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetMarNull() {
-                this[this.tableReporteAccidentesPorAño.MarColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.MarColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsAbrNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.AbrColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.AbrColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetAbrNull() {
-                this[this.tableReporteAccidentesPorAño.AbrColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.AbrColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsMayNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.MayColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.MayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetMayNull() {
-                this[this.tableReporteAccidentesPorAño.MayColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.MayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsJunNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.JunColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.JunColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetJunNull() {
-                this[this.tableReporteAccidentesPorAño.JunColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.JunColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsJulNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.JulColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.JulColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetJulNull() {
-                this[this.tableReporteAccidentesPorAño.JulColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.JulColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsAgoNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.AgoColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.AgoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetAgoNull() {
-                this[this.tableReporteAccidentesPorAño.AgoColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.AgoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSepNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.SepColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.SepColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetSepNull() {
-                this[this.tableReporteAccidentesPorAño.SepColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.SepColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsOctNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.OctColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.OctColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetOctNull() {
-                this[this.tableReporteAccidentesPorAño.OctColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.OctColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsNovNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.NovColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.NovColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetNovNull() {
-                this[this.tableReporteAccidentesPorAño.NovColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.NovColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDicNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.DicColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.DicColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDicNull() {
-                this[this.tableReporteAccidentesPorAño.DicColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.DicColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTOTALNull() {
-                return this.IsNull(this.tableReporteAccidentesPorAño.TOTALColumn);
+                return this.IsNull(this.tableAccidentes_auxiliar.TOTALColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTOTALNull() {
-                this[this.tableReporteAccidentesPorAño.TOTALColumn] = global::System.Convert.DBNull;
+                this[this.tableAccidentes_auxiliar.TOTALColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1128,6 +1538,40 @@ namespace CapaPresentacion.Datas_Sets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ReporteAccidentesPorAñoRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class Accidentes_auxiliarRowChangeEvent : global::System.EventArgs {
+            
+            private Accidentes_auxiliarRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public Accidentes_auxiliarRowChangeEvent(Accidentes_auxiliarRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public Accidentes_auxiliarRow Row {
                 get {
                     return this.eventRow;
                 }
