@@ -92,6 +92,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Accidentes_Por_Año.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Por_Seccion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Diseno\frmMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +150,12 @@
     </Compile>
     <Compile Include="Empleados\frmSecciones.Designer.cs">
       <DependentUpon>frmSecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expediente\frmExpedienteMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expediente\frmExpedienteMedico.Designer.cs">
+      <DependentUpon>frmExpedienteMedico.cs</DependentUpon>
     </Compile>
     <Compile Include="Investigacion_Accidentes\frmConsultaAccidentes.cs">
       <SubType>Form</SubType>
@@ -226,6 +237,9 @@
     <EmbeddedResource Include="Empleados\frmSecciones.resx">
       <DependentUpon>frmSecciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Expediente\frmExpedienteMedico.resx">
+      <DependentUpon>frmExpedienteMedico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Investigacion_Accidentes\frmConsultaAccidentes.resx">
       <DependentUpon>frmConsultaAccidentes.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +269,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reportes\Accidentes_xAño.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xSeccion.rdlc" />
     <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +283,17 @@
     </None>
     <None Include="Datas_Sets\Accidentes_Por_Año.xss">
       <DependentUpon>Accidentes_Por_Año.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Por_Seccion.xsc">
+      <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Por_Seccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_Por_Seccion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Por_Seccion.xss">
+      <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -295,7 +321,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Cumplimiento_Legal\" />
-    <Folder Include="Expediente\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendario.png" />

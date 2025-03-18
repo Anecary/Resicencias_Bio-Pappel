@@ -108,5 +108,15 @@ namespace CapaNegocios
 
             return dtReporte;
         }
+
+        public DataTable ObtenerReporteAccidentesPS()
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Secciones();
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
     }
 }

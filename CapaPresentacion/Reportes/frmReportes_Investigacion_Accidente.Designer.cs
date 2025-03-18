@@ -33,6 +33,9 @@
             this.pReportViewer = new System.Windows.Forms.Panel();
             this.rvInvestigacionAccidente = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbAños = new System.Windows.Forms.ComboBox();
+            this.rdbAño = new System.Windows.Forms.RadioButton();
+            this.rdbTodos = new System.Windows.Forms.RadioButton();
             this.pCombobox = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbReportes = new MaterialSkin.Controls.MaterialComboBox();
@@ -40,9 +43,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.rdbTodos = new System.Windows.Forms.RadioButton();
-            this.rdbAño = new System.Windows.Forms.RadioButton();
-            this.cmbAños = new System.Windows.Forms.ComboBox();
             this.pContenedor.SuspendLayout();
             this.pReportViewer.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -95,6 +95,43 @@
             this.panel1.Size = new System.Drawing.Size(945, 100);
             this.panel1.TabIndex = 10;
             // 
+            // cmbAños
+            // 
+            this.cmbAños.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAños.FormattingEnabled = true;
+            this.cmbAños.Location = new System.Drawing.Point(157, 49);
+            this.cmbAños.Name = "cmbAños";
+            this.cmbAños.Size = new System.Drawing.Size(121, 21);
+            this.cmbAños.TabIndex = 2;
+            this.cmbAños.Visible = false;
+            this.cmbAños.SelectedIndexChanged += new System.EventHandler(this.cmbAños_SelectedIndexChanged);
+            // 
+            // rdbAño
+            // 
+            this.rdbAño.AutoSize = true;
+            this.rdbAño.Location = new System.Drawing.Point(157, 16);
+            this.rdbAño.Name = "rdbAño";
+            this.rdbAño.Size = new System.Drawing.Size(95, 17);
+            this.rdbAño.TabIndex = 1;
+            this.rdbAño.Text = "Año especifico";
+            this.rdbAño.UseVisualStyleBackColor = true;
+            this.rdbAño.Visible = false;
+            this.rdbAño.CheckedChanged += new System.EventHandler(this.rdbAño_CheckedChanged);
+            // 
+            // rdbTodos
+            // 
+            this.rdbTodos.AutoSize = true;
+            this.rdbTodos.Checked = true;
+            this.rdbTodos.Location = new System.Drawing.Point(29, 16);
+            this.rdbTodos.Name = "rdbTodos";
+            this.rdbTodos.Size = new System.Drawing.Size(97, 17);
+            this.rdbTodos.TabIndex = 0;
+            this.rdbTodos.TabStop = true;
+            this.rdbTodos.Text = "Todos los años";
+            this.rdbTodos.UseVisualStyleBackColor = true;
+            this.rdbTodos.Visible = false;
+            this.rdbTodos.CheckedChanged += new System.EventHandler(this.rdbTodos_CheckedChanged);
+            // 
             // pCombobox
             // 
             this.pCombobox.Controls.Add(this.label2);
@@ -132,7 +169,8 @@
             this.cmbReportes.IntegralHeight = false;
             this.cmbReportes.ItemHeight = 43;
             this.cmbReportes.Items.AddRange(new object[] {
-            "Accidentes por año"});
+            "Accidentes por año",
+            "Accidentes por seccion"});
             this.cmbReportes.Location = new System.Drawing.Point(367, 15);
             this.cmbReportes.MaxDropDownItems = 4;
             this.cmbReportes.MouseState = MaterialSkin.MouseState.OUT;
@@ -182,43 +220,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
-            // 
-            // rdbTodos
-            // 
-            this.rdbTodos.AutoSize = true;
-            this.rdbTodos.Checked = true;
-            this.rdbTodos.Location = new System.Drawing.Point(29, 16);
-            this.rdbTodos.Name = "rdbTodos";
-            this.rdbTodos.Size = new System.Drawing.Size(97, 17);
-            this.rdbTodos.TabIndex = 0;
-            this.rdbTodos.TabStop = true;
-            this.rdbTodos.Text = "Todos los años";
-            this.rdbTodos.UseVisualStyleBackColor = true;
-            this.rdbTodos.Visible = false;
-            this.rdbTodos.CheckedChanged += new System.EventHandler(this.rdbTodos_CheckedChanged);
-            // 
-            // rdbAño
-            // 
-            this.rdbAño.AutoSize = true;
-            this.rdbAño.Location = new System.Drawing.Point(157, 16);
-            this.rdbAño.Name = "rdbAño";
-            this.rdbAño.Size = new System.Drawing.Size(95, 17);
-            this.rdbAño.TabIndex = 1;
-            this.rdbAño.Text = "Año especifico";
-            this.rdbAño.UseVisualStyleBackColor = true;
-            this.rdbAño.Visible = false;
-            this.rdbAño.CheckedChanged += new System.EventHandler(this.rdbAño_CheckedChanged);
-            // 
-            // cmbAños
-            // 
-            this.cmbAños.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAños.FormattingEnabled = true;
-            this.cmbAños.Location = new System.Drawing.Point(157, 49);
-            this.cmbAños.Name = "cmbAños";
-            this.cmbAños.Size = new System.Drawing.Size(121, 21);
-            this.cmbAños.TabIndex = 2;
-            this.cmbAños.Visible = false;
-            this.cmbAños.SelectedIndexChanged += new System.EventHandler(this.cmbAños_SelectedIndexChanged);
             // 
             // frmReportes_Investigacion_Accidente
             // 

@@ -31,11 +31,29 @@ namespace CapaPresentacion.Reportes
                     rdbAño.Visible = true;
                     rdbTodos.Visible = true;
                     break;
-                case "":
+                case "Accidentes por seccion":
+                    obtener_Secciones();
                     break;
             }
         }
 
+        /*ACCIDENTES POR SECCION*/
+        private void obtener_Secciones()
+        {
+            DataTable Accidentes_Secciones = negocios.ObtenerReporteAccidentesPS();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xSeccion.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_AccidentesSeccion", Accidentes_Secciones));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        /*ACCIDENTES POR AÑO*/
         private void Accidentes_x_año()
         {
             // Obtener los datos originales
