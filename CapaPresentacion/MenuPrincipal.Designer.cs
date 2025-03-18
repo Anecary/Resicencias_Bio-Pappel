@@ -69,9 +69,11 @@ namespace CapaPresentacion
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnNewExpediente = new System.Windows.Forms.Button();
             this.pMenu.SuspendLayout();
             this.pSubmenuReportes.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
+            this.pSubmenuExpediente.SuspendLayout();
             this.pSubmenuAccidentes.SuspendLayout();
             this.pSubmenuEmpleados.SuspendLayout();
             this.pLogo.SuspendLayout();
@@ -110,7 +112,7 @@ namespace CapaPresentacion
             this.pSubmenuReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
             this.pSubmenuReportes.Controls.Add(this.btnReportesInvAccidentes);
             this.pSubmenuReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 872);
+            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 943);
             this.pSubmenuReportes.Name = "pSubmenuReportes";
             this.pSubmenuReportes.Size = new System.Drawing.Size(233, 100);
             this.pSubmenuReportes.TabIndex = 15;
@@ -146,7 +148,7 @@ namespace CapaPresentacion
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 822);
+            this.btnReportes.Location = new System.Drawing.Point(0, 893);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnReportes.Size = new System.Drawing.Size(233, 50);
@@ -161,7 +163,7 @@ namespace CapaPresentacion
             // 
             this.pSubmenuCumplimientoLegal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
             this.pSubmenuCumplimientoLegal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuCumplimientoLegal.Location = new System.Drawing.Point(0, 787);
+            this.pSubmenuCumplimientoLegal.Location = new System.Drawing.Point(0, 858);
             this.pSubmenuCumplimientoLegal.Name = "pSubmenuCumplimientoLegal";
             this.pSubmenuCumplimientoLegal.Size = new System.Drawing.Size(233, 35);
             this.pSubmenuCumplimientoLegal.TabIndex = 11;
@@ -177,7 +179,7 @@ namespace CapaPresentacion
             this.btnCumpliminetoLegal.ForeColor = System.Drawing.Color.White;
             this.btnCumpliminetoLegal.Image = ((System.Drawing.Image)(resources.GetObject("btnCumpliminetoLegal.Image")));
             this.btnCumpliminetoLegal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCumpliminetoLegal.Location = new System.Drawing.Point(0, 737);
+            this.btnCumpliminetoLegal.Location = new System.Drawing.Point(0, 808);
             this.btnCumpliminetoLegal.Name = "btnCumpliminetoLegal";
             this.btnCumpliminetoLegal.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnCumpliminetoLegal.Size = new System.Drawing.Size(233, 50);
@@ -194,7 +196,7 @@ namespace CapaPresentacion
             this.pSubmenuNotaMedica.Controls.Add(this.btnConsultarHistorico);
             this.pSubmenuNotaMedica.Controls.Add(this.btnNuevaNotaMedica);
             this.pSubmenuNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuNotaMedica.Location = new System.Drawing.Point(0, 668);
+            this.pSubmenuNotaMedica.Location = new System.Drawing.Point(0, 739);
             this.pSubmenuNotaMedica.Name = "pSubmenuNotaMedica";
             this.pSubmenuNotaMedica.Size = new System.Drawing.Size(233, 69);
             this.pSubmenuNotaMedica.TabIndex = 9;
@@ -256,7 +258,7 @@ namespace CapaPresentacion
             this.btnNotaMedica.ForeColor = System.Drawing.Color.White;
             this.btnNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNotaMedica.Image")));
             this.btnNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotaMedica.Location = new System.Drawing.Point(0, 618);
+            this.btnNotaMedica.Location = new System.Drawing.Point(0, 689);
             this.btnNotaMedica.Name = "btnNotaMedica";
             this.btnNotaMedica.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnNotaMedica.Size = new System.Drawing.Size(233, 50);
@@ -270,10 +272,11 @@ namespace CapaPresentacion
             // pSubmenuExpediente
             // 
             this.pSubmenuExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuExpediente.Controls.Add(this.btnNewExpediente);
             this.pSubmenuExpediente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSubmenuExpediente.Location = new System.Drawing.Point(0, 589);
             this.pSubmenuExpediente.Name = "pSubmenuExpediente";
-            this.pSubmenuExpediente.Size = new System.Drawing.Size(233, 29);
+            this.pSubmenuExpediente.Size = new System.Drawing.Size(233, 100);
             this.pSubmenuExpediente.TabIndex = 7;
             this.pSubmenuExpediente.Visible = false;
             // 
@@ -744,6 +747,26 @@ namespace CapaPresentacion
             this.panel2.Size = new System.Drawing.Size(945, 5);
             this.panel2.TabIndex = 4;
             // 
+            // btnNewExpediente
+            // 
+            this.btnNewExpediente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNewExpediente.FlatAppearance.BorderSize = 0;
+            this.btnNewExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewExpediente.ForeColor = System.Drawing.Color.White;
+            this.btnNewExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnNewExpediente.Image")));
+            this.btnNewExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewExpediente.Location = new System.Drawing.Point(0, 0);
+            this.btnNewExpediente.Name = "btnNewExpediente";
+            this.btnNewExpediente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnNewExpediente.Size = new System.Drawing.Size(233, 35);
+            this.btnNewExpediente.TabIndex = 1;
+            this.btnNewExpediente.Text = " Nuevo Expediente";
+            this.btnNewExpediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNewExpediente.UseVisualStyleBackColor = true;
+            this.btnNewExpediente.Click += new System.EventHandler(this.btnNewExpediente_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -763,6 +786,7 @@ namespace CapaPresentacion
             this.pMenu.ResumeLayout(false);
             this.pSubmenuReportes.ResumeLayout(false);
             this.pSubmenuNotaMedica.ResumeLayout(false);
+            this.pSubmenuExpediente.ResumeLayout(false);
             this.pSubmenuAccidentes.ResumeLayout(false);
             this.pSubmenuEmpleados.ResumeLayout(false);
             this.pLogo.ResumeLayout(false);
@@ -815,6 +839,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel pLogo;
         private BotonPersonalizado botonPersonalizado1;
         private System.Windows.Forms.Button btnReportesInvAccidentes;
+        private System.Windows.Forms.Button btnNewExpediente;
     }
 }
 

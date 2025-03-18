@@ -191,11 +191,11 @@ namespace CapaPresentacion.Nota_Medica
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pConsultaExpMedico);
-            this.panel1.Controls.Add(this.pNuevaConsultaMedica);
             this.panel1.Controls.Add(this.pSeccionesDatos);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.pNuevaConsultaMedica);
+            this.panel1.Controls.Add(this.pConsultaExpMedico);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -207,7 +207,7 @@ namespace CapaPresentacion.Nota_Medica
             this.pConsultaExpMedico.AutoScroll = true;
             this.pConsultaExpMedico.Controls.Add(this.tabControl1);
             this.pConsultaExpMedico.Location = new System.Drawing.Point(0, 147);
-            this.pConsultaExpMedico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pConsultaExpMedico.Margin = new System.Windows.Forms.Padding(2);
             this.pConsultaExpMedico.Name = "pConsultaExpMedico";
             this.pConsultaExpMedico.Size = new System.Drawing.Size(929, 482);
             this.pConsultaExpMedico.TabIndex = 92;
@@ -221,8 +221,8 @@ namespace CapaPresentacion.Nota_Medica
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(2, 3);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Location = new System.Drawing.Point(20, 45);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(909, 748);
@@ -233,9 +233,9 @@ namespace CapaPresentacion.Nota_Medica
             this.tabPage1.Controls.Add(this.richTextBox3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(901, 713);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Antecedentes ";
@@ -245,7 +245,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox3.Enabled = false;
             this.richTextBox3.Location = new System.Drawing.Point(30, 82);
-            this.richTextBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(804, 191);
             this.richTextBox3.TabIndex = 6;
@@ -283,9 +283,9 @@ namespace CapaPresentacion.Nota_Medica
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(901, 713);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "No Patológicos";
@@ -295,7 +295,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox11.Enabled = false;
             this.richTextBox11.Location = new System.Drawing.Point(605, 360);
-            this.richTextBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox11.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox11.Name = "richTextBox11";
             this.richTextBox11.Size = new System.Drawing.Size(281, 107);
             this.richTextBox11.TabIndex = 33;
@@ -305,7 +305,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox12.Enabled = false;
             this.richTextBox12.Location = new System.Drawing.Point(307, 360);
-            this.richTextBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox12.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox12.Name = "richTextBox12";
             this.richTextBox12.Size = new System.Drawing.Size(281, 107);
             this.richTextBox12.TabIndex = 32;
@@ -315,7 +315,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox13.Enabled = false;
             this.richTextBox13.Location = new System.Drawing.Point(12, 361);
-            this.richTextBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox13.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox13.Name = "richTextBox13";
             this.richTextBox13.Size = new System.Drawing.Size(281, 107);
             this.richTextBox13.TabIndex = 31;
@@ -325,7 +325,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox8.Enabled = false;
             this.richTextBox8.Location = new System.Drawing.Point(605, 200);
-            this.richTextBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox8.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox8.Name = "richTextBox8";
             this.richTextBox8.Size = new System.Drawing.Size(281, 107);
             this.richTextBox8.TabIndex = 30;
@@ -335,7 +335,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox9.Enabled = false;
             this.richTextBox9.Location = new System.Drawing.Point(307, 200);
-            this.richTextBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox9.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.Size = new System.Drawing.Size(281, 107);
             this.richTextBox9.TabIndex = 29;
@@ -345,7 +345,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox10.Enabled = false;
             this.richTextBox10.Location = new System.Drawing.Point(12, 201);
-            this.richTextBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox10.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox10.Name = "richTextBox10";
             this.richTextBox10.Size = new System.Drawing.Size(281, 107);
             this.richTextBox10.TabIndex = 28;
@@ -355,7 +355,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox7.Enabled = false;
             this.richTextBox7.Location = new System.Drawing.Point(605, 41);
-            this.richTextBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox7.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox7.Name = "richTextBox7";
             this.richTextBox7.Size = new System.Drawing.Size(281, 107);
             this.richTextBox7.TabIndex = 27;
@@ -365,7 +365,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox6.Enabled = false;
             this.richTextBox6.Location = new System.Drawing.Point(307, 41);
-            this.richTextBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox6.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.Size = new System.Drawing.Size(281, 107);
             this.richTextBox6.TabIndex = 26;
@@ -375,7 +375,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox5.Enabled = false;
             this.richTextBox5.Location = new System.Drawing.Point(12, 42);
-            this.richTextBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox5.Name = "richTextBox5";
             this.richTextBox5.Size = new System.Drawing.Size(281, 107);
             this.richTextBox5.TabIndex = 25;
@@ -502,9 +502,9 @@ namespace CapaPresentacion.Nota_Medica
             this.tabPage3.Controls.Add(this.label28);
             this.tabPage3.Controls.Add(this.label29);
             this.tabPage3.Location = new System.Drawing.Point(4, 31);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(901, 713);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Patológicos";
@@ -538,7 +538,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(667, 21);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(219, 28);
             this.textBox5.TabIndex = 42;
@@ -558,7 +558,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(442, 75);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(135, 28);
             this.textBox3.TabIndex = 40;
@@ -567,7 +567,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(442, 21);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(135, 28);
             this.textBox4.TabIndex = 39;
@@ -609,7 +609,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(169, 75);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(135, 28);
             this.textBox2.TabIndex = 35;
@@ -629,7 +629,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(169, 21);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(135, 28);
             this.textBox1.TabIndex = 33;
@@ -638,7 +638,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox17.Enabled = false;
             this.richTextBox17.Location = new System.Drawing.Point(605, 485);
-            this.richTextBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox17.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox17.Name = "richTextBox17";
             this.richTextBox17.Size = new System.Drawing.Size(281, 107);
             this.richTextBox17.TabIndex = 51;
@@ -648,7 +648,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox18.Enabled = false;
             this.richTextBox18.Location = new System.Drawing.Point(307, 485);
-            this.richTextBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox18.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox18.Name = "richTextBox18";
             this.richTextBox18.Size = new System.Drawing.Size(281, 107);
             this.richTextBox18.TabIndex = 50;
@@ -658,7 +658,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox19.Enabled = false;
             this.richTextBox19.Location = new System.Drawing.Point(12, 486);
-            this.richTextBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox19.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox19.Name = "richTextBox19";
             this.richTextBox19.Size = new System.Drawing.Size(281, 107);
             this.richTextBox19.TabIndex = 49;
@@ -668,7 +668,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox20.Enabled = false;
             this.richTextBox20.Location = new System.Drawing.Point(605, 325);
-            this.richTextBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox20.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox20.Name = "richTextBox20";
             this.richTextBox20.Size = new System.Drawing.Size(281, 107);
             this.richTextBox20.TabIndex = 48;
@@ -678,7 +678,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox21.Enabled = false;
             this.richTextBox21.Location = new System.Drawing.Point(307, 325);
-            this.richTextBox21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox21.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox21.Name = "richTextBox21";
             this.richTextBox21.Size = new System.Drawing.Size(281, 107);
             this.richTextBox21.TabIndex = 47;
@@ -688,7 +688,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox22.Enabled = false;
             this.richTextBox22.Location = new System.Drawing.Point(12, 326);
-            this.richTextBox22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox22.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox22.Name = "richTextBox22";
             this.richTextBox22.Size = new System.Drawing.Size(281, 107);
             this.richTextBox22.TabIndex = 46;
@@ -698,7 +698,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox23.Enabled = false;
             this.richTextBox23.Location = new System.Drawing.Point(605, 167);
-            this.richTextBox23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox23.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox23.Name = "richTextBox23";
             this.richTextBox23.Size = new System.Drawing.Size(281, 107);
             this.richTextBox23.TabIndex = 45;
@@ -708,7 +708,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox24.Enabled = false;
             this.richTextBox24.Location = new System.Drawing.Point(307, 167);
-            this.richTextBox24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox24.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox24.Name = "richTextBox24";
             this.richTextBox24.Size = new System.Drawing.Size(281, 107);
             this.richTextBox24.TabIndex = 44;
@@ -718,7 +718,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox25.Enabled = false;
             this.richTextBox25.Location = new System.Drawing.Point(12, 167);
-            this.richTextBox25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox25.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox25.Name = "richTextBox25";
             this.richTextBox25.Size = new System.Drawing.Size(281, 107);
             this.richTextBox25.TabIndex = 43;
@@ -849,9 +849,9 @@ namespace CapaPresentacion.Nota_Medica
             this.tabPage4.Controls.Add(this.label45);
             this.tabPage4.Controls.Add(this.materialCard3);
             this.tabPage4.Location = new System.Drawing.Point(4, 31);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(901, 713);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Exploración Física";
@@ -861,7 +861,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox32.Enabled = false;
             this.richTextBox32.Location = new System.Drawing.Point(304, 615);
-            this.richTextBox32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox32.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox32.Name = "richTextBox32";
             this.richTextBox32.Size = new System.Drawing.Size(281, 70);
             this.richTextBox32.TabIndex = 78;
@@ -882,7 +882,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox34.Enabled = false;
             this.richTextBox34.Location = new System.Drawing.Point(12, 616);
-            this.richTextBox34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox34.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox34.Name = "richTextBox34";
             this.richTextBox34.Size = new System.Drawing.Size(281, 70);
             this.richTextBox34.TabIndex = 76;
@@ -892,7 +892,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox35.Enabled = false;
             this.richTextBox35.Location = new System.Drawing.Point(605, 500);
-            this.richTextBox35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox35.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox35.Name = "richTextBox35";
             this.richTextBox35.Size = new System.Drawing.Size(281, 70);
             this.richTextBox35.TabIndex = 75;
@@ -902,7 +902,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox36.Enabled = false;
             this.richTextBox36.Location = new System.Drawing.Point(307, 500);
-            this.richTextBox36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox36.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox36.Name = "richTextBox36";
             this.richTextBox36.Size = new System.Drawing.Size(281, 70);
             this.richTextBox36.TabIndex = 74;
@@ -912,7 +912,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox37.Enabled = false;
             this.richTextBox37.Location = new System.Drawing.Point(12, 501);
-            this.richTextBox37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox37.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox37.Name = "richTextBox37";
             this.richTextBox37.Size = new System.Drawing.Size(281, 70);
             this.richTextBox37.TabIndex = 73;
@@ -966,7 +966,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox26.Enabled = false;
             this.richTextBox26.Location = new System.Drawing.Point(605, 388);
-            this.richTextBox26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox26.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox26.Name = "richTextBox26";
             this.richTextBox26.Size = new System.Drawing.Size(281, 70);
             this.richTextBox26.TabIndex = 66;
@@ -976,7 +976,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox27.Enabled = false;
             this.richTextBox27.Location = new System.Drawing.Point(307, 388);
-            this.richTextBox27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox27.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox27.Name = "richTextBox27";
             this.richTextBox27.Size = new System.Drawing.Size(281, 70);
             this.richTextBox27.TabIndex = 65;
@@ -986,7 +986,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox28.Enabled = false;
             this.richTextBox28.Location = new System.Drawing.Point(12, 389);
-            this.richTextBox28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox28.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox28.Name = "richTextBox28";
             this.richTextBox28.Size = new System.Drawing.Size(281, 70);
             this.richTextBox28.TabIndex = 64;
@@ -996,7 +996,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox29.Enabled = false;
             this.richTextBox29.Location = new System.Drawing.Point(605, 276);
-            this.richTextBox29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox29.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox29.Name = "richTextBox29";
             this.richTextBox29.Size = new System.Drawing.Size(281, 71);
             this.richTextBox29.TabIndex = 63;
@@ -1006,7 +1006,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox30.Enabled = false;
             this.richTextBox30.Location = new System.Drawing.Point(307, 276);
-            this.richTextBox30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox30.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox30.Name = "richTextBox30";
             this.richTextBox30.Size = new System.Drawing.Size(281, 71);
             this.richTextBox30.TabIndex = 62;
@@ -1016,7 +1016,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox31.Enabled = false;
             this.richTextBox31.Location = new System.Drawing.Point(12, 277);
-            this.richTextBox31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox31.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox31.Name = "richTextBox31";
             this.richTextBox31.Size = new System.Drawing.Size(281, 70);
             this.richTextBox31.TabIndex = 61;
@@ -1126,7 +1126,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox9.Enabled = false;
             this.textBox9.Location = new System.Drawing.Point(178, 184);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(173, 28);
             this.textBox9.TabIndex = 60;
@@ -1146,7 +1146,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox13.Enabled = false;
             this.textBox13.Location = new System.Drawing.Point(178, 129);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(171, 28);
             this.textBox13.TabIndex = 58;
@@ -1166,7 +1166,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox14.Enabled = false;
             this.textBox14.Location = new System.Drawing.Point(178, 76);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(173, 28);
             this.textBox14.TabIndex = 56;
@@ -1186,7 +1186,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox12.Enabled = false;
             this.textBox12.Location = new System.Drawing.Point(690, 131);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(173, 28);
             this.textBox12.TabIndex = 54;
@@ -1206,7 +1206,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox15.Enabled = false;
             this.textBox15.Location = new System.Drawing.Point(690, 76);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(173, 28);
             this.textBox15.TabIndex = 52;
@@ -1226,7 +1226,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox11.Enabled = false;
             this.textBox11.Location = new System.Drawing.Point(426, 130);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(173, 28);
             this.textBox11.TabIndex = 50;
@@ -1246,7 +1246,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox7.Enabled = false;
             this.textBox7.Location = new System.Drawing.Point(426, 75);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(171, 28);
             this.textBox7.TabIndex = 48;
@@ -1266,7 +1266,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(690, 21);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(173, 28);
             this.textBox6.TabIndex = 42;
@@ -1286,7 +1286,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox8.Enabled = false;
             this.textBox8.Location = new System.Drawing.Point(426, 21);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(173, 28);
             this.textBox8.TabIndex = 39;
@@ -1317,7 +1317,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.textBox10.Enabled = false;
             this.textBox10.Location = new System.Drawing.Point(178, 21);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(173, 28);
             this.textBox10.TabIndex = 33;
@@ -1331,9 +1331,9 @@ namespace CapaPresentacion.Nota_Medica
             this.tabPage5.Controls.Add(this.label14);
             this.tabPage5.Controls.Add(this.label15);
             this.tabPage5.Location = new System.Drawing.Point(4, 31);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage5.Size = new System.Drawing.Size(901, 713);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Estudios Paraclínicos ";
@@ -1343,7 +1343,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox14.Enabled = false;
             this.richTextBox14.Location = new System.Drawing.Point(605, 45);
-            this.richTextBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox14.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox14.Name = "richTextBox14";
             this.richTextBox14.Size = new System.Drawing.Size(281, 191);
             this.richTextBox14.TabIndex = 33;
@@ -1353,7 +1353,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox15.Enabled = false;
             this.richTextBox15.Location = new System.Drawing.Point(307, 45);
-            this.richTextBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox15.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox15.Name = "richTextBox15";
             this.richTextBox15.Size = new System.Drawing.Size(281, 191);
             this.richTextBox15.TabIndex = 32;
@@ -1363,7 +1363,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox16.Enabled = false;
             this.richTextBox16.Location = new System.Drawing.Point(12, 46);
-            this.richTextBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox16.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox16.Name = "richTextBox16";
             this.richTextBox16.Size = new System.Drawing.Size(281, 191);
             this.richTextBox16.TabIndex = 31;
@@ -1407,9 +1407,9 @@ namespace CapaPresentacion.Nota_Medica
             this.tabPage6.Controls.Add(this.richTextBox4);
             this.tabPage6.Controls.Add(this.label3);
             this.tabPage6.Location = new System.Drawing.Point(4, 31);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage6.Size = new System.Drawing.Size(901, 713);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Diagnóstico";
@@ -1419,7 +1419,7 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.richTextBox4.Enabled = false;
             this.richTextBox4.Location = new System.Drawing.Point(30, 82);
-            this.richTextBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox4.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.Size = new System.Drawing.Size(804, 191);
             this.richTextBox4.TabIndex = 8;
@@ -1522,7 +1522,7 @@ namespace CapaPresentacion.Nota_Medica
             // richTextBox2
             // 
             this.richTextBox2.Location = new System.Drawing.Point(457, 422);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(396, 253);
             this.richTextBox2.TabIndex = 97;
@@ -1563,7 +1563,7 @@ namespace CapaPresentacion.Nota_Medica
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(15, 422);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(396, 253);
             this.richTextBox1.TabIndex = 94;
@@ -1606,8 +1606,8 @@ namespace CapaPresentacion.Nota_Medica
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(610, 121);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(641, 122);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(211, 20);
             this.dateTimePicker1.TabIndex = 91;
@@ -1628,7 +1628,7 @@ namespace CapaPresentacion.Nota_Medica
             this.materialComboBox4.IntegralHeight = false;
             this.materialComboBox4.ItemHeight = 43;
             this.materialComboBox4.Location = new System.Drawing.Point(15, 308);
-            this.materialComboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialComboBox4.Margin = new System.Windows.Forms.Padding(2);
             this.materialComboBox4.MaxDropDownItems = 4;
             this.materialComboBox4.MouseState = MaterialSkin.MouseState.OUT;
             this.materialComboBox4.Name = "materialComboBox4";
@@ -1671,7 +1671,7 @@ namespace CapaPresentacion.Nota_Medica
             this.materialComboBox3.IntegralHeight = false;
             this.materialComboBox3.ItemHeight = 43;
             this.materialComboBox3.Location = new System.Drawing.Point(667, 236);
-            this.materialComboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialComboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.materialComboBox3.MaxDropDownItems = 4;
             this.materialComboBox3.MouseState = MaterialSkin.MouseState.OUT;
             this.materialComboBox3.Name = "materialComboBox3";
@@ -1695,7 +1695,7 @@ namespace CapaPresentacion.Nota_Medica
             this.materialComboBox2.IntegralHeight = false;
             this.materialComboBox2.ItemHeight = 43;
             this.materialComboBox2.Location = new System.Drawing.Point(457, 236);
-            this.materialComboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialComboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.materialComboBox2.MaxDropDownItems = 4;
             this.materialComboBox2.MouseState = MaterialSkin.MouseState.OUT;
             this.materialComboBox2.Name = "materialComboBox2";
@@ -1796,7 +1796,7 @@ namespace CapaPresentacion.Nota_Medica
             this.materialComboBox1.IntegralHeight = false;
             this.materialComboBox1.ItemHeight = 43;
             this.materialComboBox1.Location = new System.Drawing.Point(457, 50);
-            this.materialComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialComboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.materialComboBox1.MaxDropDownItems = 4;
             this.materialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
             this.materialComboBox1.Name = "materialComboBox1";

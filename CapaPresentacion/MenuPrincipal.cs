@@ -299,5 +299,11 @@ namespace CapaPresentacion
             openChildForm(new Reportes.frmReportes_Investigacion_Accidente());
             hideSubMenu();
         }
+
+        private void btnNewExpediente_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Expediente.frmExpedienteMedico());
+            hideSubMenu();
+        }
     }
 }
