@@ -92,10 +92,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Accidentes_Por_Año.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Por_Seccion.cs">
+      <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datas_Sets\Accidentes_Por_Seccion.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_xSemana.cs">
+      <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_xSemana.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
     </Compile>
     <Compile Include="Diseno\frmMessageBox.cs">
       <SubType>Form</SubType>
@@ -270,6 +281,7 @@
     </Compile>
     <EmbeddedResource Include="Reportes\Accidentes_xAño.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xSeccion.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidente_xSemana.rdlc" />
     <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +306,17 @@
     </None>
     <None Include="Datas_Sets\Accidentes_Por_Seccion.xss">
       <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_xSemana.xsc">
+      <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_xSemana.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_xSemana.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_xSemana.xss">
+      <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

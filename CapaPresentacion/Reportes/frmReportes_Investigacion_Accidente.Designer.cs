@@ -170,7 +170,8 @@
             this.cmbReportes.ItemHeight = 43;
             this.cmbReportes.Items.AddRange(new object[] {
             "Accidentes por año",
-            "Accidentes por seccion"});
+            "Accidentes por seccion",
+            "Accidentes por semana"});
             this.cmbReportes.Location = new System.Drawing.Point(367, 15);
             this.cmbReportes.MaxDropDownItems = 4;
             this.cmbReportes.MouseState = MaterialSkin.MouseState.OUT;
