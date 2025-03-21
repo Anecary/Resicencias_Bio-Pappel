@@ -146,6 +146,12 @@
     <Compile Include="Empleados\frmSecciones.Designer.cs">
       <DependentUpon>frmSecciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Expediente\frmExpedienteMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expediente\frmExpedienteMedico.Designer.cs">
+      <DependentUpon>frmExpedienteMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Investigacion_Accidentes\frmConsultaAccidentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     <EmbeddedResource Include="Empleados\frmSecciones.resx">
       <DependentUpon>frmSecciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Expediente\frmExpedienteMedico.resx">
+      <DependentUpon>frmExpedienteMedico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Investigacion_Accidentes\frmConsultaAccidentes.resx">
       <DependentUpon>frmConsultaAccidentes.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,7 +304,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Cumplimiento_Legal\" />
-    <Folder Include="Expediente\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendario.png" />
