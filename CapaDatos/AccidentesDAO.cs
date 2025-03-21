@@ -401,5 +401,127 @@ namespace CapaDatos
 
             return dt; // Retornar el DataTable con los datos
         }
+
+        public DataTable ObtenerReporteAccidentes_Secciones()
+        {
+            DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
+
+            using (MySqlConnection conn = objConexion.Conecta()) // Conectar a la BD
+            {
+                using (MySqlCommand cmd = new MySqlCommand("AccidentesPorProceso", conn)) // Llamar al procedimiento almacenado correcto
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    try
+                    {
+                        conn.Open();
+
+                        // Ejecutar y llenar el DataTable
+                        using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+            }
+
+            return dt; // Retornar el DataTable con los datos
+        }
+
+        public DataTable ObtenerReporteAccidentes_Semana()
+        {
+            DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
+
+            using (MySqlConnection conn = objConexion.Conecta()) // Conectar a la BD
+            {
+                using (MySqlCommand cmd = new MySqlCommand("AccidentesPorDia", conn)) // Llamar al procedimiento almacenado correcto
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    try
+                    {
+                        conn.Open();
+
+                        // Ejecutar y llenar el DataTable
+                        using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+            }
+
+            return dt; // Retornar el DataTable con los datos
+        }
+
+        public DataTable ObtenerReporteAccidentes_parteCuerpo()
+        {
+            DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
+
+            using (MySqlConnection conn = objConexion.Conecta()) // Conectar a la BD
+            {
+                using (MySqlCommand cmd = new MySqlCommand("AccidentesPorParteCuerpo", conn)) // Llamar al procedimiento almacenado correcto
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    try
+                    {
+                        conn.Open();
+
+                        // Ejecutar y llenar el DataTable
+                        using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+            }
+
+            return dt; // Retornar el DataTable con los datos
+        }
+
+        public DataTable ObtenerReporteAccidentes_Turno()
+        {
+            DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
+
+            using (MySqlConnection conn = objConexion.Conecta()) // Conectar a la BD
+            {
+                using (MySqlCommand cmd = new MySqlCommand(" AccidentesPorTurno", conn)) // Llamar al procedimiento almacenado correcto
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    try
+                    {
+                        conn.Open();
+
+                        // Ejecutar y llenar el DataTable
+                        using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+            }
+
+            return dt; // Retornar el DataTable con los datos
+        }
+
+
     }
 }

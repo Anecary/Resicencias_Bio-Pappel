@@ -84,6 +84,11 @@
     <Compile Include="BotonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Parte_Cuerpo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_Parte_Cuerpo.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datas_Sets\Accidentes_Por_Año.cs">
       <DependentUpon>Accidentes_Por_Año.xsd</DependentUpon>
     </Compile>
@@ -91,6 +96,27 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Accidentes_Por_Año.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Por_Seccion.cs">
+      <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Por_Seccion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Turno.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_Turno.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_xSemana.cs">
+      <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_xSemana.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
     </Compile>
     <Compile Include="Diseno\frmMessageBox.cs">
       <SubType>Form</SubType>
@@ -264,9 +290,24 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reportes\Accidentes_xAño.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xSeccion.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xTurno.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidente_xParte_Cuerpo.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidente_xSemana.rdlc" />
     <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Datas_Sets\Accidentes_Parte_Cuerpo.xsc">
+      <DependentUpon>Accidentes_Parte_Cuerpo.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Parte_Cuerpo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_Parte_Cuerpo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Parte_Cuerpo.xss">
+      <DependentUpon>Accidentes_Parte_Cuerpo.xsd</DependentUpon>
+    </None>
     <None Include="Datas_Sets\Accidentes_Por_Año.xsc">
       <DependentUpon>Accidentes_Por_Año.xsd</DependentUpon>
     </None>
@@ -277,6 +318,39 @@
     </None>
     <None Include="Datas_Sets\Accidentes_Por_Año.xss">
       <DependentUpon>Accidentes_Por_Año.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Por_Seccion.xsc">
+      <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Por_Seccion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_Por_Seccion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Por_Seccion.xss">
+      <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Turno.xsc">
+      <DependentUpon>Accidentes_Turno.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Turno.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_Turno.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Turno.xss">
+      <DependentUpon>Accidentes_Turno.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_xSemana.xsc">
+      <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_xSemana.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_xSemana.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_xSemana.xss">
+      <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -31,11 +31,87 @@ namespace CapaPresentacion.Reportes
                     rdbAño.Visible = true;
                     rdbTodos.Visible = true;
                     break;
-                case "":
+                case "Accidentes por seccion":
+                    obtener_Secciones();
+                    break;
+                case "Accidentes por semana":
+                    obtener_Semana();
+                    break;
+                case "Accidentes por parte del cuerpo":
+                    obtener_parte_cuerpo();
+                    break;
+                case "Accidentes por turno":
+                    obtener_turno();
                     break;
             }
         }
 
+        /*ACCIDENTES POR TURNO*/
+        private void obtener_turno()
+        {
+            DataTable Accidentes_Turno = negocios.ObtenerReporteAccidentes_Turno();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xTurno.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Turno", Accidentes_Turno));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+
+        /*ACCIDENTES POR PARTE DEL CUERPO*/
+        private void obtener_parte_cuerpo()
+        {
+            DataTable Accidentes_parte_cuerpo = negocios.ObtenerReporteAccidentes_ParteCuerpo();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidente_xParte_Cuerpo.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_PC", Accidentes_parte_cuerpo));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        /*ACCIDENTES POR DIA DE LA SEMANA*/
+        private void obtener_Semana()
+        {
+            DataTable Accidentes_Semanas = negocios.ObtenerReporteAccidentesSemana();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidente_xSemana.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Semana", Accidentes_Semanas));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        /*ACCIDENTES POR SECCION*/
+        private void obtener_Secciones()
+        {
+            DataTable Accidentes_Secciones = negocios.ObtenerReporteAccidentesPS();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xSeccion.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_AccidentesSeccion", Accidentes_Secciones));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        /*ACCIDENTES POR AÑO*/
         private void Accidentes_x_año()
         {
             // Obtener los datos originales
