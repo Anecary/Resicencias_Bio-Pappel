@@ -1363,5 +1363,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 }
             }
         }
+
+        private void pSeguimientoCaso_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

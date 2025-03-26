@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="AccidentesCN.cs" />
     <Compile Include="EmpleadosCN.cs" />
+    <Compile Include="ExpedientesCN.cs" />
     <Compile Include="PuestosCN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeccionesCN.cs" />
