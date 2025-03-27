@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="AccidentesCN.cs" />
     <Compile Include="EmpleadosCN.cs" />
+    <Compile Include="ExpedientesCN.cs" />
     <Compile Include="PuestosCN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeccionesCN.cs" />
@@ -54,6 +55,10 @@
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
       <Project>{92eda423-bbc0-4bb1-becd-2cd1bc906280}</Project>
       <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{792d475b-200b-4292-988a-e29e8eca6817}</Project>
+      <Name>CapaEntidad</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

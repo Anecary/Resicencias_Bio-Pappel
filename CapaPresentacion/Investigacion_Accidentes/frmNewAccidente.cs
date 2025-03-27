@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Navigation;
+using CapaEntidad;
 using CapaNegocios;
 using CapaPresentacion.Restaurar_Y_Respaldar;
 using MaterialSkin;
@@ -44,6 +45,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             );
 
             panel4.Paint += new PaintEventHandler(Panel1_Paint);
+            panel5.Paint += new PaintEventHandler(Panel1_Paint);
             panel6.Paint += new PaintEventHandler(Panel1_Paint);
             panel7.Paint += new PaintEventHandler(Panel1_Paint);
             panel14.Paint += new PaintEventHandler(Panel1_Paint);
@@ -436,8 +438,9 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string condicion = txtCondicion.Text;
             DateTime fechaRegistro = dtpFechaRegistro.Value;
             int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
-
+            string numnomina = txtNumeroNomina.Text;
             string puesto = txtPuesto.Text;
+            string antiguedad = txtAntiguedad.Text;
             string edad = txtEdad.Text;
             string turno = CboxTurno.Text;
 
@@ -446,7 +449,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             string totalHrsExtras = txtTotalhrs.Text;
             DateTime DiaDescansoPrevio = dtpDiaDescanso.Value;
             string parteCuerpoAfectada = txtParteCuerpoAfectada.Text;
-            string trabajoDesempeñado = txtTrabajoDesempeñado.Text;
+            string trabajoDesempenado = txtTrabajoDesempeñado.Text;
             string tipoLesion = txtTipoLesion.Text;
             DateTime fecha_hora_Accidente = dtpFechaAccidente.Value.Date + dtpHoraAccidente.Value.TimeOfDay;
             string testigosJson = ConvertirTestigosAJson(dgvTestigos);
@@ -490,8 +493,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
             equipoAdecuado = rbtnEquipoAdecuadoSi.Checked ? true : false;
             Boolean conociaTrabajo = false;
             conociaTrabajo = rbtnConociaTrabajoSi.Checked ? true : false;
-            Boolean existiaSupervicion = false;
-            existiaSupervicion = rbtnExistiaSupervicionSi.Checked ? true : false;
+            Boolean existiaSupervision = false;
+            existiaSupervision = rbtnExistiaSupervicionSi.Checked ? true : false;
             string riesgosJson = ConvertirRiesgosAJson(dgvRiesgos);
             //MessageBox.Show(riesgosJson);
             string actosInsegurosJson = ConvertirActosInsegurosAJson(dgvActoInseguro);
@@ -533,12 +536,78 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 !string.IsNullOrWhiteSpace(txtAccionesCorrectivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
                 )
             {
-                int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, idEmpleado, puesto, edad, turno, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
-               lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
-               existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
-               empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
-               accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas, seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
-                testigosJson);
+                // int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, idEmpleado, numnomina, puesto, antiguedad, edad, turno, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
+                //lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
+                //existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
+                //empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
+                //accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas, seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
+                // testigosJson);
+                AccidentesCE accidente = new AccidentesCE
+                {
+                    NoAccidente = noAccidente,
+                    Condicion = condicion,
+                    FechaRegistro = fechaRegistro,
+                    IdEmpleado = idEmpleado,
+                    NumNomina = numnomina,
+                    Puesto = puesto,
+                    Antiguedad = antiguedad,
+                    Edad = edad,
+                    Turno = turno,
+                    TiempoExtra = tiempoExtra,
+                    TotalHrsExtras = totalHrsExtras,
+                    DiaDescansoPrevio = DiaDescansoPrevio,
+                    ParteCuerpoAfectada = parteCuerpoAfectada,
+                    TrabajoDesempenado = trabajoDesempenado,
+                    TipoLesion = tipoLesion,
+                    FechaHoraAccidente = fecha_hora_Accidente,
+                    Lesion30Dias = lesion30Dias,
+                    Lesion12Meses = lesion12Meses,
+                    Proceso = proceso,
+                    IdSeccionA = idSeccionA,
+                    LugarAccidente = lugarAccidente,
+                    CausanteLesion = causanteLesion,
+                    EquipoProteccionUsado = equipoProteccionUsado,
+                    EquipoProteccionNecesario = equipoProteccionNecesario,
+                    CausaAccidente = causaAccidente,
+                    DescripcionAccidente = descripcionAccidente,
+                    RealizoTrabajoAntes = realizoTrabajoAntes,
+                    TrabajoHabitual = trabajoHabitual,
+                    TrabajoProgramado = trabajoProgramado,
+                    TrabajoNecesario = trabajoNecesario,
+                    TrabajoUrgente = trabajoUrgente,
+                    DanosMateriales = danosMateriales,
+                    EquipoDanado = equipoDanado,
+                    SustituiblePor = sustituiblePor,
+                    IdSeccionB = idSeccionB,
+                    ExistenITRs = existenITRs,
+                    EquipoAdecuado = equipoAdecuado,
+                    ConociaTrabajo = conociaTrabajo,
+                    ExistiaSupervision = existiaSupervision,
+                    RiesgosJson = riesgosJson,
+                    ActosInsegurosJson = actosInsegurosJson,
+                    CondicionesInsegurasJson = condicionesInsegurasJson,
+                    EmpleadosConocimientoJson = empleadosConocimientoJson,
+                    EmpleadosInvolucradosJson = empleadosInvolucradosJson,
+                    ContinuaTrabajando = continuaTrabajando,
+                    EnviadoDomicilio = enviadoDomicilio,
+                    EnviadoAtencionMedica = enviadoAtencionMedica,
+                    Otro = otro,
+                    DiagnosticoFinal = diagnosticoFinal,
+                    Tratamiento = tratamiento,
+                    Incapacidad = incapacidad,
+                    AccionesCorrectivasPropuestas = accionesCorrectivasPropuestas,
+                    QuienCorrectivasPropuesta = quienCorrectivasPropuesta,
+                    CuandoCorrectivasPropuestas = cuandoCorrectivasPropuestas,
+                    AccionesPreventivasPropuestas = accionesPreventivasPropuestas,
+                    QuienPreventivoPropuesto = quienPreventivoPropuesto,
+                    CuandoPreventivasPropuestas = cuandoPreventivasPropuestas,
+                    Seguimiento = seguimiento,
+                    FechaHoraSeguimiento = fecha_Hora_Seguimiento,
+                    EmpleadoSeguimiento = empleadoSeguimiento,
+                    FechaHoraRecepcion = fecha_Hora_recepcion,
+                    TestigosJson = testigosJson
+                };
+                int registro = accidentesCN.InsertarAccidente(accidente);
                 if (registro > 0)
                 {
                     MostrarPanel(pDatosGenerales, btnDatosGenerales);
@@ -1293,6 +1362,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     dgvEmpleadosConocimiento.Rows.RemoveAt(e.RowIndex); // Eliminar la fila
                 }
             }
+        }
+
+        private void pSeguimientoCaso_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
