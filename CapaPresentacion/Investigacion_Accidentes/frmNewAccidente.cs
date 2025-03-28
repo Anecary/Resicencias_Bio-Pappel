@@ -32,7 +32,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
         public frmNewAccidente()
         {
             InitializeComponent();
-            pSeguimientoCaso.AutoScrollPosition = new Point(0, 0);
+            //pSeguimientoCaso.AutoScrollPosition = new Point(0, 0);
 
             materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
