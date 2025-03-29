@@ -23,7 +23,7 @@ namespace CapaPresentacion.Reportes
 
         private void materialComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string reporte_seleccionado = cmbReportes.SelectedItem.ToString();
+             string reporte_seleccionado = cmbReportes.SelectedItem.ToString();
 
             switch (reporte_seleccionado)
             {
@@ -42,6 +42,12 @@ namespace CapaPresentacion.Reportes
                     break;
                 case "Accidentes por turno":
                     obtener_turno();
+                    break;
+                case "Accidentes por T. lesión":
+                    obtener_Tlesion();
+                    break;
+                case "Accidentes por Incapacidad Departamento":
+                    obtener_IncapDepto();
                     break;
             }
         }
@@ -238,6 +244,36 @@ namespace CapaPresentacion.Reportes
 
             // Configurar el ReportViewer
             ConfigurarReporte(datosTransformados, datosFiltrados);
+        }
+
+        private void obtener_Tlesion()
+        {
+            DataTable Accidentes_TLesion = negocios.ObtenerReporteAccidentes_Tlesion();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xTLesion.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", Accidentes_TLesion));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        private void obtener_IncapDepto()
+        {
+            DataTable Accidentes_IncapDep = negocios.ObtenerReporteAccidentes_IncapDeto();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xIncapDep.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", Accidentes_IncapDep));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
         }
     }
 }

@@ -152,5 +152,25 @@ namespace CapaNegocios
 
             return dtReporte;
         }
+
+        public DataTable ObtenerReporteAccidentes_Tlesion()
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_TLesion();
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
+
+        public DataTable ObtenerReporteAccidentes_IncapDeto()
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_IncapDepto();
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
     }
 }

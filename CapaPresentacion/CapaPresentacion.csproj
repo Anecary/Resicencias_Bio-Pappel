@@ -87,6 +87,11 @@
     <Compile Include="BotonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Datas_Sets\Accidentes_incapDepto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_incapDepto.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datas_Sets\Accidentes_Parte_Cuerpo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,6 +113,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Accidentes_Por_Seccion.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datas_Sets\Accidentes_TLesion.cs">
+      <DependentUpon>Accidentes_TLesion.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datas_Sets\Accidentes_Turno.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -120,6 +128,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_TLesion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_TLesion.xsd</DependentUpon>
     </Compile>
     <Compile Include="Diseno\frmMessageBox.cs">
       <SubType>Form</SubType>
@@ -304,13 +317,26 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reportes\Accidentes_xAño.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xIncapDep.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xSeccion.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xTLesion.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xTurno.rdlc" />
     <EmbeddedResource Include="Reportes\Accidente_xParte_Cuerpo.rdlc" />
     <EmbeddedResource Include="Reportes\Accidente_xSemana.rdlc" />
     <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Datas_Sets\Accidentes_incapDepto.xsc">
+      <DependentUpon>Accidentes_incapDepto.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_incapDepto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_incapDepto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_incapDepto.xss">
+      <DependentUpon>Accidentes_incapDepto.xsd</DependentUpon>
+    </None>
     <None Include="Datas_Sets\Accidentes_Parte_Cuerpo.xsc">
       <DependentUpon>Accidentes_Parte_Cuerpo.xsd</DependentUpon>
     </None>
@@ -365,6 +391,17 @@
     </None>
     <None Include="Datas_Sets\Accidentes_xSemana.xss">
       <DependentUpon>Accidentes_xSemana.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_TLesion.xsc">
+      <DependentUpon>Accidentes_TLesion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_TLesion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_TLesion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_TLesion.xss">
+      <DependentUpon>Accidentes_TLesion.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
