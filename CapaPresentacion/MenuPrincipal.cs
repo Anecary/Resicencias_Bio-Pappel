@@ -305,5 +305,11 @@ namespace CapaPresentacion
             openChildForm(new Expediente.frmExpedienteMedico());
             hideSubMenu();
         }
+
+        private void btnActualizarExpediente_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Expediente.frmModificarExpediente());
+            hideSubMenu();
+        }
     }
 }

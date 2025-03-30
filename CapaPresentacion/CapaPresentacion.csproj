@@ -288,6 +288,9 @@
     <EmbeddedResource Include="Expediente\frmExpedienteMedico.resx">
       <DependentUpon>frmExpedienteMedico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Expediente\frmModificarExpediente.resx">
+      <DependentUpon>frmModificarExpediente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Investigacion_Accidentes\frmConsultaAccidentes.resx">
       <DependentUpon>frmConsultaAccidentes.cs</DependentUpon>
     </EmbeddedResource>

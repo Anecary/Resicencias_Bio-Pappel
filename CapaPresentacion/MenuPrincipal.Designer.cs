@@ -42,6 +42,7 @@ namespace CapaPresentacion
             this.btnNuevaNotaMedica = new System.Windows.Forms.Button();
             this.btnNotaMedica = new System.Windows.Forms.Button();
             this.pSubmenuExpediente = new System.Windows.Forms.Panel();
+            this.btnNewExpediente = new System.Windows.Forms.Button();
             this.btnExpediente = new System.Windows.Forms.Button();
             this.pSubmenuAccidentes = new System.Windows.Forms.Panel();
             this.btnConsultarAccidentes = new System.Windows.Forms.Button();
@@ -69,7 +70,7 @@ namespace CapaPresentacion
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnNewExpediente = new System.Windows.Forms.Button();
+            this.btnActualizarExpediente = new System.Windows.Forms.Button();
             this.pMenu.SuspendLayout();
             this.pSubmenuReportes.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
@@ -272,6 +273,7 @@ namespace CapaPresentacion
             // pSubmenuExpediente
             // 
             this.pSubmenuExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuExpediente.Controls.Add(this.btnActualizarExpediente);
             this.pSubmenuExpediente.Controls.Add(this.btnNewExpediente);
             this.pSubmenuExpediente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSubmenuExpediente.Location = new System.Drawing.Point(0, 589);
@@ -279,6 +281,26 @@ namespace CapaPresentacion
             this.pSubmenuExpediente.Size = new System.Drawing.Size(233, 100);
             this.pSubmenuExpediente.TabIndex = 7;
             this.pSubmenuExpediente.Visible = false;
+            // 
+            // btnNewExpediente
+            // 
+            this.btnNewExpediente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNewExpediente.FlatAppearance.BorderSize = 0;
+            this.btnNewExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewExpediente.ForeColor = System.Drawing.Color.White;
+            this.btnNewExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnNewExpediente.Image")));
+            this.btnNewExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewExpediente.Location = new System.Drawing.Point(0, 0);
+            this.btnNewExpediente.Name = "btnNewExpediente";
+            this.btnNewExpediente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnNewExpediente.Size = new System.Drawing.Size(233, 35);
+            this.btnNewExpediente.TabIndex = 1;
+            this.btnNewExpediente.Text = " Nuevo Expediente";
+            this.btnNewExpediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNewExpediente.UseVisualStyleBackColor = true;
+            this.btnNewExpediente.Click += new System.EventHandler(this.btnNewExpediente_Click);
             // 
             // btnExpediente
             // 
@@ -592,6 +614,10 @@ namespace CapaPresentacion
             // botonPersonalizado1
             // 
             this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.botonPersonalizado1.BorderRadius = 20;
+            this.botonPersonalizado1.BorderSize = 0;
             this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
             this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
@@ -602,6 +628,7 @@ namespace CapaPresentacion
             this.botonPersonalizado1.Name = "botonPersonalizado1";
             this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
             this.botonPersonalizado1.TabIndex = 2;
+            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
             this.botonPersonalizado1.UseVisualStyleBackColor = false;
             // 
             // psuperior
@@ -747,25 +774,25 @@ namespace CapaPresentacion
             this.panel2.Size = new System.Drawing.Size(945, 5);
             this.panel2.TabIndex = 4;
             // 
-            // btnNewExpediente
+            // btnActualizarExpediente
             // 
-            this.btnNewExpediente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNewExpediente.FlatAppearance.BorderSize = 0;
-            this.btnNewExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewExpediente.ForeColor = System.Drawing.Color.White;
-            this.btnNewExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnNewExpediente.Image")));
-            this.btnNewExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewExpediente.Location = new System.Drawing.Point(0, 0);
-            this.btnNewExpediente.Name = "btnNewExpediente";
-            this.btnNewExpediente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnNewExpediente.Size = new System.Drawing.Size(233, 35);
-            this.btnNewExpediente.TabIndex = 1;
-            this.btnNewExpediente.Text = " Nuevo Expediente";
-            this.btnNewExpediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNewExpediente.UseVisualStyleBackColor = true;
-            this.btnNewExpediente.Click += new System.EventHandler(this.btnNewExpediente_Click);
+            this.btnActualizarExpediente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnActualizarExpediente.FlatAppearance.BorderSize = 0;
+            this.btnActualizarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarExpediente.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizarExpediente.Image")));
+            this.btnActualizarExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarExpediente.Location = new System.Drawing.Point(0, 35);
+            this.btnActualizarExpediente.Name = "btnActualizarExpediente";
+            this.btnActualizarExpediente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnActualizarExpediente.Size = new System.Drawing.Size(233, 35);
+            this.btnActualizarExpediente.TabIndex = 2;
+            this.btnActualizarExpediente.Text = " Actualizar Expediente";
+            this.btnActualizarExpediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizarExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnActualizarExpediente.UseVisualStyleBackColor = true;
+            this.btnActualizarExpediente.Click += new System.EventHandler(this.btnActualizarExpediente_Click);
             // 
             // frmMenu
             // 
@@ -840,6 +867,7 @@ namespace CapaPresentacion
         private BotonPersonalizado botonPersonalizado1;
         private System.Windows.Forms.Button btnReportesInvAccidentes;
         private System.Windows.Forms.Button btnNewExpediente;
+        private System.Windows.Forms.Button btnActualizarExpediente;
     }
 }
 

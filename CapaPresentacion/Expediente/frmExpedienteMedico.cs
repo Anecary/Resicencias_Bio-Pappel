@@ -186,6 +186,10 @@ namespace CapaPresentacion.Expediente
                         (dr["domicilio_Estado"] as string ?? "");
                     txtFechaIngreso.Text = fechaIngresoAlPuesto.ToString("dd-MMMM-yyyy");
                     txtPuesto.Text = dr["puesto"] as string ?? "N/A";
+
+                    string nombre = txtNombreEmpleado.Text;
+                    string nomenclarura = ObtenerNomenclatura(nombre);
+                    txtNoExpediente.Text = nomenclarura + "-" + txtNumeroNomina.Text;
                 }
                 else
                 {
@@ -199,7 +203,10 @@ namespace CapaPresentacion.Expediente
                 txtNumeroNomina.Focus();
             }
         }
-
+        static string ObtenerNomenclatura(string nombre)
+        {
+            return string.Concat(nombre.Split(' ').Select(palabra => palabra[0]));
+        }
         private void btnDatosGenerales_Click(object sender, EventArgs e)
         {
             MostrarPanel(pDatosGenerales, btnDatosGenerales);

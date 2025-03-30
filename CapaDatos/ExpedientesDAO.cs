@@ -110,5 +110,41 @@ namespace CapaDatos
                 conn.Close();
             }
         }
+
+        public DataSet consultaExpediente(string numExpediente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerExpediente", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_numExpediente = new MySqlParameter("@p_numExpediente", MySqlDbType.VarChar);
+                p_numExpediente.Direction = ParameterDirection.Input;
+                p_numExpediente.Value = numExpediente;
+                adapter.SelectCommand.Parameters.Add(p_numExpediente);
+
+                adapter.Fill(data, "ConsultaNumExpediente");
+                return data;
+            }
+        }
+
+        //public DataSet ActualizarExpediente(string numExpediente)
+        //{
+        //    using (DataSet data = new DataSet())
+        //    {
+        //        conn = objConexion.Conecta();
+        //        adapter = new MySqlDataAdapter("ObtenerExpediente", conn);
+        //        adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+        //        MySqlParameter p_numExpediente = new MySqlParameter("@p_numExpediente", MySqlDbType.VarChar);
+        //        p_numExpediente.Direction = ParameterDirection.Input;
+        //        p_numExpediente.Value = numExpediente;
+        //        adapter.SelectCommand.Parameters.Add(p_numExpediente);
+
+        //        adapter.Fill(data, "ConsultaNumExpediente");
+        //        return data;
+        //    }
+        //}
     }
 }
