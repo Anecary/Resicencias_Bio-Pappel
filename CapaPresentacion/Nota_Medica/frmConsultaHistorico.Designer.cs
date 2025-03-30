@@ -33,18 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedor = new System.Windows.Forms.Panel();
             this.pConsultaHistoricos = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.btnConsultaGeneral = new MaterialSkin.Controls.MaterialButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idConsulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.num_Expediente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtNoNomina = new MaterialSkin.Controls.MaterialTextBox();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
             this.btnConsultaIndividual = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -53,14 +41,26 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
+            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.btnConsultaGeneral = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idConsulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.num_Expediente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtNoNomina = new MaterialSkin.Controls.MaterialTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.pContenedor.SuspendLayout();
             this.pConsultaHistoricos.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.materialCard2.SuspendLayout();
             this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.materialCard2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -109,164 +109,6 @@
             this.pConsultaHistoricos.Name = "pConsultaHistoricos";
             this.pConsultaHistoricos.Size = new System.Drawing.Size(1239, 648);
             this.pConsultaHistoricos.TabIndex = 34;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1238, 123);
-            this.panel2.TabIndex = 4;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(337, 123);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 772);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1238, 6);
-            this.panel5.TabIndex = 7;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1238, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 778);
-            this.panel3.TabIndex = 6;
-            // 
-            // materialCard1
-            // 
-            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.btnConsultaGeneral);
-            this.materialCard1.Controls.Add(this.dataGridView1);
-            this.materialCard1.Controls.Add(this.materialLabel1);
-            this.materialCard1.Controls.Add(this.txtNoNomina);
-            this.materialCard1.Depth = 0;
-            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(23, 13);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(1172, 333);
-            this.materialCard1.TabIndex = 86;
-            // 
-            // btnConsultaGeneral
-            // 
-            this.btnConsultaGeneral.AutoSize = false;
-            this.btnConsultaGeneral.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnConsultaGeneral.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnConsultaGeneral.Depth = 0;
-            this.btnConsultaGeneral.HighEmphasis = true;
-            this.btnConsultaGeneral.Icon = ((System.Drawing.Image)(resources.GetObject("btnConsultaGeneral.Icon")));
-            this.btnConsultaGeneral.Location = new System.Drawing.Point(429, 66);
-            this.btnConsultaGeneral.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btnConsultaGeneral.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnConsultaGeneral.Name = "btnConsultaGeneral";
-            this.btnConsultaGeneral.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnConsultaGeneral.Size = new System.Drawing.Size(150, 50);
-            this.btnConsultaGeneral.TabIndex = 88;
-            this.btnConsultaGeneral.Text = "Buscar";
-            this.btnConsultaGeneral.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnConsultaGeneral.UseAccentColor = true;
-            this.btnConsultaGeneral.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idConsulta,
-            this.num_Expediente,
-            this.fecha});
-            this.dataGridView1.Location = new System.Drawing.Point(31, 136);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1116, 170);
-            this.dataGridView1.TabIndex = 87;
-            // 
-            // idConsulta
-            // 
-            this.idConsulta.HeaderText = "IdConsulta";
-            this.idConsulta.MinimumWidth = 6;
-            this.idConsulta.Name = "idConsulta";
-            this.idConsulta.ReadOnly = true;
-            this.idConsulta.Width = 125;
-            // 
-            // num_Expediente
-            // 
-            this.num_Expediente.HeaderText = "No. Expediente";
-            this.num_Expediente.MinimumWidth = 6;
-            this.num_Expediente.Name = "num_Expediente";
-            this.num_Expediente.ReadOnly = true;
-            this.num_Expediente.Width = 125;
-            // 
-            // fecha
-            // 
-            this.fecha.HeaderText = "Fecha ";
-            this.fecha.MinimumWidth = 6;
-            this.fecha.Name = "fecha";
-            this.fecha.ReadOnly = true;
-            this.fecha.Width = 125;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel1.ForeColor = System.Drawing.Color.Green;
-            this.materialLabel1.HighEmphasis = true;
-            this.materialLabel1.Location = new System.Drawing.Point(26, 14);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(190, 29);
-            this.materialLabel1.TabIndex = 86;
-            this.materialLabel1.Text = "Consulta General:";
-            this.materialLabel1.UseAccent = true;
-            // 
-            // txtNoNomina
-            // 
-            this.txtNoNomina.AnimateReadOnly = false;
-            this.txtNoNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNoNomina.Depth = 0;
-            this.txtNoNomina.Enabled = false;
-            this.txtNoNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNoNomina.Hint = "Número de Nomina: ";
-            this.txtNoNomina.LeadingIcon = null;
-            this.txtNoNomina.Location = new System.Drawing.Point(31, 66);
-            this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNoNomina.MaxLength = 18;
-            this.txtNoNomina.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNoNomina.Multiline = false;
-            this.txtNoNomina.Name = "txtNoNomina";
-            this.txtNoNomina.Size = new System.Drawing.Size(353, 50);
-            this.txtNoNomina.TabIndex = 85;
-            this.txtNoNomina.Text = "";
-            this.txtNoNomina.TrailingIcon = null;
             // 
             // materialCard2
             // 
@@ -398,6 +240,164 @@
             this.materialComboBox1.StartIndex = 0;
             this.materialComboBox1.TabIndex = 86;
             // 
+            // materialCard1
+            // 
+            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.btnConsultaGeneral);
+            this.materialCard1.Controls.Add(this.dataGridView1);
+            this.materialCard1.Controls.Add(this.materialLabel1);
+            this.materialCard1.Controls.Add(this.txtNoNomina);
+            this.materialCard1.Depth = 0;
+            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard1.Location = new System.Drawing.Point(23, 13);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard1.Name = "materialCard1";
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Size = new System.Drawing.Size(1172, 333);
+            this.materialCard1.TabIndex = 86;
+            // 
+            // btnConsultaGeneral
+            // 
+            this.btnConsultaGeneral.AutoSize = false;
+            this.btnConsultaGeneral.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnConsultaGeneral.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnConsultaGeneral.Depth = 0;
+            this.btnConsultaGeneral.HighEmphasis = true;
+            this.btnConsultaGeneral.Icon = ((System.Drawing.Image)(resources.GetObject("btnConsultaGeneral.Icon")));
+            this.btnConsultaGeneral.Location = new System.Drawing.Point(429, 66);
+            this.btnConsultaGeneral.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btnConsultaGeneral.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnConsultaGeneral.Name = "btnConsultaGeneral";
+            this.btnConsultaGeneral.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnConsultaGeneral.Size = new System.Drawing.Size(150, 50);
+            this.btnConsultaGeneral.TabIndex = 88;
+            this.btnConsultaGeneral.Text = "Buscar";
+            this.btnConsultaGeneral.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnConsultaGeneral.UseAccentColor = true;
+            this.btnConsultaGeneral.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idConsulta,
+            this.num_Expediente,
+            this.fecha});
+            this.dataGridView1.Location = new System.Drawing.Point(31, 136);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1116, 170);
+            this.dataGridView1.TabIndex = 87;
+            // 
+            // idConsulta
+            // 
+            this.idConsulta.HeaderText = "IdConsulta";
+            this.idConsulta.MinimumWidth = 6;
+            this.idConsulta.Name = "idConsulta";
+            this.idConsulta.ReadOnly = true;
+            this.idConsulta.Width = 125;
+            // 
+            // num_Expediente
+            // 
+            this.num_Expediente.HeaderText = "No. Expediente";
+            this.num_Expediente.MinimumWidth = 6;
+            this.num_Expediente.Name = "num_Expediente";
+            this.num_Expediente.ReadOnly = true;
+            this.num_Expediente.Width = 125;
+            // 
+            // fecha
+            // 
+            this.fecha.HeaderText = "Fecha ";
+            this.fecha.MinimumWidth = 6;
+            this.fecha.Name = "fecha";
+            this.fecha.ReadOnly = true;
+            this.fecha.Width = 125;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel1.ForeColor = System.Drawing.Color.Green;
+            this.materialLabel1.HighEmphasis = true;
+            this.materialLabel1.Location = new System.Drawing.Point(26, 14);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(190, 29);
+            this.materialLabel1.TabIndex = 86;
+            this.materialLabel1.Text = "Consulta General:";
+            this.materialLabel1.UseAccent = true;
+            // 
+            // txtNoNomina
+            // 
+            this.txtNoNomina.AnimateReadOnly = false;
+            this.txtNoNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNoNomina.Depth = 0;
+            this.txtNoNomina.Enabled = false;
+            this.txtNoNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNoNomina.Hint = "Número de Nomina: ";
+            this.txtNoNomina.LeadingIcon = null;
+            this.txtNoNomina.Location = new System.Drawing.Point(31, 66);
+            this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNoNomina.MaxLength = 18;
+            this.txtNoNomina.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNoNomina.Multiline = false;
+            this.txtNoNomina.Name = "txtNoNomina";
+            this.txtNoNomina.Size = new System.Drawing.Size(353, 50);
+            this.txtNoNomina.TabIndex = 85;
+            this.txtNoNomina.Text = "";
+            this.txtNoNomina.TrailingIcon = null;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1238, 123);
+            this.panel2.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(337, 123);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 772);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1238, 6);
+            this.panel5.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1238, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(7, 778);
+            this.panel3.TabIndex = 6;
+            // 
             // frmConsultaHistorico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -411,14 +411,14 @@
             this.panel1.ResumeLayout(false);
             this.pContenedor.ResumeLayout(false);
             this.pConsultaHistoricos.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.materialCard2.ResumeLayout(false);
+            this.materialCard2.PerformLayout();
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.materialCard2.ResumeLayout(false);
-            this.materialCard2.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
