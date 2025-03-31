@@ -87,8 +87,28 @@
     <Compile Include="BotonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="comboBoxPersonalizado.cs">
       <SubType>UserControl</SubType>
+=======
+    <Compile Include="Datas_Sets\Accidentes_Condicion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_Condicion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_DebidoA.cs">
+      <DependentUpon>Accidentes_DebidoA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_DebidoA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_DebidoA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Edad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_Edad.xsd</DependentUpon>
+>>>>>>> master
     </Compile>
     <Compile Include="Datas_Sets\Accidentes_incapDepto.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -245,6 +265,12 @@
     <Compile Include="Nota_Medica\frmNotaMedica.Designer.cs">
       <DependentUpon>frmNotaMedica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nota_Medica\plantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nota_Medica\plantilla.Designer.cs">
+      <DependentUpon>plantilla.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="radioButtonPersonalizado.cs">
@@ -312,6 +338,9 @@
     <EmbeddedResource Include="Nota_Medica\frmNotaMedica.resx">
       <DependentUpon>frmNotaMedica.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Nota_Medica\plantilla.resx">
+      <DependentUpon>plantilla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -323,6 +352,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reportes\Accidentes_xAño.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xCondicion.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xDebidoA.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xEdad.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xIncapDep.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xSeccion.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xTLesion.rdlc" />
@@ -332,6 +364,39 @@
     <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Datas_Sets\Accidentes_Condicion.xsc">
+      <DependentUpon>Accidentes_Condicion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Condicion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_Condicion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Condicion.xss">
+      <DependentUpon>Accidentes_Condicion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_DebidoA.xsc">
+      <DependentUpon>Accidentes_DebidoA.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_DebidoA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_DebidoA.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_DebidoA.xss">
+      <DependentUpon>Accidentes_DebidoA.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Edad.xsc">
+      <DependentUpon>Accidentes_Edad.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Edad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_Edad.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Edad.xss">
+      <DependentUpon>Accidentes_Edad.xsd</DependentUpon>
+    </None>
     <None Include="Datas_Sets\Accidentes_incapDepto.xsc">
       <DependentUpon>Accidentes_incapDepto.xsd</DependentUpon>
     </None>
