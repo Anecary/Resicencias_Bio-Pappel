@@ -139,7 +139,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnPatologicos_Click(object sender, EventArgs e)
         {
-            panel3.Visible = false;
+            pDatosGenerales.Visible = false;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = true;
@@ -281,50 +281,68 @@ namespace CapaPresentacion.Nota_Medica
             {
                 DataRow row = ds.Tables["consultarExpMedico"].Rows[0];
 
-                txtEstudiosLaboratorio.Text = row["Estudios_Laboratorio"].ToString();
-                txtEstudiosRadiologicos.Text = row["Estudios_Radiologicos"].ToString();
-                txtOtros.Text = row["Otros"].ToString();
-                txtDiagnosticoExp.Text = row["Diagnostico_inicial"].ToString();
-                txtConstitucionFisica.Text = row["Constitucion_Fisica"].ToString();
-                txtFC.Text = row["FC"].ToString();
-                txtTalla.Text = row["Talla"].ToString();
-                txtFR.Text = row["FR"].ToString();
-                txtPulso.Text = row["Pulso"].ToString();
-                txtPeso.Text = row["Peso"].ToString();
-                txtIMC.Text = row["IMC"].ToString();
-                txtTA.Text = row["TA"].ToString();
-                txtGrado.Text = row["Grado"].ToString();
-                txtTemperatura.Text = row["Temperatura"].ToString();
-                txtCasa.Text = row["Casa"].ToString();
-                txtAlimentacion.Text = row["Alimentacion"].ToString();
-                txtAnimales.Text = row["Animales"].ToString();
-                txtInmunizaciones.Text = row["Inmunizaciones"].ToString();
-                txtToxicomanias.Text = row["Toxicomanias"].ToString();
-                txtTrabajosYActAnteriores.Text = row["Trabajo_actividades_anteriores"].ToString();
-                txtDeportesRecreacion.Text = row["Deportes"].ToString();
-                txtEntornoFamiliar.Text = row["Entorno_Familiar"].ToString();
-                txtEscolaridad.Text = row["Escolaridad"].ToString();
-                txtHeredoFamiliar.Text = row["Antecedentes_Heredofamiliares"].ToString();
-                txtAlergias.Text = row["Alergias"].ToString();
-                txtSNerviosoCentral.Text = row["SistemaNervioso_Central"].ToString();
-                txtSCardiovascular.Text = row["SistemaCardiovascular"].ToString();
-                txtSRespiratorio.Text = row["SistemaRespiratorio"].ToString();
-                txtSGastrointestinal.Text = row["SistemaGastrointestinal"].ToString();
-                txtSEndocrino.Text = row["SistemaEndocrinico"].ToString();
-                txtSGenitoUrinario.Text = row["SistemaGenitourinario"].ToString();
-                txtSMusculoEsqueletico.Text = row["SistemaMusculoesqueletico"].ToString();
-                txtOrganoSentidos.Text = row["Organo_Sentidos"].ToString();
-                txtGinecoObstetrico.Text = row["Genitourinario"].ToString();
-                txtGrupoSanguineo.Text = row["Grupo_Sanguineo"].ToString();
+                txtConstitucionFisica.Text = row["Constitucion_Fisica"]?.ToString() ?? "";
+                txtTalla.Text = row["Talla"]?.ToString() ?? "";
+                txtPeso.Text = row["Peso"]?.ToString() ?? "";
+                txtIMC.Text = row["IMC"]?.ToString() ?? "";
+                txtGrado.Text = row["Grado"]?.ToString() ?? "";
+                txtFC.Text = row["FC"]?.ToString() ?? "";
+                txtFR.Text = row["FR"]?.ToString() ?? "";
+                txtPulso.Text = row["Pulso"]?.ToString() ?? "";
+                txtTA.Text = row["TA"]?.ToString() ?? "";
+                txtTemperatura.Text = row["Temperatura"]?.ToString() ?? "";
+                txtCraneo.Text = row["Craneo"]?.ToString() ?? "";
+                txtOjos.Text = row["Ojos"]?.ToString() ?? "";
+                txtOidos.Text = row["Oidos"]?.ToString() ?? "";
+                txtNariz.Text = row["Nariz"]?.ToString() ?? "";
+                txtBoca.Text = row["Boca"]?.ToString() ?? "";
+                txtCuello.Text = row["Cuello"]?.ToString() ?? "";
+                txtTorax.Text = row["Torax"]?.ToString() ?? "";
+                txtAbdomen.Text = row["Abdomen"]?.ToString() ?? "";
+                txtGenitourinario.Text = row["Genitourinario"]?.ToString() ?? "";
+                txtMusculoEsqueletico.Text = row["MusculoEsqueletico"]?.ToString() ?? "";
+                txtNeurologico.Text = row["Neurologico"]?.ToString() ?? "";
+                txtAlergias.Text = row["Alergias"]?.ToString() ?? "";
+                txtSNerviosoCentral.Text = row["SistemaNervioso_Central"]?.ToString() ?? "";
+                txtSCardiovascular.Text = row["SistemaCardiovascular"]?.ToString() ?? "";
+                txtSRespiratorio.Text = row["SistemaRespiratorio"]?.ToString() ?? "";
+                txtSGastrointestinal.Text = row["SistemaGastrointestinal"]?.ToString() ?? "";
+                txtSEndocrino.Text = row["SistemaEndocrinico"]?.ToString() ?? "";
+                txtSGenitoUrinario.Text = row["SistemaGenitourinario"]?.ToString() ?? "";
+                txtSMusculoEsqueletico.Text = row["SistemaMusculoesqueletico"]?.ToString() ?? "";
+                txtOrganoSentidos.Text = row["Organo_Sentidos"]?.ToString() ?? "";
+                txtGinecoObstetrico.Text = row["Grupo_Sanguineo"]?.ToString() ?? "";
+                txtGrupoSanguineo.Text = row["Grupo_Sanguineo"]?.ToString() ?? "";
+                txtEstudiosLaboratorio.Text = row["Estudios_Laboratorio"]?.ToString() ?? "";
+                txtEstudiosRadiologicos.Text = row["Estudios_Radiologicos"]?.ToString() ?? "";
+                txtOtros.Text = row["Otros"]?.ToString() ?? "";
+                txtDiagnosticoExp.Text = row["Diagnostico_inicial"]?.ToString() ?? "";
+                txtHeredoFamiliar.Text = row["Antecedentes_Heredofamiliares"]?.ToString() ?? "";
+                txtCasa.Text = row["Casa"]?.ToString() ?? "";
+                txtAlimentacion.Text = row["Alimentacion"]?.ToString() ?? "";
+                txtAnimales.Text = row["Animales"]?.ToString() ?? "";
+                txtInmunizaciones.Text = row["Inmunizaciones"]?.ToString() ?? "";
+                txtToxicomanias.Text = row["Toxicomanias"]?.ToString() ?? "";
+                txtTrabajosYActAnteriores.Text = row["Trabajo_actividades_anteriores"]?.ToString() ?? "";
+                txtDeportesRecreacion.Text = row["Deportes"]?.ToString() ?? "";
+                txtEntornoFamiliar.Text = row["Entorno_Familiar"]?.ToString() ?? "";
+                txtEscolaridad.Text = row["Escolaridad"]?.ToString() ?? "";
                 rbtnHozpitalizaciones.Checked = row["Hospitalizaciones"] != DBNull.Value && Convert.ToInt32(row["Hospitalizaciones"]) == 1;
                 rbtnCirugias.Checked = row["Cirugias"] != DBNull.Value && Convert.ToInt32(row["Cirugias"]) == 1;
                 rbtnTransfusiones.Checked = row["Transfusiones"] != DBNull.Value && Convert.ToInt32(row["Transfusiones"]) == 1;
 
+                pDatosGenerales.Visible = false;
+                pAntecedentes.Visible = true;
+                pNoPatologicos.Visible = false;
+                pPatologicos.Visible = false;
+                pExploracionFisica.Visible = false;
+                pEstudiosParaclinicos.Visible = false;
             }
             else
             {
                 RJMessageBox.Show("No se encontró el expediente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
     }
 }
