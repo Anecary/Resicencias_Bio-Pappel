@@ -42,6 +42,24 @@ namespace CapaDatos
             }
         }
 
+        public DataSet consultarExpMedico(string numExpediente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ConsultarExpMedico", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_numExpediente = new MySqlParameter("@p_numExpediente", MySqlDbType.VarChar);
+                p_numExpediente.Direction = ParameterDirection.Input;
+                p_numExpediente.Value = numExpediente;
+                adapter.SelectCommand.Parameters.Add(p_numExpediente);
+
+                adapter.Fill(data, "consultarExpMedico");
+                return data;
+            }
+        }
+
         public bool InsertarConsultaMedica(string numExpediente, DateTime fecha, string observaciones, string diagnostico, string proceso, int idTipoCausa)
         {
             try

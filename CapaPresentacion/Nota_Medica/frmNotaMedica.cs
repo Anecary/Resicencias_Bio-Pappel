@@ -17,7 +17,6 @@ namespace CapaPresentacion.Nota_Medica
     {
         private MaterialSkinManager materialSkinManager;
         ConsultaMedicaCN consultaMedicaCN = new ConsultaMedicaCN(); 
-        ExpedientesCN expedientesCN = new ExpedientesCN();
         EmpleadosCN empleadosCN = new EmpleadosCN();
 
         // Array para guardar las idTipoCausa
@@ -50,7 +49,7 @@ namespace CapaPresentacion.Nota_Medica
             }
             else
             {
-                MessageBox.Show("No se encontraron causas de consulta.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("No se encontraron causas de consulta.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -82,7 +81,7 @@ namespace CapaPresentacion.Nota_Medica
             else
             {
                 cboxTipoCausa.DataSource = null;
-                MessageBox.Show("No se encontraron tipos de causa para la causa seleccionada.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("No se encontraron tipos de causa para la causa seleccionada.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -233,7 +232,7 @@ namespace CapaPresentacion.Nota_Medica
                 // Validar si los campos no están vacíos (agrega validaciones previas)
                 if (string.IsNullOrEmpty(txtNoExpediente.Text) || string.IsNullOrEmpty(txtObservaciones.Text) || string.IsNullOrEmpty(txtDiagnostico.Text) || string.IsNullOrEmpty(cboxProceso.Text) || cboxTipoCausa.SelectedIndex == -1)
                 {
-                    MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    RJMessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -255,19 +254,77 @@ namespace CapaPresentacion.Nota_Medica
                 bool resultado = consultaMedicaCN.InsertarConsultaMedica(consulta);
                     if (resultado)
                     {
-                        MessageBox.Show("Consulta médica registrada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RJMessageBox.Show("Consulta médica registrada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Hubo un error al registrar la consulta médica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        RJMessageBox.Show("Hubo un error al registrar la consulta médica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        private void btnBuscarExpediente_Click(object sender, EventArgs e)
+        {
+            string numExpediente = txtNoExpediente.Text.Trim();
+            if (string.IsNullOrEmpty(numExpediente))
+            {
+                RJMessageBox.Show("Por favor, ingrese un número de expediente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            DataSet ds = consultaMedicaCN.consultaExpMedico(numExpediente);
+            if (ds.Tables["consultarExpMedico"].Rows.Count > 0)
+            {
+                DataRow row = ds.Tables["consultarExpMedico"].Rows[0];
+
+                txtEstudiosLaboratorio.Text = row["Estudios_Laboratorio"].ToString();
+                txtEstudiosRadiologicos.Text = row["Estudios_Radiologicos"].ToString();
+                txtOtros.Text = row["Otros"].ToString();
+                txtDiagnosticoExp.Text = row["Diagnostico_inicial"].ToString();
+                txtConstitucionFisica.Text = row["Constitucion_Fisica"].ToString();
+                txtFC.Text = row["FC"].ToString();
+                txtTalla.Text = row["Talla"].ToString();
+                txtFR.Text = row["FR"].ToString();
+                txtPulso.Text = row["Pulso"].ToString();
+                txtPeso.Text = row["Peso"].ToString();
+                txtIMC.Text = row["IMC"].ToString();
+                txtTA.Text = row["TA"].ToString();
+                txtGrado.Text = row["Grado"].ToString();
+                txtTemperatura.Text = row["Temperatura"].ToString();
+                txtCasa.Text = row["Casa"].ToString();
+                txtAlimentacion.Text = row["Alimentacion"].ToString();
+                txtAnimales.Text = row["Animales"].ToString();
+                txtInmunizaciones.Text = row["Inmunizaciones"].ToString();
+                txtToxicomanias.Text = row["Toxicomanias"].ToString();
+                txtTrabajosYActAnteriores.Text = row["Trabajo_actividades_anteriores"].ToString();
+                txtDeportesRecreacion.Text = row["Deportes"].ToString();
+                txtEntornoFamiliar.Text = row["Entorno_Familiar"].ToString();
+                txtEscolaridad.Text = row["Escolaridad"].ToString();
+                txtHeredoFamiliar.Text = row["Antecedentes_Heredofamiliares"].ToString();
+                txtAlergias.Text = row["Alergias"].ToString();
+                txtSNerviosoCentral.Text = row["SistemaNervioso_Central"].ToString();
+                txtSCardiovascular.Text = row["SistemaCardiovascular"].ToString();
+                txtSRespiratorio.Text = row["SistemaRespiratorio"].ToString();
+                txtSGastrointestinal.Text = row["SistemaGastrointestinal"].ToString();
+                txtSEndocrino.Text = row["SistemaEndocrinico"].ToString();
+                txtSGenitoUrinario.Text = row["SistemaGenitourinario"].ToString();
+                txtSMusculoEsqueletico.Text = row["SistemaMusculoesqueletico"].ToString();
+                txtOrganoSentidos.Text = row["Organo_Sentidos"].ToString();
+                txtGinecoObstetrico.Text = row["Genitourinario"].ToString();
+                txtGrupoSanguineo.Text = row["Grupo_Sanguineo"].ToString();
+                rbtnHozpitalizaciones.Checked = row["Hospitalizaciones"] != DBNull.Value && Convert.ToInt32(row["Hospitalizaciones"]) == 1;
+                rbtnCirugias.Checked = row["Cirugias"] != DBNull.Value && Convert.ToInt32(row["Cirugias"]) == 1;
+                rbtnTransfusiones.Checked = row["Transfusiones"] != DBNull.Value && Convert.ToInt32(row["Transfusiones"]) == 1;
+
+            }
+            else
+            {
+                RJMessageBox.Show("No se encontró el expediente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
