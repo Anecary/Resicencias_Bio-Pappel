@@ -185,7 +185,9 @@
             "Accidentes por turno",
             "Accidentes por T. lesión",
             "Accidentes por Incapacidad Departamento",
-            "Accidentes por Condicion"});
+            "Accidentes por Condicion",
+            "Accidentes por Edad",
+            "Accidentes Debido A"});
             this.cmbReportes.Location = new System.Drawing.Point(488, 20);
             this.cmbReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbReportes.MaxDropDownItems = 4;
