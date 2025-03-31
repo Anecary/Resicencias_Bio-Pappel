@@ -1,4 +1,5 @@
-﻿using CapaNegocios;
+﻿using CapaEntidad;
+using CapaNegocios;
 using Microsoft.Reporting.WinForms;
 using System;
 using System.Data;
@@ -48,6 +49,15 @@ namespace CapaPresentacion.Reportes
                     break;
                 case "Accidentes por Incapacidad Departamento":
                     obtener_IncapDepto();
+                    break;
+                case "Accidentes por Condicion":
+                    obtener_Condici();
+                    break;
+                case "Accidentes por Edad":
+                    obtener_Edad();
+                    break;
+                case "Accidentes Debido A":
+                    obtener_Debido();
                     break;
             }
         }
@@ -271,6 +281,51 @@ namespace CapaPresentacion.Reportes
 
             // Agregar cada DataTable a su propio DataSet en el ReportViewer
             rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", Accidentes_IncapDep));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        private void obtener_Condici()
+        {
+            DataTable Accidentes_Condicion = negocios.ObtenerReporteAccidentes_Condicionn();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xCondicion.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Condicion", Accidentes_Condicion));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        private void obtener_Edad()
+        {
+            DataTable Accidentes_Edad = negocios.ObtenerReporteAccidentes_Eda();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xEdad.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Edad", Accidentes_Edad));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        private void obtener_Debido()
+        {
+            DataTable Accidentes_Debido = negocios.ObtenerReporteAccidentes_Debido();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xDebidoA.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_DebidoA", Accidentes_Debido));
 
             // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
             rvInvestigacionAccidente.RefreshReport();

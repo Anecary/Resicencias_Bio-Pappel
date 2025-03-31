@@ -30,37 +30,74 @@ namespace CapaPresentacion.Nota_Medica
             );
         }
 
-        private void btnMouseEnter(Object sender, EventArgs e)
+        private void frmNotaMedica_Load(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            pSeccionesDatos.Controls.Add(p);
-            p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
-            p.Size = new Size(160, 5); // Tamaño del panel
-            p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
+            pDatosGenerales.Visible = true;
+            pAntecedentes.Visible = false;
+            pNoPatologicos.Visible = false;
+            pPatologicos.Visible = false;
+            pExploracionFisica.Visible = false;
+            pEstudiosParaclinicos.Visible = false;
         }
 
-        // Método para eliminar el panel cuando el mouse sale del área del botón
-        private void btnMouseLeave(Object sender, EventArgs e)
+        private void btnAntecedentes_Click(object sender, EventArgs e)
         {
-            pSeccionesDatos.Controls.Remove(p);
+            pDatosGenerales.Visible = false;
+            pAntecedentes.Visible = true;
+            pNoPatologicos.Visible = false;
+            pPatologicos.Visible = false;
+            pExploracionFisica.Visible = false;
+            pEstudiosParaclinicos.Visible = false;
+        }
+
+        private void btnEstudiosParaclinicos_Click(object sender, EventArgs e)
+        {
+            pDatosGenerales.Visible = false;
+            pAntecedentes.Visible = false;
+            pNoPatologicos.Visible = false;
+            pPatologicos.Visible = false;
+            pExploracionFisica.Visible = false;
+            pEstudiosParaclinicos.Visible = true;
         }
 
         private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
         {
-            pNuevaConsultaMedica.Visible = true;
-            pConsultaExpMedico.Visible = false;
+            pDatosGenerales.Visible = true;
+            pAntecedentes.Visible = false;
+            pNoPatologicos.Visible = false;
+            pPatologicos.Visible = false;
+            pExploracionFisica.Visible = false;
+            pEstudiosParaclinicos.Visible = false;
         }
 
-        private void btnConsultaExpMedico_Click(object sender, EventArgs e)
+        private void btnNoPatologicos_Click(object sender, EventArgs e)
         {
-            pNuevaConsultaMedica.Visible = false;
-            pConsultaExpMedico.Visible = true;
+            pDatosGenerales.Visible = false;
+            pAntecedentes.Visible = false;
+            pNoPatologicos.Visible = true;
+            pPatologicos.Visible = false;
+            pExploracionFisica.Visible = false;
+            pEstudiosParaclinicos.Visible = false;
         }
 
-        private void frmNotaMedica_Load(object sender, EventArgs e)
+        private void btnPatologicos_Click(object sender, EventArgs e)
         {
-            pNuevaConsultaMedica.Visible = true;
-            pConsultaExpMedico.Visible = false;
+            pDatosGenerales.Visible = false;
+            pAntecedentes.Visible = false;
+            pNoPatologicos.Visible = false;
+            pPatologicos.Visible = true;
+            pExploracionFisica.Visible = false;
+            pEstudiosParaclinicos.Visible = false;
+        }
+
+        private void btnExploracionFisica_Click(object sender, EventArgs e)
+        {
+            pDatosGenerales.Visible = false;
+            pAntecedentes.Visible = false; 
+            pNoPatologicos.Visible = false;
+            pPatologicos.Visible = false;
+            pExploracionFisica.Visible = true;
+            pEstudiosParaclinicos.Visible = false;
         }
     }
 }
