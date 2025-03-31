@@ -684,5 +684,35 @@ namespace CapaDatos
             return dt; // Retornar el DataTable con los datos
         }
 
+        public DataTable ObtenerReporteAccidentes_Condicion()
+        {
+            DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
+
+            using (MySqlConnection conn = objConexion.Conecta()) // Conectar a la BD
+            {
+                using (MySqlCommand cmd = new MySqlCommand("AccidentesCondicion", conn)) // Llamar al procedimiento almacenado correcto
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    try
+                    {
+                        conn.Open();
+
+                        // Ejecutar y llenar el DataTable
+                        using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+            }
+
+            return dt; // Retornar el DataTable con los datos
+        }
+
     }
 }

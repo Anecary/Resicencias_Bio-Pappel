@@ -49,6 +49,9 @@ namespace CapaPresentacion.Reportes
                 case "Accidentes por Incapacidad Departamento":
                     obtener_IncapDepto();
                     break;
+                case "Accidentes por Condicion":
+                    obtener_Condici();
+                    break;
             }
         }
 
@@ -271,6 +274,21 @@ namespace CapaPresentacion.Reportes
 
             // Agregar cada DataTable a su propio DataSet en el ReportViewer
             rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", Accidentes_IncapDep));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        private void obtener_Condici()
+        {
+            DataTable Accidentes_Condicion = negocios.ObtenerReporteAccidentes_Condicionn();
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidentes_xCondicion.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Condicion", Accidentes_Condicion));
 
             // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
             rvInvestigacionAccidente.RefreshReport();

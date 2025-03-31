@@ -87,6 +87,11 @@
     <Compile Include="BotonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Condicion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_Condicion.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datas_Sets\Accidentes_incapDepto.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -329,6 +334,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reportes\Accidentes_xAño.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidentes_xCondicion.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xIncapDep.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xSeccion.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xTLesion.rdlc" />
@@ -338,6 +344,17 @@
     <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Datas_Sets\Accidentes_Condicion.xsc">
+      <DependentUpon>Accidentes_Condicion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Condicion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_Condicion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Condicion.xss">
+      <DependentUpon>Accidentes_Condicion.xsd</DependentUpon>
+    </None>
     <None Include="Datas_Sets\Accidentes_incapDepto.xsc">
       <DependentUpon>Accidentes_incapDepto.xsd</DependentUpon>
     </None>

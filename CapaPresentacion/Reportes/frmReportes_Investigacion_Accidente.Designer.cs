@@ -155,7 +155,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label2.Location = new System.Drawing.Point(388, 40);
+            this.label2.Location = new System.Drawing.Point(326, 37);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(163, 37);
@@ -184,13 +184,14 @@
             "Accidentes por parte del cuerpo",
             "Accidentes por turno",
             "Accidentes por T. lesión",
-            "Accidentes por Incapacidad Departamento"});
-            this.cmbReportes.Location = new System.Drawing.Point(550, 23);
+            "Accidentes por Incapacidad Departamento",
+            "Accidentes por Condicion"});
+            this.cmbReportes.Location = new System.Drawing.Point(488, 20);
             this.cmbReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbReportes.MaxDropDownItems = 4;
             this.cmbReportes.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbReportes.Name = "cmbReportes";
-            this.cmbReportes.Size = new System.Drawing.Size(372, 49);
+            this.cmbReportes.Size = new System.Drawing.Size(506, 49);
             this.cmbReportes.StartIndex = 0;
             this.cmbReportes.TabIndex = 0;
             this.cmbReportes.SelectedIndexChanged += new System.EventHandler(this.materialComboBox1_SelectedIndexChanged);
