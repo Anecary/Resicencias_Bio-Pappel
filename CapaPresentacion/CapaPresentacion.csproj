@@ -87,6 +87,9 @@
     <Compile Include="BotonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="comboBoxPersonalizado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Datas_Sets\Accidentes_incapDepto.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

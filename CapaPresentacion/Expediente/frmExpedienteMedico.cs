@@ -365,9 +365,6 @@ namespace CapaPresentacion.Expediente
                 MusculoEsqueletico = musculoEsqueletico,
                 Neurologico = neurologico,
 
-
-
-
                 UltimaActualizacion = ultimaActualizacion
                 };
 
@@ -381,14 +378,76 @@ namespace CapaPresentacion.Expediente
                 // Llamada al método para limpiar todos los controles en el formulario
                 //LimpiarControles(this);
                 txtNumeroNomina.Focus();
+                limiarFormulario();
                 //txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
-
-
             }
             else
             {
                 var result = RJMessageBox.Show(" No se ha podido grabar el Reporte de Accidente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        public void limiarFormulario()
+        {
+            // Limpiar TextBox
+            txtNoExpediente.Clear();
+            txtIdEmpleado.Clear();
+            txtNumeroNomina.Clear();
+            txtHeredoFamiliar.Clear();
+            txtDiagnostico.Clear();
+            txtCasa.Clear();
+            txtAlimentacion.Clear();
+            txtAnimales.Clear();
+            txtInmunizaciones.Clear();
+            txtToxicomanias.Clear();
+            txtTrabajosYActAnteriores.Clear();
+            txtDeportesRecreacion.Clear();
+            txtEntornoFamiliar.Clear();
+            txtEscolaridad.Clear();
+            txtAlergias.Clear();
+            txtSNerviosoCentral.Clear();
+            txtSCardiovascular.Clear();
+            txtSRespiratorio.Clear();
+            txtSGastrointestinal.Clear();
+            txtSEndocrino.Clear();
+            txtSGenitoUrinario.Clear();
+            txtSMusculoEsqueletico.Clear();
+            txtOrganoSentidos.Clear();
+            txtEstudiosLaboratorio.Clear();
+            txtEstudiosRadiologicos.Clear();
+            txtOtros.Clear();
+            txtTalla.Clear();
+            txtPeso.Clear();
+            txtIMC.Clear();
+            txtFC.Clear();
+            txtFR.Clear();
+            txtPulso.Clear();
+            txtTA.Clear();
+            txtTemperatura.Clear();
+            txtCraneo.Clear();
+            txtOjos.Clear();
+            txtOidos.Clear();
+            txtNariz.Clear();
+            txtBoca.Clear();
+            txtCuello.Clear();
+            txtTorax.Clear();
+            txtAbdomen.Clear();
+            txtGenitourinario.Clear();
+            txtMusculoEsqueletico.Clear();
+            txtNeurologico.Clear();
+
+            // Limpiar ComboBox
+            cboxGrupoSanguineo.SelectedIndex = -1;
+            cboxConstitucionFisica.SelectedIndex = -1;
+            cboxGrado.SelectedIndex = -1;
+
+            // Reiniciar DateTimePicker
+            dtpFechaApertura.Value = DateTime.Now;
+
+            // Desmarcar RadioButtons
+            rbtnHozpitalizaciones.Checked = false;
+            rbtnCirugias.Checked = false;
+            rbtnTransfusiones.Checked = false;
+
         }
     }
 }

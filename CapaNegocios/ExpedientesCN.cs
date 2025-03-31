@@ -21,5 +21,14 @@ namespace CapaNegocios
         {
             return expedientesDAO.consultaExpediente(numExpediente);
         }
+
+        public DataSet ConcultaNumExpedientes()
+        { 
+            return expedientesDAO.ConcultaNumExpedientes();
+        }
+        public int actualizarExpediente(ExpedientesCE expediente)
+        {
+            return expedientesDAO.ActualizarExpediente(expediente);
+        }
     }
 }
