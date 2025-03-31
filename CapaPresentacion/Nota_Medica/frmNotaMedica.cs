@@ -90,7 +90,7 @@ namespace CapaPresentacion.Nota_Medica
         {
             CargarCausasConsulta();
 
-            panel3.Visible = true;
+            pDatosGenerales.Visible = true;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
@@ -100,7 +100,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnAntecedentes_Click(object sender, EventArgs e)
         {
-            panel3.Visible = false;
+            pDatosGenerales.Visible = false;
             pAntecedentes.Visible = true;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
@@ -110,7 +110,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnEstudiosParaclinicos_Click(object sender, EventArgs e)
         {
-            panel3.Visible = false;
+            pDatosGenerales.Visible = false;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
@@ -120,7 +120,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
         {
-            panel3.Visible = true;
+            pDatosGenerales.Visible = true;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
@@ -130,7 +130,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnNoPatologicos_Click(object sender, EventArgs e)
         {
-            panel3.Visible = false;
+            pDatosGenerales.Visible = false;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = true;
             pPatologicos.Visible = false;
@@ -150,7 +150,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnExploracionFisica_Click(object sender, EventArgs e)
         {
-            panel3.Visible = false;
+            pDatosGenerales.Visible = false;
             pAntecedentes.Visible = false; 
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
