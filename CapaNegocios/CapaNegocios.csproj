@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccidentesCN.cs" />
+    <Compile Include="ConsultaMedicaCN.cs" />
     <Compile Include="EmpleadosCN.cs" />
     <Compile Include="ExpedientesCN.cs" />
     <Compile Include="PuestosCN.cs" />

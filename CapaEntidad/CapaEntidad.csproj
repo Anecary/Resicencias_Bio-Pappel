@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccidentesCE.cs" />
+    <Compile Include="ConsultaMedicaCE.cs" />
     <Compile Include="ExpedientesCE.cs" />
     <Compile Include="PuestosCE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
