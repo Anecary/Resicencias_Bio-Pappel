@@ -28,19 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpleados));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedor = new System.Windows.Forms.Panel();
             this.pConsultaGeneral = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.rbtActivos = new System.Windows.Forms.RadioButton();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
-            this.rbtInactivos = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.rbtTodos = new System.Windows.Forms.RadioButton();
             this.pConsultaIndividual = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -69,6 +66,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.rbtTodos = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtInactivos = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtActivos = new MaterialSkin.Controls.MaterialRadioButton();
             this.panel1.SuspendLayout();
             this.pContenedor.SuspendLayout();
             this.pConsultaGeneral.SuspendLayout();
@@ -117,80 +117,58 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel6.Controls.Add(this.rbtActivos);
-            this.panel6.Controls.Add(this.dgvEmpleados);
             this.panel6.Controls.Add(this.rbtInactivos);
-            this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.rbtTodos);
+            this.panel6.Controls.Add(this.dgvEmpleados);
+            this.panel6.Controls.Add(this.label2);
             this.panel6.Location = new System.Drawing.Point(18, 18);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(894, 477);
+            this.panel6.Size = new System.Drawing.Size(894, 457);
             this.panel6.TabIndex = 5;
-            // 
-            // rbtActivos
-            // 
-            this.rbtActivos.AutoSize = true;
-            this.rbtActivos.Location = new System.Drawing.Point(274, 64);
-            this.rbtActivos.Name = "rbtActivos";
-            this.rbtActivos.Size = new System.Drawing.Size(60, 17);
-            this.rbtActivos.TabIndex = 4;
-            this.rbtActivos.Text = "Activos";
-            this.rbtActivos.UseVisualStyleBackColor = true;
-            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
             // 
             // dgvEmpleados
             // 
             this.dgvEmpleados.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvEmpleados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.dgvEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvEmpleados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvEmpleados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvEmpleados.ColumnHeadersHeight = 45;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpleados.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleados.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvEmpleados.EnableHeadersVisualStyles = false;
-            this.dgvEmpleados.Location = new System.Drawing.Point(17, 104);
+            this.dgvEmpleados.Location = new System.Drawing.Point(17, 91);
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.ReadOnly = true;
             this.dgvEmpleados.RowHeadersVisible = false;
             this.dgvEmpleados.RowTemplate.Height = 35;
             this.dgvEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEmpleados.Size = new System.Drawing.Size(855, 353);
+            this.dgvEmpleados.Size = new System.Drawing.Size(855, 343);
             this.dgvEmpleados.TabIndex = 0;
             this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // rbtInactivos
-            // 
-            this.rbtInactivos.AutoSize = true;
-            this.rbtInactivos.Location = new System.Drawing.Point(140, 64);
-            this.rbtInactivos.Name = "rbtInactivos";
-            this.rbtInactivos.Size = new System.Drawing.Size(68, 17);
-            this.rbtInactivos.TabIndex = 3;
-            this.rbtInactivos.Text = "Inactivos";
-            this.rbtInactivos.UseVisualStyleBackColor = true;
-            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
             // 
             // label2
             // 
@@ -202,19 +180,6 @@
             this.label2.Size = new System.Drawing.Size(370, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Todos los Colaboradores Activos";
-            // 
-            // rbtTodos
-            // 
-            this.rbtTodos.AutoSize = true;
-            this.rbtTodos.Checked = true;
-            this.rbtTodos.Location = new System.Drawing.Point(17, 64);
-            this.rbtTodos.Name = "rbtTodos";
-            this.rbtTodos.Size = new System.Drawing.Size(55, 17);
-            this.rbtTodos.TabIndex = 2;
-            this.rbtTodos.TabStop = true;
-            this.rbtTodos.Text = "Todos";
-            this.rbtTodos.UseVisualStyleBackColor = true;
-            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
             // 
             // pConsultaIndividual
             // 
@@ -652,6 +617,60 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // rbtTodos
+            // 
+            this.rbtTodos.AutoSize = true;
+            this.rbtTodos.Depth = 0;
+            this.rbtTodos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            this.rbtTodos.Location = new System.Drawing.Point(17, 51);
+            this.rbtTodos.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtTodos.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtTodos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtTodos.Name = "rbtTodos";
+            this.rbtTodos.Ripple = true;
+            this.rbtTodos.Size = new System.Drawing.Size(80, 37);
+            this.rbtTodos.TabIndex = 150;
+            this.rbtTodos.TabStop = true;
+            this.rbtTodos.Text = "Todos";
+            this.rbtTodos.UseVisualStyleBackColor = true;
+            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
+            // 
+            // rbtInactivos
+            // 
+            this.rbtInactivos.AutoSize = true;
+            this.rbtInactivos.Depth = 0;
+            this.rbtInactivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            this.rbtInactivos.Location = new System.Drawing.Point(116, 51);
+            this.rbtInactivos.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtInactivos.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtInactivos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtInactivos.Name = "rbtInactivos";
+            this.rbtInactivos.Ripple = true;
+            this.rbtInactivos.Size = new System.Drawing.Size(99, 37);
+            this.rbtInactivos.TabIndex = 151;
+            this.rbtInactivos.TabStop = true;
+            this.rbtInactivos.Text = "Inactivos";
+            this.rbtInactivos.UseVisualStyleBackColor = true;
+            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
+            // 
+            // rbtActivos
+            // 
+            this.rbtActivos.AutoSize = true;
+            this.rbtActivos.Depth = 0;
+            this.rbtActivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            this.rbtActivos.Location = new System.Drawing.Point(234, 52);
+            this.rbtActivos.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtActivos.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtActivos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtActivos.Name = "rbtActivos";
+            this.rbtActivos.Ripple = true;
+            this.rbtActivos.Size = new System.Drawing.Size(87, 37);
+            this.rbtActivos.TabIndex = 152;
+            this.rbtActivos.TabStop = true;
+            this.rbtActivos.Text = "Activos";
+            this.rbtActivos.UseVisualStyleBackColor = true;
+            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
+            // 
             // frmConsultarEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -718,9 +737,9 @@
         private MaterialSkin.Controls.MaterialTextBox txtDomicilio;
         private MaterialSkin.Controls.MaterialTextBox txtNss;
         private MaterialSkin.Controls.MaterialTextBox txtFechaIngreso;
-        private System.Windows.Forms.RadioButton rbtActivos;
-        private System.Windows.Forms.RadioButton rbtInactivos;
-        private System.Windows.Forms.RadioButton rbtTodos;
         private System.Windows.Forms.Panel panel6;
+        private MaterialSkin.Controls.MaterialRadioButton rbtInactivos;
+        private MaterialSkin.Controls.MaterialRadioButton rbtTodos;
+        private MaterialSkin.Controls.MaterialRadioButton rbtActivos;
     }
 }

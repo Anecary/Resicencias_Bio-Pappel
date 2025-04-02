@@ -137,7 +137,7 @@ namespace CapaDatos
                     connection.Open();
 
                     // Crea un comando para ejecutar el procedimiento almacenado
-                    using (MySqlCommand command = new MySqlCommand("ConsulGe", connection))
+                    using (MySqlCommand command = new MySqlCommand("ConsultaEmpleadosGral", connection))
                     {
                         // Indica que es un procedimiento almacenado
                         command.CommandType = CommandType.StoredProcedure;
@@ -171,7 +171,7 @@ namespace CapaDatos
                     connection.Open();
 
                     // Crea un comando para ejecutar el procedimiento almacenado
-                    using (MySqlCommand command = new MySqlCommand("ConsulGeInactivos", connection))
+                    using (MySqlCommand command = new MySqlCommand("ConsultaEmpleadosInactivos", connection))
                     {
                         // Indica que es un procedimiento almacenado
                         command.CommandType = CommandType.StoredProcedure;
@@ -204,7 +204,7 @@ namespace CapaDatos
                     connection.Open();
 
                     // Crea un comando para ejecutar el procedimiento almacenado
-                    using (MySqlCommand command = new MySqlCommand("ConsulGeActivos", connection))
+                    using (MySqlCommand command = new MySqlCommand("ConsultaEmpleadosActivos", connection))
                     {
                         // Indica que es un procedimiento almacenado
                         command.CommandType = CommandType.StoredProcedure;
