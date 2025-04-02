@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using CapaEntidad;
+using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Pqc.Crypto.Lms;
 using System;
 using System.Collections.Generic;
@@ -17,11 +18,7 @@ namespace CapaDatos
         private MySqlConnection conn;   
         private MySqlDataAdapter adapter;
         private MySqlCommand command;
-        public void InsertarEmpleado(
-            string nombre, string apellidoPaterno, string apellidoMaterno, DateTime fechaNacimiento,
-            char sexo, string estadoCivil, string nss, string rfc, string domicilioCalle,
-            int domicilioNumero, string domicilioColonia, string domicilioCP, string domicilioCiudad,
-            string domicilioEstado, string telefono)
+        public void InsertarEmpleado(EmpleadosCE empleados)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -35,21 +32,21 @@ namespace CapaDatos
                         command.CommandType = CommandType.StoredProcedure;
 
                         // Agrega los parámetros del procedimiento almacenado
-                        command.Parameters.AddWithValue("p_nombre", nombre);
-                        command.Parameters.AddWithValue("p_apellido_paterno", apellidoPaterno);
-                        command.Parameters.AddWithValue("p_apellido_materno", apellidoMaterno);
-                        command.Parameters.AddWithValue("p_fecha_nacimiento", fechaNacimiento);
-                        command.Parameters.AddWithValue("p_sexo", sexo);
-                        command.Parameters.AddWithValue("p_estado_civil", estadoCivil);
-                        command.Parameters.AddWithValue("p_nss", nss);
-                        command.Parameters.AddWithValue("p_rfc", rfc);
-                        command.Parameters.AddWithValue("p_domicilio_Calle", domicilioCalle);
-                        command.Parameters.AddWithValue("p_domicilio_Numero", domicilioNumero);
-                        command.Parameters.AddWithValue("p_domicilio_Colonia", domicilioColonia);
-                        command.Parameters.AddWithValue("p_domicilio_CP", domicilioCP);
-                        command.Parameters.AddWithValue("p_domicilio_Ciudad", domicilioCiudad);
-                        command.Parameters.AddWithValue("p_domicilio_Estado", domicilioEstado);
-                        command.Parameters.AddWithValue("p_telefono", telefono);
+                        command.Parameters.AddWithValue("p_nombre", empleados.Nombre);
+                        command.Parameters.AddWithValue("p_apellido_paterno", empleados.ApellidoPaterno);
+                        command.Parameters.AddWithValue("p_apellido_materno", empleados.ApellidoMaterno);
+                        command.Parameters.AddWithValue("p_fecha_nacimiento", empleados.FechaNacimiento);
+                        command.Parameters.AddWithValue("p_sexo", empleados.Sexo);
+                        command.Parameters.AddWithValue("p_estado_civil", empleados.EstadoCivil);
+                        command.Parameters.AddWithValue("p_nss", empleados.NSS);
+                        command.Parameters.AddWithValue("p_rfc", empleados.RFC);
+                        command.Parameters.AddWithValue("p_domicilio_Calle", empleados.DomicilioCalle);
+                        command.Parameters.AddWithValue("p_domicilio_Numero", empleados.DomicilioNumero);
+                        command.Parameters.AddWithValue("p_domicilio_Colonia", empleados.DomicilioColonia);
+                        command.Parameters.AddWithValue("p_domicilio_CP", empleados.DomicilioCP);
+                        command.Parameters.AddWithValue("p_domicilio_Ciudad", empleados.DomicilioCiudad);
+                        command.Parameters.AddWithValue("p_domicilio_Estado", empleados.DomicilioEstado);
+                        command.Parameters.AddWithValue("p_telefono", empleados.Telefono);
 
                         // Ejecuta el procedimiento almacenado
                         command.ExecuteNonQuery();
@@ -62,14 +59,7 @@ namespace CapaDatos
             }
         }
 
-        public void altaEmpleado(
-            string nss,
-            string numero_nomina,
-            DateTime fecha_ingreso_puesto,
-            DateTime fecha_ingreso_empresa,
-            char turno,
-            int idPuesto,
-            char estado)
+        public void altaEmpleado(EmpleadosCE empleado)
         {
             try
             {
@@ -81,12 +71,12 @@ namespace CapaDatos
                     {
                         command.CommandType = CommandType.StoredProcedure;
 
-                        command.Parameters.AddWithValue("p_nss", nss);
-                        command.Parameters.AddWithValue("p_numero_nomina", numero_nomina);
-                        command.Parameters.AddWithValue("p_idPuesto_Actual", idPuesto);
-                        command.Parameters.AddWithValue("p_fecha_ingreso_puesto", fecha_ingreso_puesto);
-                        command.Parameters.AddWithValue("p_fecha_ingreso_empresa", fecha_ingreso_empresa);
-                        command.Parameters.AddWithValue("p_turno", turno);
+                        command.Parameters.AddWithValue("p_nss", empleado.NSS);
+                        command.Parameters.AddWithValue("p_numero_nomina", empleado.NumeroNomina);
+                        command.Parameters.AddWithValue("p_idPuesto_Actual", empleado.IdPuestoActual);
+                        command.Parameters.AddWithValue("p_fecha_ingreso_puesto", empleado.FechaIngresoPuesto);
+                        command.Parameters.AddWithValue("p_fecha_ingreso_empresa", empleado.FechaIngresoEmpresa);
+                        command.Parameters.AddWithValue("p_turno", empleado.Turno);
 
                         command.ExecuteNonQuery();
                     }
@@ -334,19 +324,7 @@ namespace CapaDatos
 
         }
 
-        public void actualizarEmpleado(
-            string numero_nomina,
-            DateTime fecha_nueva,
-            string estado_civil,
-            string domicilio_CP,
-            string domicilio_estado,
-            string domicilio_ciudad,
-            string domicilio_colonia,
-            string domicilio_calle,
-            int domicilio_numero,
-            string telefono,
-            char turno,
-            string puesto)
+        public void actualizarEmpleado(EmpleadosCE empleado)
         {
             try
             {
@@ -358,18 +336,18 @@ namespace CapaDatos
                     {
                         command.CommandType = CommandType.StoredProcedure;
 
-                        command.Parameters.AddWithValue("p_numero_nomina", numero_nomina);
-                        command.Parameters.AddWithValue("p_turno", turno);
-                        command.Parameters.AddWithValue("p_nombre_puesto", puesto);
-                        command.Parameters.AddWithValue("p_fecha_ingreso_puesto", fecha_nueva);
-                        command.Parameters.AddWithValue("p_estado_civil", estado_civil);
-                        command.Parameters.AddWithValue("p_domicilio_Calle", domicilio_calle);
-                        command.Parameters.AddWithValue("p_domicilio_Numero", domicilio_numero);
-                        command.Parameters.AddWithValue("p_domicilio_Colonia", domicilio_colonia);
-                        command.Parameters.AddWithValue("p_domicilio_CP", domicilio_CP);
-                        command.Parameters.AddWithValue("p_domicilio_Ciudad", domicilio_ciudad);
-                        command.Parameters.AddWithValue("p_domicilio_Estado", domicilio_estado);
-                        command.Parameters.AddWithValue("p_telefono", telefono);
+                        command.Parameters.AddWithValue("p_numero_nomina", empleado.NumeroNomina);
+                        command.Parameters.AddWithValue("p_turno", empleado.Turno);
+                        command.Parameters.AddWithValue("p_nombre_puesto", empleado.Puesto);
+                        command.Parameters.AddWithValue("p_fecha_ingreso_puesto", empleado.FechaIngresoPuesto);
+                        command.Parameters.AddWithValue("p_estado_civil", empleado.EstadoCivil);
+                        command.Parameters.AddWithValue("p_domicilio_Calle", empleado.DomicilioCalle);
+                        command.Parameters.AddWithValue("p_domicilio_Numero", empleado.DomicilioNumero);
+                        command.Parameters.AddWithValue("p_domicilio_Colonia", empleado.DomicilioColonia);
+                        command.Parameters.AddWithValue("p_domicilio_CP", empleado.DomicilioCP);
+                        command.Parameters.AddWithValue("p_domicilio_Ciudad", empleado.DomicilioCiudad);
+                        command.Parameters.AddWithValue("p_domicilio_Estado", empleado.DomicilioEstado);
+                        command.Parameters.AddWithValue("p_telefono", empleado.Telefono);
 
                         command.ExecuteNonQuery();
                         Console.WriteLine("Hola como estas?");

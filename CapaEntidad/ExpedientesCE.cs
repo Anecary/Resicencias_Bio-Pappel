@@ -41,6 +41,7 @@ namespace CapaEntidad
         public string SistemaGenitourinario { get; set; }
         public string SistemaMusculoesqueletico { get; set; }
         public string OrganoSentidos { get; set; }
+        public string GinecoObstetricos {  get; set; }
         public string GrupoSanguineo { get; set; }
 
 

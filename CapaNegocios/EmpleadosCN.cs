@@ -1,4 +1,5 @@
 ﻿using CapaDatos;
+using CapaEntidad;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,19 +15,12 @@ namespace CapaNegocios
         EmpleadosDAO empleadosDAO = new EmpleadosDAO();
 
 
-        public void InsertarEmpleado(
-           string nombre, string apellidoPaterno, string apellidoMaterno, DateTime fechaNacimiento,
-           char sexo, string estadoCivil, string nss, string rfc, string domicilioCalle,
-           int domicilioNumero, string domicilioColonia, string domicilioCP, string domicilioCiudad,
-           string domicilioEstado, string telefono)
+        public void InsertarEmpleado(EmpleadosCE empleados)
         {
             try
             {
                 // Llama al método de la capa de datos para insertar el empleado
-                empleadosDAO.InsertarEmpleado(
-                    nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, sexo,
-                    estadoCivil, nss, rfc, domicilioCalle, domicilioNumero,
-                    domicilioColonia, domicilioCP, domicilioCiudad, domicilioEstado, telefono);
+                empleadosDAO.InsertarEmpleado(empleados);
             }
             catch (Exception ex)
             {
@@ -34,18 +28,11 @@ namespace CapaNegocios
             }
         }
 
-        public void altaEmpleado(
-            string nss,
-            string numero_nomina,
-            DateTime fecha_ingreso_puesto,
-            DateTime fecha_ingreso_empresa,
-            char turno,
-            int idPuesto,
-            char estado)
+        public void altaEmpleado(EmpleadosCE empleado)
         {
             try
             {
-                empleadosDAO.altaEmpleado(nss,numero_nomina,fecha_ingreso_puesto,fecha_ingreso_empresa,turno,idPuesto,estado);
+                empleadosDAO.altaEmpleado(empleado);
             }
             catch (Exception ex) 
             {
@@ -147,24 +134,12 @@ namespace CapaNegocios
             return datos;  // Devuelve los datos separados
         }
 
-        public void actualizarEmpleado(
-            string numero_nomina,
-            DateTime fecha_nueva,
-            string estado_civil,
-            string domicilio_CP,
-            string domicilio_estado,
-            string domicilio_ciudad,
-            string domicilio_colonia,
-            string domicilio_calle,
-            int domicilio_numero,
-            string telefono,
-            char turno,
-            string puesto)
+        public void actualizarEmpleado(EmpleadosCE empleados)
         {
             try
             {
                 Console.WriteLine("Hola");
-                empleadosDAO.actualizarEmpleado(numero_nomina, fecha_nueva, estado_civil, domicilio_CP, domicilio_estado, domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero, telefono ,turno, puesto);
+                empleadosDAO.actualizarEmpleado(empleados);
             }
             catch (Exception ex)
             {

@@ -1,4 +1,5 @@
-﻿using CapaNegocios;
+﻿using CapaEntidad;
+using CapaNegocios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -169,12 +170,28 @@ namespace CapaPresentacion.Empleados
                 string domicilio_ciudad = txtCiudad.Text.Trim();
                 string domicilio_colonia = txtColonia.Text.Trim();
                 string domicilio_calle = txtCalle.Text.Trim();
-                int domicilio_numero = int.Parse(txtNumero.Text);
+                string domicilio_numero = txtNumero.Text.Trim();
 
                 string telefono = txtTelefono.Text.Trim();
                 string puesto = cmbPuesto.Text.Trim();
 
-                negocios.actualizarEmpleado(numero_nomina, fecha_nueva, estado_civil, domicilio_cp, domicilio_estado, domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero, telefono, turno, puesto);
+                EmpleadosCE empleados = new EmpleadosCE
+                {
+                    NumeroNomina = numero_nomina,
+                    EstadoCivil = estado_civil,
+                    FechaIngresoPuesto = fecha_nueva,
+                    Turno = turno,
+                    DomicilioCP = domicilio_cp,
+                    DomicilioEstado = domicilio_estado,
+                    DomicilioCiudad = domicilio_ciudad,
+                    DomicilioColonia = domicilio_colonia,
+                    DomicilioCalle = domicilio_calle,
+                    DomicilioNumero = domicilio_numero,
+                    Telefono = telefono,
+                    Puesto = puesto
+                };
+
+                negocios.actualizarEmpleado(empleados);
                 MessageBox.Show("Empleado actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 limpiar();

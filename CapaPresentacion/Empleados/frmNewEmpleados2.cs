@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using CapaEntidad;
 using CapaNegocios;
 using MaterialSkin;
 using MaterialSkin.Controls;
@@ -83,13 +84,6 @@ namespace CapaPresentacion.Empleados
                     return; // Detiene la ejecución si hay campos vacíos
                 }
 
-                // Verificación de formato en campo numérico
-                if (!int.TryParse(txtNumero.Text, out int domicilioNumero))
-                {
-                    MessageBox.Show("El número de domicilio debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
                 // Obtener valores después de la validación
                 string nombre = txtNombre.Text.Trim();
                 string apellidoPaterno = txtApellidoP.Text.Trim();
@@ -100,6 +94,7 @@ namespace CapaPresentacion.Empleados
                 string nss = txtNss.Text.Trim();
                 string rfc = txtRFC.Text.Trim();
                 string domicilioCalle = txtCalle.Text.Trim();
+                string domicilioNumero = txtNumero.Text.Trim();
                 string domicilioColonia = txtColonia.Text.Trim();
                 string domicilioCP = txtCp.Text.Trim();
                 string domicilioCiudad = txtMunicipio.Text.Trim();
@@ -107,10 +102,25 @@ namespace CapaPresentacion.Empleados
                 string telefono = txtTelefono.Text.Trim();
 
                 // Llamada al método de negocios para insertar el empleado
-                negocios.InsertarEmpleado(
-                    nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, sexo,
-                    estadoCivil, nss, rfc, domicilioCalle, domicilioNumero,
-                    domicilioColonia, domicilioCP, domicilioCiudad, domicilioEstado, telefono);
+                EmpleadosCE empleados = new EmpleadosCE
+                {
+                    Nombre = nombre,
+                    ApellidoPaterno = apellidoPaterno,
+                    ApellidoMaterno = apellidoMaterno,
+                    FechaNacimiento = fechaNacimiento,
+                    Sexo = sexo,
+                    EstadoCivil = estadoCivil,
+                    NSS = nss,
+                    RFC = rfc,
+                    DomicilioCalle= domicilioCalle,
+                    DomicilioNumero = domicilioNumero,
+                    DomicilioColonia= domicilioColonia,
+                    DomicilioCP= domicilioCP,
+                    DomicilioCiudad= domicilioCiudad,
+                    DomicilioEstado = domicilioEstado,
+                    Telefono = telefono
+                };
+                negocios.InsertarEmpleado(empleados);
 
                 // Mensaje de éxito
                 MessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);

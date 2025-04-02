@@ -57,6 +57,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_SistemaGenitourinario", expediente.SistemaGenitourinario);
                 cmd.Parameters.AddWithValue("@p_SistemaMusculoesqueletico", expediente.SistemaMusculoesqueletico);
                 cmd.Parameters.AddWithValue("@p_Organo_Sentidos", expediente.OrganoSentidos);
+                cmd.Parameters.AddWithValue("@p_ginecoObstetricos", expediente.GinecoObstetricos);
                 cmd.Parameters.AddWithValue("@p_Grupo_Sanguineo", expediente.GrupoSanguineo);
 
                 // Estudios Paraclínicos
@@ -176,6 +177,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_SistemaGenitourinario", expediente.SistemaGenitourinario);
                 cmd.Parameters.AddWithValue("@p_SistemaMusculoesqueletico", expediente.SistemaMusculoesqueletico);
                 cmd.Parameters.AddWithValue("@p_Organo_Sentidos", expediente.OrganoSentidos);
+                cmd.Parameters.AddWithValue("@p_ginecoObstetricos", expediente.GinecoObstetricos);
                 cmd.Parameters.AddWithValue("@p_Grupo_Sanguineo", expediente.GrupoSanguineo);
 
                 // Estudios Paraclínicos

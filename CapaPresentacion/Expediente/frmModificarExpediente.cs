@@ -410,6 +410,7 @@ namespace CapaPresentacion.Expediente
             string sistemaGenitourinario = txtSGenitoUrinario.Text;
             string sistemaMusculoesqueletico = txtSMusculoEsqueletico.Text;
             string organoSentidos = txtOrganoSentidos.Text;
+            string ginecoObstetricos = txtGinecoObstetrico.Text;
             string grupoSanguineo = cboxGrupoSanguineo.Text;
 
 
@@ -473,6 +474,7 @@ namespace CapaPresentacion.Expediente
                 SistemaGenitourinario = sistemaGenitourinario,
                 SistemaMusculoesqueletico = sistemaMusculoesqueletico,
                 OrganoSentidos = organoSentidos,
+                GinecoObstetricos = ginecoObstetricos,
                 GrupoSanguineo = grupoSanguineo,
 
 

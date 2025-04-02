@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using CapaEntidad;
 
 
 
@@ -141,9 +142,18 @@ namespace CapaPresentacion.Empleados
                 DateTime fecha_ingreso_empresa = dateTimePicker1.Value;
                 char turno = cmbTurno.SelectedItem.ToString()[0];
                 int idPuesto = int.Parse(txtIdPuesto.Text);
-                char estado = 'A';
 
-                negocios.altaEmpleado(nss,numero_nomina,fecha_ingreso_puesto,fecha_ingreso_empresa,turno,idPuesto,estado);
+                EmpleadosCE empleado = new EmpleadosCE
+                {
+                    NSS = nss,
+                    NumeroNomina = numero_nomina,
+                    FechaIngresoPuesto = fecha_ingreso_puesto,
+                    FechaIngresoEmpresa = fecha_ingreso_empresa,
+                    Turno = turno,
+                    IdPuestoActual = idPuesto
+                };
+
+                negocios.altaEmpleado(empleado);
                 MessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LimpiarControles();
