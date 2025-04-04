@@ -103,7 +103,8 @@ namespace CapaPresentacion.Expediente
             bool hayCamposVacíos = HayTextBoxVacios(parentControl);
 
             // Cambiar color solo si el panel ya se visitó
-            boton.BackColor = hayCamposVacíos ? Color.Red : Color.FromArgb(27, 77, 141);
+           // boton.BackColor = hayCamposVacíos ? Color.Red : Color.FromArgb(27, 77, 141);
+            boton.ForeColor = hayCamposVacíos ? Color.Red : Color.White;
         }
 
         // Método recursivo para buscar TextBox dentro de cualquier control (incluidos paneles anidados)
