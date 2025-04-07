@@ -241,7 +241,7 @@ namespace CapaPresentacion
 
         private void btnConsultarHistorico_Click(object sender, EventArgs e)
         {
-            openChildForm(new Nota_Medica.frmConsultaHistorico());
+            openChildForm(new Nota_Medica.frmConsultaNotaMedica());
             hideSubMenu();
         }
 

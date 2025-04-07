@@ -251,11 +251,11 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nota_Medica\frmConsultaHistorico.cs">
+    <Compile Include="Nota_Medica\frmConsultaNotaMedica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nota_Medica\frmConsultaHistorico.Designer.cs">
-      <DependentUpon>frmConsultaHistorico.cs</DependentUpon>
+    <Compile Include="Nota_Medica\frmConsultaNotaMedica.Designer.cs">
+      <DependentUpon>frmConsultaNotaMedica.cs</DependentUpon>
     </Compile>
     <Compile Include="Nota_Medica\frmNotaMedica.cs">
       <SubType>Form</SubType>
@@ -330,8 +330,8 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nota_Medica\frmConsultaHistorico.resx">
-      <DependentUpon>frmConsultaHistorico.cs</DependentUpon>
+    <EmbeddedResource Include="Nota_Medica\frmConsultaNotaMedica.resx">
+      <DependentUpon>frmConsultaNotaMedica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nota_Medica\frmNotaMedica.resx">
       <DependentUpon>frmNotaMedica.cs</DependentUpon>

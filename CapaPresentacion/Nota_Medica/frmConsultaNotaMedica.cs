@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Nota_Medica
 {
-    public partial class frmConsultaHistorico : Form
+    public partial class frmConsultaNotaMedica : Form
     {
         private MaterialSkinManager materialSkinManager;
         private Panel p = new Panel();
 
-        public frmConsultaHistorico()
+        public frmConsultaNotaMedica()
         {
             InitializeComponent();
             materialSkinManager = MaterialSkinManager.Instance;

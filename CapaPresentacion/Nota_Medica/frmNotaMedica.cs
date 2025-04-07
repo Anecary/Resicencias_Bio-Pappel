@@ -16,6 +16,7 @@ namespace CapaPresentacion.Nota_Medica
     public partial class frmNotaMedica : Form
     {
         private MaterialSkinManager materialSkinManager;
+        private Panel p = new Panel();
         ConsultaMedicaCN consultaMedicaCN = new ConsultaMedicaCN(); 
         EmpleadosCN empleadosCN = new EmpleadosCN();
 
@@ -52,6 +53,7 @@ namespace CapaPresentacion.Nota_Medica
                 RJMessageBox.Show("No se encontraron causas de consulta.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+ 
 
         private void CargarTipoCausa(int idCausa)
         {
@@ -85,6 +87,43 @@ namespace CapaPresentacion.Nota_Medica
             }
         }
 
+        private void btnMouseEnter(Object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            pSeccionesDatos.Controls.Add(p);
+            p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
+            p.Size = new Size(187, 5); // Tamaño del panel
+            p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
+        }
+
+        // Método para eliminar el panel cuando el mouse sale del área del botón
+        private void btnMouseLeave(Object sender, EventArgs e)
+        {
+            pSeccionesDatos.Controls.Remove(p);
+        }
+
+        private Dictionary<Button, bool> panelVisitado = new Dictionary<Button, bool>();
+
+        private void MostrarPanel(Panel panelAMostrar, Button botonPresionado)
+        {
+            // Marcar este botón como visitado
+            if (!panelVisitado.ContainsKey(botonPresionado))
+            {
+                panelVisitado[botonPresionado] = true;
+            }
+
+            // Ocultar todos los paneles y mostrar el deseado
+            pDatosGenerales.Visible = false;
+            pAntecedentes.Visible = false;
+            pNoPatologicos.Visible = false;
+            pPatologicos.Visible = false;
+            pExploracionFisica.Visible = false;
+            pEstudiosParaclinicos.Visible = false;
+
+            panelAMostrar.Visible = true;
+        }
+
+
         private void frmNotaMedica_Load(object sender, EventArgs e)
         {
             CargarCausasConsulta();
@@ -99,62 +138,32 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnAntecedentes_Click(object sender, EventArgs e)
         {
-            pDatosGenerales.Visible = false;
-            pAntecedentes.Visible = true;
-            pNoPatologicos.Visible = false;
-            pPatologicos.Visible = false;
-            pExploracionFisica.Visible = false;
-            pEstudiosParaclinicos.Visible = false;
+            MostrarPanel(pAntecedentes, btnAntecedentes);
         }
 
         private void btnEstudiosParaclinicos_Click(object sender, EventArgs e)
         {
-            pDatosGenerales.Visible = false;
-            pAntecedentes.Visible = false;
-            pNoPatologicos.Visible = false;
-            pPatologicos.Visible = false;
-            pExploracionFisica.Visible = false;
-            pEstudiosParaclinicos.Visible = true;
+            MostrarPanel(pEstudiosParaclinicos, btnEstudiosParaclinicos);
         }
 
         private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
         {
-            pDatosGenerales.Visible = true;
-            pAntecedentes.Visible = false;
-            pNoPatologicos.Visible = false;
-            pPatologicos.Visible = false;
-            pExploracionFisica.Visible = false;
-            pEstudiosParaclinicos.Visible = false;
+            MostrarPanel(pDatosGenerales, btnNuevaNotaMedica);
         }
 
         private void btnNoPatologicos_Click(object sender, EventArgs e)
         {
-            pDatosGenerales.Visible = false;
-            pAntecedentes.Visible = false;
-            pNoPatologicos.Visible = true;
-            pPatologicos.Visible = false;
-            pExploracionFisica.Visible = false;
-            pEstudiosParaclinicos.Visible = false;
+            MostrarPanel(pNoPatologicos, btnNoPatologicos);
         }
 
         private void btnPatologicos_Click(object sender, EventArgs e)
         {
-            pDatosGenerales.Visible = false;
-            pAntecedentes.Visible = false;
-            pNoPatologicos.Visible = false;
-            pPatologicos.Visible = true;
-            pExploracionFisica.Visible = false;
-            pEstudiosParaclinicos.Visible = false;
+            MostrarPanel(pPatologicos, btnPatologicos);
         }
 
         private void btnExploracionFisica_Click(object sender, EventArgs e)
         {
-            pDatosGenerales.Visible = false;
-            pAntecedentes.Visible = false; 
-            pNoPatologicos.Visible = false;
-            pPatologicos.Visible = false;
-            pExploracionFisica.Visible = true;
-            pEstudiosParaclinicos.Visible = false;
+            MostrarPanel(pExploracionFisica, btnExploracionFisica);
         }
 
         private void cboxCausaConsulta_SelectedIndexChanged(object sender, EventArgs e)
@@ -214,13 +223,12 @@ namespace CapaPresentacion.Nota_Medica
                 }
                 else
                 {
-                    var result = RJMessageBox.Show(" Número de nómina no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                    RJMessageBox.Show(" Número de nómina no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                var result = RJMessageBox.Show(" Por favor ingrese un Número de Nómina para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RJMessageBox.Show(" Por favor ingrese un Número de Nómina para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNumeroNomina.Focus();
             }
         }
@@ -330,13 +338,8 @@ namespace CapaPresentacion.Nota_Medica
                 rbtnHozpitalizaciones.Checked = row["Hospitalizaciones"] != DBNull.Value && Convert.ToInt32(row["Hospitalizaciones"]) == 1;
                 rbtnCirugias.Checked = row["Cirugias"] != DBNull.Value && Convert.ToInt32(row["Cirugias"]) == 1;
                 rbtnTransfusiones.Checked = row["Transfusiones"] != DBNull.Value && Convert.ToInt32(row["Transfusiones"]) == 1;
-
-                pDatosGenerales.Visible = false;
-                pAntecedentes.Visible = true;
-                pNoPatologicos.Visible = false;
-                pPatologicos.Visible = false;
-                pExploracionFisica.Visible = false;
-                pEstudiosParaclinicos.Visible = false;
+                
+                MostrarPanel(pAntecedentes, btnAntecedentes);
             }
             else
             {
