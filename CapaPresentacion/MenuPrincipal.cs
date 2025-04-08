@@ -228,21 +228,22 @@ namespace CapaPresentacion
             openChildForm(new Empleados.frmActualizarEmpleado());
             hideSubMenu();
         }
+
         private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
         {
             openChildForm(new Nota_Medica.frmNotaMedica());
             hideSubMenu();
         }
 
-        private void btnNotaMedica_Click(object sender, EventArgs e)
-        {
-            showSubMenu(pSubmenuNotaMedica);
-        }
-
-        private void btnConsultarHistorico_Click(object sender, EventArgs e)
+        private void btnConsultaNotaMedica_Click(object sender, EventArgs e)
         {
             openChildForm(new Nota_Medica.frmConsultaNotaMedica());
             hideSubMenu();
+        }
+
+        private void btnNotaMedica_Click(object sender, EventArgs e)
+        {
+            showSubMenu(pSubmenuNotaMedica);
         }
 
         private void btnPuestos_Click(object sender, EventArgs e)

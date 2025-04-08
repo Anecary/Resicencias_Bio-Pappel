@@ -23,9 +23,19 @@ namespace CapaNegocios
             return consultaMedicaDAO.consultaTipoCausa(idCausa);
         }
 
+        public DataSet consultaNotaGeneral(string numExpediente)
+        {
+            return consultaMedicaDAO.consultaNotaGeneral(numExpediente);
+        }
+
         public DataSet consultaExpMedico(string numExpediente)
         {
             return consultaMedicaDAO.consultarExpMedico(numExpediente);
+        }
+
+        public DataSet consultaNotaIndividual(int idConsulta)
+        {
+            return consultaMedicaDAO.consultaNotaIndividual(idConsulta);
         }
 
         public bool InsertarConsultaMedica(ConsultaMedica consulta)

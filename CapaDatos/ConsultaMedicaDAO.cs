@@ -60,6 +60,42 @@ namespace CapaDatos
             }
         }
 
+        public DataSet consultaNotaGeneral(string numExpediente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ConsultaNotaGeneral", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_numExpediente = new MySqlParameter("@p_numExpediente", MySqlDbType.VarChar);
+                p_numExpediente.Direction = ParameterDirection.Input;
+                p_numExpediente.Value = numExpediente;
+                adapter.SelectCommand.Parameters.Add(p_numExpediente);
+
+                adapter.Fill(data, "ConsultaNotaGeneral");
+                return data;
+            }
+        }
+
+        public DataSet consultaNotaIndividual(int idConsulta)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ConsultaNotaIndividual", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idConsulta = new MySqlParameter("@p_idConsulta", MySqlDbType.Int32);
+                p_idConsulta.Direction = ParameterDirection.Input;
+                p_idConsulta.Value = idConsulta;
+                adapter.SelectCommand.Parameters.Add(p_idConsulta);
+
+                adapter.Fill(data, "ConsultaNotaIndividual");
+                return data;
+            }
+        }
+
         public bool InsertarConsultaMedica(string numExpediente, DateTime fecha, string observaciones, string diagnostico, string proceso, int idTipoCausa)
         {
             try
@@ -95,34 +131,3 @@ namespace CapaDatos
         }
     }
 }
-
-
-/*namespace CapaDatos
-{
-    public class ConsultaMedicaDAO
-    {
-        private conexion objConexion = new conexion();
-        private MySqlConnection conn;
-        private MySqlDataAdapter adapter;
-        private MySqlCommand comando;
-
-        public DataSet consultaCausas(string numExpediente)
-        {
-            using (DataSet data = new DataSet())
-            {
-                conn = objConexion.Conecta();
-                adapter = new MySqlDataAdapter("ObtenerExpediente", conn);
-                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
-
-                MySqlParameter p_numExpediente = new MySqlParameter("@p_numExpediente", MySqlDbType.VarChar);
-                p_numExpediente.Direction = ParameterDirection.Input;
-                p_numExpediente.Value = numExpediente;
-                adapter.SelectCommand.Parameters.Add(p_numExpediente);
-
-                adapter.Fill(data, "ConsultaNumExpediente");
-                return data;
-            }
-        }
-
-    }
-}*/
