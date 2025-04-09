@@ -613,6 +613,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     MostrarPanel(pDatosGenerales, btnDatosGenerales);
                     var result = RJMessageBox.Show(" El Reporte de Accidente se ha guardado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    int numnero_accidente = int.Parse(txtNoAccidente.Text);
+
+                    var Llamar_reporte = new Llamar_reporte();
+                    Llamar_reporte.Show();
+
 
                     // Llamada al método para limpiar todos los controles en el formulario
                     LimpiarControles(this);
