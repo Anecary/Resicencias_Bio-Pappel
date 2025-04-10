@@ -54,8 +54,11 @@
             this.txtSCardiovascular = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.label15 = new System.Windows.Forms.Label();
             this.txtSNerviosoCentral = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.rbtnTransfusiones = new CapaPresentacion.radioButtonPersonalizado();
             this.label14 = new System.Windows.Forms.Label();
+            this.rbtnCirugias = new CapaPresentacion.radioButtonPersonalizado();
             this.label13 = new System.Windows.Forms.Label();
+            this.rbtnHozpitalizaciones = new CapaPresentacion.radioButtonPersonalizado();
             this.label64 = new System.Windows.Forms.Label();
             this.txtAlergias = new MaterialSkin.Controls.MaterialTextBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -164,9 +167,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.rbtnTransfusiones = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnCirugias = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnHozpitalizaciones = new CapaPresentacion.radioButtonPersonalizado();
             this.pContenedorExp.SuspendLayout();
             this.pContenedor.SuspendLayout();
             this.pPatologicos.SuspendLayout();
@@ -200,11 +200,11 @@
             // 
             // pContenedor
             // 
-            this.pContenedor.Controls.Add(this.pPatologicos);
             this.pContenedor.Controls.Add(this.pExploracionFisica);
             this.pContenedor.Controls.Add(this.pNoPatologicos);
             this.pContenedor.Controls.Add(this.pDatosGenerales);
             this.pContenedor.Controls.Add(this.pEstudiosParaclinicos);
+            this.pContenedor.Controls.Add(this.pPatologicos);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(0, 145);
             this.pContenedor.Name = "pContenedor";
@@ -271,7 +271,7 @@
             // label24
             // 
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label24.ForeColor = System.Drawing.Color.DarkCyan;
             this.label24.Location = new System.Drawing.Point(16, 863);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(151, 23);
@@ -312,7 +312,7 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label12.ForeColor = System.Drawing.Color.DarkCyan;
             this.label12.Location = new System.Drawing.Point(18, 784);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(151, 19);
@@ -348,7 +348,7 @@
             // label23
             // 
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label23.ForeColor = System.Drawing.Color.DarkCyan;
             this.label23.Location = new System.Drawing.Point(15, 696);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(190, 28);
@@ -384,7 +384,7 @@
             // label21
             // 
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label21.ForeColor = System.Drawing.Color.DarkCyan;
             this.label21.Location = new System.Drawing.Point(18, 611);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(242, 25);
@@ -420,7 +420,7 @@
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label20.ForeColor = System.Drawing.Color.DarkCyan;
             this.label20.Location = new System.Drawing.Point(18, 530);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(201, 21);
@@ -456,7 +456,7 @@
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label19.ForeColor = System.Drawing.Color.DarkCyan;
             this.label19.Location = new System.Drawing.Point(18, 445);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(142, 25);
@@ -492,7 +492,7 @@
             // label18
             // 
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label18.ForeColor = System.Drawing.Color.DarkCyan;
             this.label18.Location = new System.Drawing.Point(18, 357);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(225, 28);
@@ -633,6 +633,19 @@
             this.txtSNerviosoCentral.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtSNerviosoCentral.UseSystemPasswordChar = false;
             // 
+            // rbtnTransfusiones
+            // 
+            this.rbtnTransfusiones.Location = new System.Drawing.Point(534, 51);
+            this.rbtnTransfusiones.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTransfusiones.Name = "rbtnTransfusiones";
+            this.rbtnTransfusiones.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTransfusiones.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTransfusiones.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnTransfusiones.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTransfusiones.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTransfusiones.TabIndex = 128;
+            this.rbtnTransfusiones.UseVisualStyleBackColor = true;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -644,6 +657,19 @@
             this.label14.TabIndex = 127;
             this.label14.Text = "Transfusiones:";
             // 
+            // rbtnCirugias
+            // 
+            this.rbtnCirugias.Location = new System.Drawing.Point(326, 51);
+            this.rbtnCirugias.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnCirugias.Name = "rbtnCirugias";
+            this.rbtnCirugias.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnCirugias.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnCirugias.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnCirugias.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnCirugias.Size = new System.Drawing.Size(83, 34);
+            this.rbtnCirugias.TabIndex = 126;
+            this.rbtnCirugias.UseVisualStyleBackColor = true;
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -654,6 +680,19 @@
             this.label13.Size = new System.Drawing.Size(68, 16);
             this.label13.TabIndex = 125;
             this.label13.Text = "Cirugías:";
+            // 
+            // rbtnHozpitalizaciones
+            // 
+            this.rbtnHozpitalizaciones.Location = new System.Drawing.Point(153, 51);
+            this.rbtnHozpitalizaciones.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnHozpitalizaciones.Name = "rbtnHozpitalizaciones";
+            this.rbtnHozpitalizaciones.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnHozpitalizaciones.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnHozpitalizaciones.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnHozpitalizaciones.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnHozpitalizaciones.Size = new System.Drawing.Size(83, 34);
+            this.rbtnHozpitalizaciones.TabIndex = 124;
+            this.rbtnHozpitalizaciones.UseVisualStyleBackColor = true;
             // 
             // label64
             // 
@@ -671,7 +710,7 @@
             this.txtAlergias.AnimateReadOnly = false;
             this.txtAlergias.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAlergias.Depth = 0;
-            this.txtAlergias.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAlergias.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtAlergias.Hint = "Alérgias:";
             this.txtAlergias.LeadingIcon = null;
             this.txtAlergias.Location = new System.Drawing.Point(623, 43);
@@ -688,7 +727,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label22.Location = new System.Drawing.Point(12, 10);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(142, 25);
@@ -758,11 +797,12 @@
             // 
             // label39
             // 
+            this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label39.ForeColor = System.Drawing.Color.DarkCyan;
             this.label39.Location = new System.Drawing.Point(14, 1038);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(110, 22);
+            this.label39.Size = new System.Drawing.Size(96, 16);
             this.label39.TabIndex = 152;
             this.label39.Text = "Neurológico:";
             // 
@@ -794,11 +834,12 @@
             // 
             // label38
             // 
+            this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label38.ForeColor = System.Drawing.Color.DarkCyan;
             this.label38.Location = new System.Drawing.Point(14, 948);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(191, 21);
+            this.label38.Size = new System.Drawing.Size(159, 16);
             this.label38.TabIndex = 150;
             this.label38.Text = "Músculo- Esquelético:";
             // 
@@ -830,11 +871,12 @@
             // 
             // label37
             // 
+            this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label37.ForeColor = System.Drawing.Color.DarkCyan;
             this.label37.Location = new System.Drawing.Point(18, 871);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(118, 22);
+            this.label37.Size = new System.Drawing.Size(108, 16);
             this.label37.TabIndex = 148;
             this.label37.Text = "Genitourinario:";
             // 
@@ -866,11 +908,12 @@
             // 
             // label36
             // 
+            this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label36.ForeColor = System.Drawing.Color.DarkCyan;
             this.label36.Location = new System.Drawing.Point(19, 787);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(79, 22);
+            this.label36.Size = new System.Drawing.Size(77, 16);
             this.label36.TabIndex = 146;
             this.label36.Text = "Abdomen:";
             // 
@@ -902,11 +945,12 @@
             // 
             // label35
             // 
+            this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label35.ForeColor = System.Drawing.Color.DarkCyan;
             this.label35.Location = new System.Drawing.Point(16, 696);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(79, 22);
+            this.label35.Size = new System.Drawing.Size(51, 16);
             this.label35.TabIndex = 144;
             this.label35.Text = "Tórax:";
             // 
@@ -938,11 +982,12 @@
             // 
             // label34
             // 
+            this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label34.ForeColor = System.Drawing.Color.DarkCyan;
             this.label34.Location = new System.Drawing.Point(16, 614);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(79, 22);
+            this.label34.Size = new System.Drawing.Size(55, 16);
             this.label34.TabIndex = 142;
             this.label34.Text = "Cuello:";
             // 
@@ -974,11 +1019,12 @@
             // 
             // label27
             // 
+            this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label27.ForeColor = System.Drawing.Color.DarkCyan;
             this.label27.Location = new System.Drawing.Point(19, 531);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(79, 22);
+            this.label27.Size = new System.Drawing.Size(47, 16);
             this.label27.TabIndex = 140;
             this.label27.Text = "Boca:";
             // 
@@ -1010,11 +1056,12 @@
             // 
             // label25
             // 
+            this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label25.ForeColor = System.Drawing.Color.DarkCyan;
             this.label25.Location = new System.Drawing.Point(19, 449);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(79, 22);
+            this.label25.Size = new System.Drawing.Size(47, 16);
             this.label25.TabIndex = 138;
             this.label25.Text = "Nariz:";
             // 
@@ -1046,13 +1093,14 @@
             // 
             // label33
             // 
+            this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label33.ForeColor = System.Drawing.Color.DarkCyan;
             this.label33.Location = new System.Drawing.Point(19, 359);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(79, 22);
+            this.label33.Size = new System.Drawing.Size(52, 16);
             this.label33.TabIndex = 136;
-            this.label33.Text = "Oidos:";
+            this.label33.Text = "Oídos:";
             // 
             // txtOidos
             // 
@@ -1082,11 +1130,12 @@
             // 
             // label31
             // 
+            this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label31.ForeColor = System.Drawing.Color.DarkCyan;
             this.label31.Location = new System.Drawing.Point(23, 272);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(79, 22);
+            this.label31.Size = new System.Drawing.Size(43, 16);
             this.label31.TabIndex = 134;
             this.label31.Text = "Ojos:";
             // 
@@ -1118,11 +1167,12 @@
             // 
             // label30
             // 
+            this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label30.ForeColor = System.Drawing.Color.DarkCyan;
             this.label30.Location = new System.Drawing.Point(23, 189);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(79, 22);
+            this.label30.Size = new System.Drawing.Size(61, 16);
             this.label30.TabIndex = 132;
             this.label30.Text = "Cráneo:";
             // 
@@ -1135,7 +1185,7 @@
             this.txtCraneo.Depth = 0;
             this.txtCraneo.HideSelection = true;
             this.txtCraneo.Hint = " ";
-            this.txtCraneo.Location = new System.Drawing.Point(19, 208);
+            this.txtCraneo.Location = new System.Drawing.Point(19, 211);
             this.txtCraneo.MaxLength = 32767;
             this.txtCraneo.MouseState = MaterialSkin.MouseState.OUT;
             this.txtCraneo.Name = "txtCraneo";
@@ -1157,11 +1207,11 @@
             this.txtTemperatura.AnimateReadOnly = false;
             this.txtTemperatura.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTemperatura.Depth = 0;
-            this.txtTemperatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTemperatura.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTemperatura.Hint = "Temperatura:";
             this.txtTemperatura.LeadingIcon = null;
             this.txtTemperatura.Location = new System.Drawing.Point(693, 126);
-            this.txtTemperatura.MaxLength = 50;
+            this.txtTemperatura.MaxLength = 7;
             this.txtTemperatura.MouseState = MaterialSkin.MouseState.OUT;
             this.txtTemperatura.Multiline = false;
             this.txtTemperatura.Name = "txtTemperatura";
@@ -1169,17 +1219,18 @@
             this.txtTemperatura.TabIndex = 120;
             this.txtTemperatura.Text = "";
             this.txtTemperatura.TrailingIcon = null;
+            this.txtTemperatura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTemperatura_KeyPress);
             // 
             // txtFC
             // 
             this.txtFC.AnimateReadOnly = false;
             this.txtFC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFC.Depth = 0;
-            this.txtFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFC.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFC.Hint = "F.C.:";
             this.txtFC.LeadingIcon = null;
             this.txtFC.Location = new System.Drawing.Point(19, 126);
-            this.txtFC.MaxLength = 50;
+            this.txtFC.MaxLength = 7;
             this.txtFC.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFC.Multiline = false;
             this.txtFC.Name = "txtFC";
@@ -1187,17 +1238,18 @@
             this.txtFC.TabIndex = 119;
             this.txtFC.Text = "";
             this.txtFC.TrailingIcon = null;
+            this.txtFC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFC_KeyPress);
             // 
             // txtTA
             // 
             this.txtTA.AnimateReadOnly = false;
             this.txtTA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTA.Depth = 0;
-            this.txtTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTA.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTA.Hint = "T.A.:";
             this.txtTA.LeadingIcon = null;
             this.txtTA.Location = new System.Drawing.Point(537, 126);
-            this.txtTA.MaxLength = 50;
+            this.txtTA.MaxLength = 7;
             this.txtTA.MouseState = MaterialSkin.MouseState.OUT;
             this.txtTA.Multiline = false;
             this.txtTA.Name = "txtTA";
@@ -1205,17 +1257,18 @@
             this.txtTA.TabIndex = 118;
             this.txtTA.Text = "";
             this.txtTA.TrailingIcon = null;
+            this.txtTA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTA_KeyPress);
             // 
             // txtPulso
             // 
             this.txtPulso.AnimateReadOnly = false;
             this.txtPulso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPulso.Depth = 0;
-            this.txtPulso.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPulso.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPulso.Hint = "Pulso:";
             this.txtPulso.LeadingIcon = null;
             this.txtPulso.Location = new System.Drawing.Point(381, 126);
-            this.txtPulso.MaxLength = 50;
+            this.txtPulso.MaxLength = 7;
             this.txtPulso.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPulso.Multiline = false;
             this.txtPulso.Name = "txtPulso";
@@ -1223,17 +1276,18 @@
             this.txtPulso.TabIndex = 117;
             this.txtPulso.Text = "";
             this.txtPulso.TrailingIcon = null;
+            this.txtPulso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPulso_KeyPress);
             // 
             // txtFR
             // 
             this.txtFR.AnimateReadOnly = false;
             this.txtFR.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFR.Depth = 0;
-            this.txtFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFR.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFR.Hint = "F.R.:";
             this.txtFR.LeadingIcon = null;
             this.txtFR.Location = new System.Drawing.Point(225, 126);
-            this.txtFR.MaxLength = 50;
+            this.txtFR.MaxLength = 7;
             this.txtFR.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFR.Multiline = false;
             this.txtFR.Name = "txtFR";
@@ -1241,6 +1295,7 @@
             this.txtFR.TabIndex = 116;
             this.txtFR.Text = "";
             this.txtFR.TrailingIcon = null;
+            this.txtFR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFR_KeyPress);
             // 
             // cboxGrado
             // 
@@ -1311,11 +1366,11 @@
             this.txtIMC.AnimateReadOnly = false;
             this.txtIMC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIMC.Depth = 0;
-            this.txtIMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIMC.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIMC.Hint = "IMC:";
             this.txtIMC.LeadingIcon = null;
             this.txtIMC.Location = new System.Drawing.Point(537, 56);
-            this.txtIMC.MaxLength = 50;
+            this.txtIMC.MaxLength = 7;
             this.txtIMC.MouseState = MaterialSkin.MouseState.OUT;
             this.txtIMC.Multiline = false;
             this.txtIMC.Name = "txtIMC";
@@ -1329,11 +1384,11 @@
             this.txtPeso.AnimateReadOnly = false;
             this.txtPeso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPeso.Depth = 0;
-            this.txtPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPeso.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPeso.Hint = "Peso:";
             this.txtPeso.LeadingIcon = null;
             this.txtPeso.Location = new System.Drawing.Point(381, 56);
-            this.txtPeso.MaxLength = 50;
+            this.txtPeso.MaxLength = 7;
             this.txtPeso.MouseState = MaterialSkin.MouseState.OUT;
             this.txtPeso.Multiline = false;
             this.txtPeso.Name = "txtPeso";
@@ -1341,17 +1396,19 @@
             this.txtPeso.TabIndex = 105;
             this.txtPeso.Text = "";
             this.txtPeso.TrailingIcon = null;
+            this.txtPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeso_KeyPress);
+            this.txtPeso.Validating += new System.ComponentModel.CancelEventHandler(this.txtPeso_Validating);
             // 
             // txtTalla
             // 
             this.txtTalla.AnimateReadOnly = false;
             this.txtTalla.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTalla.Depth = 0;
-            this.txtTalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTalla.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTalla.Hint = "Talla:";
             this.txtTalla.LeadingIcon = null;
             this.txtTalla.Location = new System.Drawing.Point(225, 56);
-            this.txtTalla.MaxLength = 50;
+            this.txtTalla.MaxLength = 7;
             this.txtTalla.MouseState = MaterialSkin.MouseState.OUT;
             this.txtTalla.Multiline = false;
             this.txtTalla.Name = "txtTalla";
@@ -1359,12 +1416,14 @@
             this.txtTalla.TabIndex = 104;
             this.txtTalla.Text = "";
             this.txtTalla.TrailingIcon = null;
+            this.txtTalla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTalla_KeyPress);
+            this.txtTalla.Validating += new System.ComponentModel.CancelEventHandler(this.txtTalla_Validating);
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label29.Location = new System.Drawing.Point(12, 10);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(206, 25);
@@ -1862,7 +1921,7 @@
             this.txtFechaIngreso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFechaIngreso.Depth = 0;
             this.txtFechaIngreso.Enabled = false;
-            this.txtFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFechaIngreso.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtFechaIngreso.Hint = "Fecha De Ingreso:";
             this.txtFechaIngreso.LeadingIcon = null;
             this.txtFechaIngreso.Location = new System.Drawing.Point(687, 365);
@@ -1929,7 +1988,7 @@
             this.txtPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPuesto.Depth = 0;
             this.txtPuesto.Enabled = false;
-            this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPuesto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtPuesto.Hint = "Puesto:";
             this.txtPuesto.LeadingIcon = null;
             this.txtPuesto.Location = new System.Drawing.Point(17, 365);
@@ -1975,7 +2034,7 @@
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefono.Depth = 0;
             this.txtTelefono.Enabled = false;
-            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTelefono.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTelefono.Hint = "Teléfono:";
             this.txtTelefono.LeadingIcon = null;
             this.txtTelefono.Location = new System.Drawing.Point(687, 241);
@@ -1994,7 +2053,7 @@
             this.txtEdad.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEdad.Depth = 0;
             this.txtEdad.Enabled = false;
-            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEdad.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEdad.Hint = "Edad:";
             this.txtEdad.LeadingIcon = null;
             this.txtEdad.Location = new System.Drawing.Point(17, 175);
@@ -2013,7 +2072,7 @@
             this.txtNSS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNSS.Depth = 0;
             this.txtNSS.Enabled = false;
-            this.txtNSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNSS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNSS.Hint = "No. IMSS:";
             this.txtNSS.LeadingIcon = null;
             this.txtNSS.Location = new System.Drawing.Point(686, 175);
@@ -2032,7 +2091,7 @@
             this.txtEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEstadoCivil.Depth = 0;
             this.txtEstadoCivil.Enabled = false;
-            this.txtEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEstadoCivil.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtEstadoCivil.Hint = "Estado Civil:";
             this.txtEstadoCivil.LeadingIcon = null;
             this.txtEstadoCivil.Location = new System.Drawing.Point(463, 175);
@@ -2051,7 +2110,7 @@
             this.txtSexo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSexo.Depth = 0;
             this.txtSexo.Enabled = false;
-            this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSexo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtSexo.Hint = "Sexo:";
             this.txtSexo.LeadingIcon = null;
             this.txtSexo.Location = new System.Drawing.Point(240, 175);
@@ -2070,7 +2129,7 @@
             this.txtNoExpediente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNoExpediente.Depth = 0;
             this.txtNoExpediente.Enabled = false;
-            this.txtNoExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNoExpediente.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNoExpediente.Hint = "No. Expediente: ";
             this.txtNoExpediente.LeadingIcon = null;
             this.txtNoExpediente.Location = new System.Drawing.Point(547, 38);
@@ -2113,7 +2172,7 @@
             this.txtIdEmpleado.AnimateReadOnly = false;
             this.txtIdEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdEmpleado.Depth = 0;
-            this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleado.Hint = "IdEmpleado";
             this.txtIdEmpleado.LeadingIcon = null;
             this.txtIdEmpleado.Location = new System.Drawing.Point(687, 106);
@@ -2132,7 +2191,7 @@
             this.txtNumeroNomina.AnimateReadOnly = false;
             this.txtNumeroNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNumeroNomina.Depth = 0;
-            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumeroNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNumeroNomina.Hint = "No. Nomina: ";
             this.txtNumeroNomina.LeadingIcon = null;
             this.txtNumeroNomina.Location = new System.Drawing.Point(17, 38);
@@ -2151,7 +2210,7 @@
             this.txtNombreEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreEmpleado.Depth = 0;
             this.txtNombreEmpleado.Enabled = false;
-            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNombreEmpleado.Hint = "Nombre del colaborador:";
             this.txtNombreEmpleado.LeadingIcon = null;
             this.txtNombreEmpleado.Location = new System.Drawing.Point(17, 106);
@@ -2411,7 +2470,7 @@
             // 
             // pSeccionesExpediente
             // 
-            this.pSeccionesExpediente.BackColor = System.Drawing.Color.DarkCyan;
+            this.pSeccionesExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.pSeccionesExpediente.Controls.Add(this.btnEstudiosParaclinicos);
             this.pSeccionesExpediente.Controls.Add(this.btnExploracionFisica);
             this.pSeccionesExpediente.Controls.Add(this.btnPatologicos);
@@ -2523,51 +2582,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label1.Location = new System.Drawing.Point(374, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(353, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Expediente Clínico";
-            // 
-            // rbtnTransfusiones
-            // 
-            this.rbtnTransfusiones.Location = new System.Drawing.Point(534, 51);
-            this.rbtnTransfusiones.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTransfusiones.Name = "rbtnTransfusiones";
-            this.rbtnTransfusiones.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTransfusiones.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTransfusiones.OnBackColor = System.Drawing.Color.DarkCyan;
-            this.rbtnTransfusiones.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTransfusiones.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTransfusiones.TabIndex = 128;
-            this.rbtnTransfusiones.UseVisualStyleBackColor = true;
-            // 
-            // rbtnCirugias
-            // 
-            this.rbtnCirugias.Location = new System.Drawing.Point(326, 51);
-            this.rbtnCirugias.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnCirugias.Name = "rbtnCirugias";
-            this.rbtnCirugias.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnCirugias.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnCirugias.OnBackColor = System.Drawing.Color.DarkCyan;
-            this.rbtnCirugias.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnCirugias.Size = new System.Drawing.Size(83, 34);
-            this.rbtnCirugias.TabIndex = 126;
-            this.rbtnCirugias.UseVisualStyleBackColor = true;
-            // 
-            // rbtnHozpitalizaciones
-            // 
-            this.rbtnHozpitalizaciones.Location = new System.Drawing.Point(153, 51);
-            this.rbtnHozpitalizaciones.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnHozpitalizaciones.Name = "rbtnHozpitalizaciones";
-            this.rbtnHozpitalizaciones.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnHozpitalizaciones.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnHozpitalizaciones.OnBackColor = System.Drawing.Color.DarkCyan;
-            this.rbtnHozpitalizaciones.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnHozpitalizaciones.Size = new System.Drawing.Size(83, 34);
-            this.rbtnHozpitalizaciones.TabIndex = 124;
-            this.rbtnHozpitalizaciones.UseVisualStyleBackColor = true;
             // 
             // frmExpedienteMedico
             // 
