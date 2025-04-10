@@ -90,7 +90,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 panel.Region = new Region(path);
 
                 // Dibujar el borde con el color deseado
-                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                Pen pen = new Pen(Color.FromArgb(6, 103, 105), 5); // Cambia el color aquí
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 e.Graphics.DrawPath(pen, path);
             }
@@ -124,7 +124,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             bool hayCamposVacíos = HayTextBoxVacios(parentControl);
 
             // Cambiar color solo si el panel ya se visitó
-            boton.BackColor = hayCamposVacíos ? Color.Red : Color.FromArgb(27, 77, 141);
+            boton.BackColor = hayCamposVacíos ? Color.Red : Color.FromArgb(6, 103, 105);
         }
 
         // Método recursivo para buscar TextBox dentro de cualquier control (incluidos paneles anidados)
