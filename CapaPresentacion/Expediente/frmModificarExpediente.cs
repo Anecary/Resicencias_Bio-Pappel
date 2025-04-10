@@ -63,6 +63,19 @@ namespace CapaPresentacion.Expediente
             }
             cboxNumExpediente2.OnSelectedIndexChanged += cboxNumExpediente2_OnSelectedIndexChanged;
         }
+        private void btnMouseEnter(Object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            pSeccionesExpediente.Controls.Add(p);
+            p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
+            p.Size = new Size(btn.Width, 5); // Tamaño del panel
+            p.Location = new System.Drawing.Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
+        }
+        // Método para eliminar el panel cuando el mouse sale del área del botón
+        private void btnMouseLeave(Object sender, EventArgs e)
+        {
+            pSeccionesExpediente.Controls.Remove(p);
+        }
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
             Panel panel = sender as Panel;
@@ -530,6 +543,136 @@ namespace CapaPresentacion.Expediente
             }
 
 
+        }
+        public void ValidacionNumeros(KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right))
+            {
+                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
+            }
+        }
+        public void ValidacionNumerosDecimal(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo números, retroceso, eliminar, enter, tab, escape, y las flechas
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right || e.KeyChar == '.'))
+            {
+                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
+            }
+            else if (e.KeyChar == '.')
+            {
+                // Verifica si ya existe un punto en el texto
+                var textBox = sender as MaterialSkin.Controls.MaterialTextBox;
+
+                if (textBox.Text.Contains("."))
+                {
+                    var result = RJMessageBox.Show("Solo se permite un punto decimal", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    e.Handled = true; // Bloquea la entrada de un segundo punto
+                }
+            }
+        }
+        private void CalcularIMC()
+        {
+            double talla = 0, peso = 0, imc = 0;
+
+            // Verificamos si los valores de peso y talla son válidos
+            if (double.TryParse(txtTalla.Text, out talla) && talla > 0 &&
+                double.TryParse(txtPeso.Text, out peso) && peso > 0)
+            {
+                // Calculamos el IMC
+                imc = peso / (talla * talla);
+
+                // Mostramos el resultado en txtIMC, redondeando el valor a 2 decimales
+                txtIMC.Text = imc.ToString("F2");
+            }
+            else
+            {
+                // Si los valores no son válidos, dejamos txtIMC vacío
+                txtIMC.Clear();
+            }
+        }
+        private void txtTalla_Validating(object sender, CancelEventArgs e)
+        {
+            double talla = Convert.ToDouble(txtTalla.Text);
+            if (talla > 5 || talla < .5)
+            {
+                var result = RJMessageBox.Show("Por favor, ingresa una talla válida. Recuerda que la talla debe estar en metros y ser un valor positivo.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                txtTalla.Clear();
+                txtTalla.Focus();
+            }
+            else
+            {
+                CalcularIMC();
+            }
+        }
+
+        private void txtPeso_Validating(object sender, CancelEventArgs e)
+        {
+            double peso = Convert.ToDouble(txtPeso.Text);
+            if (peso > 300 || peso < 20)
+            {
+                var result = RJMessageBox.Show("Por favor, ingresa un peso válido. Recuerda que el peso debe estar en kilogramos y ser un valor positivo.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                txtPeso.Clear();
+                txtPeso.Focus();
+            }
+            else
+            {
+                CalcularIMC();
+            }
+        }
+
+        private void txtTalla_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumerosDecimal(sender, e);
+        }
+
+        private void txtPeso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumerosDecimal(sender, e);
+        }
+
+        private void txtIMC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumerosDecimal(sender, e);
+        }
+
+        private void txtFC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumerosDecimal(sender, e);
+        }
+
+        private void txtFR_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumerosDecimal(sender, e);
+        }
+
+        private void txtPulso_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumeros(e);
+        }
+
+        private void txtTA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumerosDecimal(sender, e);
+        }
+
+        private void txtTemperatura_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumerosDecimal(sender, e);
         }
     }
 }

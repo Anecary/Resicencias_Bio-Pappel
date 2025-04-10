@@ -100,7 +100,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             Button btn = sender as Button;
             pSeccionesDatos.Controls.Add(p);
             p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
-            p.Size = new Size(185, 5); // Tamaño del panel
+            p.Size = new Size(btn.Width, 5); // Tamaño del panel
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
         // Método para eliminar el panel cuando el mouse sale del área del botón
@@ -123,8 +123,9 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
             bool hayCamposVacíos = HayTextBoxVacios(parentControl);
 
-            // Cambiar color solo si el panel ya se visitó
-            boton.BackColor = hayCamposVacíos ? Color.Red : Color.FromArgb(6, 103, 105);
+            // Cambiar propiedad image del boton 
+            boton.Image = hayCamposVacíos ? Properties.Resources.senal_de_alerta : null;
+            boton.TextImageRelation = TextImageRelation.TextBeforeImage;
         }
 
         // Método recursivo para buscar TextBox dentro de cualquier control (incluidos paneles anidados)
@@ -435,7 +436,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
             //Datos Generales
             int noAccidente = Convert.ToInt32(txtNoAccidente.Text);
-            string condicion = txtCondicion.Text;
+            string condicion = cboxCondicion.Text;
             DateTime fechaRegistro = dtpFechaRegistro.Value;
             int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
             string numnomina = txtNumeroNomina.Text;
@@ -530,7 +531,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             int empleadoSeguimiento = Convert.ToInt32(txtidNombreSST.Text);
             DateTime fecha_Hora_recepcion = dtpFechaRecepcion.Value.Date + dtpHoraRecepcion.Value.TimeOfDay;
 
-            if (!string.IsNullOrWhiteSpace(txtCondicion.Text) || !string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) || !string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) || !string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
+            if (!string.IsNullOrWhiteSpace(cboxCondicion.Text) || !string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) || !string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) || !string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
                 !string.IsNullOrWhiteSpace(txtLugarAccidente.Text) || !string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text) || !string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) || !string.IsNullOrWhiteSpace(txtEquipoDanado.Text) || !string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
                 !string.IsNullOrWhiteSpace(txtOtro.Text) || !string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) || !string.IsNullOrWhiteSpace(txtTratamiento.Text) || !string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
                 !string.IsNullOrWhiteSpace(txtAccionesCorrectivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
@@ -622,7 +623,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     // Llamada al método para limpiar todos los controles en el formulario
                     LimpiarControles(this);
                     txtNumeroNomina.Focus();
-                    txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear();txtEdad.Clear();txtPuesto.Clear(); txtAntiguedad.Clear();
+                    txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear();txtEdad.Clear();txtPuesto.Clear(); txtAntiguedad.Clear();
 
 
                 }

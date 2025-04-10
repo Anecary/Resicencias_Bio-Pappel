@@ -13,6 +13,7 @@ using MaterialSkin;
 using MaterialSkin.Controls;
 using System.Drawing.Drawing2D;
 using CapaEntidad;
+using Microsoft.Reporting.Map.WebForms.BingMaps;
 
 namespace CapaPresentacion.Expediente
 {
@@ -64,6 +65,7 @@ namespace CapaPresentacion.Expediente
             panelActual = pDatosGenerales;
             botonActual = btnDatosGenerales;
         }
+
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
             Panel panel = sender as Panel;
@@ -84,11 +86,25 @@ namespace CapaPresentacion.Expediente
                 panel.Region = new Region(path);
 
                 // Dibujar el borde con el color deseado
-                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                Pen pen = new Pen(Color.FromArgb(6, 103, 105), 5); // Cambia el color aquí
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 e.Graphics.DrawPath(pen, path);
             }
         }
+        private void btnMouseEnter(Object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            pSeccionesExpediente.Controls.Add(p);
+            p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
+            p.Size = new Size(btn.Width, 5); // Tamaño del panel
+            p.Location = new System.Drawing.Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
+        }
+        // Método para eliminar el panel cuando el mouse sale del área del botón
+        private void btnMouseLeave(Object sender, EventArgs e)
+        {
+            pSeccionesExpediente.Controls.Remove(p);
+        }
+
         private Dictionary<Button, bool> panelVisitado = new Dictionary<Button, bool>();
 
         // Variable para almacenar el panel y botón actual
@@ -103,8 +119,10 @@ namespace CapaPresentacion.Expediente
             bool hayCamposVacíos = HayTextBoxVacios(parentControl);
 
             // Cambiar color solo si el panel ya se visitó
-           // boton.BackColor = hayCamposVacíos ? Color.Red : Color.FromArgb(27, 77, 141);
-            boton.ForeColor = hayCamposVacíos ? Color.Red : Color.White;
+            // boton.BackColor = hayCamposVacíos ? Color.Red : Color.FromArgb(27, 77, 141);
+            //boton.ForeColor = hayCamposVacíos ? Color.Red : Color.White;
+            boton.Image = hayCamposVacíos ? Properties.Resources.senal_de_alerta : null;
+            boton.TextImageRelation = TextImageRelation.TextBeforeImage;
         }
 
         // Método recursivo para buscar TextBox dentro de cualquier control (incluidos paneles anidados)
