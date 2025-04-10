@@ -71,7 +71,7 @@ namespace CapaPresentacion
                 activeForm.Close();
                 activeForm = null; 
             }
-
+            hideSubMenu();
             SetInitialView();
         }
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -99,25 +99,25 @@ namespace CapaPresentacion
         // Cambiar el color de fondo y de texto cuando el mouse está sobre el botón
         private void button_MouseOver(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            btn.BackColor = Color.FromArgb(51, 181, 253);  
-            btn.ForeColor = Color.FromArgb(0, 0, 0);   
+            //Button btn = (Button)sender;
+            //btn.BackColor = Color.FromArgb(51, 181, 253);  
+            //btn.ForeColor = Color.FromArgb(0, 0, 0);   
         }
 
         // Cambiar el color de fondo y de texto cuando el mouse es presionado sobre el botón
         private void button_MouseDown(object sender, MouseEventArgs e)
         {
-            Button btn = (Button)sender;
-            btn.BackColor = Color.FromArgb(51, 181, 253);   
-            btn.ForeColor = Color.FromArgb(0, 0, 0);                   
+            //Button btn = (Button)sender;
+            //btn.BackColor = Color.FromArgb(51, 181, 253);   
+            //btn.ForeColor = Color.FromArgb(0, 0, 0);                   
         }
 
         // Restablecer los colores cuando el mouse ya no está sobre el botón
         private void button_MouseLeave(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            btn.BackColor = Color.FromArgb(22, 104, 179);      
-            btn.ForeColor = Color.White;
+            //Button btn = (Button)sender;
+            //btn.BackColor = Color.FromArgb(22, 104, 179);      
+            //btn.ForeColor = Color.White;
         }
 
 
