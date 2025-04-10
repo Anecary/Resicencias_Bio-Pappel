@@ -59,6 +59,7 @@ namespace CapaPresentacion
             this.btnEmpleados = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pLogo = new System.Windows.Forms.Panel();
+            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.psuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnRestaurar = new System.Windows.Forms.Button();
@@ -71,7 +72,6 @@ namespace CapaPresentacion
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.pMenu.SuspendLayout();
             this.pSubmenuReportes.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
@@ -627,6 +627,26 @@ namespace CapaPresentacion
             this.pLogo.TabIndex = 0;
             this.pLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pLogo_MouseDown);
             // 
+            // botonPersonalizado1
+            // 
+            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.botonPersonalizado1.BorderRadius = 20;
+            this.botonPersonalizado1.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
+            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 19);
+            this.botonPersonalizado1.Name = "botonPersonalizado1";
+            this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
+            this.botonPersonalizado1.TabIndex = 2;
+            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.UseVisualStyleBackColor = false;
+            // 
             // psuperior
             // 
             this.psuperior.BackColor = System.Drawing.Color.DarkCyan;
@@ -647,8 +667,8 @@ namespace CapaPresentacion
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
-            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
+            this.btnMinimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
             this.btnMinimizar.Location = new System.Drawing.Point(766, 0);
@@ -691,6 +711,7 @@ namespace CapaPresentacion
             this.btnMaximizar.Size = new System.Drawing.Size(46, 30);
             this.btnMaximizar.TabIndex = 3;
             this.btnMaximizar.UseVisualStyleBackColor = true;
+            this.btnMaximizar.Visible = false;
             this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnCerrar
@@ -699,8 +720,8 @@ namespace CapaPresentacion
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(71)))), ((int)(((byte)(120)))));
+            this.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.Location = new System.Drawing.Point(904, 0);
@@ -778,26 +799,6 @@ namespace CapaPresentacion
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(945, 5);
             this.panel2.TabIndex = 4;
-            // 
-            // botonPersonalizado1
-            // 
-            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.botonPersonalizado1.BorderRadius = 20;
-            this.botonPersonalizado1.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
-            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 19);
-            this.botonPersonalizado1.Name = "botonPersonalizado1";
-            this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
-            this.botonPersonalizado1.TabIndex = 2;
-            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.UseVisualStyleBackColor = false;
             // 
             // frmMenu
             // 
