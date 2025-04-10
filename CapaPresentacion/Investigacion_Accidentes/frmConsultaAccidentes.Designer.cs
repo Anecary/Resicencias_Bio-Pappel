@@ -212,6 +212,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnBuscarEmpleado = new CapaPresentacion.BotonPersonalizado();
+            this.btnImprimirReporte = new CapaPresentacion.BotonPersonalizado();
             this.pContenedorAccidentes.SuspendLayout();
             this.pContenedorAcc.SuspendLayout();
             this.pSeguimientoCaso.SuspendLayout();
@@ -668,6 +669,7 @@
             // pDatosGenerales
             // 
             this.pDatosGenerales.AutoScroll = true;
+            this.pDatosGenerales.Controls.Add(this.btnImprimirReporte);
             this.pDatosGenerales.Controls.Add(this.panel1);
             this.pDatosGenerales.Controls.Add(this.panel14);
             this.pDatosGenerales.Controls.Add(this.panel15);
@@ -688,7 +690,7 @@
             this.panel1.Controls.Add(this.txtNumeroNomina);
             this.panel1.Controls.Add(this.txtNombreEmpleado);
             this.panel1.Controls.Add(this.txtIdEmpleado);
-            this.panel1.Location = new System.Drawing.Point(3, 38);
+            this.panel1.Location = new System.Drawing.Point(3, 52);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(909, 100);
             this.panel1.TabIndex = 95;
@@ -795,7 +797,7 @@
             this.panel14.Controls.Add(this.txtNumAccidente);
             this.panel14.Controls.Add(this.txtCondicion);
             this.panel14.Enabled = false;
-            this.panel14.Location = new System.Drawing.Point(2, 153);
+            this.panel14.Location = new System.Drawing.Point(2, 167);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(912, 473);
             this.panel14.TabIndex = 93;
@@ -1112,7 +1114,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel15.Controls.Add(this.dgvTestigos);
-            this.panel15.Location = new System.Drawing.Point(3, 678);
+            this.panel15.Location = new System.Drawing.Point(3, 692);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(912, 190);
             this.panel15.TabIndex = 94;
@@ -1164,7 +1166,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label17.Location = new System.Drawing.Point(-1, 642);
+            this.label17.Location = new System.Drawing.Point(-1, 656);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(235, 25);
             this.label17.TabIndex = 93;
@@ -1174,7 +1176,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(-10, 877);
+            this.label16.Location = new System.Drawing.Point(-10, 891);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(119, 13);
             this.label16.TabIndex = 92;
@@ -1189,7 +1191,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 6151);
+            this.button2.Location = new System.Drawing.Point(728, 6158);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(0, 50);
             this.button2.TabIndex = 91;
@@ -1202,7 +1204,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label18.Location = new System.Drawing.Point(1, 8);
+            this.label18.Location = new System.Drawing.Point(1, 11);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(188, 25);
             this.label18.TabIndex = 16;
@@ -2912,6 +2914,28 @@
             this.btnBuscarEmpleado.UseVisualStyleBackColor = false;
             this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
             // 
+            // btnImprimirReporte
+            // 
+            this.btnImprimirReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnImprimirReporte.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnImprimirReporte.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnImprimirReporte.BorderRadius = 20;
+            this.btnImprimirReporte.BorderSize = 0;
+            this.btnImprimirReporte.FlatAppearance.BorderSize = 0;
+            this.btnImprimirReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImprimirReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimirReporte.ForeColor = System.Drawing.Color.White;
+            this.btnImprimirReporte.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimirReporte.Image")));
+            this.btnImprimirReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImprimirReporte.Location = new System.Drawing.Point(872, 6);
+            this.btnImprimirReporte.Name = "btnImprimirReporte";
+            this.btnImprimirReporte.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnImprimirReporte.Size = new System.Drawing.Size(40, 40);
+            this.btnImprimirReporte.TabIndex = 126;
+            this.btnImprimirReporte.TextColor = System.Drawing.Color.White;
+            this.btnImprimirReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnImprimirReporte.UseVisualStyleBackColor = false;
+            // 
             // frmConsultaAccidentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3147,5 +3171,6 @@
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtDescripcionAccidente;
         private MaterialSkin.Controls.MaterialTextBox txtCausaAccidente;
         private BotonPersonalizado btnBuscarEmpleado;
+        private BotonPersonalizado btnImprimirReporte;
     }
 }
