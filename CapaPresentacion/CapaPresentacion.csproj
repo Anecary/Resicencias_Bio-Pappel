@@ -225,12 +225,6 @@
     <Compile Include="Diseno\frmNotificacion.Designer.cs">
       <DependentUpon>frmNotificacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ejemplo_.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejemplo_.Designer.cs">
-      <DependentUpon>Ejemplo_.cs</DependentUpon>
-    </Compile>
     <Compile Include="Empleados\frmActualizarEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -353,9 +347,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Diseno\frmNotificacion.resx">
       <DependentUpon>frmNotificacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejemplo_.resx">
-      <DependentUpon>Ejemplo_.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados\frmActualizarEmpleado.resx">
       <DependentUpon>frmActualizarEmpleado.cs</DependentUpon>

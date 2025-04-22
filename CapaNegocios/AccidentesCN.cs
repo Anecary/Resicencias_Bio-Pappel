@@ -104,99 +104,99 @@ namespace CapaNegocios
         {
             return accidentesDAO.consultarInvAccidentesAcciones (idAccidente);
         }
-        public DataTable ObtenerReporteAccidentesBLL()
+        public DataTable ObtenerReporteAccidentesBLL(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 
             return dtReporte;
         }
 
-        public DataTable ObtenerReporteAccidentesPS()
+        public DataTable ObtenerReporteAccidentesPS(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Secciones();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Secciones(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 
             return dtReporte;
         }
-        public DataTable ObtenerReporteAccidentesSemana()
+        public DataTable ObtenerReporteAccidentesSemana(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Semana();
-
-            // Aquí podrías realizar validaciones o transformaciones si es necesario.
-
-            return dtReporte;
-        }
-
-        public DataTable ObtenerReporteAccidentes_ParteCuerpo()
-        {
-            // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_parteCuerpo();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Semana(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 
             return dtReporte;
         }
 
-        public DataTable ObtenerReporteAccidentes_Turno()
+        public DataTable ObtenerReporteAccidentes_ParteCuerpo(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Turno();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_parteCuerpo(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 
             return dtReporte;
         }
 
-        public DataTable ObtenerReporteAccidentes_Tlesion()
+        public DataTable ObtenerReporteAccidentes_Turno(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_TLesion();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Turno(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 
             return dtReporte;
         }
 
-        public DataTable ObtenerReporteAccidentes_IncapDeto()
+        public DataTable ObtenerReporteAccidentes_Tlesion(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_IncapDepto();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_TLesion(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 
             return dtReporte;
         }
 
-        public DataTable ObtenerReporteAccidentes_Condicionn()
+        public DataTable ObtenerReporteAccidentes_IncapDeto(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Condicion();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_IncapDepto(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 
             return dtReporte;
         }
 
-        public DataTable ObtenerReporteAccidentes_Eda()
+        public DataTable ObtenerReporteAccidentes_Condicionn(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Edad();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Condicion(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 
             return dtReporte;
         }
 
-        public DataTable ObtenerReporteAccidentes_Debido()
+        public DataTable ObtenerReporteAccidentes_Eda(int año)
         {
             // Llama al método de la capa de datos.
-            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_DebidoA();
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_Edad(año);
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
+
+        public DataTable ObtenerReporteAccidentes_Debido(int año)
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = accidentesDAO.ObtenerReporteAccidentes_DebidoA(año);
 
             // Aquí podrías realizar validaciones o transformaciones si es necesario.
 

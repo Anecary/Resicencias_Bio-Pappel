@@ -472,15 +472,18 @@ namespace CapaDatos
         }
 
         /*---+++++AREA DE REPORTES+++++----*/
-        public DataTable ObtenerReporteAccidentes()
+        public DataTable ObtenerReporteAccidentes(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
             using (MySqlConnection conn = objConexion.Conecta()) // Conectar a la BD
             {
-                using (MySqlCommand cmd = new MySqlCommand("AccidentesPorAño", conn)) // Llamar al procedimiento almacenado correcto
+                using (MySqlCommand cmd = new MySqlCommand("AccidentesPorAño", conn)) // Llamar al procedimiento almacenado
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Agregar el parámetro que espera el procedimiento almacenado
+                    cmd.Parameters.AddWithValue("@anio", año); // Asegúrate de que este nombre coincida con el del parámetro en el SP
 
                     try
                     {
@@ -494,7 +497,8 @@ namespace CapaDatos
                     }
                     catch (Exception ex)
                     {
-
+                        // Es buena práctica al menos registrar el error
+                        Console.WriteLine("Error al obtener el reporte: " + ex.Message);
                     }
                 }
             }
@@ -502,7 +506,7 @@ namespace CapaDatos
             return dt; // Retornar el DataTable con los datos
         }
 
-        public DataTable ObtenerReporteAccidentes_Secciones()
+        public DataTable ObtenerReporteAccidentes_Secciones(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -512,6 +516,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
@@ -532,7 +537,7 @@ namespace CapaDatos
             return dt; // Retornar el DataTable con los datos
         }
 
-        public DataTable ObtenerReporteAccidentes_Semana()
+        public DataTable ObtenerReporteAccidentes_Semana(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -542,6 +547,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
@@ -562,7 +568,7 @@ namespace CapaDatos
             return dt; // Retornar el DataTable con los datos
         }
 
-        public DataTable ObtenerReporteAccidentes_parteCuerpo()
+        public DataTable ObtenerReporteAccidentes_parteCuerpo(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -572,6 +578,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
@@ -592,7 +599,7 @@ namespace CapaDatos
             return dt; // Retornar el DataTable con los datos
         }
 
-        public DataTable ObtenerReporteAccidentes_Turno()
+        public DataTable ObtenerReporteAccidentes_Turno(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -602,6 +609,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
@@ -623,7 +631,7 @@ namespace CapaDatos
         }
 
 
-        public DataTable ObtenerReporteAccidentes_TLesion()
+        public DataTable ObtenerReporteAccidentes_TLesion(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -633,6 +641,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
@@ -654,7 +663,7 @@ namespace CapaDatos
         }
 
 
-        public DataTable ObtenerReporteAccidentes_IncapDepto()
+        public DataTable ObtenerReporteAccidentes_IncapDepto(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -664,6 +673,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
@@ -684,7 +694,7 @@ namespace CapaDatos
             return dt; // Retornar el DataTable con los datos
         }
 
-        public DataTable ObtenerReporteAccidentes_Condicion()
+        public DataTable ObtenerReporteAccidentes_Condicion(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -694,6 +704,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
@@ -714,7 +725,7 @@ namespace CapaDatos
             return dt; // Retornar el DataTable con los datos
         }
 
-        public DataTable ObtenerReporteAccidentes_Edad()
+        public DataTable ObtenerReporteAccidentes_Edad(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -724,6 +735,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
@@ -744,7 +756,7 @@ namespace CapaDatos
             return dt; // Retornar el DataTable con los datos
         }
 
-        public DataTable ObtenerReporteAccidentes_DebidoA()
+        public DataTable ObtenerReporteAccidentes_DebidoA(int año)
         {
             DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
 
@@ -754,6 +766,7 @@ namespace CapaDatos
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
+                    cmd.Parameters.AddWithValue("@anio", año);
                     try
                     {
                         conn.Open();
