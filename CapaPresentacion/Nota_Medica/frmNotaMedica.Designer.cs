@@ -33,6 +33,34 @@ namespace CapaPresentacion.Nota_Medica
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNotaMedica));
             this.pContenedorNotaMedica = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pDatosGenerales = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBuscarExpediente = new CapaPresentacion.BotonPersonalizado();
+            this.btnBuscarEmpleado = new CapaPresentacion.BotonPersonalizado();
+            this.txtFechaIngreso = new MaterialSkin.Controls.MaterialTextBox();
+            this.cboxTipoCausa = new MaterialSkin.Controls.MaterialComboBox();
+            this.cboxCausaConsulta = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtDomicilio = new MaterialSkin.Controls.MaterialTextBox();
+            this.cboxProceso = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtPuesto = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtEdad = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNSS = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtEstadoCivil = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtSexo = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNoExpediente = new MaterialSkin.Controls.MaterialTextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txtIdEmpleado = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNumeroNomina = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtNombreEmpleado = new MaterialSkin.Controls.MaterialTextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDiagnostico = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.label47 = new System.Windows.Forms.Label();
+            this.dtpFechaConsulta = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtObservaciones = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.pPatologicos = new System.Windows.Forms.Panel();
             this.topePagina = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -140,34 +168,6 @@ namespace CapaPresentacion.Nota_Medica
             this.label62 = new System.Windows.Forms.Label();
             this.txtHeredoFamiliar = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.label46 = new System.Windows.Forms.Label();
-            this.pDatosGenerales = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnBuscarExpediente = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.txtFechaIngreso = new MaterialSkin.Controls.MaterialTextBox();
-            this.cboxTipoCausa = new MaterialSkin.Controls.MaterialComboBox();
-            this.cboxCausaConsulta = new MaterialSkin.Controls.MaterialComboBox();
-            this.txtDomicilio = new MaterialSkin.Controls.MaterialTextBox();
-            this.cboxProceso = new MaterialSkin.Controls.MaterialComboBox();
-            this.txtPuesto = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtEdad = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNSS = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtEstadoCivil = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtSexo = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNoExpediente = new MaterialSkin.Controls.MaterialTextBox();
-            this.btnBuscarEmpleado = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.label42 = new System.Windows.Forms.Label();
-            this.txtIdEmpleado = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNumeroNomina = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNombreEmpleado = new MaterialSkin.Controls.MaterialTextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDiagnostico = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
-            this.label47 = new System.Windows.Forms.Label();
-            this.dtpFechaConsulta = new System.Windows.Forms.DateTimePicker();
-            this.btnGrabar = new MaterialSkin.Controls.MaterialButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtObservaciones = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.btnAntecedentes = new System.Windows.Forms.Button();
             this.btnEstudiosParaclinicos = new System.Windows.Forms.Button();
@@ -181,6 +181,9 @@ namespace CapaPresentacion.Nota_Medica
             this.panel5 = new System.Windows.Forms.Panel();
             this.pContenedorNotaMedica.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pDatosGenerales.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.pPatologicos.SuspendLayout();
             this.panel7.SuspendLayout();
             this.pExploracionFisica.SuspendLayout();
@@ -192,9 +195,6 @@ namespace CapaPresentacion.Nota_Medica
             this.panel10.SuspendLayout();
             this.pAntecedentes.SuspendLayout();
             this.panel12.SuspendLayout();
-            this.pDatosGenerales.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.pSeccionesDatos.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -216,17 +216,583 @@ namespace CapaPresentacion.Nota_Medica
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pDatosGenerales);
             this.panel1.Controls.Add(this.pPatologicos);
             this.panel1.Controls.Add(this.pExploracionFisica);
             this.panel1.Controls.Add(this.pEstudiosParaclinicos);
             this.panel1.Controls.Add(this.pNoPatologicos);
             this.panel1.Controls.Add(this.pAntecedentes);
-            this.panel1.Controls.Add(this.pDatosGenerales);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 178);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1260, 636);
             this.panel1.TabIndex = 8;
+            // 
+            // pDatosGenerales
+            // 
+            this.pDatosGenerales.AutoScroll = true;
+            this.pDatosGenerales.Controls.Add(this.panel3);
+            this.pDatosGenerales.Controls.Add(this.panel4);
+            this.pDatosGenerales.Location = new System.Drawing.Point(0, 0);
+            this.pDatosGenerales.Name = "pDatosGenerales";
+            this.pDatosGenerales.Size = new System.Drawing.Size(1260, 641);
+            this.pDatosGenerales.TabIndex = 135;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.btnBuscarExpediente);
+            this.panel3.Controls.Add(this.btnBuscarEmpleado);
+            this.panel3.Controls.Add(this.txtFechaIngreso);
+            this.panel3.Controls.Add(this.cboxTipoCausa);
+            this.panel3.Controls.Add(this.cboxCausaConsulta);
+            this.panel3.Controls.Add(this.txtDomicilio);
+            this.panel3.Controls.Add(this.cboxProceso);
+            this.panel3.Controls.Add(this.txtPuesto);
+            this.panel3.Controls.Add(this.txtTelefono);
+            this.panel3.Controls.Add(this.txtEdad);
+            this.panel3.Controls.Add(this.txtNSS);
+            this.panel3.Controls.Add(this.txtEstadoCivil);
+            this.panel3.Controls.Add(this.txtSexo);
+            this.panel3.Controls.Add(this.txtNoExpediente);
+            this.panel3.Controls.Add(this.label42);
+            this.panel3.Controls.Add(this.txtIdEmpleado);
+            this.panel3.Controls.Add(this.txtNumeroNomina);
+            this.panel3.Controls.Add(this.txtNombreEmpleado);
+            this.panel3.Location = new System.Drawing.Point(32, 22);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1182, 567);
+            this.panel3.TabIndex = 115;
+            // 
+            // btnBuscarExpediente
+            // 
+            this.btnBuscarExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarExpediente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarExpediente.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarExpediente.BorderRadius = 20;
+            this.btnBuscarExpediente.BorderSize = 0;
+            this.btnBuscarExpediente.FlatAppearance.BorderSize = 0;
+            this.btnBuscarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarExpediente.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarExpediente.Image")));
+            this.btnBuscarExpediente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarExpediente.Location = new System.Drawing.Point(1097, 68);
+            this.btnBuscarExpediente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscarExpediente.Name = "btnBuscarExpediente";
+            this.btnBuscarExpediente.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnBuscarExpediente.Size = new System.Drawing.Size(53, 49);
+            this.btnBuscarExpediente.TabIndex = 128;
+            this.btnBuscarExpediente.TextColor = System.Drawing.Color.White;
+            this.btnBuscarExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarExpediente.UseVisualStyleBackColor = false;
+            this.btnBuscarExpediente.Click += new System.EventHandler(this.btnBuscarExpediente_Click);
+            // 
+            // btnBuscarEmpleado
+            // 
+            this.btnBuscarEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleado.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarEmpleado.BorderRadius = 20;
+            this.btnBuscarEmpleado.BorderSize = 0;
+            this.btnBuscarEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleado.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleado.Image")));
+            this.btnBuscarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(524, 67);
+            this.btnBuscarEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
+            this.btnBuscarEmpleado.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnBuscarEmpleado.Size = new System.Drawing.Size(53, 49);
+            this.btnBuscarEmpleado.TabIndex = 127;
+            this.btnBuscarEmpleado.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarEmpleado.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
+            // 
+            // txtFechaIngreso
+            // 
+            this.txtFechaIngreso.AnimateReadOnly = false;
+            this.txtFechaIngreso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFechaIngreso.Depth = 0;
+            this.txtFechaIngreso.Enabled = false;
+            this.txtFechaIngreso.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFechaIngreso.Hint = "Fecha De Ingreso:";
+            this.txtFechaIngreso.LeadingIcon = null;
+            this.txtFechaIngreso.Location = new System.Drawing.Point(596, 394);
+            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFechaIngreso.MaxLength = 200;
+            this.txtFechaIngreso.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtFechaIngreso.Multiline = false;
+            this.txtFechaIngreso.Name = "txtFechaIngreso";
+            this.txtFechaIngreso.Size = new System.Drawing.Size(481, 50);
+            this.txtFechaIngreso.TabIndex = 118;
+            this.txtFechaIngreso.Text = "";
+            this.txtFechaIngreso.TrailingIcon = null;
+            // 
+            // cboxTipoCausa
+            // 
+            this.cboxTipoCausa.AutoResize = false;
+            this.cboxTipoCausa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxTipoCausa.Depth = 0;
+            this.cboxTipoCausa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxTipoCausa.DropDownHeight = 174;
+            this.cboxTipoCausa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxTipoCausa.DropDownWidth = 121;
+            this.cboxTipoCausa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxTipoCausa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxTipoCausa.FormattingEnabled = true;
+            this.cboxTipoCausa.Hint = "Descripción:";
+            this.cboxTipoCausa.IntegralHeight = false;
+            this.cboxTipoCausa.ItemHeight = 43;
+            this.cboxTipoCausa.Location = new System.Drawing.Point(596, 480);
+            this.cboxTipoCausa.MaxDropDownItems = 4;
+            this.cboxTipoCausa.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxTipoCausa.Name = "cboxTipoCausa";
+            this.cboxTipoCausa.Size = new System.Drawing.Size(480, 49);
+            this.cboxTipoCausa.StartIndex = 0;
+            this.cboxTipoCausa.TabIndex = 117;
+            // 
+            // cboxCausaConsulta
+            // 
+            this.cboxCausaConsulta.AutoResize = false;
+            this.cboxCausaConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxCausaConsulta.Depth = 0;
+            this.cboxCausaConsulta.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxCausaConsulta.DropDownHeight = 174;
+            this.cboxCausaConsulta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxCausaConsulta.DropDownWidth = 121;
+            this.cboxCausaConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxCausaConsulta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxCausaConsulta.FormattingEnabled = true;
+            this.cboxCausaConsulta.Hint = "Causa de consulta:";
+            this.cboxCausaConsulta.IntegralHeight = false;
+            this.cboxCausaConsulta.ItemHeight = 43;
+            this.cboxCausaConsulta.Location = new System.Drawing.Point(22, 480);
+            this.cboxCausaConsulta.MaxDropDownItems = 4;
+            this.cboxCausaConsulta.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxCausaConsulta.Name = "cboxCausaConsulta";
+            this.cboxCausaConsulta.Size = new System.Drawing.Size(480, 49);
+            this.cboxCausaConsulta.StartIndex = 0;
+            this.cboxCausaConsulta.TabIndex = 116;
+            // 
+            // txtDomicilio
+            // 
+            this.txtDomicilio.AnimateReadOnly = false;
+            this.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDomicilio.Depth = 0;
+            this.txtDomicilio.Enabled = false;
+            this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDomicilio.Hint = "Domicilio:";
+            this.txtDomicilio.LeadingIcon = null;
+            this.txtDomicilio.Location = new System.Drawing.Point(22, 231);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDomicilio.MaxLength = 18;
+            this.txtDomicilio.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDomicilio.Multiline = false;
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(481, 50);
+            this.txtDomicilio.TabIndex = 115;
+            this.txtDomicilio.Text = "";
+            this.txtDomicilio.TrailingIcon = null;
+            // 
+            // cboxProceso
+            // 
+            this.cboxProceso.AutoResize = false;
+            this.cboxProceso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxProceso.Depth = 0;
+            this.cboxProceso.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxProceso.DropDownHeight = 174;
+            this.cboxProceso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxProceso.DropDownWidth = 121;
+            this.cboxProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxProceso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxProceso.FormattingEnabled = true;
+            this.cboxProceso.Hint = "Proceso:";
+            this.cboxProceso.IntegralHeight = false;
+            this.cboxProceso.ItemHeight = 43;
+            this.cboxProceso.Items.AddRange(new object[] {
+            "REH",
+            "ALM",
+            "MEC",
+            "EEI",
+            "PLA",
+            "TEC",
+            "CEL",
+            "PAP",
+            "EMB",
+            "FZA",
+            "FRE",
+            "SPR",
+            "SEG",
+            "SGE",
+            "ADM",
+            "ABM",
+            "TFO",
+            "DIR",
+            "ECO",
+            "EXT",
+            "POB",
+            "COM",
+            "SIS",
+            "SIG"});
+            this.cboxProceso.Location = new System.Drawing.Point(279, 395);
+            this.cboxProceso.Margin = new System.Windows.Forms.Padding(4);
+            this.cboxProceso.MaxDropDownItems = 4;
+            this.cboxProceso.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxProceso.Name = "cboxProceso";
+            this.cboxProceso.Size = new System.Drawing.Size(224, 49);
+            this.cboxProceso.StartIndex = 0;
+            this.cboxProceso.TabIndex = 112;
+            // 
+            // txtPuesto
+            // 
+            this.txtPuesto.AnimateReadOnly = false;
+            this.txtPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPuesto.Depth = 0;
+            this.txtPuesto.Enabled = false;
+            this.txtPuesto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPuesto.Hint = "Puesto:";
+            this.txtPuesto.LeadingIcon = null;
+            this.txtPuesto.Location = new System.Drawing.Point(22, 397);
+            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPuesto.MaxLength = 200;
+            this.txtPuesto.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtPuesto.Multiline = false;
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Size = new System.Drawing.Size(227, 50);
+            this.txtPuesto.TabIndex = 111;
+            this.txtPuesto.Text = "";
+            this.txtPuesto.TrailingIcon = null;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.AnimateReadOnly = false;
+            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono.Depth = 0;
+            this.txtTelefono.Enabled = false;
+            this.txtTelefono.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtTelefono.Hint = "Teléfono:";
+            this.txtTelefono.LeadingIcon = null;
+            this.txtTelefono.Location = new System.Drawing.Point(596, 231);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefono.MaxLength = 200;
+            this.txtTelefono.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTelefono.Multiline = false;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(481, 50);
+            this.txtTelefono.TabIndex = 108;
+            this.txtTelefono.Text = "";
+            this.txtTelefono.TrailingIcon = null;
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.AnimateReadOnly = false;
+            this.txtEdad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEdad.Depth = 0;
+            this.txtEdad.Enabled = false;
+            this.txtEdad.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEdad.Hint = "Edad:";
+            this.txtEdad.LeadingIcon = null;
+            this.txtEdad.Location = new System.Drawing.Point(23, 314);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEdad.MaxLength = 50;
+            this.txtEdad.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEdad.Multiline = false;
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(226, 50);
+            this.txtEdad.TabIndex = 107;
+            this.txtEdad.Text = "";
+            this.txtEdad.TrailingIcon = null;
+            // 
+            // txtNSS
+            // 
+            this.txtNSS.AnimateReadOnly = false;
+            this.txtNSS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNSS.Depth = 0;
+            this.txtNSS.Enabled = false;
+            this.txtNSS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNSS.Hint = "No. IMSS:";
+            this.txtNSS.LeadingIcon = null;
+            this.txtNSS.Location = new System.Drawing.Point(850, 314);
+            this.txtNSS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNSS.MaxLength = 50;
+            this.txtNSS.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNSS.Multiline = false;
+            this.txtNSS.Name = "txtNSS";
+            this.txtNSS.Size = new System.Drawing.Size(227, 50);
+            this.txtNSS.TabIndex = 106;
+            this.txtNSS.Text = "";
+            this.txtNSS.TrailingIcon = null;
+            // 
+            // txtEstadoCivil
+            // 
+            this.txtEstadoCivil.AnimateReadOnly = false;
+            this.txtEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEstadoCivil.Depth = 0;
+            this.txtEstadoCivil.Enabled = false;
+            this.txtEstadoCivil.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEstadoCivil.Hint = "Estado Civil:";
+            this.txtEstadoCivil.LeadingIcon = null;
+            this.txtEstadoCivil.Location = new System.Drawing.Point(596, 314);
+            this.txtEstadoCivil.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstadoCivil.MaxLength = 50;
+            this.txtEstadoCivil.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEstadoCivil.Multiline = false;
+            this.txtEstadoCivil.Name = "txtEstadoCivil";
+            this.txtEstadoCivil.Size = new System.Drawing.Size(227, 50);
+            this.txtEstadoCivil.TabIndex = 105;
+            this.txtEstadoCivil.Text = "";
+            this.txtEstadoCivil.TrailingIcon = null;
+            // 
+            // txtSexo
+            // 
+            this.txtSexo.AnimateReadOnly = false;
+            this.txtSexo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSexo.Depth = 0;
+            this.txtSexo.Enabled = false;
+            this.txtSexo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSexo.Hint = "Sexo:";
+            this.txtSexo.LeadingIcon = null;
+            this.txtSexo.Location = new System.Drawing.Point(276, 314);
+            this.txtSexo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSexo.MaxLength = 50;
+            this.txtSexo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSexo.Multiline = false;
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Size = new System.Drawing.Size(227, 50);
+            this.txtSexo.TabIndex = 104;
+            this.txtSexo.Text = "";
+            this.txtSexo.TrailingIcon = null;
+            // 
+            // txtNoExpediente
+            // 
+            this.txtNoExpediente.AnimateReadOnly = false;
+            this.txtNoExpediente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNoExpediente.Depth = 0;
+            this.txtNoExpediente.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNoExpediente.Hint = "No. Expediente: ";
+            this.txtNoExpediente.LeadingIcon = null;
+            this.txtNoExpediente.Location = new System.Drawing.Point(596, 66);
+            this.txtNoExpediente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNoExpediente.MaxLength = 18;
+            this.txtNoExpediente.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNoExpediente.Multiline = false;
+            this.txtNoExpediente.Name = "txtNoExpediente";
+            this.txtNoExpediente.Size = new System.Drawing.Size(481, 50);
+            this.txtNoExpediente.TabIndex = 103;
+            this.txtNoExpediente.Text = "";
+            this.txtNoExpediente.TrailingIcon = null;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label42.Location = new System.Drawing.Point(16, 12);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(233, 31);
+            this.label42.TabIndex = 96;
+            this.label42.Text = "Datos Generales";
+            // 
+            // txtIdEmpleado
+            // 
+            this.txtIdEmpleado.AnimateReadOnly = false;
+            this.txtIdEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdEmpleado.Depth = 0;
+            this.txtIdEmpleado.Enabled = false;
+            this.txtIdEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleado.Hint = "IdEmpleado:";
+            this.txtIdEmpleado.LeadingIcon = null;
+            this.txtIdEmpleado.Location = new System.Drawing.Point(596, 147);
+            this.txtIdEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdEmpleado.MaxLength = 50;
+            this.txtIdEmpleado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtIdEmpleado.Multiline = false;
+            this.txtIdEmpleado.Name = "txtIdEmpleado";
+            this.txtIdEmpleado.Size = new System.Drawing.Size(481, 50);
+            this.txtIdEmpleado.TabIndex = 101;
+            this.txtIdEmpleado.Text = "";
+            this.txtIdEmpleado.TrailingIcon = null;
+            // 
+            // txtNumeroNomina
+            // 
+            this.txtNumeroNomina.AnimateReadOnly = false;
+            this.txtNumeroNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNumeroNomina.Depth = 0;
+            this.txtNumeroNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNumeroNomina.Hint = "No. Nomina: ";
+            this.txtNumeroNomina.LeadingIcon = null;
+            this.txtNumeroNomina.Location = new System.Drawing.Point(22, 67);
+            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumeroNomina.MaxLength = 18;
+            this.txtNumeroNomina.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNumeroNomina.Multiline = false;
+            this.txtNumeroNomina.Name = "txtNumeroNomina";
+            this.txtNumeroNomina.Size = new System.Drawing.Size(481, 50);
+            this.txtNumeroNomina.TabIndex = 97;
+            this.txtNumeroNomina.Text = "";
+            this.txtNumeroNomina.TrailingIcon = null;
+            // 
+            // txtNombreEmpleado
+            // 
+            this.txtNombreEmpleado.AnimateReadOnly = false;
+            this.txtNombreEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombreEmpleado.Depth = 0;
+            this.txtNombreEmpleado.Enabled = false;
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreEmpleado.Hint = "Nombre del colaborador:";
+            this.txtNombreEmpleado.LeadingIcon = null;
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(22, 147);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreEmpleado.MaxLength = 50;
+            this.txtNombreEmpleado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtNombreEmpleado.Multiline = false;
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(481, 50);
+            this.txtNombreEmpleado.TabIndex = 99;
+            this.txtNombreEmpleado.Text = "";
+            this.txtNombreEmpleado.TrailingIcon = null;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.btnGrabar);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.txtDiagnostico);
+            this.panel4.Controls.Add(this.label47);
+            this.panel4.Controls.Add(this.dtpFechaConsulta);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.txtObservaciones);
+            this.panel4.Location = new System.Drawing.Point(32, 615);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1182, 730);
+            this.panel4.TabIndex = 114;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGrabar.BorderRadius = 20;
+            this.btnGrabar.BorderSize = 0;
+            this.btnGrabar.FlatAppearance.BorderSize = 0;
+            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.ForeColor = System.Drawing.Color.White;
+            this.btnGrabar.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Image")));
+            this.btnGrabar.Location = new System.Drawing.Point(670, 630);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
+            this.btnGrabar.Size = new System.Drawing.Size(248, 74);
+            this.btnGrabar.TabIndex = 146;
+            this.btnGrabar.Text = " Grabar";
+            this.btnGrabar.TextColor = System.Drawing.Color.White;
+            this.btnGrabar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label3.Location = new System.Drawing.Point(18, 328);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(158, 29);
+            this.label3.TabIndex = 128;
+            this.label3.Text = "Diagnóstico:";
+            // 
+            // txtDiagnostico
+            // 
+            this.txtDiagnostico.AnimateReadOnly = false;
+            this.txtDiagnostico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtDiagnostico.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtDiagnostico.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDiagnostico.Depth = 0;
+            this.txtDiagnostico.HideSelection = true;
+            this.txtDiagnostico.Location = new System.Drawing.Point(24, 377);
+            this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiagnostico.MaxLength = 32767;
+            this.txtDiagnostico.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDiagnostico.Name = "txtDiagnostico";
+            this.txtDiagnostico.PasswordChar = '\0';
+            this.txtDiagnostico.ReadOnly = false;
+            this.txtDiagnostico.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDiagnostico.SelectedText = "";
+            this.txtDiagnostico.SelectionLength = 0;
+            this.txtDiagnostico.SelectionStart = 0;
+            this.txtDiagnostico.ShortcutsEnabled = true;
+            this.txtDiagnostico.Size = new System.Drawing.Size(1107, 231);
+            this.txtDiagnostico.TabIndex = 127;
+            this.txtDiagnostico.TabStop = false;
+            this.txtDiagnostico.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDiagnostico.UseSystemPasswordChar = false;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label47.Location = new System.Drawing.Point(53, 651);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(228, 29);
+            this.label47.TabIndex = 126;
+            this.label47.Text = "Fecha de emisión:";
+            // 
+            // dtpFechaConsulta
+            // 
+            this.dtpFechaConsulta.Location = new System.Drawing.Point(321, 656);
+            this.dtpFechaConsulta.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpFechaConsulta.Name = "dtpFechaConsulta";
+            this.dtpFechaConsulta.Size = new System.Drawing.Size(272, 22);
+            this.dtpFechaConsulta.TabIndex = 125;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label2.Location = new System.Drawing.Point(17, 27);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 29);
+            this.label2.TabIndex = 121;
+            this.label2.Text = "Observaciones:";
+            // 
+            // txtObservaciones
+            // 
+            this.txtObservaciones.AnimateReadOnly = false;
+            this.txtObservaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtObservaciones.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtObservaciones.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtObservaciones.Depth = 0;
+            this.txtObservaciones.HideSelection = true;
+            this.txtObservaciones.Location = new System.Drawing.Point(23, 76);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.txtObservaciones.MaxLength = 32767;
+            this.txtObservaciones.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.PasswordChar = '\0';
+            this.txtObservaciones.ReadOnly = false;
+            this.txtObservaciones.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtObservaciones.SelectedText = "";
+            this.txtObservaciones.SelectionLength = 0;
+            this.txtObservaciones.SelectionStart = 0;
+            this.txtObservaciones.ShortcutsEnabled = true;
+            this.txtObservaciones.Size = new System.Drawing.Size(1108, 231);
+            this.txtObservaciones.TabIndex = 120;
+            this.txtObservaciones.TabStop = false;
+            this.txtObservaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtObservaciones.UseSystemPasswordChar = false;
             // 
             // pPatologicos
             // 
@@ -237,14 +803,14 @@ namespace CapaPresentacion.Nota_Medica
             this.pPatologicos.Margin = new System.Windows.Forms.Padding(4);
             this.pPatologicos.Name = "pPatologicos";
             this.pPatologicos.Size = new System.Drawing.Size(1260, 641);
-            this.pPatologicos.TabIndex = 133;
+            this.pPatologicos.TabIndex = 134;
             // 
             // topePagina
             // 
             this.topePagina.AutoSize = true;
             this.topePagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.topePagina.ForeColor = System.Drawing.Color.Transparent;
-            this.topePagina.Location = new System.Drawing.Point(-4, 1200);
+            this.topePagina.Location = new System.Drawing.Point(-4, 1363);
             this.topePagina.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.topePagina.Name = "topePagina";
             this.topePagina.Size = new System.Drawing.Size(133, 20);
@@ -282,7 +848,7 @@ namespace CapaPresentacion.Nota_Medica
             this.panel7.Controls.Add(this.label64);
             this.panel7.Controls.Add(this.txtAlergias);
             this.panel7.Controls.Add(this.label22);
-            this.panel7.Location = new System.Drawing.Point(11, 23);
+            this.panel7.Location = new System.Drawing.Point(13, 16);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1200, 1184);
@@ -319,13 +885,13 @@ namespace CapaPresentacion.Nota_Medica
             // label24
             // 
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label24.ForeColor = System.Drawing.Color.DarkCyan;
             this.label24.Location = new System.Drawing.Point(21, 1062);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(201, 28);
             this.label24.TabIndex = 148;
-            this.label24.Text = "DarkCyan";
+            this.label24.Text = "Grupo Sanguíneo:";
             // 
             // label12
             // 
@@ -799,7 +1365,7 @@ namespace CapaPresentacion.Nota_Medica
             this.pExploracionFisica.Margin = new System.Windows.Forms.Padding(4);
             this.pExploracionFisica.Name = "pExploracionFisica";
             this.pExploracionFisica.Size = new System.Drawing.Size(1260, 641);
-            this.pExploracionFisica.TabIndex = 132;
+            this.pExploracionFisica.TabIndex = 133;
             // 
             // panel8
             // 
@@ -1494,7 +2060,7 @@ namespace CapaPresentacion.Nota_Medica
             this.pEstudiosParaclinicos.Margin = new System.Windows.Forms.Padding(4);
             this.pEstudiosParaclinicos.Name = "pEstudiosParaclinicos";
             this.pEstudiosParaclinicos.Size = new System.Drawing.Size(1260, 641);
-            this.pEstudiosParaclinicos.TabIndex = 131;
+            this.pEstudiosParaclinicos.TabIndex = 132;
             // 
             // panel6
             // 
@@ -1712,7 +2278,7 @@ namespace CapaPresentacion.Nota_Medica
             this.pNoPatologicos.Margin = new System.Windows.Forms.Padding(4);
             this.pNoPatologicos.Name = "pNoPatologicos";
             this.pNoPatologicos.Size = new System.Drawing.Size(1260, 641);
-            this.pNoPatologicos.TabIndex = 130;
+            this.pNoPatologicos.TabIndex = 131;
             // 
             // label5
             // 
@@ -2202,553 +2768,6 @@ namespace CapaPresentacion.Nota_Medica
             this.label46.TabIndex = 111;
             this.label46.Text = "Trabajo habitual";
             // 
-            // pDatosGenerales
-            // 
-            this.pDatosGenerales.AutoScroll = true;
-            this.pDatosGenerales.Controls.Add(this.panel3);
-            this.pDatosGenerales.Controls.Add(this.panel4);
-            this.pDatosGenerales.Location = new System.Drawing.Point(0, 0);
-            this.pDatosGenerales.Name = "pDatosGenerales";
-            this.pDatosGenerales.Size = new System.Drawing.Size(1260, 641);
-            this.pDatosGenerales.TabIndex = 128;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.btnBuscarExpediente);
-            this.panel3.Controls.Add(this.txtFechaIngreso);
-            this.panel3.Controls.Add(this.cboxTipoCausa);
-            this.panel3.Controls.Add(this.cboxCausaConsulta);
-            this.panel3.Controls.Add(this.txtDomicilio);
-            this.panel3.Controls.Add(this.cboxProceso);
-            this.panel3.Controls.Add(this.txtPuesto);
-            this.panel3.Controls.Add(this.txtTelefono);
-            this.panel3.Controls.Add(this.txtEdad);
-            this.panel3.Controls.Add(this.txtNSS);
-            this.panel3.Controls.Add(this.txtEstadoCivil);
-            this.panel3.Controls.Add(this.txtSexo);
-            this.panel3.Controls.Add(this.txtNoExpediente);
-            this.panel3.Controls.Add(this.btnBuscarEmpleado);
-            this.panel3.Controls.Add(this.label42);
-            this.panel3.Controls.Add(this.txtIdEmpleado);
-            this.panel3.Controls.Add(this.txtNumeroNomina);
-            this.panel3.Controls.Add(this.txtNombreEmpleado);
-            this.panel3.Location = new System.Drawing.Point(32, 22);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1182, 567);
-            this.panel3.TabIndex = 115;
-            // 
-            // btnBuscarExpediente
-            // 
-            this.btnBuscarExpediente.Depth = 0;
-            this.btnBuscarExpediente.Icon = ((System.Drawing.Image)(resources.GetObject("btnBuscarExpediente.Icon")));
-            this.btnBuscarExpediente.Location = new System.Drawing.Point(1096, 67);
-            this.btnBuscarExpediente.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscarExpediente.Mini = true;
-            this.btnBuscarExpediente.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBuscarExpediente.Name = "btnBuscarExpediente";
-            this.btnBuscarExpediente.Size = new System.Drawing.Size(53, 49);
-            this.btnBuscarExpediente.TabIndex = 119;
-            this.btnBuscarExpediente.Text = "materialFloatingActionButton2";
-            this.btnBuscarExpediente.UseVisualStyleBackColor = true;
-            this.btnBuscarExpediente.Click += new System.EventHandler(this.btnBuscarExpediente_Click);
-            // 
-            // txtFechaIngreso
-            // 
-            this.txtFechaIngreso.AnimateReadOnly = false;
-            this.txtFechaIngreso.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtFechaIngreso.Depth = 0;
-            this.txtFechaIngreso.Enabled = false;
-            this.txtFechaIngreso.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtFechaIngreso.Hint = "Fecha De Ingreso:";
-            this.txtFechaIngreso.LeadingIcon = null;
-            this.txtFechaIngreso.Location = new System.Drawing.Point(596, 394);
-            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFechaIngreso.MaxLength = 200;
-            this.txtFechaIngreso.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtFechaIngreso.Multiline = false;
-            this.txtFechaIngreso.Name = "txtFechaIngreso";
-            this.txtFechaIngreso.Size = new System.Drawing.Size(481, 50);
-            this.txtFechaIngreso.TabIndex = 118;
-            this.txtFechaIngreso.Text = "";
-            this.txtFechaIngreso.TrailingIcon = null;
-            // 
-            // cboxTipoCausa
-            // 
-            this.cboxTipoCausa.AutoResize = false;
-            this.cboxTipoCausa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxTipoCausa.Depth = 0;
-            this.cboxTipoCausa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxTipoCausa.DropDownHeight = 174;
-            this.cboxTipoCausa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxTipoCausa.DropDownWidth = 121;
-            this.cboxTipoCausa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxTipoCausa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxTipoCausa.FormattingEnabled = true;
-            this.cboxTipoCausa.Hint = "Descripción:";
-            this.cboxTipoCausa.IntegralHeight = false;
-            this.cboxTipoCausa.ItemHeight = 43;
-            this.cboxTipoCausa.Location = new System.Drawing.Point(596, 480);
-            this.cboxTipoCausa.MaxDropDownItems = 4;
-            this.cboxTipoCausa.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxTipoCausa.Name = "cboxTipoCausa";
-            this.cboxTipoCausa.Size = new System.Drawing.Size(480, 49);
-            this.cboxTipoCausa.StartIndex = 0;
-            this.cboxTipoCausa.TabIndex = 117;
-            // 
-            // cboxCausaConsulta
-            // 
-            this.cboxCausaConsulta.AutoResize = false;
-            this.cboxCausaConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxCausaConsulta.Depth = 0;
-            this.cboxCausaConsulta.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxCausaConsulta.DropDownHeight = 174;
-            this.cboxCausaConsulta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxCausaConsulta.DropDownWidth = 121;
-            this.cboxCausaConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxCausaConsulta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxCausaConsulta.FormattingEnabled = true;
-            this.cboxCausaConsulta.Hint = "Causa de consulta:";
-            this.cboxCausaConsulta.IntegralHeight = false;
-            this.cboxCausaConsulta.ItemHeight = 43;
-            this.cboxCausaConsulta.Location = new System.Drawing.Point(22, 480);
-            this.cboxCausaConsulta.MaxDropDownItems = 4;
-            this.cboxCausaConsulta.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxCausaConsulta.Name = "cboxCausaConsulta";
-            this.cboxCausaConsulta.Size = new System.Drawing.Size(480, 49);
-            this.cboxCausaConsulta.StartIndex = 0;
-            this.cboxCausaConsulta.TabIndex = 116;
-            this.cboxCausaConsulta.SelectedIndexChanged += new System.EventHandler(this.cboxCausaConsulta_SelectedIndexChanged);
-            // 
-            // txtDomicilio
-            // 
-            this.txtDomicilio.AnimateReadOnly = false;
-            this.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDomicilio.Depth = 0;
-            this.txtDomicilio.Enabled = false;
-            this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtDomicilio.Hint = "Domicilio:";
-            this.txtDomicilio.LeadingIcon = null;
-            this.txtDomicilio.Location = new System.Drawing.Point(22, 231);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDomicilio.MaxLength = 18;
-            this.txtDomicilio.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtDomicilio.Multiline = false;
-            this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(481, 50);
-            this.txtDomicilio.TabIndex = 115;
-            this.txtDomicilio.Text = "";
-            this.txtDomicilio.TrailingIcon = null;
-            // 
-            // cboxProceso
-            // 
-            this.cboxProceso.AutoResize = false;
-            this.cboxProceso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxProceso.Depth = 0;
-            this.cboxProceso.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxProceso.DropDownHeight = 174;
-            this.cboxProceso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxProceso.DropDownWidth = 121;
-            this.cboxProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxProceso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxProceso.FormattingEnabled = true;
-            this.cboxProceso.Hint = "Proceso:";
-            this.cboxProceso.IntegralHeight = false;
-            this.cboxProceso.ItemHeight = 43;
-            this.cboxProceso.Items.AddRange(new object[] {
-            "REH",
-            "ALM",
-            "MEC",
-            "EEI",
-            "PLA",
-            "TEC",
-            "CEL",
-            "PAP",
-            "EMB",
-            "FZA",
-            "FRE",
-            "SPR",
-            "SEG",
-            "SGE",
-            "ADM",
-            "ABM",
-            "TFO",
-            "DIR",
-            "ECO",
-            "EXT",
-            "POB",
-            "COM",
-            "SIS",
-            "SIG"});
-            this.cboxProceso.Location = new System.Drawing.Point(279, 395);
-            this.cboxProceso.Margin = new System.Windows.Forms.Padding(4);
-            this.cboxProceso.MaxDropDownItems = 4;
-            this.cboxProceso.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxProceso.Name = "cboxProceso";
-            this.cboxProceso.Size = new System.Drawing.Size(224, 49);
-            this.cboxProceso.StartIndex = 0;
-            this.cboxProceso.TabIndex = 112;
-            // 
-            // txtPuesto
-            // 
-            this.txtPuesto.AnimateReadOnly = false;
-            this.txtPuesto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPuesto.Depth = 0;
-            this.txtPuesto.Enabled = false;
-            this.txtPuesto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtPuesto.Hint = "Puesto:";
-            this.txtPuesto.LeadingIcon = null;
-            this.txtPuesto.Location = new System.Drawing.Point(22, 397);
-            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPuesto.MaxLength = 200;
-            this.txtPuesto.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtPuesto.Multiline = false;
-            this.txtPuesto.Name = "txtPuesto";
-            this.txtPuesto.Size = new System.Drawing.Size(227, 50);
-            this.txtPuesto.TabIndex = 111;
-            this.txtPuesto.Text = "";
-            this.txtPuesto.TrailingIcon = null;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.AnimateReadOnly = false;
-            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefono.Depth = 0;
-            this.txtTelefono.Enabled = false;
-            this.txtTelefono.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtTelefono.Hint = "Teléfono:";
-            this.txtTelefono.LeadingIcon = null;
-            this.txtTelefono.Location = new System.Drawing.Point(596, 231);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTelefono.MaxLength = 200;
-            this.txtTelefono.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtTelefono.Multiline = false;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(481, 50);
-            this.txtTelefono.TabIndex = 108;
-            this.txtTelefono.Text = "";
-            this.txtTelefono.TrailingIcon = null;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.AnimateReadOnly = false;
-            this.txtEdad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEdad.Depth = 0;
-            this.txtEdad.Enabled = false;
-            this.txtEdad.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtEdad.Hint = "Edad:";
-            this.txtEdad.LeadingIcon = null;
-            this.txtEdad.Location = new System.Drawing.Point(23, 314);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEdad.MaxLength = 50;
-            this.txtEdad.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtEdad.Multiline = false;
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(226, 50);
-            this.txtEdad.TabIndex = 107;
-            this.txtEdad.Text = "";
-            this.txtEdad.TrailingIcon = null;
-            // 
-            // txtNSS
-            // 
-            this.txtNSS.AnimateReadOnly = false;
-            this.txtNSS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNSS.Depth = 0;
-            this.txtNSS.Enabled = false;
-            this.txtNSS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNSS.Hint = "No. IMSS:";
-            this.txtNSS.LeadingIcon = null;
-            this.txtNSS.Location = new System.Drawing.Point(850, 314);
-            this.txtNSS.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNSS.MaxLength = 50;
-            this.txtNSS.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNSS.Multiline = false;
-            this.txtNSS.Name = "txtNSS";
-            this.txtNSS.Size = new System.Drawing.Size(227, 50);
-            this.txtNSS.TabIndex = 106;
-            this.txtNSS.Text = "";
-            this.txtNSS.TrailingIcon = null;
-            // 
-            // txtEstadoCivil
-            // 
-            this.txtEstadoCivil.AnimateReadOnly = false;
-            this.txtEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEstadoCivil.Depth = 0;
-            this.txtEstadoCivil.Enabled = false;
-            this.txtEstadoCivil.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtEstadoCivil.Hint = "Estado Civil:";
-            this.txtEstadoCivil.LeadingIcon = null;
-            this.txtEstadoCivil.Location = new System.Drawing.Point(596, 314);
-            this.txtEstadoCivil.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEstadoCivil.MaxLength = 50;
-            this.txtEstadoCivil.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtEstadoCivil.Multiline = false;
-            this.txtEstadoCivil.Name = "txtEstadoCivil";
-            this.txtEstadoCivil.Size = new System.Drawing.Size(227, 50);
-            this.txtEstadoCivil.TabIndex = 105;
-            this.txtEstadoCivil.Text = "";
-            this.txtEstadoCivil.TrailingIcon = null;
-            // 
-            // txtSexo
-            // 
-            this.txtSexo.AnimateReadOnly = false;
-            this.txtSexo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSexo.Depth = 0;
-            this.txtSexo.Enabled = false;
-            this.txtSexo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtSexo.Hint = "Sexo:";
-            this.txtSexo.LeadingIcon = null;
-            this.txtSexo.Location = new System.Drawing.Point(276, 314);
-            this.txtSexo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSexo.MaxLength = 50;
-            this.txtSexo.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtSexo.Multiline = false;
-            this.txtSexo.Name = "txtSexo";
-            this.txtSexo.Size = new System.Drawing.Size(227, 50);
-            this.txtSexo.TabIndex = 104;
-            this.txtSexo.Text = "";
-            this.txtSexo.TrailingIcon = null;
-            // 
-            // txtNoExpediente
-            // 
-            this.txtNoExpediente.AnimateReadOnly = false;
-            this.txtNoExpediente.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNoExpediente.Depth = 0;
-            this.txtNoExpediente.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNoExpediente.Hint = "No. Expediente: ";
-            this.txtNoExpediente.LeadingIcon = null;
-            this.txtNoExpediente.Location = new System.Drawing.Point(596, 66);
-            this.txtNoExpediente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNoExpediente.MaxLength = 18;
-            this.txtNoExpediente.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNoExpediente.Multiline = false;
-            this.txtNoExpediente.Name = "txtNoExpediente";
-            this.txtNoExpediente.Size = new System.Drawing.Size(481, 50);
-            this.txtNoExpediente.TabIndex = 103;
-            this.txtNoExpediente.Text = "";
-            this.txtNoExpediente.TrailingIcon = null;
-            // 
-            // btnBuscarEmpleado
-            // 
-            this.btnBuscarEmpleado.Depth = 0;
-            this.btnBuscarEmpleado.Icon = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleado.Icon")));
-            this.btnBuscarEmpleado.Location = new System.Drawing.Point(522, 67);
-            this.btnBuscarEmpleado.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscarEmpleado.Mini = true;
-            this.btnBuscarEmpleado.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
-            this.btnBuscarEmpleado.Size = new System.Drawing.Size(53, 49);
-            this.btnBuscarEmpleado.TabIndex = 102;
-            this.btnBuscarEmpleado.Text = "materialFloatingActionButton2";
-            this.btnBuscarEmpleado.UseVisualStyleBackColor = true;
-            this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label42.Location = new System.Drawing.Point(16, 12);
-            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(233, 31);
-            this.label42.TabIndex = 96;
-            this.label42.Text = "Datos Generales";
-            // 
-            // txtIdEmpleado
-            // 
-            this.txtIdEmpleado.AnimateReadOnly = false;
-            this.txtIdEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdEmpleado.Depth = 0;
-            this.txtIdEmpleado.Enabled = false;
-            this.txtIdEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtIdEmpleado.Hint = "IdEmpleado:";
-            this.txtIdEmpleado.LeadingIcon = null;
-            this.txtIdEmpleado.Location = new System.Drawing.Point(596, 147);
-            this.txtIdEmpleado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIdEmpleado.MaxLength = 50;
-            this.txtIdEmpleado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtIdEmpleado.Multiline = false;
-            this.txtIdEmpleado.Name = "txtIdEmpleado";
-            this.txtIdEmpleado.Size = new System.Drawing.Size(481, 50);
-            this.txtIdEmpleado.TabIndex = 101;
-            this.txtIdEmpleado.Text = "";
-            this.txtIdEmpleado.TrailingIcon = null;
-            // 
-            // txtNumeroNomina
-            // 
-            this.txtNumeroNomina.AnimateReadOnly = false;
-            this.txtNumeroNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNumeroNomina.Depth = 0;
-            this.txtNumeroNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNumeroNomina.Hint = "No. Nomina: ";
-            this.txtNumeroNomina.LeadingIcon = null;
-            this.txtNumeroNomina.Location = new System.Drawing.Point(22, 67);
-            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumeroNomina.MaxLength = 18;
-            this.txtNumeroNomina.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNumeroNomina.Multiline = false;
-            this.txtNumeroNomina.Name = "txtNumeroNomina";
-            this.txtNumeroNomina.Size = new System.Drawing.Size(481, 50);
-            this.txtNumeroNomina.TabIndex = 97;
-            this.txtNumeroNomina.Text = "";
-            this.txtNumeroNomina.TrailingIcon = null;
-            // 
-            // txtNombreEmpleado
-            // 
-            this.txtNombreEmpleado.AnimateReadOnly = false;
-            this.txtNombreEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreEmpleado.Depth = 0;
-            this.txtNombreEmpleado.Enabled = false;
-            this.txtNombreEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNombreEmpleado.Hint = "Nombre del colaborador:";
-            this.txtNombreEmpleado.LeadingIcon = null;
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(22, 147);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreEmpleado.MaxLength = 50;
-            this.txtNombreEmpleado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNombreEmpleado.Multiline = false;
-            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(481, 50);
-            this.txtNombreEmpleado.TabIndex = 99;
-            this.txtNombreEmpleado.Text = "";
-            this.txtNombreEmpleado.TrailingIcon = null;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.txtDiagnostico);
-            this.panel4.Controls.Add(this.label47);
-            this.panel4.Controls.Add(this.dtpFechaConsulta);
-            this.panel4.Controls.Add(this.btnGrabar);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.txtObservaciones);
-            this.panel4.Location = new System.Drawing.Point(32, 615);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1182, 730);
-            this.panel4.TabIndex = 114;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label3.Location = new System.Drawing.Point(18, 328);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 29);
-            this.label3.TabIndex = 128;
-            this.label3.Text = "Diagnóstico:";
-            // 
-            // txtDiagnostico
-            // 
-            this.txtDiagnostico.AnimateReadOnly = false;
-            this.txtDiagnostico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtDiagnostico.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtDiagnostico.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiagnostico.Depth = 0;
-            this.txtDiagnostico.HideSelection = true;
-            this.txtDiagnostico.Location = new System.Drawing.Point(24, 377);
-            this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDiagnostico.MaxLength = 32767;
-            this.txtDiagnostico.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtDiagnostico.Name = "txtDiagnostico";
-            this.txtDiagnostico.PasswordChar = '\0';
-            this.txtDiagnostico.ReadOnly = false;
-            this.txtDiagnostico.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDiagnostico.SelectedText = "";
-            this.txtDiagnostico.SelectionLength = 0;
-            this.txtDiagnostico.SelectionStart = 0;
-            this.txtDiagnostico.ShortcutsEnabled = true;
-            this.txtDiagnostico.Size = new System.Drawing.Size(1107, 231);
-            this.txtDiagnostico.TabIndex = 127;
-            this.txtDiagnostico.TabStop = false;
-            this.txtDiagnostico.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtDiagnostico.UseSystemPasswordChar = false;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label47.Location = new System.Drawing.Point(53, 651);
-            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(228, 29);
-            this.label47.TabIndex = 126;
-            this.label47.Text = "Fecha de emisión:";
-            // 
-            // dtpFechaConsulta
-            // 
-            this.dtpFechaConsulta.Location = new System.Drawing.Point(321, 656);
-            this.dtpFechaConsulta.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpFechaConsulta.Name = "dtpFechaConsulta";
-            this.dtpFechaConsulta.Size = new System.Drawing.Size(272, 22);
-            this.dtpFechaConsulta.TabIndex = 125;
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.AutoSize = false;
-            this.btnGrabar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGrabar.BackColor = System.Drawing.Color.Black;
-            this.btnGrabar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGrabar.Depth = 0;
-            this.btnGrabar.HighEmphasis = true;
-            this.btnGrabar.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Icon")));
-            this.btnGrabar.Location = new System.Drawing.Point(786, 632);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btnGrabar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGrabar.Size = new System.Drawing.Size(248, 74);
-            this.btnGrabar.TabIndex = 122;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGrabar.UseAccentColor = true;
-            this.btnGrabar.UseVisualStyleBackColor = false;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label2.Location = new System.Drawing.Point(17, 27);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 29);
-            this.label2.TabIndex = 121;
-            this.label2.Text = "Observaciones:";
-            // 
-            // txtObservaciones
-            // 
-            this.txtObservaciones.AnimateReadOnly = false;
-            this.txtObservaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtObservaciones.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtObservaciones.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtObservaciones.Depth = 0;
-            this.txtObservaciones.HideSelection = true;
-            this.txtObservaciones.Location = new System.Drawing.Point(23, 76);
-            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.txtObservaciones.MaxLength = 32767;
-            this.txtObservaciones.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.PasswordChar = '\0';
-            this.txtObservaciones.ReadOnly = false;
-            this.txtObservaciones.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtObservaciones.SelectedText = "";
-            this.txtObservaciones.SelectionLength = 0;
-            this.txtObservaciones.SelectionStart = 0;
-            this.txtObservaciones.ShortcutsEnabled = true;
-            this.txtObservaciones.Size = new System.Drawing.Size(1108, 231);
-            this.txtObservaciones.TabIndex = 120;
-            this.txtObservaciones.TabStop = false;
-            this.txtObservaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtObservaciones.UseSystemPasswordChar = false;
-            // 
             // pSeccionesDatos
             // 
             this.pSeccionesDatos.BackColor = System.Drawing.Color.DarkCyan;
@@ -2934,6 +2953,11 @@ namespace CapaPresentacion.Nota_Medica
             this.Load += new System.EventHandler(this.frmNotaMedica_Load);
             this.pContenedorNotaMedica.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.pDatosGenerales.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.pPatologicos.ResumeLayout(false);
             this.pPatologicos.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -2952,11 +2976,6 @@ namespace CapaPresentacion.Nota_Medica
             this.pAntecedentes.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            this.pDatosGenerales.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.pSeccionesDatos.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -2979,9 +2998,14 @@ namespace CapaPresentacion.Nota_Medica
         private System.Windows.Forms.Button btnNoPatologicos;
         private BotonPersonalizado btnNuevaNotaMedica;
         private System.Windows.Forms.Button btnAntecedentes;
+        private System.Windows.Forms.Panel pAntecedentes;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label62;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtHeredoFamiliar;
+        private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Panel pDatosGenerales;
         private System.Windows.Forms.Panel panel3;
-        private MaterialSkin.Controls.MaterialFloatingActionButton btnBuscarExpediente;
         private MaterialSkin.Controls.MaterialTextBox txtFechaIngreso;
         private MaterialSkin.Controls.MaterialComboBox cboxTipoCausa;
         private MaterialSkin.Controls.MaterialComboBox cboxCausaConsulta;
@@ -2994,19 +3018,17 @@ namespace CapaPresentacion.Nota_Medica
         private MaterialSkin.Controls.MaterialTextBox txtEstadoCivil;
         private MaterialSkin.Controls.MaterialTextBox txtSexo;
         private MaterialSkin.Controls.MaterialTextBox txtNoExpediente;
-        private MaterialSkin.Controls.MaterialFloatingActionButton btnBuscarEmpleado;
         private System.Windows.Forms.Label label42;
         private MaterialSkin.Controls.MaterialTextBox txtIdEmpleado;
         private MaterialSkin.Controls.MaterialTextBox txtNumeroNomina;
         private MaterialSkin.Controls.MaterialTextBox txtNombreEmpleado;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.DateTimePicker dtpFechaConsulta;
-        private MaterialSkin.Controls.MaterialButton btnGrabar;
-        private System.Windows.Forms.Label label2;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtObservaciones;
         private System.Windows.Forms.Label label3;
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtDiagnostico;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.DateTimePicker dtpFechaConsulta;
+        private System.Windows.Forms.Label label2;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtObservaciones;
         private System.Windows.Forms.Panel pPatologicos;
         private System.Windows.Forms.Label topePagina;
         private System.Windows.Forms.Panel panel7;
@@ -3108,11 +3130,8 @@ namespace CapaPresentacion.Nota_Medica
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtCasa;
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtAlimentacion;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Panel pAntecedentes;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label62;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtHeredoFamiliar;
-        private System.Windows.Forms.Label label46;
+        private BotonPersonalizado btnGrabar;
+        private BotonPersonalizado btnBuscarExpediente;
+        private BotonPersonalizado btnBuscarEmpleado;
     }
 }
