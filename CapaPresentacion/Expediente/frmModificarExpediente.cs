@@ -20,7 +20,7 @@ namespace CapaPresentacion.Expediente
         private Panel p = new Panel();
 
         EmpleadosCN empleadosCN = new EmpleadosCN();
-        ExpedientesCN expedientesCN = new ExpedientesCN(); 
+        ExpedientesCN expedientesCN = new ExpedientesCN();
         public frmModificarExpediente()
         {
             InitializeComponent();
@@ -104,7 +104,7 @@ namespace CapaPresentacion.Expediente
 
         private void MostrarPanel(Panel panelAMostrar)
         {
-            
+
 
             // Ocultar todos los paneles y mostrar el deseado
             pDatosGenerales.Visible = false;
@@ -143,8 +143,8 @@ namespace CapaPresentacion.Expediente
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            btnCancelar.Visible = true; 
-            btnGrabarActualizacion.Visible = true; 
+            btnCancelar.Visible = true;
+            btnGrabarActualizacion.Visible = true;
             btnActualizar.Visible = false;
             cboxNumExpediente2.Enabled = false;
             // Habilitar los TextBox específicos
@@ -169,7 +169,7 @@ namespace CapaPresentacion.Expediente
             txtSGenitoUrinario.Enabled = true;
             txtSMusculoEsqueletico.Enabled = true;
             txtOrganoSentidos.Enabled = true;
-            txtGrupoSanguineo.Visible=false;
+            txtGrupoSanguineo.Visible = false;
 
             txtEstudiosLaboratorio.Enabled = true;
             txtEstudiosRadiologicos.Enabled = true;
@@ -293,101 +293,105 @@ namespace CapaPresentacion.Expediente
 
         private void cboxNumExpediente2_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            
-                DataTable t = expedientesCN.consultaExpediente(cboxNumExpediente2.SelectedValue.ToString()).Tables["ConsultaNumExpediente"];
+            if (cboxNumExpediente2.SelectedValue == null)
+                btnActualizar.Enabled = false;
+            else if(cboxNumExpediente2.SelectedValue != null)
+                btnActualizar.Enabled = true;
 
-                if (t.Rows.Count > 0)
-                {
-                    DataRow dr = t.Rows[0];
+            DataTable t = expedientesCN.consultaExpediente(cboxNumExpediente2.SelectedValue.ToString()).Tables["ConsultaNumExpediente"];
 
-                    // Función auxiliar para evitar la repetición de DBNull
-                    string GetStringValue(object value) => value != DBNull.Value ? value.ToString() : "";
+            if (t.Rows.Count > 0)
+            {
+                DataRow dr = t.Rows[0];
 
-                    txtNombreEmpleado.Text = $"{GetStringValue(dr["nombre"])} {GetStringValue(dr["apellido_paterno"])} {GetStringValue(dr["apellido_materno"])}";
-                    txtIdEmpleado.Text = GetStringValue(dr["idEmpleado"]);
-                    txtNumeroNomina.Text = GetStringValue(dr["NumNomina"]);
+                // Función auxiliar para evitar la repetición de DBNull
+                string GetStringValue(object value) => value != DBNull.Value ? value.ToString() : "";
 
-                    DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
-                    DateTime fechaIngresoAlPuesto = dr["fecha_ingreso_puesto"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_ingreso_puesto"]) : DateTime.MinValue;
-                    DateTime fechaActual = DateTime.Now;
+                txtNombreEmpleado.Text = $"{GetStringValue(dr["nombre"])} {GetStringValue(dr["apellido_paterno"])} {GetStringValue(dr["apellido_materno"])}";
+                txtIdEmpleado.Text = GetStringValue(dr["idEmpleado"]);
+                txtNumeroNomina.Text = GetStringValue(dr["NumNomina"]);
 
-                    int edad = (fechaNacimiento != DateTime.MinValue) ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(fechaActual.Year - fechaNacimiento.Year) ? 1 : 0) : 0;
-                    txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
+                DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
+                DateTime fechaIngresoAlPuesto = dr["fecha_ingreso_puesto"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_ingreso_puesto"]) : DateTime.MinValue;
+                DateTime fechaActual = DateTime.Now;
 
-                    // Asignar los valores de texto
-                    txtSexo.Text = GetStringValue(dr["sexo"]);
-                    txtEstadoCivil.Text = GetStringValue(dr["estado_civil"]);
-                    txtNSS.Text = GetStringValue(dr["nss"]);
-                    txtTelefono.Text = GetStringValue(dr["telefono"]);
-                    txtDomicilio.Text = (dr["domicilio_Calle"] as string ?? "") + " #" +
-                         (dr["domicilio_Numero"] as string ?? "") + ", " +
-                         (dr["domicilio_Colonia"] as string ?? "") + ", " +
-                         (dr["domicilio_Ciudad"] as string ?? "") + ", " +
-                         (dr["domicilio_Estado"] as string ?? ""); 
+                int edad = (fechaNacimiento != DateTime.MinValue) ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(fechaActual.Year - fechaNacimiento.Year) ? 1 : 0) : 0;
+                txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
+
+                // Asignar los valores de texto
+                txtSexo.Text = GetStringValue(dr["sexo"]);
+                txtEstadoCivil.Text = GetStringValue(dr["estado_civil"]);
+                txtNSS.Text = GetStringValue(dr["nss"]);
+                txtTelefono.Text = GetStringValue(dr["telefono"]);
+                txtDomicilio.Text = (dr["domicilio_Calle"] as string ?? "") + " #" +
+                     (dr["domicilio_Numero"] as string ?? "") + ", " +
+                     (dr["domicilio_Colonia"] as string ?? "") + ", " +
+                     (dr["domicilio_Ciudad"] as string ?? "") + ", " +
+                     (dr["domicilio_Estado"] as string ?? "");
                 txtFechaIngreso.Text = fechaIngresoAlPuesto != DateTime.MinValue ? fechaIngresoAlPuesto.ToString("dd-MMMM-yyyy") : "N/A";
-                    txtPuesto.Text = GetStringValue(dr["puesto"]);
+                txtPuesto.Text = GetStringValue(dr["puesto"]);
 
-                    // Antecedentes y otros campos
-                    txtHeredoFamiliar.Text = GetStringValue(dr["Antecedentes_Heredofamiliares"]);
-                    txtDiagnostico.Text = GetStringValue(dr["Diagnostico_inicial"]);
-                    txtCasa.Text = GetStringValue(dr["Casa"]);
-                    txtAlimentacion.Text = GetStringValue(dr["Alimentacion"]);
-                    txtAnimales.Text = GetStringValue(dr["Animales"]);
-                    txtInmunizaciones.Text = GetStringValue(dr["Inmunizaciones"]);
-                    txtToxicomanias.Text = GetStringValue(dr["Toxicomanias"]);
-                    txtTrabajosYActAnteriores.Text = GetStringValue(dr["Trabajo_actividades_anteriores"]);
-                    txtDeportesRecreacion.Text = GetStringValue(dr["Deportes"]);
-                    txtEntornoFamiliar.Text = GetStringValue(dr["Entorno_Familiar"]);
-                    txtEscolaridad.Text = GetStringValue(dr["Escolaridad"]);
+                // Antecedentes y otros campos
+                txtHeredoFamiliar.Text = GetStringValue(dr["Antecedentes_Heredofamiliares"]);
+                txtDiagnostico.Text = GetStringValue(dr["Diagnostico_inicial"]);
+                txtCasa.Text = GetStringValue(dr["Casa"]);
+                txtAlimentacion.Text = GetStringValue(dr["Alimentacion"]);
+                txtAnimales.Text = GetStringValue(dr["Animales"]);
+                txtInmunizaciones.Text = GetStringValue(dr["Inmunizaciones"]);
+                txtToxicomanias.Text = GetStringValue(dr["Toxicomanias"]);
+                txtTrabajosYActAnteriores.Text = GetStringValue(dr["Trabajo_actividades_anteriores"]);
+                txtDeportesRecreacion.Text = GetStringValue(dr["Deportes"]);
+                txtEntornoFamiliar.Text = GetStringValue(dr["Entorno_Familiar"]);
+                txtEscolaridad.Text = GetStringValue(dr["Escolaridad"]);
 
-                    // Checkboxes
-                    rbtnHozpitalizaciones.Checked = dr["Hospitalizaciones"] != DBNull.Value && Convert.ToBoolean(dr["Hospitalizaciones"]);
-                    rbtnCirugias.Checked = dr["Cirugias"] != DBNull.Value && Convert.ToBoolean(dr["Cirugias"]);
-                    rbtnTransfusiones.Checked = dr["Transfusiones"] != DBNull.Value && Convert.ToBoolean(dr["Transfusiones"]);
+                // Checkboxes
+                rbtnHozpitalizaciones.Checked = dr["Hospitalizaciones"] != DBNull.Value && Convert.ToBoolean(dr["Hospitalizaciones"]);
+                rbtnCirugias.Checked = dr["Cirugias"] != DBNull.Value && Convert.ToBoolean(dr["Cirugias"]);
+                rbtnTransfusiones.Checked = dr["Transfusiones"] != DBNull.Value && Convert.ToBoolean(dr["Transfusiones"]);
 
-                    // Sistemas
-                    txtAlergias.Text = GetStringValue(dr["Alergias"]);
-                    txtSNerviosoCentral.Text = GetStringValue(dr["SistemaNervioso_Central"]);
-                    txtSCardiovascular.Text = GetStringValue(dr["SistemaCardiovascular"]);
-                    txtSRespiratorio.Text = GetStringValue(dr["SistemaRespiratorio"]);
-                    txtSGastrointestinal.Text = GetStringValue(dr["SistemaGastrointestinal"]);
-                    txtSEndocrino.Text = GetStringValue(dr["SistemaEndocrinico"]);
-                    txtSGenitoUrinario.Text = GetStringValue(dr["SistemaGenitourinario"]);
-                    txtSMusculoEsqueletico.Text = GetStringValue(dr["SistemaMusculoesqueletico"]);
-                    txtOrganoSentidos.Text = GetStringValue(dr["Organo_Sentidos"]);
-                    txtGrupoSanguineo.Text = GetStringValue(dr["Grupo_Sanguineo"]);
+                // Sistemas
+                txtAlergias.Text = GetStringValue(dr["Alergias"]);
+                txtSNerviosoCentral.Text = GetStringValue(dr["SistemaNervioso_Central"]);
+                txtSCardiovascular.Text = GetStringValue(dr["SistemaCardiovascular"]);
+                txtSRespiratorio.Text = GetStringValue(dr["SistemaRespiratorio"]);
+                txtSGastrointestinal.Text = GetStringValue(dr["SistemaGastrointestinal"]);
+                txtSEndocrino.Text = GetStringValue(dr["SistemaEndocrinico"]);
+                txtSGenitoUrinario.Text = GetStringValue(dr["SistemaGenitourinario"]);
+                txtSMusculoEsqueletico.Text = GetStringValue(dr["SistemaMusculoesqueletico"]);
+                txtOrganoSentidos.Text = GetStringValue(dr["Organo_Sentidos"]);
+                txtGrupoSanguineo.Text = GetStringValue(dr["Grupo_Sanguineo"]);
 
-                    // Estudios
-                    txtEstudiosLaboratorio.Text = GetStringValue(dr["Estudios_Laboratorio"]);
-                    txtEstudiosRadiologicos.Text = GetStringValue(dr["Estudios_Radiologicos"]);
-                    txtOtros.Text = GetStringValue(dr["Otros"]);
+                // Estudios
+                txtEstudiosLaboratorio.Text = GetStringValue(dr["Estudios_Laboratorio"]);
+                txtEstudiosRadiologicos.Text = GetStringValue(dr["Estudios_Radiologicos"]);
+                txtOtros.Text = GetStringValue(dr["Otros"]);
 
-                    // Examen físico
-                    txtConstitucionFisica.Text = GetStringValue(dr["Constitucion_Fisica"]);
-                    txtTalla.Text = GetStringValue(dr["Talla"]);
-                    txtPeso.Text = GetStringValue(dr["Peso"]);
-                    txtIMC.Text = GetStringValue(dr["IMC"]);
-                    txtGrado.Text = GetStringValue(dr["Grado"]);
-                    txtFC.Text = GetStringValue(dr["FC"]);
-                    txtFR.Text = GetStringValue(dr["FR"]);
-                    txtPulso.Text = GetStringValue(dr["Pulso"]);
-                    txtTA.Text = GetStringValue(dr["TA"]);
-                    txtTemperatura.Text = GetStringValue(dr["Temperatura"]);
+                // Examen físico
+                txtConstitucionFisica.Text = GetStringValue(dr["Constitucion_Fisica"]);
+                txtTalla.Text = GetStringValue(dr["Talla"]);
+                txtPeso.Text = GetStringValue(dr["Peso"]);
+                txtIMC.Text = GetStringValue(dr["IMC"]);
+                txtGrado.Text = GetStringValue(dr["Grado"]);
+                txtFC.Text = GetStringValue(dr["FC"]);
+                txtFR.Text = GetStringValue(dr["FR"]);
+                txtPulso.Text = GetStringValue(dr["Pulso"]);
+                txtTA.Text = GetStringValue(dr["TA"]);
+                txtTemperatura.Text = GetStringValue(dr["Temperatura"]);
 
-                    // Otras áreas
-                    txtCraneo.Text = GetStringValue(dr["Craneo"]);
-                    txtOjos.Text = GetStringValue(dr["Ojos"]);
-                    txtOidos.Text = GetStringValue(dr["Oidos"]);
-                    txtNariz.Text = GetStringValue(dr["Nariz"]);
-                    txtBoca.Text = GetStringValue(dr["Boca"]);
-                    txtCuello.Text = GetStringValue(dr["Cuello"]);
-                    txtTorax.Text = GetStringValue(dr["Torax"]);
-                    txtAbdomen.Text = GetStringValue(dr["Abdomen"]);
-                    txtGenitourinario.Text = GetStringValue(dr["Genitourinario"]);
-                    txtMusculoEsqueletico.Text = GetStringValue(dr["MusculoEsqueletico"]);
-                    txtNeurologico.Text = GetStringValue(dr["Neurologico"]);
-                }
-            
+                // Otras áreas
+                txtCraneo.Text = GetStringValue(dr["Craneo"]);
+                txtOjos.Text = GetStringValue(dr["Ojos"]);
+                txtOidos.Text = GetStringValue(dr["Oidos"]);
+                txtNariz.Text = GetStringValue(dr["Nariz"]);
+                txtBoca.Text = GetStringValue(dr["Boca"]);
+                txtCuello.Text = GetStringValue(dr["Cuello"]);
+                txtTorax.Text = GetStringValue(dr["Torax"]);
+                txtAbdomen.Text = GetStringValue(dr["Abdomen"]);
+                txtGenitourinario.Text = GetStringValue(dr["Genitourinario"]);
+                txtMusculoEsqueletico.Text = GetStringValue(dr["MusculoEsqueletico"]);
+                txtNeurologico.Text = GetStringValue(dr["Neurologico"]);
+            }
+
         }
 
         private void btnGrabarActualizacion_Click(object sender, EventArgs e)

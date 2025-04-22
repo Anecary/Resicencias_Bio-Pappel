@@ -72,6 +72,8 @@ namespace CapaPresentacion
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textPersonalizado1 = new CapaPresentacion.TextPersonalizado();
+            this.label1 = new System.Windows.Forms.Label();
             this.pMenu.SuspendLayout();
             this.pSubmenuReportes.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
@@ -84,6 +86,7 @@ namespace CapaPresentacion
             this.pInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pMenu
@@ -777,6 +780,8 @@ namespace CapaPresentacion
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.textPersonalizado1);
             this.panel4.Location = new System.Drawing.Point(63, 91);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(810, 88);
@@ -799,6 +804,37 @@ namespace CapaPresentacion
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(945, 5);
             this.panel2.TabIndex = 4;
+            // 
+            // textPersonalizado1
+            // 
+            this.textPersonalizado1.BackColor = System.Drawing.SystemColors.Info;
+            this.textPersonalizado1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textPersonalizado1.BorderFocusColor = System.Drawing.Color.MediumSpringGreen;
+            this.textPersonalizado1.BorderSize = 2;
+            this.textPersonalizado1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPersonalizado1.ForeColor = System.Drawing.Color.DimGray;
+            this.textPersonalizado1.Location = new System.Drawing.Point(203, 44);
+            this.textPersonalizado1.Margin = new System.Windows.Forms.Padding(4);
+            this.textPersonalizado1.Multiline = false;
+            this.textPersonalizado1.Name = "textPersonalizado1";
+            this.textPersonalizado1.Padding = new System.Windows.Forms.Padding(7);
+            this.textPersonalizado1.PasswordChar = false;
+            this.textPersonalizado1.Size = new System.Drawing.Size(250, 31);
+            this.textPersonalizado1.TabIndex = 21;
+            this.textPersonalizado1.Texts = "";
+            this.textPersonalizado1.UnderlinedStyle = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(204, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Nombre:";
             // 
             // frmMenu
             // 
@@ -829,6 +865,8 @@ namespace CapaPresentacion
             this.pInicio.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -876,6 +914,8 @@ namespace CapaPresentacion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnNuevaNotaMedica;
         private System.Windows.Forms.Button btnConsultaNotaMedica;
+        private TextPersonalizado textPersonalizado1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

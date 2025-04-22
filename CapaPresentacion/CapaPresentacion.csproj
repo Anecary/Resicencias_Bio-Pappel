@@ -342,6 +342,12 @@
     <Compile Include="selectorFechaPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TextPersonalizado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextPersonalizado.Designer.cs">
+      <DependentUpon>TextPersonalizado.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Diseno\frmMessageBox.resx">
       <DependentUpon>frmMessageBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,6 +427,9 @@
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Report1.rdlc" />
+    <EmbeddedResource Include="TextPersonalizado.resx">
+      <DependentUpon>TextPersonalizado.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Datas_Sets\Accidentes.xsc">
       <DependentUpon>Accidentes.xsd</DependentUpon>
     </None>
