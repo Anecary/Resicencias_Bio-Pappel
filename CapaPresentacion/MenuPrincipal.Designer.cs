@@ -31,18 +31,18 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pMenu = new System.Windows.Forms.Panel();
             this.pSubmenuReportes = new System.Windows.Forms.Panel();
             this.btnReportesInvAccidentes = new System.Windows.Forms.Button();
@@ -71,6 +71,7 @@ namespace CapaPresentacion
             this.btnEmpleados = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pLogo = new System.Windows.Forms.Panel();
+            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.psuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnRestaurar = new System.Windows.Forms.Button();
@@ -78,43 +79,42 @@ namespace CapaPresentacion
             this.btnCerrar = new System.Windows.Forms.Button();
             this.pContenedor = new System.Windows.Forms.Panel();
             this.pInicio = new System.Windows.Forms.Panel();
+            this.pSeccionesDatos = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.chartTurno = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel12 = new System.Windows.Forms.Panel();
             this.chartCausas = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.botonPersonalizado6 = new CapaPresentacion.BotonPersonalizado();
+            this.botonPersonalizado5 = new CapaPresentacion.BotonPersonalizado();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.lblIncapacidades = new System.Windows.Forms.Label();
+            this.botonPersonalizado4 = new CapaPresentacion.BotonPersonalizado();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.lblTrabajadores = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.botonPersonalizado3 = new CapaPresentacion.BotonPersonalizado();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblConsultas = new System.Windows.Forms.Label();
+            this.botonPersonalizado2 = new CapaPresentacion.BotonPersonalizado();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.lblAccidentes = new System.Windows.Forms.Label();
+            this.btnCancelar = new CapaPresentacion.BotonPersonalizado();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.chartTurno = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.pSeccionesDatos = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.botonPersonalizado6 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado5 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado4 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado3 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado2 = new CapaPresentacion.BotonPersonalizado();
-            this.btnCancelar = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.textPersonalizado1 = new CapaPresentacion.TextPersonalizado();
             this.pMenu.SuspendLayout();
             this.pSubmenuReportes.SuspendLayout();
@@ -126,6 +126,10 @@ namespace CapaPresentacion
             this.psuperior.SuspendLayout();
             this.pContenedor.SuspendLayout();
             this.pInicio.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTurno)).BeginInit();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCausas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -138,10 +142,6 @@ namespace CapaPresentacion
             this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTurno)).BeginInit();
             this.SuspendLayout();
             // 
             // pMenu
@@ -170,12 +170,12 @@ namespace CapaPresentacion
             // 
             // pSubmenuReportes
             // 
-            this.pSubmenuReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.pSubmenuReportes.Controls.Add(this.btnReportesInvAccidentes);
             this.pSubmenuReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 944);
+            this.pSubmenuReportes.Location = new System.Drawing.Point(0, 919);
             this.pSubmenuReportes.Name = "pSubmenuReportes";
-            this.pSubmenuReportes.Size = new System.Drawing.Size(233, 100);
+            this.pSubmenuReportes.Size = new System.Drawing.Size(233, 40);
             this.pSubmenuReportes.TabIndex = 15;
             this.pSubmenuReportes.Visible = false;
             // 
@@ -209,7 +209,7 @@ namespace CapaPresentacion
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 894);
+            this.btnReportes.Location = new System.Drawing.Point(0, 869);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnReportes.Size = new System.Drawing.Size(233, 50);
@@ -222,9 +222,9 @@ namespace CapaPresentacion
             // 
             // pSubmenuCumplimientoLegal
             // 
-            this.pSubmenuCumplimientoLegal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(104)))), ((int)(((byte)(179)))));
+            this.pSubmenuCumplimientoLegal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.pSubmenuCumplimientoLegal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuCumplimientoLegal.Location = new System.Drawing.Point(0, 859);
+            this.pSubmenuCumplimientoLegal.Location = new System.Drawing.Point(0, 834);
             this.pSubmenuCumplimientoLegal.Name = "pSubmenuCumplimientoLegal";
             this.pSubmenuCumplimientoLegal.Size = new System.Drawing.Size(233, 35);
             this.pSubmenuCumplimientoLegal.TabIndex = 11;
@@ -240,7 +240,7 @@ namespace CapaPresentacion
             this.btnCumpliminetoLegal.ForeColor = System.Drawing.Color.White;
             this.btnCumpliminetoLegal.Image = ((System.Drawing.Image)(resources.GetObject("btnCumpliminetoLegal.Image")));
             this.btnCumpliminetoLegal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCumpliminetoLegal.Location = new System.Drawing.Point(0, 809);
+            this.btnCumpliminetoLegal.Location = new System.Drawing.Point(0, 784);
             this.btnCumpliminetoLegal.Name = "btnCumpliminetoLegal";
             this.btnCumpliminetoLegal.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnCumpliminetoLegal.Size = new System.Drawing.Size(233, 50);
@@ -257,7 +257,7 @@ namespace CapaPresentacion
             this.pSubmenuNotaMedica.Controls.Add(this.btnConsultaNotaMedica);
             this.pSubmenuNotaMedica.Controls.Add(this.btnNuevaNotaMedica);
             this.pSubmenuNotaMedica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSubmenuNotaMedica.Location = new System.Drawing.Point(0, 739);
+            this.pSubmenuNotaMedica.Location = new System.Drawing.Point(0, 714);
             this.pSubmenuNotaMedica.Name = "pSubmenuNotaMedica";
             this.pSubmenuNotaMedica.Size = new System.Drawing.Size(233, 70);
             this.pSubmenuNotaMedica.TabIndex = 9;
@@ -313,7 +313,7 @@ namespace CapaPresentacion
             this.btnNotaMedica.ForeColor = System.Drawing.Color.White;
             this.btnNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnNotaMedica.Image")));
             this.btnNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotaMedica.Location = new System.Drawing.Point(0, 689);
+            this.btnNotaMedica.Location = new System.Drawing.Point(0, 664);
             this.btnNotaMedica.Name = "btnNotaMedica";
             this.btnNotaMedica.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
             this.btnNotaMedica.Size = new System.Drawing.Size(233, 50);
@@ -332,7 +332,7 @@ namespace CapaPresentacion
             this.pSubmenuExpediente.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSubmenuExpediente.Location = new System.Drawing.Point(0, 589);
             this.pSubmenuExpediente.Name = "pSubmenuExpediente";
-            this.pSubmenuExpediente.Size = new System.Drawing.Size(233, 100);
+            this.pSubmenuExpediente.Size = new System.Drawing.Size(233, 75);
             this.pSubmenuExpediente.TabIndex = 7;
             this.pSubmenuExpediente.Visible = false;
             // 
@@ -685,6 +685,26 @@ namespace CapaPresentacion
             this.pLogo.TabIndex = 0;
             this.pLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pLogo_MouseDown);
             // 
+            // botonPersonalizado1
+            // 
+            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.botonPersonalizado1.BorderRadius = 20;
+            this.botonPersonalizado1.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
+            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 19);
+            this.botonPersonalizado1.Name = "botonPersonalizado1";
+            this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
+            this.botonPersonalizado1.TabIndex = 2;
+            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.UseVisualStyleBackColor = false;
+            // 
             // psuperior
             // 
             this.psuperior.BackColor = System.Drawing.Color.DarkCyan;
@@ -796,6 +816,82 @@ namespace CapaPresentacion
             this.pInicio.Size = new System.Drawing.Size(945, 645);
             this.pInicio.TabIndex = 1;
             // 
+            // pSeccionesDatos
+            // 
+            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 88);
+            this.pSeccionesDatos.Name = "pSeccionesDatos";
+            this.pSeccionesDatos.Size = new System.Drawing.Size(945, 45);
+            this.pSeccionesDatos.TabIndex = 25;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Controls.Add(this.chartTurno);
+            this.panel14.Location = new System.Drawing.Point(485, 376);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(448, 253);
+            this.panel14.TabIndex = 24;
+            // 
+            // chartTurno
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chartTurno.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chartTurno.Legends.Add(legend4);
+            this.chartTurno.Location = new System.Drawing.Point(29, 12);
+            this.chartTurno.Name = "chartTurno";
+            this.chartTurno.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series4.ChartArea = "ChartArea1";
+            series4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series4.IsValueShownAsLabel = true;
+            series4.IsVisibleInLegend = false;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chartTurno.Series.Add(series4);
+            this.chartTurno.Size = new System.Drawing.Size(398, 225);
+            this.chartTurno.TabIndex = 0;
+            title4.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title4.Name = "Title1";
+            title4.Text = "Accidentes por Turno - Mes Actual";
+            this.chartTurno.Titles.Add(title4);
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.Controls.Add(this.chart2);
+            this.panel13.Location = new System.Drawing.Point(14, 376);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(448, 253);
+            this.panel13.TabIndex = 23;
+            // 
+            // chart2
+            // 
+            chartArea5.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart2.Legends.Add(legend5);
+            this.chart2.Location = new System.Drawing.Point(12, 12);
+            this.chart2.Name = "chart2";
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
+            series5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series5.IsValueShownAsLabel = true;
+            series5.IsVisibleInLegend = false;
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chart2.Series.Add(series5);
+            this.chart2.Size = new System.Drawing.Size(411, 225);
+            this.chart2.TabIndex = 0;
+            title5.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title5.Name = "Title1";
+            title5.Text = "Top 5 ";
+            this.chart2.Titles.Add(title5);
+            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
@@ -807,35 +903,35 @@ namespace CapaPresentacion
             // 
             // chartCausas
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartCausas.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartCausas.Legends.Add(legend3);
+            chartArea6.Name = "ChartArea1";
+            this.chartCausas.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartCausas.Legends.Add(legend6);
             this.chartCausas.Location = new System.Drawing.Point(44, 12);
             this.chartCausas.Name = "chartCausas";
             this.chartCausas.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series3.IsValueShownAsLabel = true;
-            series3.IsVisibleInLegend = false;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartCausas.Series.Add(series3);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series6.IsValueShownAsLabel = true;
+            series6.IsVisibleInLegend = false;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chartCausas.Series.Add(series6);
             this.chartCausas.Size = new System.Drawing.Size(383, 187);
             this.chartCausas.TabIndex = 0;
-            title3.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.Name = "Title1";
-            title3.Text = "Top causa más frecuentes";
-            this.chartCausas.Titles.Add(title3);
+            title6.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title6.Name = "Title1";
+            title6.Text = "Top causas más frecuentes";
+            this.chartCausas.Titles.Add(title6);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label2.Location = new System.Drawing.Point(0, 37);
+            this.label2.Location = new System.Drawing.Point(4, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(632, 29);
             this.label2.TabIndex = 21;
@@ -866,6 +962,42 @@ namespace CapaPresentacion
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(448, 211);
             this.panel4.TabIndex = 19;
+            // 
+            // botonPersonalizado6
+            // 
+            this.botonPersonalizado6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado6.BorderRadius = 20;
+            this.botonPersonalizado6.BorderSize = 0;
+            this.botonPersonalizado6.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado6.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado6.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado6.Image")));
+            this.botonPersonalizado6.Location = new System.Drawing.Point(402, 159);
+            this.botonPersonalizado6.Name = "botonPersonalizado6";
+            this.botonPersonalizado6.Size = new System.Drawing.Size(40, 40);
+            this.botonPersonalizado6.TabIndex = 18;
+            this.botonPersonalizado6.TextColor = System.Drawing.Color.White;
+            this.botonPersonalizado6.UseVisualStyleBackColor = false;
+            // 
+            // botonPersonalizado5
+            // 
+            this.botonPersonalizado5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado5.BorderRadius = 20;
+            this.botonPersonalizado5.BorderSize = 0;
+            this.botonPersonalizado5.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado5.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado5.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado5.Image")));
+            this.botonPersonalizado5.Location = new System.Drawing.Point(186, 158);
+            this.botonPersonalizado5.Name = "botonPersonalizado5";
+            this.botonPersonalizado5.Size = new System.Drawing.Size(40, 40);
+            this.botonPersonalizado5.TabIndex = 17;
+            this.botonPersonalizado5.TextColor = System.Drawing.Color.White;
+            this.botonPersonalizado5.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
@@ -910,6 +1042,29 @@ namespace CapaPresentacion
             this.lblIncapacidades.TabIndex = 27;
             this.lblIncapacidades.Text = "EXOS";
             // 
+            // botonPersonalizado4
+            // 
+            this.botonPersonalizado4.BackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado4.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado4.BorderRadius = 20;
+            this.botonPersonalizado4.BorderSize = 2;
+            this.botonPersonalizado4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.botonPersonalizado4.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonPersonalizado4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado4.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado4.Image")));
+            this.botonPersonalizado4.Location = new System.Drawing.Point(0, 0);
+            this.botonPersonalizado4.Name = "botonPersonalizado4";
+            this.botonPersonalizado4.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.botonPersonalizado4.Size = new System.Drawing.Size(88, 75);
+            this.botonPersonalizado4.TabIndex = 13;
+            this.botonPersonalizado4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado4.UseVisualStyleBackColor = false;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
@@ -952,6 +1107,29 @@ namespace CapaPresentacion
             this.label6.Size = new System.Drawing.Size(107, 18);
             this.label6.TabIndex = 25;
             this.label6.Text = "Trabajadores";
+            // 
+            // botonPersonalizado3
+            // 
+            this.botonPersonalizado3.BackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado3.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado3.BorderRadius = 20;
+            this.botonPersonalizado3.BorderSize = 2;
+            this.botonPersonalizado3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.botonPersonalizado3.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonPersonalizado3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
+            this.botonPersonalizado3.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado3.Image")));
+            this.botonPersonalizado3.Location = new System.Drawing.Point(0, 0);
+            this.botonPersonalizado3.Name = "botonPersonalizado3";
+            this.botonPersonalizado3.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.botonPersonalizado3.Size = new System.Drawing.Size(83, 75);
+            this.botonPersonalizado3.TabIndex = 13;
+            this.botonPersonalizado3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
+            this.botonPersonalizado3.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -996,6 +1174,29 @@ namespace CapaPresentacion
             this.lblConsultas.TabIndex = 25;
             this.lblConsultas.Text = "EXOS";
             // 
+            // botonPersonalizado2
+            // 
+            this.botonPersonalizado2.BackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado2.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado2.BorderRadius = 20;
+            this.botonPersonalizado2.BorderSize = 2;
+            this.botonPersonalizado2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.botonPersonalizado2.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonPersonalizado2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado2.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado2.Image")));
+            this.botonPersonalizado2.Location = new System.Drawing.Point(0, 0);
+            this.botonPersonalizado2.Name = "botonPersonalizado2";
+            this.botonPersonalizado2.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.botonPersonalizado2.Size = new System.Drawing.Size(87, 75);
+            this.botonPersonalizado2.TabIndex = 13;
+            this.botonPersonalizado2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado2.UseVisualStyleBackColor = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -1039,6 +1240,37 @@ namespace CapaPresentacion
             this.lblAccidentes.TabIndex = 23;
             this.lblAccidentes.Text = "EXOS";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnCancelar.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.btnCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnCancelar.BorderRadius = 20;
+            this.btnCancelar.BorderSize = 2;
+            this.btnCancelar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.Location = new System.Drawing.Point(0, 0);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.btnCancelar.Size = new System.Drawing.Size(83, 75);
+            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            // 
+            // panel15
+            // 
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(945, 88);
+            this.panel15.TabIndex = 26;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
@@ -1068,230 +1300,6 @@ namespace CapaPresentacion
             this.label1.Size = new System.Drawing.Size(59, 16);
             this.label1.TabIndex = 22;
             this.label1.Text = "Nombre:";
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.Controls.Add(this.chart2);
-            this.panel13.Location = new System.Drawing.Point(14, 376);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(448, 253);
-            this.panel13.TabIndex = 23;
-            // 
-            // chart2
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(44, 12);
-            this.chart2.Name = "chart2";
-            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
-            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.IsValueShownAsLabel = true;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(383, 187);
-            this.chart2.TabIndex = 0;
-            title2.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.Name = "Title1";
-            title2.Text = "Top 5 ";
-            this.chart2.Titles.Add(title2);
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Controls.Add(this.chartTurno);
-            this.panel14.Location = new System.Drawing.Point(485, 376);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(448, 253);
-            this.panel14.TabIndex = 24;
-            // 
-            // chartTurno
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartTurno.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartTurno.Legends.Add(legend1);
-            this.chartTurno.Location = new System.Drawing.Point(29, 12);
-            this.chartTurno.Name = "chartTurno";
-            this.chartTurno.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.IsValueShownAsLabel = true;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartTurno.Series.Add(series1);
-            this.chartTurno.Size = new System.Drawing.Size(398, 225);
-            this.chartTurno.TabIndex = 0;
-            title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Title1";
-            title1.Text = "Accidentes por Turno - Mes Actual";
-            this.chartTurno.Titles.Add(title1);
-            // 
-            // pSeccionesDatos
-            // 
-            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 88);
-            this.pSeccionesDatos.Name = "pSeccionesDatos";
-            this.pSeccionesDatos.Size = new System.Drawing.Size(945, 45);
-            this.pSeccionesDatos.TabIndex = 25;
-            // 
-            // panel15
-            // 
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(945, 88);
-            this.panel15.TabIndex = 26;
-            // 
-            // botonPersonalizado6
-            // 
-            this.botonPersonalizado6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado6.BorderRadius = 20;
-            this.botonPersonalizado6.BorderSize = 0;
-            this.botonPersonalizado6.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado6.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado6.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado6.Image")));
-            this.botonPersonalizado6.Location = new System.Drawing.Point(402, 159);
-            this.botonPersonalizado6.Name = "botonPersonalizado6";
-            this.botonPersonalizado6.Size = new System.Drawing.Size(40, 40);
-            this.botonPersonalizado6.TabIndex = 18;
-            this.botonPersonalizado6.TextColor = System.Drawing.Color.White;
-            this.botonPersonalizado6.UseVisualStyleBackColor = false;
-            // 
-            // botonPersonalizado5
-            // 
-            this.botonPersonalizado5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado5.BorderRadius = 20;
-            this.botonPersonalizado5.BorderSize = 0;
-            this.botonPersonalizado5.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado5.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado5.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado5.Image")));
-            this.botonPersonalizado5.Location = new System.Drawing.Point(186, 158);
-            this.botonPersonalizado5.Name = "botonPersonalizado5";
-            this.botonPersonalizado5.Size = new System.Drawing.Size(40, 40);
-            this.botonPersonalizado5.TabIndex = 17;
-            this.botonPersonalizado5.TextColor = System.Drawing.Color.White;
-            this.botonPersonalizado5.UseVisualStyleBackColor = false;
-            // 
-            // botonPersonalizado4
-            // 
-            this.botonPersonalizado4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(156)))), ((int)(((byte)(218)))));
-            this.botonPersonalizado4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(156)))), ((int)(((byte)(218)))));
-            this.botonPersonalizado4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(156)))), ((int)(((byte)(218)))));
-            this.botonPersonalizado4.BorderRadius = 20;
-            this.botonPersonalizado4.BorderSize = 2;
-            this.botonPersonalizado4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.botonPersonalizado4.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonPersonalizado4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado4.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado4.Image")));
-            this.botonPersonalizado4.Location = new System.Drawing.Point(0, 0);
-            this.botonPersonalizado4.Name = "botonPersonalizado4";
-            this.botonPersonalizado4.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.botonPersonalizado4.Size = new System.Drawing.Size(88, 75);
-            this.botonPersonalizado4.TabIndex = 13;
-            this.botonPersonalizado4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado4.UseVisualStyleBackColor = false;
-            // 
-            // botonPersonalizado3
-            // 
-            this.botonPersonalizado3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
-            this.botonPersonalizado3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
-            this.botonPersonalizado3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
-            this.botonPersonalizado3.BorderRadius = 20;
-            this.botonPersonalizado3.BorderSize = 2;
-            this.botonPersonalizado3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.botonPersonalizado3.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonPersonalizado3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
-            this.botonPersonalizado3.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado3.Image")));
-            this.botonPersonalizado3.Location = new System.Drawing.Point(0, 0);
-            this.botonPersonalizado3.Name = "botonPersonalizado3";
-            this.botonPersonalizado3.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.botonPersonalizado3.Size = new System.Drawing.Size(83, 75);
-            this.botonPersonalizado3.TabIndex = 13;
-            this.botonPersonalizado3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
-            this.botonPersonalizado3.UseVisualStyleBackColor = false;
-            // 
-            // botonPersonalizado2
-            // 
-            this.botonPersonalizado2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado2.BorderRadius = 20;
-            this.botonPersonalizado2.BorderSize = 2;
-            this.botonPersonalizado2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.botonPersonalizado2.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonPersonalizado2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado2.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado2.Image")));
-            this.botonPersonalizado2.Location = new System.Drawing.Point(0, 0);
-            this.botonPersonalizado2.Name = "botonPersonalizado2";
-            this.botonPersonalizado2.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.botonPersonalizado2.Size = new System.Drawing.Size(87, 75);
-            this.botonPersonalizado2.TabIndex = 13;
-            this.botonPersonalizado2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado2.UseVisualStyleBackColor = false;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnCancelar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnCancelar.BorderRadius = 20;
-            this.btnCancelar.BorderSize = 2;
-            this.btnCancelar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(0, 0);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(83, 75);
-            this.btnCancelar.TabIndex = 13;
-            this.btnCancelar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            // 
-            // botonPersonalizado1
-            // 
-            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.botonPersonalizado1.BorderRadius = 20;
-            this.botonPersonalizado1.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
-            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 19);
-            this.botonPersonalizado1.Name = "botonPersonalizado1";
-            this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
-            this.botonPersonalizado1.TabIndex = 2;
-            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.UseVisualStyleBackColor = false;
             // 
             // textPersonalizado1
             // 
@@ -1341,6 +1349,10 @@ namespace CapaPresentacion
             this.pContenedor.ResumeLayout(false);
             this.pInicio.ResumeLayout(false);
             this.pInicio.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartTurno)).EndInit();
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartCausas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1357,10 +1369,6 @@ namespace CapaPresentacion
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartTurno)).EndInit();
             this.ResumeLayout(false);
 
         }

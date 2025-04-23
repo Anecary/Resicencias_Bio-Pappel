@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEmpleados));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedor = new System.Windows.Forms.Panel();
             this.pConsultaGeneral = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
+            this.rbtActivos = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtInactivos = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtTodos = new MaterialSkin.Controls.MaterialRadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.pConsultaIndividual = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,7 +51,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNoNomina = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
             this.txtCp = new MaterialSkin.Controls.MaterialTextBox();
@@ -66,14 +67,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.rbtTodos = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtInactivos = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtActivos = new MaterialSkin.Controls.MaterialRadioButton();
+            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
+            this.btnBuscarEmpleadoNN = new CapaPresentacion.BotonPersonalizado();
             this.panel1.SuspendLayout();
             this.pContenedor.SuspendLayout();
             this.pConsultaGeneral.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.pConsultaIndividual.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -81,6 +80,7 @@
             this.pSeccionesDatos.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -97,8 +97,8 @@
             // 
             // pContenedor
             // 
-            this.pContenedor.Controls.Add(this.pConsultaGeneral);
             this.pContenedor.Controls.Add(this.pConsultaIndividual);
+            this.pContenedor.Controls.Add(this.pConsultaGeneral);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(0, 145);
             this.pContenedor.Name = "pContenedor";
@@ -116,65 +116,75 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel6.Controls.Add(this.dgvEmpleados);
             this.panel6.Controls.Add(this.rbtActivos);
             this.panel6.Controls.Add(this.rbtInactivos);
             this.panel6.Controls.Add(this.rbtTodos);
-            this.panel6.Controls.Add(this.dgvEmpleados);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Location = new System.Drawing.Point(18, 18);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(894, 457);
             this.panel6.TabIndex = 5;
             // 
-            // dgvEmpleados
+            // rbtActivos
             // 
-            this.dgvEmpleados.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvEmpleados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.dgvEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvEmpleados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvEmpleados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvEmpleados.ColumnHeadersHeight = 45;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpleados.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvEmpleados.EnableHeadersVisualStyles = false;
-            this.dgvEmpleados.Location = new System.Drawing.Point(17, 91);
-            this.dgvEmpleados.Name = "dgvEmpleados";
-            this.dgvEmpleados.ReadOnly = true;
-            this.dgvEmpleados.RowHeadersVisible = false;
-            this.dgvEmpleados.RowTemplate.Height = 35;
-            this.dgvEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEmpleados.Size = new System.Drawing.Size(855, 343);
-            this.dgvEmpleados.TabIndex = 0;
-            this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.rbtActivos.AutoSize = true;
+            this.rbtActivos.Depth = 0;
+            this.rbtActivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            this.rbtActivos.Location = new System.Drawing.Point(234, 52);
+            this.rbtActivos.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtActivos.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtActivos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtActivos.Name = "rbtActivos";
+            this.rbtActivos.Ripple = true;
+            this.rbtActivos.Size = new System.Drawing.Size(87, 37);
+            this.rbtActivos.TabIndex = 152;
+            this.rbtActivos.TabStop = true;
+            this.rbtActivos.Text = "Activos";
+            this.rbtActivos.UseVisualStyleBackColor = true;
+            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
+            // 
+            // rbtInactivos
+            // 
+            this.rbtInactivos.AutoSize = true;
+            this.rbtInactivos.Depth = 0;
+            this.rbtInactivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            this.rbtInactivos.Location = new System.Drawing.Point(116, 51);
+            this.rbtInactivos.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtInactivos.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtInactivos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtInactivos.Name = "rbtInactivos";
+            this.rbtInactivos.Ripple = true;
+            this.rbtInactivos.Size = new System.Drawing.Size(99, 37);
+            this.rbtInactivos.TabIndex = 151;
+            this.rbtInactivos.TabStop = true;
+            this.rbtInactivos.Text = "Inactivos";
+            this.rbtInactivos.UseVisualStyleBackColor = true;
+            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
+            // 
+            // rbtTodos
+            // 
+            this.rbtTodos.AutoSize = true;
+            this.rbtTodos.Depth = 0;
+            this.rbtTodos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
+            this.rbtTodos.Location = new System.Drawing.Point(17, 51);
+            this.rbtTodos.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtTodos.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtTodos.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtTodos.Name = "rbtTodos";
+            this.rbtTodos.Ripple = true;
+            this.rbtTodos.Size = new System.Drawing.Size(80, 37);
+            this.rbtTodos.TabIndex = 150;
+            this.rbtTodos.TabStop = true;
+            this.rbtTodos.Text = "Todos";
+            this.rbtTodos.UseVisualStyleBackColor = true;
+            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label2.Location = new System.Drawing.Point(12, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(370, 29);
@@ -240,7 +250,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label5.Location = new System.Drawing.Point(47, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(194, 29);
@@ -307,9 +317,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.btnBuscarEmpleadoNN);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.txtNoNomina);
-            this.panel3.Controls.Add(this.materialFloatingActionButton2);
             this.panel3.Location = new System.Drawing.Point(17, 13);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(883, 110);
@@ -319,7 +329,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label3.Location = new System.Drawing.Point(47, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(275, 29);
@@ -343,20 +353,6 @@
             this.txtNoNomina.TabIndex = 59;
             this.txtNoNomina.Text = "";
             this.txtNoNomina.TrailingIcon = null;
-            // 
-            // materialFloatingActionButton2
-            // 
-            this.materialFloatingActionButton2.Depth = 0;
-            this.materialFloatingActionButton2.Icon = ((System.Drawing.Image)(resources.GetObject("materialFloatingActionButton2.Icon")));
-            this.materialFloatingActionButton2.Location = new System.Drawing.Point(266, 57);
-            this.materialFloatingActionButton2.Mini = true;
-            this.materialFloatingActionButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton2.Name = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.Size = new System.Drawing.Size(40, 40);
-            this.materialFloatingActionButton2.TabIndex = 95;
-            this.materialFloatingActionButton2.Text = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
-            this.materialFloatingActionButton2.Click += new System.EventHandler(this.materialFloatingActionButton2_Click);
             // 
             // panel5
             // 
@@ -455,7 +451,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label4.Location = new System.Drawing.Point(47, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(209, 29);
@@ -540,7 +536,7 @@
             // 
             // pSeccionesDatos
             // 
-            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.pSeccionesDatos.Controls.Add(this.btnConsultaIndividual);
             this.pSeccionesDatos.Controls.Add(this.btnConsultaGral);
             this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
@@ -599,7 +595,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label1.Location = new System.Drawing.Point(276, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(434, 42);
@@ -617,59 +613,70 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // rbtTodos
+            // dgvEmpleados
             // 
-            this.rbtTodos.AutoSize = true;
-            this.rbtTodos.Depth = 0;
-            this.rbtTodos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            this.rbtTodos.Location = new System.Drawing.Point(17, 51);
-            this.rbtTodos.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtTodos.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtTodos.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtTodos.Name = "rbtTodos";
-            this.rbtTodos.Ripple = true;
-            this.rbtTodos.Size = new System.Drawing.Size(80, 37);
-            this.rbtTodos.TabIndex = 150;
-            this.rbtTodos.TabStop = true;
-            this.rbtTodos.Text = "Todos";
-            this.rbtTodos.UseVisualStyleBackColor = true;
-            this.rbtTodos.CheckedChanged += new System.EventHandler(this.rbtTodos_CheckedChanged);
+            this.dgvEmpleados.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEmpleados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvEmpleados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgvEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEmpleados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvEmpleados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvEmpleados.ColumnHeadersHeight = 40;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmpleados.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvEmpleados.EnableHeadersVisualStyles = false;
+            this.dgvEmpleados.Location = new System.Drawing.Point(17, 91);
+            this.dgvEmpleados.Name = "dgvEmpleados";
+            this.dgvEmpleados.ReadOnly = true;
+            this.dgvEmpleados.RowHeadersVisible = false;
+            this.dgvEmpleados.RowHeadersWidth = 51;
+            this.dgvEmpleados.RowTemplate.Height = 35;
+            this.dgvEmpleados.Size = new System.Drawing.Size(862, 342);
+            this.dgvEmpleados.TabIndex = 153;
             // 
-            // rbtInactivos
+            // btnBuscarEmpleadoNN
             // 
-            this.rbtInactivos.AutoSize = true;
-            this.rbtInactivos.Depth = 0;
-            this.rbtInactivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            this.rbtInactivos.Location = new System.Drawing.Point(116, 51);
-            this.rbtInactivos.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtInactivos.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtInactivos.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtInactivos.Name = "rbtInactivos";
-            this.rbtInactivos.Ripple = true;
-            this.rbtInactivos.Size = new System.Drawing.Size(99, 37);
-            this.rbtInactivos.TabIndex = 151;
-            this.rbtInactivos.TabStop = true;
-            this.rbtInactivos.Text = "Inactivos";
-            this.rbtInactivos.UseVisualStyleBackColor = true;
-            this.rbtInactivos.CheckedChanged += new System.EventHandler(this.rbtInactivos_CheckedChanged);
-            // 
-            // rbtActivos
-            // 
-            this.rbtActivos.AutoSize = true;
-            this.rbtActivos.Depth = 0;
-            this.rbtActivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(151)))));
-            this.rbtActivos.Location = new System.Drawing.Point(234, 52);
-            this.rbtActivos.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtActivos.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtActivos.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtActivos.Name = "rbtActivos";
-            this.rbtActivos.Ripple = true;
-            this.rbtActivos.Size = new System.Drawing.Size(87, 37);
-            this.rbtActivos.TabIndex = 152;
-            this.rbtActivos.TabStop = true;
-            this.rbtActivos.Text = "Activos";
-            this.rbtActivos.UseVisualStyleBackColor = true;
-            this.rbtActivos.CheckedChanged += new System.EventHandler(this.rbtActivos_CheckedChanged);
+            this.btnBuscarEmpleadoNN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoNN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoNN.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarEmpleadoNN.BorderRadius = 20;
+            this.btnBuscarEmpleadoNN.BorderSize = 0;
+            this.btnBuscarEmpleadoNN.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleadoNN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleadoNN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleadoNN.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoNN.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoNN.Image")));
+            this.btnBuscarEmpleadoNN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarEmpleadoNN.Location = new System.Drawing.Point(273, 53);
+            this.btnBuscarEmpleadoNN.Name = "btnBuscarEmpleadoNN";
+            this.btnBuscarEmpleadoNN.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnBuscarEmpleadoNN.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarEmpleadoNN.TabIndex = 126;
+            this.btnBuscarEmpleadoNN.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoNN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarEmpleadoNN.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleadoNN.Click += new System.EventHandler(this.btnBuscarEmpleadoNN_Click);
             // 
             // frmConsultarEmpleados
             // 
@@ -685,7 +692,6 @@
             this.pConsultaGeneral.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.pConsultaIndividual.ResumeLayout(false);
             this.pConsultaIndividual.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -698,6 +704,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -715,12 +722,10 @@
         private System.Windows.Forms.Panel pConsultaGeneral;
         private System.Windows.Forms.Panel pConsultaIndividual;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dgvEmpleados;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
         private MaterialSkin.Controls.MaterialTextBox txtFechaNac;
         private MaterialSkin.Controls.MaterialTextBox txtNombre;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
         private MaterialSkin.Controls.MaterialTextBox txtNoNomina;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
@@ -741,5 +746,7 @@
         private MaterialSkin.Controls.MaterialRadioButton rbtInactivos;
         private MaterialSkin.Controls.MaterialRadioButton rbtTodos;
         private MaterialSkin.Controls.MaterialRadioButton rbtActivos;
+        private System.Windows.Forms.DataGridView dgvEmpleados;
+        private BotonPersonalizado btnBuscarEmpleadoNN;
     }
 }

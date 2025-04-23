@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace CapaPresentacion.Empleados
@@ -30,6 +32,8 @@ namespace CapaPresentacion.Empleados
                 Accent.LightBlue200, // Color de acento
                 TextShade.WHITE // Color del texto
             );
+
+            pPuestos.Paint += new PaintEventHandler(Panel1_Paint);
         }
 
         // Método para eliminar el panel cuando el mouse sale del área del botón
@@ -69,7 +73,31 @@ namespace CapaPresentacion.Empleados
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel != null)
+            {
+                // Definir el radio de los bordes redondeados
+                int radius = 20;
 
+                // Crear un `GraphicsPath` para el área recortada del panel
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius * 2, radius * 2, 180, 90);
+                path.AddArc(panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
+                path.AddArc(panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+                path.AddArc(0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
+                path.CloseFigure();
+
+                // Aplicar el área recortada al panel
+                panel.Region = new Region(path);
+
+                // Dibujar el borde con el color deseado
+                Pen pen = new Pen(Color.FromArgb(6, 103, 105), 5); // Cambia el color aquí
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
         private void materialButton3_Click(object sender, EventArgs e)
         {
             try

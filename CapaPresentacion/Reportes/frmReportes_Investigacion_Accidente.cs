@@ -1,5 +1,6 @@
 ﻿using CapaEntidad;
 using CapaNegocios;
+using MaterialSkin;
 using Microsoft.Reporting.WinForms;
 using System;
 using System.Data;
@@ -11,10 +12,21 @@ namespace CapaPresentacion.Reportes
     public partial class frmReportes_Investigacion_Accidente : Form
     {
         private AccidentesCN negocios = new AccidentesCN();
-
+        private MaterialSkinManager materialSkinManager;
         public frmReportes_Investigacion_Accidente()
         {
+
             InitializeComponent();
+
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(
+                Primary.Blue800, // Color primario
+                Primary.Blue900, // Color de fondo oscuro
+                Primary.Blue700, // Color de botones
+                Accent.LightBlue200, // Color de acento
+                TextShade.WHITE // Color del texto
+            );
         }
 
         private void frmReportes_Investigacion_Accidente_Load(object sender, EventArgs e)

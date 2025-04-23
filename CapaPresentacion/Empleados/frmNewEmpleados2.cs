@@ -50,7 +50,7 @@ namespace CapaPresentacion.Empleados
                 panel.Region = new Region(path);
 
                 // Dibujar el borde con el color deseado
-                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                Pen pen = new Pen(Color.FromArgb(6, 103, 105), 5); // Cambia el color aquí
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 e.Graphics.DrawPath(pen, path);
             }

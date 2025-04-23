@@ -42,15 +42,15 @@
             this.txtDomicilio = new MaterialSkin.Controls.MaterialTextBox();
             this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
             this.txtNombreCompleto = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.txtNssBusqueda = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.btnGrabar = new MaterialSkin.Controls.MaterialButton();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnBuscarEmpleadoNSS = new CapaPresentacion.BotonPersonalizado();
+            this.btmCancelar = new CapaPresentacion.BotonPersonalizado();
+            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
             this.panel1.SuspendLayout();
             this.pDatosLaborales.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -69,19 +69,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(945, 754);
+            this.panel1.Size = new System.Drawing.Size(945, 645);
             this.panel1.TabIndex = 0;
             // 
             // pDatosLaborales
             // 
+            this.pDatosLaborales.Controls.Add(this.btmCancelar);
+            this.pDatosLaborales.Controls.Add(this.btnGrabar);
             this.pDatosLaborales.Controls.Add(this.panel4);
             this.pDatosLaborales.Controls.Add(this.panel3);
-            this.pDatosLaborales.Controls.Add(this.materialButton1);
-            this.pDatosLaborales.Controls.Add(this.btnGrabar);
             this.pDatosLaborales.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pDatosLaborales.Location = new System.Drawing.Point(0, 153);
             this.pDatosLaborales.Name = "pDatosLaborales";
-            this.pDatosLaborales.Size = new System.Drawing.Size(945, 601);
+            this.pDatosLaborales.Size = new System.Drawing.Size(945, 492);
             this.pDatosLaborales.TabIndex = 36;
             this.pDatosLaborales.Paint += new System.Windows.Forms.PaintEventHandler(this.pDatosLaborales_Paint);
             // 
@@ -94,7 +94,7 @@
             this.panel4.Controls.Add(this.cmbPuestos);
             this.panel4.Controls.Add(this.cmbTurno);
             this.panel4.Controls.Add(this.txtNoNomina);
-            this.panel4.Location = new System.Drawing.Point(17, 244);
+            this.panel4.Location = new System.Drawing.Point(17, 226);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(916, 193);
             this.panel4.TabIndex = 61;
@@ -215,12 +215,12 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.btnBuscarEmpleadoNSS);
             this.panel3.Controls.Add(this.txtDomicilio);
             this.panel3.Controls.Add(this.txtTelefono);
             this.panel3.Controls.Add(this.txtNombreCompleto);
-            this.panel3.Controls.Add(this.materialFloatingActionButton2);
             this.panel3.Controls.Add(this.txtNssBusqueda);
-            this.panel3.Location = new System.Drawing.Point(17, 40);
+            this.panel3.Location = new System.Drawing.Point(17, 22);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(916, 181);
             this.panel3.TabIndex = 60;
@@ -282,20 +282,6 @@
             this.txtNombreCompleto.Text = "";
             this.txtNombreCompleto.TrailingIcon = null;
             // 
-            // materialFloatingActionButton2
-            // 
-            this.materialFloatingActionButton2.Depth = 0;
-            this.materialFloatingActionButton2.Icon = ((System.Drawing.Image)(resources.GetObject("materialFloatingActionButton2.Icon")));
-            this.materialFloatingActionButton2.Location = new System.Drawing.Point(266, 35);
-            this.materialFloatingActionButton2.Mini = true;
-            this.materialFloatingActionButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton2.Name = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.Size = new System.Drawing.Size(40, 40);
-            this.materialFloatingActionButton2.TabIndex = 95;
-            this.materialFloatingActionButton2.Text = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
-            this.materialFloatingActionButton2.Click += new System.EventHandler(this.materialFloatingActionButton2_Click);
-            // 
             // txtNssBusqueda
             // 
             this.txtNssBusqueda.AnimateReadOnly = false;
@@ -313,47 +299,6 @@
             this.txtNssBusqueda.TabIndex = 52;
             this.txtNssBusqueda.Text = "";
             this.txtNssBusqueda.TrailingIcon = null;
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
-            this.materialButton1.Location = new System.Drawing.Point(453, 459);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(122, 50);
-            this.materialButton1.TabIndex = 58;
-            this.materialButton1.Text = "Cancelar";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = true;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.AutoSize = false;
-            this.btnGrabar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGrabar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGrabar.Depth = 0;
-            this.btnGrabar.HighEmphasis = true;
-            this.btnGrabar.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Icon")));
-            this.btnGrabar.Location = new System.Drawing.Point(300, 459);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGrabar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGrabar.Size = new System.Drawing.Size(124, 50);
-            this.btnGrabar.TabIndex = 57;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGrabar.UseAccentColor = true;
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // pSeccionesDatos
             // 
@@ -408,11 +353,79 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // btnBuscarEmpleadoNSS
+            // 
+            this.btnBuscarEmpleadoNSS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoNSS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoNSS.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarEmpleadoNSS.BorderRadius = 20;
+            this.btnBuscarEmpleadoNSS.BorderSize = 0;
+            this.btnBuscarEmpleadoNSS.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleadoNSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleadoNSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleadoNSS.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoNSS.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoNSS.Image")));
+            this.btnBuscarEmpleadoNSS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarEmpleadoNSS.Location = new System.Drawing.Point(265, 35);
+            this.btnBuscarEmpleadoNSS.Name = "btnBuscarEmpleadoNSS";
+            this.btnBuscarEmpleadoNSS.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnBuscarEmpleadoNSS.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarEmpleadoNSS.TabIndex = 126;
+            this.btnBuscarEmpleadoNSS.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoNSS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarEmpleadoNSS.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleadoNSS.Click += new System.EventHandler(this.btnBuscarEmpleadoNSS_Click);
+            // 
+            // btmCancelar
+            // 
+            this.btmCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmCancelar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmCancelar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btmCancelar.BorderRadius = 20;
+            this.btmCancelar.BorderSize = 0;
+            this.btmCancelar.FlatAppearance.BorderSize = 0;
+            this.btmCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btmCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmCancelar.ForeColor = System.Drawing.Color.White;
+            this.btmCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btmCancelar.Image")));
+            this.btmCancelar.Location = new System.Drawing.Point(472, 427);
+            this.btmCancelar.Name = "btmCancelar";
+            this.btmCancelar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btmCancelar.Size = new System.Drawing.Size(184, 53);
+            this.btmCancelar.TabIndex = 147;
+            this.btmCancelar.Text = " Cancelar";
+            this.btmCancelar.TextColor = System.Drawing.Color.White;
+            this.btmCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btmCancelar.UseVisualStyleBackColor = false;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGrabar.BorderRadius = 20;
+            this.btnGrabar.BorderSize = 0;
+            this.btnGrabar.FlatAppearance.BorderSize = 0;
+            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.ForeColor = System.Drawing.Color.White;
+            this.btnGrabar.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Image")));
+            this.btnGrabar.Location = new System.Drawing.Point(280, 427);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGrabar.Size = new System.Drawing.Size(184, 53);
+            this.btnGrabar.TabIndex = 146;
+            this.btnGrabar.Text = " Grabar";
+            this.btnGrabar.TextColor = System.Drawing.Color.White;
+            this.btnGrabar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
             // frmAltaEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 754);
+            this.ClientSize = new System.Drawing.Size(945, 645);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAltaEmpleado";
@@ -443,17 +456,17 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private MaterialSkin.Controls.MaterialTextBox txtNssBusqueda;
         private MaterialSkin.Controls.MaterialComboBox cmbPuestos;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialButton btnGrabar;
         private System.Windows.Forms.Label label2;
         private MaterialSkin.Controls.MaterialTextBox txtNoNomina;
         private System.Windows.Forms.Panel panel3;
         private MaterialSkin.Controls.MaterialComboBox cmbTurno;
         private MaterialSkin.Controls.MaterialTextBox txtNombreCompleto;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
         private MaterialSkin.Controls.MaterialTextBox txtTelefono;
         private System.Windows.Forms.Panel panel4;
         private MaterialSkin.Controls.MaterialTextBox txtDomicilio;
         private MaterialSkin.Controls.MaterialTextBox txtIdPuesto;
+        private BotonPersonalizado btnBuscarEmpleadoNSS;
+        private BotonPersonalizado btmCancelar;
+        private BotonPersonalizado btnGrabar;
     }
 }

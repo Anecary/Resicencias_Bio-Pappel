@@ -61,7 +61,7 @@ namespace CapaPresentacion.Empleados
                 panel.Region = new Region(path);
 
                 // Dibujar el borde con el color deseado
-                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                Pen pen = new Pen(Color.FromArgb(6, 103, 105), 5); // Cambia el color aquí
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 e.Graphics.DrawPath(pen, path);
             }
@@ -70,7 +70,7 @@ namespace CapaPresentacion.Empleados
         {
             Button btn = sender as Button;
             pSeccionesDatos.Controls.Add(p);
-            p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
+            p.BackColor = Color.FromArgb(247, 167, 62); // Color para el panel
             p.Size = new Size(180, 5); // Tamaño del panel
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
@@ -118,37 +118,7 @@ namespace CapaPresentacion.Empleados
 
         private void materialFloatingActionButton2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                String numero_nomina = txtNoNomina.Text;
-
-                if (string.IsNullOrEmpty(numero_nomina))
-                {
-                    MessageBox.Show("Por favor, ingrese un Numero de nomina.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                var datosEmpleado = negocios.consultaIndividual(numero_nomina);
-
-                txtNombre.Text = datosEmpleado.nombreCompleto;
-                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
-                txtSexo.Text = datosEmpleado.sexo.ToString();
-                txtNss.Text = datosEmpleado.nss.ToString();
-                txtEstadoCivil.Text = datosEmpleado.estado_civil.ToString();
-                txtDomicilio.Text = datosEmpleado.domicilio.ToString();
-                txtCp.Text = datosEmpleado.domicilio_CP.ToString();
-                txtTelefono.Text = datosEmpleado.telefono.ToString();
-
-                txtTurno.Text = datosEmpleado.turno.ToString();
-                txtAntiguedad.Text = datosEmpleado.antiguedad.ToString();
-                txtPuesto.Text = datosEmpleado.puesto.ToString();
-                txtFechaIngreso.Text = datosEmpleado.fecha_ingreso_empresa.ToString("yyyy-MM-dd");
-
-            }
-            catch (Exception ex)
-            {
-
-            }
+            
         }
         private void rbtTodos_CheckedChanged(object sender, EventArgs e)
         {
@@ -196,6 +166,41 @@ namespace CapaPresentacion.Empleados
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBuscarEmpleadoNN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String numero_nomina = txtNoNomina.Text;
+
+                if (string.IsNullOrEmpty(numero_nomina))
+                {
+                    MessageBox.Show("Por favor, ingrese un Numero de nomina.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var datosEmpleado = negocios.consultaIndividual(numero_nomina);
+
+                txtNombre.Text = datosEmpleado.nombreCompleto;
+                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
+                txtSexo.Text = datosEmpleado.sexo.ToString();
+                txtNss.Text = datosEmpleado.nss.ToString();
+                txtEstadoCivil.Text = datosEmpleado.estado_civil.ToString();
+                txtDomicilio.Text = datosEmpleado.domicilio.ToString();
+                txtCp.Text = datosEmpleado.domicilio_CP.ToString();
+                txtTelefono.Text = datosEmpleado.telefono.ToString();
+
+                txtTurno.Text = datosEmpleado.turno.ToString();
+                txtAntiguedad.Text = datosEmpleado.antiguedad.ToString();
+                txtPuesto.Text = datosEmpleado.puesto.ToString();
+                txtFechaIngreso.Text = datosEmpleado.fecha_ingreso_empresa.ToString("yyyy-MM-dd");
+
+            }
+            catch (Exception ex)
+            {
+
             }
         }
     }

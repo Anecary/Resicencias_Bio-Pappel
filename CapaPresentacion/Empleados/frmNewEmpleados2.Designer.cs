@@ -51,11 +51,11 @@
             this.txtCp = new MaterialSkin.Controls.MaterialTextBox();
             this.txtMunicipio = new MaterialSkin.Controls.MaterialTextBox();
             this.txtEstado = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.btnGrabar = new MaterialSkin.Controls.MaterialButton();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btmCancelar = new CapaPresentacion.BotonPersonalizado();
+            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.pDatosPersonales.SuspendLayout();
@@ -68,7 +68,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label1.Location = new System.Drawing.Point(276, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(603, 42);
@@ -100,9 +100,9 @@
             // 
             // pDatosPersonales
             // 
-            this.pDatosPersonales.Controls.Add(this.panel3);
-            this.pDatosPersonales.Controls.Add(this.materialButton1);
+            this.pDatosPersonales.Controls.Add(this.btmCancelar);
             this.pDatosPersonales.Controls.Add(this.btnGrabar);
+            this.pDatosPersonales.Controls.Add(this.panel3);
             this.pDatosPersonales.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pDatosPersonales.Location = new System.Drawing.Point(0, 145);
             this.pDatosPersonales.Name = "pDatosPersonales";
@@ -442,50 +442,9 @@
             this.txtEstado.Text = "";
             this.txtEstado.TrailingIcon = null;
             // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
-            this.materialButton1.Location = new System.Drawing.Point(465, 431);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(122, 50);
-            this.materialButton1.TabIndex = 76;
-            this.materialButton1.Text = "Cancelar";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = true;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.AutoSize = false;
-            this.btnGrabar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGrabar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnGrabar.Depth = 0;
-            this.btnGrabar.HighEmphasis = true;
-            this.btnGrabar.Icon = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Icon")));
-            this.btnGrabar.Location = new System.Drawing.Point(312, 431);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnGrabar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnGrabar.Size = new System.Drawing.Size(124, 50);
-            this.btnGrabar.TabIndex = 75;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnGrabar.UseAccentColor = true;
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            // 
             // pSeccionesDatos
             // 
-            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.pSeccionesDatos.Controls.Add(this.label2);
             this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSeccionesDatos.Location = new System.Drawing.Point(0, 100);
@@ -513,6 +472,51 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(934, 100);
             this.panel2.TabIndex = 4;
+            // 
+            // btmCancelar
+            // 
+            this.btmCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmCancelar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmCancelar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btmCancelar.BorderRadius = 20;
+            this.btmCancelar.BorderSize = 0;
+            this.btmCancelar.FlatAppearance.BorderSize = 0;
+            this.btmCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btmCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmCancelar.ForeColor = System.Drawing.Color.White;
+            this.btmCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btmCancelar.Image")));
+            this.btmCancelar.Location = new System.Drawing.Point(459, 428);
+            this.btmCancelar.Name = "btmCancelar";
+            this.btmCancelar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btmCancelar.Size = new System.Drawing.Size(184, 53);
+            this.btmCancelar.TabIndex = 147;
+            this.btmCancelar.Text = " Cancelar";
+            this.btmCancelar.TextColor = System.Drawing.Color.White;
+            this.btmCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btmCancelar.UseVisualStyleBackColor = false;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGrabar.BorderRadius = 20;
+            this.btnGrabar.BorderSize = 0;
+            this.btnGrabar.FlatAppearance.BorderSize = 0;
+            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.ForeColor = System.Drawing.Color.White;
+            this.btnGrabar.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Image")));
+            this.btnGrabar.Location = new System.Drawing.Point(248, 428);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGrabar.Size = new System.Drawing.Size(184, 53);
+            this.btnGrabar.TabIndex = 146;
+            this.btnGrabar.Text = " Grabar";
+            this.btnGrabar.TextColor = System.Drawing.Color.White;
+            this.btnGrabar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // frmNewEmpleados2
             // 
@@ -561,9 +565,9 @@
         private MaterialSkin.Controls.MaterialTextBox txtApellidoP;
         private MaterialSkin.Controls.MaterialTextBox txtApellidoM;
         private System.Windows.Forms.Label label2;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialButton btnGrabar;
         private System.Windows.Forms.Panel panel3;
         private MaterialSkin.Controls.MaterialTextBox txtRFC;
+        private BotonPersonalizado btmCancelar;
+        private BotonPersonalizado btnGrabar;
     }
 }

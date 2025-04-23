@@ -31,7 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmActualizarEmpleado));
             this.pContenedorAct = new System.Windows.Forms.Panel();
             this.pConsultaIndividual = new System.Windows.Forms.Panel();
-            this.btnActualizar = new MaterialSkin.Controls.MaterialButton();
+            this.btmCancelar = new CapaPresentacion.BotonPersonalizado();
+            this.btnActualizar = new CapaPresentacion.BotonPersonalizado();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cmbTurno = new MaterialSkin.Controls.MaterialComboBox();
@@ -40,7 +42,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNoNomina = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtNumero = new MaterialSkin.Controls.MaterialTextBox();
             this.txtCalle = new MaterialSkin.Controls.MaterialTextBox();
@@ -59,7 +60,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btmCancelar = new MaterialSkin.Controls.MaterialButton();
+            this.btnBuscarEmpleadoNN = new CapaPresentacion.BotonPersonalizado();
             this.pContenedorAct.SuspendLayout();
             this.pConsultaIndividual.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -86,6 +87,7 @@
             this.pConsultaIndividual.AutoScroll = true;
             this.pConsultaIndividual.Controls.Add(this.btmCancelar);
             this.pConsultaIndividual.Controls.Add(this.btnActualizar);
+            this.pConsultaIndividual.Controls.Add(this.label2);
             this.pConsultaIndividual.Controls.Add(this.panel4);
             this.pConsultaIndividual.Controls.Add(this.panel3);
             this.pConsultaIndividual.Controls.Add(this.panel5);
@@ -95,27 +97,62 @@
             this.pConsultaIndividual.Size = new System.Drawing.Size(945, 530);
             this.pConsultaIndividual.TabIndex = 7;
             // 
+            // btmCancelar
+            // 
+            this.btmCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmCancelar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmCancelar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btmCancelar.BorderRadius = 20;
+            this.btmCancelar.BorderSize = 0;
+            this.btmCancelar.FlatAppearance.BorderSize = 0;
+            this.btmCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btmCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmCancelar.ForeColor = System.Drawing.Color.White;
+            this.btmCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btmCancelar.Image")));
+            this.btmCancelar.Location = new System.Drawing.Point(456, 642);
+            this.btmCancelar.Name = "btmCancelar";
+            this.btmCancelar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btmCancelar.Size = new System.Drawing.Size(184, 53);
+            this.btmCancelar.TabIndex = 145;
+            this.btmCancelar.Text = " Cancelar";
+            this.btmCancelar.TextColor = System.Drawing.Color.White;
+            this.btmCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btmCancelar.UseVisualStyleBackColor = false;
+            this.btmCancelar.Click += new System.EventHandler(this.btmCancelar_Click);
+            // 
             // btnActualizar
             // 
-            this.btnActualizar.AutoSize = false;
-            this.btnActualizar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnActualizar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnActualizar.Depth = 0;
-            this.btnActualizar.Enabled = false;
-            this.btnActualizar.HighEmphasis = true;
-            this.btnActualizar.Icon = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Icon")));
-            this.btnActualizar.Location = new System.Drawing.Point(223, 664);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnActualizar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnActualizar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnActualizar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnActualizar.BorderRadius = 20;
+            this.btnActualizar.BorderSize = 0;
+            this.btnActualizar.FlatAppearance.BorderSize = 0;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.Color.White;
+            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
+            this.btnActualizar.Location = new System.Drawing.Point(255, 642);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnActualizar.Size = new System.Drawing.Size(140, 50);
-            this.btnActualizar.TabIndex = 105;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnActualizar.UseAccentColor = true;
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnActualizar.Size = new System.Drawing.Size(184, 53);
+            this.btnActualizar.TabIndex = 144;
+            this.btnActualizar.Text = " Actualizar";
+            this.btnActualizar.TextColor = System.Drawing.Color.White;
+            this.btnActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(4, 687);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(194, 29);
+            this.label2.TabIndex = 115;
+            this.label2.Text = "Datos Laborales:";
             // 
             // panel4
             // 
@@ -193,7 +230,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label5.Location = new System.Drawing.Point(47, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(194, 29);
@@ -203,9 +240,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.btnBuscarEmpleadoNN);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.txtNoNomina);
-            this.panel3.Controls.Add(this.materialFloatingActionButton2);
             this.panel3.Location = new System.Drawing.Point(17, 13);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(883, 110);
@@ -215,7 +252,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label3.Location = new System.Drawing.Point(47, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(228, 29);
@@ -239,20 +276,6 @@
             this.txtNoNomina.TabIndex = 59;
             this.txtNoNomina.Text = "";
             this.txtNoNomina.TrailingIcon = null;
-            // 
-            // materialFloatingActionButton2
-            // 
-            this.materialFloatingActionButton2.Depth = 0;
-            this.materialFloatingActionButton2.Icon = ((System.Drawing.Image)(resources.GetObject("materialFloatingActionButton2.Icon")));
-            this.materialFloatingActionButton2.Location = new System.Drawing.Point(266, 57);
-            this.materialFloatingActionButton2.Mini = true;
-            this.materialFloatingActionButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton2.Name = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.Size = new System.Drawing.Size(40, 40);
-            this.materialFloatingActionButton2.TabIndex = 95;
-            this.materialFloatingActionButton2.Text = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
-            this.materialFloatingActionButton2.Click += new System.EventHandler(this.materialFloatingActionButton2_Click);
             // 
             // panel5
             // 
@@ -460,7 +483,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label4.Location = new System.Drawing.Point(47, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(209, 29);
@@ -526,7 +549,7 @@
             // 
             // pSeccionesDatos
             // 
-            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSeccionesDatos.Location = new System.Drawing.Point(0, 100);
             this.pSeccionesDatos.Name = "pSeccionesDatos";
@@ -547,7 +570,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label1.Location = new System.Drawing.Point(254, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(693, 42);
@@ -565,27 +588,28 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // btmCancelar
+            // btnBuscarEmpleadoNN
             // 
-            this.btmCancelar.AutoSize = false;
-            this.btmCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btmCancelar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btmCancelar.Depth = 0;
-            this.btmCancelar.Enabled = false;
-            this.btmCancelar.HighEmphasis = true;
-            this.btmCancelar.Icon = ((System.Drawing.Image)(resources.GetObject("btmCancelar.Icon")));
-            this.btmCancelar.Location = new System.Drawing.Point(426, 664);
-            this.btmCancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btmCancelar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btmCancelar.Name = "btmCancelar";
-            this.btmCancelar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btmCancelar.Size = new System.Drawing.Size(140, 50);
-            this.btmCancelar.TabIndex = 106;
-            this.btmCancelar.Text = "Cancelar";
-            this.btmCancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btmCancelar.UseAccentColor = true;
-            this.btmCancelar.UseVisualStyleBackColor = true;
-            this.btmCancelar.Click += new System.EventHandler(this.btmCancelar_Click);
+            this.btnBuscarEmpleadoNN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoNN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoNN.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarEmpleadoNN.BorderRadius = 20;
+            this.btnBuscarEmpleadoNN.BorderSize = 0;
+            this.btnBuscarEmpleadoNN.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleadoNN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleadoNN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleadoNN.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoNN.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoNN.Image")));
+            this.btnBuscarEmpleadoNN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarEmpleadoNN.Location = new System.Drawing.Point(265, 55);
+            this.btnBuscarEmpleadoNN.Name = "btnBuscarEmpleadoNN";
+            this.btnBuscarEmpleadoNN.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnBuscarEmpleadoNN.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarEmpleadoNN.TabIndex = 125;
+            this.btnBuscarEmpleadoNN.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoNN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarEmpleadoNN.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleadoNN.Click += new System.EventHandler(this.btnBuscarEmpleadoNN_Click);
             // 
             // frmActualizarEmpleado
             // 
@@ -597,6 +621,7 @@
             this.Name = "frmActualizarEmpleado";
             this.pContenedorAct.ResumeLayout(false);
             this.pConsultaIndividual.ResumeLayout(false);
+            this.pConsultaIndividual.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -623,7 +648,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private MaterialSkin.Controls.MaterialTextBox txtNoNomina;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
         private System.Windows.Forms.Panel panel5;
         private MaterialSkin.Controls.MaterialTextBox txtTelefono;
         private MaterialSkin.Controls.MaterialTextBox txtCp;
@@ -640,8 +664,10 @@
         private MaterialSkin.Controls.MaterialTextBox txtNumero;
         private MaterialSkin.Controls.MaterialTextBox txtCalle;
         private MaterialSkin.Controls.MaterialComboBox cmbTurno;
-        private MaterialSkin.Controls.MaterialButton btnActualizar;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private MaterialSkin.Controls.MaterialButton btmCancelar;
+        private System.Windows.Forms.Label label2;
+        private BotonPersonalizado btnActualizar;
+        private BotonPersonalizado btmCancelar;
+        private BotonPersonalizado btnBuscarEmpleadoNN;
     }
 }

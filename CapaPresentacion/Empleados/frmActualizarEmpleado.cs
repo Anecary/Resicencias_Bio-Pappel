@@ -46,7 +46,7 @@ namespace CapaPresentacion.Empleados
                 panel.Region = new Region(path);
 
                 // Dibujar el borde con el color deseado
-                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                Pen pen = new Pen(Color.FromArgb(6, 103, 105), 5); // Cambia el color aquí
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 e.Graphics.DrawPath(pen, path);
             }
@@ -77,68 +77,7 @@ namespace CapaPresentacion.Empleados
 
         private void materialFloatingActionButton2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                String numero_nomina = txtNoNomina.Text;
-
-                if (string.IsNullOrEmpty(numero_nomina))
-                {
-                    MessageBox.Show("Por favor, ingrese un Numero de nomina.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                var datosEmpleado = negocios.ConsultaIndivisualActualizar(numero_nomina);
-
-                txtNombre.Text = datosEmpleado.nombreCompleto;
-                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
-                txtSexo.Text = datosEmpleado.sexo.ToString();
-                txtNss.Text = datosEmpleado.nss.ToString();
-                cmbEstadoCivil.SelectedItem = datosEmpleado.estado_civil;
-                txtCp.Text = datosEmpleado.domicilio_CP;
-                txtEstado.Text = datosEmpleado.domicilio_estado.ToString();
-                txtCiudad.Text = datosEmpleado.domicilio_ciudad.ToString();
-                txtColonia.Text = datosEmpleado.domicilio_colonia.ToString();
-                txtCalle.Text = datosEmpleado.domicilio_calle.ToString();
-                txtNumero.Text = datosEmpleado.domicilio_numero.ToString();
-                txtTelefono.Text = datosEmpleado.telefono.ToString();
-                cmbPuesto.SelectedItem = datosEmpleado.puesto;
-                char turno = datosEmpleado.turno;
-                dateTimePicker1.Value = datosEmpleado.fecha;
-
-                Dictionary<char, string> turnosMap = new Dictionary<char, string>
-                {
-                    { 'M', "Matutino" },
-                    { 'V', "Vespertino" },
-                    { 'N', "Nocturno" }
-                };
-
-                // Verificar si la letra existe en el diccionario y seleccionarla en el ComboBox
-                if (turnosMap.ContainsKey(turno))
-                {
-                    cmbTurno.SelectedItem = turnosMap[turno];
-                }
-
-                txtCp.Enabled = true;
-                txtEstado.Enabled = true;
-                txtCiudad.Enabled = true;
-                txtColonia.Enabled = true;
-                txtCalle.Enabled = true;
-                txtNumero.Enabled = true;
-                txtTelefono.Enabled = true;
-
-                cmbEstadoCivil.Enabled = true;
-                cmbPuesto.Enabled = true;
-                cmbTurno.Enabled = true;
-
-                btnActualizar.Enabled = true;
-
-                txtNoNomina.Enabled = false;
-                btmCancelar.Enabled = true;
-                materialFloatingActionButton2.Enabled = false;
-            }
-            catch (Exception ex) 
-            {
-            }
+            
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
@@ -237,13 +176,79 @@ namespace CapaPresentacion.Empleados
             cmbTurno.Enabled = false;
 
             btnActualizar.Enabled = false;
-            materialFloatingActionButton2.Enabled = true;
+            btnBuscarEmpleadoNN.Enabled = true;
             btmCancelar.Enabled = false;
         }
 
         private void btmCancelar_Click(object sender, EventArgs e)
         {
             limpiar();
+        }
+
+        private void btnBuscarEmpleadoNN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String numero_nomina = txtNoNomina.Text;
+
+                if (string.IsNullOrEmpty(numero_nomina))
+                {
+                    MessageBox.Show("Por favor, ingrese un Numero de nomina.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var datosEmpleado = negocios.ConsultaIndivisualActualizar(numero_nomina);
+
+                txtNombre.Text = datosEmpleado.nombreCompleto;
+                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
+                txtSexo.Text = datosEmpleado.sexo.ToString();
+                txtNss.Text = datosEmpleado.nss.ToString();
+                cmbEstadoCivil.SelectedItem = datosEmpleado.estado_civil;
+                txtCp.Text = datosEmpleado.domicilio_CP;
+                txtEstado.Text = datosEmpleado.domicilio_estado.ToString();
+                txtCiudad.Text = datosEmpleado.domicilio_ciudad.ToString();
+                txtColonia.Text = datosEmpleado.domicilio_colonia.ToString();
+                txtCalle.Text = datosEmpleado.domicilio_calle.ToString();
+                txtNumero.Text = datosEmpleado.domicilio_numero.ToString();
+                txtTelefono.Text = datosEmpleado.telefono.ToString();
+                cmbPuesto.SelectedItem = datosEmpleado.puesto;
+                char turno = datosEmpleado.turno;
+                dateTimePicker1.Value = datosEmpleado.fecha;
+
+                Dictionary<char, string> turnosMap = new Dictionary<char, string>
+                {
+                    { 'M', "Matutino" },
+                    { 'V', "Vespertino" },
+                    { 'N', "Nocturno" }
+                };
+
+                // Verificar si la letra existe en el diccionario y seleccionarla en el ComboBox
+                if (turnosMap.ContainsKey(turno))
+                {
+                    cmbTurno.SelectedItem = turnosMap[turno];
+                }
+
+                txtCp.Enabled = true;
+                txtEstado.Enabled = true;
+                txtCiudad.Enabled = true;
+                txtColonia.Enabled = true;
+                txtCalle.Enabled = true;
+                txtNumero.Enabled = true;
+                txtTelefono.Enabled = true;
+
+                cmbEstadoCivil.Enabled = true;
+                cmbPuesto.Enabled = true;
+                cmbTurno.Enabled = true;
+
+                btnActualizar.Enabled = true;
+
+                txtNoNomina.Enabled = false;
+                btmCancelar.Enabled = true;
+                btnBuscarEmpleadoNN.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+            }
         }
     }
 }

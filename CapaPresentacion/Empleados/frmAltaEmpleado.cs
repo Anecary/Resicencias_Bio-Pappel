@@ -59,7 +59,7 @@ namespace CapaPresentacion.Empleados
                 panel.Region = new Region(path);
 
                 // Dibujar el borde con el color deseado
-                Pen pen = new Pen(Color.FromArgb(27, 77, 141), 5); // Cambia el color aquí
+                Pen pen = new Pen(Color.FromArgb(6, 103, 105), 5); // Cambia el color aquí
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 e.Graphics.DrawPath(pen, path);
             }
@@ -76,40 +76,7 @@ namespace CapaPresentacion.Empleados
 
         private void materialFloatingActionButton2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string nss = txtNssBusqueda.Text.Trim();
-
-                if (string.IsNullOrWhiteSpace(nss))
-                {
-                    MessageBox.Show("Por favor, ingrese un NSS.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                // Llamada a la capa de negocios
-                var datosEmpleado = negocios.ObtenerEmpleadoPorNSS(nss);
-
-                // Mostrar datos en los TextBox de Material Skin
-                if (datosEmpleado.estado != "I")
-                {
-                    MessageBox.Show("Empleado dado de alta.","Advertencia",MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                txtNombreCompleto.Text = datosEmpleado.nombreCompleto;
-                txtTelefono.Text = datosEmpleado.telefono;
-                txtDomicilio.Text = datosEmpleado.domicilio;
-
-                txtNoNomina.Enabled = true;
-                cmbPuestos.Enabled = true;
-                cmbTurno.Enabled = true;
-                txtNssBusqueda.Enabled = false;
-                materialFloatingActionButton2.Enabled = false;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+           
         }
 
         private void materialComboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -197,7 +164,7 @@ namespace CapaPresentacion.Empleados
         {
             txtNssBusqueda.Text = "";
             txtNssBusqueda.Enabled = true;
-            materialFloatingActionButton2.Enabled = true;
+            btnBuscarEmpleadoNSS.Enabled = true;
             txtNombreCompleto.Text = "";
             txtTelefono.Text = "";
             txtDomicilio.Text = "";
@@ -207,6 +174,49 @@ namespace CapaPresentacion.Empleados
             cmbPuestos.Enabled = false;
             cmbTurno.SelectedIndex = 0;
             cmbTurno.Enabled = false;
+        }
+
+        private void btnBuscarEmpleadoNSS_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string nss = txtNssBusqueda.Text.Trim();
+
+                if (string.IsNullOrWhiteSpace(nss))
+                {
+                    MessageBox.Show("Por favor, ingrese un NSS.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Llamada a la capa de negocios
+                var datosEmpleado = negocios.ObtenerEmpleadoPorNSS(nss);
+
+                // Mostrar datos en los TextBox de Material Skin
+                if (datosEmpleado.estado != "I")
+                {
+                    MessageBox.Show("Empleado dado de alta.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                txtNombreCompleto.Text = datosEmpleado.nombreCompleto;
+                txtTelefono.Text = datosEmpleado.telefono;
+                txtDomicilio.Text = datosEmpleado.domicilio;
+
+                txtNoNomina.Enabled = true;
+                cmbPuestos.Enabled = true;
+                cmbTurno.Enabled = true;
+                txtNssBusqueda.Enabled = false;
+                btnBuscarEmpleadoNSS.Enabled = false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
