@@ -14,11 +14,18 @@ namespace CapaPresentacion
     public partial class TextPersonalizado : UserControl
     {
         //Fields
+        //Fields
         private Color borderColor = Color.MediumSlateBlue;
+        private Color borderFocusColor = Color.HotPink;
         private int borderSize = 2;
         private bool underlinedStyle = false;
-        private Color borderFocusColor = Color.HotPink;
         private bool isFocused = false;
+
+        private int borderRadius = 0;
+        private Color placeholderColor = Color.DarkGray;
+        private string placeholderText = "";
+        private bool isPlaceholder = false;
+        private bool isPasswordChar = false;
 
         //Constructor
         public TextPersonalizado()

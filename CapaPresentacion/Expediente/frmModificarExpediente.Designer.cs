@@ -168,9 +168,9 @@
             this.btnNoPatologicos = new System.Windows.Forms.Button();
             this.btnDatosGenerales = new System.Windows.Forms.Button();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.btnGrabarActualizacion = new CapaPresentacion.BotonPersonalizado();
             this.btnActualizar = new CapaPresentacion.BotonPersonalizado();
             this.btnCancelar = new CapaPresentacion.BotonPersonalizado();
+            this.btnGrabarActualizacion = new CapaPresentacion.BotonPersonalizado();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -2676,27 +2676,6 @@
             this.panel34.Size = new System.Drawing.Size(945, 45);
             this.panel34.TabIndex = 14;
             // 
-            // btnGrabarActualizacion
-            // 
-            this.btnGrabarActualizacion.BackColor = System.Drawing.Color.White;
-            this.btnGrabarActualizacion.BackgroundColor = System.Drawing.Color.White;
-            this.btnGrabarActualizacion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarActualizacion.BorderRadius = 20;
-            this.btnGrabarActualizacion.BorderSize = 2;
-            this.btnGrabarActualizacion.FlatAppearance.BorderSize = 0;
-            this.btnGrabarActualizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabarActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabarActualizacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarActualizacion.Location = new System.Drawing.Point(801, 4);
-            this.btnGrabarActualizacion.Name = "btnGrabarActualizacion";
-            this.btnGrabarActualizacion.Size = new System.Drawing.Size(129, 36);
-            this.btnGrabarActualizacion.TabIndex = 13;
-            this.btnGrabarActualizacion.Text = "Grabar";
-            this.btnGrabarActualizacion.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarActualizacion.UseVisualStyleBackColor = false;
-            this.btnGrabarActualizacion.Visible = false;
-            this.btnGrabarActualizacion.Click += new System.EventHandler(this.btnGrabarActualizacion_Click);
-            // 
             // btnActualizar
             // 
             this.btnActualizar.BackColor = System.Drawing.Color.White;
@@ -2738,6 +2717,27 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Visible = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGrabarActualizacion
+            // 
+            this.btnGrabarActualizacion.BackColor = System.Drawing.Color.White;
+            this.btnGrabarActualizacion.BackgroundColor = System.Drawing.Color.White;
+            this.btnGrabarActualizacion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarActualizacion.BorderRadius = 20;
+            this.btnGrabarActualizacion.BorderSize = 2;
+            this.btnGrabarActualizacion.FlatAppearance.BorderSize = 0;
+            this.btnGrabarActualizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabarActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabarActualizacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarActualizacion.Location = new System.Drawing.Point(801, 4);
+            this.btnGrabarActualizacion.Name = "btnGrabarActualizacion";
+            this.btnGrabarActualizacion.Size = new System.Drawing.Size(129, 36);
+            this.btnGrabarActualizacion.TabIndex = 13;
+            this.btnGrabarActualizacion.Text = "Grabar";
+            this.btnGrabarActualizacion.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarActualizacion.UseVisualStyleBackColor = false;
+            this.btnGrabarActualizacion.Visible = false;
+            this.btnGrabarActualizacion.Click += new System.EventHandler(this.btnGrabarActualizacion_Click);
             // 
             // panel2
             // 

@@ -10,12 +10,14 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace CapaPresentacion
 {
     public partial class frmMenu : Form
     {
         private PuestosCN puestosCN = new PuestosCN();
+        private HomeCN homeCN = new HomeCN();
         public frmMenu()
         {
             InitializeComponent();
@@ -33,7 +35,74 @@ namespace CapaPresentacion
             }
 
             panel4.Paint += new PaintEventHandler(panel_Paint);
+            panel12.Paint += new PaintEventHandler(panel_Paint);
+            panel13.Paint += new PaintEventHandler(panel_Paint);
+            panel14.Paint += new PaintEventHandler(panel_Paint);
         }
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+            lblTrabajadores.Text = homeCN.ConcultaNumTrabajadores().Tables["TotalEmpleados"].Rows[0][0].ToString();
+            lblConsultas.Text = homeCN.ObtenerNumConsultas().Tables["TotalConsultas"].Rows[0][0].ToString();
+            lblAccidentes.Text = homeCN.ObtenerNumAccidentes().Tables["TotalAccidentes"].Rows[0][0].ToString();
+            lblIncapacidades.Text = homeCN.ObtenerNumIncapacidades().Tables["TotalIncapacidades"].Rows[0][0].ToString();
+
+            CargarGraficoCausas();
+            LlenarChartTurno();
+        }
+        private void LlenarChartTurno()
+        {
+            DataSet ds = homeCN.ObtenerAccidentesTurno();
+
+            chartTurno.Series.Clear();
+            chartTurno.Series.Add("Turnos");
+
+            chartTurno.Series["Turnos"].ChartType = SeriesChartType.Column; // o Column si prefieres barras
+            chartTurno.Series["Turnos"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in ds.Tables["AccidentesXTurno"].Rows)
+            {
+                string turno = row["turno"].ToString();
+                int total = Convert.ToInt32(row["total_accidentes"]);
+
+                chartTurno.Series["Turnos"].Points.AddXY(turno, total);
+            }
+
+            //chartTurno.Titles.Clear();
+            
+            chartTurno.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartTurno.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartTurno.Legends[0].Enabled = false;  // Desactivar la leyenda por completo
+
+        }
+
+        private void CargarGraficoCausas()
+        {
+            chartCausas.Series.Clear();
+
+            Series series = new Series("Causas más frecuentes");
+            series.ChartType = SeriesChartType.Doughnut;
+
+            // Mostrar el valor numérico (total) en cada rebanada
+            series.Label = "#VAL (#PERCENT{P0})"; // Muestra algo como "5 (25%)"
+            series.LegendText = "#VALX"; // Muestra el nombre de la causa en la leyenda
+
+            DataSet ds = homeCN.ObtenerCausasMasFrecuentes();
+
+            if (ds.Tables["CausasPrincipales"].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables["CausasPrincipales"].Rows)
+                {
+                    string causa = fila["causas"].ToString();
+                    int total = Convert.ToInt32(fila["total"]);
+
+                    series.Points.AddXY(causa, total);
+                }
+            }
+
+            chartCausas.Series.Add(series);
+            chartCausas.Legends[0].Enabled = true;
+        }
+
 
         //Movimiento del Formulario
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -312,5 +381,7 @@ namespace CapaPresentacion
             openChildForm(new Expediente.frmModificarExpediente());
             hideSubMenu();
         }
+
+
     }
 }
