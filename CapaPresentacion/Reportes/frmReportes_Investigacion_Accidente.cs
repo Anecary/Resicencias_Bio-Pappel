@@ -20,6 +20,7 @@ namespace CapaPresentacion.Reportes
         private void frmReportes_Investigacion_Accidente_Load(object sender, EventArgs e)
         {
             this.rvInvestigacionAccidente.RefreshReport();
+            LlenarComboAños();
         }
 
         private void materialComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -236,6 +237,20 @@ namespace CapaPresentacion.Reportes
 
             // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
             rvInvestigacionAccidente.RefreshReport();
+        }
+
+
+        private void LlenarComboAños()
+        {
+            int añoActual = DateTime.Now.Year;
+            cmbAños.Items.Clear();
+
+            for (int i = 0; i < 5; i++)
+            {
+                cmbAños.Items.Add(añoActual - i);
+            }
+
+            cmbAños.SelectedIndex = 0;
         }
     }
 }

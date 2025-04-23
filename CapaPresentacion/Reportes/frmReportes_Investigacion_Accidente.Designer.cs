@@ -59,26 +59,29 @@
             this.pContenedor.Controls.Add(this.panel2);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(0, 0);
+            this.pContenedor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pContenedor.Name = "pContenedor";
-            this.pContenedor.Size = new System.Drawing.Size(945, 666);
+            this.pContenedor.Size = new System.Drawing.Size(1418, 1025);
             this.pContenedor.TabIndex = 0;
             // 
             // pReportViewer
             // 
             this.pReportViewer.Controls.Add(this.rvInvestigacionAccidente);
             this.pReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pReportViewer.Location = new System.Drawing.Point(0, 311);
+            this.pReportViewer.Location = new System.Drawing.Point(0, 478);
+            this.pReportViewer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pReportViewer.Name = "pReportViewer";
-            this.pReportViewer.Size = new System.Drawing.Size(945, 355);
+            this.pReportViewer.Size = new System.Drawing.Size(1418, 547);
             this.pReportViewer.TabIndex = 11;
             // 
             // rvInvestigacionAccidente
             // 
             this.rvInvestigacionAccidente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rvInvestigacionAccidente.Location = new System.Drawing.Point(0, 0);
+            this.rvInvestigacionAccidente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rvInvestigacionAccidente.Name = "rvInvestigacionAccidente";
             this.rvInvestigacionAccidente.ServerReport.BearerToken = null;
-            this.rvInvestigacionAccidente.Size = new System.Drawing.Size(945, 355);
+            this.rvInvestigacionAccidente.Size = new System.Drawing.Size(1418, 547);
             this.rvInvestigacionAccidente.TabIndex = 0;
             // 
             // panel1
@@ -86,9 +89,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.panel1.Controls.Add(this.cmbAños);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 211);
+            this.panel1.Location = new System.Drawing.Point(0, 324);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(945, 100);
+            this.panel1.Size = new System.Drawing.Size(1418, 154);
             this.panel1.TabIndex = 10;
             // 
             // cmbAños
@@ -98,9 +102,10 @@
             this.cmbAños.Items.AddRange(new object[] {
             "2025",
             "2024"});
-            this.cmbAños.Location = new System.Drawing.Point(25, 32);
+            this.cmbAños.Location = new System.Drawing.Point(38, 49);
+            this.cmbAños.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbAños.Name = "cmbAños";
-            this.cmbAños.Size = new System.Drawing.Size(121, 21);
+            this.cmbAños.Size = new System.Drawing.Size(180, 28);
             this.cmbAños.TabIndex = 2;
             // 
             // pCombobox
@@ -108,9 +113,10 @@
             this.pCombobox.Controls.Add(this.label2);
             this.pCombobox.Controls.Add(this.cmbReportes);
             this.pCombobox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pCombobox.Location = new System.Drawing.Point(0, 136);
+            this.pCombobox.Location = new System.Drawing.Point(0, 209);
+            this.pCombobox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pCombobox.Name = "pCombobox";
-            this.pCombobox.Size = new System.Drawing.Size(945, 75);
+            this.pCombobox.Size = new System.Drawing.Size(1418, 115);
             this.pCombobox.TabIndex = 9;
             // 
             // label2
@@ -118,9 +124,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label2.Location = new System.Drawing.Point(217, 24);
+            this.label2.Location = new System.Drawing.Point(326, 37);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 25);
+            this.label2.Size = new System.Drawing.Size(163, 37);
             this.label2.TabIndex = 4;
             this.label2.Text = "Reportes:";
             // 
@@ -150,11 +157,12 @@
             "Accidentes por Condicion",
             "Accidentes por Edad",
             "Accidentes Debido A"});
-            this.cmbReportes.Location = new System.Drawing.Point(325, 13);
+            this.cmbReportes.Location = new System.Drawing.Point(488, 20);
+            this.cmbReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbReportes.MaxDropDownItems = 4;
             this.cmbReportes.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbReportes.Name = "cmbReportes";
-            this.cmbReportes.Size = new System.Drawing.Size(339, 49);
+            this.cmbReportes.Size = new System.Drawing.Size(506, 49);
             this.cmbReportes.StartIndex = 0;
             this.cmbReportes.TabIndex = 0;
             this.cmbReportes.SelectedIndexChanged += new System.EventHandler(this.materialComboBox1_SelectedIndexChanged);
@@ -163,9 +171,10 @@
             // 
             this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
             this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 100);
+            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 154);
+            this.pSeccionesDatos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pSeccionesDatos.Name = "pSeccionesDatos";
-            this.pSeccionesDatos.Size = new System.Drawing.Size(945, 36);
+            this.pSeccionesDatos.Size = new System.Drawing.Size(1418, 55);
             this.pSeccionesDatos.TabIndex = 8;
             // 
             // panel2
@@ -174,8 +183,9 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(945, 100);
+            this.panel2.Size = new System.Drawing.Size(1418, 154);
             this.panel2.TabIndex = 7;
             // 
             // label1
@@ -183,9 +193,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label1.Location = new System.Drawing.Point(300, 31);
+            this.label1.Location = new System.Drawing.Point(450, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(573, 42);
+            this.label1.Size = new System.Drawing.Size(858, 64);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reportes Investigación Accidente";
             // 
@@ -194,19 +205,21 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(253, 100);
+            this.pictureBox2.Size = new System.Drawing.Size(380, 154);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
             // frmReportes_Investigacion_Accidente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 666);
+            this.ClientSize = new System.Drawing.Size(1418, 1025);
             this.Controls.Add(this.pContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmReportes_Investigacion_Accidente";
             this.Text = "frmReportes_Investigacion_Accidente";
             this.Load += new System.EventHandler(this.frmReportes_Investigacion_Accidente_Load);
