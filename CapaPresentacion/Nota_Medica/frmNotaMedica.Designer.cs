@@ -45,7 +45,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtPuesto = new MaterialSkin.Controls.MaterialTextBox();
             this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
             this.txtEdad = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNSS = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtIMSS = new MaterialSkin.Controls.MaterialTextBox();
             this.txtEstadoCivil = new MaterialSkin.Controls.MaterialTextBox();
             this.txtSexo = new MaterialSkin.Controls.MaterialTextBox();
             this.txtNoExpediente = new MaterialSkin.Controls.MaterialTextBox();
@@ -251,7 +251,7 @@ namespace CapaPresentacion.Nota_Medica
             this.panel3.Controls.Add(this.txtPuesto);
             this.panel3.Controls.Add(this.txtTelefono);
             this.panel3.Controls.Add(this.txtEdad);
-            this.panel3.Controls.Add(this.txtNSS);
+            this.panel3.Controls.Add(this.txtIMSS);
             this.panel3.Controls.Add(this.txtEstadoCivil);
             this.panel3.Controls.Add(this.txtSexo);
             this.panel3.Controls.Add(this.txtNoExpediente);
@@ -378,6 +378,7 @@ namespace CapaPresentacion.Nota_Medica
             this.cboxCausaConsulta.Size = new System.Drawing.Size(480, 49);
             this.cboxCausaConsulta.StartIndex = 0;
             this.cboxCausaConsulta.TabIndex = 116;
+            this.cboxCausaConsulta.SelectedIndexChanged += new System.EventHandler(this.cboxCausaConsulta_SelectedIndexChanged);
             // 
             // txtDomicilio
             // 
@@ -508,25 +509,25 @@ namespace CapaPresentacion.Nota_Medica
             this.txtEdad.Text = "";
             this.txtEdad.TrailingIcon = null;
             // 
-            // txtNSS
+            // txtIMSS
             // 
-            this.txtNSS.AnimateReadOnly = false;
-            this.txtNSS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNSS.Depth = 0;
-            this.txtNSS.Enabled = false;
-            this.txtNSS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNSS.Hint = "No. IMSS:";
-            this.txtNSS.LeadingIcon = null;
-            this.txtNSS.Location = new System.Drawing.Point(850, 314);
-            this.txtNSS.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNSS.MaxLength = 50;
-            this.txtNSS.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNSS.Multiline = false;
-            this.txtNSS.Name = "txtNSS";
-            this.txtNSS.Size = new System.Drawing.Size(227, 50);
-            this.txtNSS.TabIndex = 106;
-            this.txtNSS.Text = "";
-            this.txtNSS.TrailingIcon = null;
+            this.txtIMSS.AnimateReadOnly = false;
+            this.txtIMSS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIMSS.Depth = 0;
+            this.txtIMSS.Enabled = false;
+            this.txtIMSS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIMSS.Hint = "No. IMSS:";
+            this.txtIMSS.LeadingIcon = null;
+            this.txtIMSS.Location = new System.Drawing.Point(850, 314);
+            this.txtIMSS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIMSS.MaxLength = 50;
+            this.txtIMSS.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtIMSS.Multiline = false;
+            this.txtIMSS.Name = "txtIMSS";
+            this.txtIMSS.Size = new System.Drawing.Size(227, 50);
+            this.txtIMSS.TabIndex = 106;
+            this.txtIMSS.Text = "";
+            this.txtIMSS.TrailingIcon = null;
             // 
             // txtEstadoCivil
             // 
@@ -3014,7 +3015,7 @@ namespace CapaPresentacion.Nota_Medica
         private MaterialSkin.Controls.MaterialTextBox txtPuesto;
         private MaterialSkin.Controls.MaterialTextBox txtTelefono;
         private MaterialSkin.Controls.MaterialTextBox txtEdad;
-        private MaterialSkin.Controls.MaterialTextBox txtNSS;
+        private MaterialSkin.Controls.MaterialTextBox txtIMSS;
         private MaterialSkin.Controls.MaterialTextBox txtEstadoCivil;
         private MaterialSkin.Controls.MaterialTextBox txtSexo;
         private MaterialSkin.Controls.MaterialTextBox txtNoExpediente;
