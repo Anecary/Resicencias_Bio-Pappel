@@ -44,6 +44,7 @@ namespace CapaPresentacion.Nota_Medica
             panel9.Paint += new PaintEventHandler(Panel1_Paint);
             panel10.Paint += new PaintEventHandler(Panel1_Paint);
             panel12.Paint += new PaintEventHandler(Panel1_Paint);
+            panel6.Paint += new PaintEventHandler(Panel1_Paint);
 
         }
 
@@ -244,7 +245,7 @@ namespace CapaPresentacion.Nota_Medica
                     txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
                     txtSexo.Text = dr["sexo"].ToString();
                     txtEstadoCivil.Text = dr["estado_civil"].ToString();
-                    txtNSS.Text = dr["nss"].ToString();
+                    txtIMSS.Text = dr["nss"].ToString();
                     txtTelefono.Text = dr["telefono"].ToString();
                     txtDomicilio.Text = (dr["domicilio_Calle"] as string ?? "") + " #" +
                         (dr["domicilio_Numero"] as string ?? "") + ", " +
@@ -268,6 +269,80 @@ namespace CapaPresentacion.Nota_Medica
                 txtNumeroNomina.Focus();
             }
         }
+
+        private void LimpiarCampos()
+        {
+            txtNumeroNomina.Clear();
+            txtNoExpediente.Clear();
+            txtNombreEmpleado.Clear();
+            txtIdEmpleado.Clear();
+            txtDomicilio.Clear();
+            txtTelefono.Clear();
+            txtEdad.Clear();
+            txtSexo.Clear();
+            txtPuesto.Clear();
+            txtEstadoCivil.Clear();
+            txtIMSS.Clear();
+            txtFechaIngreso.Clear();
+            cboxProceso.SelectedIndex = 0;
+            cboxCausaConsulta.SelectedIndex = 0;
+            cboxTipoCausa.SelectedIndex = 0;
+            txtObservaciones.Clear();
+            txtDiagnostico.Clear();
+            dtpFechaConsulta.Value = DateTime.Now;
+
+            txtConstitucionFisica.Clear();
+            txtTalla.Clear();
+            txtPeso.Clear();
+            txtIMC.Clear();
+            txtGrado.Clear();
+            txtFC.Clear();
+            txtFR.Clear();
+            txtPulso.Clear();
+            txtTA.Clear();
+            txtTemperatura.Clear();
+            txtCraneo.Clear();
+            txtOjos.Clear();
+            txtOidos.Clear();
+            txtNariz.Clear();   
+            txtBoca.Clear();    
+            txtCuello.Clear();  
+            txtTorax.Clear();
+            txtAbdomen.Clear();
+            txtGenitourinario.Clear();
+            txtMusculoEsqueletico.Clear();
+            txtNeurologico.Clear();
+            txtAlergias.Clear();
+            txtSNerviosoCentral.Clear();
+            txtSCardiovascular.Clear();
+            txtSRespiratorio.Clear();
+            txtSGastrointestinal.Clear();
+            txtSEndocrino.Clear();
+            txtSGenitoUrinario.Clear();
+            txtSMusculoEsqueletico.Clear();
+            txtOrganoSentidos.Clear();
+            txtGinecoObstetrico.Clear();
+            txtGrupoSanguineo.Clear();
+            txtEstudiosLaboratorio.Clear();
+            txtEstudiosRadiologicos.Clear();
+            txtOtros.Clear();
+            txtDiagnosticoExp.Clear();
+            txtHeredoFamiliar.Clear();
+            txtCasa.Clear();
+            txtAlimentacion.Clear();
+            txtAnimales.Clear();
+            txtInmunizaciones.Clear();
+            txtToxicomanias.Clear();
+            txtTrabajosYActAnteriores.Clear();
+            txtDeportesRecreacion.Clear();
+            txtEntornoFamiliar.Clear();
+            txtEscolaridad.Clear();
+
+            rbtnHozpitalizaciones.Checked = false;
+            rbtnCirugias.Checked = false;
+            rbtnTransfusiones.Checked = false;
+        }
+
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
@@ -304,6 +379,7 @@ namespace CapaPresentacion.Nota_Medica
                     {
                         RJMessageBox.Show("Hubo un error al registrar la consulta médica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                LimpiarCampos();
             }
             catch (Exception ex)
             {
