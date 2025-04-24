@@ -605,6 +605,21 @@
   <ItemGroup>
     <None Include="Resources\senal-de-alerta.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-izquierda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Regresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volver1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

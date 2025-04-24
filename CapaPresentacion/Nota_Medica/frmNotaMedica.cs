@@ -185,6 +185,13 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
         {
+            btnAntecedentes.Visible = false;
+            btnNoPatologicos.Visible = false;
+            btnPatologicos.Visible = false;
+            btnExploracionFisica.Visible = false;
+            btnEstudiosParaclinicos.Visible = false;
+            btnNuevaNotaMedica.Visible = false;
+            labelExp.Visible = false;
             MostrarPanel(pDatosGenerales, btnNuevaNotaMedica);
         }
 
@@ -450,13 +457,26 @@ namespace CapaPresentacion.Nota_Medica
                 rbtnHozpitalizaciones.Checked = row["Hospitalizaciones"] != DBNull.Value && Convert.ToInt32(row["Hospitalizaciones"]) == 1;
                 rbtnCirugias.Checked = row["Cirugias"] != DBNull.Value && Convert.ToInt32(row["Cirugias"]) == 1;
                 rbtnTransfusiones.Checked = row["Transfusiones"] != DBNull.Value && Convert.ToInt32(row["Transfusiones"]) == 1;
-                
+
+                btnAntecedentes.Visible = true;
+                btnNoPatologicos.Visible = true;
+                btnPatologicos.Visible = true;
+                btnExploracionFisica.Visible = true;
+                btnEstudiosParaclinicos.Visible = true;
+                btnNuevaNotaMedica.Visible = true;
+                labelExp.Visible = true;
+
                 MostrarPanel(pAntecedentes, btnAntecedentes);
             }
             else
             {
                 RJMessageBox.Show("No se encontró el expediente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnConsultarExpediente_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -223,9 +223,9 @@ namespace CapaPresentacion.Nota_Medica
                     RJMessageBox.Show("No se encontró la nota médica solicitada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (Exception ex)
+            catch 
             {
-                RJMessageBox.Show("Error al cargar la nota médica: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show(" Por favor ingrese la Id de la onsulta para continuar.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
