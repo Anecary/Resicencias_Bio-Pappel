@@ -616,7 +616,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
                     int numnero_accidente = int.Parse(txtNoAccidente.Text);
 
-                    var Llamar_reporte = new Llamar_reporte();
+                    var Llamar_reporte = new Llamar_reporte(0);
                     Llamar_reporte.Show();
 
 

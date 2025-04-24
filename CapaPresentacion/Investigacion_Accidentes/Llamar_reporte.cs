@@ -20,15 +20,19 @@ namespace CapaPresentacion.Investigacion_Accidentes
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["Conection"].ConnectionString;
         int accidenteID;
-        public Llamar_reporte()
+        public Llamar_reporte(int id)
         {
             InitializeComponent();
+            accidenteID = id;
         }
 
         private void Llamar_reporte_Load(object sender, EventArgs e)
         {
             this.reportViewer1.RefreshReport();
-            ObtenerUltimoIdInsertado();
+            if (accidenteID == 0)
+            {
+                ObtenerUltimoIdInsertado();
+            }
             // Obtener los datos de ambas consultas
             DataTable revisiones = obtenerDatosRevision();
             DataTable empleados = obtenerDatosEmpleado(accidenteID);

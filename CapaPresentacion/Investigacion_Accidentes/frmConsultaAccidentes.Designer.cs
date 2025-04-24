@@ -313,6 +313,7 @@
             this.btnImprimirReporte.TextColor = System.Drawing.Color.White;
             this.btnImprimirReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnImprimirReporte.UseVisualStyleBackColor = false;
+            this.btnImprimirReporte.Click += new System.EventHandler(this.btnImprimirReporte_Click);
             // 
             // panel1
             // 
@@ -846,7 +847,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 6350);
+            this.button2.Location = new System.Drawing.Point(728, 6542);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(0, 50);
             this.button2.TabIndex = 91;

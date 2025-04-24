@@ -486,5 +486,13 @@ namespace CapaPresentacion.Investigacion_Accidentes
         {
 
         }
+
+        private void btnImprimirReporte_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(cboxFechasAccidentes.SelectedValue.ToString());
+
+            var Llamar_reporte = new Llamar_reporte(id);
+            Llamar_reporte.Show();
+        }
     }
 }
