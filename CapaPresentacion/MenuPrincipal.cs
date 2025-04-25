@@ -48,6 +48,7 @@ namespace CapaPresentacion
 
             CargarGraficoCausas();
             LlenarChartTurno();
+            LlenarChartSecciones();
         }
         private void LlenarChartTurno()
         {
@@ -73,6 +74,28 @@ namespace CapaPresentacion
             chartTurno.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
             chartTurno.Legends[0].Enabled = false;  // Desactivar la leyenda por completo
 
+        }
+        private void LlenarChartSecciones()
+        {
+            DataSet ds = homeCN.ObtenerSeccionesConIncidentes();
+
+            chartSecciones.Series.Clear();
+            chartSecciones.Series.Add("Secciones");
+
+            chartSecciones.Series["Secciones"].ChartType = SeriesChartType.Column;
+            chartSecciones.Series["Secciones"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in ds.Tables["SeccionesAccidentes"].Rows)
+            {
+                string seccion = row["seccion"].ToString();
+                int total = Convert.ToInt32(row["total"]);
+
+                chartSecciones.Series["Secciones"].Points.AddXY(seccion, total);
+            }
+
+            chartSecciones.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartSecciones.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartSecciones.Legends[0].Enabled = false; // O puedes cambiarlo a true si quieres mostrar "Secciones"
         }
 
         private void CargarGraficoCausas()

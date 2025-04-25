@@ -36,5 +36,9 @@ namespace CapaNegocios
         { 
             return homeDAO.ObtenerAccidentesTurno();
         }
+        public DataSet ObtenerSeccionesConIncidentes()
+        {
+            return homeDAO.ObtenerSeccionesConIncidentes();
         }
+    }
 }

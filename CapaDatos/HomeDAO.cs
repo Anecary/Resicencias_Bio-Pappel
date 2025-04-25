@@ -78,5 +78,15 @@ namespace CapaDatos
                 return data;
             }
         }
+        public DataSet ObtenerSeccionesConIncidentes()
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("call ObtenerTotalSecciones", conn);
+                adapter.Fill(data, "SeccionesAccidentes");
+                return data;
+            }
+        }
     }
 }
