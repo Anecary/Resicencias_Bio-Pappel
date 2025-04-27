@@ -68,7 +68,7 @@ namespace CapaPresentacion.Nota_Medica
         {
             Button btn = sender as Button;
             pSeccionesDatos.Controls.Add(p);
-            p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
+            p.BackColor = Color.FromArgb(247, 167, 62); // Color para el panel
             p.Size = new Size(187, 5); // Tamaño del panel
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
@@ -118,22 +118,22 @@ namespace CapaPresentacion.Nota_Medica
 
                     if (ds != null && ds.Tables.Count > 0 && ds.Tables["ConsultaNotaGeneral"].Rows.Count > 0)
                     {
-                        tgvConsultaGeneral.DataSource = ds.Tables["ConsultaNotaGeneral"];
+                        dgvConsultaGeneral.DataSource = ds.Tables["ConsultaNotaGeneral"];
 
                         // (Opcional) Ajustar nombres de columna para que se vean más amigables
-                        tgvConsultaGeneral.Columns["idConsulta"].HeaderText = "ID Consulta";
-                        tgvConsultaGeneral.Columns["numExpediente"].HeaderText = "No. Expediente";
-                        tgvConsultaGeneral.Columns["fecha"].HeaderText = "Fecha";
-                        tgvConsultaGeneral.Columns["proceso"].HeaderText = "Proceso";
-                        tgvConsultaGeneral.Columns["causas"].HeaderText = "Causas";
+                        dgvConsultaGeneral.Columns["idConsulta"].HeaderText = "ID Consulta";
+                        dgvConsultaGeneral.Columns["numExpediente"].HeaderText = "No. Expediente";
+                        dgvConsultaGeneral.Columns["fecha"].HeaderText = "Fecha";
+                        dgvConsultaGeneral.Columns["proceso"].HeaderText = "Proceso";
+                        dgvConsultaGeneral.Columns["causas"].HeaderText = "Causas";
 
                         // (Opcional) Ajustar el tamaño automático de las columnas
-                        tgvConsultaGeneral.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                        dgvConsultaGeneral.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     }
                     else
                     {
                         RJMessageBox.Show("No se encontraron notas médicas para este expediente.", "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        tgvConsultaGeneral.DataSource = null;
+                        dgvConsultaGeneral.DataSource = null;
                     }
                 }
                 catch (Exception ex)
@@ -238,6 +238,24 @@ namespace CapaPresentacion.Nota_Medica
         {
             MostrarPanel(pConsultaNotaIndividual, btnPanelIndividual);
         }
+
+        private void dgvConsultaGeneral_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvConsultaGeneral.Rows[e.RowIndex];
+
+                // Obtener el idConsulta de la fila seleccionada
+                txtIdConsulta.Text = Convert.ToString(fila.Cells["idConsulta"].Value);
+
+                // Mostrar al panel de la consulta individual
+                MostrarPanel(pConsultaNotaIndividual, btnPanelIndividual);
+
+                // Buscar la nota médica
+                btnBuscarNotaMedica_Click(sender, e);
+            }
+        }
+
     }
 }
 

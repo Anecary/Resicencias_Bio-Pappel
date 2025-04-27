@@ -128,7 +128,7 @@ namespace CapaPresentacion.Nota_Medica
         {
             Button btn = sender as Button;
             pSeccionesDatos.Controls.Add(p);
-            p.BackColor = Color.FromArgb(91, 194, 255); // Color para el panel
+            p.BackColor = Color.FromArgb(247, 167, 62); // Color para el panel
             p.Size = new Size(187, 5); // Tamaño del panel
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
@@ -394,7 +394,7 @@ namespace CapaPresentacion.Nota_Medica
             }
         }
 
-        private void btnBuscarExpediente_Click(object sender, EventArgs e)
+        private void btnConsultarExpediente_Click(object sender, EventArgs e)
         {
             string numExpediente = txtNoExpediente.Text.Trim();
             if (string.IsNullOrEmpty(numExpediente))
@@ -472,11 +472,6 @@ namespace CapaPresentacion.Nota_Medica
             {
                 RJMessageBox.Show("No se encontró el expediente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-        }
-
-        private void btnConsultarExpediente_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
