@@ -20,107 +20,6 @@ namespace CapaDatos
         private MySqlDataAdapter adapter;
         private MySqlCommand comando;
 
-        public int InsertarAccidente2(int noAccidente, string condicion, DateTime fechaRegistro, int idEmpleado, string numNomina, string puesto, string antiguedad, string edad, string turno, Boolean tiempoExtra, string totalHrsExtras, DateTime DiaDescansoPrevio, string parteCuerpoAfectada, string trabajoDesempeñado, string tipoLesion, DateTime fecha_hora_Accidente,
-           Boolean lesion30Dias, Boolean lesion12Meses, string proceso, int idSeccionA, string lugarAccidente, string causanteLesion, string equipoProteccionUsado, string equipoProteccionNecesario, string causaAccidente, string descripcionAccidente, Boolean realizoTrabajoAntes, Boolean trabajoHabitual, Boolean trabajoProgramado, Boolean trabajoNecesario, Boolean trabajoUrgente, Boolean danosMateriales, string equipoDanado, string sustituiblePor, int idSeccionB,
-           Boolean existenITRs, Boolean equipoAdecuado, Boolean conociaTrabajo, Boolean existiaSupervicion, string riesgosJson, string actosInsegurosJson, string condicionesInsegurasJson,
-           string empleadosConocimientoJson, string empleadosInvolucradosJson, Boolean continuaTrabajando, Boolean enviadoDomicilio, Boolean enviadoAtencionMedica, string otro, string diagnosticoFinal, string tratamiento, string incapacidad,
-           string accionesCorrectivasPropuestas, string quienCorrectivasPropuesta, string cuandoCorrectivasPropuestas, string accionesPreventivasPropuestas, string quienPreventivoPropuesto, string cuandoPreventivasPropuestas, string seguimiento, DateTime fecha_Hora_Seguimiento, int empleadoSeguimiento, DateTime fecha_Hora_recepcion,
-            string testigosJson)
-        {
-            try
-            {
-                conn = objConexion.Conecta();
-                MySqlCommand cmd = new MySqlCommand("InsertarInvestigacionAccidente", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                //Insercion de Datos Generales
-                cmd.Parameters.AddWithValue("@p_NoAccidente", noAccidente);
-                cmd.Parameters.AddWithValue("@p_Condicion", condicion);
-                cmd.Parameters.AddWithValue("@p_FechaRegistro", fechaRegistro);
-                cmd.Parameters.AddWithValue("@p_idEmpleado", idEmpleado);
-                cmd.Parameters.AddWithValue("@p_numNomina", numNomina);
-                cmd.Parameters.AddWithValue("@p_Puesto", puesto);
-                cmd.Parameters.AddWithValue("@p_antiguedad", antiguedad);
-                cmd.Parameters.AddWithValue("@p_Edad", edad);
-                cmd.Parameters.AddWithValue("@p_Turno", turno);
-                cmd.Parameters.AddWithValue("@p_TiempoExtra", tiempoExtra);
-                cmd.Parameters.AddWithValue("@p_TotalHrsExtras", totalHrsExtras);
-                cmd.Parameters.AddWithValue("@p_DiaDescansoPrevio", DiaDescansoPrevio);
-                cmd.Parameters.AddWithValue("@p_ParteCuerpoAfectada", parteCuerpoAfectada);
-                cmd.Parameters.AddWithValue("@p_TrabajoDesempeñado", trabajoDesempeñado);
-                cmd.Parameters.AddWithValue("@p_TipoLesion", tipoLesion);
-                cmd.Parameters.AddWithValue("@p_fecha_Hora_Accidente", fecha_hora_Accidente);
-                cmd.Parameters.AddWithValue("@p_TestigosJson", testigosJson);
-
-                //Insercion de Detalles Accidente 
-                cmd.Parameters.AddWithValue("@p_accidentes_previos_30_dias", lesion30Dias);
-                cmd.Parameters.AddWithValue("@p_accidentes_previos_12_meses", lesion12Meses);
-                cmd.Parameters.AddWithValue("@p_proceso", proceso);
-                cmd.Parameters.AddWithValue("@p_idSeccionA", idSeccionA);
-                cmd.Parameters.AddWithValue("@p_lugar_accidente", lugarAccidente);
-                cmd.Parameters.AddWithValue("@p_causa_Lesion", causanteLesion);
-                cmd.Parameters.AddWithValue("@p_equipo_Proteccion_usado", equipoProteccionUsado);
-                cmd.Parameters.AddWithValue("@p_equipo_Proteccion_Necesario", equipoProteccionNecesario);
-                cmd.Parameters.AddWithValue("@p_causas_basicas_accidente", causaAccidente);
-                cmd.Parameters.AddWithValue("@p_descripcion_accidente", descripcionAccidente);
-                cmd.Parameters.AddWithValue("@p_trabajo_Realizado_Antes", realizoTrabajoAntes);
-                cmd.Parameters.AddWithValue("@p_trabajo_Habitual", trabajoHabitual);
-                cmd.Parameters.AddWithValue("@p_trabajo_Programado", trabajoProgramado);
-                cmd.Parameters.AddWithValue("@p_trabajo_Necesario", trabajoNecesario);
-                cmd.Parameters.AddWithValue("@p_trabajo_Urgente", trabajoUrgente);
-                cmd.Parameters.AddWithValue("@p_danosMateriales", danosMateriales);
-                cmd.Parameters.AddWithValue("@p_pieza_equipo_danada", equipoDanado);
-                cmd.Parameters.AddWithValue("@p_sustituiblePor", sustituiblePor);
-                cmd.Parameters.AddWithValue("@p_idSeccionB", idSeccionB);
-
-                //Factores de Seguridad
-                cmd.Parameters.AddWithValue("@p_ITRS_Trabajo", existenITRs);
-                cmd.Parameters.AddWithValue("@p_herramienta_equipo_adecuado", equipoAdecuado);
-                cmd.Parameters.AddWithValue("@p_ubicacion_conocida", conociaTrabajo);
-                cmd.Parameters.AddWithValue("@p_supervision", existiaSupervicion);
-                cmd.Parameters.AddWithValue("@p_riesgosJson", riesgosJson);
-                cmd.Parameters.AddWithValue("@p_actosInsegurosJson", actosInsegurosJson);
-                cmd.Parameters.AddWithValue("@p_condicionesInsegurasJson", condicionesInsegurasJson);
-
-                //Seguimiento del Caso
-                cmd.Parameters.AddWithValue("@p_empleadosConocimientoJson", empleadosConocimientoJson);
-                cmd.Parameters.AddWithValue("@p_empleadosInvolucradosJson", empleadosInvolucradosJson);
-                cmd.Parameters.AddWithValue("@p_continua_trabajando", continuaTrabajando);
-                cmd.Parameters.AddWithValue("@p_enviado_Domicilio", enviadoDomicilio);
-                cmd.Parameters.AddWithValue("@p_atencion_Medica", enviadoAtencionMedica);
-                cmd.Parameters.AddWithValue("@p_otro_diagnostico", otro);
-                cmd.Parameters.AddWithValue("@p_diagnostico_final", diagnosticoFinal);
-                cmd.Parameters.AddWithValue("@p_tratamiento", tratamiento);
-                cmd.Parameters.AddWithValue("@p_incapacidad", incapacidad);
-
-
-                //Control de Acciones
-                cmd.Parameters.AddWithValue("@p_acciones_correctivas_prop", accionesCorrectivasPropuestas);
-                cmd.Parameters.AddWithValue("@p_quien_accionesC", quienCorrectivasPropuesta);
-                cmd.Parameters.AddWithValue("@p_cuando_accionesC", cuandoCorrectivasPropuestas);
-                cmd.Parameters.AddWithValue("@p_acciones_preventivas_prop", accionesPreventivasPropuestas);
-                cmd.Parameters.AddWithValue("@p_quien_accionesP", quienPreventivoPropuesto);
-                cmd.Parameters.AddWithValue("@p_cuando_accionesP", cuandoPreventivasPropuestas);
-                cmd.Parameters.AddWithValue("@p_seguimiento", seguimiento);
-                cmd.Parameters.AddWithValue("@p_fecha_hora_cierre_acc_seg", fecha_Hora_Seguimiento);
-                cmd.Parameters.AddWithValue("@p_idEmpleadoProcesoSST", empleadoSeguimiento);
-                cmd.Parameters.AddWithValue("@p_fecha_Recepcion_Documento", fecha_Hora_recepcion);
-
-                conn.Open();
-                int filasAfectadas = cmd.ExecuteNonQuery();
-
-                return filasAfectadas;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("JAJAJAJAJJAJAJAJAJAJAJJAJAJAJAJAJJA");
-                Console.WriteLine(ex.ToString());
-                return -1;
-            }
-            finally
-            {
-                conn.Close();
-            }
-        }
         public int InsertarAccidente(AccidentesCE accidente)
         {
             try
@@ -141,6 +40,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_TiempoExtra", accidente.TiempoExtra);
                 cmd.Parameters.AddWithValue("@p_TotalHrsExtras", accidente.TotalHrsExtras);
                 cmd.Parameters.AddWithValue("@p_DiaDescansoPrevio", accidente.DiaDescansoPrevio);
+                cmd.Parameters.AddWithValue("@p_DebidoA", accidente.DebidoA);
                 cmd.Parameters.AddWithValue("@p_ParteCuerpoAfectada", accidente.ParteCuerpoAfectada);
                 cmd.Parameters.AddWithValue("@p_TrabajoDesempeñado", accidente.TrabajoDesempenado);
                 cmd.Parameters.AddWithValue("@p_TipoLesion", accidente.TipoLesion);

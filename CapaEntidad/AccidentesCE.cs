@@ -20,6 +20,7 @@ namespace CapaEntidad
         public bool TiempoExtra { get; set; }
         public string TotalHrsExtras { get; set; } 
         public DateTime DiaDescansoPrevio { get; set; }
+        public string DebidoA { get; set; }
         public string ParteCuerpoAfectada { get; set; }
         public string TrabajoDesempenado { get; set; }
         public string TipoLesion { get; set; }

@@ -449,6 +449,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             tiempoExtra = rbtnHrsExtrasSi.Checked ? true : false;
             string totalHrsExtras = txtTotalhrs.Text;
             DateTime DiaDescansoPrevio = dtpDiaDescanso.Value;
+            string debidoA = cboxDecidoA.Text;
             string parteCuerpoAfectada = txtParteCuerpoAfectada.Text;
             string trabajoDesempenado = txtTrabajoDesempeñado.Text;
             string tipoLesion = txtTipoLesion.Text;
@@ -557,6 +558,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     TiempoExtra = tiempoExtra,
                     TotalHrsExtras = totalHrsExtras,
                     DiaDescansoPrevio = DiaDescansoPrevio,
+                    DebidoA = debidoA,
                     ParteCuerpoAfectada = parteCuerpoAfectada,
                     TrabajoDesempenado = trabajoDesempenado,
                     TipoLesion = tipoLesion,

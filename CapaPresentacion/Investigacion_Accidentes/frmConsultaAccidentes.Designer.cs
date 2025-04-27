@@ -213,6 +213,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtDebidoA = new MaterialSkin.Controls.MaterialTextBox();
             this.pContenedorAccidentes.SuspendLayout();
             this.pContenedorAcc.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
@@ -434,6 +435,7 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel14.Controls.Add(this.txtDebidoA);
             this.panel14.Controls.Add(this.label65);
             this.panel14.Controls.Add(this.label64);
             this.panel14.Controls.Add(this.label63);
@@ -847,7 +849,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 6542);
+            this.button2.Location = new System.Drawing.Point(728, 6734);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(0, 50);
             this.button2.TabIndex = 91;
@@ -2937,6 +2939,25 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // txtDebidoA
+            // 
+            this.txtDebidoA.AnimateReadOnly = false;
+            this.txtDebidoA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDebidoA.Depth = 0;
+            this.txtDebidoA.Enabled = false;
+            this.txtDebidoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDebidoA.Hint = "Debido a: ";
+            this.txtDebidoA.LeadingIcon = null;
+            this.txtDebidoA.Location = new System.Drawing.Point(611, 134);
+            this.txtDebidoA.MaxLength = 18;
+            this.txtDebidoA.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtDebidoA.Multiline = false;
+            this.txtDebidoA.Name = "txtDebidoA";
+            this.txtDebidoA.Size = new System.Drawing.Size(292, 50);
+            this.txtDebidoA.TabIndex = 130;
+            this.txtDebidoA.Text = "";
+            this.txtDebidoA.TrailingIcon = null;
+            // 
             // frmConsultaAccidentes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3173,5 +3194,6 @@
         private MaterialSkin.Controls.MaterialTextBox txtCausaAccidente;
         private BotonPersonalizado btnBuscarEmpleado;
         private BotonPersonalizado btnImprimirReporte;
+        private MaterialSkin.Controls.MaterialTextBox txtDebidoA;
     }
 }

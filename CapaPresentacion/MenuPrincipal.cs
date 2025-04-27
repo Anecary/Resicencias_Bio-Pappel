@@ -41,14 +41,17 @@ namespace CapaPresentacion
         }
         private void frmMenu_Load(object sender, EventArgs e)
         {
+            cargarDashboard();
+            CargarGraficoCausas();
+            LlenarChartTurno();
+            LlenarChartSecciones();
+        }
+        private void cargarDashboard()
+        {
             lblTrabajadores.Text = homeCN.ConcultaNumTrabajadores().Tables["TotalEmpleados"].Rows[0][0].ToString();
             lblConsultas.Text = homeCN.ObtenerNumConsultas().Tables["TotalConsultas"].Rows[0][0].ToString();
             lblAccidentes.Text = homeCN.ObtenerNumAccidentes().Tables["TotalAccidentes"].Rows[0][0].ToString();
             lblIncapacidades.Text = homeCN.ObtenerNumIncapacidades().Tables["TotalIncapacidades"].Rows[0][0].ToString();
-
-            CargarGraficoCausas();
-            LlenarChartTurno();
-            LlenarChartSecciones();
         }
         private void LlenarChartTurno()
         {
@@ -163,6 +166,10 @@ namespace CapaPresentacion
                 activeForm.Close();
                 activeForm = null; 
             }
+            cargarDashboard();
+            CargarGraficoCausas();
+            LlenarChartTurno();
+            LlenarChartSecciones();
             hideSubMenu();
             SetInitialView();
         }
