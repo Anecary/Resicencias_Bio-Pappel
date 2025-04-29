@@ -20,6 +20,7 @@ namespace CapaPresentacion.Nota_Medica
         private Panel p = new Panel();
         ConsultaMedicaCN consultaMedicaCN = new ConsultaMedicaCN(); 
         EmpleadosCN empleadosCN = new EmpleadosCN();
+        ExpedientesCN expedientesCN = new ExpedientesCN();
 
         // Array para guardar las idTipoCausa
         List<int> idTipoCausaList = new List<int>();
@@ -133,6 +134,15 @@ namespace CapaPresentacion.Nota_Medica
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
 
+        private void btnMouseEnterPanel(Object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            pSeccionesDatos.Controls.Add(p);
+            p.BackColor = Color.FromArgb(247, 167, 62); // Color para el panel
+            p.Size = new Size(248, 5); // Tamaño del panel
+            p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
+        }
+
         // Método para eliminar el panel cuando el mouse sale del área del botón
         private void btnMouseLeave(Object sender, EventArgs e)
         {
@@ -151,6 +161,7 @@ namespace CapaPresentacion.Nota_Medica
 
             // Ocultar todos los paneles y mostrar el deseado
             pDatosGenerales.Visible = false;
+            pDatosGeneralesSin.Visible = false;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
@@ -163,9 +174,20 @@ namespace CapaPresentacion.Nota_Medica
 
         private void frmNotaMedica_Load(object sender, EventArgs e)
         {
+            cboxNumExpediente2.OnSelectedIndexChanged -= cboxNumExpediente2_OnSelectedIndexChanged;
+            cboxNumExpediente2.DataSource = expedientesCN.ConcultaNumExpedientes().Tables["numExpedientes"];
+            cboxNumExpediente2.DisplayMember = "Num_Expediente";
+            cboxNumExpediente2.ValueMember = "Num_Expediente";
+            if (cboxNumExpediente2.Items.Count > 0)
+            {
+                cboxNumExpediente2.SelectedIndex = 0;
+            }
+            cboxNumExpediente2.OnSelectedIndexChanged += cboxNumExpediente2_OnSelectedIndexChanged;
+
             CargarCausasConsulta();
 
             pDatosGenerales.Visible = true;
+            pDatosGeneralesSin.Visible = false;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
@@ -183,16 +205,18 @@ namespace CapaPresentacion.Nota_Medica
             MostrarPanel(pEstudiosParaclinicos, btnEstudiosParaclinicos);
         }
 
-        private void btnNuevaNotaMedica_Click(object sender, EventArgs e)
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
+            btnPanelNotaSinExp.Visible = true;
+            btnPanelNotaConExp.Visible = true;
             btnAntecedentes.Visible = false;
             btnNoPatologicos.Visible = false;
             btnPatologicos.Visible = false;
             btnExploracionFisica.Visible = false;
             btnEstudiosParaclinicos.Visible = false;
-            btnNuevaNotaMedica.Visible = false;
+            btnRegresar.Visible = false;
             labelExp.Visible = false;
-            MostrarPanel(pDatosGenerales, btnNuevaNotaMedica);
+            MostrarPanel(pDatosGenerales, btnRegresar);
         }
 
         private void btnNoPatologicos_Click(object sender, EventArgs e)
@@ -210,6 +234,16 @@ namespace CapaPresentacion.Nota_Medica
             MostrarPanel(pExploracionFisica, btnExploracionFisica);
         }
 
+        private void btnPanelNotaConExp_Click(object sender, EventArgs e)
+        {
+            MostrarPanel(pDatosGenerales, btnPanelNotaConExp);
+        }
+
+        private void btnPanelNotaSinExp_Click(object sender, EventArgs e)
+        {
+            MostrarPanel(pDatosGeneralesSin, btnPanelNotaSinExp);
+        }
+
         private void cboxCausaConsulta_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboxCausaConsulta.SelectedValue != null)
@@ -219,68 +253,10 @@ namespace CapaPresentacion.Nota_Medica
             }
         }
 
-        static string ObtenerNomenclatura(string nombre)
-        {
-            return string.Concat(nombre.Split(' ').Select(palabra => palabra[0]));
-        }
-
-        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(txtNumeroNomina.Text))
-            {
-                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
-
-                if (t.Rows.Count > 0)
-                {
-                    DataRow dr = t.Rows[0];
-
-                    txtNombreEmpleado.Text =
-                        (dr["nombre"] as string ?? "") + " " +
-                        (dr["apellido_paterno"] as string ?? "") + " " +
-                        (dr["apellido_materno"] as string ?? "");
-
-                    txtIdEmpleado.Text = dr["idEmpleado"].ToString();
-
-                    DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
-                    DateTime fechaIngresoAlPuesto = dr["fecha_ingreso_puesto"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_ingreso_puesto"]) : DateTime.MinValue;
-                    DateTime fechaActual = DateTime.Now;
-
-                    int edad = 0;
-                    edad = fechaNacimiento != DateTime.MinValue
-                        ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(edad) ? 1 : 0)
-                        : 0;
-                    txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
-                    txtSexo.Text = dr["sexo"].ToString();
-                    txtEstadoCivil.Text = dr["estado_civil"].ToString();
-                    txtIMSS.Text = dr["nss"].ToString();
-                    txtTelefono.Text = dr["telefono"].ToString();
-                    txtDomicilio.Text = (dr["domicilio_Calle"] as string ?? "") + " #" +
-                        (dr["domicilio_Numero"] as string ?? "") + ", " +
-                        (dr["domicilio_Colonia"] as string ?? "") + ", " +
-                        (dr["domicilio_Ciudad"] as string ?? "") + ", " +
-                        (dr["domicilio_Estado"] as string ?? "");
-                    txtPuesto.Text = dr["puesto"] as string ?? "N/A";
-                    txtFechaIngreso.Text = fechaIngresoAlPuesto.ToString("dd-MMMM-yyyy");
-                    string nombre = txtNombreEmpleado.Text;
-                    string nomenclarura = ObtenerNomenclatura(nombre);
-                    txtNoExpediente.Text = nomenclarura + "-" + txtNumeroNomina.Text;
-                }
-                else
-                {
-                    RJMessageBox.Show(" Número de nómina no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                RJMessageBox.Show(" Por favor ingrese un Número de Nómina para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtNumeroNomina.Focus();
-            }
-        }
-
         private void LimpiarCampos()
         {
             txtNumeroNomina.Clear();
-            txtNoExpediente.Clear();
+            cboxNumExpediente2.SelectedIndex = 0;
             txtNombreEmpleado.Clear();
             txtIdEmpleado.Clear();
             txtDomicilio.Clear();
@@ -289,7 +265,7 @@ namespace CapaPresentacion.Nota_Medica
             txtSexo.Clear();
             txtPuesto.Clear();
             txtEstadoCivil.Clear();
-            txtIMSS.Clear();
+            txtNSS.Clear();
             txtFechaIngreso.Clear();
             cboxProceso.SelectedIndex = 0;
             cboxCausaConsulta.SelectedIndex = 0;
@@ -356,7 +332,7 @@ namespace CapaPresentacion.Nota_Medica
             try
             {
                 // Validar si los campos no están vacíos (agrega validaciones previas)
-                if (string.IsNullOrEmpty(txtNoExpediente.Text) || string.IsNullOrEmpty(txtObservaciones.Text) || string.IsNullOrEmpty(txtDiagnostico.Text) || string.IsNullOrEmpty(cboxProceso.Text) || cboxTipoCausa.SelectedIndex == -1)
+                if (string.IsNullOrEmpty(cboxNumExpediente2.Texts) || string.IsNullOrEmpty(txtObservaciones.Text) || string.IsNullOrEmpty(txtDiagnostico.Text) || string.IsNullOrEmpty(cboxProceso.Text) || cboxTipoCausa.SelectedIndex == -1)
                 {
                     RJMessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -368,7 +344,7 @@ namespace CapaPresentacion.Nota_Medica
                 // Crear la entidad con los valores que vas a insertar
                 ConsultaMedica consulta = new ConsultaMedica
                 {
-                    NumExpediente = txtNoExpediente.Text,
+                    NumExpediente = cboxNumExpediente2.SelectedValue.ToString(),
                     Fecha = dtpFechaConsulta.Value,
                     Observaciones = txtObservaciones.Text,
                     Diagnostico = txtDiagnostico.Text,
@@ -396,7 +372,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnConsultarExpediente_Click(object sender, EventArgs e)
         {
-            string numExpediente = txtNoExpediente.Text.Trim();
+            string numExpediente = cboxNumExpediente2.SelectedValue.ToString();
             if (string.IsNullOrEmpty(numExpediente))
             {
                 RJMessageBox.Show("Por favor, ingrese un número de expediente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -458,12 +434,14 @@ namespace CapaPresentacion.Nota_Medica
                 rbtnCirugias.Checked = row["Cirugias"] != DBNull.Value && Convert.ToInt32(row["Cirugias"]) == 1;
                 rbtnTransfusiones.Checked = row["Transfusiones"] != DBNull.Value && Convert.ToInt32(row["Transfusiones"]) == 1;
 
+                btnPanelNotaSinExp.Visible = false;
+                btnPanelNotaConExp.Visible = false;
                 btnAntecedentes.Visible = true;
                 btnNoPatologicos.Visible = true;
                 btnPatologicos.Visible = true;
                 btnExploracionFisica.Visible = true;
                 btnEstudiosParaclinicos.Visible = true;
-                btnNuevaNotaMedica.Visible = true;
+                btnRegresar.Visible = true;
                 labelExp.Visible = true;
 
                 MostrarPanel(pAntecedentes, btnAntecedentes);
@@ -472,6 +450,114 @@ namespace CapaPresentacion.Nota_Medica
             {
                 RJMessageBox.Show("No se encontró el expediente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void cboxNumExpediente2_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable t = expedientesCN.consultaExpediente(cboxNumExpediente2.SelectedValue.ToString()).Tables["ConsultaNumExpediente"];
+
+            if (t.Rows.Count > 0)
+            {
+                DataRow dr = t.Rows[0];
+
+                // Función auxiliar para evitar la repetición de DBNull
+                string GetStringValue(object value) => value != DBNull.Value ? value.ToString() : "";
+
+                txtNombreEmpleado.Text = $"{GetStringValue(dr["nombre"])} {GetStringValue(dr["apellido_paterno"])} {GetStringValue(dr["apellido_materno"])}";
+                txtIdEmpleado.Text = GetStringValue(dr["idEmpleado"]);
+                txtNumeroNomina.Text = GetStringValue(dr["NumNomina"]);
+
+                DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
+                DateTime fechaIngresoAlPuesto = dr["fecha_ingreso_puesto"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_ingreso_puesto"]) : DateTime.MinValue;
+                DateTime fechaActual = DateTime.Now;
+
+                int edad = (fechaNacimiento != DateTime.MinValue) ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(fechaActual.Year - fechaNacimiento.Year) ? 1 : 0) : 0;
+                txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
+
+                // Asignar los valores de texto
+                txtSexo.Text = GetStringValue(dr["sexo"]);
+                txtEstadoCivil.Text = GetStringValue(dr["estado_civil"]);
+                txtNSS.Text = GetStringValue(dr["nss"]);
+                txtTelefono.Text = GetStringValue(dr["telefono"]);
+                txtDomicilio.Text = (dr["domicilio_Calle"] as string ?? "") + " #" +
+                     (dr["domicilio_Numero"] as string ?? "") + ", " +
+                     (dr["domicilio_Colonia"] as string ?? "") + ", " +
+                     (dr["domicilio_Ciudad"] as string ?? "") + ", " +
+                     (dr["domicilio_Estado"] as string ?? "");
+                txtFechaIngreso.Text = fechaIngresoAlPuesto != DateTime.MinValue ? fechaIngresoAlPuesto.ToString("dd-MMMM-yyyy") : "N/A";
+                txtPuesto.Text = GetStringValue(dr["puesto"]);
+
+                // Antecedentes y otros campos
+                txtHeredoFamiliar.Text = GetStringValue(dr["Antecedentes_Heredofamiliares"]);
+                txtDiagnosticoExp.Text = GetStringValue(dr["Diagnostico_inicial"]);
+                txtCasa.Text = GetStringValue(dr["Casa"]);
+                txtAlimentacion.Text = GetStringValue(dr["Alimentacion"]);
+                txtAnimales.Text = GetStringValue(dr["Animales"]);
+                txtInmunizaciones.Text = GetStringValue(dr["Inmunizaciones"]);
+                txtToxicomanias.Text = GetStringValue(dr["Toxicomanias"]);
+                txtTrabajosYActAnteriores.Text = GetStringValue(dr["Trabajo_actividades_anteriores"]);
+                txtDeportesRecreacion.Text = GetStringValue(dr["Deportes"]);
+                txtEntornoFamiliar.Text = GetStringValue(dr["Entorno_Familiar"]);
+                txtEscolaridad.Text = GetStringValue(dr["Escolaridad"]);
+
+                // Checkboxes
+                rbtnHozpitalizaciones.Checked = dr["Hospitalizaciones"] != DBNull.Value && Convert.ToBoolean(dr["Hospitalizaciones"]);
+                rbtnCirugias.Checked = dr["Cirugias"] != DBNull.Value && Convert.ToBoolean(dr["Cirugias"]);
+                rbtnTransfusiones.Checked = dr["Transfusiones"] != DBNull.Value && Convert.ToBoolean(dr["Transfusiones"]);
+
+                // Sistemas
+                txtAlergias.Text = GetStringValue(dr["Alergias"]);
+                txtSNerviosoCentral.Text = GetStringValue(dr["SistemaNervioso_Central"]);
+                txtSCardiovascular.Text = GetStringValue(dr["SistemaCardiovascular"]);
+                txtSRespiratorio.Text = GetStringValue(dr["SistemaRespiratorio"]);
+                txtSGastrointestinal.Text = GetStringValue(dr["SistemaGastrointestinal"]);
+                txtSEndocrino.Text = GetStringValue(dr["SistemaEndocrinico"]);
+                txtSGenitoUrinario.Text = GetStringValue(dr["SistemaGenitourinario"]);
+                txtSMusculoEsqueletico.Text = GetStringValue(dr["SistemaMusculoesqueletico"]);
+                txtOrganoSentidos.Text = GetStringValue(dr["Organo_Sentidos"]);
+                txtGrupoSanguineo.Text = GetStringValue(dr["Grupo_Sanguineo"]);
+
+                // Estudios
+                txtEstudiosLaboratorio.Text = GetStringValue(dr["Estudios_Laboratorio"]);
+                txtEstudiosRadiologicos.Text = GetStringValue(dr["Estudios_Radiologicos"]);
+                txtOtros.Text = GetStringValue(dr["Otros"]);
+
+                // Examen físico
+                txtConstitucionFisica.Text = GetStringValue(dr["Constitucion_Fisica"]);
+                txtTalla.Text = GetStringValue(dr["Talla"]);
+                txtPeso.Text = GetStringValue(dr["Peso"]);
+                txtIMC.Text = GetStringValue(dr["IMC"]);
+                txtGrado.Text = GetStringValue(dr["Grado"]);
+                txtFC.Text = GetStringValue(dr["FC"]);
+                txtFR.Text = GetStringValue(dr["FR"]);
+                txtPulso.Text = GetStringValue(dr["Pulso"]);
+                txtTA.Text = GetStringValue(dr["TA"]);
+                txtTemperatura.Text = GetStringValue(dr["Temperatura"]);
+
+                // Otras áreas
+                txtCraneo.Text = GetStringValue(dr["Craneo"]);
+                txtOjos.Text = GetStringValue(dr["Ojos"]);
+                txtOidos.Text = GetStringValue(dr["Oidos"]);
+                txtNariz.Text = GetStringValue(dr["Nariz"]);
+                txtBoca.Text = GetStringValue(dr["Boca"]);
+                txtCuello.Text = GetStringValue(dr["Cuello"]);
+                txtTorax.Text = GetStringValue(dr["Torax"]);
+                txtAbdomen.Text = GetStringValue(dr["Abdomen"]);
+                txtGenitourinario.Text = GetStringValue(dr["Genitourinario"]);
+                txtMusculoEsqueletico.Text = GetStringValue(dr["MusculoEsqueletico"]);
+                txtNeurologico.Text = GetStringValue(dr["Neurologico"]);
+            }
+
+        }
+
+        private void btmCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void btnCancelarSin_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

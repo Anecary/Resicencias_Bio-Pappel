@@ -284,7 +284,7 @@
             this.txtNSS.Depth = 0;
             this.txtNSS.Enabled = false;
             this.txtNSS.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNSS.Hint = "No. IMSS:";
+            this.txtNSS.Hint = "NSS:";
             this.txtNSS.LeadingIcon = null;
             this.txtNSS.Location = new System.Drawing.Point(606, 336);
             this.txtNSS.Margin = new System.Windows.Forms.Padding(4);
