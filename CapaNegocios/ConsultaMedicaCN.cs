@@ -38,14 +38,31 @@ namespace CapaNegocios
             return consultaMedicaDAO.consultaNotaIndividual(idConsulta);
         }
 
+        public DataSet consultaEmpleadoNota(string nss)
+        {
+            return consultaMedicaDAO.consultaEmpleadoNota(nss);
+        }
+
         public bool InsertarConsultaMedica(ConsultaMedica consulta)
         {
             return consultaMedicaDAO.InsertarConsultaMedica(
+                consulta.IdEmpleado,
                 consulta.NumExpediente,
                 consulta.Fecha,
                 consulta.Observaciones,
                 consulta.Diagnostico,
                 consulta.Proceso,
+                consulta.IdTipoCausa
+            );
+        }
+
+        public bool InsertarConsultaMedicaSin(ConsultaMedica consulta)
+        {
+            return consultaMedicaDAO.InsertarConsultaMedicaSin(
+                consulta.IdEmpleado,
+                consulta.Fecha,
+                consulta.Observaciones,
+                consulta.Diagnostico,
                 consulta.IdTipoCausa
             );
         }

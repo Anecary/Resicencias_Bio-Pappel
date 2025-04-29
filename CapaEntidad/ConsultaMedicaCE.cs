@@ -8,6 +8,7 @@ namespace CapaEntidad
 {
     public class ConsultaMedica
     {
+        public int IdEmpleado {  get; set; }       // p_idEmpleado
         public string NumExpediente { get; set; }  // p_numExpediente
         public DateTime Fecha { get; set; }        // p_fecha
         public string Observaciones { get; set; }  // p_observaciones

@@ -44,7 +44,9 @@ namespace CapaPresentacion.Nota_Medica
             panel8.Paint += new PaintEventHandler(Panel1_Paint);
             panel9.Paint += new PaintEventHandler(Panel1_Paint);
             panel10.Paint += new PaintEventHandler(Panel1_Paint);
+            panelSin.Paint += new PaintEventHandler(Panel1_Paint);
             panel12.Paint += new PaintEventHandler(Panel1_Paint);
+            panel14.Paint += new PaintEventHandler(Panel1_Paint);
             panel6.Paint += new PaintEventHandler(Panel1_Paint);
 
         }
@@ -84,14 +86,31 @@ namespace CapaPresentacion.Nota_Medica
             {
                 cboxCausaConsulta.DataSource = ds.Tables[0];
                 cboxCausaConsulta.DisplayMember = "causas"; // Nombre de la columna en la BD
-                cboxCausaConsulta.ValueMember = "causas";  // Puede ser un ID si lo deseas
+                cboxCausaConsulta.ValueMember = "causas";  // Puede ser un ID si lo deseas  
             }
             else
             {
                 RJMessageBox.Show("No se encontraron causas de consulta.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
- 
+
+        private void CargarCausasConsultaSin()
+        {
+            // Obtener los datos desde la capa de negocios
+            DataSet ds = consultaMedicaCN.consultaCausas();
+
+            if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                cboxCausaConsultaSin.DataSource = ds.Tables[0];
+                cboxCausaConsultaSin.DisplayMember = "causas"; // Nombre de la columna en la BD
+                cboxCausaConsultaSin.ValueMember = "causas";  // Puede ser un ID si lo deseas  
+            }
+            else
+            {
+                RJMessageBox.Show("No se encontraron causas de consulta.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
 
         private void CargarTipoCausa(int idCausa)
         {
@@ -110,6 +129,38 @@ namespace CapaPresentacion.Nota_Medica
                 cboxTipoCausa.DataSource = ds.Tables[0];
                 cboxTipoCausa.DisplayMember = "tipoCausa"; // Nombre de la columna visible
                 cboxTipoCausa.ValueMember = "idTipoCausa";  // Valor asociado, que es el idTipoCausa
+
+                // Llenar la lista de idTipoCausa
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    int idTipoCausa = Convert.ToInt32(row["idTipoCausa"]);
+                    idTipoCausaList.Add(idTipoCausa); // Guardamos los idTipoCausa en la lista
+                }
+            }
+            else
+            {
+                cboxTipoCausa.DataSource = null;
+                RJMessageBox.Show("No se encontraron tipos de causa para la causa seleccionada.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void CargarTipoCausaSin(int idCausa)
+        {
+            // Obtener los datos de tipo de causa basado en el idCausa
+            DataSet ds = consultaMedicaCN.consultaTipoCausa(idCausa + 1);
+
+            // Limpiar la lista de idTipoCausa en cada llamada
+            idTipoCausaList.Clear();
+
+            if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                // Limpiar la ComboBox antes de agregar nuevos elementos
+                cboxTipoCausaSin.DataSource = null;
+
+                // Añadir los datos a la ComboBox
+                cboxTipoCausaSin.DataSource = ds.Tables[0];
+                cboxTipoCausaSin.DisplayMember = "tipoCausa"; // Nombre de la columna visible
+                cboxTipoCausaSin.ValueMember = "idTipoCausa";  // Valor asociado, que es el idTipoCausa
 
                 // Llenar la lista de idTipoCausa
                 foreach (DataRow row in ds.Tables[0].Rows)
@@ -161,7 +212,7 @@ namespace CapaPresentacion.Nota_Medica
 
             // Ocultar todos los paneles y mostrar el deseado
             pDatosGenerales.Visible = false;
-            pDatosGeneralesSin.Visible = false;
+            pDatosSinExpediente.Visible = false;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
@@ -185,9 +236,10 @@ namespace CapaPresentacion.Nota_Medica
             cboxNumExpediente2.OnSelectedIndexChanged += cboxNumExpediente2_OnSelectedIndexChanged;
 
             CargarCausasConsulta();
+            CargarCausasConsultaSin();
 
             pDatosGenerales.Visible = true;
-            pDatosGeneralesSin.Visible = false;
+            pDatosSinExpediente.Visible = false;
             pAntecedentes.Visible = false;
             pNoPatologicos.Visible = false;
             pPatologicos.Visible = false;
@@ -207,8 +259,8 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            btnPanelNotaSinExp.Visible = true;
             btnPanelNotaConExp.Visible = true;
+            btnPanelNotaSinExp.Visible = true;
             btnAntecedentes.Visible = false;
             btnNoPatologicos.Visible = false;
             btnPatologicos.Visible = false;
@@ -216,6 +268,7 @@ namespace CapaPresentacion.Nota_Medica
             btnEstudiosParaclinicos.Visible = false;
             btnRegresar.Visible = false;
             labelExp.Visible = false;
+            btnMouseLeave(sender, e);
             MostrarPanel(pDatosGenerales, btnRegresar);
         }
 
@@ -241,7 +294,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void btnPanelNotaSinExp_Click(object sender, EventArgs e)
         {
-            MostrarPanel(pDatosGeneralesSin, btnPanelNotaSinExp);
+            MostrarPanel(pDatosSinExpediente, btnPanelNotaSinExp);
         }
 
         private void cboxCausaConsulta_SelectedIndexChanged(object sender, EventArgs e)
@@ -273,6 +326,17 @@ namespace CapaPresentacion.Nota_Medica
             txtObservaciones.Clear();
             txtDiagnostico.Clear();
             dtpFechaConsulta.Value = DateTime.Now;
+
+            txtNombreEmpleadoSin.Clear();
+            txtIdEmpleadoSin.Clear();
+            txtDomicilioSin.Clear();
+            txtTelefonoSin.Clear();
+            txtNoSS.Clear();
+            cboxCausaConsultaSin.SelectedIndex = 0;
+            cboxTipoCausaSin.SelectedIndex = 0;
+            txtObservacionesSin.Clear();
+            txtDiagnosticoSin.Clear();
+            dtpFechaConsultaSin.Value = DateTime.Now;
 
             txtConstitucionFisica.Clear();
             txtTalla.Clear();
@@ -332,7 +396,7 @@ namespace CapaPresentacion.Nota_Medica
             try
             {
                 // Validar si los campos no están vacíos (agrega validaciones previas)
-                if (string.IsNullOrEmpty(cboxNumExpediente2.Texts) || string.IsNullOrEmpty(txtObservaciones.Text) || string.IsNullOrEmpty(txtDiagnostico.Text) || string.IsNullOrEmpty(cboxProceso.Text) || cboxTipoCausa.SelectedIndex == -1)
+                if (string.IsNullOrEmpty(txtIdEmpleado.Text) || string.IsNullOrEmpty(cboxNumExpediente2.Texts) || string.IsNullOrEmpty(txtObservaciones.Text) || string.IsNullOrEmpty(txtDiagnostico.Text) || string.IsNullOrEmpty(cboxProceso.Text) || cboxTipoCausa.SelectedIndex == -1)
                 {
                     RJMessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -344,6 +408,7 @@ namespace CapaPresentacion.Nota_Medica
                 // Crear la entidad con los valores que vas a insertar
                 ConsultaMedica consulta = new ConsultaMedica
                 {
+                    IdEmpleado = Convert.ToInt32(txtIdEmpleado.Text),
                     NumExpediente = cboxNumExpediente2.SelectedValue.ToString(),
                     Fecha = dtpFechaConsulta.Value,
                     Observaciones = txtObservaciones.Text,
@@ -362,6 +427,48 @@ namespace CapaPresentacion.Nota_Medica
                     {
                         RJMessageBox.Show("Hubo un error al registrar la consulta médica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                LimpiarCampos();
+            }
+            catch (Exception ex)
+            {
+                RJMessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGrabarSin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Validar si los campos no están vacíos (agrega validaciones previas)
+                if (string.IsNullOrEmpty(txtIdEmpleadoSin.Text) || string.IsNullOrEmpty(txtObservacionesSin.Text) || string.IsNullOrEmpty(txtDiagnosticoSin.Text) || cboxTipoCausaSin.SelectedIndex == -1)
+                {
+                    RJMessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Obtener el idTipoCausa de la lista utilizando el índice seleccionado
+                int idTipoCausa = idTipoCausaList[cboxTipoCausaSin.SelectedIndex];
+
+                // Crear la entidad con los valores que vas a insertar
+                ConsultaMedica consulta = new ConsultaMedica
+                {
+                    IdEmpleado = Convert.ToInt32(txtIdEmpleadoSin.Text),
+                    Fecha = dtpFechaConsultaSin.Value,
+                    Observaciones = txtObservacionesSin.Text,
+                    Diagnostico = txtDiagnosticoSin.Text,
+                    IdTipoCausa = idTipoCausa
+                };
+
+                // Llamar al método de la capa de negocios para insertar los datos
+                bool resultado = consultaMedicaCN.InsertarConsultaMedicaSin(consulta);
+                if (resultado)
+                {
+                    RJMessageBox.Show("Consulta médica registrada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    RJMessageBox.Show("Hubo un error al registrar la consulta médica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 LimpiarCampos();
             }
             catch (Exception ex)
@@ -559,5 +666,41 @@ namespace CapaPresentacion.Nota_Medica
         {
             LimpiarCampos();
         }
+
+        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
+        {
+            string nss = txtNoSS.Text;
+            if (string.IsNullOrEmpty(nss))
+            {
+                RJMessageBox.Show("Por favor, ingrese un número de seguro social.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DataSet ds = consultaMedicaCN.consultaEmpleadoNota(nss);
+            if (ds.Tables["consultarEmpleadoNota"].Rows.Count > 0)
+            {
+                DataRow row = ds.Tables["consultarEmpleadoNota"].Rows[0];
+
+                txtIdEmpleadoSin.Text = row["idEmpleado"]?.ToString() ?? "";
+                txtNombreEmpleadoSin.Text = row["nombre_completo"]?.ToString() ?? "";
+                txtDomicilioSin.Text = row["domicilio_completo"]?.ToString() ?? "";
+                txtTelefonoSin.Text = row["telefono"]?.ToString() ?? "";
+            }
+            else
+            {
+                RJMessageBox.Show("No se encontró el empleado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void cboxCausaConsultaSin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboxCausaConsultaSin.SelectedValue != null)
+            {
+                int idCausa = cboxCausaConsultaSin.SelectedIndex;
+                CargarTipoCausaSin(idCausa);
+            }
+        }
+
+
     }
 }
