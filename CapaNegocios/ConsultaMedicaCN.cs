@@ -28,6 +28,11 @@ namespace CapaNegocios
             return consultaMedicaDAO.consultaNotaGeneral(numExpediente);
         }
 
+        public DataSet consultaNotaNSS(string nss)
+        {
+            return consultaMedicaDAO.consultaNotaNSS(nss);
+        }
+
         public DataSet consultaExpMedico(string numExpediente)
         {
             return consultaMedicaDAO.consultarExpMedico(numExpediente);

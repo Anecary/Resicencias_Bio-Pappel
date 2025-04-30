@@ -36,6 +36,7 @@ namespace CapaPresentacion.Nota_Medica
 
             pConsultaGeneral.Paint += new PaintEventHandler(Panel1_Paint);
             pConsultaIndividual.Paint += new PaintEventHandler(Panel1_Paint);
+            pNotaEmpleado.Paint += new PaintEventHandler(Panel1_Paint);
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
@@ -69,7 +70,7 @@ namespace CapaPresentacion.Nota_Medica
             Button btn = sender as Button;
             pSeccionesDatos.Controls.Add(p);
             p.BackColor = Color.FromArgb(247, 167, 62); // Color para el panel
-            p.Size = new Size(187, 5); // Tamaño del panel
+            p.Size = new Size(225, 5); // Tamaño del panel
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
 
@@ -91,6 +92,7 @@ namespace CapaPresentacion.Nota_Medica
 
             // Ocultar todos los paneles y mostrar el deseado
             pConsultaNotaGeneral.Visible = false;
+            pConsultaEmpleados.Visible = false;
             pConsultaNotaIndividual.Visible = false;
 
             panelAMostrar.Visible = true;
@@ -99,6 +101,7 @@ namespace CapaPresentacion.Nota_Medica
         private void frmConsultaNotaMedica_Load(object sender, EventArgs e)
         {
             pConsultaNotaGeneral.Visible = true;
+            pConsultaEmpleados.Visible = false;
             pConsultaNotaIndividual.Visible = false;
         }
 
@@ -134,6 +137,46 @@ namespace CapaPresentacion.Nota_Medica
                     {
                         RJMessageBox.Show("No se encontraron notas médicas para este expediente.", "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         dgvConsultaGeneral.DataSource = null;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    RJMessageBox.Show("Error al buscar notas médicas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                RJMessageBox.Show("Debe ingresar un número de expediente válido para buscar notas médicas.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void cargarDataGridNSS(string nss)
+        {
+            if (!string.IsNullOrEmpty(nss))
+            {
+                try
+                {
+                    // Consultamos las notas médicas del expediente
+                    DataSet ds = consultaMedicaCN.consultaNotaNSS(nss);
+
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables["ConsultaNotaNSS"].Rows.Count > 0)
+                    {
+                        dgvNotaEmpleados.DataSource = ds.Tables["ConsultaNotaNSS"];
+
+                        // (Opcional) Ajustar nombres de columna para que se vean más amigables
+                        dgvNotaEmpleados.Columns["idConsulta"].HeaderText = "ID Consulta";
+                        dgvNotaEmpleados.Columns["nss"].HeaderText = "No. Seguro Social";
+                        dgvNotaEmpleados.Columns["fecha"].HeaderText = "Fecha";
+                        dgvNotaEmpleados.Columns["causas"].HeaderText = "Causas";
+                        dgvNotaEmpleados.Columns["tipoCausa"].HeaderText = "Tipo Causa";
+
+                        // (Opcional) Ajustar el tamaño automático de las columnas
+                        dgvNotaEmpleados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    }
+                    else
+                    {
+                        RJMessageBox.Show("No se encontraron notas médicas para este empleado.", "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        dgvNotaEmpleados.DataSource = null;
                     }
                 }
                 catch (Exception ex)
@@ -217,6 +260,8 @@ namespace CapaPresentacion.Nota_Medica
                     txtProceso.Text = dr["proceso"]?.ToString() ?? "";
                     txtObservaciones.Text = dr["observaciones"]?.ToString() ?? "";
                     txtDiagnostico.Text = dr["diagnostico"]?.ToString() ?? "";
+
+                    txtProceso.Text = string.IsNullOrWhiteSpace(dr["proceso"]?.ToString()) ? "N/A" : dr["proceso"].ToString();
                 }
                 else
                 {
@@ -239,6 +284,11 @@ namespace CapaPresentacion.Nota_Medica
             MostrarPanel(pConsultaNotaIndividual, btnPanelIndividual);
         }
 
+        private void btnPanelEmpleado_Click(object sender, EventArgs e)
+        {
+            MostrarPanel(pConsultaEmpleados, btnPanelEmpleado);
+        }
+
         private void dgvConsultaGeneral_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -256,6 +306,49 @@ namespace CapaPresentacion.Nota_Medica
             }
         }
 
+        private void dgvNotaEmpleados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvNotaEmpleados.Rows[e.RowIndex];
+
+                // Obtener el idConsulta de la fila seleccionada
+                txtIdConsulta.Text = Convert.ToString(fila.Cells["idConsulta"].Value);
+
+                // Mostrar al panel de la consulta individual
+                MostrarPanel(pConsultaNotaIndividual, btnPanelIndividual);
+
+                // Buscar la nota médica
+                btnBuscarNotaMedica_Click(sender, e);
+            }
+        }
+
+        private void btnBuscarNSS_Click(object sender, EventArgs e)
+        {
+            string nss = txtNoSS.Text;
+            if (string.IsNullOrEmpty(nss))
+            {
+                RJMessageBox.Show("Por favor, ingrese un número de seguro social.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DataSet ds = consultaMedicaCN.consultaEmpleadoNota(nss);
+            if (ds.Tables["consultarEmpleadoNota"].Rows.Count > 0)
+            {
+                DataRow row = ds.Tables["consultarEmpleadoNota"].Rows[0];
+
+                txtIdEmpleadoSin.Text = row["idEmpleado"]?.ToString() ?? "";
+                txtNombreEmpleadoSin.Text = row["nombre_completo"]?.ToString() ?? "";
+                txtDomicilioSin.Text = row["domicilio_completo"]?.ToString() ?? "";
+                txtTelefonoSin.Text = row["telefono"]?.ToString() ?? "";
+
+                cargarDataGridNSS(nss);
+            }
+            else
+            {
+                RJMessageBox.Show("No se encontró el empleado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
 

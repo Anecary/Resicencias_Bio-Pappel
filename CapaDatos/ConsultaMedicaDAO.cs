@@ -97,6 +97,24 @@ namespace CapaDatos
             }
         }
 
+        public DataSet consultaNotaNSS(string nss)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ConsultaNotaNSS", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_nss = new MySqlParameter("@p_nss", MySqlDbType.VarChar);
+                p_nss.Direction = ParameterDirection.Input;
+                p_nss.Value = nss;
+                adapter.SelectCommand.Parameters.Add(p_nss);
+
+                adapter.Fill(data, "ConsultaNotaNSS");
+                return data;
+            }
+        }
+
         public DataSet consultaNotaIndividual(int idConsulta)
         {
             using (DataSet data = new DataSet())
