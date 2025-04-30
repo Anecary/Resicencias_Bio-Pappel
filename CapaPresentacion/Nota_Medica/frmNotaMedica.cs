@@ -422,12 +422,12 @@ namespace CapaPresentacion.Nota_Medica
                     if (resultado)
                     {
                         RJMessageBox.Show("Consulta médica registrada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LimpiarCampos();
                     }
                     else
                     {
                         RJMessageBox.Show("Hubo un error al registrar la consulta médica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                LimpiarCampos();
             }
             catch (Exception ex)
             {
@@ -464,12 +464,12 @@ namespace CapaPresentacion.Nota_Medica
                 if (resultado)
                 {
                     RJMessageBox.Show("Consulta médica registrada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarCampos();
                 }
                 else
                 {
                     RJMessageBox.Show("Hubo un error al registrar la consulta médica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                LimpiarCampos();
             }
             catch (Exception ex)
             {
@@ -701,6 +701,29 @@ namespace CapaPresentacion.Nota_Medica
             }
         }
 
+        private void txtDomicilioSin_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void txtTelefonoSin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNoSS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIdEmpleadoSin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreEmpleadoSin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
