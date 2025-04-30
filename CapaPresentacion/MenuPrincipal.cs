@@ -412,6 +412,10 @@ namespace CapaPresentacion
             hideSubMenu();
         }
 
-
+        private void btnReportesConsultasM_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Reportes.frmReportes_Consultas_Medicas());
+            hideSubMenu();
+        }
     }
 }

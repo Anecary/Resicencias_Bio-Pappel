@@ -564,38 +564,70 @@ namespace CapaPresentacion.Expediente
 
         private void txtPeso_Validating(object sender, CancelEventArgs e)
         {
-            double peso = Convert.ToDouble(txtPeso.Text);
-            if (peso > 300 || peso < 20)
+            // Verifica si el campo está vacío
+            if (string.IsNullOrWhiteSpace(txtPeso.Text))
             {
-                var result = RJMessageBox.Show("Por favor, ingresa un peso válido. Recuerda que el peso debe estar en kilogramos y ser un valor positivo.",
+                return;  // Permite que el control pase sin hacer nada si el campo está vacío
+            }
+
+            // Intentar convertir solo si no está vacío
+            double peso;
+            if (double.TryParse(txtPeso.Text, out peso)) // Usa TryParse para evitar excepciones
+            {
+                if (peso > 300 || peso < 20)
+                {
+                    var result = RJMessageBox.Show("Por favor, ingresa un peso válido. Recuerda que el peso debe estar en kilogramos y ser un valor positivo.",
                                 "Advertencia",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
+                    txtPeso.Clear();
+                    txtPeso.Focus();
+                }
+                else
+                {
+                    CalcularIMC();
+                }
+            }
+            else
+            {
+                // Si la conversión falla (no es un número válido)
+                var result = RJMessageBox.Show("Por favor, ingresa un número válido para el peso.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtPeso.Clear();
                 txtPeso.Focus();
             }
-            else
-            {
-                CalcularIMC();
-            }
         }
+
 
         private void txtTalla_Validating(object sender, CancelEventArgs e)
         {
-            double talla = Convert.ToDouble(txtTalla.Text);
-            if (talla > 5 || talla < .5)
+            if (string.IsNullOrWhiteSpace(txtTalla.Text))
             {
-                var result = RJMessageBox.Show("Por favor, ingresa una talla válida. Recuerda que la talla debe estar en metros y ser un valor positivo.",
-                                "Advertencia",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
-                txtTalla.Clear();
-                txtTalla.Focus();
+                return;  
+            }
+
+            
+            double talla;
+            if (double.TryParse(txtTalla.Text, out talla)) 
+            {
+                if (talla > 5 || talla < 0.5)
+                {
+                    var result = RJMessageBox.Show("Por favor, ingresa una talla válida. Recuerda que la talla debe estar en metros y ser un valor positivo.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtTalla.Clear();
+                    txtTalla.Focus();
+                }
+                else
+                {
+                    CalcularIMC();
+                }
             }
             else
             {
-                CalcularIMC();
+                
+                var result = RJMessageBox.Show("Por favor, ingresa un número válido para la talla.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtTalla.Clear();
+                txtTalla.Focus();
             }
         }
+
     }
 }

@@ -33,6 +33,7 @@
             this.pReportViewer = new System.Windows.Forms.Panel();
             this.rvInvestigacionAccidente = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.cmbAños = new System.Windows.Forms.ComboBox();
             this.pCombobox = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.pContenedor.SuspendLayout();
             this.pReportViewer.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -93,6 +93,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(924, 100);
             this.panel1.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label3.Location = new System.Drawing.Point(12, 34);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 18);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Seleccione el año:";
             // 
             // cmbAños
             // 
@@ -202,17 +213,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label3.Location = new System.Drawing.Point(12, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Seleccione el año:";
             // 
             // frmReportes_Investigacion_Accidente
             // 

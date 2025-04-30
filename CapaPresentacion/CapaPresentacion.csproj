@@ -333,6 +333,12 @@
     <Compile Include="radioButtonPersonalizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reportes\frmReportes_Consultas_Medicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReportes_Consultas_Medicas.Designer.cs">
+      <DependentUpon>frmReportes_Consultas_Medicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\frmReportes_Investigacion_Accidente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -424,6 +430,9 @@
     <EmbeddedResource Include="Reportes\Accidentes_xTurno.rdlc" />
     <EmbeddedResource Include="Reportes\Accidente_xParte_Cuerpo.rdlc" />
     <EmbeddedResource Include="Reportes\Accidente_xSemana.rdlc" />
+    <EmbeddedResource Include="Reportes\frmReportes_Consultas_Medicas.resx">
+      <DependentUpon>frmReportes_Consultas_Medicas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
