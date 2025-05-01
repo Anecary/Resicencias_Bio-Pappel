@@ -125,6 +125,12 @@
             this.cmbReportes_Notas.Hint = "Reportes";
             this.cmbReportes_Notas.IntegralHeight = false;
             this.cmbReportes_Notas.ItemHeight = 43;
+            this.cmbReportes_Notas.Items.AddRange(new object[] {
+            "Reporte de Consultas Semanales",
+            "Reporte de Consultas por Día de la Semana",
+            "Reporte de Consultas por Procesos",
+            "Reporte de Consultas por Hora",
+            "Reporte de Consultas por Año"});
             this.cmbReportes_Notas.Location = new System.Drawing.Point(364, 15);
             this.cmbReportes_Notas.MaxDropDownItems = 4;
             this.cmbReportes_Notas.MouseState = MaterialSkin.MouseState.OUT;
@@ -132,6 +138,7 @@
             this.cmbReportes_Notas.Size = new System.Drawing.Size(395, 49);
             this.cmbReportes_Notas.StartIndex = 0;
             this.cmbReportes_Notas.TabIndex = 0;
+            this.cmbReportes_Notas.SelectedIndexChanged += new System.EventHandler(this.cmbReportes_Notas_SelectedIndexChanged);
             // 
             // panel1
             // 

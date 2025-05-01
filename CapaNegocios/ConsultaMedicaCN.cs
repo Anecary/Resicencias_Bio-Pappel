@@ -71,5 +71,55 @@ namespace CapaNegocios
                 consulta.IdTipoCausa
             );
         }
+
+        public DataTable ObtenerReporteNotaMedica_Causas(int año)
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = consultaMedicaDAO.ObtenerReporteNotaMedica_Causas(año);
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
+
+        public DataTable ObtenerReporteNotaMedica_diaSemana(int año)
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = consultaMedicaDAO.ObtenerReporteNotaMedica_diaSemana(año);
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
+
+        public DataTable ObtenerReporteNotaMedica_Proceso(int año)
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = consultaMedicaDAO.ObtenerReporteNotaMedica_Proceso(año);
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
+
+        public DataTable ObtenerReporteNotaMedica_Hora(int año)
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = consultaMedicaDAO.ObtenerReporteNotaMedica_Hora(año);
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
+
+        public DataTable ObtenerReporteNotaMedica_Año()
+        {
+            // Llama al método de la capa de datos.
+            DataTable dtReporte = consultaMedicaDAO.ObtenerReporteNotaMedica_Año();
+
+            // Aquí podrías realizar validaciones o transformaciones si es necesario.
+
+            return dtReporte;
+        }
     }
 }

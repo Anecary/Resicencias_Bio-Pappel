@@ -1159,7 +1159,7 @@
             <Top>1.10807cm</Top>
             <Left>0.30808cm</Left>
             <Height>1.2cm</Height>
-            <Width>17.22001cm</Width>
+            <Width>17.21994cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1527,6 +1527,7 @@
           </Chart>
           <Line Name="Line2">
             <Top>0.38014cm</Top>
+            <Left>0cm</Left>
             <Height>0cm</Height>
             <Width>18.20057cm</Width>
             <ZIndex>2</ZIndex>

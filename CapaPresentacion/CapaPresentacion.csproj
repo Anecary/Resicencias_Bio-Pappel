@@ -214,6 +214,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Accidentes_TLesion.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datas_Sets\NotaMedica_Causas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotaMedica_Causas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\NotaMedica_DiaSemana.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotaMedica_DiaSemana.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\NotaMedica_Procesos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotaMedica_Procesos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\NotaMedica_xAño.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotaMedica_xAño.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datas_Sets\NotaMedica_xHora.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotaMedica_xHora.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Diseno\frmMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -436,6 +461,11 @@
     <EmbeddedResource Include="Reportes\frmReportes_Investigacion_Accidente.resx">
       <DependentUpon>frmReportes_Investigacion_Accidente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\NotaMedica_Causas.rdlc" />
+    <EmbeddedResource Include="Reportes\NotaMedica_diaSemana.rdlc" />
+    <EmbeddedResource Include="Reportes\NotaMedica_Procesos.rdlc" />
+    <EmbeddedResource Include="Reportes\NotaMedica_xaño.rdlc" />
+    <EmbeddedResource Include="Reportes\NotaMedica_xHora.rdlc" />
     <EmbeddedResource Include="Reportes\Report1.rdlc" />
     <EmbeddedResource Include="TextPersonalizado.resx">
       <DependentUpon>TextPersonalizado.cs</DependentUpon>
@@ -556,6 +586,61 @@
     </None>
     <None Include="Datas_Sets\Accidentes_TLesion.xss">
       <DependentUpon>Accidentes_TLesion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_Causas.xsc">
+      <DependentUpon>NotaMedica_Causas.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_Causas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NotaMedica_Causas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_Causas.xss">
+      <DependentUpon>NotaMedica_Causas.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_DiaSemana.xsc">
+      <DependentUpon>NotaMedica_DiaSemana.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_DiaSemana.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NotaMedica_DiaSemana.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_DiaSemana.xss">
+      <DependentUpon>NotaMedica_DiaSemana.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_Procesos.xsc">
+      <DependentUpon>NotaMedica_Procesos.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_Procesos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NotaMedica_Procesos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_Procesos.xss">
+      <DependentUpon>NotaMedica_Procesos.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_xAño.xsc">
+      <DependentUpon>NotaMedica_xAño.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_xAño.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NotaMedica_xAño.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_xAño.xss">
+      <DependentUpon>NotaMedica_xAño.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_xHora.xsc">
+      <DependentUpon>NotaMedica_xHora.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_xHora.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NotaMedica_xHora.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\NotaMedica_xHora.xss">
+      <DependentUpon>NotaMedica_xHora.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
