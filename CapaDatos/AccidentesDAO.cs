@@ -686,5 +686,36 @@ namespace CapaDatos
 
             return dt; // Retornar el DataTable con los datos
         }
+
+        public DataTable ObtenerReporteAccidentes_Clasificacion(int año)
+        {
+            DataTable dt = new DataTable(); // Crear el DataTable para almacenar los datos
+
+            using (MySqlConnection conn = objConexion.Conecta()) // Conectar a la BD
+            {
+                using (MySqlCommand cmd = new MySqlCommand("AccidentesClasificacion", conn)) // Llamar al procedimiento almacenado correcto
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@anio", año);
+                    try
+                    {
+                        conn.Open();
+
+                        // Ejecutar y llenar el DataTable
+                        using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+            }
+
+            return dt; // Retornar el DataTable con los datos
+        }
     }
 }

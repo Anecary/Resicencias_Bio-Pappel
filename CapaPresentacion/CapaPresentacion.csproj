@@ -149,6 +149,11 @@
     <Compile Include="Datas_Sets\Accidentes.Designer.cs">
       <DependentUpon>Accidentes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datas_Sets\Accidentes_Clasificacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accidentes_Clasificacion.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datas_Sets\Accidentes_Condicion.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -453,6 +458,8 @@
     <EmbeddedResource Include="Reportes\Accidentes_xSeccion.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xTLesion.rdlc" />
     <EmbeddedResource Include="Reportes\Accidentes_xTurno.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidente_Clasificacion.rdlc" />
+    <EmbeddedResource Include="Reportes\Accidente_General.rdlc" />
     <EmbeddedResource Include="Reportes\Accidente_xParte_Cuerpo.rdlc" />
     <EmbeddedResource Include="Reportes\Accidente_xSemana.rdlc" />
     <EmbeddedResource Include="Reportes\frmReportes_Consultas_Medicas.resx">
@@ -463,6 +470,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\NotaMedica_Causas.rdlc" />
     <EmbeddedResource Include="Reportes\NotaMedica_diaSemana.rdlc" />
+    <EmbeddedResource Include="Reportes\NotaMedica_General.rdlc" />
     <EmbeddedResource Include="Reportes\NotaMedica_Procesos.rdlc" />
     <EmbeddedResource Include="Reportes\NotaMedica_xaño.rdlc" />
     <EmbeddedResource Include="Reportes\NotaMedica_xHora.rdlc" />
@@ -476,6 +484,17 @@
     <None Include="Datas_Sets\Accidentes.xsd" />
     <None Include="Datas_Sets\Accidentes.xss">
       <DependentUpon>Accidentes.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Clasificacion.xsc">
+      <DependentUpon>Accidentes_Clasificacion.xsd</DependentUpon>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Clasificacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Accidentes_Clasificacion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas_Sets\Accidentes_Clasificacion.xss">
+      <DependentUpon>Accidentes_Clasificacion.xsd</DependentUpon>
     </None>
     <None Include="Datas_Sets\Accidentes_Condicion.xsc">
       <DependentUpon>Accidentes_Condicion.xsd</DependentUpon>

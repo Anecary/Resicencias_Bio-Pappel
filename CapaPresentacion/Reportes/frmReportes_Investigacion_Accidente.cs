@@ -41,6 +41,9 @@ namespace CapaPresentacion.Reportes
 
             switch (reporte_seleccionado)
             {
+                case "Accidentes general":
+                    Accidentes_General();
+                    break;
                 case "Accidentes por año":
                     Accidentes_x_año();
                     break;
@@ -71,7 +74,47 @@ namespace CapaPresentacion.Reportes
                 case "Accidentes Debido A":
                     obtener_Debido();
                     break;
+                case "Accidentes por clasificación":
+                    obtener_clasificacion();
+                    break;
             }
+        }
+        private void Accidentes_General()
+        {
+            int año = int.Parse(cmbAños.SelectedItem.ToString());
+
+            DataTable Accidentes_Año = negocios.ObtenerReporteAccidentesBLL(año);
+            DataTable Accidentes_Secciones = negocios.ObtenerReporteAccidentesPS(año);
+            DataTable Accidentes_Semanas = negocios.ObtenerReporteAccidentesSemana(año);
+            DataTable Accidentes_parte_cuerpo = negocios.ObtenerReporteAccidentes_ParteCuerpo(año);
+            DataTable Accidentes_Turno = negocios.ObtenerReporteAccidentes_Turno(año);
+            DataTable Accidentes_TLesion = negocios.ObtenerReporteAccidentes_Tlesion(año);
+            DataTable Accidentes_IncapDep = negocios.ObtenerReporteAccidentes_IncapDeto(año);
+            DataTable Accidentes_Condicion = negocios.ObtenerReporteAccidentes_Condicionn(año);
+            DataTable Accidentes_Edad = negocios.ObtenerReporteAccidentes_Eda(año);
+            DataTable Accidentes_Debido = negocios.ObtenerReporteAccidentes_Debido(año);
+            DataTable Accidentes_Clasificacion = negocios.ObtenerReporteAccidentes_Clasificacion(año);
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidente_General.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_AccidentesxAño", Accidentes_Año));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_AccidentesSeccion", Accidentes_Secciones));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Semana", Accidentes_Semanas));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_PC", Accidentes_parte_cuerpo));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Turno", Accidentes_Turno));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", Accidentes_TLesion));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet2", Accidentes_IncapDep));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Condicion", Accidentes_Condicion));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Edad", Accidentes_Edad));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_DebidoA", Accidentes_Debido));
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Accidentes_Clasificacion", Accidentes_Clasificacion));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+
         }
         /*ACCIDENTES POR AÑO*/
         private void Accidentes_x_año()
@@ -246,6 +289,23 @@ namespace CapaPresentacion.Reportes
 
             // Agregar cada DataTable a su propio DataSet en el ReportViewer
             rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_DebidoA", Accidentes_Debido));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvInvestigacionAccidente.RefreshReport();
+        }
+
+        private void obtener_clasificacion()
+        {
+            int año = int.Parse(cmbAños.SelectedItem.ToString());
+
+            DataTable Accidentes_Clasificacion = negocios.ObtenerReporteAccidentes_Clasificacion(año);
+
+            rvInvestigacionAccidente.Reset();
+            rvInvestigacionAccidente.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.Accidente_Clasificacion.rdlc";
+            rvInvestigacionAccidente.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvInvestigacionAccidente.LocalReport.DataSources.Add(new ReportDataSource("DataSet_Accidentes_Clasificacion", Accidentes_Clasificacion));
 
             // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
             rvInvestigacionAccidente.RefreshReport();

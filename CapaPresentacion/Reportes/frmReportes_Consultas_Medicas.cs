@@ -34,6 +34,10 @@ namespace CapaPresentacion.Reportes
 
             switch (reporte_seleccionado)
             {
+                case "Reporte de Consultas General":
+                    cboxAos.Visible = true;
+                    ConsultaGeneral();                       
+                    break;
                 case "Reporte de Consultas Semanales":
                     cboxAos.Visible = true;
                     ConsultasCausas();
@@ -55,6 +59,32 @@ namespace CapaPresentacion.Reportes
                     ConsultasxAño();
                     break;
             }
+        }
+
+        private void ConsultaGeneral()
+        {
+            int año = int.Parse(cboxAos.SelectedItem.ToString());
+
+            DataTable ConsultasMCausas = negocios.ObtenerReporteNotaMedica_Causas(año);
+            DataTable ConsultasMdiaSemana = negocios.ObtenerReporteNotaMedica_diaSemana(año);
+            DataTable ConsultasMProceso = negocios.ObtenerReporteNotaMedica_Proceso(año);
+            DataTable ConsultasMxHora = negocios.ObtenerReporteNotaMedica_Hora(año);
+            DataTable ConsultasMxAño = negocios.ObtenerReporteNotaMedica_Año();
+
+            rvNotaMedica.Reset();
+            rvNotaMedica.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.NotaMedica_General.rdlc";
+            rvNotaMedica.LocalReport.DataSources.Clear();
+
+            // Agregar cada DataTable a su propio DataSet en el ReportViewer
+            rvNotaMedica.LocalReport.DataSources.Add(new ReportDataSource("DataSet_NM_Causa", ConsultasMCausas));
+            rvNotaMedica.LocalReport.DataSources.Add(new ReportDataSource("DataSet_NM_diaSemana", ConsultasMdiaSemana));
+            rvNotaMedica.LocalReport.DataSources.Add(new ReportDataSource("DataSet_NM_Procesos", ConsultasMProceso));
+            rvNotaMedica.LocalReport.DataSources.Add(new ReportDataSource("DataSet_NM_Hora", ConsultasMxHora));
+            rvNotaMedica.LocalReport.DataSources.Add(new ReportDataSource("DataSet_NT_xAño", ConsultasMxAño));
+
+            // REFRESCAR EL REPORTE DESPUÉS DE CARGAR LOS DATOS
+            rvNotaMedica.RefreshReport();
+
         }
 
         private void ConsultasCausas()

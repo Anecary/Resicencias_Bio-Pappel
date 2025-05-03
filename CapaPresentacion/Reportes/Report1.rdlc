@@ -4,20 +4,6 @@
     <ReportItems>
       <Rectangle Name="Rectangle1">
         <ReportItems>
-          <Image Name="imageSource01">
-            <Source>Embedded</Source>
-            <Value>ID435121445_2455067258023530_7976395940677470316_n</Value>
-            <Sizing>FitProportional</Sizing>
-            <Top>0.26458cm</Top>
-            <Left>0.21697cm</Left>
-            <Height>2.51355cm</Height>
-            <Width>2.31863cm</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
-          </Image>
           <Textbox Name="Textbox2">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -39,10 +25,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
             <Top>0.26458cm</Top>
-            <Left>3.14854cm</Left>
+            <Left>3.43007cm</Left>
             <Height>0.6cm</Height>
-            <Width>12.79569cm</Width>
-            <ZIndex>1</ZIndex>
+            <Width>12.62971cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -58,7 +43,7 @@
             <Left>3.43007cm</Left>
             <Height>0cm</Height>
             <Width>12.03792cm</Width>
-            <ZIndex>2</ZIndex>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -88,7 +73,7 @@
             <Left>3.43007cm</Left>
             <Height>0.6cm</Height>
             <Width>1.56309cm</Width>
-            <ZIndex>3</ZIndex>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -126,7 +111,7 @@
             <Left>5.12616cm</Left>
             <Height>0.6cm</Height>
             <Width>3.29375cm</Width>
-            <ZIndex>4</ZIndex>
+            <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -164,7 +149,7 @@
             <Left>8.52574cm</Left>
             <Height>0.6cm</Height>
             <Width>4.12073cm</Width>
-            <ZIndex>5</ZIndex>
+            <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -196,7 +181,7 @@
             <Left>3.43007cm</Left>
             <Height>0.71438cm</Height>
             <Width>1.56309cm</Width>
-            <ZIndex>6</ZIndex>
+            <ZIndex>5</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -230,7 +215,7 @@
             <Left>5.12616cm</Left>
             <Height>0.71438cm</Height>
             <Width>3.29375cm</Width>
-            <ZIndex>7</ZIndex>
+            <ZIndex>6</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -264,7 +249,7 @@
             <Left>8.52574cm</Left>
             <Height>0.71438cm</Height>
             <Width>4.12073cm</Width>
-            <ZIndex>8</ZIndex>
+            <ZIndex>7</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -298,7 +283,7 @@
             <Left>12.83843cm</Left>
             <Height>0.6cm</Height>
             <Width>3.1058cm</Width>
-            <ZIndex>9</ZIndex>
+            <ZIndex>8</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -332,7 +317,7 @@
             <Left>12.83843cm</Left>
             <Height>0.71438cm</Height>
             <Width>3.1058cm</Width>
-            <ZIndex>10</ZIndex>
+            <ZIndex>9</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -343,11 +328,26 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Image Name="Image1">
+            <Source>Embedded</Source>
+            <Value>biopapel</Value>
+            <Sizing>Fit</Sizing>
+            <Top>0.26458cm</Top>
+            <Left>0.07185cm</Left>
+            <Height>2.47827cm</Height>
+            <Width>3.25239cm</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
         <KeepTogether>true</KeepTogether>
         <Top>0.26141cm</Top>
         <Left>0.27595cm</Left>
-        <Height>3.08208cm</Height>
+        <Height>4.54271cm</Height>
         <Width>16.32417cm</Width>
         <Style>
           <Border>

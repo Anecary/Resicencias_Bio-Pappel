@@ -154,6 +154,7 @@
             this.cmbReportes.IntegralHeight = false;
             this.cmbReportes.ItemHeight = 43;
             this.cmbReportes.Items.AddRange(new object[] {
+            "Accidentes general",
             "Accidentes por año",
             "Accidentes por sección",
             "Accidentes por semana",
@@ -163,7 +164,8 @@
             "Accidentes por Incapacidad Departamento",
             "Accidentes por Condición",
             "Accidentes por Edad",
-            "Accidentes debido A"});
+            "Accidentes debido A",
+            "Accidentes por clasificación"});
             this.cmbReportes.Location = new System.Drawing.Point(364, 15);
             this.cmbReportes.MaxDropDownItems = 4;
             this.cmbReportes.MouseState = MaterialSkin.MouseState.OUT;

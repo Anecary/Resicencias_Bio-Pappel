@@ -126,6 +126,7 @@
             this.cmbReportes_Notas.IntegralHeight = false;
             this.cmbReportes_Notas.ItemHeight = 43;
             this.cmbReportes_Notas.Items.AddRange(new object[] {
+            "Reporte de Consultas General",
             "Reporte de Consultas Semanales",
             "Reporte de Consultas por Día de la Semana",
             "Reporte de Consultas por Procesos",
