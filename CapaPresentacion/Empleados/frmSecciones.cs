@@ -103,7 +103,7 @@ namespace CapaPresentacion.Empleados
                 int ultimoId = negocios.ObtenerUltimoId("secciones", "idSeccion");
 
                 // Muestra el último ID en el TextBox de Material Skin
-                txtNoNomina.Text = ultimoId.ToString();
+                txtIdSeccion.Text = ultimoId.ToString();
 
                 txtSeccion.Enabled = true;
                 btnNuevo.Enabled = false;
@@ -136,7 +136,7 @@ namespace CapaPresentacion.Empleados
                 MessageBox.Show("Seccion insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Limpia el TextBox
-                txtNoNomina.Clear();
+                txtIdSeccion.Clear();
                 txtSeccion.Clear();
                 txtSeccion.Enabled = false;
                 btnNuevo.Enabled = true;

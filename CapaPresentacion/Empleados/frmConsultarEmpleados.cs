@@ -71,7 +71,7 @@ namespace CapaPresentacion.Empleados
             Button btn = sender as Button;
             pSeccionesDatos.Controls.Add(p);
             p.BackColor = Color.FromArgb(247, 167, 62); // Color para el panel
-            p.Size = new Size(180, 5); // Tamaño del panel
+            p.Size = new Size(btn.Width, 5); // Tamaño del panel
             p.Location = new Point(btn.Location.X, btn.Location.Y + 40); // Posición debajo del botón
         }
 

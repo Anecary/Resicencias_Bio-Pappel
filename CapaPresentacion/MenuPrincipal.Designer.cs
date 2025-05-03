@@ -660,7 +660,7 @@ namespace CapaPresentacion
             this.textPersonalizado1.PasswordChar = false;
             this.textPersonalizado1.Size = new System.Drawing.Size(250, 31);
             this.textPersonalizado1.TabIndex = 0;
-            this.textPersonalizado1.Texts = "";
+            this.textPersonalizado1.Text = "";
             this.textPersonalizado1.UnderlinedStyle = false;
             // 
             // botonPersonalizado6

@@ -228,13 +228,13 @@ namespace CapaPresentacion.Empleados
                     cmbTurno.SelectedItem = turnosMap[turno];
                 }
 
-                txtCp.Enabled = true;
-                txtEstado.Enabled = true;
-                txtCiudad.Enabled = true;
-                txtColonia.Enabled = true;
-                txtCalle.Enabled = true;
-                txtNumero.Enabled = true;
-                txtTelefono.Enabled = true;
+                txtCp.Enabled = true; txtCp.BackColor = Color.White;
+                txtEstado.Enabled = true; txtEstado.BackColor = Color.White;
+                txtCiudad.Enabled = true; txtCiudad.BackColor = Color.White;
+                txtColonia.Enabled = true;txtColonia.BackColor = Color.White;
+                txtCalle.Enabled = true; txtCalle.BackColor = Color.White;
+                txtNumero.Enabled = true; txtNumero.BackColor = Color.White;
+                txtTelefono.Enabled = true; txtTelefono.BackColor = Color.White;
 
                 cmbEstadoCivil.Enabled = true;
                 cmbPuesto.Enabled = true;

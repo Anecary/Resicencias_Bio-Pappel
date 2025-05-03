@@ -31,26 +31,31 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAltaEmpleado));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pDatosLaborales = new System.Windows.Forms.Panel();
+            this.btmCancelar = new CapaPresentacion.BotonPersonalizado();
+            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtIdPuesto = new MaterialSkin.Controls.MaterialTextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.cmbPuestos = new MaterialSkin.Controls.MaterialComboBox();
             this.cmbTurno = new MaterialSkin.Controls.MaterialComboBox();
-            this.txtNoNomina = new MaterialSkin.Controls.MaterialTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtDomicilio = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNombreCompleto = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtNssBusqueda = new MaterialSkin.Controls.MaterialTextBox();
+            this.btnBuscarEmpleadoNSS = new CapaPresentacion.BotonPersonalizado();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnBuscarEmpleadoNSS = new CapaPresentacion.BotonPersonalizado();
-            this.btmCancelar = new CapaPresentacion.BotonPersonalizado();
-            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
+            this.label66 = new System.Windows.Forms.Label();
+            this.txtNssBusqueda = new CapaPresentacion.TextPersonalizado();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNombreCompleto = new CapaPresentacion.TextPersonalizado();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTelefono = new CapaPresentacion.TextPersonalizado();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtDomicilio = new CapaPresentacion.TextPersonalizado();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtNoNomina = new CapaPresentacion.TextPersonalizado();
             this.panel1.SuspendLayout();
             this.pDatosLaborales.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -85,15 +90,61 @@
             this.pDatosLaborales.TabIndex = 36;
             this.pDatosLaborales.Paint += new System.Windows.Forms.PaintEventHandler(this.pDatosLaborales_Paint);
             // 
+            // btmCancelar
+            // 
+            this.btmCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmCancelar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmCancelar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btmCancelar.BorderRadius = 20;
+            this.btmCancelar.BorderSize = 0;
+            this.btmCancelar.FlatAppearance.BorderSize = 0;
+            this.btmCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btmCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmCancelar.ForeColor = System.Drawing.Color.White;
+            this.btmCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btmCancelar.Image")));
+            this.btmCancelar.Location = new System.Drawing.Point(472, 427);
+            this.btmCancelar.Name = "btmCancelar";
+            this.btmCancelar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btmCancelar.Size = new System.Drawing.Size(184, 53);
+            this.btmCancelar.TabIndex = 147;
+            this.btmCancelar.Text = " Cancelar";
+            this.btmCancelar.TextColor = System.Drawing.Color.White;
+            this.btmCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btmCancelar.UseVisualStyleBackColor = false;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGrabar.BorderRadius = 20;
+            this.btnGrabar.BorderSize = 0;
+            this.btnGrabar.FlatAppearance.BorderSize = 0;
+            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.ForeColor = System.Drawing.Color.White;
+            this.btnGrabar.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Image")));
+            this.btnGrabar.Location = new System.Drawing.Point(280, 427);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGrabar.Size = new System.Drawing.Size(184, 53);
+            this.btnGrabar.TabIndex = 146;
+            this.btnGrabar.Text = " Grabar";
+            this.btnGrabar.TextColor = System.Drawing.Color.White;
+            this.btnGrabar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.txtIdPuesto);
+            this.panel4.Controls.Add(this.txtNoNomina);
             this.panel4.Controls.Add(this.dateTimePicker1);
             this.panel4.Controls.Add(this.materialLabel6);
             this.panel4.Controls.Add(this.cmbPuestos);
             this.panel4.Controls.Add(this.cmbTurno);
-            this.panel4.Controls.Add(this.txtNoNomina);
             this.panel4.Location = new System.Drawing.Point(17, 226);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(916, 193);
@@ -193,112 +244,45 @@
             this.cmbTurno.TabIndex = 60;
             this.cmbTurno.SelectedIndexChanged += new System.EventHandler(this.materialComboBox1_SelectedIndexChanged);
             // 
-            // txtNoNomina
-            // 
-            this.txtNoNomina.AnimateReadOnly = false;
-            this.txtNoNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNoNomina.Depth = 0;
-            this.txtNoNomina.Enabled = false;
-            this.txtNoNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNoNomina.Hint = "Numero de Nomina: ";
-            this.txtNoNomina.LeadingIcon = null;
-            this.txtNoNomina.Location = new System.Drawing.Point(52, 15);
-            this.txtNoNomina.MaxLength = 18;
-            this.txtNoNomina.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNoNomina.Multiline = false;
-            this.txtNoNomina.Name = "txtNoNomina";
-            this.txtNoNomina.Size = new System.Drawing.Size(254, 50);
-            this.txtNoNomina.TabIndex = 59;
-            this.txtNoNomina.Text = "";
-            this.txtNoNomina.TrailingIcon = null;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.btnBuscarEmpleadoNSS);
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.txtDomicilio);
+            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.txtTelefono);
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.txtNombreCompleto);
+            this.panel3.Controls.Add(this.label66);
             this.panel3.Controls.Add(this.txtNssBusqueda);
+            this.panel3.Controls.Add(this.btnBuscarEmpleadoNSS);
             this.panel3.Location = new System.Drawing.Point(17, 22);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(916, 181);
             this.panel3.TabIndex = 60;
             // 
-            // txtDomicilio
+            // btnBuscarEmpleadoNSS
             // 
-            this.txtDomicilio.AnimateReadOnly = false;
-            this.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDomicilio.Depth = 0;
-            this.txtDomicilio.Enabled = false;
-            this.txtDomicilio.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtDomicilio.Hint = "Domicilio: ";
-            this.txtDomicilio.LeadingIcon = null;
-            this.txtDomicilio.Location = new System.Drawing.Point(361, 105);
-            this.txtDomicilio.MaxLength = 18;
-            this.txtDomicilio.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtDomicilio.Multiline = false;
-            this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(497, 50);
-            this.txtDomicilio.TabIndex = 98;
-            this.txtDomicilio.Text = "";
-            this.txtDomicilio.TrailingIcon = null;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.AnimateReadOnly = false;
-            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefono.Depth = 0;
-            this.txtTelefono.Enabled = false;
-            this.txtTelefono.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtTelefono.Hint = "Teléfono: ";
-            this.txtTelefono.LeadingIcon = null;
-            this.txtTelefono.Location = new System.Drawing.Point(52, 105);
-            this.txtTelefono.MaxLength = 18;
-            this.txtTelefono.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtTelefono.Multiline = false;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(254, 50);
-            this.txtTelefono.TabIndex = 97;
-            this.txtTelefono.Text = "";
-            this.txtTelefono.TrailingIcon = null;
-            // 
-            // txtNombreCompleto
-            // 
-            this.txtNombreCompleto.AnimateReadOnly = false;
-            this.txtNombreCompleto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreCompleto.Depth = 0;
-            this.txtNombreCompleto.Enabled = false;
-            this.txtNombreCompleto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNombreCompleto.Hint = "Nombre del Colaborador: ";
-            this.txtNombreCompleto.LeadingIcon = null;
-            this.txtNombreCompleto.Location = new System.Drawing.Point(361, 25);
-            this.txtNombreCompleto.MaxLength = 18;
-            this.txtNombreCompleto.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNombreCompleto.Multiline = false;
-            this.txtNombreCompleto.Name = "txtNombreCompleto";
-            this.txtNombreCompleto.Size = new System.Drawing.Size(497, 50);
-            this.txtNombreCompleto.TabIndex = 96;
-            this.txtNombreCompleto.Text = "";
-            this.txtNombreCompleto.TrailingIcon = null;
-            // 
-            // txtNssBusqueda
-            // 
-            this.txtNssBusqueda.AnimateReadOnly = false;
-            this.txtNssBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNssBusqueda.Depth = 0;
-            this.txtNssBusqueda.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNssBusqueda.Hint = "NSS: ";
-            this.txtNssBusqueda.LeadingIcon = null;
-            this.txtNssBusqueda.Location = new System.Drawing.Point(52, 25);
-            this.txtNssBusqueda.MaxLength = 18;
-            this.txtNssBusqueda.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNssBusqueda.Multiline = false;
-            this.txtNssBusqueda.Name = "txtNssBusqueda";
-            this.txtNssBusqueda.Size = new System.Drawing.Size(194, 50);
-            this.txtNssBusqueda.TabIndex = 52;
-            this.txtNssBusqueda.Text = "";
-            this.txtNssBusqueda.TrailingIcon = null;
+            this.btnBuscarEmpleadoNSS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoNSS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoNSS.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarEmpleadoNSS.BorderRadius = 20;
+            this.btnBuscarEmpleadoNSS.BorderSize = 0;
+            this.btnBuscarEmpleadoNSS.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleadoNSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleadoNSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleadoNSS.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoNSS.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoNSS.Image")));
+            this.btnBuscarEmpleadoNSS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarEmpleadoNSS.Location = new System.Drawing.Point(265, 35);
+            this.btnBuscarEmpleadoNSS.Name = "btnBuscarEmpleadoNSS";
+            this.btnBuscarEmpleadoNSS.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnBuscarEmpleadoNSS.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarEmpleadoNSS.TabIndex = 126;
+            this.btnBuscarEmpleadoNSS.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoNSS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarEmpleadoNSS.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleadoNSS.Click += new System.EventHandler(this.btnBuscarEmpleadoNSS_Click);
             // 
             // pSeccionesDatos
             // 
@@ -353,73 +337,165 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // btnBuscarEmpleadoNSS
+            // label66
             // 
-            this.btnBuscarEmpleadoNSS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleadoNSS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleadoNSS.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnBuscarEmpleadoNSS.BorderRadius = 20;
-            this.btnBuscarEmpleadoNSS.BorderSize = 0;
-            this.btnBuscarEmpleadoNSS.FlatAppearance.BorderSize = 0;
-            this.btnBuscarEmpleadoNSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarEmpleadoNSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarEmpleadoNSS.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoNSS.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoNSS.Image")));
-            this.btnBuscarEmpleadoNSS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarEmpleadoNSS.Location = new System.Drawing.Point(265, 35);
-            this.btnBuscarEmpleadoNSS.Name = "btnBuscarEmpleadoNSS";
-            this.btnBuscarEmpleadoNSS.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnBuscarEmpleadoNSS.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarEmpleadoNSS.TabIndex = 126;
-            this.btnBuscarEmpleadoNSS.TextColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoNSS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscarEmpleadoNSS.UseVisualStyleBackColor = false;
-            this.btnBuscarEmpleadoNSS.Click += new System.EventHandler(this.btnBuscarEmpleadoNSS_Click);
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label66.Location = new System.Drawing.Point(56, 24);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(145, 16);
+            this.label66.TabIndex = 129;
+            this.label66.Text = "Número de Seguro: ";
             // 
-            // btmCancelar
+            // txtNssBusqueda
             // 
-            this.btmCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btmCancelar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btmCancelar.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btmCancelar.BorderRadius = 20;
-            this.btmCancelar.BorderSize = 0;
-            this.btmCancelar.FlatAppearance.BorderSize = 0;
-            this.btmCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmCancelar.ForeColor = System.Drawing.Color.White;
-            this.btmCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btmCancelar.Image")));
-            this.btmCancelar.Location = new System.Drawing.Point(472, 427);
-            this.btmCancelar.Name = "btmCancelar";
-            this.btmCancelar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btmCancelar.Size = new System.Drawing.Size(184, 53);
-            this.btmCancelar.TabIndex = 147;
-            this.btmCancelar.Text = " Cancelar";
-            this.btmCancelar.TextColor = System.Drawing.Color.White;
-            this.btmCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btmCancelar.UseVisualStyleBackColor = false;
+            this.txtNssBusqueda.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNssBusqueda.BorderColor = System.Drawing.Color.Gray;
+            this.txtNssBusqueda.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNssBusqueda.BorderRadius = 12;
+            this.txtNssBusqueda.BorderSize = 2;
+            this.txtNssBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNssBusqueda.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNssBusqueda.Location = new System.Drawing.Point(52, 40);
+            this.txtNssBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNssBusqueda.Multiline = false;
+            this.txtNssBusqueda.Name = "txtNssBusqueda";
+            this.txtNssBusqueda.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNssBusqueda.PasswordChar = false;
+            this.txtNssBusqueda.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNssBusqueda.PlaceholderText = "";
+            this.txtNssBusqueda.Size = new System.Drawing.Size(208, 35);
+            this.txtNssBusqueda.TabIndex = 128;
+            this.txtNssBusqueda.UnderlinedStyle = true;
             // 
-            // btnGrabar
+            // label3
             // 
-            this.btnGrabar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabar.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnGrabar.BorderRadius = 20;
-            this.btnGrabar.BorderSize = 0;
-            this.btnGrabar.FlatAppearance.BorderSize = 0;
-            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.ForeColor = System.Drawing.Color.White;
-            this.btnGrabar.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Image")));
-            this.btnGrabar.Location = new System.Drawing.Point(280, 427);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnGrabar.Size = new System.Drawing.Size(184, 53);
-            this.btnGrabar.TabIndex = 146;
-            this.btnGrabar.Text = " Grabar";
-            this.btnGrabar.TextColor = System.Drawing.Color.White;
-            this.btnGrabar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGrabar.UseVisualStyleBackColor = false;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label3.Location = new System.Drawing.Point(365, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(187, 16);
+            this.label3.TabIndex = 131;
+            this.label3.Text = "Nombre del Colaborador: ";
+            // 
+            // txtNombreCompleto
+            // 
+            this.txtNombreCompleto.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombreCompleto.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreCompleto.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreCompleto.BorderRadius = 12;
+            this.txtNombreCompleto.BorderSize = 2;
+            this.txtNombreCompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreCompleto.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreCompleto.Location = new System.Drawing.Point(361, 40);
+            this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreCompleto.Multiline = false;
+            this.txtNombreCompleto.Name = "txtNombreCompleto";
+            this.txtNombreCompleto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreCompleto.PasswordChar = false;
+            this.txtNombreCompleto.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreCompleto.PlaceholderText = "";
+            this.txtNombreCompleto.Size = new System.Drawing.Size(497, 35);
+            this.txtNombreCompleto.TabIndex = 130;
+            this.txtNombreCompleto.UnderlinedStyle = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label4.Location = new System.Drawing.Point(56, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 16);
+            this.label4.TabIndex = 133;
+            this.label4.Text = "Teléfono: ";
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTelefono.BorderColor = System.Drawing.Color.Gray;
+            this.txtTelefono.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTelefono.BorderRadius = 12;
+            this.txtTelefono.BorderSize = 2;
+            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTelefono.Location = new System.Drawing.Point(52, 125);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefono.Multiline = false;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTelefono.PasswordChar = false;
+            this.txtTelefono.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTelefono.PlaceholderText = "";
+            this.txtTelefono.Size = new System.Drawing.Size(253, 35);
+            this.txtTelefono.TabIndex = 132;
+            this.txtTelefono.UnderlinedStyle = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label5.Location = new System.Drawing.Point(365, 109);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 16);
+            this.label5.TabIndex = 135;
+            this.label5.Text = "Domicilio:  ";
+            // 
+            // txtDomicilio
+            // 
+            this.txtDomicilio.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDomicilio.BorderColor = System.Drawing.Color.Gray;
+            this.txtDomicilio.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtDomicilio.BorderRadius = 12;
+            this.txtDomicilio.BorderSize = 2;
+            this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDomicilio.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDomicilio.Location = new System.Drawing.Point(361, 125);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDomicilio.Multiline = false;
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDomicilio.PasswordChar = false;
+            this.txtDomicilio.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDomicilio.PlaceholderText = "";
+            this.txtDomicilio.Size = new System.Drawing.Size(497, 35);
+            this.txtDomicilio.TabIndex = 134;
+            this.txtDomicilio.UnderlinedStyle = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label6.Location = new System.Drawing.Point(56, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(148, 16);
+            this.label6.TabIndex = 137;
+            this.label6.Text = "Número de Nómina: ";
+            // 
+            // txtNoNomina
+            // 
+            this.txtNoNomina.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNoNomina.BorderColor = System.Drawing.Color.Gray;
+            this.txtNoNomina.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNoNomina.BorderRadius = 12;
+            this.txtNoNomina.BorderSize = 2;
+            this.txtNoNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoNomina.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNoNomina.Location = new System.Drawing.Point(52, 35);
+            this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNoNomina.Multiline = false;
+            this.txtNoNomina.Name = "txtNoNomina";
+            this.txtNoNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNoNomina.PasswordChar = false;
+            this.txtNoNomina.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNoNomina.PlaceholderText = "";
+            this.txtNoNomina.Size = new System.Drawing.Size(253, 35);
+            this.txtNoNomina.TabIndex = 136;
+            this.txtNoNomina.UnderlinedStyle = true;
             // 
             // frmAltaEmpleado
             // 
@@ -435,6 +511,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.pSeccionesDatos.ResumeLayout(false);
             this.pSeccionesDatos.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -454,19 +531,24 @@
         private System.Windows.Forms.Panel pDatosLaborales;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private MaterialSkin.Controls.MaterialTextBox txtNssBusqueda;
         private MaterialSkin.Controls.MaterialComboBox cmbPuestos;
         private System.Windows.Forms.Label label2;
-        private MaterialSkin.Controls.MaterialTextBox txtNoNomina;
         private System.Windows.Forms.Panel panel3;
         private MaterialSkin.Controls.MaterialComboBox cmbTurno;
-        private MaterialSkin.Controls.MaterialTextBox txtNombreCompleto;
-        private MaterialSkin.Controls.MaterialTextBox txtTelefono;
         private System.Windows.Forms.Panel panel4;
-        private MaterialSkin.Controls.MaterialTextBox txtDomicilio;
         private MaterialSkin.Controls.MaterialTextBox txtIdPuesto;
         private BotonPersonalizado btnBuscarEmpleadoNSS;
         private BotonPersonalizado btmCancelar;
         private BotonPersonalizado btnGrabar;
+        private System.Windows.Forms.Label label6;
+        private TextPersonalizado txtNoNomina;
+        private System.Windows.Forms.Label label5;
+        private TextPersonalizado txtDomicilio;
+        private System.Windows.Forms.Label label4;
+        private TextPersonalizado txtTelefono;
+        private System.Windows.Forms.Label label3;
+        private TextPersonalizado txtNombreCompleto;
+        private System.Windows.Forms.Label label66;
+        private TextPersonalizado txtNssBusqueda;
     }
 }

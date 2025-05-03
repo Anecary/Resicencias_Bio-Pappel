@@ -56,22 +56,7 @@ namespace CapaPresentacion.Empleados
 
         private void materialButton2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Llama al método de la capa de negocios
-                int ultimoId = negocios.ObtenerUltimoId("puestos", "idPuesto");
-
-                // Muestra el último ID en el TextBox de Material Skin
-                txtNoNomina.Text = ultimoId.ToString();
-
-                txtPuesto.Enabled = true;
-                materialButton2.Enabled = false;
-                materialButton3.Enabled = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
         }
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -100,6 +85,44 @@ namespace CapaPresentacion.Empleados
         }
         private void materialButton3_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void pPuestos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtPuesto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Bloquear la entrada del número
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Llama al método de la capa de negocios
+                int ultimoId = negocios.ObtenerUltimoId("puestos", "idPuesto");
+
+                // Muestra el último ID en el TextBox de Material Skin
+                txtIdPuesto.Text = ultimoId.ToString();
+
+                txtPuesto.Enabled = true;
+                btnNuevo.Enabled = false;
+                btnGuardar.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
             try
             {
                 // Obtén el nombre del puesto desde el TextBox
@@ -119,11 +142,11 @@ namespace CapaPresentacion.Empleados
                 MessageBox.Show("Puesto insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Limpia el TextBox
-                txtNoNomina.Clear();
+                txtIdPuesto.Clear();
                 txtPuesto.Clear();
-                txtPuesto.Enabled= false;
-                materialButton2.Enabled = true;
-                materialButton3.Enabled = false;
+                txtPuesto.Enabled = false;
+                btnNuevo.Enabled = true;
+                btnGuardar.Enabled = false;
                 dataGridView1.DataSource = null;
 
 
@@ -139,17 +162,9 @@ namespace CapaPresentacion.Empleados
             }
         }
 
-        private void pPuestos_Paint(object sender, PaintEventArgs e)
+        private void materialButton1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void txtPuesto_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true; // Bloquear la entrada del número
-            }
         }
     }
 }

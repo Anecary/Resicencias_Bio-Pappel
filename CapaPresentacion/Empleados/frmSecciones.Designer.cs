@@ -30,23 +30,25 @@ namespace CapaPresentacion.Empleados
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSecciones));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSecciones));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedor = new System.Windows.Forms.Panel();
             this.pSecciones = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSeccion = new CapaPresentacion.TextPersonalizado();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtIdSeccion = new CapaPresentacion.TextPersonalizado();
+            this.btnNuevo = new CapaPresentacion.BotonPersonalizado();
+            this.btnGuardar = new CapaPresentacion.BotonPersonalizado();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtNoNomina = new MaterialSkin.Controls.MaterialTextBox();
-            this.txtSeccion = new MaterialSkin.Controls.MaterialTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnNuevo = new CapaPresentacion.BotonPersonalizado();
-            this.btnGuardar = new CapaPresentacion.BotonPersonalizado();
             this.panel1.SuspendLayout();
             this.pContenedor.SuspendLayout();
             this.pSecciones.SuspendLayout();
@@ -100,15 +102,128 @@ namespace CapaPresentacion.Empleados
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.txtSeccion);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.txtIdSeccion);
             this.panel4.Controls.Add(this.btnNuevo);
             this.panel4.Controls.Add(this.btnGuardar);
             this.panel4.Controls.Add(this.dataGridView1);
-            this.panel4.Controls.Add(this.txtNoNomina);
-            this.panel4.Controls.Add(this.txtSeccion);
             this.panel4.Location = new System.Drawing.Point(24, 14);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(866, 463);
             this.panel4.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label2.Location = new System.Drawing.Point(526, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.TabIndex = 151;
+            this.label2.Text = "Sección:";
+            // 
+            // txtSeccion
+            // 
+            this.txtSeccion.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSeccion.BorderColor = System.Drawing.Color.Gray;
+            this.txtSeccion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSeccion.BorderRadius = 12;
+            this.txtSeccion.BorderSize = 2;
+            this.txtSeccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeccion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSeccion.Location = new System.Drawing.Point(518, 39);
+            this.txtSeccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSeccion.Multiline = false;
+            this.txtSeccion.Name = "txtSeccion";
+            this.txtSeccion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSeccion.PasswordChar = false;
+            this.txtSeccion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSeccion.PlaceholderText = "";
+            this.txtSeccion.Size = new System.Drawing.Size(335, 35);
+            this.txtSeccion.TabIndex = 150;
+            this.txtSeccion.UnderlinedStyle = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label4.Location = new System.Drawing.Point(18, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 16);
+            this.label4.TabIndex = 149;
+            this.label4.Text = "Id. Sección:";
+            // 
+            // txtIdSeccion
+            // 
+            this.txtIdSeccion.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtIdSeccion.BorderColor = System.Drawing.Color.Gray;
+            this.txtIdSeccion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtIdSeccion.BorderRadius = 12;
+            this.txtIdSeccion.BorderSize = 2;
+            this.txtIdSeccion.Enabled = false;
+            this.txtIdSeccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdSeccion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtIdSeccion.Location = new System.Drawing.Point(14, 39);
+            this.txtIdSeccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdSeccion.Multiline = false;
+            this.txtIdSeccion.Name = "txtIdSeccion";
+            this.txtIdSeccion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtIdSeccion.PasswordChar = false;
+            this.txtIdSeccion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIdSeccion.PlaceholderText = "";
+            this.txtIdSeccion.Size = new System.Drawing.Size(265, 35);
+            this.txtIdSeccion.TabIndex = 148;
+            this.txtIdSeccion.UnderlinedStyle = true;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnNuevo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnNuevo.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnNuevo.BorderRadius = 20;
+            this.btnNuevo.BorderSize = 0;
+            this.btnNuevo.FlatAppearance.BorderSize = 0;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.ForeColor = System.Drawing.Color.White;
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.Location = new System.Drawing.Point(296, 24);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnNuevo.Size = new System.Drawing.Size(184, 53);
+            this.btnNuevo.TabIndex = 147;
+            this.btnNuevo.Text = " Nuevo";
+            this.btnNuevo.TextColor = System.Drawing.Color.White;
+            this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGuardar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGuardar.BorderRadius = 20;
+            this.btnGuardar.BorderSize = 0;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(315, 394);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGuardar.Size = new System.Drawing.Size(184, 53);
+            this.btnGuardar.TabIndex = 146;
+            this.btnGuardar.Text = " Guardar";
+            this.btnGuardar.TextColor = System.Drawing.Color.White;
+            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // dataGridView1
             // 
@@ -143,53 +258,14 @@ namespace CapaPresentacion.Empleados
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 185);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 97);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 35;
-            this.dataGridView1.Size = new System.Drawing.Size(839, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(839, 280);
             this.dataGridView1.TabIndex = 96;
-            // 
-            // txtNoNomina
-            // 
-            this.txtNoNomina.AnimateReadOnly = false;
-            this.txtNoNomina.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNoNomina.Depth = 0;
-            this.txtNoNomina.Enabled = false;
-            this.txtNoNomina.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtNoNomina.Hint = "Id. Sección:";
-            this.txtNoNomina.LeadingIcon = null;
-            this.txtNoNomina.Location = new System.Drawing.Point(61, 110);
-            this.txtNoNomina.MaxLength = 18;
-            this.txtNoNomina.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtNoNomina.Multiline = false;
-            this.txtNoNomina.Name = "txtNoNomina";
-            this.txtNoNomina.Size = new System.Drawing.Size(265, 50);
-            this.txtNoNomina.TabIndex = 87;
-            this.txtNoNomina.Text = "";
-            this.txtNoNomina.TrailingIcon = null;
-            // 
-            // txtSeccion
-            // 
-            this.txtSeccion.AnimateReadOnly = false;
-            this.txtSeccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSeccion.Depth = 0;
-            this.txtSeccion.Enabled = false;
-            this.txtSeccion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtSeccion.Hint = "Sección:";
-            this.txtSeccion.LeadingIcon = null;
-            this.txtSeccion.Location = new System.Drawing.Point(482, 110);
-            this.txtSeccion.MaxLength = 18;
-            this.txtSeccion.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtSeccion.Multiline = false;
-            this.txtSeccion.Name = "txtSeccion";
-            this.txtSeccion.Size = new System.Drawing.Size(265, 50);
-            this.txtSeccion.TabIndex = 90;
-            this.txtSeccion.Text = "";
-            this.txtSeccion.TrailingIcon = null;
-            this.txtSeccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSeccion_KeyPress);
             // 
             // panel3
             // 
@@ -221,52 +297,6 @@ namespace CapaPresentacion.Empleados
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnNuevo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnNuevo.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnNuevo.BorderRadius = 20;
-            this.btnNuevo.BorderSize = 0;
-            this.btnNuevo.FlatAppearance.BorderSize = 0;
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
-            this.btnNuevo.Location = new System.Drawing.Point(229, 393);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnNuevo.Size = new System.Drawing.Size(184, 53);
-            this.btnNuevo.TabIndex = 147;
-            this.btnNuevo.Text = " Nuevo";
-            this.btnNuevo.TextColor = System.Drawing.Color.White;
-            this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNuevo.UseVisualStyleBackColor = false;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGuardar.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnGuardar.BorderRadius = 20;
-            this.btnGuardar.BorderSize = 0;
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(457, 393);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnGuardar.Size = new System.Drawing.Size(184, 53);
-            this.btnGuardar.TabIndex = 146;
-            this.btnGuardar.Text = " Guardar";
-            this.btnGuardar.TextColor = System.Drawing.Color.White;
-            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // frmSecciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +310,7 @@ namespace CapaPresentacion.Empleados
             this.pContenedor.ResumeLayout(false);
             this.pSecciones.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -296,12 +327,14 @@ namespace CapaPresentacion.Empleados
         private System.Windows.Forms.Panel pContenedor;
         private System.Windows.Forms.Panel pSecciones;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private MaterialSkin.Controls.MaterialTextBox txtSeccion;
-        private MaterialSkin.Controls.MaterialTextBox txtNoNomina;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel4;
         private BotonPersonalizado btnNuevo;
         private BotonPersonalizado btnGuardar;
+        private System.Windows.Forms.Label label2;
+        private TextPersonalizado txtSeccion;
+        private System.Windows.Forms.Label label4;
+        private TextPersonalizado txtIdSeccion;
     }
 }
