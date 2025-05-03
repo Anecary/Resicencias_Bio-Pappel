@@ -148,55 +148,56 @@ namespace CapaPresentacion.Expediente
             btnActualizar.Visible = false;
             cboxNumExpediente2.Enabled = false;
             // Habilitar los TextBox específicos
-            txtHeredoFamiliar.Enabled = true;
-            txtDiagnostico.Enabled = true;
-            txtCasa.Enabled = true;
-            txtAlimentacion.Enabled = true;
-            txtAnimales.Enabled = true;
-            txtInmunizaciones.Enabled = true;
-            txtToxicomanias.Enabled = true;
-            txtTrabajosYActAnteriores.Enabled = true;
-            txtDeportesRecreacion.Enabled = true;
-            txtEntornoFamiliar.Enabled = true;
-            txtEscolaridad.Enabled = true;
+            txtHeredoFamiliar.Enabled = true; txtHeredoFamiliar.BackColor = Color.White;
+            txtDiagnostico.Enabled = true; txtDiagnostico.BackColor = Color.White;
+            txtCasa.Enabled = true; txtCasa.BackColor = Color.White;
+            txtAlimentacion.Enabled = true; txtAlimentacion.BackColor = Color.White;
+            txtAnimales.Enabled = true; txtAnimales.BackColor = Color.White;
+            txtInmunizaciones.Enabled = true; txtInmunizaciones.BackColor = Color.White;
+            txtToxicomanias.Enabled = true; txtToxicomanias.BackColor = Color.White;
+            txtTrabajosYActAnteriores.Enabled = true; txtTrabajosYActAnteriores.BackColor = Color.White;
+            txtDeportesRecreacion.Enabled = true; txtDeportesRecreacion.BackColor = Color.White;
+            txtEntornoFamiliar.Enabled = true; txtEntornoFamiliar.BackColor = Color.White;
+            txtEscolaridad.Enabled = true; txtEscolaridad.BackColor = Color.White;
 
-            txtAlergias.Enabled = true;
-            txtSNerviosoCentral.Enabled = true;
-            txtSCardiovascular.Enabled = true;
-            txtSRespiratorio.Enabled = true;
-            txtSGastrointestinal.Enabled = true;
-            txtSEndocrino.Enabled = true;
-            txtSGenitoUrinario.Enabled = true;
-            txtSMusculoEsqueletico.Enabled = true;
-            txtOrganoSentidos.Enabled = true;
+            txtAlergias.Enabled = true; txtAlergias.BackColor = Color.White;
+            txtSNerviosoCentral.Enabled = true; txtSNerviosoCentral.BackColor = Color.White;
+            txtSCardiovascular.Enabled = true; txtSCardiovascular.BackColor = Color.White;
+            txtSRespiratorio.Enabled = true; txtSRespiratorio.BackColor = Color.White;
+            txtSGastrointestinal.Enabled = true; txtSGastrointestinal.BackColor = Color.White;
+            txtSEndocrino.Enabled = true; txtSEndocrino.BackColor = Color.White;
+            txtSGenitoUrinario.Enabled = true; txtSGenitoUrinario.BackColor = Color.White;
+            txtSMusculoEsqueletico.Enabled = true; txtSMusculoEsqueletico.BackColor = Color.White;
+            txtOrganoSentidos.Enabled = true; txtOrganoSentidos.BackColor = Color.White;
             txtGrupoSanguineo.Visible = false;
 
-            txtEstudiosLaboratorio.Enabled = true;
-            txtEstudiosRadiologicos.Enabled = true;
-            txtOtros.Enabled = true;
+            txtEstudiosLaboratorio.Enabled = true; txtEstudiosLaboratorio.BackColor = Color.White;
+            txtEstudiosRadiologicos.Enabled = true; txtEstudiosRadiologicos.BackColor = Color.White;
+            txtOtros.Enabled = true; txtOtros.BackColor = Color.White;
 
-            txtConstitucionFisica.Enabled = true;
-            txtTalla.Enabled = true;
-            txtPeso.Enabled = true;
-            txtIMC.Enabled = true;
-            txtGrado.Enabled = true;
-            txtFC.Enabled = true;
-            txtFR.Enabled = true;
-            txtPulso.Enabled = true;
-            txtTA.Enabled = true;
-            txtTemperatura.Enabled = true;
+            txtConstitucionFisica.Enabled = true; txtConstitucionFisica.BackColor = Color.White;
+            txtTalla.Enabled = true; txtTalla.BackColor = Color.White;
+            txtPeso.Enabled = true; txtPeso.BackColor = Color.White;
+            txtIMC.Enabled = true; txtIMC.BackColor = Color.White;
+            txtGrado.Enabled = true; txtGrado.BackColor = Color.White;
+            txtFC.Enabled = true; txtFC.BackColor = Color.White;
+            txtFR.Enabled = true; txtFR.BackColor = Color.White;
+            txtPulso.Enabled = true; txtPulso.BackColor = Color.White;
+            txtTA.Enabled = true; txtTA.BackColor = Color.White;
+            txtTemperatura.Enabled = true; txtTemperatura.BackColor = Color.White;
 
-            txtCraneo.Enabled = true;
-            txtOjos.Enabled = true;
-            txtOidos.Enabled = true;
-            txtNariz.Enabled = true;
-            txtBoca.Enabled = true;
-            txtCuello.Enabled = true;
-            txtTorax.Enabled = true;
-            txtAbdomen.Enabled = true;
-            txtGenitourinario.Enabled = true;
-            txtMusculoEsqueletico.Enabled = true;
-            txtNeurologico.Enabled = true;
+            txtCraneo.Enabled = true; txtCraneo.BackColor = Color.White;
+            txtOjos.Enabled = true; txtOjos.BackColor = Color.White;
+            txtOidos.Enabled = true; txtOidos.BackColor = Color.White;
+            txtNariz.Enabled = true; txtNariz.BackColor = Color.White;
+            txtBoca.Enabled = true; txtBoca.BackColor = Color.White;
+            txtCuello.Enabled = true; txtCuello.BackColor = Color.White;
+            txtTorax.Enabled = true; txtTorax.BackColor = Color.White;
+            txtAbdomen.Enabled = true; txtAbdomen.BackColor = Color.White;
+            txtGenitourinario.Enabled = true; txtGenitourinario.BackColor = Color.White;
+            txtMusculoEsqueletico.Enabled = true; txtMusculoEsqueletico.BackColor = Color.White;
+            txtNeurologico.Enabled = true; txtNeurologico.BackColor = Color.White;
+
 
             // Habilitar los RadioButton específicos
             rbtnHozpitalizaciones.Enabled = true;
@@ -225,55 +226,56 @@ namespace CapaPresentacion.Expediente
             btnActualizar.Visible = true;
             cboxNumExpediente2.Enabled = true;
             // Deshabilitar los TextBox específicos
-            txtHeredoFamiliar.Enabled = false;
-            txtDiagnostico.Enabled = false;
-            txtCasa.Enabled = false;
-            txtAlimentacion.Enabled = false;
-            txtAnimales.Enabled = false;
-            txtInmunizaciones.Enabled = false;
-            txtToxicomanias.Enabled = false;
-            txtTrabajosYActAnteriores.Enabled = false;
-            txtDeportesRecreacion.Enabled = false;
-            txtEntornoFamiliar.Enabled = false;
-            txtEscolaridad.Enabled = false;
+            txtHeredoFamiliar.Enabled = false; txtHeredoFamiliar.BackColor = Color.WhiteSmoke;
+            txtDiagnostico.Enabled = false; txtDiagnostico.BackColor = Color.WhiteSmoke;
+            txtCasa.Enabled = false; txtCasa.BackColor = Color.WhiteSmoke;
+            txtAlimentacion.Enabled = false; txtAlimentacion.BackColor = Color.WhiteSmoke;
+            txtAnimales.Enabled = false; txtAnimales.BackColor = Color.WhiteSmoke;
+            txtInmunizaciones.Enabled = false; txtInmunizaciones.BackColor = Color.WhiteSmoke;
+            txtToxicomanias.Enabled = false; txtToxicomanias.BackColor = Color.WhiteSmoke;
+            txtTrabajosYActAnteriores.Enabled = false; txtTrabajosYActAnteriores.BackColor = Color.WhiteSmoke;
+            txtDeportesRecreacion.Enabled = false; txtDeportesRecreacion.BackColor = Color.WhiteSmoke;
+            txtEntornoFamiliar.Enabled = false; txtEntornoFamiliar.BackColor = Color.WhiteSmoke;
+            txtEscolaridad.Enabled = false; txtEscolaridad.BackColor = Color.WhiteSmoke;
 
-            txtAlergias.Enabled = false;
-            txtSNerviosoCentral.Enabled = false;
-            txtSCardiovascular.Enabled = false;
-            txtSRespiratorio.Enabled = false;
-            txtSGastrointestinal.Enabled = false;
-            txtSEndocrino.Enabled = false;
-            txtSGenitoUrinario.Enabled = false;
-            txtSMusculoEsqueletico.Enabled = false;
-            txtOrganoSentidos.Enabled = false;
+            txtAlergias.Enabled = false; txtAlergias.BackColor = Color.WhiteSmoke;
+            txtSNerviosoCentral.Enabled = false; txtSNerviosoCentral.BackColor = Color.WhiteSmoke;
+            txtSCardiovascular.Enabled = false; txtSCardiovascular.BackColor = Color.WhiteSmoke;
+            txtSRespiratorio.Enabled = false; txtSRespiratorio.BackColor = Color.WhiteSmoke;
+            txtSGastrointestinal.Enabled = false; txtSGastrointestinal.BackColor = Color.WhiteSmoke;
+            txtSEndocrino.Enabled = false; txtSEndocrino.BackColor = Color.WhiteSmoke;
+            txtSGenitoUrinario.Enabled = false; txtSGenitoUrinario.BackColor = Color.WhiteSmoke;
+            txtSMusculoEsqueletico.Enabled = false; txtSMusculoEsqueletico.BackColor = Color.WhiteSmoke;
+            txtOrganoSentidos.Enabled = false; txtOrganoSentidos.BackColor = Color.WhiteSmoke;
             txtGrupoSanguineo.Visible = true;
 
-            txtEstudiosLaboratorio.Enabled = false;
-            txtEstudiosRadiologicos.Enabled = false;
-            txtOtros.Enabled = false;
+            txtEstudiosLaboratorio.Enabled = false; txtEstudiosLaboratorio.BackColor = Color.WhiteSmoke;
+            txtEstudiosRadiologicos.Enabled = false; txtEstudiosRadiologicos.BackColor = Color.WhiteSmoke;
+            txtOtros.Enabled = false; txtOtros.BackColor = Color.WhiteSmoke;
 
-            txtConstitucionFisica.Enabled = false;
-            txtTalla.Enabled = false;
-            txtPeso.Enabled = false;
-            txtIMC.Enabled = false;
-            txtGrado.Enabled = false;
-            txtFC.Enabled = false;
-            txtFR.Enabled = false;
-            txtPulso.Enabled = false;
-            txtTA.Enabled = false;
-            txtTemperatura.Enabled = false;
+            txtConstitucionFisica.Enabled = false; txtConstitucionFisica.BackColor = Color.WhiteSmoke;
+            txtTalla.Enabled = false; txtTalla.BackColor = Color.WhiteSmoke;
+            txtPeso.Enabled = false; txtPeso.BackColor = Color.WhiteSmoke;
+            txtIMC.Enabled = false; txtIMC.BackColor = Color.WhiteSmoke;
+            txtGrado.Enabled = false; txtGrado.BackColor = Color.WhiteSmoke;
+            txtFC.Enabled = false; txtFC.BackColor = Color.WhiteSmoke;
+            txtFR.Enabled = false; txtFR.BackColor = Color.WhiteSmoke;
+            txtPulso.Enabled = false; txtPulso.BackColor = Color.WhiteSmoke;
+            txtTA.Enabled = false; txtTA.BackColor = Color.WhiteSmoke;
+            txtTemperatura.Enabled = false; txtTemperatura.BackColor = Color.WhiteSmoke;
 
-            txtCraneo.Enabled = false;
-            txtOjos.Enabled = false;
-            txtOidos.Enabled = false;
-            txtNariz.Enabled = false;
-            txtBoca.Enabled = false;
-            txtCuello.Enabled = false;
-            txtTorax.Enabled = false;
-            txtAbdomen.Enabled = false;
-            txtGenitourinario.Enabled = false;
-            txtMusculoEsqueletico.Enabled = false;
-            txtNeurologico.Enabled = false;
+            txtCraneo.Enabled = false; txtCraneo.BackColor = Color.WhiteSmoke;
+            txtOjos.Enabled = false; txtOjos.BackColor = Color.WhiteSmoke;
+            txtOidos.Enabled = false; txtOidos.BackColor = Color.WhiteSmoke;
+            txtNariz.Enabled = false; txtNariz.BackColor = Color.WhiteSmoke;
+            txtBoca.Enabled = false; txtBoca.BackColor = Color.WhiteSmoke;
+            txtCuello.Enabled = false; txtCuello.BackColor = Color.WhiteSmoke;
+            txtTorax.Enabled = false; txtTorax.BackColor = Color.WhiteSmoke;
+            txtAbdomen.Enabled = false; txtAbdomen.BackColor = Color.WhiteSmoke;
+            txtGenitourinario.Enabled = false; txtGenitourinario.BackColor = Color.WhiteSmoke;
+            txtMusculoEsqueletico.Enabled = false; txtMusculoEsqueletico.BackColor = Color.WhiteSmoke;
+            txtNeurologico.Enabled = false; txtNeurologico.BackColor = Color.WhiteSmoke;
+
 
             // Deshabilitar los RadioButton específicos
             rbtnHozpitalizaciones.Enabled = false;
@@ -677,6 +679,61 @@ namespace CapaPresentacion.Expediente
         private void txtTemperatura_KeyPress(object sender, KeyPressEventArgs e)
         {
             ValidacionNumerosDecimal(sender, e);
+        }
+
+        private void label49_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label38_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label39_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,7 +15,6 @@ namespace CapaPresentacion
     public partial class TextPersonalizado : UserControl
     {
         //Fields
-        //Fields
         private Color borderColor = Color.MediumSlateBlue;
         private Color borderFocusColor = Color.HotPink;
         private int borderSize = 2;
@@ -33,6 +32,12 @@ namespace CapaPresentacion
         public TextPersonalizado()
         {
             InitializeComponent();
+            this.BackColor = Color.White;
+
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Multiline = false; // o false según necesites
+            textBox1.Dock = DockStyle.Fill;
+            textBox1.Padding = new Padding(5);
         }
 
         //Default Event
@@ -176,8 +181,17 @@ namespace CapaPresentacion
         public bool Multiline
         {
             get { return textBox1.Multiline; }
-            set { textBox1.Multiline = value; }
+            set
+            {
+                textBox1.Multiline = value;
+                textBox1.Padding = new Padding(3); // Ajusta según lo que necesites
+                if (borderRadius > 15)
+                    SetTextBoxRoundedRegion();
+                this.Invalidate();
+            }
         }
+
+
 
         [Category("RJ Code Advance")]
         public override Color BackColor
@@ -280,16 +294,16 @@ namespace CapaPresentacion
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            UpdateControlHeight();
+            if (!textBox1.Multiline)
+                UpdateControlHeight();
         }
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
             Graphics graph = e.Graphics;
 
-            if (borderRadius > 1)//Rounded TextBox
+            if (borderRadius > 1) //Rounded UserControl
             {
-                //-Fields
                 var rectBorderSmooth = this.ClientRectangle;
                 var rectBorder = Rectangle.Inflate(rectBorderSmooth, -borderSize, -borderSize);
                 int smoothSize = borderSize > 0 ? borderSize : 1;
@@ -299,46 +313,45 @@ namespace CapaPresentacion
                 using (Pen penBorderSmooth = new Pen(this.Parent.BackColor, smoothSize))
                 using (Pen penBorder = new Pen(borderColor, borderSize))
                 {
-                    //-Drawing
-                    this.Region = new Region(pathBorderSmooth);//Set the rounded region of UserControl
-                    if (borderRadius > 15) SetTextBoxRoundedRegion();//Set the rounded region of TextBox component
-                    graph.SmoothingMode = SmoothingMode.AntiAlias;
-                    penBorder.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
-                    if (isFocused) penBorder.Color = borderFocusColor;
+                    // Apply rounded region only to the UserControl (not the TextBox)
+                    this.Region = new Region(pathBorderSmooth);
 
-                    if (underlinedStyle) //Line Style
+                    graph.SmoothingMode = SmoothingMode.AntiAlias;
+                    penBorder.Alignment = PenAlignment.Center;
+
+                    if (isFocused)
+                        penBorder.Color = borderFocusColor;
+
+                    if (underlinedStyle) // Line Style
                     {
-                        //Draw border smoothing
                         graph.DrawPath(penBorderSmooth, pathBorderSmooth);
-                        //Draw border
                         graph.SmoothingMode = SmoothingMode.None;
                         graph.DrawLine(penBorder, 0, this.Height - 1, this.Width, this.Height - 1);
                     }
-                    else //Normal Style
+                    else // Normal Border
                     {
-                        //Draw border smoothing
                         graph.DrawPath(penBorderSmooth, pathBorderSmooth);
-                        //Draw border
                         graph.DrawPath(penBorder, pathBorder);
                     }
                 }
             }
             else //Square/Normal TextBox
             {
-                //Draw border
                 using (Pen penBorder = new Pen(borderColor, borderSize))
                 {
                     this.Region = new Region(this.ClientRectangle);
-                    penBorder.Alignment = System.Drawing.Drawing2D.PenAlignment.Inset;
-                    if (isFocused) penBorder.Color = borderFocusColor;
+                    penBorder.Alignment = PenAlignment.Inset;
+                    if (isFocused)
+                        penBorder.Color = borderFocusColor;
 
-                    if (underlinedStyle) //Line Style
+                    if (underlinedStyle)
                         graph.DrawLine(penBorder, 0, this.Height - 1, this.Width, this.Height - 1);
-                    else //Normal Style
+                    else
                         graph.DrawRectangle(penBorder, 0, 0, this.Width - 0.5F, this.Height - 0.5F);
                 }
             }
         }
+
         #endregion
 
         //Change border color in focus mode

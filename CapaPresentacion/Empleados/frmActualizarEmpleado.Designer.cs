@@ -266,7 +266,7 @@
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label66.Location = new System.Drawing.Point(56, 46);
+            this.label66.Location = new System.Drawing.Point(56, 43);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(148, 16);
             this.label66.TabIndex = 127;
@@ -281,7 +281,7 @@
             this.txtNoNomina.BorderSize = 2;
             this.txtNoNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoNomina.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNoNomina.Location = new System.Drawing.Point(52, 60);
+            this.txtNoNomina.Location = new System.Drawing.Point(52, 59);
             this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoNomina.Multiline = false;
             this.txtNoNomina.Name = "txtNoNomina";
