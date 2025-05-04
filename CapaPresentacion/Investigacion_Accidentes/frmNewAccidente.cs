@@ -521,8 +521,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
 
             //Control de Acciones
-            string accionesCorrectivasPropuestas = txtAccionesCorrectivasProp.Text;
-            string quienCorrectivasPropuesta = txtQuienCorrectivas.Text;
+            string accionesCorrectivasPropuestas = txtAccionesCorrectivas.Text;
+            string quienCorrectivasPropuesta = txtquienCorrectivas.Text;
             string cuandoCorrectivasPropuestas = txtCuandoCorrectivas.Text;
             string accionesPreventivasPropuestas = txtAccionesPreventivasProp.Text;
             string quienPreventivoPropuesto = txtQuienPreventivas.Text;
@@ -535,7 +535,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             if (!string.IsNullOrWhiteSpace(cboxCondicion.Text) || !string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) || !string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) || !string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
                 !string.IsNullOrWhiteSpace(txtLugarAccidente.Text) || !string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text) || !string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) || !string.IsNullOrWhiteSpace(txtEquipoDanado.Text) || !string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
                 !string.IsNullOrWhiteSpace(txtOtro.Text) || !string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) || !string.IsNullOrWhiteSpace(txtTratamiento.Text) || !string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
-                !string.IsNullOrWhiteSpace(txtAccionesCorrectivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
+                !string.IsNullOrWhiteSpace(txtAccionesCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtquienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
                 )
             {
                 // int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, idEmpleado, numnomina, puesto, antiguedad, edad, turno, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
