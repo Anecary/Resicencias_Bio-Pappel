@@ -19,6 +19,7 @@ namespace CapaPresentacion.Nota_Medica
         private MaterialSkinManager materialSkinManager;
         private Panel p = new Panel();
         ConsultaMedicaCN consultaMedicaCN = new ConsultaMedicaCN();
+        ExpedientesCN expedientesCN = new ExpedientesCN();
         EmpleadosCN empleadosCN = new EmpleadosCN();
 
         public frmConsultaNotaMedica()
@@ -100,6 +101,16 @@ namespace CapaPresentacion.Nota_Medica
 
         private void frmConsultaNotaMedica_Load(object sender, EventArgs e)
         {
+            cboxNumExpediente2.OnSelectedIndexChanged -= cboxNumExpediente2_OnSelectedIndexChanged;
+            cboxNumExpediente2.DataSource = expedientesCN.ConcultaNumExpedientes().Tables["numExpedientes"];
+            cboxNumExpediente2.DisplayMember = "Num_Expediente";
+            cboxNumExpediente2.ValueMember = "Num_Expediente";
+            if (cboxNumExpediente2.Items.Count > 0)
+            {
+                cboxNumExpediente2.SelectedIndex = 0;
+            }
+            cboxNumExpediente2.OnSelectedIndexChanged += cboxNumExpediente2_OnSelectedIndexChanged;
+
             pConsultaNotaGeneral.Visible = true;
             pConsultaEmpleados.Visible = false;
             pConsultaNotaIndividual.Visible = false;
@@ -121,7 +132,18 @@ namespace CapaPresentacion.Nota_Medica
 
                     if (ds != null && ds.Tables.Count > 0 && ds.Tables["ConsultaNotaGeneral"].Rows.Count > 0)
                     {
-                        dgvConsultaGeneral.DataSource = ds.Tables["ConsultaNotaGeneral"];
+                        // Clonamos la estructura de la tabla original
+                        DataTable originalTable = ds.Tables["ConsultaNotaGeneral"];
+                        DataTable invertedTable = originalTable.Clone();
+
+                        // Invertimos las filas
+                        for (int i = originalTable.Rows.Count - 1; i >= 0; i--)
+                        {
+                            invertedTable.ImportRow(originalTable.Rows[i]);
+                        }
+
+                        // Asignamos la tabla invertida al DataGridView
+                        dgvConsultaGeneral.DataSource = invertedTable;
 
                         // (Opcional) Ajustar nombres de columna para que se vean más amigables
                         dgvConsultaGeneral.Columns["idConsulta"].HeaderText = "ID Consulta";
@@ -161,7 +183,18 @@ namespace CapaPresentacion.Nota_Medica
 
                     if (ds != null && ds.Tables.Count > 0 && ds.Tables["ConsultaNotaNSS"].Rows.Count > 0)
                     {
-                        dgvNotaEmpleados.DataSource = ds.Tables["ConsultaNotaNSS"];
+                        // Clonamos la estructura de la tabla original
+                        DataTable originalTable = ds.Tables["ConsultaNotaNSS"];
+                        DataTable invertedTable = originalTable.Clone();
+
+                        // Invertimos las filas
+                        for (int i = originalTable.Rows.Count - 1; i >= 0; i--)
+                        {
+                            invertedTable.ImportRow(originalTable.Rows[i]);
+                        }
+
+                        // Asignamos la tabla invertida al DataGridView
+                        dgvNotaEmpleados.DataSource = invertedTable;
 
                         // (Opcional) Ajustar nombres de columna para que se vean más amigables
                         dgvNotaEmpleados.Columns["idConsulta"].HeaderText = "ID Consulta";
@@ -187,58 +220,6 @@ namespace CapaPresentacion.Nota_Medica
             else
             {
                 RJMessageBox.Show("Debe ingresar un número de expediente válido para buscar notas médicas.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void btnBuscarEmpleado_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(txtNumeroNomina.Text))
-            {
-                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
-
-                if (t.Rows.Count > 0)
-                {
-                    DataRow dr = t.Rows[0];
-
-                    txtNombreEmpleado.Text =
-                        (dr["nombre"] as string ?? "") + " " +
-                        (dr["apellido_paterno"] as string ?? "") + " " +
-                        (dr["apellido_materno"] as string ?? "");
-
-                    DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
-                    DateTime fechaActual = DateTime.Now;
-
-                    int edad = 0;
-                    edad = fechaNacimiento != DateTime.MinValue
-                        ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(edad) ? 1 : 0)
-                        : 0;
-                    txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
-                    txtSexo.Text = dr["sexo"].ToString();
-                    txtEstadoCivil.Text = dr["estado_civil"].ToString();
-                    txtNSS.Text = dr["nss"].ToString();
-                    txtTelefono.Text = dr["telefono"].ToString();
-                    txtDomicilio.Text = (dr["domicilio_Calle"] as string ?? "") + " #" +
-                        (dr["domicilio_Numero"] as string ?? "") + ", " +
-                        (dr["domicilio_Colonia"] as string ?? "") + ", " +
-                        (dr["domicilio_Ciudad"] as string ?? "") + ", " +
-                        (dr["domicilio_Estado"] as string ?? "");
-                    txtPuesto.Text = dr["puesto"] as string ?? "N/A";
-                    string nombre = txtNombreEmpleado.Text;
-                    string nomenclarura = ObtenerNomenclatura(nombre);
-                    txtNoExpediente.Text = nomenclarura + "-" + txtNumeroNomina.Text;
-                    string numExpediente = txtNoExpediente.Text;
-
-                    cargarDataGrid(numExpediente);
-                }
-                else
-                {
-                    RJMessageBox.Show("Número de nómina no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                RJMessageBox.Show(" Por favor ingrese un Número de Nómina para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtNumeroNomina.Focus();
             }
         }
 
@@ -348,6 +329,47 @@ namespace CapaPresentacion.Nota_Medica
             {
                 RJMessageBox.Show("No se encontró el empleado.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void cboxNumExpediente2_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable t = expedientesCN.consultaExpediente(cboxNumExpediente2.SelectedValue.ToString()).Tables["ConsultaNumExpediente"];
+
+            if (t.Rows.Count > 0)
+            {
+                DataRow dr = t.Rows[0];
+
+                // Función auxiliar para evitar la repetición de DBNull
+                string GetStringValue(object value) => value != DBNull.Value ? value.ToString() : "";
+
+                txtNombreEmpleado.Text = $"{GetStringValue(dr["nombre"])} {GetStringValue(dr["apellido_paterno"])} {GetStringValue(dr["apellido_materno"])}";
+                txtNumeroNomina.Text = GetStringValue(dr["NumNomina"]);
+
+                DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
+                DateTime fechaActual = DateTime.Now;
+
+                int edad = (fechaNacimiento != DateTime.MinValue) ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(fechaActual.Year - fechaNacimiento.Year) ? 1 : 0) : 0;
+                txtEdad.Text = edad > 0 ? edad.ToString() : "N/A";
+
+                // Asignar los valores de texto
+                txtSexo.Text = GetStringValue(dr["sexo"]);
+                txtEstadoCivil.Text = GetStringValue(dr["estado_civil"]);
+                txtNSS.Text = GetStringValue(dr["nss"]);
+                txtTelefono.Text = GetStringValue(dr["telefono"]);
+                txtDomicilio.Text = (dr["domicilio_Calle"] as string ?? "") + " #" +
+                     (dr["domicilio_Numero"] as string ?? "") + ", " +
+                     (dr["domicilio_Colonia"] as string ?? "") + ", " +
+                     (dr["domicilio_Ciudad"] as string ?? "") + ", " +
+                     (dr["domicilio_Estado"] as string ?? "");
+                     txtPuesto.Text = GetStringValue(dr["puesto"]);
+                string nombre = txtNombreEmpleado.Text;
+                string nomenclarura = ObtenerNomenclatura(nombre);
+                string numExpediente = nomenclarura + "-" + txtNumeroNomina.Text;
+
+                cargarDataGrid(numExpediente);
+
+            }
+
         }
     }
 }

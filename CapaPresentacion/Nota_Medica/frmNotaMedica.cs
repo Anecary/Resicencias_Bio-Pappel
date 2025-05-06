@@ -19,7 +19,6 @@ namespace CapaPresentacion.Nota_Medica
         private MaterialSkinManager materialSkinManager;
         private Panel p = new Panel();
         ConsultaMedicaCN consultaMedicaCN = new ConsultaMedicaCN(); 
-        EmpleadosCN empleadosCN = new EmpleadosCN();
         ExpedientesCN expedientesCN = new ExpedientesCN();
 
         // Array para guardar las idTipoCausa
@@ -45,7 +44,6 @@ namespace CapaPresentacion.Nota_Medica
             panel9.Paint += new PaintEventHandler(Panel1_Paint);
             panel10.Paint += new PaintEventHandler(Panel1_Paint);
             panelSin.Paint += new PaintEventHandler(Panel1_Paint);
-            panel12.Paint += new PaintEventHandler(Panel1_Paint);
             panel14.Paint += new PaintEventHandler(Panel1_Paint);
             panel6.Paint += new PaintEventHandler(Panel1_Paint);
 
@@ -440,7 +438,7 @@ namespace CapaPresentacion.Nota_Medica
             try
             {
                 // Validar si los campos no están vacíos (agrega validaciones previas)
-                if (string.IsNullOrEmpty(txtIdEmpleadoSin.Text) || string.IsNullOrEmpty(txtObservacionesSin.Text) || string.IsNullOrEmpty(txtDiagnosticoSin.Text) || cboxTipoCausaSin.SelectedIndex == -1)
+                if (string.IsNullOrEmpty(txtIdEmpleadoSin.Text) || string.IsNullOrEmpty(txtObservacionesSin.Text) || string.IsNullOrEmpty(txtDiagnosticoSin.Text) || cboxTipoCausaSin.SelectedIndex == -1 || string.IsNullOrEmpty(cboxProcesoSin.Text))
                 {
                     RJMessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -456,6 +454,7 @@ namespace CapaPresentacion.Nota_Medica
                     Fecha = dtpFechaConsultaSin.Value,
                     Observaciones = txtObservacionesSin.Text,
                     Diagnostico = txtDiagnosticoSin.Text,
+                    Proceso = cboxProcesoSin.Text,
                     IdTipoCausa = idTipoCausa
                 };
 
@@ -657,7 +656,7 @@ namespace CapaPresentacion.Nota_Medica
 
         }
 
-        private void btmCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
         }
@@ -699,31 +698,6 @@ namespace CapaPresentacion.Nota_Medica
                 int idCausa = cboxCausaConsultaSin.SelectedIndex;
                 CargarTipoCausaSin(idCausa);
             }
-        }
-
-        private void txtDomicilioSin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTelefonoSin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNoSS_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtIdEmpleadoSin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombreEmpleadoSin_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

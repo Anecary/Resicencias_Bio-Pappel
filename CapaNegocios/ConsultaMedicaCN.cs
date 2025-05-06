@@ -68,6 +68,7 @@ namespace CapaNegocios
                 consulta.Fecha,
                 consulta.Observaciones,
                 consulta.Diagnostico,
+                consulta.Proceso,
                 consulta.IdTipoCausa
             );
         }

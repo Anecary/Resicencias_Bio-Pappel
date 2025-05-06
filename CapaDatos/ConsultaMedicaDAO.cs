@@ -168,7 +168,7 @@ namespace CapaDatos
             }
         }
 
-        public bool InsertarConsultaMedicaSin(int idEmpleado, DateTime fecha, string observaciones, string diagnostico, int idTipoCausa)
+        public bool InsertarConsultaMedicaSin(int idEmpleado, DateTime fecha, string observaciones, string diagnostico, string proceso, int idTipoCausa)
         {
             try
             {
@@ -182,6 +182,7 @@ namespace CapaDatos
                     comando.Parameters.AddWithValue("@p_fecha", fecha);
                     comando.Parameters.AddWithValue("@p_observaciones", observaciones);
                     comando.Parameters.AddWithValue("@p_diagnostico", diagnostico);
+                    comando.Parameters.AddWithValue("@p_proceso", proceso);
                     comando.Parameters.AddWithValue("@p_idTipoCausa", idTipoCausa);
 
                     conn.Open();
