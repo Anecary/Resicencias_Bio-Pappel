@@ -115,6 +115,24 @@ namespace CapaDatos
             }
         }
 
+        public DataSet consultaNotaNull(int idEmpleado)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("ConsultaNotaNull", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idEmpleado = new MySqlParameter("@p_idEmpleado", MySqlDbType.Int32);
+                p_idEmpleado.Direction = ParameterDirection.Input;
+                p_idEmpleado.Value = idEmpleado;
+                adapter.SelectCommand.Parameters.Add(p_idEmpleado);
+
+                adapter.Fill(data, "ConsultaNotaNull");
+                return data;
+            }
+        }
+
         public DataSet consultaNotaIndividual(int idConsulta)
         {
             using (DataSet data = new DataSet())
@@ -151,6 +169,35 @@ namespace CapaDatos
                     comando.Parameters.AddWithValue("@p_proceso", proceso);
                     comando.Parameters.AddWithValue("@p_idTipoCausa", idTipoCausa);
 
+                    conn.Open();
+                    comando.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public bool ActualizarNumExpediente(int idConsulta, string numExpediente)
+        {
+            try
+            {
+                conn = objConexion.Conecta();
+                using (MySqlCommand comando = new MySqlCommand("ActualizarNumExpediente", conn))
+                {
+                    comando.CommandType = CommandType.StoredProcedure;
+
+                    // Agregar los parámetros del procedimiento almacenado
+                    comando.Parameters.AddWithValue("@p_idConsulta", idConsulta);
+                    comando.Parameters.AddWithValue("@p_numExpediente", numExpediente);
                     conn.Open();
                     comando.ExecuteNonQuery();
                     return true;

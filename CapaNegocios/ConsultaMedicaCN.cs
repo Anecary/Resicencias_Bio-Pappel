@@ -33,6 +33,11 @@ namespace CapaNegocios
             return consultaMedicaDAO.consultaNotaNSS(nss);
         }
 
+        public DataSet consultaNotaNull(int idEmpleado)
+        {
+            return consultaMedicaDAO.consultaNotaNull(idEmpleado);
+        }
+
         public DataSet consultaExpMedico(string numExpediente)
         {
             return consultaMedicaDAO.consultarExpMedico(numExpediente);
@@ -70,6 +75,14 @@ namespace CapaNegocios
                 consulta.Diagnostico,
                 consulta.Proceso,
                 consulta.IdTipoCausa
+            );
+        }
+
+        public bool ActualizarNumExpediente(ConsultaMedica consulta)
+        {
+            return consultaMedicaDAO.ActualizarNumExpediente(
+                consulta.IdConsulta,
+                consulta.NumExpediente
             );
         }
 

@@ -340,6 +340,12 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nota_Medica\frmActualizaNotaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nota_Medica\frmActualizaNotaMedica.Designer.cs">
+      <DependentUpon>frmActualizaNotaMedica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nota_Medica\frmConsultaNotaMedica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -351,12 +357,6 @@
     </Compile>
     <Compile Include="Nota_Medica\frmNotaMedica.Designer.cs">
       <DependentUpon>frmNotaMedica.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nota_Medica\plantilla.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nota_Medica\plantilla.Designer.cs">
-      <DependentUpon>plantilla.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -431,14 +431,14 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Nota_Medica\frmActualizaNotaMedica.resx">
+      <DependentUpon>frmActualizaNotaMedica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Nota_Medica\frmConsultaNotaMedica.resx">
       <DependentUpon>frmConsultaNotaMedica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nota_Medica\frmNotaMedica.resx">
       <DependentUpon>frmNotaMedica.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nota_Medica\plantilla.resx">
-      <DependentUpon>plantilla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

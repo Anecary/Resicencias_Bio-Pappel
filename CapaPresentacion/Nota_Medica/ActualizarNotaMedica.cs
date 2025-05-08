@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion.Nota_Medica
 {
-    public partial class plantilla : Form
+    public partial class ActualizarNotaMedica : Form
     {
-        public plantilla()
+        public ActualizarNotaMedica()
         {
             InitializeComponent();
+        }
+
+        private void ActualizarNotaMedica_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

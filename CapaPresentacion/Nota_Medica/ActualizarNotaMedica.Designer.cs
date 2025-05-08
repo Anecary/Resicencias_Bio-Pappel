@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion.Nota_Medica
 {
-    partial class plantilla
+    partial class ActualizarNotaMedica
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,18 @@
         {
             this.SuspendLayout();
             // 
-            // plantilla
+            // ActualizarNotaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 785);
-            this.Name = "plantilla";
-            this.Text = "plantilla";
-            this.ResumeLayout(false);
+            this.ClientSize = new System.Drawing.Size(1260, 820);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "ActualizarNotaMedica";
+            this.Load += new System.EventHandler(this.ActualizarNotaMedica_Load);
 
+
+   
         }
 
         #endregion

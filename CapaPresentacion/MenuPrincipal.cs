@@ -417,5 +417,11 @@ namespace CapaPresentacion
             openChildForm(new Reportes.frmReportes_Consultas_Medicas());
             hideSubMenu();
         }
+
+        private void btnActualizarNotaMedica_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Nota_Medica.frmActualizaNotaMedica());
+            hideSubMenu();
+        }
     }
 }
