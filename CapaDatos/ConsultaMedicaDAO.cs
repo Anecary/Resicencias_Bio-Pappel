@@ -151,7 +151,7 @@ namespace CapaDatos
             }
         }
 
-        public bool InsertarConsultaMedica(int idEmpleado, string numExpediente, DateTime fecha, string observaciones, string diagnostico, string proceso, int idTipoCausa)
+        public bool InsertarConsultaMedica(ConsultaMedica consulta)
         {
             try
             {
@@ -161,13 +161,47 @@ namespace CapaDatos
                     comando.CommandType = CommandType.StoredProcedure;
 
                     // Agregar los parámetros del procedimiento almacenado
-                    comando.Parameters.AddWithValue("@p_idEmpleado", idEmpleado);
-                    comando.Parameters.AddWithValue("@p_numExpediente", numExpediente);
-                    comando.Parameters.AddWithValue("@p_fecha", fecha);
-                    comando.Parameters.AddWithValue("@p_observaciones", observaciones);
-                    comando.Parameters.AddWithValue("@p_diagnostico", diagnostico);
-                    comando.Parameters.AddWithValue("@p_proceso", proceso);
-                    comando.Parameters.AddWithValue("@p_idTipoCausa", idTipoCausa);
+                    comando.Parameters.AddWithValue("@p_idEmpleado", consulta.IdEmpleado);
+                    comando.Parameters.AddWithValue("@p_numExpediente", consulta.NumExpediente);
+                    comando.Parameters.AddWithValue("@p_fecha", consulta.Fecha);
+                    comando.Parameters.AddWithValue("@p_observaciones", consulta.Observaciones);
+                    comando.Parameters.AddWithValue("@p_diagnostico", consulta.Diagnostico);
+                    comando.Parameters.AddWithValue("@p_proceso", consulta.Proceso);
+                    comando.Parameters.AddWithValue("@p_idTipoCausa", consulta.IdTipoCausa);
+
+                    conn.Open();
+                    comando.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public bool InsertarConsultaMedicaSin(ConsultaMedica consulta)
+        {
+            try
+            {
+                conn = objConexion.Conecta();
+                using (MySqlCommand comando = new MySqlCommand("InsertarConsultaMedicaSin", conn))
+                {
+                    comando.CommandType = CommandType.StoredProcedure;
+
+                    // Agregar los parámetros del procedimiento almacenado
+                    comando.Parameters.AddWithValue("@p_idEmpleado", consulta.IdEmpleado);
+                    comando.Parameters.AddWithValue("@p_fecha", consulta.Fecha);
+                    comando.Parameters.AddWithValue("@p_observaciones", consulta.Observaciones);
+                    comando.Parameters.AddWithValue("@p_diagnostico", consulta.Diagnostico);
+                    comando.Parameters.AddWithValue("@p_proceso", consulta.Proceso);
+                    comando.Parameters.AddWithValue("@p_idTipoCausa", consulta.IdTipoCausa);
 
                     conn.Open();
                     comando.ExecuteNonQuery();
@@ -198,40 +232,6 @@ namespace CapaDatos
                     // Agregar los parámetros del procedimiento almacenado
                     comando.Parameters.AddWithValue("@p_idConsulta", idConsulta);
                     comando.Parameters.AddWithValue("@p_numExpediente", numExpediente);
-                    conn.Open();
-                    comando.ExecuteNonQuery();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                // Manejo de errores
-                Console.WriteLine(ex.Message);
-                return false;
-            }
-            finally
-            {
-                conn.Close();
-            }
-        }
-
-        public bool InsertarConsultaMedicaSin(int idEmpleado, DateTime fecha, string observaciones, string diagnostico, string proceso, int idTipoCausa)
-        {
-            try
-            {
-                conn = objConexion.Conecta();
-                using (MySqlCommand comando = new MySqlCommand("InsertarConsultaMedicaSin", conn))
-                {
-                    comando.CommandType = CommandType.StoredProcedure;
-
-                    // Agregar los parámetros del procedimiento almacenado
-                    comando.Parameters.AddWithValue("@p_idEmpleado", idEmpleado);
-                    comando.Parameters.AddWithValue("@p_fecha", fecha);
-                    comando.Parameters.AddWithValue("@p_observaciones", observaciones);
-                    comando.Parameters.AddWithValue("@p_diagnostico", diagnostico);
-                    comando.Parameters.AddWithValue("@p_proceso", proceso);
-                    comando.Parameters.AddWithValue("@p_idTipoCausa", idTipoCausa);
-
                     conn.Open();
                     comando.ExecuteNonQuery();
                     return true;

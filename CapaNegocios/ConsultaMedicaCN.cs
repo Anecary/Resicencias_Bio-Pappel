@@ -55,27 +55,12 @@ namespace CapaNegocios
 
         public bool InsertarConsultaMedica(ConsultaMedica consulta)
         {
-            return consultaMedicaDAO.InsertarConsultaMedica(
-                consulta.IdEmpleado,
-                consulta.NumExpediente,
-                consulta.Fecha,
-                consulta.Observaciones,
-                consulta.Diagnostico,
-                consulta.Proceso,
-                consulta.IdTipoCausa
-            );
+            return consultaMedicaDAO.InsertarConsultaMedica(consulta);
         }
 
         public bool InsertarConsultaMedicaSin(ConsultaMedica consulta)
         {
-            return consultaMedicaDAO.InsertarConsultaMedicaSin(
-                consulta.IdEmpleado,
-                consulta.Fecha,
-                consulta.Observaciones,
-                consulta.Diagnostico,
-                consulta.Proceso,
-                consulta.IdTipoCausa
-            );
+            return consultaMedicaDAO.InsertarConsultaMedicaSin(consulta);
         }
 
         public bool ActualizarNumExpediente(ConsultaMedica consulta)

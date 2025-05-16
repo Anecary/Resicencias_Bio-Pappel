@@ -394,7 +394,12 @@ namespace CapaPresentacion.Nota_Medica
             try
             {
                 // Validar si los campos no están vacíos (agrega validaciones previas)
-                if (string.IsNullOrEmpty(txtIdEmpleado.Text) || string.IsNullOrEmpty(cboxNumExpediente2.Texts) || string.IsNullOrEmpty(txtObservaciones.Text) || string.IsNullOrEmpty(txtDiagnostico.Text) || string.IsNullOrEmpty(cboxProceso.Text) || cboxTipoCausa.SelectedIndex == -1)
+                if (string.IsNullOrEmpty(txtIdEmpleado.Text) || 
+                    string.IsNullOrEmpty(cboxNumExpediente2.Texts) || 
+                    string.IsNullOrEmpty(txtObservaciones.Text) || 
+                    string.IsNullOrEmpty(txtDiagnostico.Text) || 
+                    string.IsNullOrEmpty(cboxProceso.Text) || 
+                    cboxTipoCausa.SelectedIndex == -1)
                 {
                     RJMessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -445,7 +450,11 @@ namespace CapaPresentacion.Nota_Medica
             try
             {
                 // Validar si los campos no están vacíos (agrega validaciones previas)
-                if (string.IsNullOrEmpty(txtIdEmpleadoSin.Text) || string.IsNullOrEmpty(txtObservacionesSin.Text) || string.IsNullOrEmpty(txtDiagnosticoSin.Text) || cboxTipoCausaSin.SelectedIndex == -1 || string.IsNullOrEmpty(cboxProcesoSin.Text))
+                if (string.IsNullOrEmpty(txtIdEmpleadoSin.Text) || 
+                    string.IsNullOrEmpty(txtObservacionesSin.Text) || 
+                    string.IsNullOrEmpty(txtDiagnosticoSin.Text) ||
+                    string.IsNullOrEmpty(cboxProcesoSin.Text) ||
+                    cboxTipoCausaSin.SelectedIndex == -1)
                 {
                     RJMessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
