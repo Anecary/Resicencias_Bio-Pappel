@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmActualizaNotaMedica));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.pContenedor = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pConsultaMedica = new System.Windows.Forms.Panel();
             this.label58 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pDatosGenerales = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.dgvConsultaGeneral = new System.Windows.Forms.DataGridView();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
@@ -73,15 +75,14 @@
             this.txtNombreEmpleado = new CapaPresentacion.TextPersonalizado();
             this.txtNumNomina = new CapaPresentacion.TextPersonalizado();
             this.btnBuscarNotaMedica = new CapaPresentacion.BotonPersonalizado();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnConsultaIndividual = new CapaPresentacion.BotonPersonalizado();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pContenedor.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pConsultaMedica.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaGeneral)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -139,9 +140,20 @@
             this.pContenedor.Size = new System.Drawing.Size(1260, 653);
             this.pContenedor.TabIndex = 37;
             // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.pConsultaMedica);
+            this.panel1.Controls.Add(this.pDatosGenerales);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1260, 653);
+            this.panel1.TabIndex = 0;
+            // 
             // pConsultaMedica
             // 
             this.pConsultaMedica.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pConsultaMedica.Controls.Add(this.btnConsultaIndividual);
             this.pConsultaMedica.Controls.Add(this.label58);
             this.pConsultaMedica.Controls.Add(this.txtNoExpediente);
             this.pConsultaMedica.Controls.Add(this.btmCancelar);
@@ -300,38 +312,50 @@
             this.pDatosGenerales.Size = new System.Drawing.Size(1182, 782);
             this.pDatosGenerales.TabIndex = 117;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label5.Location = new System.Drawing.Point(20, 381);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(236, 20);
+            this.label5.TabIndex = 210;
+            this.label5.Text = "Seleccione la nota médica:";
+            // 
             // dgvConsultaGeneral
             // 
             this.dgvConsultaGeneral.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvConsultaGeneral.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvConsultaGeneral.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsultaGeneral.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvConsultaGeneral.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dgvConsultaGeneral.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvConsultaGeneral.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvConsultaGeneral.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvConsultaGeneral.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvConsultaGeneral.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvConsultaGeneral.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvConsultaGeneral.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvConsultaGeneral.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvConsultaGeneral.EnableHeadersVisualStyles = false;
             this.dgvConsultaGeneral.Location = new System.Drawing.Point(24, 405);
             this.dgvConsultaGeneral.Margin = new System.Windows.Forms.Padding(4);
@@ -543,12 +567,11 @@
             // 
             // txtIdConsulta
             // 
-            this.txtIdConsulta.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtIdConsulta.BackColor = System.Drawing.Color.White;
             this.txtIdConsulta.BorderColor = System.Drawing.Color.Gray;
             this.txtIdConsulta.BorderFocusColor = System.Drawing.Color.DarkCyan;
             this.txtIdConsulta.BorderRadius = 12;
             this.txtIdConsulta.BorderSize = 2;
-            this.txtIdConsulta.Enabled = false;
             this.txtIdConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdConsulta.ForeColor = System.Drawing.Color.DimGray;
             this.txtIdConsulta.Location = new System.Drawing.Point(28, 111);
@@ -559,7 +582,7 @@
             this.txtIdConsulta.PasswordChar = false;
             this.txtIdConsulta.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtIdConsulta.PlaceholderText = "";
-            this.txtIdConsulta.Size = new System.Drawing.Size(347, 44);
+            this.txtIdConsulta.Size = new System.Drawing.Size(281, 44);
             this.txtIdConsulta.TabIndex = 219;
             this.txtIdConsulta.UnderlinedStyle = true;
             // 
@@ -806,27 +829,29 @@
             this.btnBuscarNotaMedica.UseVisualStyleBackColor = false;
             this.btnBuscarNotaMedica.Click += new System.EventHandler(this.btnBuscarNotaMedica_Click);
             // 
-            // label5
+            // btnConsultaIndividual
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label5.Location = new System.Drawing.Point(20, 381);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(236, 20);
-            this.label5.TabIndex = 210;
-            this.label5.Text = "Seleccione la nota médica:";
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.pConsultaMedica);
-            this.panel1.Controls.Add(this.pDatosGenerales);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1260, 653);
-            this.panel1.TabIndex = 0;
+            this.btnConsultaIndividual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnConsultaIndividual.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnConsultaIndividual.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnConsultaIndividual.BorderRadius = 20;
+            this.btnConsultaIndividual.BorderSize = 0;
+            this.btnConsultaIndividual.FlatAppearance.BorderSize = 0;
+            this.btnConsultaIndividual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultaIndividual.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaIndividual.ForeColor = System.Drawing.Color.White;
+            this.btnConsultaIndividual.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultaIndividual.Image")));
+            this.btnConsultaIndividual.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConsultaIndividual.Location = new System.Drawing.Point(318, 106);
+            this.btnConsultaIndividual.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultaIndividual.Name = "btnConsultaIndividual";
+            this.btnConsultaIndividual.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnConsultaIndividual.Size = new System.Drawing.Size(53, 49);
+            this.btnConsultaIndividual.TabIndex = 229;
+            this.btnConsultaIndividual.TextColor = System.Drawing.Color.White;
+            this.btnConsultaIndividual.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConsultaIndividual.UseVisualStyleBackColor = false;
+            this.btnConsultaIndividual.Click += new System.EventHandler(this.btnConsultaIndividual_Click);
             // 
             // frmActualizaNotaMedica
             // 
@@ -844,12 +869,12 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pContenedor.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.pConsultaMedica.ResumeLayout(false);
             this.pConsultaMedica.PerformLayout();
             this.pDatosGenerales.ResumeLayout(false);
             this.pDatosGenerales.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaGeneral)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -899,5 +924,6 @@
         private TextPersonalizado txtNoExpediente;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
+        private BotonPersonalizado btnConsultaIndividual;
     }
 }

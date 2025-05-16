@@ -400,6 +400,13 @@ namespace CapaPresentacion.Nota_Medica
                     return;
                 }
 
+                // Validar si la fecha de emisión no es una fecha futura
+                if (dtpFechaConsulta.Value > DateTime.Now)
+                {
+                    RJMessageBox.Show("Por favor, ingresa una fecha válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 // Obtener el idTipoCausa de la lista utilizando el índice seleccionado
                 int idTipoCausa = idTipoCausaList[cboxTipoCausa.SelectedIndex];
 
@@ -441,6 +448,13 @@ namespace CapaPresentacion.Nota_Medica
                 if (string.IsNullOrEmpty(txtIdEmpleadoSin.Text) || string.IsNullOrEmpty(txtObservacionesSin.Text) || string.IsNullOrEmpty(txtDiagnosticoSin.Text) || cboxTipoCausaSin.SelectedIndex == -1 || string.IsNullOrEmpty(cboxProcesoSin.Text))
                 {
                     RJMessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Validar si la fecha de emisión no es una fecha futura
+                if (dtpFechaConsultaSin.Value > DateTime.Now)
+                {
+                    RJMessageBox.Show("Por favor, ingresa una fecha válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 

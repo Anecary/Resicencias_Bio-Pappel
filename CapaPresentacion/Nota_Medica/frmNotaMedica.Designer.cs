@@ -1594,6 +1594,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtHeredoFamiliar.BorderFocusColor = System.Drawing.Color.DarkCyan;
             this.txtHeredoFamiliar.BorderRadius = 12;
             this.txtHeredoFamiliar.BorderSize = 2;
+            this.txtHeredoFamiliar.Enabled = false;
             this.txtHeredoFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHeredoFamiliar.ForeColor = System.Drawing.Color.DimGray;
             this.txtHeredoFamiliar.Location = new System.Drawing.Point(17, 76);

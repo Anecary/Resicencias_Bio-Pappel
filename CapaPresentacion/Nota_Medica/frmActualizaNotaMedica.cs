@@ -283,5 +283,18 @@ namespace CapaPresentacion.Nota_Medica
         {
             limpiarFormulario();
         }
+
+        private void btnConsultaIndividual_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int idConsulta = Convert.ToInt32(txtIdConsulta.Text);
+                buscarNotaMedica(idConsulta);
+            } catch (Exception ex)
+            {
+                RJMessageBox.Show("Por favor, ingrese un idConsulta válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+            }
+
+        }
     }
 }

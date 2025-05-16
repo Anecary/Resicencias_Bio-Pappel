@@ -658,12 +658,12 @@
             // 
             // txtIdConsulta
             // 
-            this.txtIdConsulta.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtIdConsulta.BackColor = System.Drawing.Color.White;
             this.txtIdConsulta.BorderColor = System.Drawing.Color.Gray;
             this.txtIdConsulta.BorderFocusColor = System.Drawing.Color.DarkCyan;
             this.txtIdConsulta.BorderRadius = 12;
             this.txtIdConsulta.BorderSize = 2;
-            this.txtIdConsulta.Enabled = false;
+            this.txtIdConsulta.Enabled = true;
             this.txtIdConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdConsulta.ForeColor = System.Drawing.Color.DimGray;
             this.txtIdConsulta.Location = new System.Drawing.Point(27, 101);

@@ -251,7 +251,7 @@ namespace CapaPresentacion.Nota_Medica
             }
             catch 
             {
-                RJMessageBox.Show(" Por favor ingrese la Id de la onsulta para continuar.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RJMessageBox.Show(" Por favor ingrese la Id de la consulta para continuar.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
