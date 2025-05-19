@@ -1,16 +1,17 @@
-﻿using CapaNegocios;
+﻿using CapaEntidad;
+using CapaNegocios;
 using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
-using CapaEntidad;
 
 
 
@@ -100,13 +101,13 @@ namespace CapaPresentacion.Empleados
                     cmbPuestos.SelectedItem == null ||
                     cmbTurno.SelectedItem == null)
                 {
-                    MessageBox.Show("Todos los campos son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("Todos los campos son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return; // Detiene la ejecución si hay campos vacíos
                 }
                 string nss = txtNssBusqueda.Text;
                 string numero_nomina = txtNoNomina.Text.Trim();
-                DateTime fecha_ingreso_puesto = dateTimePicker1.Value;
-                DateTime fecha_ingreso_empresa = dateTimePicker1.Value;
+                DateTime fecha_ingreso_puesto = dtpFechaIngreso.Value;
+                DateTime fecha_ingreso_empresa = dtpFechaIngreso.Value;
                 char turno = cmbTurno.SelectedItem.ToString()[0];
                 int idPuesto = int.Parse(txtIdPuesto.Text);
 
@@ -121,14 +122,14 @@ namespace CapaPresentacion.Empleados
                 };
 
                 negocios.altaEmpleado(empleado);
-                MessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LimpiarControles();
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -140,7 +141,7 @@ namespace CapaPresentacion.Empleados
 
                 if (puestos == null || puestos.Count == 0)
                 {
-                    MessageBox.Show("No hay puestos disponibles.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("No hay puestos disponibles.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -151,7 +152,7 @@ namespace CapaPresentacion.Empleados
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar los puestos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error al cargar los puestos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -163,17 +164,23 @@ namespace CapaPresentacion.Empleados
         private void LimpiarControles()
         {
             txtNssBusqueda.Text = "";
-            txtNssBusqueda.Enabled = true;
-            btnBuscarEmpleadoNSS.Enabled = true;
             txtNombreCompleto.Text = "";
             txtTelefono.Text = "";
             txtDomicilio.Text = "";
             txtNoNomina.Text = "";
-            txtNoNomina.Enabled = true;
+
+            txtNoNomina.Enabled = false; txtNoNomina.BackColor = Color.WhiteSmoke;
             cmbPuestos.SelectedIndex = 0;
-            cmbPuestos.Enabled = false;
+            cmbPuestos.Enabled = false;cmbPuestos.BackColor = Color.WhiteSmoke;
             cmbTurno.SelectedIndex = 0;
-            cmbTurno.Enabled = false;
+            cmbTurno.Enabled = false; cmbTurno.BackColor = Color.WhiteSmoke;
+
+            dtpFechaIngreso.Enabled = false; dtpFechaIngreso.SkinColor= Color.WhiteSmoke;
+
+            txtNssBusqueda.Enabled = true; txtNssBusqueda.BackColor = Color.White;
+            btnBuscarEmpleadoNSS.Enabled = true; 
+            btnGrabar.Enabled = false;
+            btnCancelar.Enabled = false;
         }
 
         private void btnBuscarEmpleadoNSS_Click(object sender, EventArgs e)
@@ -184,7 +191,7 @@ namespace CapaPresentacion.Empleados
 
                 if (string.IsNullOrWhiteSpace(nss))
                 {
-                    MessageBox.Show("Por favor, ingrese un NSS.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("Por favor, ingrese un NSS.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -194,29 +201,48 @@ namespace CapaPresentacion.Empleados
                 // Mostrar datos en los TextBox de Material Skin
                 if (datosEmpleado.estado != "I")
                 {
-                    MessageBox.Show("Empleado dado de alta.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("Empleado dado de alta.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 txtNombreCompleto.Text = datosEmpleado.nombreCompleto;
                 txtTelefono.Text = datosEmpleado.telefono;
                 txtDomicilio.Text = datosEmpleado.domicilio;
 
-                txtNoNomina.Enabled = true;
-                cmbPuestos.Enabled = true;
-                cmbTurno.Enabled = true;
-                txtNssBusqueda.Enabled = false;
+                txtNoNomina.Enabled = true; txtNoNomina.BackColor = Color.White;
+                cmbPuestos.Enabled = true; cmbPuestos.BackColor = Color.White;
+                cmbTurno.Enabled = true; cmbTurno.BackColor = Color.White;
+                dtpFechaIngreso.Enabled = true; dtpFechaIngreso.SkinColor = Color.White;
+
+                txtNssBusqueda.Enabled = false; txtNssBusqueda.BackColor = Color.WhiteSmoke;
                 btnBuscarEmpleadoNSS.Enabled = false;
 
+                btnGrabar.Enabled = true;
+                btnCancelar.Enabled = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtNoNomina_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permite letras, números, guión y teclas de control como borrar (Backspace)
+            if (!char.IsLetterOrDigit(e.KeyChar) && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea la tecla
+                SystemSounds.Beep.Play(); // Sonido opcional
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarControles();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 //using System.Windows.Controls;
@@ -53,11 +54,6 @@ namespace CapaPresentacion.Empleados
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void materialButton2_Click(object sender, EventArgs e)
-        {
-            
-        }
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
             Panel panel = sender as Panel;
@@ -82,10 +78,6 @@ namespace CapaPresentacion.Empleados
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                 e.Graphics.DrawPath(pen, path);
             }
-        }
-        private void materialButton3_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void pPuestos_Paint(object sender, PaintEventArgs e)
@@ -144,7 +136,7 @@ namespace CapaPresentacion.Empleados
                 // Limpia el TextBox
                 txtIdPuesto.Clear();
                 txtPuesto.Clear();
-                txtPuesto.Enabled = false;
+                txtPuesto.Enabled = false; txtPuesto.BackColor = Color.WhiteSmoke;
                 btnNuevo.Enabled = true;
                 btnGuardar.Enabled = false;
                 dataGridView1.DataSource = null;
@@ -162,9 +154,26 @@ namespace CapaPresentacion.Empleados
             }
         }
 
-        private void materialButton1_Click(object sender, EventArgs e)
+        private void txtPuesto_KeyPress_1(object sender, KeyPressEventArgs e)
         {
+            bool esLetraODigito = char.IsLetterOrDigit(e.KeyChar);
+            bool esGuion = e.KeyChar == '-';
+            bool esTeclaControl = char.IsControl(e.KeyChar);
 
+            bool esTeclaPermitida = e.KeyChar == (char)Keys.Back ||
+                                    e.KeyChar == (char)Keys.Delete ||
+                                    e.KeyChar == (char)Keys.Enter ||
+                                    e.KeyChar == (char)Keys.Tab ||
+                                    e.KeyChar == (char)Keys.Escape ||
+                                    e.KeyChar == (char)Keys.Left ||
+                                    e.KeyChar == (char)Keys.Right ||
+                                    e.KeyChar == (char)Keys.Space;
+
+            if (!(esLetraODigito || esGuion || esTeclaControl || esTeclaPermitida))
+            {
+                e.Handled = true; // Bloquea la tecla
+                SystemSounds.Beep.Play(); // Sonido opcional
+            }
         }
     }
 }

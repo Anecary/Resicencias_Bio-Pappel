@@ -108,7 +108,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label2.Location = new System.Drawing.Point(34, 168);
+            this.label2.Location = new System.Drawing.Point(358, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 16);
             this.label2.TabIndex = 154;
@@ -123,24 +123,26 @@
             this.txtPuesto.BorderSize = 2;
             this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPuesto.Location = new System.Drawing.Point(30, 179);
+            this.txtPuesto.Location = new System.Drawing.Point(358, 107);
             this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPuesto.MaxLength = 30;
             this.txtPuesto.Multiline = false;
             this.txtPuesto.Name = "txtPuesto";
             this.txtPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtPuesto.PasswordChar = false;
             this.txtPuesto.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtPuesto.PlaceholderText = "";
-            this.txtPuesto.Size = new System.Drawing.Size(266, 35);
+            this.txtPuesto.Size = new System.Drawing.Size(307, 35);
             this.txtPuesto.TabIndex = 153;
             this.txtPuesto.UnderlinedStyle = true;
+            this.txtPuesto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPuesto_KeyPress_1);
             // 
             // label66
             // 
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label66.Location = new System.Drawing.Point(34, 92);
+            this.label66.Location = new System.Drawing.Point(31, 92);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(80, 16);
             this.label66.TabIndex = 152;
@@ -156,8 +158,9 @@
             this.txtIdPuesto.Enabled = false;
             this.txtIdPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdPuesto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtIdPuesto.Location = new System.Drawing.Point(30, 108);
+            this.txtIdPuesto.Location = new System.Drawing.Point(27, 108);
             this.txtIdPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdPuesto.MaxLength = 32767;
             this.txtIdPuesto.Multiline = false;
             this.txtIdPuesto.Name = "txtIdPuesto";
             this.txtIdPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -181,7 +184,7 @@
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(316, 105);
+            this.btnBuscar.Location = new System.Drawing.Point(311, 105);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.btnBuscar.Size = new System.Drawing.Size(40, 40);
@@ -202,7 +205,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(316, 164);
+            this.btnGuardar.Location = new System.Drawing.Point(685, 92);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnGuardar.Size = new System.Drawing.Size(184, 53);
@@ -225,7 +228,7 @@
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
-            this.btnNuevo.Location = new System.Drawing.Point(30, 14);
+            this.btnNuevo.Location = new System.Drawing.Point(27, 14);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnNuevo.Size = new System.Drawing.Size(184, 53);
@@ -269,13 +272,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 228);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 172);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 35;
-            this.dataGridView1.Size = new System.Drawing.Size(839, 225);
+            this.dataGridView1.Size = new System.Drawing.Size(849, 281);
             this.dataGridView1.TabIndex = 95;
             // 
             // panel3

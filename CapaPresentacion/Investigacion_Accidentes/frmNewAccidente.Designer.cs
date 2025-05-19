@@ -53,6 +53,10 @@
             this.pDatosGenerales = new System.Windows.Forms.Panel();
             this.topePagina1 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.label74 = new System.Windows.Forms.Label();
+            this.txtNombreTestigo = new CapaPresentacion.TextPersonalizado();
+            this.label73 = new System.Windows.Forms.Label();
+            this.txtNumNominaTestigo = new CapaPresentacion.TextPersonalizado();
             this.btnBuscarTestigo = new CapaPresentacion.BotonPersonalizado();
             this.btnAgregarTestigo = new CapaPresentacion.BotonPersonalizado();
             this.txtIdEmpleadoTestigo = new MaterialSkin.Controls.MaterialTextBox();
@@ -64,10 +68,20 @@
             this.acciones = new System.Windows.Forms.DataGridViewImageColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.cboxDecidoA = new MaterialSkin.Controls.MaterialComboBox();
-            this.cboxCondicion = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtTotalhrs = new CapaPresentacion.TextPersonalizado();
+            this.label72 = new System.Windows.Forms.Label();
+            this.txtPuesto = new CapaPresentacion.TextPersonalizado();
+            this.label71 = new System.Windows.Forms.Label();
+            this.txtAntiguedad = new CapaPresentacion.TextPersonalizado();
+            this.label70 = new System.Windows.Forms.Label();
+            this.txtEdad = new CapaPresentacion.TextPersonalizado();
+            this.label69 = new System.Windows.Forms.Label();
+            this.txtNumeroNomina = new CapaPresentacion.TextPersonalizado();
+            this.label67 = new System.Windows.Forms.Label();
+            this.txtNombreEmpleado = new CapaPresentacion.TextPersonalizado();
+            this.label68 = new System.Windows.Forms.Label();
+            this.txtNoAccidente = new CapaPresentacion.TextPersonalizado();
             this.btnBuscarEmpleado = new CapaPresentacion.BotonPersonalizado();
-            this.CboxTurno = new MaterialSkin.Controls.MaterialComboBox();
             this.rbtnHrsExtrasSi = new CapaPresentacion.radioButtonPersonalizado();
             this.dtpHoraAccidente = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaAccidente = new System.Windows.Forms.DateTimePicker();
@@ -83,6 +97,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.txtTrabajoDesempeñado = new CapaPresentacion.TextPersonalizado();
+            this.txtTipoLesion = new CapaPresentacion.TextPersonalizado();
+            this.txtParteCuerpoAfectada = new CapaPresentacion.TextPersonalizado();
             this.pControlAcciones = new System.Windows.Forms.Panel();
             this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -91,7 +108,13 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
+            this.label76 = new System.Windows.Forms.Label();
+            this.txtNombreSST = new CapaPresentacion.TextPersonalizado();
+            this.label75 = new System.Windows.Forms.Label();
+            this.txtNumNomminaSST = new CapaPresentacion.TextPersonalizado();
+            this.txtSeguimiento = new CapaPresentacion.TextPersonalizado();
             this.btnBuscarEmpleadoSST = new CapaPresentacion.BotonPersonalizado();
+            this.txtidNombreSST = new MaterialSkin.Controls.MaterialTextBox();
             this.dtpHoraSeguimiento = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaSeguimiento = new System.Windows.Forms.DateTimePicker();
             this.label59 = new System.Windows.Forms.Label();
@@ -101,14 +124,24 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
+            this.txtAccionesPreventivasProp = new CapaPresentacion.TextPersonalizado();
+            this.txtQuienPreventivas = new CapaPresentacion.TextPersonalizado();
+            this.txtCuandoPreventivas = new CapaPresentacion.TextPersonalizado();
             this.panel31 = new System.Windows.Forms.Panel();
             this.label53 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
+            this.txtAccionesCorrectivas = new CapaPresentacion.TextPersonalizado();
+            this.txtquienCorrectivas = new CapaPresentacion.TextPersonalizado();
+            this.txtCuandoCorrectivas = new CapaPresentacion.TextPersonalizado();
             this.label49 = new System.Windows.Forms.Label();
             this.pSeguimientoCaso = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
+            this.label79 = new System.Windows.Forms.Label();
+            this.txtNombreEmpleadoInvolucrado = new CapaPresentacion.TextPersonalizado();
+            this.label80 = new System.Windows.Forms.Label();
+            this.txtNumNominaEmpleadoInvolucrado = new CapaPresentacion.TextPersonalizado();
             this.btnBuscarEmpleadoInvolucrado = new CapaPresentacion.BotonPersonalizado();
             this.btnAgregarEmpleadoInvolucrado = new CapaPresentacion.BotonPersonalizado();
             this.txtIdEmpleadoInvolucrado = new MaterialSkin.Controls.MaterialTextBox();
@@ -123,13 +156,21 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
+            this.txtDiagnosticoFinal = new CapaPresentacion.TextPersonalizado();
+            this.txtIncapacidad = new CapaPresentacion.TextPersonalizado();
+            this.txtTratamiento = new CapaPresentacion.TextPersonalizado();
             this.panel28 = new System.Windows.Forms.Panel();
+            this.txtOtro = new CapaPresentacion.TextPersonalizado();
             this.rbtnOtro = new MaterialSkin.Controls.MaterialRadioButton();
             this.rbtnEnviadoDomicilio = new MaterialSkin.Controls.MaterialRadioButton();
             this.rbtnEnviadoAtencionMedica = new MaterialSkin.Controls.MaterialRadioButton();
             this.rbtnContinuaTrabajando = new MaterialSkin.Controls.MaterialRadioButton();
             this.label42 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
+            this.label78 = new System.Windows.Forms.Label();
+            this.txtNombreEmpleadoConocimiento = new CapaPresentacion.TextPersonalizado();
+            this.label77 = new System.Windows.Forms.Label();
+            this.txtNumNominaEmpleadoConocimiento = new CapaPresentacion.TextPersonalizado();
             this.btnBuscarEmpleadoConocimiento = new CapaPresentacion.BotonPersonalizado();
             this.btnAgregarEmpleadoConocimiento = new CapaPresentacion.BotonPersonalizado();
             this.txtIdEmpleadoConocimiento = new MaterialSkin.Controls.MaterialTextBox();
@@ -141,6 +182,7 @@
             this.accionesConocimiento = new System.Windows.Forms.DataGridViewImageColumn();
             this.pDetallesAccidente = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtDescripcionAccidente = new CapaPresentacion.TextPersonalizado();
             this.label62 = new System.Windows.Forms.Label();
             this.cboxCausasAccidente = new MaterialSkin.Controls.MaterialComboBox();
             this.label32 = new System.Windows.Forms.Label();
@@ -151,6 +193,8 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.txtEquipoDanado = new CapaPresentacion.TextPersonalizado();
+            this.txtSustituiblePor = new CapaPresentacion.TextPersonalizado();
             this.label23 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.rbtnTrabajoUrgenteSi = new CapaPresentacion.radioButtonPersonalizado();
@@ -164,6 +208,10 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtEquipoProteccionNecesario = new CapaPresentacion.TextPersonalizado();
+            this.txtObjCausanteLesion = new CapaPresentacion.TextPersonalizado();
+            this.txtEquipoProteccionUsado = new CapaPresentacion.TextPersonalizado();
+            this.txtLugarAccidente = new CapaPresentacion.TextPersonalizado();
             this.rbtnlesion12MesesSi = new CapaPresentacion.radioButtonPersonalizado();
             this.rbtnlesion30DiasSi = new CapaPresentacion.radioButtonPersonalizado();
             this.label15 = new System.Windows.Forms.Label();
@@ -186,22 +234,37 @@
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.label83 = new System.Windows.Forms.Label();
+            this.txtOtraCondicion = new CapaPresentacion.TextPersonalizado();
             this.btnGrabarCondicionInsegura = new CapaPresentacion.BotonPersonalizado();
             this.btnAgregarCondicion = new CapaPresentacion.BotonPersonalizado();
             this.dgvCondicionInsegura = new System.Windows.Forms.DataGridView();
+            this.idCondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesCondiciones = new System.Windows.Forms.DataGridViewImageColumn();
             this.cboxCondicionesInseguras = new MaterialSkin.Controls.MaterialComboBox();
             this.label36 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.label82 = new System.Windows.Forms.Label();
             this.btnGrabarActoInseguro = new CapaPresentacion.BotonPersonalizado();
+            this.txtOtroActoInseguro = new CapaPresentacion.TextPersonalizado();
             this.btnAgregarActoInseguro = new CapaPresentacion.BotonPersonalizado();
             this.dgvActoInseguro = new System.Windows.Forms.DataGridView();
+            this.idActoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.actoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesActosInseguros = new System.Windows.Forms.DataGridViewImageColumn();
             this.cboxActoInseguro = new MaterialSkin.Controls.MaterialComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.label81 = new System.Windows.Forms.Label();
+            this.txtOtroRiesgo = new CapaPresentacion.TextPersonalizado();
             this.btnGrabarRiesgo = new CapaPresentacion.BotonPersonalizado();
             this.btnAgregarRiesgo = new CapaPresentacion.BotonPersonalizado();
             this.dgvRiesgos = new System.Windows.Forms.DataGridView();
+            this.idRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.riesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesriesgos = new System.Windows.Forms.DataGridViewImageColumn();
             this.cboxRiesgos = new MaterialSkin.Controls.MaterialComboBox();
             this.label33 = new System.Windows.Forms.Label();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
@@ -228,72 +291,14 @@
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label68 = new System.Windows.Forms.Label();
-            this.txtNoAccidente = new CapaPresentacion.TextPersonalizado();
-            this.label67 = new System.Windows.Forms.Label();
-            this.txtNombreEmpleado = new CapaPresentacion.TextPersonalizado();
-            this.label69 = new System.Windows.Forms.Label();
-            this.txtNumeroNomina = new CapaPresentacion.TextPersonalizado();
-            this.label70 = new System.Windows.Forms.Label();
-            this.txtEdad = new CapaPresentacion.TextPersonalizado();
-            this.txtAntiguedad = new CapaPresentacion.TextPersonalizado();
-            this.txtPuesto = new CapaPresentacion.TextPersonalizado();
-            this.label71 = new System.Windows.Forms.Label();
-            this.txtTotalhrs = new CapaPresentacion.TextPersonalizado();
-            this.label72 = new System.Windows.Forms.Label();
-            this.txtTrabajoDesempeñado = new CapaPresentacion.TextPersonalizado();
-            this.txtTipoLesion = new CapaPresentacion.TextPersonalizado();
-            this.txtParteCuerpoAfectada = new CapaPresentacion.TextPersonalizado();
-            this.label73 = new System.Windows.Forms.Label();
-            this.txtNumNominaTestigo = new CapaPresentacion.TextPersonalizado();
-            this.label74 = new System.Windows.Forms.Label();
-            this.txtNombreTestigo = new CapaPresentacion.TextPersonalizado();
-            this.txtAccionesCorrectivas = new CapaPresentacion.TextPersonalizado();
-            this.txtquienCorrectivas = new CapaPresentacion.TextPersonalizado();
-            this.txtCuandoCorrectivas = new CapaPresentacion.TextPersonalizado();
-            this.txtAccionesPreventivasProp = new CapaPresentacion.TextPersonalizado();
-            this.txtQuienPreventivas = new CapaPresentacion.TextPersonalizado();
-            this.txtCuandoPreventivas = new CapaPresentacion.TextPersonalizado();
-            this.txtSeguimiento = new CapaPresentacion.TextPersonalizado();
-            this.label75 = new System.Windows.Forms.Label();
-            this.txtNumNomminaSST = new CapaPresentacion.TextPersonalizado();
-            this.txtNombreSST = new CapaPresentacion.TextPersonalizado();
-            this.label76 = new System.Windows.Forms.Label();
-            this.txtidNombreSST = new MaterialSkin.Controls.MaterialTextBox();
-            this.label77 = new System.Windows.Forms.Label();
-            this.txtNumNominaEmpleadoConocimiento = new CapaPresentacion.TextPersonalizado();
-            this.label78 = new System.Windows.Forms.Label();
-            this.txtNombreEmpleadoConocimiento = new CapaPresentacion.TextPersonalizado();
-            this.txtOtro = new CapaPresentacion.TextPersonalizado();
-            this.txtDiagnosticoFinal = new CapaPresentacion.TextPersonalizado();
-            this.txtTratamiento = new CapaPresentacion.TextPersonalizado();
-            this.txtIncapacidad = new CapaPresentacion.TextPersonalizado();
-            this.label79 = new System.Windows.Forms.Label();
-            this.txtNombreEmpleadoInvolucrado = new CapaPresentacion.TextPersonalizado();
-            this.label80 = new System.Windows.Forms.Label();
-            this.txtNumNominaEmpleadoInvolucrado = new CapaPresentacion.TextPersonalizado();
-            this.txtLugarAccidente = new CapaPresentacion.TextPersonalizado();
-            this.txtEquipoProteccionUsado = new CapaPresentacion.TextPersonalizado();
-            this.txtObjCausanteLesion = new CapaPresentacion.TextPersonalizado();
-            this.txtEquipoProteccionNecesario = new CapaPresentacion.TextPersonalizado();
-            this.txtEquipoDanado = new CapaPresentacion.TextPersonalizado();
-            this.txtSustituiblePor = new CapaPresentacion.TextPersonalizado();
-            this.txtDescripcionAccidente = new CapaPresentacion.TextPersonalizado();
-            this.label81 = new System.Windows.Forms.Label();
-            this.txtOtroRiesgo = new CapaPresentacion.TextPersonalizado();
-            this.label82 = new System.Windows.Forms.Label();
-            this.txtOtroActoInseguro = new CapaPresentacion.TextPersonalizado();
-            this.label83 = new System.Windows.Forms.Label();
-            this.txtOtraCondicion = new CapaPresentacion.TextPersonalizado();
-            this.idRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.riesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesriesgos = new System.Windows.Forms.DataGridViewImageColumn();
-            this.idActoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.actoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesActosInseguros = new System.Windows.Forms.DataGridViewImageColumn();
-            this.idCondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesCondiciones = new System.Windows.Forms.DataGridViewImageColumn();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            this.mySqlCommand2 = new MySql.Data.MySqlClient.MySqlCommand();
+            this.cboxCondicion = new CapaPresentacion.comboBoxPersonalizado();
+            this.label84 = new System.Windows.Forms.Label();
+            this.CboxTurno = new CapaPresentacion.comboBoxPersonalizado();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.cboxDecidoA = new CapaPresentacion.comboBoxPersonalizado();
             this.panel1.SuspendLayout();
             this.pContenedorAcc.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
@@ -395,6 +400,73 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(916, 275);
             this.panel15.TabIndex = 94;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label74.Location = new System.Drawing.Point(243, 31);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(153, 16);
+            this.label74.TabIndex = 191;
+            this.label74.Text = "Nombre del Testigo: ";
+            // 
+            // txtNombreTestigo
+            // 
+            this.txtNombreTestigo.BackColor = System.Drawing.Color.White;
+            this.txtNombreTestigo.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreTestigo.BorderRadius = 12;
+            this.txtNombreTestigo.BorderSize = 2;
+            this.txtNombreTestigo.Enabled = false;
+            this.txtNombreTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreTestigo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreTestigo.Location = new System.Drawing.Point(239, 47);
+            this.txtNombreTestigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreTestigo.MaxLength = 32767;
+            this.txtNombreTestigo.Multiline = false;
+            this.txtNombreTestigo.Name = "txtNombreTestigo";
+            this.txtNombreTestigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreTestigo.PasswordChar = false;
+            this.txtNombreTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreTestigo.PlaceholderText = "";
+            this.txtNombreTestigo.Size = new System.Drawing.Size(531, 35);
+            this.txtNombreTestigo.TabIndex = 190;
+            this.txtNombreTestigo.UnderlinedStyle = true;
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label73.Location = new System.Drawing.Point(18, 35);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(96, 16);
+            this.label73.TabIndex = 189;
+            this.label73.Text = "No. Nómina: ";
+            // 
+            // txtNumNominaTestigo
+            // 
+            this.txtNumNominaTestigo.BackColor = System.Drawing.Color.White;
+            this.txtNumNominaTestigo.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumNominaTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumNominaTestigo.BorderRadius = 12;
+            this.txtNumNominaTestigo.BorderSize = 2;
+            this.txtNumNominaTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumNominaTestigo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumNominaTestigo.Location = new System.Drawing.Point(14, 51);
+            this.txtNumNominaTestigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumNominaTestigo.MaxLength = 32767;
+            this.txtNumNominaTestigo.Multiline = false;
+            this.txtNumNominaTestigo.Name = "txtNumNominaTestigo";
+            this.txtNumNominaTestigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumNominaTestigo.PasswordChar = false;
+            this.txtNumNominaTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNominaTestigo.PlaceholderText = "";
+            this.txtNumNominaTestigo.Size = new System.Drawing.Size(164, 35);
+            this.txtNumNominaTestigo.TabIndex = 188;
+            this.txtNumNominaTestigo.UnderlinedStyle = true;
             // 
             // btnBuscarTestigo
             // 
@@ -563,7 +635,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 26306);
+            this.button2.Location = new System.Drawing.Point(728, 26972);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 50);
             this.button2.TabIndex = 91;
@@ -574,6 +646,12 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel14.Controls.Add(this.label86);
+            this.panel14.Controls.Add(this.cboxDecidoA);
+            this.panel14.Controls.Add(this.label85);
+            this.panel14.Controls.Add(this.CboxTurno);
+            this.panel14.Controls.Add(this.label84);
+            this.panel14.Controls.Add(this.cboxCondicion);
             this.panel14.Controls.Add(this.txtTotalhrs);
             this.panel14.Controls.Add(this.label72);
             this.panel14.Controls.Add(this.txtPuesto);
@@ -587,10 +665,7 @@
             this.panel14.Controls.Add(this.txtNombreEmpleado);
             this.panel14.Controls.Add(this.label68);
             this.panel14.Controls.Add(this.txtNoAccidente);
-            this.panel14.Controls.Add(this.cboxDecidoA);
-            this.panel14.Controls.Add(this.cboxCondicion);
             this.panel14.Controls.Add(this.btnBuscarEmpleado);
-            this.panel14.Controls.Add(this.CboxTurno);
             this.panel14.Controls.Add(this.rbtnHrsExtrasSi);
             this.panel14.Controls.Add(this.dtpHoraAccidente);
             this.panel14.Controls.Add(this.dtpFechaAccidente);
@@ -614,73 +689,231 @@
             this.panel14.Size = new System.Drawing.Size(917, 626);
             this.panel14.TabIndex = 93;
             // 
-            // cboxDecidoA
+            // txtTotalhrs
             // 
-            this.cboxDecidoA.AutoResize = false;
-            this.cboxDecidoA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxDecidoA.Depth = 0;
-            this.cboxDecidoA.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxDecidoA.DropDownHeight = 174;
-            this.cboxDecidoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxDecidoA.DropDownWidth = 121;
-            this.cboxDecidoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxDecidoA.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxDecidoA.FormattingEnabled = true;
-            this.cboxDecidoA.Hint = "Debido a:";
-            this.cboxDecidoA.IntegralHeight = false;
-            this.cboxDecidoA.ItemHeight = 43;
-            this.cboxDecidoA.Items.AddRange(new object[] {
-            "Reac. Gente",
-            "Act. Inseg.",
-            "Dispos. Seg.",
-            "Posic. Gente",
-            "Herramient.",
-            "No EPP",
-            "No Proced.",
-            "Maq./ equip.",
-            "Materiales",
-            "Derrames",
-            "Otra gente",
-            "Objetos",
-            "Operación",
-            "Estruc./inst.",
-            "Transp./Vehic."});
-            this.cboxDecidoA.Location = new System.Drawing.Point(516, 230);
-            this.cboxDecidoA.MaxDropDownItems = 4;
-            this.cboxDecidoA.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxDecidoA.Name = "cboxDecidoA";
-            this.cboxDecidoA.Size = new System.Drawing.Size(391, 49);
-            this.cboxDecidoA.StartIndex = 0;
-            this.cboxDecidoA.TabIndex = 125;
+            this.txtTotalhrs.BackColor = System.Drawing.Color.White;
+            this.txtTotalhrs.BorderColor = System.Drawing.Color.Gray;
+            this.txtTotalhrs.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTotalhrs.BorderRadius = 12;
+            this.txtTotalhrs.BorderSize = 2;
+            this.txtTotalhrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalhrs.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTotalhrs.Location = new System.Drawing.Point(219, 186);
+            this.txtTotalhrs.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotalhrs.MaxLength = 32767;
+            this.txtTotalhrs.Multiline = false;
+            this.txtTotalhrs.Name = "txtTotalhrs";
+            this.txtTotalhrs.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTotalhrs.PasswordChar = false;
+            this.txtTotalhrs.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTotalhrs.PlaceholderText = "8";
+            this.txtTotalhrs.Size = new System.Drawing.Size(152, 35);
+            this.txtTotalhrs.TabIndex = 194;
+            this.txtTotalhrs.UnderlinedStyle = true;
+            this.txtTotalhrs.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTotalhrs_KeyPress);
             // 
-            // cboxCondicion
+            // label72
             // 
-            this.cboxCondicion.AutoResize = false;
-            this.cboxCondicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxCondicion.Depth = 0;
-            this.cboxCondicion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxCondicion.DropDownHeight = 174;
-            this.cboxCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxCondicion.DropDownWidth = 121;
-            this.cboxCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxCondicion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxCondicion.FormattingEnabled = true;
-            this.cboxCondicion.Hint = "Condición:";
-            this.cboxCondicion.IntegralHeight = false;
-            this.cboxCondicion.ItemHeight = 43;
-            this.cboxCondicion.Items.AddRange(new object[] {
-            "Leve",
-            "Moderado",
-            "Grave",
-            "Mortal",
-            "Otra"});
-            this.cboxCondicion.Location = new System.Drawing.Point(11, 49);
-            this.cboxCondicion.MaxDropDownItems = 4;
-            this.cboxCondicion.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxCondicion.Name = "cboxCondicion";
-            this.cboxCondicion.Size = new System.Drawing.Size(148, 49);
-            this.cboxCondicion.StartIndex = 0;
-            this.cboxCondicion.TabIndex = 116;
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label72.Location = new System.Drawing.Point(223, 166);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(101, 16);
+            this.label72.TabIndex = 193;
+            this.label72.Text = "Total de Hrs: ";
+            // 
+            // txtPuesto
+            // 
+            this.txtPuesto.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPuesto.BorderColor = System.Drawing.Color.Gray;
+            this.txtPuesto.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtPuesto.BorderRadius = 12;
+            this.txtPuesto.BorderSize = 2;
+            this.txtPuesto.Enabled = false;
+            this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPuesto.Location = new System.Drawing.Point(389, 186);
+            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPuesto.MaxLength = 32767;
+            this.txtPuesto.Multiline = false;
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPuesto.PasswordChar = false;
+            this.txtPuesto.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPuesto.PlaceholderText = "";
+            this.txtPuesto.Size = new System.Drawing.Size(214, 35);
+            this.txtPuesto.TabIndex = 192;
+            this.txtPuesto.UnderlinedStyle = true;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label71.Location = new System.Drawing.Point(389, 166);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(59, 16);
+            this.label71.TabIndex = 191;
+            this.label71.Text = "Puesto:";
+            // 
+            // txtAntiguedad
+            // 
+            this.txtAntiguedad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtAntiguedad.BorderColor = System.Drawing.Color.Gray;
+            this.txtAntiguedad.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAntiguedad.BorderRadius = 12;
+            this.txtAntiguedad.BorderSize = 2;
+            this.txtAntiguedad.Enabled = false;
+            this.txtAntiguedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAntiguedad.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAntiguedad.Location = new System.Drawing.Point(619, 186);
+            this.txtAntiguedad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAntiguedad.MaxLength = 32767;
+            this.txtAntiguedad.Multiline = false;
+            this.txtAntiguedad.Name = "txtAntiguedad";
+            this.txtAntiguedad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAntiguedad.PasswordChar = false;
+            this.txtAntiguedad.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAntiguedad.PlaceholderText = "";
+            this.txtAntiguedad.Size = new System.Drawing.Size(288, 35);
+            this.txtAntiguedad.TabIndex = 190;
+            this.txtAntiguedad.UnderlinedStyle = true;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label70.Location = new System.Drawing.Point(616, 104);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(52, 16);
+            this.label70.TabIndex = 189;
+            this.label70.Text = "Edad: ";
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEdad.BorderColor = System.Drawing.Color.Gray;
+            this.txtEdad.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEdad.BorderRadius = 12;
+            this.txtEdad.BorderSize = 2;
+            this.txtEdad.Enabled = false;
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEdad.Location = new System.Drawing.Point(616, 120);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEdad.MaxLength = 32767;
+            this.txtEdad.Multiline = false;
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEdad.PasswordChar = false;
+            this.txtEdad.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEdad.PlaceholderText = "";
+            this.txtEdad.Size = new System.Drawing.Size(138, 35);
+            this.txtEdad.TabIndex = 188;
+            this.txtEdad.UnderlinedStyle = true;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label69.Location = new System.Drawing.Point(13, 107);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(96, 16);
+            this.label69.TabIndex = 187;
+            this.label69.Text = "No. Nómina: ";
+            // 
+            // txtNumeroNomina
+            // 
+            this.txtNumeroNomina.BackColor = System.Drawing.Color.White;
+            this.txtNumeroNomina.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumeroNomina.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumeroNomina.BorderRadius = 12;
+            this.txtNumeroNomina.BorderSize = 2;
+            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumeroNomina.Location = new System.Drawing.Point(9, 123);
+            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumeroNomina.MaxLength = 32767;
+            this.txtNumeroNomina.Multiline = false;
+            this.txtNumeroNomina.Name = "txtNumeroNomina";
+            this.txtNumeroNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumeroNomina.PasswordChar = false;
+            this.txtNumeroNomina.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumeroNomina.PlaceholderText = "";
+            this.txtNumeroNomina.Size = new System.Drawing.Size(149, 35);
+            this.txtNumeroNomina.TabIndex = 186;
+            this.txtNumeroNomina.UnderlinedStyle = true;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label67.Location = new System.Drawing.Point(223, 104);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(70, 16);
+            this.label67.TabIndex = 185;
+            this.label67.Text = "Nombre: ";
+            // 
+            // txtNombreEmpleado
+            // 
+            this.txtNombreEmpleado.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNombreEmpleado.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreEmpleado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreEmpleado.BorderRadius = 12;
+            this.txtNombreEmpleado.BorderSize = 2;
+            this.txtNombreEmpleado.Enabled = false;
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(219, 120);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreEmpleado.MaxLength = 32767;
+            this.txtNombreEmpleado.Multiline = false;
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreEmpleado.PasswordChar = false;
+            this.txtNombreEmpleado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreEmpleado.PlaceholderText = "";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(387, 35);
+            this.txtNombreEmpleado.TabIndex = 184;
+            this.txtNombreEmpleado.UnderlinedStyle = true;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label68.Location = new System.Drawing.Point(185, 43);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(112, 16);
+            this.label68.TabIndex = 183;
+            this.label68.Text = "Accidente No.: ";
+            // 
+            // txtNoAccidente
+            // 
+            this.txtNoAccidente.BackColor = System.Drawing.Color.White;
+            this.txtNoAccidente.BorderColor = System.Drawing.Color.Gray;
+            this.txtNoAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNoAccidente.BorderRadius = 12;
+            this.txtNoAccidente.BorderSize = 2;
+            this.txtNoAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoAccidente.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNoAccidente.Location = new System.Drawing.Point(181, 59);
+            this.txtNoAccidente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNoAccidente.MaxLength = 32767;
+            this.txtNoAccidente.Multiline = false;
+            this.txtNoAccidente.Name = "txtNoAccidente";
+            this.txtNoAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNoAccidente.PasswordChar = false;
+            this.txtNoAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNoAccidente.PlaceholderText = "";
+            this.txtNoAccidente.Size = new System.Drawing.Size(422, 35);
+            this.txtNoAccidente.TabIndex = 182;
+            this.txtNoAccidente.UnderlinedStyle = true;
+            this.txtNoAccidente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoAccidente_KeyPress);
             // 
             // btnBuscarEmpleado
             // 
@@ -704,34 +937,6 @@
             this.btnBuscarEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuscarEmpleado.UseVisualStyleBackColor = false;
             this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
-            // 
-            // CboxTurno
-            // 
-            this.CboxTurno.AutoResize = false;
-            this.CboxTurno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.CboxTurno.Depth = 0;
-            this.CboxTurno.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.CboxTurno.DropDownHeight = 174;
-            this.CboxTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CboxTurno.DropDownWidth = 121;
-            this.CboxTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.CboxTurno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CboxTurno.FormattingEnabled = true;
-            this.CboxTurno.Hint = "Turno:";
-            this.CboxTurno.IntegralHeight = false;
-            this.CboxTurno.ItemHeight = 43;
-            this.CboxTurno.Items.AddRange(new object[] {
-            "Matutino",
-            "Vespertino",
-            "Nocturno",
-            "Mixto"});
-            this.CboxTurno.Location = new System.Drawing.Point(767, 107);
-            this.CboxTurno.MaxDropDownItems = 4;
-            this.CboxTurno.MouseState = MaterialSkin.MouseState.OUT;
-            this.CboxTurno.Name = "CboxTurno";
-            this.CboxTurno.Size = new System.Drawing.Size(140, 49);
-            this.CboxTurno.StartIndex = 0;
-            this.CboxTurno.TabIndex = 123;
             // 
             // rbtnHrsExtrasSi
             // 
@@ -896,6 +1101,72 @@
             this.label21.TabIndex = 101;
             this.label21.Text = "Parte del Cuerpo Afectada";
             // 
+            // txtTrabajoDesempeñado
+            // 
+            this.txtTrabajoDesempeñado.BackColor = System.Drawing.Color.White;
+            this.txtTrabajoDesempeñado.BorderColor = System.Drawing.Color.Gray;
+            this.txtTrabajoDesempeñado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTrabajoDesempeñado.BorderRadius = 12;
+            this.txtTrabajoDesempeñado.BorderSize = 2;
+            this.txtTrabajoDesempeñado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTrabajoDesempeñado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTrabajoDesempeñado.Location = new System.Drawing.Point(14, 302);
+            this.txtTrabajoDesempeñado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTrabajoDesempeñado.MaxLength = 32767;
+            this.txtTrabajoDesempeñado.Multiline = true;
+            this.txtTrabajoDesempeñado.Name = "txtTrabajoDesempeñado";
+            this.txtTrabajoDesempeñado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTrabajoDesempeñado.PasswordChar = false;
+            this.txtTrabajoDesempeñado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTrabajoDesempeñado.PlaceholderText = "";
+            this.txtTrabajoDesempeñado.Size = new System.Drawing.Size(887, 59);
+            this.txtTrabajoDesempeñado.TabIndex = 195;
+            this.txtTrabajoDesempeñado.UnderlinedStyle = true;
+            // 
+            // txtTipoLesion
+            // 
+            this.txtTipoLesion.BackColor = System.Drawing.Color.White;
+            this.txtTipoLesion.BorderColor = System.Drawing.Color.Gray;
+            this.txtTipoLesion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTipoLesion.BorderRadius = 12;
+            this.txtTipoLesion.BorderSize = 2;
+            this.txtTipoLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipoLesion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTipoLesion.Location = new System.Drawing.Point(14, 393);
+            this.txtTipoLesion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipoLesion.MaxLength = 32767;
+            this.txtTipoLesion.Multiline = true;
+            this.txtTipoLesion.Name = "txtTipoLesion";
+            this.txtTipoLesion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTipoLesion.PasswordChar = false;
+            this.txtTipoLesion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTipoLesion.PlaceholderText = "";
+            this.txtTipoLesion.Size = new System.Drawing.Size(887, 77);
+            this.txtTipoLesion.TabIndex = 196;
+            this.txtTipoLesion.UnderlinedStyle = true;
+            // 
+            // txtParteCuerpoAfectada
+            // 
+            this.txtParteCuerpoAfectada.BackColor = System.Drawing.Color.White;
+            this.txtParteCuerpoAfectada.BorderColor = System.Drawing.Color.Gray;
+            this.txtParteCuerpoAfectada.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtParteCuerpoAfectada.BorderRadius = 12;
+            this.txtParteCuerpoAfectada.BorderSize = 2;
+            this.txtParteCuerpoAfectada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtParteCuerpoAfectada.ForeColor = System.Drawing.Color.DimGray;
+            this.txtParteCuerpoAfectada.Location = new System.Drawing.Point(14, 503);
+            this.txtParteCuerpoAfectada.Margin = new System.Windows.Forms.Padding(4);
+            this.txtParteCuerpoAfectada.MaxLength = 32767;
+            this.txtParteCuerpoAfectada.Multiline = true;
+            this.txtParteCuerpoAfectada.Name = "txtParteCuerpoAfectada";
+            this.txtParteCuerpoAfectada.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtParteCuerpoAfectada.PasswordChar = false;
+            this.txtParteCuerpoAfectada.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtParteCuerpoAfectada.PlaceholderText = "";
+            this.txtParteCuerpoAfectada.Size = new System.Drawing.Size(887, 77);
+            this.txtParteCuerpoAfectada.TabIndex = 197;
+            this.txtParteCuerpoAfectada.UnderlinedStyle = true;
+            // 
             // pControlAcciones
             // 
             this.pControlAcciones.AutoScroll = true;
@@ -1001,6 +1272,94 @@
             this.panel33.Size = new System.Drawing.Size(916, 210);
             this.panel33.TabIndex = 113;
             // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label76.Location = new System.Drawing.Point(258, 134);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(158, 16);
+            this.label76.TabIndex = 184;
+            this.label76.Text = "Nombre Proceso SST";
+            // 
+            // txtNombreSST
+            // 
+            this.txtNombreSST.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombreSST.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreSST.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreSST.BorderRadius = 12;
+            this.txtNombreSST.BorderSize = 2;
+            this.txtNombreSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreSST.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreSST.Location = new System.Drawing.Point(258, 154);
+            this.txtNombreSST.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreSST.MaxLength = 32767;
+            this.txtNombreSST.Multiline = false;
+            this.txtNombreSST.Name = "txtNombreSST";
+            this.txtNombreSST.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreSST.PasswordChar = false;
+            this.txtNombreSST.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreSST.PlaceholderText = "";
+            this.txtNombreSST.Size = new System.Drawing.Size(620, 35);
+            this.txtNombreSST.TabIndex = 183;
+            this.txtNombreSST.UnderlinedStyle = true;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label75.Location = new System.Drawing.Point(27, 140);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(148, 16);
+            this.label75.TabIndex = 182;
+            this.label75.Text = "Número de Nómina: ";
+            // 
+            // txtNumNomminaSST
+            // 
+            this.txtNumNomminaSST.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNumNomminaSST.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumNomminaSST.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumNomminaSST.BorderRadius = 12;
+            this.txtNumNomminaSST.BorderSize = 2;
+            this.txtNumNomminaSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumNomminaSST.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumNomminaSST.Location = new System.Drawing.Point(23, 156);
+            this.txtNumNomminaSST.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumNomminaSST.MaxLength = 32767;
+            this.txtNumNomminaSST.Multiline = false;
+            this.txtNumNomminaSST.Name = "txtNumNomminaSST";
+            this.txtNumNomminaSST.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumNomminaSST.PasswordChar = false;
+            this.txtNumNomminaSST.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNomminaSST.PlaceholderText = "";
+            this.txtNumNomminaSST.Size = new System.Drawing.Size(162, 35);
+            this.txtNumNomminaSST.TabIndex = 181;
+            this.txtNumNomminaSST.UnderlinedStyle = true;
+            // 
+            // txtSeguimiento
+            // 
+            this.txtSeguimiento.BackColor = System.Drawing.Color.White;
+            this.txtSeguimiento.BorderColor = System.Drawing.Color.Gray;
+            this.txtSeguimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSeguimiento.BorderRadius = 12;
+            this.txtSeguimiento.BorderSize = 2;
+            this.txtSeguimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeguimiento.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSeguimiento.Location = new System.Drawing.Point(23, 34);
+            this.txtSeguimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSeguimiento.MaxLength = 32767;
+            this.txtSeguimiento.Multiline = true;
+            this.txtSeguimiento.Name = "txtSeguimiento";
+            this.txtSeguimiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSeguimiento.PasswordChar = false;
+            this.txtSeguimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSeguimiento.PlaceholderText = "";
+            this.txtSeguimiento.Size = new System.Drawing.Size(855, 60);
+            this.txtSeguimiento.TabIndex = 180;
+            this.txtSeguimiento.UnderlinedStyle = true;
+            // 
             // btnBuscarEmpleadoSST
             // 
             this.btnBuscarEmpleadoSST.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
@@ -1021,6 +1380,25 @@
             this.btnBuscarEmpleadoSST.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBuscarEmpleadoSST.UseVisualStyleBackColor = false;
             this.btnBuscarEmpleadoSST.Click += new System.EventHandler(this.btnBuscarEmpleadoSST_Click);
+            // 
+            // txtidNombreSST
+            // 
+            this.txtidNombreSST.AnimateReadOnly = false;
+            this.txtidNombreSST.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtidNombreSST.Depth = 0;
+            this.txtidNombreSST.Enabled = false;
+            this.txtidNombreSST.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtidNombreSST.LeadingIcon = null;
+            this.txtidNombreSST.Location = new System.Drawing.Point(714, 142);
+            this.txtidNombreSST.MaxLength = 18;
+            this.txtidNombreSST.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtidNombreSST.Multiline = false;
+            this.txtidNombreSST.Name = "txtidNombreSST";
+            this.txtidNombreSST.Size = new System.Drawing.Size(159, 50);
+            this.txtidNombreSST.TabIndex = 117;
+            this.txtidNombreSST.Text = "";
+            this.txtidNombreSST.TrailingIcon = null;
+            this.txtidNombreSST.Visible = false;
             // 
             // dtpHoraSeguimiento
             // 
@@ -1118,6 +1496,72 @@
             this.label57.TabIndex = 25;
             this.label57.Text = "Acciones Preventivas";
             // 
+            // txtAccionesPreventivasProp
+            // 
+            this.txtAccionesPreventivasProp.BackColor = System.Drawing.Color.White;
+            this.txtAccionesPreventivasProp.BorderColor = System.Drawing.Color.Gray;
+            this.txtAccionesPreventivasProp.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAccionesPreventivasProp.BorderRadius = 12;
+            this.txtAccionesPreventivasProp.BorderSize = 2;
+            this.txtAccionesPreventivasProp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAccionesPreventivasProp.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAccionesPreventivasProp.Location = new System.Drawing.Point(22, 67);
+            this.txtAccionesPreventivasProp.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAccionesPreventivasProp.MaxLength = 32767;
+            this.txtAccionesPreventivasProp.Multiline = true;
+            this.txtAccionesPreventivasProp.Name = "txtAccionesPreventivasProp";
+            this.txtAccionesPreventivasProp.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAccionesPreventivasProp.PasswordChar = false;
+            this.txtAccionesPreventivasProp.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAccionesPreventivasProp.PlaceholderText = "";
+            this.txtAccionesPreventivasProp.Size = new System.Drawing.Size(255, 60);
+            this.txtAccionesPreventivasProp.TabIndex = 177;
+            this.txtAccionesPreventivasProp.UnderlinedStyle = true;
+            // 
+            // txtQuienPreventivas
+            // 
+            this.txtQuienPreventivas.BackColor = System.Drawing.Color.White;
+            this.txtQuienPreventivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtQuienPreventivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtQuienPreventivas.BorderRadius = 12;
+            this.txtQuienPreventivas.BorderSize = 2;
+            this.txtQuienPreventivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuienPreventivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtQuienPreventivas.Location = new System.Drawing.Point(322, 66);
+            this.txtQuienPreventivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuienPreventivas.MaxLength = 32767;
+            this.txtQuienPreventivas.Multiline = true;
+            this.txtQuienPreventivas.Name = "txtQuienPreventivas";
+            this.txtQuienPreventivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtQuienPreventivas.PasswordChar = false;
+            this.txtQuienPreventivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtQuienPreventivas.PlaceholderText = "";
+            this.txtQuienPreventivas.Size = new System.Drawing.Size(255, 60);
+            this.txtQuienPreventivas.TabIndex = 178;
+            this.txtQuienPreventivas.UnderlinedStyle = true;
+            // 
+            // txtCuandoPreventivas
+            // 
+            this.txtCuandoPreventivas.BackColor = System.Drawing.Color.White;
+            this.txtCuandoPreventivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtCuandoPreventivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtCuandoPreventivas.BorderRadius = 12;
+            this.txtCuandoPreventivas.BorderSize = 2;
+            this.txtCuandoPreventivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuandoPreventivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCuandoPreventivas.Location = new System.Drawing.Point(619, 67);
+            this.txtCuandoPreventivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCuandoPreventivas.MaxLength = 32767;
+            this.txtCuandoPreventivas.Multiline = true;
+            this.txtCuandoPreventivas.Name = "txtCuandoPreventivas";
+            this.txtCuandoPreventivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCuandoPreventivas.PasswordChar = false;
+            this.txtCuandoPreventivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCuandoPreventivas.PlaceholderText = "";
+            this.txtCuandoPreventivas.Size = new System.Drawing.Size(255, 60);
+            this.txtCuandoPreventivas.TabIndex = 179;
+            this.txtCuandoPreventivas.UnderlinedStyle = true;
+            // 
             // panel31
             // 
             this.panel31.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -1177,6 +1621,72 @@
             this.label50.TabIndex = 25;
             this.label50.Text = "Acciones Correctivas";
             // 
+            // txtAccionesCorrectivas
+            // 
+            this.txtAccionesCorrectivas.BackColor = System.Drawing.Color.White;
+            this.txtAccionesCorrectivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtAccionesCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAccionesCorrectivas.BorderRadius = 12;
+            this.txtAccionesCorrectivas.BorderSize = 2;
+            this.txtAccionesCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAccionesCorrectivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAccionesCorrectivas.Location = new System.Drawing.Point(18, 67);
+            this.txtAccionesCorrectivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAccionesCorrectivas.MaxLength = 32767;
+            this.txtAccionesCorrectivas.Multiline = true;
+            this.txtAccionesCorrectivas.Name = "txtAccionesCorrectivas";
+            this.txtAccionesCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAccionesCorrectivas.PasswordChar = false;
+            this.txtAccionesCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAccionesCorrectivas.PlaceholderText = "";
+            this.txtAccionesCorrectivas.Size = new System.Drawing.Size(255, 60);
+            this.txtAccionesCorrectivas.TabIndex = 174;
+            this.txtAccionesCorrectivas.UnderlinedStyle = true;
+            // 
+            // txtquienCorrectivas
+            // 
+            this.txtquienCorrectivas.BackColor = System.Drawing.Color.White;
+            this.txtquienCorrectivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtquienCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtquienCorrectivas.BorderRadius = 12;
+            this.txtquienCorrectivas.BorderSize = 2;
+            this.txtquienCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtquienCorrectivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtquienCorrectivas.Location = new System.Drawing.Point(319, 64);
+            this.txtquienCorrectivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtquienCorrectivas.MaxLength = 32767;
+            this.txtquienCorrectivas.Multiline = true;
+            this.txtquienCorrectivas.Name = "txtquienCorrectivas";
+            this.txtquienCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtquienCorrectivas.PasswordChar = false;
+            this.txtquienCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtquienCorrectivas.PlaceholderText = "";
+            this.txtquienCorrectivas.Size = new System.Drawing.Size(259, 60);
+            this.txtquienCorrectivas.TabIndex = 175;
+            this.txtquienCorrectivas.UnderlinedStyle = true;
+            // 
+            // txtCuandoCorrectivas
+            // 
+            this.txtCuandoCorrectivas.BackColor = System.Drawing.Color.White;
+            this.txtCuandoCorrectivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtCuandoCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtCuandoCorrectivas.BorderRadius = 12;
+            this.txtCuandoCorrectivas.BorderSize = 2;
+            this.txtCuandoCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuandoCorrectivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCuandoCorrectivas.Location = new System.Drawing.Point(615, 67);
+            this.txtCuandoCorrectivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCuandoCorrectivas.MaxLength = 32767;
+            this.txtCuandoCorrectivas.Multiline = true;
+            this.txtCuandoCorrectivas.Name = "txtCuandoCorrectivas";
+            this.txtCuandoCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCuandoCorrectivas.PasswordChar = false;
+            this.txtCuandoCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCuandoCorrectivas.PlaceholderText = "";
+            this.txtCuandoCorrectivas.Size = new System.Drawing.Size(255, 60);
+            this.txtCuandoCorrectivas.TabIndex = 176;
+            this.txtCuandoCorrectivas.UnderlinedStyle = true;
+            // 
             // label49
             // 
             this.label49.AutoSize = true;
@@ -1219,6 +1729,73 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(916, 237);
             this.panel26.TabIndex = 101;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label79.Location = new System.Drawing.Point(256, 35);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(262, 16);
+            this.label79.TabIndex = 185;
+            this.label79.Text = "Nombre de colaborador Involucrado:";
+            // 
+            // txtNombreEmpleadoInvolucrado
+            // 
+            this.txtNombreEmpleadoInvolucrado.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNombreEmpleadoInvolucrado.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreEmpleadoInvolucrado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreEmpleadoInvolucrado.BorderRadius = 12;
+            this.txtNombreEmpleadoInvolucrado.BorderSize = 2;
+            this.txtNombreEmpleadoInvolucrado.Enabled = false;
+            this.txtNombreEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreEmpleadoInvolucrado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreEmpleadoInvolucrado.Location = new System.Drawing.Point(252, 51);
+            this.txtNombreEmpleadoInvolucrado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreEmpleadoInvolucrado.MaxLength = 32767;
+            this.txtNombreEmpleadoInvolucrado.Multiline = false;
+            this.txtNombreEmpleadoInvolucrado.Name = "txtNombreEmpleadoInvolucrado";
+            this.txtNombreEmpleadoInvolucrado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreEmpleadoInvolucrado.PasswordChar = false;
+            this.txtNombreEmpleadoInvolucrado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreEmpleadoInvolucrado.PlaceholderText = "";
+            this.txtNombreEmpleadoInvolucrado.Size = new System.Drawing.Size(508, 35);
+            this.txtNombreEmpleadoInvolucrado.TabIndex = 184;
+            this.txtNombreEmpleadoInvolucrado.UnderlinedStyle = true;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label80.Location = new System.Drawing.Point(19, 35);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(148, 16);
+            this.label80.TabIndex = 183;
+            this.label80.Text = "Número de Nómina: ";
+            // 
+            // txtNumNominaEmpleadoInvolucrado
+            // 
+            this.txtNumNominaEmpleadoInvolucrado.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNumNominaEmpleadoInvolucrado.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumNominaEmpleadoInvolucrado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumNominaEmpleadoInvolucrado.BorderRadius = 12;
+            this.txtNumNominaEmpleadoInvolucrado.BorderSize = 2;
+            this.txtNumNominaEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumNominaEmpleadoInvolucrado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumNominaEmpleadoInvolucrado.Location = new System.Drawing.Point(15, 51);
+            this.txtNumNominaEmpleadoInvolucrado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumNominaEmpleadoInvolucrado.MaxLength = 32767;
+            this.txtNumNominaEmpleadoInvolucrado.Multiline = false;
+            this.txtNumNominaEmpleadoInvolucrado.Name = "txtNumNominaEmpleadoInvolucrado";
+            this.txtNumNominaEmpleadoInvolucrado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumNominaEmpleadoInvolucrado.PasswordChar = false;
+            this.txtNumNominaEmpleadoInvolucrado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNominaEmpleadoInvolucrado.PlaceholderText = "";
+            this.txtNumNominaEmpleadoInvolucrado.Size = new System.Drawing.Size(172, 35);
+            this.txtNumNominaEmpleadoInvolucrado.TabIndex = 182;
+            this.txtNumNominaEmpleadoInvolucrado.UnderlinedStyle = true;
             // 
             // btnBuscarEmpleadoInvolucrado
             // 
@@ -1422,6 +1999,72 @@
             this.label46.TabIndex = 100;
             this.label46.Text = "Diagnóstico Final:";
             // 
+            // txtDiagnosticoFinal
+            // 
+            this.txtDiagnosticoFinal.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDiagnosticoFinal.BorderColor = System.Drawing.Color.Gray;
+            this.txtDiagnosticoFinal.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtDiagnosticoFinal.BorderRadius = 12;
+            this.txtDiagnosticoFinal.BorderSize = 2;
+            this.txtDiagnosticoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiagnosticoFinal.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDiagnosticoFinal.Location = new System.Drawing.Point(16, 40);
+            this.txtDiagnosticoFinal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiagnosticoFinal.MaxLength = 32767;
+            this.txtDiagnosticoFinal.Multiline = true;
+            this.txtDiagnosticoFinal.Name = "txtDiagnosticoFinal";
+            this.txtDiagnosticoFinal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDiagnosticoFinal.PasswordChar = false;
+            this.txtDiagnosticoFinal.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDiagnosticoFinal.PlaceholderText = "";
+            this.txtDiagnosticoFinal.Size = new System.Drawing.Size(875, 65);
+            this.txtDiagnosticoFinal.TabIndex = 179;
+            this.txtDiagnosticoFinal.UnderlinedStyle = true;
+            // 
+            // txtIncapacidad
+            // 
+            this.txtIncapacidad.BackColor = System.Drawing.SystemColors.Window;
+            this.txtIncapacidad.BorderColor = System.Drawing.Color.Gray;
+            this.txtIncapacidad.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtIncapacidad.BorderRadius = 12;
+            this.txtIncapacidad.BorderSize = 2;
+            this.txtIncapacidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIncapacidad.ForeColor = System.Drawing.Color.DimGray;
+            this.txtIncapacidad.Location = new System.Drawing.Point(18, 215);
+            this.txtIncapacidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIncapacidad.MaxLength = 32767;
+            this.txtIncapacidad.Multiline = true;
+            this.txtIncapacidad.Name = "txtIncapacidad";
+            this.txtIncapacidad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtIncapacidad.PasswordChar = false;
+            this.txtIncapacidad.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtIncapacidad.PlaceholderText = "";
+            this.txtIncapacidad.Size = new System.Drawing.Size(875, 65);
+            this.txtIncapacidad.TabIndex = 181;
+            this.txtIncapacidad.UnderlinedStyle = true;
+            // 
+            // txtTratamiento
+            // 
+            this.txtTratamiento.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTratamiento.BorderColor = System.Drawing.Color.Gray;
+            this.txtTratamiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTratamiento.BorderRadius = 12;
+            this.txtTratamiento.BorderSize = 2;
+            this.txtTratamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTratamiento.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTratamiento.Location = new System.Drawing.Point(16, 120);
+            this.txtTratamiento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTratamiento.MaxLength = 32767;
+            this.txtTratamiento.Multiline = true;
+            this.txtTratamiento.Name = "txtTratamiento";
+            this.txtTratamiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTratamiento.PasswordChar = false;
+            this.txtTratamiento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTratamiento.PlaceholderText = "";
+            this.txtTratamiento.Size = new System.Drawing.Size(875, 65);
+            this.txtTratamiento.TabIndex = 180;
+            this.txtTratamiento.UnderlinedStyle = true;
+            // 
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -1434,6 +2077,29 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(916, 67);
             this.panel28.TabIndex = 101;
+            // 
+            // txtOtro
+            // 
+            this.txtOtro.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOtro.BorderColor = System.Drawing.Color.Gray;
+            this.txtOtro.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOtro.BorderRadius = 12;
+            this.txtOtro.BorderSize = 2;
+            this.txtOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtro.ForeColor = System.Drawing.Color.DimGray;
+            this.txtOtro.Location = new System.Drawing.Point(715, 15);
+            this.txtOtro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOtro.MaxLength = 32767;
+            this.txtOtro.Multiline = false;
+            this.txtOtro.Name = "txtOtro";
+            this.txtOtro.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtOtro.PasswordChar = false;
+            this.txtOtro.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOtro.PlaceholderText = "";
+            this.txtOtro.Size = new System.Drawing.Size(187, 35);
+            this.txtOtro.TabIndex = 182;
+            this.txtOtro.UnderlinedStyle = true;
+            this.txtOtro.Visible = false;
             // 
             // rbtnOtro
             // 
@@ -1527,6 +2193,73 @@
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(916, 237);
             this.panel27.TabIndex = 95;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label78.Location = new System.Drawing.Point(256, 35);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(407, 16);
+            this.label78.TabIndex = 181;
+            this.label78.Text = "Nombre de colaborador con conocimiento de los hechos: ";
+            // 
+            // txtNombreEmpleadoConocimiento
+            // 
+            this.txtNombreEmpleadoConocimiento.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNombreEmpleadoConocimiento.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreEmpleadoConocimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreEmpleadoConocimiento.BorderRadius = 12;
+            this.txtNombreEmpleadoConocimiento.BorderSize = 2;
+            this.txtNombreEmpleadoConocimiento.Enabled = false;
+            this.txtNombreEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreEmpleadoConocimiento.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreEmpleadoConocimiento.Location = new System.Drawing.Point(252, 51);
+            this.txtNombreEmpleadoConocimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreEmpleadoConocimiento.MaxLength = 32767;
+            this.txtNombreEmpleadoConocimiento.Multiline = false;
+            this.txtNombreEmpleadoConocimiento.Name = "txtNombreEmpleadoConocimiento";
+            this.txtNombreEmpleadoConocimiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreEmpleadoConocimiento.PasswordChar = false;
+            this.txtNombreEmpleadoConocimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreEmpleadoConocimiento.PlaceholderText = "";
+            this.txtNombreEmpleadoConocimiento.Size = new System.Drawing.Size(508, 35);
+            this.txtNombreEmpleadoConocimiento.TabIndex = 180;
+            this.txtNombreEmpleadoConocimiento.UnderlinedStyle = true;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label77.Location = new System.Drawing.Point(19, 35);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(148, 16);
+            this.label77.TabIndex = 179;
+            this.label77.Text = "Número de Nómina: ";
+            // 
+            // txtNumNominaEmpleadoConocimiento
+            // 
+            this.txtNumNominaEmpleadoConocimiento.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNumNominaEmpleadoConocimiento.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumNominaEmpleadoConocimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumNominaEmpleadoConocimiento.BorderRadius = 12;
+            this.txtNumNominaEmpleadoConocimiento.BorderSize = 2;
+            this.txtNumNominaEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumNominaEmpleadoConocimiento.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumNominaEmpleadoConocimiento.Location = new System.Drawing.Point(15, 51);
+            this.txtNumNominaEmpleadoConocimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumNominaEmpleadoConocimiento.MaxLength = 32767;
+            this.txtNumNominaEmpleadoConocimiento.Multiline = false;
+            this.txtNumNominaEmpleadoConocimiento.Name = "txtNumNominaEmpleadoConocimiento";
+            this.txtNumNominaEmpleadoConocimiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumNominaEmpleadoConocimiento.PasswordChar = false;
+            this.txtNumNominaEmpleadoConocimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNominaEmpleadoConocimiento.PlaceholderText = "";
+            this.txtNumNominaEmpleadoConocimiento.Size = new System.Drawing.Size(172, 35);
+            this.txtNumNominaEmpleadoConocimiento.TabIndex = 178;
+            this.txtNumNominaEmpleadoConocimiento.UnderlinedStyle = true;
             // 
             // btnBuscarEmpleadoConocimiento
             // 
@@ -1701,6 +2434,28 @@
             this.panel5.Size = new System.Drawing.Size(899, 180);
             this.panel5.TabIndex = 126;
             // 
+            // txtDescripcionAccidente
+            // 
+            this.txtDescripcionAccidente.BackColor = System.Drawing.Color.White;
+            this.txtDescripcionAccidente.BorderColor = System.Drawing.Color.Gray;
+            this.txtDescripcionAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtDescripcionAccidente.BorderRadius = 12;
+            this.txtDescripcionAccidente.BorderSize = 2;
+            this.txtDescripcionAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionAccidente.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDescripcionAccidente.Location = new System.Drawing.Point(9, 27);
+            this.txtDescripcionAccidente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcionAccidente.MaxLength = 32767;
+            this.txtDescripcionAccidente.Multiline = true;
+            this.txtDescripcionAccidente.Name = "txtDescripcionAccidente";
+            this.txtDescripcionAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDescripcionAccidente.PasswordChar = false;
+            this.txtDescripcionAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDescripcionAccidente.PlaceholderText = "";
+            this.txtDescripcionAccidente.Size = new System.Drawing.Size(880, 75);
+            this.txtDescripcionAccidente.TabIndex = 187;
+            this.txtDescripcionAccidente.UnderlinedStyle = true;
+            // 
             // label62
             // 
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1852,6 +2607,50 @@
             this.label29.Size = new System.Drawing.Size(182, 18);
             this.label29.TabIndex = 110;
             this.label29.Text = "Hubo daños materiales:";
+            // 
+            // txtEquipoDanado
+            // 
+            this.txtEquipoDanado.BackColor = System.Drawing.Color.White;
+            this.txtEquipoDanado.BorderColor = System.Drawing.Color.Gray;
+            this.txtEquipoDanado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEquipoDanado.BorderRadius = 12;
+            this.txtEquipoDanado.BorderSize = 2;
+            this.txtEquipoDanado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEquipoDanado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEquipoDanado.Location = new System.Drawing.Point(13, 77);
+            this.txtEquipoDanado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEquipoDanado.MaxLength = 32767;
+            this.txtEquipoDanado.Multiline = true;
+            this.txtEquipoDanado.Name = "txtEquipoDanado";
+            this.txtEquipoDanado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEquipoDanado.PasswordChar = false;
+            this.txtEquipoDanado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEquipoDanado.PlaceholderText = "";
+            this.txtEquipoDanado.Size = new System.Drawing.Size(420, 52);
+            this.txtEquipoDanado.TabIndex = 185;
+            this.txtEquipoDanado.UnderlinedStyle = true;
+            // 
+            // txtSustituiblePor
+            // 
+            this.txtSustituiblePor.BackColor = System.Drawing.Color.White;
+            this.txtSustituiblePor.BorderColor = System.Drawing.Color.Gray;
+            this.txtSustituiblePor.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSustituiblePor.BorderRadius = 12;
+            this.txtSustituiblePor.BorderSize = 2;
+            this.txtSustituiblePor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSustituiblePor.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSustituiblePor.Location = new System.Drawing.Point(13, 150);
+            this.txtSustituiblePor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSustituiblePor.MaxLength = 32767;
+            this.txtSustituiblePor.Multiline = true;
+            this.txtSustituiblePor.Name = "txtSustituiblePor";
+            this.txtSustituiblePor.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSustituiblePor.PasswordChar = false;
+            this.txtSustituiblePor.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSustituiblePor.PlaceholderText = "";
+            this.txtSustituiblePor.Size = new System.Drawing.Size(420, 52);
+            this.txtSustituiblePor.TabIndex = 186;
+            this.txtSustituiblePor.UnderlinedStyle = true;
             // 
             // label23
             // 
@@ -2015,6 +2814,94 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(900, 362);
             this.panel4.TabIndex = 98;
+            // 
+            // txtEquipoProteccionNecesario
+            // 
+            this.txtEquipoProteccionNecesario.BackColor = System.Drawing.Color.White;
+            this.txtEquipoProteccionNecesario.BorderColor = System.Drawing.Color.Gray;
+            this.txtEquipoProteccionNecesario.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEquipoProteccionNecesario.BorderRadius = 12;
+            this.txtEquipoProteccionNecesario.BorderSize = 2;
+            this.txtEquipoProteccionNecesario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEquipoProteccionNecesario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEquipoProteccionNecesario.Location = new System.Drawing.Point(455, 275);
+            this.txtEquipoProteccionNecesario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEquipoProteccionNecesario.MaxLength = 32767;
+            this.txtEquipoProteccionNecesario.Multiline = true;
+            this.txtEquipoProteccionNecesario.Name = "txtEquipoProteccionNecesario";
+            this.txtEquipoProteccionNecesario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEquipoProteccionNecesario.PasswordChar = false;
+            this.txtEquipoProteccionNecesario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEquipoProteccionNecesario.PlaceholderText = "";
+            this.txtEquipoProteccionNecesario.Size = new System.Drawing.Size(432, 74);
+            this.txtEquipoProteccionNecesario.TabIndex = 184;
+            this.txtEquipoProteccionNecesario.UnderlinedStyle = true;
+            // 
+            // txtObjCausanteLesion
+            // 
+            this.txtObjCausanteLesion.BackColor = System.Drawing.Color.White;
+            this.txtObjCausanteLesion.BorderColor = System.Drawing.Color.Gray;
+            this.txtObjCausanteLesion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtObjCausanteLesion.BorderRadius = 12;
+            this.txtObjCausanteLesion.BorderSize = 2;
+            this.txtObjCausanteLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjCausanteLesion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtObjCausanteLesion.Location = new System.Drawing.Point(9, 275);
+            this.txtObjCausanteLesion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtObjCausanteLesion.MaxLength = 32767;
+            this.txtObjCausanteLesion.Multiline = true;
+            this.txtObjCausanteLesion.Name = "txtObjCausanteLesion";
+            this.txtObjCausanteLesion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtObjCausanteLesion.PasswordChar = false;
+            this.txtObjCausanteLesion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtObjCausanteLesion.PlaceholderText = "";
+            this.txtObjCausanteLesion.Size = new System.Drawing.Size(432, 74);
+            this.txtObjCausanteLesion.TabIndex = 183;
+            this.txtObjCausanteLesion.UnderlinedStyle = true;
+            // 
+            // txtEquipoProteccionUsado
+            // 
+            this.txtEquipoProteccionUsado.BackColor = System.Drawing.Color.White;
+            this.txtEquipoProteccionUsado.BorderColor = System.Drawing.Color.Gray;
+            this.txtEquipoProteccionUsado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEquipoProteccionUsado.BorderRadius = 12;
+            this.txtEquipoProteccionUsado.BorderSize = 2;
+            this.txtEquipoProteccionUsado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEquipoProteccionUsado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEquipoProteccionUsado.Location = new System.Drawing.Point(455, 164);
+            this.txtEquipoProteccionUsado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEquipoProteccionUsado.MaxLength = 32767;
+            this.txtEquipoProteccionUsado.Multiline = true;
+            this.txtEquipoProteccionUsado.Name = "txtEquipoProteccionUsado";
+            this.txtEquipoProteccionUsado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEquipoProteccionUsado.PasswordChar = false;
+            this.txtEquipoProteccionUsado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEquipoProteccionUsado.PlaceholderText = "";
+            this.txtEquipoProteccionUsado.Size = new System.Drawing.Size(432, 74);
+            this.txtEquipoProteccionUsado.TabIndex = 182;
+            this.txtEquipoProteccionUsado.UnderlinedStyle = true;
+            // 
+            // txtLugarAccidente
+            // 
+            this.txtLugarAccidente.BackColor = System.Drawing.Color.White;
+            this.txtLugarAccidente.BorderColor = System.Drawing.Color.Gray;
+            this.txtLugarAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtLugarAccidente.BorderRadius = 12;
+            this.txtLugarAccidente.BorderSize = 2;
+            this.txtLugarAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLugarAccidente.ForeColor = System.Drawing.Color.DimGray;
+            this.txtLugarAccidente.Location = new System.Drawing.Point(9, 164);
+            this.txtLugarAccidente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLugarAccidente.MaxLength = 32767;
+            this.txtLugarAccidente.Multiline = true;
+            this.txtLugarAccidente.Name = "txtLugarAccidente";
+            this.txtLugarAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtLugarAccidente.PasswordChar = false;
+            this.txtLugarAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtLugarAccidente.PlaceholderText = "";
+            this.txtLugarAccidente.Size = new System.Drawing.Size(432, 74);
+            this.txtLugarAccidente.TabIndex = 181;
+            this.txtLugarAccidente.UnderlinedStyle = true;
             // 
             // rbtnlesion12MesesSi
             // 
@@ -2326,6 +3213,40 @@
             this.panel19.Size = new System.Drawing.Size(906, 169);
             this.panel19.TabIndex = 78;
             // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label83.Location = new System.Drawing.Point(13, 97);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(177, 16);
+            this.label83.TabIndex = 183;
+            this.label83.Text = "Otra Condicion Insegura:";
+            // 
+            // txtOtraCondicion
+            // 
+            this.txtOtraCondicion.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOtraCondicion.BorderColor = System.Drawing.Color.Gray;
+            this.txtOtraCondicion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOtraCondicion.BorderRadius = 12;
+            this.txtOtraCondicion.BorderSize = 2;
+            this.txtOtraCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtraCondicion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtOtraCondicion.Location = new System.Drawing.Point(9, 113);
+            this.txtOtraCondicion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOtraCondicion.MaxLength = 32767;
+            this.txtOtraCondicion.Multiline = false;
+            this.txtOtraCondicion.Name = "txtOtraCondicion";
+            this.txtOtraCondicion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtOtraCondicion.PasswordChar = false;
+            this.txtOtraCondicion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOtraCondicion.PlaceholderText = "";
+            this.txtOtraCondicion.Size = new System.Drawing.Size(377, 35);
+            this.txtOtraCondicion.TabIndex = 182;
+            this.txtOtraCondicion.UnderlinedStyle = true;
+            this.txtOtraCondicion.Visible = false;
+            // 
             // btnGrabarCondicionInsegura
             // 
             this.btnGrabarCondicionInsegura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
@@ -2422,6 +3343,34 @@
             this.dgvCondicionInsegura.TabIndex = 18;
             this.dgvCondicionInsegura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCondicionInsegura_CellClick);
             // 
+            // idCondicionInsegura
+            // 
+            this.idCondicionInsegura.HeaderText = "Id Consición Insegura";
+            this.idCondicionInsegura.MinimumWidth = 6;
+            this.idCondicionInsegura.Name = "idCondicionInsegura";
+            this.idCondicionInsegura.ReadOnly = true;
+            this.idCondicionInsegura.Visible = false;
+            // 
+            // CondicionInsegura
+            // 
+            this.CondicionInsegura.FillWeight = 149.2386F;
+            this.CondicionInsegura.HeaderText = "Condición Insegura";
+            this.CondicionInsegura.MinimumWidth = 6;
+            this.CondicionInsegura.Name = "CondicionInsegura";
+            this.CondicionInsegura.ReadOnly = true;
+            // 
+            // accionesCondiciones
+            // 
+            this.accionesCondiciones.FillWeight = 50.76142F;
+            this.accionesCondiciones.HeaderText = "";
+            this.accionesCondiciones.Image = ((System.Drawing.Image)(resources.GetObject("accionesCondiciones.Image")));
+            this.accionesCondiciones.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesCondiciones.MinimumWidth = 6;
+            this.accionesCondiciones.Name = "accionesCondiciones";
+            this.accionesCondiciones.ReadOnly = true;
+            this.accionesCondiciones.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesCondiciones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // cboxCondicionesInseguras
             // 
             this.cboxCondicionesInseguras.AutoResize = false;
@@ -2472,6 +3421,17 @@
             this.panel18.Size = new System.Drawing.Size(906, 169);
             this.panel18.TabIndex = 77;
             // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label82.Location = new System.Drawing.Point(13, 96);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(139, 16);
+            this.label82.TabIndex = 181;
+            this.label82.Text = "Otro Acto Inseguro:";
+            // 
             // btnGrabarActoInseguro
             // 
             this.btnGrabarActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
@@ -2496,6 +3456,29 @@
             this.btnGrabarActoInseguro.UseVisualStyleBackColor = false;
             this.btnGrabarActoInseguro.Visible = false;
             this.btnGrabarActoInseguro.Click += new System.EventHandler(this.btnGrabarActoInseguro_Click);
+            // 
+            // txtOtroActoInseguro
+            // 
+            this.txtOtroActoInseguro.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOtroActoInseguro.BorderColor = System.Drawing.Color.Gray;
+            this.txtOtroActoInseguro.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOtroActoInseguro.BorderRadius = 12;
+            this.txtOtroActoInseguro.BorderSize = 2;
+            this.txtOtroActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtroActoInseguro.ForeColor = System.Drawing.Color.DimGray;
+            this.txtOtroActoInseguro.Location = new System.Drawing.Point(9, 112);
+            this.txtOtroActoInseguro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOtroActoInseguro.MaxLength = 32767;
+            this.txtOtroActoInseguro.Multiline = false;
+            this.txtOtroActoInseguro.Name = "txtOtroActoInseguro";
+            this.txtOtroActoInseguro.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtOtroActoInseguro.PasswordChar = false;
+            this.txtOtroActoInseguro.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOtroActoInseguro.PlaceholderText = "";
+            this.txtOtroActoInseguro.Size = new System.Drawing.Size(377, 35);
+            this.txtOtroActoInseguro.TabIndex = 180;
+            this.txtOtroActoInseguro.UnderlinedStyle = true;
+            this.txtOtroActoInseguro.Visible = false;
             // 
             // btnAgregarActoInseguro
             // 
@@ -2569,6 +3552,34 @@
             this.dgvActoInseguro.TabIndex = 18;
             this.dgvActoInseguro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvActoInseguro_CellClick);
             // 
+            // idActoInseguro
+            // 
+            this.idActoInseguro.HeaderText = "Id Acto Inseguro";
+            this.idActoInseguro.MinimumWidth = 6;
+            this.idActoInseguro.Name = "idActoInseguro";
+            this.idActoInseguro.ReadOnly = true;
+            this.idActoInseguro.Visible = false;
+            // 
+            // actoInseguro
+            // 
+            this.actoInseguro.FillWeight = 149.2386F;
+            this.actoInseguro.HeaderText = "Acto Inseguro";
+            this.actoInseguro.MinimumWidth = 6;
+            this.actoInseguro.Name = "actoInseguro";
+            this.actoInseguro.ReadOnly = true;
+            // 
+            // accionesActosInseguros
+            // 
+            this.accionesActosInseguros.FillWeight = 50.76142F;
+            this.accionesActosInseguros.HeaderText = "";
+            this.accionesActosInseguros.Image = ((System.Drawing.Image)(resources.GetObject("accionesActosInseguros.Image")));
+            this.accionesActosInseguros.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesActosInseguros.MinimumWidth = 6;
+            this.accionesActosInseguros.Name = "accionesActosInseguros";
+            this.accionesActosInseguros.ReadOnly = true;
+            this.accionesActosInseguros.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesActosInseguros.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // cboxActoInseguro
             // 
             this.cboxActoInseguro.AutoResize = false;
@@ -2629,6 +3640,40 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(906, 169);
             this.panel17.TabIndex = 18;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label81.Location = new System.Drawing.Point(12, 95);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(94, 16);
+            this.label81.TabIndex = 179;
+            this.label81.Text = "Otro Riesgo:";
+            // 
+            // txtOtroRiesgo
+            // 
+            this.txtOtroRiesgo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOtroRiesgo.BorderColor = System.Drawing.Color.Gray;
+            this.txtOtroRiesgo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOtroRiesgo.BorderRadius = 12;
+            this.txtOtroRiesgo.BorderSize = 2;
+            this.txtOtroRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtroRiesgo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtOtroRiesgo.Location = new System.Drawing.Point(8, 111);
+            this.txtOtroRiesgo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOtroRiesgo.MaxLength = 32767;
+            this.txtOtroRiesgo.Multiline = false;
+            this.txtOtroRiesgo.Name = "txtOtroRiesgo";
+            this.txtOtroRiesgo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtOtroRiesgo.PasswordChar = false;
+            this.txtOtroRiesgo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOtroRiesgo.PlaceholderText = "";
+            this.txtOtroRiesgo.Size = new System.Drawing.Size(377, 35);
+            this.txtOtroRiesgo.TabIndex = 178;
+            this.txtOtroRiesgo.UnderlinedStyle = true;
+            this.txtOtroRiesgo.Visible = false;
             // 
             // btnGrabarRiesgo
             // 
@@ -2725,6 +3770,36 @@
             this.dgvRiesgos.Size = new System.Drawing.Size(360, 127);
             this.dgvRiesgos.TabIndex = 18;
             this.dgvRiesgos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRiesgos_CellClick);
+            // 
+            // idRiesgo
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.idRiesgo.DefaultCellStyle = dataGridViewCellStyle18;
+            this.idRiesgo.HeaderText = "id Riesgo";
+            this.idRiesgo.MinimumWidth = 6;
+            this.idRiesgo.Name = "idRiesgo";
+            this.idRiesgo.ReadOnly = true;
+            this.idRiesgo.Visible = false;
+            // 
+            // riesgo
+            // 
+            this.riesgo.HeaderText = "Riesgos";
+            this.riesgo.MinimumWidth = 6;
+            this.riesgo.Name = "riesgo";
+            this.riesgo.ReadOnly = true;
+            // 
+            // accionesriesgos
+            // 
+            this.accionesriesgos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.accionesriesgos.HeaderText = "";
+            this.accionesriesgos.Image = ((System.Drawing.Image)(resources.GetObject("accionesriesgos.Image")));
+            this.accionesriesgos.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesriesgos.MinimumWidth = 6;
+            this.accionesriesgos.Name = "accionesriesgos";
+            this.accionesriesgos.ReadOnly = true;
+            this.accionesriesgos.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesriesgos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.accionesriesgos.Width = 50;
             // 
             // cboxRiesgos
             // 
@@ -3070,1127 +4145,142 @@
             this.dataGridViewImageColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn6.Width = 296;
             // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label68.Location = new System.Drawing.Point(185, 43);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(112, 16);
-            this.label68.TabIndex = 183;
-            this.label68.Text = "Accidente No.: ";
-            // 
-            // txtNoAccidente
-            // 
-            this.txtNoAccidente.BackColor = System.Drawing.Color.White;
-            this.txtNoAccidente.BorderColor = System.Drawing.Color.Gray;
-            this.txtNoAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNoAccidente.BorderRadius = 12;
-            this.txtNoAccidente.BorderSize = 2;
-            this.txtNoAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoAccidente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNoAccidente.Location = new System.Drawing.Point(181, 59);
-            this.txtNoAccidente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNoAccidente.Multiline = false;
-            this.txtNoAccidente.Name = "txtNoAccidente";
-            this.txtNoAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNoAccidente.PasswordChar = false;
-            this.txtNoAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNoAccidente.PlaceholderText = "";
-            this.txtNoAccidente.Size = new System.Drawing.Size(422, 35);
-            this.txtNoAccidente.TabIndex = 182;
-            this.txtNoAccidente.UnderlinedStyle = true;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label67.Location = new System.Drawing.Point(223, 104);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(70, 16);
-            this.label67.TabIndex = 185;
-            this.label67.Text = "Nombre: ";
-            // 
-            // txtNombreEmpleado
-            // 
-            this.txtNombreEmpleado.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombreEmpleado.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreEmpleado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreEmpleado.BorderRadius = 12;
-            this.txtNombreEmpleado.BorderSize = 2;
-            this.txtNombreEmpleado.Enabled = false;
-            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(219, 120);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreEmpleado.Multiline = false;
-            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
-            this.txtNombreEmpleado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreEmpleado.PasswordChar = false;
-            this.txtNombreEmpleado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreEmpleado.PlaceholderText = "";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(387, 35);
-            this.txtNombreEmpleado.TabIndex = 184;
-            this.txtNombreEmpleado.UnderlinedStyle = true;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label69.Location = new System.Drawing.Point(13, 107);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(96, 16);
-            this.label69.TabIndex = 187;
-            this.label69.Text = "No. Nómina: ";
-            // 
-            // txtNumeroNomina
-            // 
-            this.txtNumeroNomina.BackColor = System.Drawing.Color.White;
-            this.txtNumeroNomina.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumeroNomina.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumeroNomina.BorderRadius = 12;
-            this.txtNumeroNomina.BorderSize = 2;
-            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumeroNomina.Location = new System.Drawing.Point(9, 123);
-            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumeroNomina.Multiline = false;
-            this.txtNumeroNomina.Name = "txtNumeroNomina";
-            this.txtNumeroNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumeroNomina.PasswordChar = false;
-            this.txtNumeroNomina.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumeroNomina.PlaceholderText = "";
-            this.txtNumeroNomina.Size = new System.Drawing.Size(149, 35);
-            this.txtNumeroNomina.TabIndex = 186;
-            this.txtNumeroNomina.UnderlinedStyle = true;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label70.Location = new System.Drawing.Point(616, 104);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(52, 16);
-            this.label70.TabIndex = 189;
-            this.label70.Text = "Edad: ";
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEdad.BorderColor = System.Drawing.Color.Gray;
-            this.txtEdad.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEdad.BorderRadius = 12;
-            this.txtEdad.BorderSize = 2;
-            this.txtEdad.Enabled = false;
-            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEdad.Location = new System.Drawing.Point(616, 120);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEdad.Multiline = false;
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEdad.PasswordChar = false;
-            this.txtEdad.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEdad.PlaceholderText = "";
-            this.txtEdad.Size = new System.Drawing.Size(138, 35);
-            this.txtEdad.TabIndex = 188;
-            this.txtEdad.UnderlinedStyle = true;
-            // 
-            // txtAntiguedad
-            // 
-            this.txtAntiguedad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtAntiguedad.BorderColor = System.Drawing.Color.Gray;
-            this.txtAntiguedad.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAntiguedad.BorderRadius = 12;
-            this.txtAntiguedad.BorderSize = 2;
-            this.txtAntiguedad.Enabled = false;
-            this.txtAntiguedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAntiguedad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAntiguedad.Location = new System.Drawing.Point(619, 186);
-            this.txtAntiguedad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAntiguedad.Multiline = false;
-            this.txtAntiguedad.Name = "txtAntiguedad";
-            this.txtAntiguedad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAntiguedad.PasswordChar = false;
-            this.txtAntiguedad.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAntiguedad.PlaceholderText = "";
-            this.txtAntiguedad.Size = new System.Drawing.Size(288, 35);
-            this.txtAntiguedad.TabIndex = 190;
-            this.txtAntiguedad.UnderlinedStyle = true;
-            // 
-            // txtPuesto
-            // 
-            this.txtPuesto.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPuesto.BorderColor = System.Drawing.Color.Gray;
-            this.txtPuesto.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtPuesto.BorderRadius = 12;
-            this.txtPuesto.BorderSize = 2;
-            this.txtPuesto.Enabled = false;
-            this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPuesto.Location = new System.Drawing.Point(389, 186);
-            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPuesto.Multiline = false;
-            this.txtPuesto.Name = "txtPuesto";
-            this.txtPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtPuesto.PasswordChar = false;
-            this.txtPuesto.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtPuesto.PlaceholderText = "";
-            this.txtPuesto.Size = new System.Drawing.Size(214, 35);
-            this.txtPuesto.TabIndex = 192;
-            this.txtPuesto.UnderlinedStyle = true;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label71.Location = new System.Drawing.Point(389, 166);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(59, 16);
-            this.label71.TabIndex = 191;
-            this.label71.Text = "Puesto:";
-            // 
-            // txtTotalhrs
-            // 
-            this.txtTotalhrs.BackColor = System.Drawing.Color.White;
-            this.txtTotalhrs.BorderColor = System.Drawing.Color.Gray;
-            this.txtTotalhrs.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTotalhrs.BorderRadius = 12;
-            this.txtTotalhrs.BorderSize = 2;
-            this.txtTotalhrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalhrs.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTotalhrs.Location = new System.Drawing.Point(219, 186);
-            this.txtTotalhrs.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTotalhrs.Multiline = false;
-            this.txtTotalhrs.Name = "txtTotalhrs";
-            this.txtTotalhrs.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTotalhrs.PasswordChar = false;
-            this.txtTotalhrs.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTotalhrs.PlaceholderText = "8";
-            this.txtTotalhrs.Size = new System.Drawing.Size(152, 35);
-            this.txtTotalhrs.TabIndex = 194;
-            this.txtTotalhrs.UnderlinedStyle = true;
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label72.Location = new System.Drawing.Point(223, 166);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(101, 16);
-            this.label72.TabIndex = 193;
-            this.label72.Text = "Total de Hrs: ";
-            // 
-            // txtTrabajoDesempeñado
-            // 
-            this.txtTrabajoDesempeñado.BackColor = System.Drawing.Color.White;
-            this.txtTrabajoDesempeñado.BorderColor = System.Drawing.Color.Gray;
-            this.txtTrabajoDesempeñado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTrabajoDesempeñado.BorderRadius = 12;
-            this.txtTrabajoDesempeñado.BorderSize = 2;
-            this.txtTrabajoDesempeñado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrabajoDesempeñado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTrabajoDesempeñado.Location = new System.Drawing.Point(14, 302);
-            this.txtTrabajoDesempeñado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTrabajoDesempeñado.Multiline = true;
-            this.txtTrabajoDesempeñado.Name = "txtTrabajoDesempeñado";
-            this.txtTrabajoDesempeñado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTrabajoDesempeñado.PasswordChar = false;
-            this.txtTrabajoDesempeñado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTrabajoDesempeñado.PlaceholderText = "";
-            this.txtTrabajoDesempeñado.Size = new System.Drawing.Size(887, 59);
-            this.txtTrabajoDesempeñado.TabIndex = 195;
-            this.txtTrabajoDesempeñado.UnderlinedStyle = true;
-            // 
-            // txtTipoLesion
-            // 
-            this.txtTipoLesion.BackColor = System.Drawing.Color.White;
-            this.txtTipoLesion.BorderColor = System.Drawing.Color.Gray;
-            this.txtTipoLesion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTipoLesion.BorderRadius = 12;
-            this.txtTipoLesion.BorderSize = 2;
-            this.txtTipoLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipoLesion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTipoLesion.Location = new System.Drawing.Point(14, 393);
-            this.txtTipoLesion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTipoLesion.Multiline = true;
-            this.txtTipoLesion.Name = "txtTipoLesion";
-            this.txtTipoLesion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTipoLesion.PasswordChar = false;
-            this.txtTipoLesion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTipoLesion.PlaceholderText = "";
-            this.txtTipoLesion.Size = new System.Drawing.Size(887, 77);
-            this.txtTipoLesion.TabIndex = 196;
-            this.txtTipoLesion.UnderlinedStyle = true;
-            // 
-            // txtParteCuerpoAfectada
-            // 
-            this.txtParteCuerpoAfectada.BackColor = System.Drawing.Color.White;
-            this.txtParteCuerpoAfectada.BorderColor = System.Drawing.Color.Gray;
-            this.txtParteCuerpoAfectada.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtParteCuerpoAfectada.BorderRadius = 12;
-            this.txtParteCuerpoAfectada.BorderSize = 2;
-            this.txtParteCuerpoAfectada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParteCuerpoAfectada.ForeColor = System.Drawing.Color.DimGray;
-            this.txtParteCuerpoAfectada.Location = new System.Drawing.Point(14, 503);
-            this.txtParteCuerpoAfectada.Margin = new System.Windows.Forms.Padding(4);
-            this.txtParteCuerpoAfectada.Multiline = true;
-            this.txtParteCuerpoAfectada.Name = "txtParteCuerpoAfectada";
-            this.txtParteCuerpoAfectada.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtParteCuerpoAfectada.PasswordChar = false;
-            this.txtParteCuerpoAfectada.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtParteCuerpoAfectada.PlaceholderText = "";
-            this.txtParteCuerpoAfectada.Size = new System.Drawing.Size(887, 77);
-            this.txtParteCuerpoAfectada.TabIndex = 197;
-            this.txtParteCuerpoAfectada.UnderlinedStyle = true;
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label73.Location = new System.Drawing.Point(18, 35);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(96, 16);
-            this.label73.TabIndex = 189;
-            this.label73.Text = "No. Nómina: ";
-            // 
-            // txtNumNominaTestigo
-            // 
-            this.txtNumNominaTestigo.BackColor = System.Drawing.Color.White;
-            this.txtNumNominaTestigo.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNominaTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNominaTestigo.BorderRadius = 12;
-            this.txtNumNominaTestigo.BorderSize = 2;
-            this.txtNumNominaTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumNominaTestigo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNominaTestigo.Location = new System.Drawing.Point(14, 51);
-            this.txtNumNominaTestigo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumNominaTestigo.Multiline = false;
-            this.txtNumNominaTestigo.Name = "txtNumNominaTestigo";
-            this.txtNumNominaTestigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumNominaTestigo.PasswordChar = false;
-            this.txtNumNominaTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNominaTestigo.PlaceholderText = "";
-            this.txtNumNominaTestigo.Size = new System.Drawing.Size(164, 35);
-            this.txtNumNominaTestigo.TabIndex = 188;
-            this.txtNumNominaTestigo.UnderlinedStyle = true;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label74.Location = new System.Drawing.Point(243, 31);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(153, 16);
-            this.label74.TabIndex = 191;
-            this.label74.Text = "Nombre del Testigo: ";
-            // 
-            // txtNombreTestigo
-            // 
-            this.txtNombreTestigo.BackColor = System.Drawing.Color.White;
-            this.txtNombreTestigo.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreTestigo.BorderRadius = 12;
-            this.txtNombreTestigo.BorderSize = 2;
-            this.txtNombreTestigo.Enabled = false;
-            this.txtNombreTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreTestigo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreTestigo.Location = new System.Drawing.Point(239, 47);
-            this.txtNombreTestigo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreTestigo.Multiline = false;
-            this.txtNombreTestigo.Name = "txtNombreTestigo";
-            this.txtNombreTestigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreTestigo.PasswordChar = false;
-            this.txtNombreTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreTestigo.PlaceholderText = "";
-            this.txtNombreTestigo.Size = new System.Drawing.Size(531, 35);
-            this.txtNombreTestigo.TabIndex = 190;
-            this.txtNombreTestigo.UnderlinedStyle = true;
-            // 
-            // txtAccionesCorrectivas
-            // 
-            this.txtAccionesCorrectivas.BackColor = System.Drawing.Color.White;
-            this.txtAccionesCorrectivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtAccionesCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAccionesCorrectivas.BorderRadius = 12;
-            this.txtAccionesCorrectivas.BorderSize = 2;
-            this.txtAccionesCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccionesCorrectivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAccionesCorrectivas.Location = new System.Drawing.Point(18, 67);
-            this.txtAccionesCorrectivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAccionesCorrectivas.Multiline = true;
-            this.txtAccionesCorrectivas.Name = "txtAccionesCorrectivas";
-            this.txtAccionesCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAccionesCorrectivas.PasswordChar = false;
-            this.txtAccionesCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAccionesCorrectivas.PlaceholderText = "";
-            this.txtAccionesCorrectivas.Size = new System.Drawing.Size(255, 60);
-            this.txtAccionesCorrectivas.TabIndex = 174;
-            this.txtAccionesCorrectivas.UnderlinedStyle = true;
-            // 
-            // txtquienCorrectivas
-            // 
-            this.txtquienCorrectivas.BackColor = System.Drawing.Color.White;
-            this.txtquienCorrectivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtquienCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtquienCorrectivas.BorderRadius = 12;
-            this.txtquienCorrectivas.BorderSize = 2;
-            this.txtquienCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtquienCorrectivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtquienCorrectivas.Location = new System.Drawing.Point(319, 64);
-            this.txtquienCorrectivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtquienCorrectivas.Multiline = true;
-            this.txtquienCorrectivas.Name = "txtquienCorrectivas";
-            this.txtquienCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtquienCorrectivas.PasswordChar = false;
-            this.txtquienCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtquienCorrectivas.PlaceholderText = "";
-            this.txtquienCorrectivas.Size = new System.Drawing.Size(259, 60);
-            this.txtquienCorrectivas.TabIndex = 175;
-            this.txtquienCorrectivas.UnderlinedStyle = true;
-            // 
-            // txtCuandoCorrectivas
-            // 
-            this.txtCuandoCorrectivas.BackColor = System.Drawing.Color.White;
-            this.txtCuandoCorrectivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtCuandoCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtCuandoCorrectivas.BorderRadius = 12;
-            this.txtCuandoCorrectivas.BorderSize = 2;
-            this.txtCuandoCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuandoCorrectivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCuandoCorrectivas.Location = new System.Drawing.Point(615, 67);
-            this.txtCuandoCorrectivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCuandoCorrectivas.Multiline = true;
-            this.txtCuandoCorrectivas.Name = "txtCuandoCorrectivas";
-            this.txtCuandoCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCuandoCorrectivas.PasswordChar = false;
-            this.txtCuandoCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCuandoCorrectivas.PlaceholderText = "";
-            this.txtCuandoCorrectivas.Size = new System.Drawing.Size(255, 60);
-            this.txtCuandoCorrectivas.TabIndex = 176;
-            this.txtCuandoCorrectivas.UnderlinedStyle = true;
-            // 
-            // txtAccionesPreventivasProp
-            // 
-            this.txtAccionesPreventivasProp.BackColor = System.Drawing.Color.White;
-            this.txtAccionesPreventivasProp.BorderColor = System.Drawing.Color.Gray;
-            this.txtAccionesPreventivasProp.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAccionesPreventivasProp.BorderRadius = 12;
-            this.txtAccionesPreventivasProp.BorderSize = 2;
-            this.txtAccionesPreventivasProp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccionesPreventivasProp.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAccionesPreventivasProp.Location = new System.Drawing.Point(22, 67);
-            this.txtAccionesPreventivasProp.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAccionesPreventivasProp.Multiline = true;
-            this.txtAccionesPreventivasProp.Name = "txtAccionesPreventivasProp";
-            this.txtAccionesPreventivasProp.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAccionesPreventivasProp.PasswordChar = false;
-            this.txtAccionesPreventivasProp.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAccionesPreventivasProp.PlaceholderText = "";
-            this.txtAccionesPreventivasProp.Size = new System.Drawing.Size(255, 60);
-            this.txtAccionesPreventivasProp.TabIndex = 177;
-            this.txtAccionesPreventivasProp.UnderlinedStyle = true;
-            // 
-            // txtQuienPreventivas
-            // 
-            this.txtQuienPreventivas.BackColor = System.Drawing.Color.White;
-            this.txtQuienPreventivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtQuienPreventivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtQuienPreventivas.BorderRadius = 12;
-            this.txtQuienPreventivas.BorderSize = 2;
-            this.txtQuienPreventivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuienPreventivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtQuienPreventivas.Location = new System.Drawing.Point(322, 66);
-            this.txtQuienPreventivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtQuienPreventivas.Multiline = true;
-            this.txtQuienPreventivas.Name = "txtQuienPreventivas";
-            this.txtQuienPreventivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtQuienPreventivas.PasswordChar = false;
-            this.txtQuienPreventivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtQuienPreventivas.PlaceholderText = "";
-            this.txtQuienPreventivas.Size = new System.Drawing.Size(255, 60);
-            this.txtQuienPreventivas.TabIndex = 178;
-            this.txtQuienPreventivas.UnderlinedStyle = true;
-            // 
-            // txtCuandoPreventivas
-            // 
-            this.txtCuandoPreventivas.BackColor = System.Drawing.Color.White;
-            this.txtCuandoPreventivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtCuandoPreventivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtCuandoPreventivas.BorderRadius = 12;
-            this.txtCuandoPreventivas.BorderSize = 2;
-            this.txtCuandoPreventivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuandoPreventivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCuandoPreventivas.Location = new System.Drawing.Point(619, 67);
-            this.txtCuandoPreventivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCuandoPreventivas.Multiline = true;
-            this.txtCuandoPreventivas.Name = "txtCuandoPreventivas";
-            this.txtCuandoPreventivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCuandoPreventivas.PasswordChar = false;
-            this.txtCuandoPreventivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCuandoPreventivas.PlaceholderText = "";
-            this.txtCuandoPreventivas.Size = new System.Drawing.Size(255, 60);
-            this.txtCuandoPreventivas.TabIndex = 179;
-            this.txtCuandoPreventivas.UnderlinedStyle = true;
-            // 
-            // txtSeguimiento
-            // 
-            this.txtSeguimiento.BackColor = System.Drawing.Color.White;
-            this.txtSeguimiento.BorderColor = System.Drawing.Color.Gray;
-            this.txtSeguimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSeguimiento.BorderRadius = 12;
-            this.txtSeguimiento.BorderSize = 2;
-            this.txtSeguimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeguimiento.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSeguimiento.Location = new System.Drawing.Point(23, 34);
-            this.txtSeguimiento.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSeguimiento.Multiline = true;
-            this.txtSeguimiento.Name = "txtSeguimiento";
-            this.txtSeguimiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSeguimiento.PasswordChar = false;
-            this.txtSeguimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSeguimiento.PlaceholderText = "";
-            this.txtSeguimiento.Size = new System.Drawing.Size(855, 60);
-            this.txtSeguimiento.TabIndex = 180;
-            this.txtSeguimiento.UnderlinedStyle = true;
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label75.Location = new System.Drawing.Point(27, 140);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(148, 16);
-            this.label75.TabIndex = 182;
-            this.label75.Text = "Número de Nómina: ";
-            // 
-            // txtNumNomminaSST
-            // 
-            this.txtNumNomminaSST.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNumNomminaSST.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNomminaSST.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNomminaSST.BorderRadius = 12;
-            this.txtNumNomminaSST.BorderSize = 2;
-            this.txtNumNomminaSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumNomminaSST.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNomminaSST.Location = new System.Drawing.Point(23, 156);
-            this.txtNumNomminaSST.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumNomminaSST.Multiline = false;
-            this.txtNumNomminaSST.Name = "txtNumNomminaSST";
-            this.txtNumNomminaSST.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumNomminaSST.PasswordChar = false;
-            this.txtNumNomminaSST.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNomminaSST.PlaceholderText = "";
-            this.txtNumNomminaSST.Size = new System.Drawing.Size(162, 35);
-            this.txtNumNomminaSST.TabIndex = 181;
-            this.txtNumNomminaSST.UnderlinedStyle = true;
-            // 
-            // txtNombreSST
-            // 
-            this.txtNombreSST.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNombreSST.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreSST.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreSST.BorderRadius = 12;
-            this.txtNombreSST.BorderSize = 2;
-            this.txtNombreSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreSST.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreSST.Location = new System.Drawing.Point(258, 154);
-            this.txtNombreSST.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreSST.Multiline = false;
-            this.txtNombreSST.Name = "txtNombreSST";
-            this.txtNombreSST.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreSST.PasswordChar = false;
-            this.txtNombreSST.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreSST.PlaceholderText = "";
-            this.txtNombreSST.Size = new System.Drawing.Size(620, 35);
-            this.txtNombreSST.TabIndex = 183;
-            this.txtNombreSST.UnderlinedStyle = true;
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label76.Location = new System.Drawing.Point(258, 134);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(158, 16);
-            this.label76.TabIndex = 184;
-            this.label76.Text = "Nombre Proceso SST";
-            // 
-            // txtidNombreSST
-            // 
-            this.txtidNombreSST.AnimateReadOnly = false;
-            this.txtidNombreSST.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtidNombreSST.Depth = 0;
-            this.txtidNombreSST.Enabled = false;
-            this.txtidNombreSST.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtidNombreSST.LeadingIcon = null;
-            this.txtidNombreSST.Location = new System.Drawing.Point(714, 142);
-            this.txtidNombreSST.MaxLength = 18;
-            this.txtidNombreSST.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtidNombreSST.Multiline = false;
-            this.txtidNombreSST.Name = "txtidNombreSST";
-            this.txtidNombreSST.Size = new System.Drawing.Size(159, 50);
-            this.txtidNombreSST.TabIndex = 117;
-            this.txtidNombreSST.Text = "";
-            this.txtidNombreSST.TrailingIcon = null;
-            this.txtidNombreSST.Visible = false;
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label77.Location = new System.Drawing.Point(19, 35);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(148, 16);
-            this.label77.TabIndex = 179;
-            this.label77.Text = "Número de Nómina: ";
-            // 
-            // txtNumNominaEmpleadoConocimiento
-            // 
-            this.txtNumNominaEmpleadoConocimiento.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNumNominaEmpleadoConocimiento.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNominaEmpleadoConocimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNominaEmpleadoConocimiento.BorderRadius = 12;
-            this.txtNumNominaEmpleadoConocimiento.BorderSize = 2;
-            this.txtNumNominaEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumNominaEmpleadoConocimiento.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNominaEmpleadoConocimiento.Location = new System.Drawing.Point(15, 51);
-            this.txtNumNominaEmpleadoConocimiento.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumNominaEmpleadoConocimiento.Multiline = false;
-            this.txtNumNominaEmpleadoConocimiento.Name = "txtNumNominaEmpleadoConocimiento";
-            this.txtNumNominaEmpleadoConocimiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumNominaEmpleadoConocimiento.PasswordChar = false;
-            this.txtNumNominaEmpleadoConocimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNominaEmpleadoConocimiento.PlaceholderText = "";
-            this.txtNumNominaEmpleadoConocimiento.Size = new System.Drawing.Size(172, 35);
-            this.txtNumNominaEmpleadoConocimiento.TabIndex = 178;
-            this.txtNumNominaEmpleadoConocimiento.UnderlinedStyle = true;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label78.Location = new System.Drawing.Point(256, 35);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(407, 16);
-            this.label78.TabIndex = 181;
-            this.label78.Text = "Nombre de colaborador con conocimiento de los hechos: ";
-            // 
-            // txtNombreEmpleadoConocimiento
-            // 
-            this.txtNombreEmpleadoConocimiento.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombreEmpleadoConocimiento.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreEmpleadoConocimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreEmpleadoConocimiento.BorderRadius = 12;
-            this.txtNombreEmpleadoConocimiento.BorderSize = 2;
-            this.txtNombreEmpleadoConocimiento.Enabled = false;
-            this.txtNombreEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreEmpleadoConocimiento.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreEmpleadoConocimiento.Location = new System.Drawing.Point(252, 51);
-            this.txtNombreEmpleadoConocimiento.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreEmpleadoConocimiento.Multiline = false;
-            this.txtNombreEmpleadoConocimiento.Name = "txtNombreEmpleadoConocimiento";
-            this.txtNombreEmpleadoConocimiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreEmpleadoConocimiento.PasswordChar = false;
-            this.txtNombreEmpleadoConocimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreEmpleadoConocimiento.PlaceholderText = "";
-            this.txtNombreEmpleadoConocimiento.Size = new System.Drawing.Size(508, 35);
-            this.txtNombreEmpleadoConocimiento.TabIndex = 180;
-            this.txtNombreEmpleadoConocimiento.UnderlinedStyle = true;
-            // 
-            // txtOtro
-            // 
-            this.txtOtro.BackColor = System.Drawing.SystemColors.Window;
-            this.txtOtro.BorderColor = System.Drawing.Color.Gray;
-            this.txtOtro.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOtro.BorderRadius = 12;
-            this.txtOtro.BorderSize = 2;
-            this.txtOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtro.ForeColor = System.Drawing.Color.DimGray;
-            this.txtOtro.Location = new System.Drawing.Point(715, 15);
-            this.txtOtro.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOtro.Multiline = false;
-            this.txtOtro.Name = "txtOtro";
-            this.txtOtro.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtOtro.PasswordChar = false;
-            this.txtOtro.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOtro.PlaceholderText = "";
-            this.txtOtro.Size = new System.Drawing.Size(187, 35);
-            this.txtOtro.TabIndex = 182;
-            this.txtOtro.UnderlinedStyle = true;
-            this.txtOtro.Visible = false;
-            // 
-            // txtDiagnosticoFinal
-            // 
-            this.txtDiagnosticoFinal.BackColor = System.Drawing.SystemColors.Window;
-            this.txtDiagnosticoFinal.BorderColor = System.Drawing.Color.Gray;
-            this.txtDiagnosticoFinal.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtDiagnosticoFinal.BorderRadius = 12;
-            this.txtDiagnosticoFinal.BorderSize = 2;
-            this.txtDiagnosticoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiagnosticoFinal.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDiagnosticoFinal.Location = new System.Drawing.Point(16, 40);
-            this.txtDiagnosticoFinal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDiagnosticoFinal.Multiline = true;
-            this.txtDiagnosticoFinal.Name = "txtDiagnosticoFinal";
-            this.txtDiagnosticoFinal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDiagnosticoFinal.PasswordChar = false;
-            this.txtDiagnosticoFinal.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDiagnosticoFinal.PlaceholderText = "";
-            this.txtDiagnosticoFinal.Size = new System.Drawing.Size(875, 65);
-            this.txtDiagnosticoFinal.TabIndex = 179;
-            this.txtDiagnosticoFinal.UnderlinedStyle = true;
-            // 
-            // txtTratamiento
-            // 
-            this.txtTratamiento.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTratamiento.BorderColor = System.Drawing.Color.Gray;
-            this.txtTratamiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTratamiento.BorderRadius = 12;
-            this.txtTratamiento.BorderSize = 2;
-            this.txtTratamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTratamiento.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTratamiento.Location = new System.Drawing.Point(16, 120);
-            this.txtTratamiento.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTratamiento.Multiline = true;
-            this.txtTratamiento.Name = "txtTratamiento";
-            this.txtTratamiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTratamiento.PasswordChar = false;
-            this.txtTratamiento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTratamiento.PlaceholderText = "";
-            this.txtTratamiento.Size = new System.Drawing.Size(875, 65);
-            this.txtTratamiento.TabIndex = 180;
-            this.txtTratamiento.UnderlinedStyle = true;
-            // 
-            // txtIncapacidad
-            // 
-            this.txtIncapacidad.BackColor = System.Drawing.SystemColors.Window;
-            this.txtIncapacidad.BorderColor = System.Drawing.Color.Gray;
-            this.txtIncapacidad.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtIncapacidad.BorderRadius = 12;
-            this.txtIncapacidad.BorderSize = 2;
-            this.txtIncapacidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIncapacidad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtIncapacidad.Location = new System.Drawing.Point(18, 215);
-            this.txtIncapacidad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIncapacidad.Multiline = true;
-            this.txtIncapacidad.Name = "txtIncapacidad";
-            this.txtIncapacidad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtIncapacidad.PasswordChar = false;
-            this.txtIncapacidad.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtIncapacidad.PlaceholderText = "";
-            this.txtIncapacidad.Size = new System.Drawing.Size(875, 65);
-            this.txtIncapacidad.TabIndex = 181;
-            this.txtIncapacidad.UnderlinedStyle = true;
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label79.Location = new System.Drawing.Point(256, 35);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(262, 16);
-            this.label79.TabIndex = 185;
-            this.label79.Text = "Nombre de colaborador Involucrado:";
-            // 
-            // txtNombreEmpleadoInvolucrado
-            // 
-            this.txtNombreEmpleadoInvolucrado.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombreEmpleadoInvolucrado.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreEmpleadoInvolucrado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreEmpleadoInvolucrado.BorderRadius = 12;
-            this.txtNombreEmpleadoInvolucrado.BorderSize = 2;
-            this.txtNombreEmpleadoInvolucrado.Enabled = false;
-            this.txtNombreEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreEmpleadoInvolucrado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreEmpleadoInvolucrado.Location = new System.Drawing.Point(252, 51);
-            this.txtNombreEmpleadoInvolucrado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreEmpleadoInvolucrado.Multiline = false;
-            this.txtNombreEmpleadoInvolucrado.Name = "txtNombreEmpleadoInvolucrado";
-            this.txtNombreEmpleadoInvolucrado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreEmpleadoInvolucrado.PasswordChar = false;
-            this.txtNombreEmpleadoInvolucrado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreEmpleadoInvolucrado.PlaceholderText = "";
-            this.txtNombreEmpleadoInvolucrado.Size = new System.Drawing.Size(508, 35);
-            this.txtNombreEmpleadoInvolucrado.TabIndex = 184;
-            this.txtNombreEmpleadoInvolucrado.UnderlinedStyle = true;
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label80.Location = new System.Drawing.Point(19, 35);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(148, 16);
-            this.label80.TabIndex = 183;
-            this.label80.Text = "Número de Nómina: ";
-            // 
-            // txtNumNominaEmpleadoInvolucrado
-            // 
-            this.txtNumNominaEmpleadoInvolucrado.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNumNominaEmpleadoInvolucrado.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNominaEmpleadoInvolucrado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNominaEmpleadoInvolucrado.BorderRadius = 12;
-            this.txtNumNominaEmpleadoInvolucrado.BorderSize = 2;
-            this.txtNumNominaEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumNominaEmpleadoInvolucrado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNominaEmpleadoInvolucrado.Location = new System.Drawing.Point(15, 51);
-            this.txtNumNominaEmpleadoInvolucrado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumNominaEmpleadoInvolucrado.Multiline = false;
-            this.txtNumNominaEmpleadoInvolucrado.Name = "txtNumNominaEmpleadoInvolucrado";
-            this.txtNumNominaEmpleadoInvolucrado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumNominaEmpleadoInvolucrado.PasswordChar = false;
-            this.txtNumNominaEmpleadoInvolucrado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNominaEmpleadoInvolucrado.PlaceholderText = "";
-            this.txtNumNominaEmpleadoInvolucrado.Size = new System.Drawing.Size(172, 35);
-            this.txtNumNominaEmpleadoInvolucrado.TabIndex = 182;
-            this.txtNumNominaEmpleadoInvolucrado.UnderlinedStyle = true;
-            // 
-            // txtLugarAccidente
-            // 
-            this.txtLugarAccidente.BackColor = System.Drawing.Color.White;
-            this.txtLugarAccidente.BorderColor = System.Drawing.Color.Gray;
-            this.txtLugarAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtLugarAccidente.BorderRadius = 12;
-            this.txtLugarAccidente.BorderSize = 2;
-            this.txtLugarAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLugarAccidente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtLugarAccidente.Location = new System.Drawing.Point(9, 164);
-            this.txtLugarAccidente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLugarAccidente.Multiline = true;
-            this.txtLugarAccidente.Name = "txtLugarAccidente";
-            this.txtLugarAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtLugarAccidente.PasswordChar = false;
-            this.txtLugarAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtLugarAccidente.PlaceholderText = "";
-            this.txtLugarAccidente.Size = new System.Drawing.Size(432, 74);
-            this.txtLugarAccidente.TabIndex = 181;
-            this.txtLugarAccidente.UnderlinedStyle = true;
-            // 
-            // txtEquipoProteccionUsado
-            // 
-            this.txtEquipoProteccionUsado.BackColor = System.Drawing.Color.White;
-            this.txtEquipoProteccionUsado.BorderColor = System.Drawing.Color.Gray;
-            this.txtEquipoProteccionUsado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEquipoProteccionUsado.BorderRadius = 12;
-            this.txtEquipoProteccionUsado.BorderSize = 2;
-            this.txtEquipoProteccionUsado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEquipoProteccionUsado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEquipoProteccionUsado.Location = new System.Drawing.Point(455, 164);
-            this.txtEquipoProteccionUsado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEquipoProteccionUsado.Multiline = true;
-            this.txtEquipoProteccionUsado.Name = "txtEquipoProteccionUsado";
-            this.txtEquipoProteccionUsado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEquipoProteccionUsado.PasswordChar = false;
-            this.txtEquipoProteccionUsado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEquipoProteccionUsado.PlaceholderText = "";
-            this.txtEquipoProteccionUsado.Size = new System.Drawing.Size(432, 74);
-            this.txtEquipoProteccionUsado.TabIndex = 182;
-            this.txtEquipoProteccionUsado.UnderlinedStyle = true;
-            // 
-            // txtObjCausanteLesion
-            // 
-            this.txtObjCausanteLesion.BackColor = System.Drawing.Color.White;
-            this.txtObjCausanteLesion.BorderColor = System.Drawing.Color.Gray;
-            this.txtObjCausanteLesion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtObjCausanteLesion.BorderRadius = 12;
-            this.txtObjCausanteLesion.BorderSize = 2;
-            this.txtObjCausanteLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjCausanteLesion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtObjCausanteLesion.Location = new System.Drawing.Point(9, 275);
-            this.txtObjCausanteLesion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtObjCausanteLesion.Multiline = true;
-            this.txtObjCausanteLesion.Name = "txtObjCausanteLesion";
-            this.txtObjCausanteLesion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtObjCausanteLesion.PasswordChar = false;
-            this.txtObjCausanteLesion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtObjCausanteLesion.PlaceholderText = "";
-            this.txtObjCausanteLesion.Size = new System.Drawing.Size(432, 74);
-            this.txtObjCausanteLesion.TabIndex = 183;
-            this.txtObjCausanteLesion.UnderlinedStyle = true;
-            // 
-            // txtEquipoProteccionNecesario
-            // 
-            this.txtEquipoProteccionNecesario.BackColor = System.Drawing.Color.White;
-            this.txtEquipoProteccionNecesario.BorderColor = System.Drawing.Color.Gray;
-            this.txtEquipoProteccionNecesario.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEquipoProteccionNecesario.BorderRadius = 12;
-            this.txtEquipoProteccionNecesario.BorderSize = 2;
-            this.txtEquipoProteccionNecesario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEquipoProteccionNecesario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEquipoProteccionNecesario.Location = new System.Drawing.Point(455, 275);
-            this.txtEquipoProteccionNecesario.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEquipoProteccionNecesario.Multiline = true;
-            this.txtEquipoProteccionNecesario.Name = "txtEquipoProteccionNecesario";
-            this.txtEquipoProteccionNecesario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEquipoProteccionNecesario.PasswordChar = false;
-            this.txtEquipoProteccionNecesario.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEquipoProteccionNecesario.PlaceholderText = "";
-            this.txtEquipoProteccionNecesario.Size = new System.Drawing.Size(432, 74);
-            this.txtEquipoProteccionNecesario.TabIndex = 184;
-            this.txtEquipoProteccionNecesario.UnderlinedStyle = true;
-            // 
-            // txtEquipoDanado
-            // 
-            this.txtEquipoDanado.BackColor = System.Drawing.Color.White;
-            this.txtEquipoDanado.BorderColor = System.Drawing.Color.Gray;
-            this.txtEquipoDanado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEquipoDanado.BorderRadius = 12;
-            this.txtEquipoDanado.BorderSize = 2;
-            this.txtEquipoDanado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEquipoDanado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEquipoDanado.Location = new System.Drawing.Point(13, 77);
-            this.txtEquipoDanado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEquipoDanado.Multiline = true;
-            this.txtEquipoDanado.Name = "txtEquipoDanado";
-            this.txtEquipoDanado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEquipoDanado.PasswordChar = false;
-            this.txtEquipoDanado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEquipoDanado.PlaceholderText = "";
-            this.txtEquipoDanado.Size = new System.Drawing.Size(420, 52);
-            this.txtEquipoDanado.TabIndex = 185;
-            this.txtEquipoDanado.UnderlinedStyle = true;
-            // 
-            // txtSustituiblePor
-            // 
-            this.txtSustituiblePor.BackColor = System.Drawing.Color.White;
-            this.txtSustituiblePor.BorderColor = System.Drawing.Color.Gray;
-            this.txtSustituiblePor.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSustituiblePor.BorderRadius = 12;
-            this.txtSustituiblePor.BorderSize = 2;
-            this.txtSustituiblePor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSustituiblePor.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSustituiblePor.Location = new System.Drawing.Point(13, 150);
-            this.txtSustituiblePor.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSustituiblePor.Multiline = true;
-            this.txtSustituiblePor.Name = "txtSustituiblePor";
-            this.txtSustituiblePor.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSustituiblePor.PasswordChar = false;
-            this.txtSustituiblePor.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSustituiblePor.PlaceholderText = "";
-            this.txtSustituiblePor.Size = new System.Drawing.Size(420, 52);
-            this.txtSustituiblePor.TabIndex = 186;
-            this.txtSustituiblePor.UnderlinedStyle = true;
-            // 
-            // txtDescripcionAccidente
-            // 
-            this.txtDescripcionAccidente.BackColor = System.Drawing.Color.White;
-            this.txtDescripcionAccidente.BorderColor = System.Drawing.Color.Gray;
-            this.txtDescripcionAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtDescripcionAccidente.BorderRadius = 12;
-            this.txtDescripcionAccidente.BorderSize = 2;
-            this.txtDescripcionAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcionAccidente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDescripcionAccidente.Location = new System.Drawing.Point(9, 27);
-            this.txtDescripcionAccidente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDescripcionAccidente.Multiline = true;
-            this.txtDescripcionAccidente.Name = "txtDescripcionAccidente";
-            this.txtDescripcionAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDescripcionAccidente.PasswordChar = false;
-            this.txtDescripcionAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDescripcionAccidente.PlaceholderText = "";
-            this.txtDescripcionAccidente.Size = new System.Drawing.Size(880, 75);
-            this.txtDescripcionAccidente.TabIndex = 187;
-            this.txtDescripcionAccidente.UnderlinedStyle = true;
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label81.Location = new System.Drawing.Point(12, 95);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(94, 16);
-            this.label81.TabIndex = 179;
-            this.label81.Text = "Otro Riesgo:";
-            // 
-            // txtOtroRiesgo
-            // 
-            this.txtOtroRiesgo.BackColor = System.Drawing.SystemColors.Window;
-            this.txtOtroRiesgo.BorderColor = System.Drawing.Color.Gray;
-            this.txtOtroRiesgo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOtroRiesgo.BorderRadius = 12;
-            this.txtOtroRiesgo.BorderSize = 2;
-            this.txtOtroRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtroRiesgo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtOtroRiesgo.Location = new System.Drawing.Point(8, 111);
-            this.txtOtroRiesgo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOtroRiesgo.Multiline = false;
-            this.txtOtroRiesgo.Name = "txtOtroRiesgo";
-            this.txtOtroRiesgo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtOtroRiesgo.PasswordChar = false;
-            this.txtOtroRiesgo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOtroRiesgo.PlaceholderText = "";
-            this.txtOtroRiesgo.Size = new System.Drawing.Size(377, 35);
-            this.txtOtroRiesgo.TabIndex = 178;
-            this.txtOtroRiesgo.UnderlinedStyle = true;
-            this.txtOtroRiesgo.Visible = false;
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label82.Location = new System.Drawing.Point(13, 96);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(139, 16);
-            this.label82.TabIndex = 181;
-            this.label82.Text = "Otro Acto Inseguro:";
-            // 
-            // txtOtroActoInseguro
-            // 
-            this.txtOtroActoInseguro.BackColor = System.Drawing.SystemColors.Window;
-            this.txtOtroActoInseguro.BorderColor = System.Drawing.Color.Gray;
-            this.txtOtroActoInseguro.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOtroActoInseguro.BorderRadius = 12;
-            this.txtOtroActoInseguro.BorderSize = 2;
-            this.txtOtroActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtroActoInseguro.ForeColor = System.Drawing.Color.DimGray;
-            this.txtOtroActoInseguro.Location = new System.Drawing.Point(9, 112);
-            this.txtOtroActoInseguro.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOtroActoInseguro.Multiline = false;
-            this.txtOtroActoInseguro.Name = "txtOtroActoInseguro";
-            this.txtOtroActoInseguro.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtOtroActoInseguro.PasswordChar = false;
-            this.txtOtroActoInseguro.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOtroActoInseguro.PlaceholderText = "";
-            this.txtOtroActoInseguro.Size = new System.Drawing.Size(377, 35);
-            this.txtOtroActoInseguro.TabIndex = 180;
-            this.txtOtroActoInseguro.UnderlinedStyle = true;
-            this.txtOtroActoInseguro.Visible = false;
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label83.Location = new System.Drawing.Point(13, 97);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(177, 16);
-            this.label83.TabIndex = 183;
-            this.label83.Text = "Otra Condicion Insegura:";
-            // 
-            // txtOtraCondicion
-            // 
-            this.txtOtraCondicion.BackColor = System.Drawing.SystemColors.Window;
-            this.txtOtraCondicion.BorderColor = System.Drawing.Color.Gray;
-            this.txtOtraCondicion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOtraCondicion.BorderRadius = 12;
-            this.txtOtraCondicion.BorderSize = 2;
-            this.txtOtraCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtraCondicion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtOtraCondicion.Location = new System.Drawing.Point(9, 113);
-            this.txtOtraCondicion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOtraCondicion.Multiline = false;
-            this.txtOtraCondicion.Name = "txtOtraCondicion";
-            this.txtOtraCondicion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtOtraCondicion.PasswordChar = false;
-            this.txtOtraCondicion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOtraCondicion.PlaceholderText = "";
-            this.txtOtraCondicion.Size = new System.Drawing.Size(377, 35);
-            this.txtOtraCondicion.TabIndex = 182;
-            this.txtOtraCondicion.UnderlinedStyle = true;
-            this.txtOtraCondicion.Visible = false;
-            // 
-            // idRiesgo
-            // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.idRiesgo.DefaultCellStyle = dataGridViewCellStyle18;
-            this.idRiesgo.HeaderText = "id Riesgo";
-            this.idRiesgo.MinimumWidth = 6;
-            this.idRiesgo.Name = "idRiesgo";
-            this.idRiesgo.ReadOnly = true;
-            this.idRiesgo.Visible = false;
-            // 
-            // riesgo
-            // 
-            this.riesgo.HeaderText = "Riesgos";
-            this.riesgo.MinimumWidth = 6;
-            this.riesgo.Name = "riesgo";
-            this.riesgo.ReadOnly = true;
-            // 
-            // accionesriesgos
-            // 
-            this.accionesriesgos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.accionesriesgos.HeaderText = "";
-            this.accionesriesgos.Image = ((System.Drawing.Image)(resources.GetObject("accionesriesgos.Image")));
-            this.accionesriesgos.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.accionesriesgos.MinimumWidth = 6;
-            this.accionesriesgos.Name = "accionesriesgos";
-            this.accionesriesgos.ReadOnly = true;
-            this.accionesriesgos.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.accionesriesgos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.accionesriesgos.Width = 50;
-            // 
-            // idActoInseguro
-            // 
-            this.idActoInseguro.HeaderText = "Id Acto Inseguro";
-            this.idActoInseguro.MinimumWidth = 6;
-            this.idActoInseguro.Name = "idActoInseguro";
-            this.idActoInseguro.ReadOnly = true;
-            this.idActoInseguro.Visible = false;
-            // 
-            // actoInseguro
-            // 
-            this.actoInseguro.FillWeight = 149.2386F;
-            this.actoInseguro.HeaderText = "Acto Inseguro";
-            this.actoInseguro.MinimumWidth = 6;
-            this.actoInseguro.Name = "actoInseguro";
-            this.actoInseguro.ReadOnly = true;
-            // 
-            // accionesActosInseguros
-            // 
-            this.accionesActosInseguros.FillWeight = 50.76142F;
-            this.accionesActosInseguros.HeaderText = "";
-            this.accionesActosInseguros.Image = ((System.Drawing.Image)(resources.GetObject("accionesActosInseguros.Image")));
-            this.accionesActosInseguros.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.accionesActosInseguros.MinimumWidth = 6;
-            this.accionesActosInseguros.Name = "accionesActosInseguros";
-            this.accionesActosInseguros.ReadOnly = true;
-            this.accionesActosInseguros.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.accionesActosInseguros.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // idCondicionInsegura
-            // 
-            this.idCondicionInsegura.HeaderText = "Id Consición Insegura";
-            this.idCondicionInsegura.MinimumWidth = 6;
-            this.idCondicionInsegura.Name = "idCondicionInsegura";
-            this.idCondicionInsegura.ReadOnly = true;
-            this.idCondicionInsegura.Visible = false;
-            // 
-            // CondicionInsegura
-            // 
-            this.CondicionInsegura.FillWeight = 149.2386F;
-            this.CondicionInsegura.HeaderText = "Condición Insegura";
-            this.CondicionInsegura.MinimumWidth = 6;
-            this.CondicionInsegura.Name = "CondicionInsegura";
-            this.CondicionInsegura.ReadOnly = true;
-            // 
-            // accionesCondiciones
-            // 
-            this.accionesCondiciones.FillWeight = 50.76142F;
-            this.accionesCondiciones.HeaderText = "";
-            this.accionesCondiciones.Image = ((System.Drawing.Image)(resources.GetObject("accionesCondiciones.Image")));
-            this.accionesCondiciones.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.accionesCondiciones.MinimumWidth = 6;
-            this.accionesCondiciones.Name = "accionesCondiciones";
-            this.accionesCondiciones.ReadOnly = true;
-            this.accionesCondiciones.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.accionesCondiciones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
+            // mySqlCommand2
+            // 
+            this.mySqlCommand2.CacheAge = 0;
+            this.mySqlCommand2.Connection = null;
+            this.mySqlCommand2.EnableCaching = false;
+            this.mySqlCommand2.Transaction = null;
+            // 
+            // cboxCondicion
+            // 
+            this.cboxCondicion.BackColor = System.Drawing.Color.White;
+            this.cboxCondicion.BorderColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.BorderSize = 1;
+            this.cboxCondicion.DisplayMember = "";
+            this.cboxCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cboxCondicion.ForeColor = System.Drawing.Color.DimGray;
+            this.cboxCondicion.IconColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.Items.AddRange(new object[] {
+            "Leve",
+            "Moderado",
+            "Grave",
+            "Mortal",
+            "Otra"});
+            this.cboxCondicion.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.ListTextColor = System.Drawing.Color.White;
+            this.cboxCondicion.Location = new System.Drawing.Point(13, 63);
+            this.cboxCondicion.MinimumSize = new System.Drawing.Size(0, 30);
+            this.cboxCondicion.Name = "cboxCondicion";
+            this.cboxCondicion.Padding = new System.Windows.Forms.Padding(1);
+            this.cboxCondicion.Size = new System.Drawing.Size(151, 30);
+            this.cboxCondicion.TabIndex = 198;
+            this.cboxCondicion.Texts = "";
+            this.cboxCondicion.ValueMember = "";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label84.Location = new System.Drawing.Point(13, 39);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(80, 16);
+            this.label84.TabIndex = 199;
+            this.label84.Text = "Condición:";
+            // 
+            // CboxTurno
+            // 
+            this.CboxTurno.BackColor = System.Drawing.Color.White;
+            this.CboxTurno.BorderColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.BorderSize = 1;
+            this.CboxTurno.DisplayMember = "";
+            this.CboxTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboxTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CboxTurno.ForeColor = System.Drawing.Color.DimGray;
+            this.CboxTurno.IconColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.Items.AddRange(new object[] {
+            "Matutino",
+            "Vespertino",
+            "Nocturno",
+            "Mixto"});
+            this.CboxTurno.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.ListTextColor = System.Drawing.Color.White;
+            this.CboxTurno.Location = new System.Drawing.Point(756, 125);
+            this.CboxTurno.MinimumSize = new System.Drawing.Size(0, 30);
+            this.CboxTurno.Name = "CboxTurno";
+            this.CboxTurno.Padding = new System.Windows.Forms.Padding(1);
+            this.CboxTurno.Size = new System.Drawing.Size(151, 30);
+            this.CboxTurno.TabIndex = 200;
+            this.CboxTurno.Texts = "";
+            this.CboxTurno.ValueMember = "";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label85.Location = new System.Drawing.Point(753, 104);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(51, 16);
+            this.label85.TabIndex = 201;
+            this.label85.Text = "Turno:";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label86.Location = new System.Drawing.Point(510, 226);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(51, 16);
+            this.label86.TabIndex = 203;
+            this.label86.Text = "Turno:";
+            // 
+            // cboxDecidoA
+            // 
+            this.cboxDecidoA.BackColor = System.Drawing.Color.White;
+            this.cboxDecidoA.BorderColor = System.Drawing.Color.DarkCyan;
+            this.cboxDecidoA.BorderSize = 1;
+            this.cboxDecidoA.DisplayMember = "";
+            this.cboxDecidoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxDecidoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cboxDecidoA.ForeColor = System.Drawing.Color.DimGray;
+            this.cboxDecidoA.IconColor = System.Drawing.Color.DarkCyan;
+            this.cboxDecidoA.Items.AddRange(new object[] {
+            "Reac. Gente",
+            "Act. Inseg.",
+            "Dispos. Seg.",
+            "Posic. Gente",
+            "Herramient.",
+            "No EPP",
+            "No Proced.",
+            "Maq./ equip.",
+            "Materiales",
+            "Derrames",
+            "Otra gente",
+            "Objetos",
+            "Operación",
+            "Estruc./inst.",
+            "Transp./Vehic."});
+            this.cboxDecidoA.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.cboxDecidoA.ListTextColor = System.Drawing.Color.White;
+            this.cboxDecidoA.Location = new System.Drawing.Point(513, 247);
+            this.cboxDecidoA.MinimumSize = new System.Drawing.Size(0, 30);
+            this.cboxDecidoA.Name = "cboxDecidoA";
+            this.cboxDecidoA.Padding = new System.Windows.Forms.Padding(1);
+            this.cboxDecidoA.Size = new System.Drawing.Size(394, 30);
+            this.cboxDecidoA.TabIndex = 202;
+            this.cboxDecidoA.Texts = "";
+            this.cboxDecidoA.ValueMember = "";
             // 
             // frmNewAccidente
             // 
@@ -4407,7 +4497,6 @@
         private radioButtonPersonalizado rbtnExistiaSupervicionSi;
         private radioButtonPersonalizado rbtnExistenItrsSi;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private MaterialSkin.Controls.MaterialComboBox CboxTurno;
         private System.Windows.Forms.DataGridViewTextBoxColumn numNomina;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdEmpleadoTestigo;
@@ -4441,8 +4530,6 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn5;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn6;
-        private MaterialSkin.Controls.MaterialComboBox cboxCondicion;
-        private MaterialSkin.Controls.MaterialComboBox cboxDecidoA;
         private System.Windows.Forms.Label label69;
         private TextPersonalizado txtNumeroNomina;
         private System.Windows.Forms.Label label67;
@@ -4509,5 +4596,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idActoInseguro;
         private System.Windows.Forms.DataGridViewTextBoxColumn actoInseguro;
         private System.Windows.Forms.DataGridViewImageColumn accionesActosInseguros;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand2;
+        private comboBoxPersonalizado CboxTurno;
+        private System.Windows.Forms.Label label84;
+        private comboBoxPersonalizado cboxCondicion;
+        private System.Windows.Forms.Label label86;
+        private comboBoxPersonalizado cboxDecidoA;
+        private System.Windows.Forms.Label label85;
     }
 }

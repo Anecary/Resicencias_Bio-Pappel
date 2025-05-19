@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +22,12 @@ namespace CapaPresentacion.Empleados
         {
             InitializeComponent();
             this.Load += new EventHandler(frmActualizarEmpleado_Load);
+
+            txtCiudad.KeyPress += ValidacionKeyPressCompartido;
+            txtColonia.KeyPress += ValidacionKeyPressCompartido;
+            txtCalle.KeyPress += ValidacionKeyPressCompartido;
+            txtNumero.KeyPress += ValidacionKeyPressCompartido;
+
 
             panel3.Paint += new PaintEventHandler(Panel1_Paint);
             panel4.Paint += new PaintEventHandler(Panel1_Paint);
@@ -60,7 +67,7 @@ namespace CapaPresentacion.Empleados
 
                 if (puestos == null || puestos.Count == 0)
                 {
-                    MessageBox.Show("No hay puestos disponibles.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("No hay puestos disponibles.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -71,7 +78,7 @@ namespace CapaPresentacion.Empleados
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar los puestos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error al cargar los puestos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -85,27 +92,27 @@ namespace CapaPresentacion.Empleados
             try
             {
                 if (string.IsNullOrWhiteSpace(txtNoNomina.Text) ||
-                    string.IsNullOrWhiteSpace(cmbEstadoCivil.Text) ||
+                    cmbEstadoCivil.SelectedItem == null ||
                     string.IsNullOrWhiteSpace(txtCp.Text) ||
-                    string.IsNullOrWhiteSpace(txtEstado.Text) ||
+                    cmbEstado.SelectedItem == null ||
                     string.IsNullOrWhiteSpace(txtCiudad.Text) ||
                     string.IsNullOrWhiteSpace(txtColonia.Text) ||
                     string.IsNullOrWhiteSpace(txtCalle.Text) ||
                     string.IsNullOrWhiteSpace(txtNumero.Text) ||  // Se valida antes de convertir a int
                     string.IsNullOrWhiteSpace(txtTelefono.Text) ||
-                    string.IsNullOrWhiteSpace(cmbPuesto.Text) ||
+                    cmbPuesto.SelectedItem == null ||
                     cmbTurno.SelectedItem == null) // Validar que cmbTurno tenga un valor seleccionado
                     {
-                        MessageBox.Show("Todos los campos deben estar llenos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        RJMessageBox.Show("Todos los campos deben estar llenos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
 
                 string numero_nomina = txtNoNomina.Text.Trim();
                 string estado_civil = cmbEstadoCivil.Text.Trim();
-                DateTime fecha_nueva = dateTimePicker1.Value;
+                DateTime fecha_nueva = dtpFecha.Value;
                 char turno = cmbTurno.SelectedItem.ToString()[0];
                 string domicilio_cp = txtCp.Text.Trim();
-                string domicilio_estado = txtEstado.Text.Trim();
+                string domicilio_estado = cmbEstado.Text.Trim();
                 string domicilio_ciudad = txtCiudad.Text.Trim();
                 string domicilio_colonia = txtColonia.Text.Trim();
                 string domicilio_calle = txtCalle.Text.Trim();
@@ -131,20 +138,20 @@ namespace CapaPresentacion.Empleados
                 };
 
                 negocios.actualizarEmpleado(empleados);
-                MessageBox.Show("Empleado actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("Empleado actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 limpiar();
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void cmbPuesto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dateTimePicker1.Value = DateTime.Now;
+            dtpFecha.Value = DateTime.Now;
         }
 
         private void limpiar()
@@ -154,7 +161,7 @@ namespace CapaPresentacion.Empleados
             txtSexo.Clear();
             txtNss.Clear();
             txtCp.Clear();
-            txtEstado.Clear();
+            //txtEstado.Clear();
             txtCiudad.Clear();
             txtColonia.Clear();
             txtCalle.Clear();
@@ -162,18 +169,21 @@ namespace CapaPresentacion.Empleados
             txtTelefono.Clear();
             txtNoNomina.Clear();
 
-            txtCp.Enabled = false;
-            txtEstado.Enabled = false;
-            txtCiudad.Enabled = false;
-            txtColonia.Enabled = false;
-            txtCalle.Enabled = false;
-            txtNumero.Enabled = false;
-            txtTelefono.Enabled = false;
-            txtNoNomina.Enabled = true;
+            txtCp.Enabled = false; txtCp.BackColor = Color.WhiteSmoke;
+            txtCiudad.Enabled = false; txtCiudad.BackColor = Color.WhiteSmoke;
+            txtColonia.Enabled = false; txtColonia.BackColor = Color.WhiteSmoke;
+            txtCalle.Enabled = false; txtCalle.BackColor = Color.WhiteSmoke;
+            txtNumero.Enabled = false; txtNumero.BackColor = Color.WhiteSmoke;
+            txtTelefono.Enabled = false;txtTelefono.BackColor = Color.WhiteSmoke;
+            txtNoNomina.Enabled = true; txtNoNomina.BackColor = Color.White;
 
-            cmbEstadoCivil.Enabled = false;
-            cmbPuesto.Enabled = false;
-            cmbTurno.Enabled = false;
+            cmbEstado.Enabled = false; cmbEstado.BackColor = Color.WhiteSmoke;
+            cmbPuesto.Enabled = false; cmbPuesto.BackColor = Color.WhiteSmoke;
+            cmbTurno.Enabled = false;cmbTurno.BackColor = Color.WhiteSmoke;
+            cmbEstadoCivil.Enabled = false; cmbEstadoCivil.BackColor = Color.WhiteSmoke;
+
+
+            dtpFecha.Enabled = false; dtpFecha.SkinColor = Color.WhiteSmoke;
 
             btnActualizar.Enabled = false;
             btnBuscarEmpleadoNN.Enabled = true;
@@ -189,15 +199,21 @@ namespace CapaPresentacion.Empleados
         {
             try
             {
-                String numero_nomina = txtNoNomina.Text;
+                string numeroNomina = txtNoNomina.Text.Trim();
 
-                if (string.IsNullOrEmpty(numero_nomina))
+                if (string.IsNullOrWhiteSpace(numeroNomina))
                 {
-                    MessageBox.Show("Por favor, ingrese un Numero de nomina.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("Por favor, ingrese un número de nómina.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                var datosEmpleado = negocios.ConsultaIndivisualActualizar(numero_nomina);
+                var datosEmpleado = negocios.ConsultaIndivisualActualizar(numeroNomina);
+
+                //if (datosEmpleado == null)
+                //{
+                //    RJMessageBox.Show("Número de nómina no encontrado. Verifique e intente nuevamente.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //    return;
+                //}
 
                 txtNombre.Text = datosEmpleado.nombreCompleto;
                 txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
@@ -205,7 +221,7 @@ namespace CapaPresentacion.Empleados
                 txtNss.Text = datosEmpleado.nss.ToString();
                 cmbEstadoCivil.SelectedItem = datosEmpleado.estado_civil;
                 txtCp.Text = datosEmpleado.domicilio_CP;
-                txtEstado.Text = datosEmpleado.domicilio_estado.ToString();
+                cmbEstado.SelectedItem = datosEmpleado.domicilio_estado;
                 txtCiudad.Text = datosEmpleado.domicilio_ciudad.ToString();
                 txtColonia.Text = datosEmpleado.domicilio_colonia.ToString();
                 txtCalle.Text = datosEmpleado.domicilio_calle.ToString();
@@ -213,7 +229,7 @@ namespace CapaPresentacion.Empleados
                 txtTelefono.Text = datosEmpleado.telefono.ToString();
                 cmbPuesto.SelectedItem = datosEmpleado.puesto;
                 char turno = datosEmpleado.turno;
-                dateTimePicker1.Value = datosEmpleado.fecha;
+                dtpFecha.Value = datosEmpleado.fecha;
 
                 Dictionary<char, string> turnosMap = new Dictionary<char, string>
                 {
@@ -229,25 +245,53 @@ namespace CapaPresentacion.Empleados
                 }
 
                 txtCp.Enabled = true; txtCp.BackColor = Color.White;
-                txtEstado.Enabled = true; txtEstado.BackColor = Color.White;
+                cmbEstado.Enabled = true; cmbEstado.BackColor = Color.White;
                 txtCiudad.Enabled = true; txtCiudad.BackColor = Color.White;
                 txtColonia.Enabled = true;txtColonia.BackColor = Color.White;
                 txtCalle.Enabled = true; txtCalle.BackColor = Color.White;
                 txtNumero.Enabled = true; txtNumero.BackColor = Color.White;
                 txtTelefono.Enabled = true; txtTelefono.BackColor = Color.White;
 
-                cmbEstadoCivil.Enabled = true;
-                cmbPuesto.Enabled = true;
-                cmbTurno.Enabled = true;
+                dtpFecha.Enabled = true; dtpFecha.SkinColor = Color.White;
 
-                btnActualizar.Enabled = true;
+                cmbEstadoCivil.Enabled = true; cmbEstadoCivil.BackColor = Color.White;
+                cmbPuesto.Enabled = true; cmbPuesto.BackColor = Color.White;
+                cmbTurno.Enabled = true;cmbTurno.BackColor = Color.White;
 
-                txtNoNomina.Enabled = false;
+                
+                txtNoNomina.Enabled = false; txtNoNomina.BackColor = Color.WhiteSmoke;
                 btmCancelar.Enabled = true;
+                btnActualizar.Enabled = true;
                 btnBuscarEmpleadoNN.Enabled = false;
             }
             catch (Exception ex)
             {
+            }
+        }
+        private void ValidacionKeyPressCompartido(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
+        }
+
+        private void validacionCaracteresEspeciales(KeyPressEventArgs e)
+        {
+            bool esLetraODigito = char.IsLetterOrDigit(e.KeyChar);
+            bool esGuion = e.KeyChar == '-';
+            bool esTeclaControl = char.IsControl(e.KeyChar);
+
+            bool esTeclaPermitida = e.KeyChar == (char)Keys.Back ||
+                                    e.KeyChar == (char)Keys.Delete ||
+                                    e.KeyChar == (char)Keys.Enter ||
+                                    e.KeyChar == (char)Keys.Tab ||
+                                    e.KeyChar == (char)Keys.Escape ||
+                                    e.KeyChar == (char)Keys.Left ||
+                                    e.KeyChar == (char)Keys.Right ||
+                                    e.KeyChar == (char)Keys.Space ;
+
+            if (!(esLetraODigito || esGuion || esTeclaControl || esTeclaPermitida))
+            {
+                e.Handled = true; // Bloquea la tecla
+                SystemSounds.Beep.Play(); // Sonido opcional
             }
         }
     }

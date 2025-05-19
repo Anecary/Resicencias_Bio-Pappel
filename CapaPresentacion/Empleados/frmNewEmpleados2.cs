@@ -1,11 +1,12 @@
-﻿using System;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Windows.Forms;
-using CapaEntidad;
+﻿using CapaEntidad;
 using CapaNegocios;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Media;
+using System.Windows.Forms;
 
 namespace CapaPresentacion.Empleados
 {
@@ -73,22 +74,34 @@ namespace CapaPresentacion.Empleados
                     string.IsNullOrWhiteSpace(txtNss.Text) ||
                     string.IsNullOrWhiteSpace(txtRFC.Text) ||
                     string.IsNullOrWhiteSpace(txtCalle.Text) ||
-                    string.IsNullOrWhiteSpace(txtNumero.Text) ||
+                    //string.IsNullOrWhiteSpace(txtNumero.Text) ||
                     string.IsNullOrWhiteSpace(txtColonia.Text) ||
                     string.IsNullOrWhiteSpace(txtCp.Text) ||
                     string.IsNullOrWhiteSpace(txtMunicipio.Text) ||
-                    string.IsNullOrWhiteSpace(txtEstado.Text) ||
+                    cboEstado.SelectedItem == null ||
                     string.IsNullOrWhiteSpace(txtTelefono.Text))
                 {
-                    MessageBox.Show("Todos los campos son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("Todos los campos son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return; // Detiene la ejecución si hay campos vacíos
+                }
+                int edad = DateTime.Today.Year - dtpFechaNacimiento.Value.Year;
+
+                if (dtpFechaNacimiento.Value.Date > DateTime.Today.AddYears(-edad))
+                {
+                    edad--;
+                }
+
+                if (edad <= 18)
+                {
+                    RJMessageBox.Show("Ingrese una fecha de nacimiento válida. Debe tener al menos 18 años.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
 
                 // Obtener valores después de la validación
                 string nombre = txtNombre.Text.Trim();
                 string apellidoPaterno = txtApellidoP.Text.Trim();
                 string apellidoMaterno = txtApellidoM.Text.Trim();
-                DateTime fechaNacimiento = dateTimePicker2.Value;
+                DateTime fechaNacimiento = dtpFechaNacimiento.Value;
                 char sexo = cmbSexo.SelectedItem.ToString()[0];
                 string estadoCivil = cmbEstadoCivil.SelectedItem.ToString();
                 string nss = txtNss.Text.Trim();
@@ -98,7 +111,7 @@ namespace CapaPresentacion.Empleados
                 string domicilioColonia = txtColonia.Text.Trim();
                 string domicilioCP = txtCp.Text.Trim();
                 string domicilioCiudad = txtMunicipio.Text.Trim();
-                string domicilioEstado = txtEstado.Text.Trim();
+                string domicilioEstado = cboEstado.Text.Trim();
                 string telefono = txtTelefono.Text.Trim();
 
                 // Llamada al método de negocios para insertar el empleado
@@ -123,14 +136,14 @@ namespace CapaPresentacion.Empleados
                 negocios.InsertarEmpleado(empleados);
 
                 // Mensaje de éxito
-                MessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Limpiar controles
                 LimpiarControles();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -141,7 +154,7 @@ namespace CapaPresentacion.Empleados
             txtNombre.Clear();
             txtApellidoP.Clear();
             txtApellidoM.Clear();
-            dateTimePicker2.Value = DateTime.Now;
+            dtpFechaNacimiento.Value = DateTime.Now;
             cmbSexo.SelectedIndex = -1;
             cmbEstadoCivil.SelectedIndex = -1;
             txtNss.Clear();
@@ -151,7 +164,7 @@ namespace CapaPresentacion.Empleados
             txtColonia.Clear();
             txtCp.Clear();
             txtMunicipio.Clear();
-            txtEstado.Clear();
+            //txtEstado.Clear();
             txtTelefono.Clear();
         }
 
@@ -169,6 +182,99 @@ namespace CapaPresentacion.Empleados
             {
                 e.Handled = true; // Bloquear la entrada del número
             }
+        }
+        public void ValidacionNumeros(KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right))
+            {
+                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
+                SystemSounds.Beep.Play();
+                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+        }
+
+        private void txtTelefono_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumeros(e);
+        }
+
+        private void txtNss_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumeros(e);
+        }
+
+        private void txtCp_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumeros(e);
+        }
+
+        private void btmCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarControles();
+        }
+        private void validacionCaracteresEspeciales(KeyPressEventArgs e)
+        {
+            bool esLetraODigito = char.IsLetterOrDigit(e.KeyChar);
+            bool esGuion = e.KeyChar == '-';
+            bool esTeclaControl = char.IsControl(e.KeyChar);
+
+            bool esTeclaPermitida = e.KeyChar == (char)Keys.Back ||
+                                    e.KeyChar == (char)Keys.Delete ||
+                                    e.KeyChar == (char)Keys.Enter ||
+                                    e.KeyChar == (char)Keys.Tab ||
+                                    e.KeyChar == (char)Keys.Escape ||
+                                    e.KeyChar == (char)Keys.Left ||
+                                    e.KeyChar == (char)Keys.Right ||
+                                    e.KeyChar == (char)Keys.Space;
+
+            if (!(esLetraODigito || esGuion || esTeclaControl || esTeclaPermitida))
+            {
+                e.Handled = true; // Bloquea la tecla
+                SystemSounds.Beep.Play(); // Sonido opcional
+            }
+        }
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
+        }
+
+        private void txtApellidoP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
+        }
+
+        private void txtApellidoM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
+        }
+
+        private void txtRFC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
+        }
+
+        private void txtColonia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
+        }
+
+        private void txtMunicipio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
+        }
+
+        private void txtCalle_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
+        }
+
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacionCaracteresEspeciales(e);
         }
     }
 }

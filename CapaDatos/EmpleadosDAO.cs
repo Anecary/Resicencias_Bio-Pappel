@@ -27,7 +27,7 @@ namespace CapaDatos
                     connection.Open();
 
                     // Crea un comando para ejecutar el procedimiento almacenado
-                    using (MySqlCommand command = new MySqlCommand("InDatosPerson", connection))
+                    using (MySqlCommand command = new MySqlCommand("InsertarEmpleadoCandidato", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
 
@@ -332,7 +332,7 @@ namespace CapaDatos
                 {
                     connection.Open();
 
-                    using (MySqlCommand command = new MySqlCommand("ActuEmple", connection))
+                    using (MySqlCommand command = new MySqlCommand("ActualizarEmpleado", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
 

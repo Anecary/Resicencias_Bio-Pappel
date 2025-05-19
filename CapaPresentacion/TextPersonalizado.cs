@@ -38,6 +38,8 @@ namespace CapaPresentacion
             textBox1.Multiline = false; // o false según necesites
             textBox1.Dock = DockStyle.Fill;
             textBox1.Padding = new Padding(5);
+            textBox1.MaxLength = 32767;
+
         }
 
         //Default Event
@@ -191,6 +193,12 @@ namespace CapaPresentacion
             }
         }
 
+        [Category("RJ Code Advance")]
+        public int MaxLength
+        {
+            get { return textBox1.MaxLength; }
+            set { textBox1.MaxLength = value; }
+        }
 
 
         [Category("RJ Code Advance")]

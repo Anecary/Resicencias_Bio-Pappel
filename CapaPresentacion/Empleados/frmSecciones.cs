@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 //using System.Windows.Controls;
@@ -49,7 +50,7 @@ namespace CapaPresentacion.Empleados
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -111,7 +112,7 @@ namespace CapaPresentacion.Empleados
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -125,7 +126,7 @@ namespace CapaPresentacion.Empleados
                 // Valida que el campo no esté vacío
                 if (string.IsNullOrWhiteSpace(secccion))
                 {
-                    MessageBox.Show("El campo no puede estar vacío.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("El campo no puede estar vacío.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -133,7 +134,7 @@ namespace CapaPresentacion.Empleados
                 negocios.InsertarSecciones(secccion);
 
                 // Muestra un mensaje de éxito
-                MessageBox.Show("Seccion insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("Seccion insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Limpia el TextBox
                 txtIdSeccion.Clear();
@@ -152,13 +153,35 @@ namespace CapaPresentacion.Empleados
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSeccion_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            bool esLetraODigito = char.IsLetterOrDigit(e.KeyChar);
+            bool esGuion = e.KeyChar == '-';
+            bool esTeclaControl = char.IsControl(e.KeyChar);
+
+            bool esTeclaPermitida = e.KeyChar == (char)Keys.Back ||
+                                    e.KeyChar == (char)Keys.Delete ||
+                                    e.KeyChar == (char)Keys.Enter ||
+                                    e.KeyChar == (char)Keys.Tab ||
+                                    e.KeyChar == (char)Keys.Escape ||
+                                    e.KeyChar == (char)Keys.Left ||
+                                    e.KeyChar == (char)Keys.Right ||
+                                    e.KeyChar == (char)Keys.Space;
+
+            if (!(esLetraODigito || esGuion || esTeclaControl || esTeclaPermitida))
+            {
+                e.Handled = true; // Bloquea la tecla
+                SystemSounds.Beep.Play(); // Sonido opcional
+            }
         }
     }
 }

@@ -177,8 +177,8 @@ namespace CapaPresentacion
             this.Controls.Add(lblText); // 2
             this.Controls.Add(btnIcon); // 1
             this.Controls.Add(cmbList); // 0
-            this.MinimumSize = new Size(200, 30);
-            this.Size = new Size(200, 30);
+            this.MinimumSize = new Size(0, 30);
+            this.Size = new Size(100, 30);
             this.ForeColor = Color.DimGray;
             this.Padding = new Padding(borderSize); // Border Size
             this.Font = new Font(this.Font.Name, 10F);
@@ -190,6 +190,11 @@ namespace CapaPresentacion
         private void Surface_MouseLeave(object sender, EventArgs e)
         {
             this.OnMouseLeave(e);
+        }
+        protected override void OnResize(EventArgs e)
+        {
+            base.OnResize(e);
+            AdjustComboBoxDimensions(); // ← Se ajusta cada vez que cambie el tamaño del control
         }
 
         private void Surface_MouseEnter(object sender, EventArgs e)
@@ -205,13 +210,17 @@ namespace CapaPresentacion
         // Private methods
         private void AdjustComboBoxDimensions()
         {
-            cmbList.Width = lblText.Width;
-            cmbList.Location = new Point()
-            {
-                X = this.Width - this.Padding.Right - cmbList.Width,
-                Y = lblText.Bottom - cmbList.Height
-            };
+            int comboX = this.Padding.Left;
+            int comboWidth = this.Width - this.Padding.Left - this.Padding.Right;
+
+            cmbList.Width = comboWidth;
+            cmbList.Location = new Point(comboX, this.Padding.Top);
+
+            // Asegura que el menú desplegable tenga el mismo ancho que el UserControl
+            cmbList.DropDownWidth = comboWidth;
         }
+
+
 
         // Event methods
         private void ComboBox_SelectedIndexChanged(object sender, EventArgs e)
