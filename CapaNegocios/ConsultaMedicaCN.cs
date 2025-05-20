@@ -65,10 +65,7 @@ namespace CapaNegocios
 
         public bool ActualizarNumExpediente(ConsultaMedica consulta)
         {
-            return consultaMedicaDAO.ActualizarNumExpediente(
-                consulta.IdConsulta,
-                consulta.NumExpediente
-            );
+            return consultaMedicaDAO.ActualizarNumExpediente(consulta);
         }
 
         public DataTable ObtenerReporteNotaMedica_Causas(int año)

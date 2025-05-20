@@ -663,7 +663,6 @@
             this.txtIdConsulta.BorderFocusColor = System.Drawing.Color.DarkCyan;
             this.txtIdConsulta.BorderRadius = 12;
             this.txtIdConsulta.BorderSize = 2;
-            this.txtIdConsulta.Enabled = true;
             this.txtIdConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdConsulta.ForeColor = System.Drawing.Color.DimGray;
             this.txtIdConsulta.Location = new System.Drawing.Point(27, 101);
@@ -1268,7 +1267,7 @@
             this.btnPanelGeneral.Name = "btnPanelGeneral";
             this.btnPanelGeneral.Size = new System.Drawing.Size(300, 49);
             this.btnPanelGeneral.TabIndex = 14;
-            this.btnPanelGeneral.Text = "Consulta General";
+            this.btnPanelGeneral.Text = "Consulta por Expediente";
             this.btnPanelGeneral.UseVisualStyleBackColor = true;
             this.btnPanelGeneral.Click += new System.EventHandler(this.btnPanelGeneral_Click);
             this.btnPanelGeneral.Enter += new System.EventHandler(this.btnMouseEnter);

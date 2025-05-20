@@ -220,7 +220,7 @@ namespace CapaDatos
             }
         }
 
-        public bool ActualizarNumExpediente(int idConsulta, string numExpediente)
+        public bool ActualizarNumExpediente(ConsultaMedica consulta)
         {
             try
             {
@@ -230,8 +230,8 @@ namespace CapaDatos
                     comando.CommandType = CommandType.StoredProcedure;
 
                     // Agregar los parámetros del procedimiento almacenado
-                    comando.Parameters.AddWithValue("@p_idConsulta", idConsulta);
-                    comando.Parameters.AddWithValue("@p_numExpediente", numExpediente);
+                    comando.Parameters.AddWithValue("@p_idConsulta", consulta.IdConsulta);
+                    comando.Parameters.AddWithValue("@p_numExpediente", consulta.NumExpediente);
                     conn.Open();
                     comando.ExecuteNonQuery();
                     return true;
