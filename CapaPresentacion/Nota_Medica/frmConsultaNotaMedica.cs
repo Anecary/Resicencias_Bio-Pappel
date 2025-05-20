@@ -145,30 +145,33 @@ namespace CapaPresentacion.Nota_Medica
                         // Asignamos la tabla invertida al DataGridView
                         dgvConsultaGeneral.DataSource = invertedTable;
 
-                        // (Opcional) Ajustar nombres de columna para que se vean más amigables
+                        // Ajustar nombres de columna
                         dgvConsultaGeneral.Columns["idConsulta"].HeaderText = "ID Consulta";
                         dgvConsultaGeneral.Columns["numExpediente"].HeaderText = "No. Expediente";
                         dgvConsultaGeneral.Columns["fecha"].HeaderText = "Fecha";
                         dgvConsultaGeneral.Columns["proceso"].HeaderText = "Proceso";
                         dgvConsultaGeneral.Columns["causas"].HeaderText = "Causas";
 
-                        // (Opcional) Ajustar el tamaño automático de las columnas
+                        // Ajustar el tamaño automático de las columnas
                         dgvConsultaGeneral.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     }
                     else
                     {
-                        RJMessageBox.Show("No se encontraron notas médicas para este expediente.", "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RJMessageBox.Show("No se encontraron notas médicas para este expediente.", "Sin resultados", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                         dgvConsultaGeneral.DataSource = null;
                     }
                 }
                 catch (Exception ex)
                 {
-                    RJMessageBox.Show("Error al buscar notas médicas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    RJMessageBox.Show("Error al buscar notas médicas: " + ex.Message, "Error", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                RJMessageBox.Show("Debe ingresar un número de expediente válido para buscar notas médicas.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RJMessageBox.Show("Debe ingresar un número de expediente válido para buscar notas médicas.", "Atención",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -196,30 +199,33 @@ namespace CapaPresentacion.Nota_Medica
                         // Asignamos la tabla invertida al DataGridView
                         dgvNotaEmpleados.DataSource = invertedTable;
 
-                        // (Opcional) Ajustar nombres de columna para que se vean más amigables
+                        // Ajustar nombres de columna 
                         dgvNotaEmpleados.Columns["idConsulta"].HeaderText = "ID Consulta";
                         dgvNotaEmpleados.Columns["nss"].HeaderText = "No. Seguro Social";
                         dgvNotaEmpleados.Columns["fecha"].HeaderText = "Fecha";
                         dgvNotaEmpleados.Columns["causas"].HeaderText = "Causas";
                         dgvNotaEmpleados.Columns["tipoCausa"].HeaderText = "Tipo Causa";
 
-                        // (Opcional) Ajustar el tamaño automático de las columnas
+                        // Ajustar el tamaño automático de las columnas
                         dgvNotaEmpleados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     }
                     else
                     {
-                        RJMessageBox.Show("No se encontraron notas médicas para este empleado.", "Sin resultados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RJMessageBox.Show("No se encontraron notas médicas para este empleado.", "Sin resultados", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                         dgvNotaEmpleados.DataSource = null;
                     }
                 }
                 catch (Exception ex)
                 {
-                    RJMessageBox.Show("Error al buscar notas médicas: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    RJMessageBox.Show("Error al buscar notas médicas: " + ex.Message, "Error", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                RJMessageBox.Show("Debe ingresar un número de expediente válido para buscar notas médicas.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RJMessageBox.Show("Debe ingresar un número de expediente válido para buscar notas médicas.", "Atención", 
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -246,12 +252,14 @@ namespace CapaPresentacion.Nota_Medica
                 }
                 else
                 {
-                    RJMessageBox.Show("No se encontró la nota médica solicitada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RJMessageBox.Show("No se encontró la nota médica solicitada.", "Aviso", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch 
             {
-                RJMessageBox.Show(" Por favor ingrese la Id de la consulta para continuar.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RJMessageBox.Show(" Por favor ingrese la Id de la consulta para continuar.", "Alerta", 
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

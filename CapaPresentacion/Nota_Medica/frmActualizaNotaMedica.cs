@@ -247,7 +247,8 @@ namespace CapaPresentacion.Nota_Medica
                 // Validar si los campos no están vacíos (agrega validaciones previas)
                 if (string.IsNullOrEmpty(txtIdConsulta.Text) || string.IsNullOrEmpty(txtNoExpediente.Text))
                 {
-                    RJMessageBox.Show("Por favor, ingrese la Id de la consulta y el Número del Expediente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    RJMessageBox.Show("Por favor, ingrese la Id de la consulta y el Número del Expediente.", "Error", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -263,18 +264,21 @@ namespace CapaPresentacion.Nota_Medica
                 bool resultado = consultaMedicaCN.ActualizarNumExpediente(consulta);
                 if (resultado)
                 {
-                    RJMessageBox.Show("La nota médica ha sideo anexada al expediente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RJMessageBox.Show("La nota médica ha sido anexada al expediente.", "Éxito",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                     limpiarCampos();
                     cargarDataGrid(idEmpleado);
                 }
                 else
                 {
-                    RJMessageBox.Show("Hubo un error al anexar la nota médica.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    RJMessageBox.Show("Hubo un error al anexar la nota médica.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                RJMessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", 
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
