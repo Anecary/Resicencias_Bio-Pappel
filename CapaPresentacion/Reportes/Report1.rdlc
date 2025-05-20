@@ -4437,9 +4437,9 @@
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Explosión.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Explosión.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -4470,9 +4470,9 @@
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Golpe.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Golpe.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -4537,9 +4537,9 @@
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Quimicos.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Quimicos.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -4604,9 +4604,9 @@
                 <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!CausadoPersona.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!CausadoPersona.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -4671,9 +4671,9 @@
                 <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Electrocución.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Electrocución.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -4738,9 +4738,9 @@
                 <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Proyección.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Proyección.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -4805,9 +4805,9 @@
                 <ZIndex>13</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Atropello.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Atropello.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -4872,9 +4872,9 @@
                 <ZIndex>15</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!SobreEsfuerzo.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!SobreEsfuerzo.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -4939,9 +4939,9 @@
                 <ZIndex>17</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!AltasTemperaturas.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!AltasTemperaturas.Value, "DataSet_Riesgos") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5006,9 +5006,9 @@
                 <ZIndex>19</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Cortada.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Cortada.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5073,9 +5073,9 @@
                 <ZIndex>21</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Incendio.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Incendio.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5140,9 +5140,9 @@
                 <ZIndex>23</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!CaídaObjeto.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!CaídaObjeto.Value, "DataSet_Riesgos") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5207,9 +5207,9 @@
                 <ZIndex>25</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Atrapado.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Atrapado.Value, "DataSet_Riesgos") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5274,9 +5274,9 @@
                 <ZIndex>27</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!CaídaMismoNivel.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!CaídaMismoNivel.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5341,9 +5341,9 @@
                 <ZIndex>29</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!CaídaDiferenteNivel.Value, "DataSet_Riesgos") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!CaídaDiferenteNivel.Value, "DataSet_Riesgos") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5525,9 +5525,9 @@
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!No_Proteccion.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!No_Proteccion.Value, "DataSet_ActoInseguro") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5592,9 +5592,9 @@
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Dispositivos_Seguridad.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Dispositivos_Seguridad.Value, "DataSet_ActoInseguro") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5659,9 +5659,9 @@
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Reparar_Equipo.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Reparar_Equipo.Value, "DataSet_ActoInseguro") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5726,9 +5726,9 @@
                 <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Posiciones_Inseguras.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Posiciones_Inseguras.Value, "DataSet_ActoInseguro") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5793,9 +5793,9 @@
                 <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Ninguno.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Ninguno.Value, "DataSet_ActoInseguro") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5860,9 +5860,9 @@
                 <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Operar_Sin_Autorisacion.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Operar_Sin_Autorisacion.Value, "DataSet_ActoInseguro") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5927,9 +5927,9 @@
                 <ZIndex>13</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Mal_Uso.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Mal_Uso.Value, "DataSet_ActoInseguro") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -5994,9 +5994,9 @@
                 <ZIndex>15</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Velocidad.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Velocidad.Value, "DataSet_ActoInseguro") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6061,9 +6061,9 @@
                 <ZIndex>17</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Materiales.Value, "DataSet_ActoInseguro") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Materiales.Value, "DataSet_ActoInseguro") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6244,9 +6244,9 @@
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Derrame.Value, "DataSet_CondicionesInseguras") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Derrame.Value, "DataSet_CondicionesInseguras") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6311,9 +6311,9 @@
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Anuncios.Value, "DataSet_CondicionesInseguras") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Anuncios.Value, "DataSet_CondicionesInseguras") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6380,7 +6380,16 @@
                   <Border>
                     <Style>None</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Ventilacion.Value, "DataSet_CondicionesInseguras") = true, "Green", "Red")</BackgroundColor>
+                  <TopBorder>
+                    <Style>Solid</Style>
+                  </TopBorder>
+                  <LeftBorder>
+                    <Style>Solid</Style>
+                  </LeftBorder>
+                  <RightBorder>
+                    <Style>Solid</Style>
+                  </RightBorder>
+                  <BackgroundColor>=IIf(First(Fields!Ventilacion.Value, "DataSet_CondicionesInseguras") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6445,9 +6454,9 @@
                 <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Dispositivos.Value, "DataSet_CondicionesInseguras") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Dispositivos.Value, "DataSet_CondicionesInseguras") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6512,9 +6521,9 @@
                 <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Ninguna.Value, "DataSet_CondicionesInseguras") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Ninguna.Value, "DataSet_CondicionesInseguras") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6579,9 +6588,9 @@
                 <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Ropa.Value, "DataSet_CondicionesInseguras") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Ropa.Value, "DataSet_CondicionesInseguras") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6646,9 +6655,9 @@
                 <ZIndex>13</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Materiales.Value, "DataSet_CondicionesInseguras") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Materiales.Value, "DataSet_CondicionesInseguras") = true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>
@@ -6713,9 +6722,9 @@
                 <ZIndex>15</ZIndex>
                 <Style>
                   <Border>
-                    <Style>None</Style>
+                    <Style>Solid</Style>
                   </Border>
-                  <BackgroundColor>=IIf(First(Fields!Mecanicas.Value, "DataSet_CondicionesInseguras") = true, "Green", "Red")</BackgroundColor>
+                  <BackgroundColor>=IIf(First(Fields!Mecanicas.Value, "DataSet_CondicionesInseguras") =true, "Black", "")</BackgroundColor>
                   <PaddingLeft>2pt</PaddingLeft>
                   <PaddingRight>2pt</PaddingRight>
                   <PaddingTop>2pt</PaddingTop>

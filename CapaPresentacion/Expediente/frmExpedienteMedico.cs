@@ -157,25 +157,31 @@ namespace CapaPresentacion.Expediente
         }
         public void ValidacionNumerosDecimal(object sender, KeyPressEventArgs e)
         {
-            // Permitir solo números, retroceso, eliminar, enter, tab, escape, y las flechas
-            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
-                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
-                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
-                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right || e.KeyChar == '.'))
-            {
-                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
-            }
-            else if (e.KeyChar == '.')
-            {
-                // Verifica si ya existe un punto en el texto
-                var textBox = sender as MaterialSkin.Controls.MaterialTextBox;
+            var textBox = sender as TextPersonalizado;
 
+            // Verifica si es un punto decimal
+            if (e.KeyChar == '.')
+            {
                 if (textBox.Text.Contains("."))
                 {
-                    var result = RJMessageBox.Show("Solo se permite un punto decimal", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("Solo se permite un punto decimal", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     e.Handled = true; // Bloquea la entrada de un segundo punto
                 }
+                return; // Permite el primer punto y sale de la función
+            }
+
+            // Validar otros caracteres permitidos
+            if (!(char.IsDigit(e.KeyChar) ||
+                  e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete ||
+                  e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab ||
+                  e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left ||
+                  e.KeyChar == (char)Keys.Right))
+            {
+                RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
             }
         }
 
@@ -289,6 +295,9 @@ namespace CapaPresentacion.Expediente
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            DateTime ahora = DateTime.Now;
+            DateTime haceUnMes = ahora.AddMonths(-1);
+
             string numExpediente = txtNoExpediente.Text;
             int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
             string numNomina = txtNumeroNomina.Text;
@@ -356,7 +365,14 @@ namespace CapaPresentacion.Expediente
             string musculoEsqueletico = txtMusculoEsqueletico.Text;
             string neurologico = txtNeurologico.Text;
 
-            DateTime ultimaActualizacion = dtpFechaApertura.Value.Date;
+            
+
+            if (fechaApertura < haceUnMes || fechaApertura > ahora)
+            {
+                RJMessageBox.Show("La fecha de seguimiento debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
 
             ExpedientesCE expediente = new ExpedientesCE { 
                 NumExpediente = numExpediente,
@@ -422,8 +438,8 @@ namespace CapaPresentacion.Expediente
                 MusculoEsqueletico = musculoEsqueletico,
                 Neurologico = neurologico,
 
-                UltimaActualizacion = ultimaActualizacion
-                };
+                UltimaActualizacion = fechaApertura
+            };
 
             int registro = expedientesCN.insertarExpediente(expediente);
             if (registro > 0)
@@ -446,59 +462,73 @@ namespace CapaPresentacion.Expediente
         public void limiarFormulario()
         {
             // Limpiar TextBox
-            txtNoExpediente.Clear();
-            txtIdEmpleado.Clear();
-            txtNumeroNomina.Clear();
-            txtHeredoFamiliar.Clear();
-            txtDiagnostico.Clear();
-            txtCasa.Clear();
-            txtAlimentacion.Clear();
-            txtAnimales.Clear();
-            txtInmunizaciones.Clear();
-            txtToxicomanias.Clear();
-            txtTrabajosYActAnteriores.Clear();
-            txtDeportesRecreacion.Clear();
-            txtEntornoFamiliar.Clear();
-            txtEscolaridad.Clear();
-            txtAlergias.Clear();
-            txtSNerviosoCentral.Clear();
-            txtSCardiovascular.Clear();
-            txtSRespiratorio.Clear();
-            txtSGastrointestinal.Clear();
-            txtSEndocrino.Clear();
-            txtSGenitoUrinario.Clear();
-            txtSMusculoEsqueletico.Clear();
-            txtOrganoSentidos.Clear();
-            txtEstudiosLaboratorio.Clear();
-            txtEstudiosRadiologicos.Clear();
-            txtOtros.Clear();
-            txtTalla.Clear();
-            txtPeso.Clear();
-            txtIMC.Clear();
-            txtFC.Clear();
-            txtFR.Clear();
-            txtPulso.Clear();
-            txtTA.Clear();
-            txtTemperatura.Clear();
-            txtCraneo.Clear();
-            txtOjos.Clear();
-            txtOidos.Clear();
-            txtNariz.Clear();
-            txtBoca.Clear();
-            txtCuello.Clear();
-            txtTorax.Clear();
-            txtAbdomen.Clear();
-            txtGenitourinario.Clear();
-            txtMusculoEsqueletico.Clear();
-            txtNeurologico.Clear();
+            // Limpiar TextBoxes con .Text = ""
+            txtNoExpediente.Text = "";
+            txtIdEmpleado.Text = "";
+            txtNumeroNomina.Text = "";
+            txtHeredoFamiliar.Text = "";
+            txtDiagnostico.Text = "";
+
+            txtCasa.Text = "";
+            txtAlimentacion.Text = "";
+            txtAnimales.Text = "";
+            txtInmunizaciones.Text = "";
+            txtToxicomanias.Text = "";
+            txtTrabajosYActAnteriores.Text = "";
+            txtDeportesRecreacion.Text = "";
+            txtEntornoFamiliar.Text = "";
+            txtEscolaridad.Text = "";
+
+            txtAlergias.Text = "";
+
+            txtSNerviosoCentral.Text = "";
+            txtSCardiovascular.Text = "";
+            txtSRespiratorio.Text = "";
+            txtSGastrointestinal.Text = "";
+            txtSEndocrino.Text = "";
+            txtSGenitoUrinario.Text = "";
+            txtSMusculoEsqueletico.Text = "";
+            txtOrganoSentidos.Text = "";
+            txtGinecoObstetrico.Text = "";
+
+            txtEstudiosLaboratorio.Text = "";
+            txtEstudiosRadiologicos.Text = "";
+            txtOtros.Text = "";
+
+            txtTalla.Text = "";
+            txtPeso.Text = "";
+            txtIMC.Text = "";
+            txtFC.Text = "";
+            txtFR.Text = "";
+            txtPulso.Text = "";
+            txtTA.Text = "";
+            txtTemperatura.Text = "";
+
+            txtCraneo.Text = "";
+            txtOjos.Text = "";
+            txtOidos.Text = "";
+            txtNariz.Text = "";
+            txtBoca.Text = "";
+            txtCuello.Text = "";
+            txtTorax.Text = "";
+            txtAbdomen.Text = "";
+            txtGenitourinario.Text = "";
+            txtMusculoEsqueletico.Text = "";
+            txtNeurologico.Text = "";
+
+            // Limpiar ComboBoxes
+            cboxGrupoSanguineo.Text = "";
+            cboxConstitucionFisica.Text = "";
+            cboxGrado.Text = "";
+
+            // Reiniciar DateTimePicker
+            dtpFechaApertura.Value = DateTime.Now;
 
             // Limpiar ComboBox
             cboxGrupoSanguineo.SelectedIndex = -1;
             cboxConstitucionFisica.SelectedIndex = -1;
             cboxGrado.SelectedIndex = -1;
 
-            // Reiniciar DateTimePicker
-            dtpFechaApertura.Value = DateTime.Now;
 
             // Desmarcar RadioButtons
             rbtnHozpitalizaciones.Checked = false;

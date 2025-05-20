@@ -1,20 +1,21 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaNegocios;
+using CapaPresentacion.Restaurar_Y_Respaldar;
+using MaterialSkin;
+using MaterialSkin.Controls;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Navigation;
-using CapaEntidad;
-using CapaNegocios;
-using CapaPresentacion.Restaurar_Y_Respaldar;
-using MaterialSkin;
-using MaterialSkin.Controls;
-using Newtonsoft.Json;
 
 namespace CapaPresentacion.Investigacion_Accidentes
 {
@@ -130,7 +131,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
         }
         private List<string> excepcionesTextBox = new List<string>
         {
-            "txtNumNominaTestigo", "txtNombreTestigo", "txtIdEmpleadoTestigo"// Agrega aquí los nombres que quieras excluir
+            "txtNumNominaTestigo", "txtNombreTestigo", "txtIdEmpleadoTestigo","txtOtroRiesgo","txtOtroActoInseguro","txtOtraCondicion"// Agrega aquí los nombres que quieras excluir
         };
 
         private bool HayTextBoxVacios(Control parentControl)
@@ -456,13 +457,15 @@ namespace CapaPresentacion.Investigacion_Accidentes
             // Validaciones previas antes de convertir a entero
             if (string.IsNullOrWhiteSpace(txtNoAccidente.Text) ||
                 string.IsNullOrWhiteSpace(txtIdEmpleado.Text) ||
-                string.IsNullOrWhiteSpace(txtidNombreSST.Text) ||
-                string.IsNullOrWhiteSpace(txtIncapacidad.Text))
+                string.IsNullOrWhiteSpace(txtidNombreSST.Text))
             {
                 var result = RJMessageBox.Show(" Existen campos vacíos, llénelos para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 return; // Detiene la ejecución si hay campos vacíos
             }
+
+            DateTime ahora = DateTime.Now;
+            DateTime haceUnMes = ahora.AddMonths(-1);
 
             //Datos Generales
             int noAccidente = Convert.ToInt32(txtNoAccidente.Text);
@@ -486,7 +489,21 @@ namespace CapaPresentacion.Investigacion_Accidentes
             DateTime fecha_hora_Accidente = dtpFechaAccidente.Value.Date + dtpHoraAccidente.Value.TimeOfDay;
             string testigosJson = ConvertirTestigosAJson(dgvTestigos);
 
-
+            if (fechaRegistro < haceUnMes || fechaRegistro > ahora)
+            {
+                RJMessageBox.Show("La fecha de registro debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (DiaDescansoPrevio < haceUnMes || DiaDescansoPrevio > ahora)
+            {
+                RJMessageBox.Show("El último dia de descanso previo debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (fecha_hora_Accidente < haceUnMes || fecha_hora_Accidente > ahora)
+            {
+                RJMessageBox.Show("La fecha del accidente debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             //Detalle Accidente
             Boolean lesion30Dias = false;
@@ -561,116 +578,174 @@ namespace CapaPresentacion.Investigacion_Accidentes
             DateTime fecha_Hora_Seguimiento = dtpFechaSeguimiento.Value.Date + dtpHoraSeguimiento.Value.TimeOfDay;
             int empleadoSeguimiento = Convert.ToInt32(txtidNombreSST.Text);
             DateTime fecha_Hora_recepcion = dtpFechaRecepcion.Value.Date + dtpHoraRecepcion.Value.TimeOfDay;
+            
+           
 
-            if (!string.IsNullOrWhiteSpace(cboxCondicion.Text) || !string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) || !string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) || !string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
-                !string.IsNullOrWhiteSpace(txtLugarAccidente.Text) || !string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text) || !string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) || !string.IsNullOrWhiteSpace(txtEquipoDanado.Text) || !string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
-                !string.IsNullOrWhiteSpace(txtOtro.Text) || !string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) || !string.IsNullOrWhiteSpace(txtTratamiento.Text) || !string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
-                !string.IsNullOrWhiteSpace(txtAccionesCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtquienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
-                )
+            if (fecha_Hora_Seguimiento < haceUnMes || fecha_Hora_Seguimiento > ahora)
             {
-                // int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, idEmpleado, numnomina, puesto, antiguedad, edad, turno, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
-                //lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
-                //existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
-                //empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
-                //accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas, seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
-                // testigosJson);
-                AccidentesCE accidente = new AccidentesCE
+                RJMessageBox.Show("La fecha de seguimiento debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validar fecha_Hora_recepcion
+            if (fecha_Hora_recepcion < haceUnMes || fecha_Hora_recepcion > ahora)
+            {
+                RJMessageBox.Show("La fecha de recepción debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (cboxSecciones.SelectedValue == null || !int.TryParse(cboxSecciones.SelectedValue.ToString(), out int idSeccionAB))
+            {
+                RJMessageBox.Show("Debes seleccionar una sección válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            bool hayCamposVacios =
+                string.IsNullOrWhiteSpace(cboxCondicion.Text) ||
+                string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) ||
+                string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) ||
+                string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
+                string.IsNullOrWhiteSpace(txtLugarAccidente.Text) ||
+                string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text) ||
+                string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text) ||
+                string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text) ||
+                string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) ||
+                string.IsNullOrWhiteSpace(txtEquipoDanado.Text) ||
+                string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
+                string.IsNullOrWhiteSpace(txtOtro.Text) ||
+                string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) ||
+                string.IsNullOrWhiteSpace(txtTratamiento.Text) ||
+                string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
+                string.IsNullOrWhiteSpace(txtAccionesCorrectivas.Text) ||
+                string.IsNullOrWhiteSpace(txtquienCorrectivas.Text) ||
+                string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) ||
+                string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) ||
+                string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) ||
+                string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) ||
+                string.IsNullOrWhiteSpace(txtSeguimiento.Text);
+
+
+            if (hayCamposVacios)
+            {
+                DialogResult result = RJMessageBox.Show(
+                    "Existen otros campos vacíos. ¿Deseas guardar de todos modos?",
+                    "Confirmar guardado",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (result == DialogResult.No)
                 {
-                    NoAccidente = noAccidente,
-                    Condicion = condicion,
-                    FechaRegistro = fechaRegistro,
-                    IdEmpleado = idEmpleado,
-                    NumNomina = numnomina,
-                    Puesto = puesto,
-                    Antiguedad = antiguedad,
-                    Edad = edad,
-                    Turno = turno,
-                    TiempoExtra = tiempoExtra,
-                    TotalHrsExtras = totalHrsExtras,
-                    DiaDescansoPrevio = DiaDescansoPrevio,
-                    DebidoA = debidoA,
-                    ParteCuerpoAfectada = parteCuerpoAfectada,
-                    TrabajoDesempenado = trabajoDesempenado,
-                    TipoLesion = tipoLesion,
-                    FechaHoraAccidente = fecha_hora_Accidente,
-                    Lesion30Dias = lesion30Dias,
-                    Lesion12Meses = lesion12Meses,
-                    Proceso = proceso,
-                    IdSeccionA = idSeccionA,
-                    LugarAccidente = lugarAccidente,
-                    CausanteLesion = causanteLesion,
-                    EquipoProteccionUsado = equipoProteccionUsado,
-                    EquipoProteccionNecesario = equipoProteccionNecesario,
-                    CausaAccidente = causaAccidente,
-                    DescripcionAccidente = descripcionAccidente,
-                    RealizoTrabajoAntes = realizoTrabajoAntes,
-                    TrabajoHabitual = trabajoHabitual,
-                    TrabajoProgramado = trabajoProgramado,
-                    TrabajoNecesario = trabajoNecesario,
-                    TrabajoUrgente = trabajoUrgente,
-                    DanosMateriales = danosMateriales,
-                    EquipoDanado = equipoDanado,
-                    SustituiblePor = sustituiblePor,
-                    IdSeccionB = idSeccionB,
-                    ExistenITRs = existenITRs,
-                    EquipoAdecuado = equipoAdecuado,
-                    ConociaTrabajo = conociaTrabajo,
-                    ExistiaSupervision = existiaSupervision,
-                    RiesgosJson = riesgosJson,
-                    ActosInsegurosJson = actosInsegurosJson,
-                    CondicionesInsegurasJson = condicionesInsegurasJson,
-                    EmpleadosConocimientoJson = empleadosConocimientoJson,
-                    EmpleadosInvolucradosJson = empleadosInvolucradosJson,
-                    ContinuaTrabajando = continuaTrabajando,
-                    EnviadoDomicilio = enviadoDomicilio,
-                    EnviadoAtencionMedica = enviadoAtencionMedica,
-                    Otro = otro,
-                    DiagnosticoFinal = diagnosticoFinal,
-                    Tratamiento = tratamiento,
-                    Incapacidad = incapacidad,
-                    AccionesCorrectivasPropuestas = accionesCorrectivasPropuestas,
-                    QuienCorrectivasPropuesta = quienCorrectivasPropuesta,
-                    CuandoCorrectivasPropuestas = cuandoCorrectivasPropuestas,
-                    AccionesPreventivasPropuestas = accionesPreventivasPropuestas,
-                    QuienPreventivoPropuesto = quienPreventivoPropuesto,
-                    CuandoPreventivasPropuestas = cuandoPreventivasPropuestas,
-                    Seguimiento = seguimiento,
-                    FechaHoraSeguimiento = fecha_Hora_Seguimiento,
-                    EmpleadoSeguimiento = empleadoSeguimiento,
-                    FechaHoraRecepcion = fecha_Hora_recepcion,
-                    TestigosJson = testigosJson
-                };
-                int registro = accidentesCN.InsertarAccidente(accidente);
-                if (registro > 0)
-                {
-                    MostrarPanel(pDatosGenerales, btnDatosGenerales);
-                    var result = RJMessageBox.Show(" El Reporte de Accidente se ha guardado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    int numnero_accidente = int.Parse(txtNoAccidente.Text);
-
-                    var Llamar_reporte = new Llamar_reporte(0);
-                    Llamar_reporte.Show();
-
-
-                    // Llamada al método para limpiar todos los controles en el formulario
-                    LimpiarControles(this);
-                    txtNumeroNomina.Focus();
-                    txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear();txtEdad.Clear();txtPuesto.Clear(); txtAntiguedad.Clear();
-
-
+                    return;
                 }
-                else
-                {
-                    var result = RJMessageBox.Show(" No se ha podido grabar el Reporte de Accidente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+
+            }
+            AccidentesCE accidente = new AccidentesCE
+            {
+                NoAccidente = noAccidente,
+                Condicion = condicion,
+                FechaRegistro = fechaRegistro,
+                IdEmpleado = idEmpleado,
+                NumNomina = numnomina,
+                Puesto = puesto,
+                Antiguedad = antiguedad,
+                Edad = edad,
+                Turno = turno,
+                TiempoExtra = tiempoExtra,
+                TotalHrsExtras = totalHrsExtras,
+                DiaDescansoPrevio = DiaDescansoPrevio,
+                DebidoA = debidoA,
+                ParteCuerpoAfectada = parteCuerpoAfectada,
+                TrabajoDesempenado = trabajoDesempenado,
+                TipoLesion = tipoLesion,
+                FechaHoraAccidente = fecha_hora_Accidente,
+                Lesion30Dias = lesion30Dias,
+                Lesion12Meses = lesion12Meses,
+                Proceso = proceso,
+                IdSeccionA = idSeccionA,
+                LugarAccidente = lugarAccidente,
+                CausanteLesion = causanteLesion,
+                EquipoProteccionUsado = equipoProteccionUsado,
+                EquipoProteccionNecesario = equipoProteccionNecesario,
+                CausaAccidente = causaAccidente,
+                DescripcionAccidente = descripcionAccidente,
+                RealizoTrabajoAntes = realizoTrabajoAntes,
+                TrabajoHabitual = trabajoHabitual,
+                TrabajoProgramado = trabajoProgramado,
+                TrabajoNecesario = trabajoNecesario,
+                TrabajoUrgente = trabajoUrgente,
+                DanosMateriales = danosMateriales,
+                EquipoDanado = equipoDanado,
+                SustituiblePor = sustituiblePor,
+                IdSeccionB = idSeccionB,
+                ExistenITRs = existenITRs,
+                EquipoAdecuado = equipoAdecuado,
+                ConociaTrabajo = conociaTrabajo,
+                ExistiaSupervision = existiaSupervision,
+                RiesgosJson = riesgosJson,
+                ActosInsegurosJson = actosInsegurosJson,
+                CondicionesInsegurasJson = condicionesInsegurasJson,
+                EmpleadosConocimientoJson = empleadosConocimientoJson,
+                EmpleadosInvolucradosJson = empleadosInvolucradosJson,
+                ContinuaTrabajando = continuaTrabajando,
+                EnviadoDomicilio = enviadoDomicilio,
+                EnviadoAtencionMedica = enviadoAtencionMedica,
+                Otro = otro,
+                DiagnosticoFinal = diagnosticoFinal,
+                Tratamiento = tratamiento,
+                Incapacidad = incapacidad,
+                AccionesCorrectivasPropuestas = accionesCorrectivasPropuestas,
+                QuienCorrectivasPropuesta = quienCorrectivasPropuesta,
+                CuandoCorrectivasPropuestas = cuandoCorrectivasPropuestas,
+                AccionesPreventivasPropuestas = accionesPreventivasPropuestas,
+                QuienPreventivoPropuesto = quienPreventivoPropuesto,
+                CuandoPreventivasPropuestas = cuandoPreventivasPropuestas,
+                Seguimiento = seguimiento,
+                FechaHoraSeguimiento = fecha_Hora_Seguimiento,
+                EmpleadoSeguimiento = empleadoSeguimiento,
+                FechaHoraRecepcion = fecha_Hora_recepcion,
+                TestigosJson = testigosJson
+            };
+            int registro = accidentesCN.InsertarAccidente(accidente);
+            if (registro > 0)
+            {
+                MostrarPanel(pDatosGenerales, btnDatosGenerales);
+                var resultado = RJMessageBox.Show(" El Reporte de Accidente se ha guardado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                int numnero_accidente = int.Parse(txtNoAccidente.Text);
+
+                
+
+
+                // Llamada al método para limpiar todos los controles en el formulario
+                LimpiarControles(this);
+                LimpiarDateTimePickers();
+                txtNumeroNomina.Focus();
+                txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
+
+                var Llamar_reporte = new Llamar_reporte(0);
+                Llamar_reporte.Show();
             }
             else
             {
-                var result = RJMessageBox.Show(" Existen campos vacios, llénelos para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                txtNumeroNomina.Focus();
+                var resultado = RJMessageBox.Show(" No se ha podido grabar el Reporte de Accidente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //if (!string.IsNullOrWhiteSpace(cboxCondicion.Text) || !string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) || !string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) || !string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
+            //    !string.IsNullOrWhiteSpace(txtLugarAccidente.Text) || !string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text) || !string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) || !string.IsNullOrWhiteSpace(txtEquipoDanado.Text) || !string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
+            //    !string.IsNullOrWhiteSpace(txtOtro.Text) || !string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) || !string.IsNullOrWhiteSpace(txtTratamiento.Text) || !string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
+            //    !string.IsNullOrWhiteSpace(txtAccionesCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtquienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
+            //    )
+            //{
+            //    // int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, idEmpleado, numnomina, puesto, antiguedad, edad, turno, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
+            //    //lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
+            //    //existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
+            //    //empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
+            //    //accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas, seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
+            //    // testigosJson);
+
+            //}
+
         }
+
 
         public string ConvertirTestigosAJson(DataGridView dgvTestigos)
         {
@@ -797,12 +872,14 @@ namespace CapaPresentacion.Investigacion_Accidentes
         {
             if (cboxRiesgos.Text == "Otro")
             {
+                lblotroriesgo.Visible = true;
                 txtOtroRiesgo.Visible = true;
                 btnGrabarRiesgo.Visible = true;
                 btnAgregarRiesgo.Visible = false;
             }
             if (cboxRiesgos.Text != "Otro")
             {
+                lblotroriesgo.Visible = false;
                 txtOtroRiesgo.Visible = false;
                 txtOtroRiesgo.Text = "";
                 btnGrabarRiesgo.Visible = false;
@@ -814,12 +891,14 @@ namespace CapaPresentacion.Investigacion_Accidentes
         {
             if (cboxActoInseguro.Text == "Otro")
             {
+                lblactoinseguro.Visible = true;
                 txtOtroActoInseguro.Visible = true;
                 btnGrabarActoInseguro.Visible = true;
                 btnAgregarActoInseguro.Visible = false;
             }
             if (cboxActoInseguro.Text != "Otro")
             {
+                lblactoinseguro.Visible=false;
                 txtOtroActoInseguro.Visible = false;
                 txtOtroActoInseguro.Text = "";
                 btnGrabarActoInseguro.Visible = false;
@@ -831,12 +910,14 @@ namespace CapaPresentacion.Investigacion_Accidentes
         {
             if (cboxCondicionesInseguras.Text == "Otra")
             {
+                lblcondicioninsegura.Visible = true;
                 txtOtraCondicion.Visible = true;
                 btnAgregarCondicion.Visible = false;
                 btnGrabarCondicionInsegura.Visible = true;
             }
             if (cboxCondicionesInseguras.Text != "Otra")
             {
+                lblcondicioninsegura.Visible=false;
                 txtOtraCondicion.Visible = false;
                 txtOtraCondicion.Text = "";
                 btnGrabarCondicionInsegura.Visible = false;
@@ -1060,7 +1141,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 else
                 {
                     var result = RJMessageBox.Show("No se encontró ningun empleado con ese número de nómina", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtNombreEmpleadoConocimiento.Clear();
+                    txtNombreEmpleadoConocimiento.Text="";
                     txtIdEmpleadoConocimiento.Clear();
                     btnAgregarEmpleadoConocimiento.Enabled = false;
                 }
@@ -1129,7 +1210,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 else
                 {
                     var result = RJMessageBox.Show("No se encontró ningun empleado con ese número de nómina", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtNombreEmpleadoInvolucrado.Clear();
+                    txtNombreEmpleadoInvolucrado.Text="";
                     txtIdEmpleadoInvolucrado.Clear();
                 }
             }
@@ -1308,7 +1389,20 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
         }
 
-        
+        private void LimpiarDateTimePickers()
+        {
+            DateTime defaultValue = DateTime.Now;
+
+            dtpFechaRegistro.Value = defaultValue;
+            dtpDiaDescanso.Value = defaultValue;
+            dtpFechaAccidente.Value = defaultValue;
+            dtpHoraAccidente.Value = defaultValue;
+            dtpFechaSeguimiento.Value = defaultValue;
+            dtpHoraSeguimiento.Value = defaultValue;
+            dtpFechaRecepcion.Value = defaultValue;
+            dtpHoraRecepcion.Value = defaultValue;
+        }
+
 
         private void txtNoAccidente_TextChanged(object sender, EventArgs e)
         {
@@ -1405,6 +1499,46 @@ namespace CapaPresentacion.Investigacion_Accidentes
         private void pSeguimientoCaso_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        public void validarcaracteresespeciales(KeyPressEventArgs e)
+        {
+            bool esLetraODigito = char.IsLetterOrDigit(e.KeyChar);
+            bool esGuion = e.KeyChar == '-';
+            bool esTeclaControl = char.IsControl(e.KeyChar);
+
+            bool esTeclaPermitida = e.KeyChar == (char)Keys.Back ||
+                                    e.KeyChar == (char)Keys.Delete ||
+                                    e.KeyChar == (char)Keys.Enter ||
+                                    e.KeyChar == (char)Keys.Tab ||
+                                    e.KeyChar == (char)Keys.Escape ||
+                                    e.KeyChar == (char)Keys.Left ||
+                                    e.KeyChar == (char)Keys.Right ||
+                                    e.KeyChar == (char)Keys.Space;
+
+            if (!(esLetraODigito || esGuion || esTeclaControl || esTeclaPermitida))
+            {
+                e.Handled = true; // Bloquea la tecla
+                SystemSounds.Beep.Play(); // Sonido opcional
+            }
+        }
+        private void txtNumNominaEmpleadoConocimiento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarcaracteresespeciales(e);
+        }
+
+        private void txtNumNominaEmpleadoInvolucrado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarcaracteresespeciales(e);
+        }
+
+        private void txtNumeroNomina_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarcaracteresespeciales(e);
+        }
+
+        private void txtNumNominaTestigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarcaracteresespeciales(e);
         }
     }
 }

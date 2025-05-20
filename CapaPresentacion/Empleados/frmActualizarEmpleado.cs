@@ -92,9 +92,9 @@ namespace CapaPresentacion.Empleados
             try
             {
                 if (string.IsNullOrWhiteSpace(txtNoNomina.Text) ||
-                    cmbEstadoCivil.SelectedItem == null ||
-                    string.IsNullOrWhiteSpace(txtCp.Text) ||
                     cmbEstado.SelectedItem == null ||
+                    string.IsNullOrWhiteSpace(txtCp.Text) ||
+                    cmbEstadoCivil.SelectedItem == null ||
                     string.IsNullOrWhiteSpace(txtCiudad.Text) ||
                     string.IsNullOrWhiteSpace(txtColonia.Text) ||
                     string.IsNullOrWhiteSpace(txtCalle.Text) ||
@@ -181,10 +181,10 @@ namespace CapaPresentacion.Empleados
             txtTelefono.Enabled = false;txtTelefono.BackColor = Color.WhiteSmoke;
             txtNoNomina.Enabled = true; txtNoNomina.BackColor = Color.White;
 
-            cmbEstado.Enabled = false; cmbEstado.BackColor = Color.WhiteSmoke;
+            cmbEstadoCivil.Enabled = false; cmbEstadoCivil.BackColor = Color.WhiteSmoke;
             cmbPuesto.Enabled = false; cmbPuesto.BackColor = Color.WhiteSmoke;
             cmbTurno.Enabled = false;cmbTurno.BackColor = Color.WhiteSmoke;
-            cmbEstadoCivil.Enabled = false; cmbEstadoCivil.BackColor = Color.WhiteSmoke;
+            cmbEstado.Enabled = false; cmbEstado.BackColor = Color.WhiteSmoke;
 
 
             dtpFecha.Enabled = false; dtpFecha.SkinColor = Color.WhiteSmoke;
@@ -249,7 +249,7 @@ namespace CapaPresentacion.Empleados
                 }
 
                 txtCp.Enabled = true; txtCp.BackColor = Color.White;
-                cmbEstado.Enabled = true; cmbEstado.BackColor = Color.White;
+                cmbEstadoCivil.Enabled = true; cmbEstadoCivil.BackColor = Color.White;
                 txtCiudad.Enabled = true; txtCiudad.BackColor = Color.White;
                 txtColonia.Enabled = true;txtColonia.BackColor = Color.White;
                 txtCalle.Enabled = true; txtCalle.BackColor = Color.White;
@@ -258,7 +258,7 @@ namespace CapaPresentacion.Empleados
 
                 dtpFecha.Enabled = true; dtpFecha.SkinColor = Color.White;
 
-                cmbEstadoCivil.Enabled = true; cmbEstadoCivil.BackColor = Color.White;
+                cmbEstado.Enabled = true; cmbEstado.BackColor = Color.White;
                 cmbPuesto.Enabled = true; cmbPuesto.BackColor = Color.White;
                 cmbTurno.Enabled = true;cmbTurno.BackColor = Color.White;
 

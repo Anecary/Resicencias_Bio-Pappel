@@ -255,7 +255,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
         private void cboxFechasAccidentes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(cboxFechasAccidentes.SelectedValue.ToString());
+            //MessageBox.Show(cboxFechasAccidentes.SelectedValue.ToString());
             dgvDetalleRiesgos.DataSource = accidentesCN.consultarDetalleInvAccidente_Riesgos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteRiesgos"];
             dgvDetalleActosInseguros.DataSource = accidentesCN.consultarDetalleInvAccidente_ActosInseguros(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteActosInseguros"];
             dgvDetalleCondicionesInseguras.DataSource = accidentesCN.consultarDetalleInvAccidente_CondicionesInseguras(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteCondicionesInseguras"];
