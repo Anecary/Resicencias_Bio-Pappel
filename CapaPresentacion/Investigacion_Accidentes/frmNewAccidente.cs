@@ -28,6 +28,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
         AccidentesCN accidentesCN = new AccidentesCN();
         SeccionesCN seccionesCN = new SeccionesCN();
 
+        private readonly Dictionary<Button, List<TextBox>> camposPorBoton = new Dictionary<Button, List<TextBox>>();
 
         public frmNewAccidente()
         {
@@ -127,25 +128,53 @@ namespace CapaPresentacion.Investigacion_Accidentes
             boton.Image = hayCamposVacíos ? Properties.Resources.senal_de_alerta : null;
             boton.TextImageRelation = TextImageRelation.TextBeforeImage;
         }
+        private List<string> excepcionesTextBox = new List<string>
+        {
+            "txtNumNominaTestigo", "txtNombreTestigo", "txtIdEmpleadoTestigo"// Agrega aquí los nombres que quieras excluir
+        };
 
-        // Método recursivo para buscar TextBox dentro de cualquier control (incluidos paneles anidados)
         private bool HayTextBoxVacios(Control parentControl)
         {
             foreach (Control ctrl in parentControl.Controls)
             {
                 if (ctrl is TextBox txt)
                 {
-                    if (string.IsNullOrWhiteSpace(txt.Text)) // Si está vacío o solo tiene espacios
+                    if (excepcionesTextBox.Contains(txt.Name)) continue; // Ignorar excepciones
+
+                    if (string.IsNullOrWhiteSpace(txt.Text))
+                    {
+                        Console.WriteLine("Campo vacío detectado: " + txt.Name);
                         return true;
+                    }
+                        
                 }
-                else if (ctrl.HasChildren) // Si el control tiene hijos, revisamos dentro de él
+                else if (ctrl.HasChildren)
                 {
                     if (HayTextBoxVacios(ctrl))
                         return true;
                 }
             }
-            return false; // No se encontraron campos vacíos
+            return false;
         }
+
+        // Método recursivo para buscar TextBox dentro de cualquier control (incluidos paneles anidados)
+        //private bool HayTextBoxVacios(Control parentControl)
+        //{
+        //    foreach (Control ctrl in parentControl.Controls)
+        //    {
+        //        if (ctrl is TextBox txt)
+        //        {
+        //            if (string.IsNullOrWhiteSpace(txt.Text)) // Si está vacío o solo tiene espacios
+        //                return true;
+        //        }
+        //        else if (ctrl.HasChildren) // Si el control tiene hijos, revisamos dentro de él
+        //        {
+        //            if (HayTextBoxVacios(ctrl))
+        //                return true;
+        //        }
+        //    }
+        //    return false; // No se encontraron campos vacíos
+        //}
 
         private void MostrarPanel(Panel panelAMostrar, Button botonPresionado)
         {
@@ -237,6 +266,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
             panelActual = pDatosGenerales;
             botonActual = btnDatosGenerales;
+
         }
 
         public void cargarRiesgos()
@@ -373,7 +403,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 else
                 {
                     var result = RJMessageBox.Show("No se encontró ningun empleado con ese número de nómina ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtNombreTestigo.Clear();
+                    txtNombreTestigo.Text = "";
                     txtIdEmpleadoTestigo.Clear();
                     btnAgregarTestigo.Enabled = false;
                 }

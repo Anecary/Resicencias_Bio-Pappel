@@ -385,6 +385,9 @@
     <Compile Include="TextPersonalizado.Designer.cs">
       <DependentUpon>TextPersonalizado.cs</DependentUpon>
     </Compile>
+    <Compile Include="TextPersonalizado2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <EmbeddedResource Include="Diseno\frmMessageBox.resx">
       <DependentUpon>frmMessageBox.cs</DependentUpon>
     </EmbeddedResource>

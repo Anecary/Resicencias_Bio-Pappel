@@ -54,9 +54,7 @@
             this.topePagina1 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label74 = new System.Windows.Forms.Label();
-            this.txtNombreTestigo = new CapaPresentacion.TextPersonalizado();
             this.label73 = new System.Windows.Forms.Label();
-            this.txtNumNominaTestigo = new CapaPresentacion.TextPersonalizado();
             this.btnBuscarTestigo = new CapaPresentacion.BotonPersonalizado();
             this.btnAgregarTestigo = new CapaPresentacion.BotonPersonalizado();
             this.txtIdEmpleadoTestigo = new MaterialSkin.Controls.MaterialTextBox();
@@ -68,6 +66,12 @@
             this.acciones = new System.Windows.Forms.DataGridViewImageColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.label86 = new System.Windows.Forms.Label();
+            this.cboxDecidoA = new CapaPresentacion.comboBoxPersonalizado();
+            this.label85 = new System.Windows.Forms.Label();
+            this.CboxTurno = new CapaPresentacion.comboBoxPersonalizado();
+            this.label84 = new System.Windows.Forms.Label();
+            this.cboxCondicion = new CapaPresentacion.comboBoxPersonalizado();
             this.txtTotalhrs = new CapaPresentacion.TextPersonalizado();
             this.label72 = new System.Windows.Forms.Label();
             this.txtPuesto = new CapaPresentacion.TextPersonalizado();
@@ -293,12 +297,8 @@
             this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.mySqlCommand2 = new MySql.Data.MySqlClient.MySqlCommand();
-            this.cboxCondicion = new CapaPresentacion.comboBoxPersonalizado();
-            this.label84 = new System.Windows.Forms.Label();
-            this.CboxTurno = new CapaPresentacion.comboBoxPersonalizado();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.cboxDecidoA = new CapaPresentacion.comboBoxPersonalizado();
+            this.txtNumNominaTestigo = new CapaPresentacion.TextPersonalizado2();
+            this.txtNombreTestigo = new CapaPresentacion.TextPersonalizado2();
             this.panel1.SuspendLayout();
             this.pContenedorAcc.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
@@ -387,10 +387,10 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel15.Controls.Add(this.label74);
             this.panel15.Controls.Add(this.txtNombreTestigo);
-            this.panel15.Controls.Add(this.label73);
             this.panel15.Controls.Add(this.txtNumNominaTestigo);
+            this.panel15.Controls.Add(this.label74);
+            this.panel15.Controls.Add(this.label73);
             this.panel15.Controls.Add(this.btnBuscarTestigo);
             this.panel15.Controls.Add(this.btnAgregarTestigo);
             this.panel15.Controls.Add(this.txtIdEmpleadoTestigo);
@@ -412,29 +412,6 @@
             this.label74.TabIndex = 191;
             this.label74.Text = "Nombre del Testigo: ";
             // 
-            // txtNombreTestigo
-            // 
-            this.txtNombreTestigo.BackColor = System.Drawing.Color.White;
-            this.txtNombreTestigo.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreTestigo.BorderRadius = 12;
-            this.txtNombreTestigo.BorderSize = 2;
-            this.txtNombreTestigo.Enabled = false;
-            this.txtNombreTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreTestigo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreTestigo.Location = new System.Drawing.Point(239, 47);
-            this.txtNombreTestigo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreTestigo.MaxLength = 32767;
-            this.txtNombreTestigo.Multiline = false;
-            this.txtNombreTestigo.Name = "txtNombreTestigo";
-            this.txtNombreTestigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreTestigo.PasswordChar = false;
-            this.txtNombreTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreTestigo.PlaceholderText = "";
-            this.txtNombreTestigo.Size = new System.Drawing.Size(531, 35);
-            this.txtNombreTestigo.TabIndex = 190;
-            this.txtNombreTestigo.UnderlinedStyle = true;
-            // 
             // label73
             // 
             this.label73.AutoSize = true;
@@ -445,28 +422,6 @@
             this.label73.Size = new System.Drawing.Size(96, 16);
             this.label73.TabIndex = 189;
             this.label73.Text = "No. Nómina: ";
-            // 
-            // txtNumNominaTestigo
-            // 
-            this.txtNumNominaTestigo.BackColor = System.Drawing.Color.White;
-            this.txtNumNominaTestigo.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNominaTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNominaTestigo.BorderRadius = 12;
-            this.txtNumNominaTestigo.BorderSize = 2;
-            this.txtNumNominaTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumNominaTestigo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNominaTestigo.Location = new System.Drawing.Point(14, 51);
-            this.txtNumNominaTestigo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumNominaTestigo.MaxLength = 32767;
-            this.txtNumNominaTestigo.Multiline = false;
-            this.txtNumNominaTestigo.Name = "txtNumNominaTestigo";
-            this.txtNumNominaTestigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumNominaTestigo.PasswordChar = false;
-            this.txtNumNominaTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNominaTestigo.PlaceholderText = "";
-            this.txtNumNominaTestigo.Size = new System.Drawing.Size(164, 35);
-            this.txtNumNominaTestigo.TabIndex = 188;
-            this.txtNumNominaTestigo.UnderlinedStyle = true;
             // 
             // btnBuscarTestigo
             // 
@@ -635,7 +590,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 26972);
+            this.button2.Location = new System.Drawing.Point(728, 27194);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 50);
             this.button2.TabIndex = 91;
@@ -688,6 +643,129 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(917, 626);
             this.panel14.TabIndex = 93;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label86.Location = new System.Drawing.Point(510, 226);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(51, 16);
+            this.label86.TabIndex = 203;
+            this.label86.Text = "Turno:";
+            // 
+            // cboxDecidoA
+            // 
+            this.cboxDecidoA.BackColor = System.Drawing.Color.White;
+            this.cboxDecidoA.BorderColor = System.Drawing.Color.DarkCyan;
+            this.cboxDecidoA.BorderSize = 1;
+            this.cboxDecidoA.DisplayMember = "";
+            this.cboxDecidoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxDecidoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cboxDecidoA.ForeColor = System.Drawing.Color.DimGray;
+            this.cboxDecidoA.IconColor = System.Drawing.Color.DarkCyan;
+            this.cboxDecidoA.Items.AddRange(new object[] {
+            "Reac. Gente",
+            "Act. Inseg.",
+            "Dispos. Seg.",
+            "Posic. Gente",
+            "Herramient.",
+            "No EPP",
+            "No Proced.",
+            "Maq./ equip.",
+            "Materiales",
+            "Derrames",
+            "Otra gente",
+            "Objetos",
+            "Operación",
+            "Estruc./inst.",
+            "Transp./Vehic."});
+            this.cboxDecidoA.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.cboxDecidoA.ListTextColor = System.Drawing.Color.White;
+            this.cboxDecidoA.Location = new System.Drawing.Point(513, 247);
+            this.cboxDecidoA.MinimumSize = new System.Drawing.Size(0, 30);
+            this.cboxDecidoA.Name = "cboxDecidoA";
+            this.cboxDecidoA.Padding = new System.Windows.Forms.Padding(1);
+            this.cboxDecidoA.Size = new System.Drawing.Size(394, 30);
+            this.cboxDecidoA.TabIndex = 202;
+            this.cboxDecidoA.Texts = "";
+            this.cboxDecidoA.ValueMember = "";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label85.Location = new System.Drawing.Point(753, 104);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(51, 16);
+            this.label85.TabIndex = 201;
+            this.label85.Text = "Turno:";
+            // 
+            // CboxTurno
+            // 
+            this.CboxTurno.BackColor = System.Drawing.Color.White;
+            this.CboxTurno.BorderColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.BorderSize = 1;
+            this.CboxTurno.DisplayMember = "";
+            this.CboxTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboxTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CboxTurno.ForeColor = System.Drawing.Color.DimGray;
+            this.CboxTurno.IconColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.Items.AddRange(new object[] {
+            "Matutino",
+            "Vespertino",
+            "Nocturno",
+            "Mixto"});
+            this.CboxTurno.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.ListTextColor = System.Drawing.Color.White;
+            this.CboxTurno.Location = new System.Drawing.Point(756, 125);
+            this.CboxTurno.MinimumSize = new System.Drawing.Size(0, 30);
+            this.CboxTurno.Name = "CboxTurno";
+            this.CboxTurno.Padding = new System.Windows.Forms.Padding(1);
+            this.CboxTurno.Size = new System.Drawing.Size(151, 30);
+            this.CboxTurno.TabIndex = 200;
+            this.CboxTurno.Texts = "";
+            this.CboxTurno.ValueMember = "";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label84.Location = new System.Drawing.Point(13, 39);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(80, 16);
+            this.label84.TabIndex = 199;
+            this.label84.Text = "Condición:";
+            // 
+            // cboxCondicion
+            // 
+            this.cboxCondicion.BackColor = System.Drawing.Color.White;
+            this.cboxCondicion.BorderColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.BorderSize = 1;
+            this.cboxCondicion.DisplayMember = "";
+            this.cboxCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cboxCondicion.ForeColor = System.Drawing.Color.DimGray;
+            this.cboxCondicion.IconColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.Items.AddRange(new object[] {
+            "Leve",
+            "Moderado",
+            "Grave",
+            "Mortal",
+            "Otra"});
+            this.cboxCondicion.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.ListTextColor = System.Drawing.Color.White;
+            this.cboxCondicion.Location = new System.Drawing.Point(13, 63);
+            this.cboxCondicion.MinimumSize = new System.Drawing.Size(0, 30);
+            this.cboxCondicion.Name = "cboxCondicion";
+            this.cboxCondicion.Padding = new System.Windows.Forms.Padding(1);
+            this.cboxCondicion.Size = new System.Drawing.Size(151, 30);
+            this.cboxCondicion.TabIndex = 198;
+            this.cboxCondicion.Texts = "";
+            this.cboxCondicion.ValueMember = "";
             // 
             // txtTotalhrs
             // 
@@ -4159,128 +4237,45 @@
             this.mySqlCommand2.EnableCaching = false;
             this.mySqlCommand2.Transaction = null;
             // 
-            // cboxCondicion
+            // txtNumNominaTestigo
             // 
-            this.cboxCondicion.BackColor = System.Drawing.Color.White;
-            this.cboxCondicion.BorderColor = System.Drawing.Color.DarkCyan;
-            this.cboxCondicion.BorderSize = 1;
-            this.cboxCondicion.DisplayMember = "";
-            this.cboxCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cboxCondicion.ForeColor = System.Drawing.Color.DimGray;
-            this.cboxCondicion.IconColor = System.Drawing.Color.DarkCyan;
-            this.cboxCondicion.Items.AddRange(new object[] {
-            "Leve",
-            "Moderado",
-            "Grave",
-            "Mortal",
-            "Otra"});
-            this.cboxCondicion.ListBackColor = System.Drawing.Color.DarkCyan;
-            this.cboxCondicion.ListTextColor = System.Drawing.Color.White;
-            this.cboxCondicion.Location = new System.Drawing.Point(13, 63);
-            this.cboxCondicion.MinimumSize = new System.Drawing.Size(0, 30);
-            this.cboxCondicion.Name = "cboxCondicion";
-            this.cboxCondicion.Padding = new System.Windows.Forms.Padding(1);
-            this.cboxCondicion.Size = new System.Drawing.Size(151, 30);
-            this.cboxCondicion.TabIndex = 198;
-            this.cboxCondicion.Texts = "";
-            this.cboxCondicion.ValueMember = "";
+            this.txtNumNominaTestigo.BackColor = System.Drawing.Color.White;
+            this.txtNumNominaTestigo.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtNumNominaTestigo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtNumNominaTestigo.BorderRadius = 12;
+            this.txtNumNominaTestigo.BorderSize = 2;
+            this.txtNumNominaTestigo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNumNominaTestigo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNumNominaTestigo.ForeColor = System.Drawing.Color.Black;
+            this.txtNumNominaTestigo.Location = new System.Drawing.Point(20, 71);
+            this.txtNumNominaTestigo.Name = "txtNumNominaTestigo";
+            this.txtNumNominaTestigo.Padding = new System.Windows.Forms.Padding(5);
+            this.txtNumNominaTestigo.PasswordChar = false;
+            this.txtNumNominaTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNominaTestigo.PlaceholderText = "";
+            this.txtNumNominaTestigo.Size = new System.Drawing.Size(150, 30);
+            this.txtNumNominaTestigo.TabIndex = 204;
+            this.txtNumNominaTestigo.UnderlinedStyle = true;
             // 
-            // label84
+            // txtNombreTestigo
             // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label84.Location = new System.Drawing.Point(13, 39);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(80, 16);
-            this.label84.TabIndex = 199;
-            this.label84.Text = "Condición:";
-            // 
-            // CboxTurno
-            // 
-            this.CboxTurno.BackColor = System.Drawing.Color.White;
-            this.CboxTurno.BorderColor = System.Drawing.Color.DarkCyan;
-            this.CboxTurno.BorderSize = 1;
-            this.CboxTurno.DisplayMember = "";
-            this.CboxTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CboxTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CboxTurno.ForeColor = System.Drawing.Color.DimGray;
-            this.CboxTurno.IconColor = System.Drawing.Color.DarkCyan;
-            this.CboxTurno.Items.AddRange(new object[] {
-            "Matutino",
-            "Vespertino",
-            "Nocturno",
-            "Mixto"});
-            this.CboxTurno.ListBackColor = System.Drawing.Color.DarkCyan;
-            this.CboxTurno.ListTextColor = System.Drawing.Color.White;
-            this.CboxTurno.Location = new System.Drawing.Point(756, 125);
-            this.CboxTurno.MinimumSize = new System.Drawing.Size(0, 30);
-            this.CboxTurno.Name = "CboxTurno";
-            this.CboxTurno.Padding = new System.Windows.Forms.Padding(1);
-            this.CboxTurno.Size = new System.Drawing.Size(151, 30);
-            this.CboxTurno.TabIndex = 200;
-            this.CboxTurno.Texts = "";
-            this.CboxTurno.ValueMember = "";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label85.Location = new System.Drawing.Point(753, 104);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(51, 16);
-            this.label85.TabIndex = 201;
-            this.label85.Text = "Turno:";
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label86.Location = new System.Drawing.Point(510, 226);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(51, 16);
-            this.label86.TabIndex = 203;
-            this.label86.Text = "Turno:";
-            // 
-            // cboxDecidoA
-            // 
-            this.cboxDecidoA.BackColor = System.Drawing.Color.White;
-            this.cboxDecidoA.BorderColor = System.Drawing.Color.DarkCyan;
-            this.cboxDecidoA.BorderSize = 1;
-            this.cboxDecidoA.DisplayMember = "";
-            this.cboxDecidoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxDecidoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cboxDecidoA.ForeColor = System.Drawing.Color.DimGray;
-            this.cboxDecidoA.IconColor = System.Drawing.Color.DarkCyan;
-            this.cboxDecidoA.Items.AddRange(new object[] {
-            "Reac. Gente",
-            "Act. Inseg.",
-            "Dispos. Seg.",
-            "Posic. Gente",
-            "Herramient.",
-            "No EPP",
-            "No Proced.",
-            "Maq./ equip.",
-            "Materiales",
-            "Derrames",
-            "Otra gente",
-            "Objetos",
-            "Operación",
-            "Estruc./inst.",
-            "Transp./Vehic."});
-            this.cboxDecidoA.ListBackColor = System.Drawing.Color.DarkCyan;
-            this.cboxDecidoA.ListTextColor = System.Drawing.Color.White;
-            this.cboxDecidoA.Location = new System.Drawing.Point(513, 247);
-            this.cboxDecidoA.MinimumSize = new System.Drawing.Size(0, 30);
-            this.cboxDecidoA.Name = "cboxDecidoA";
-            this.cboxDecidoA.Padding = new System.Windows.Forms.Padding(1);
-            this.cboxDecidoA.Size = new System.Drawing.Size(394, 30);
-            this.cboxDecidoA.TabIndex = 202;
-            this.cboxDecidoA.Texts = "";
-            this.cboxDecidoA.ValueMember = "";
+            this.txtNombreTestigo.BackColor = System.Drawing.Color.White;
+            this.txtNombreTestigo.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtNombreTestigo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtNombreTestigo.BorderRadius = 12;
+            this.txtNombreTestigo.BorderSize = 2;
+            this.txtNombreTestigo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreTestigo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombreTestigo.ForeColor = System.Drawing.Color.Black;
+            this.txtNombreTestigo.Location = new System.Drawing.Point(245, 72);
+            this.txtNombreTestigo.Name = "txtNombreTestigo";
+            this.txtNombreTestigo.Padding = new System.Windows.Forms.Padding(5);
+            this.txtNombreTestigo.PasswordChar = false;
+            this.txtNombreTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreTestigo.PlaceholderText = "";
+            this.txtNombreTestigo.Size = new System.Drawing.Size(150, 30);
+            this.txtNombreTestigo.TabIndex = 205;
+            this.txtNombreTestigo.UnderlinedStyle = true;
             // 
             // frmNewAccidente
             // 
@@ -4547,9 +4542,7 @@
         private TextPersonalizado txtTipoLesion;
         private TextPersonalizado txtParteCuerpoAfectada;
         private System.Windows.Forms.Label label73;
-        private TextPersonalizado txtNumNominaTestigo;
         private System.Windows.Forms.Label label74;
-        private TextPersonalizado txtNombreTestigo;
         private TextPersonalizado txtAccionesCorrectivas;
         private TextPersonalizado txtquienCorrectivas;
         private TextPersonalizado txtCuandoCorrectivas;
@@ -4604,5 +4597,7 @@
         private System.Windows.Forms.Label label86;
         private comboBoxPersonalizado cboxDecidoA;
         private System.Windows.Forms.Label label85;
+        private TextPersonalizado2 txtNombreTestigo;
+        private TextPersonalizado2 txtNumNominaTestigo;
     }
 }
