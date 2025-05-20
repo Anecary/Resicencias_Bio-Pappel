@@ -250,6 +250,7 @@ namespace CapaPresentacion
             pSubmenuCumplimientoLegal.Visible = false;
             pSubmenuEmpleados.Visible = false;
             pSubmenuReportes.Visible = false;
+            pSubmenuUtilerias.Visible = false;
         }
         private void hideSubMenu()
         {
@@ -265,6 +266,8 @@ namespace CapaPresentacion
                 pSubmenuEmpleados.Visible = false;
             if (pSubmenuReportes.Visible == true)
                 pSubmenuReportes.Visible = false;
+            if (pSubmenuUtilerias.Visible == true)
+                pSubmenuUtilerias.Visible = false;
 
         }
 
@@ -422,6 +425,17 @@ namespace CapaPresentacion
         {
             openChildForm(new Nota_Medica.frmActualizaNotaMedica());
             hideSubMenu();
+        }
+
+        private void btnRespaldar_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Utilerias.frmRespaldar());
+            hideSubMenu();
+        }
+
+        private void btnUtileris_Click(object sender, EventArgs e)
+        {
+            showSubMenu(pSubmenuUtilerias);
         }
     }
 }

@@ -30,7 +30,6 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -43,6 +42,7 @@ namespace CapaPresentacion
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.pMenu = new System.Windows.Forms.Panel();
             this.pSubmenuReportes = new System.Windows.Forms.Panel();
             this.btnReportesConsultasM = new System.Windows.Forms.Button();
@@ -118,6 +118,10 @@ namespace CapaPresentacion
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.textPersonalizado1 = new CapaPresentacion.TextPersonalizado();
+            this.pSubmenuUtilerias = new System.Windows.Forms.Panel();
+            this.btnUtileris = new System.Windows.Forms.Button();
+            this.btnRespaldar = new System.Windows.Forms.Button();
+            this.btnAyuda = new System.Windows.Forms.Button();
             this.pMenu.SuspendLayout();
             this.pSubmenuReportes.SuspendLayout();
             this.pSubmenuNotaMedica.SuspendLayout();
@@ -145,12 +149,15 @@ namespace CapaPresentacion
             this.panel5.SuspendLayout();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pSubmenuUtilerias.SuspendLayout();
             this.SuspendLayout();
             // 
             // pMenu
             // 
             this.pMenu.AutoScroll = true;
             this.pMenu.BackColor = System.Drawing.Color.DarkCyan;
+            this.pMenu.Controls.Add(this.pSubmenuUtilerias);
+            this.pMenu.Controls.Add(this.btnUtileris);
             this.pMenu.Controls.Add(this.pSubmenuReportes);
             this.pMenu.Controls.Add(this.btnReportes);
             this.pMenu.Controls.Add(this.pSubmenuCumplimientoLegal);
@@ -1359,6 +1366,7 @@ namespace CapaPresentacion
             this.textPersonalizado1.ForeColor = System.Drawing.Color.DimGray;
             this.textPersonalizado1.Location = new System.Drawing.Point(0, 0);
             this.textPersonalizado1.Margin = new System.Windows.Forms.Padding(4);
+            this.textPersonalizado1.MaxLength = 32767;
             this.textPersonalizado1.Multiline = false;
             this.textPersonalizado1.Name = "textPersonalizado1";
             this.textPersonalizado1.Padding = new System.Windows.Forms.Padding(7);
@@ -1368,6 +1376,78 @@ namespace CapaPresentacion
             this.textPersonalizado1.Size = new System.Drawing.Size(250, 31);
             this.textPersonalizado1.TabIndex = 0;
             this.textPersonalizado1.UnderlinedStyle = false;
+            // 
+            // pSubmenuUtilerias
+            // 
+            this.pSubmenuUtilerias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.pSubmenuUtilerias.Controls.Add(this.btnAyuda);
+            this.pSubmenuUtilerias.Controls.Add(this.btnRespaldar);
+            this.pSubmenuUtilerias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSubmenuUtilerias.Location = new System.Drawing.Point(0, 1079);
+            this.pSubmenuUtilerias.Name = "pSubmenuUtilerias";
+            this.pSubmenuUtilerias.Size = new System.Drawing.Size(233, 75);
+            this.pSubmenuUtilerias.TabIndex = 17;
+            this.pSubmenuUtilerias.Visible = false;
+            // 
+            // btnUtileris
+            // 
+            this.btnUtileris.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUtileris.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUtileris.FlatAppearance.BorderSize = 0;
+            this.btnUtileris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUtileris.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUtileris.ForeColor = System.Drawing.Color.White;
+            this.btnUtileris.Image = ((System.Drawing.Image)(resources.GetObject("btnUtileris.Image")));
+            this.btnUtileris.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUtileris.Location = new System.Drawing.Point(0, 1029);
+            this.btnUtileris.Name = "btnUtileris";
+            this.btnUtileris.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnUtileris.Size = new System.Drawing.Size(233, 50);
+            this.btnUtileris.TabIndex = 16;
+            this.btnUtileris.Text = "Utilerias";
+            this.btnUtileris.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUtileris.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUtileris.UseVisualStyleBackColor = true;
+            this.btnUtileris.Click += new System.EventHandler(this.btnUtileris_Click);
+            // 
+            // btnRespaldar
+            // 
+            this.btnRespaldar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRespaldar.FlatAppearance.BorderSize = 0;
+            this.btnRespaldar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRespaldar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRespaldar.ForeColor = System.Drawing.Color.White;
+            this.btnRespaldar.Image = ((System.Drawing.Image)(resources.GetObject("btnRespaldar.Image")));
+            this.btnRespaldar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRespaldar.Location = new System.Drawing.Point(0, 0);
+            this.btnRespaldar.Name = "btnRespaldar";
+            this.btnRespaldar.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnRespaldar.Size = new System.Drawing.Size(233, 30);
+            this.btnRespaldar.TabIndex = 3;
+            this.btnRespaldar.Text = "Respaldar";
+            this.btnRespaldar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRespaldar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRespaldar.UseVisualStyleBackColor = true;
+            this.btnRespaldar.Click += new System.EventHandler(this.btnRespaldar_Click);
+            // 
+            // btnAyuda
+            // 
+            this.btnAyuda.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAyuda.FlatAppearance.BorderSize = 0;
+            this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAyuda.ForeColor = System.Drawing.Color.White;
+            this.btnAyuda.Image = ((System.Drawing.Image)(resources.GetObject("btnAyuda.Image")));
+            this.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAyuda.Location = new System.Drawing.Point(0, 30);
+            this.btnAyuda.Name = "btnAyuda";
+            this.btnAyuda.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnAyuda.Size = new System.Drawing.Size(233, 30);
+            this.btnAyuda.TabIndex = 4;
+            this.btnAyuda.Text = "Ayuda";
+            this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAyuda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAyuda.UseVisualStyleBackColor = true;
             // 
             // frmMenu
             // 
@@ -1419,6 +1499,7 @@ namespace CapaPresentacion
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pSubmenuUtilerias.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1500,6 +1581,10 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnReportesConsultasM;
         private System.Windows.Forms.Button btnActualizarNotaMedica;
+        private System.Windows.Forms.Panel pSubmenuUtilerias;
+        private System.Windows.Forms.Button btnRespaldar;
+        private System.Windows.Forms.Button btnUtileris;
+        private System.Windows.Forms.Button btnAyuda;
     }
 }
 

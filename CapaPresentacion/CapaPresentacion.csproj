@@ -388,6 +388,12 @@
     <Compile Include="TextPersonalizado2.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Utilerias\frmRespaldar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\frmRespaldar.Designer.cs">
+      <DependentUpon>frmRespaldar.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Diseno\frmMessageBox.resx">
       <DependentUpon>frmMessageBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -480,6 +486,9 @@
     <EmbeddedResource Include="Reportes\Report1.rdlc" />
     <EmbeddedResource Include="TextPersonalizado.resx">
       <DependentUpon>TextPersonalizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilerias\frmRespaldar.resx">
+      <DependentUpon>frmRespaldar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Datas_Sets\Accidentes.xsc">
       <DependentUpon>Accidentes.xsd</DependentUpon>
