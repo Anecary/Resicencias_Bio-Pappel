@@ -225,10 +225,7 @@ namespace CapaPresentacion.Empleados
             }
         }
 
-        private void materialButton1_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void txtNoNomina_KeyPress(object sender, KeyPressEventArgs e)
         {

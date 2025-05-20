@@ -220,8 +220,8 @@
             this.cmbPuestos.Padding = new System.Windows.Forms.Padding(1);
             this.cmbPuestos.Size = new System.Drawing.Size(497, 30);
             this.cmbPuestos.TabIndex = 160;
-            this.cmbPuestos.Texts = "";
             this.cmbPuestos.ValueMember = "";
+            this.cmbPuestos.OnSelectedIndexChanged += new System.EventHandler(this.materialComboBox2_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -258,7 +258,6 @@
             this.cmbTurno.Padding = new System.Windows.Forms.Padding(1);
             this.cmbTurno.Size = new System.Drawing.Size(249, 30);
             this.cmbTurno.TabIndex = 158;
-            this.cmbTurno.Texts = "";
             this.cmbTurno.ValueMember = "";
             // 
             // label6

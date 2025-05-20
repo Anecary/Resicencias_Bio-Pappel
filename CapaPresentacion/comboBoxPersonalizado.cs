@@ -111,7 +111,7 @@ namespace CapaPresentacion
         }
 
         [Category("RJ Code - Appearance")]
-        public string Texts
+        public string Text
         {
             get { return lblText.Text; }
             set { lblText.Text = value; }

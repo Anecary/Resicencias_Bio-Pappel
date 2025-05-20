@@ -395,7 +395,7 @@ namespace CapaPresentacion.Nota_Medica
             {
                 // Validar si los campos no están vacíos (agrega validaciones previas)
                 if (string.IsNullOrEmpty(txtIdEmpleado.Text) || 
-                    string.IsNullOrEmpty(cboxNumExpediente2.Texts) || 
+                    string.IsNullOrEmpty(cboxNumExpediente2.Text) || 
                     string.IsNullOrEmpty(txtObservaciones.Text) || 
                     string.IsNullOrEmpty(txtDiagnostico.Text) || 
                     string.IsNullOrEmpty(cboxProceso.Text) || 

@@ -548,7 +548,7 @@
             this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboxNumExpediente2.Size = new System.Drawing.Size(324, 62);
             this.cboxNumExpediente2.TabIndex = 197;
-            this.cboxNumExpediente2.Texts = "";
+            this.cboxNumExpediente2.Text = "";
             this.cboxNumExpediente2.ValueMember = "";
             this.cboxNumExpediente2.OnSelectedIndexChanged += new System.EventHandler(this.cboxNumExpediente2_OnSelectedIndexChanged);
             // 

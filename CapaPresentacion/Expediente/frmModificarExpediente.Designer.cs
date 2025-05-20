@@ -2985,7 +2985,7 @@
             this.comboBoxPersonalizado1.Padding = new System.Windows.Forms.Padding(1);
             this.comboBoxPersonalizado1.Size = new System.Drawing.Size(212, 30);
             this.comboBoxPersonalizado1.TabIndex = 206;
-            this.comboBoxPersonalizado1.Texts = "";
+            this.comboBoxPersonalizado1.Text = "";
             this.comboBoxPersonalizado1.ValueMember = "";
             // 
             // cboxNumExpediente2
@@ -3008,7 +3008,7 @@
             this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(1);
             this.cboxNumExpediente2.Size = new System.Drawing.Size(252, 50);
             this.cboxNumExpediente2.TabIndex = 121;
-            this.cboxNumExpediente2.Texts = "";
+            this.cboxNumExpediente2.Text = "";
             this.cboxNumExpediente2.ValueMember = "";
             this.cboxNumExpediente2.OnSelectedIndexChanged += new System.EventHandler(this.cboxNumExpediente2_OnSelectedIndexChanged);
             // 

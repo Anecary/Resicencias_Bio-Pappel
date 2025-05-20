@@ -138,6 +138,10 @@ namespace CapaPresentacion.Empleados
                 };
 
                 negocios.actualizarEmpleado(empleados);
+                //RJMessageBox.Show(empleados.Puesto.ToString());
+                //RJMessageBox.Show(empleados.EstadoCivil.ToString());
+                //RJMessageBox.Show(empleados.DomicilioEstado.ToString());
+                //RJMessageBox.Show(empleados.Turno.ToString());
                 RJMessageBox.Show("Empleado actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 limpiar();
