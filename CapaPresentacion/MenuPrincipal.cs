@@ -437,5 +437,10 @@ namespace CapaPresentacion
         {
             showSubMenu(pSubmenuUtilerias);
         }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
