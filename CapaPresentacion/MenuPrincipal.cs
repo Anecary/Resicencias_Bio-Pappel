@@ -3,9 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +23,8 @@ namespace CapaPresentacion
         public frmMenu()
         {
             InitializeComponent();
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(Form1_KeyDown);
             customizeDesign();
             //pInicio.Visible = true;
             foreach (Control control in this.Controls)
@@ -440,7 +444,33 @@ namespace CapaPresentacion
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
+            AbrirAyudaPDF();
+        }
 
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+            {
+                AbrirAyudaPDF();
+            }
+        }
+
+        private void AbrirAyudaPDF()
+        {
+            string rutaPDF = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Ayudas", "menu.pdf");
+
+            if (File.Exists(rutaPDF))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = rutaPDF,
+                    UseShellExecute = true // Usa el visor predeterminado del sistema
+                });
+            }
+            else
+            {
+                MessageBox.Show("El archivo de ayuda no se encontró.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

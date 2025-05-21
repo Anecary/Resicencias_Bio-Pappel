@@ -77,7 +77,6 @@ namespace CapaPresentacion
             this.btnEmpleados = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pLogo = new System.Windows.Forms.Panel();
-            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.psuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnRestaurar = new System.Windows.Forms.Button();
@@ -93,34 +92,35 @@ namespace CapaPresentacion
             this.panel12 = new System.Windows.Forms.Panel();
             this.chartCausas = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.botonPersonalizado6 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado5 = new CapaPresentacion.BotonPersonalizado();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.lblIncapacidades = new System.Windows.Forms.Label();
-            this.botonPersonalizado4 = new CapaPresentacion.BotonPersonalizado();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.lblTrabajadores = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.botonPersonalizado3 = new CapaPresentacion.BotonPersonalizado();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblConsultas = new System.Windows.Forms.Label();
-            this.botonPersonalizado2 = new CapaPresentacion.BotonPersonalizado();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.lblAccidentes = new System.Windows.Forms.Label();
-            this.btnCancelar = new CapaPresentacion.BotonPersonalizado();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.botonPersonalizado6 = new CapaPresentacion.BotonPersonalizado();
+            this.botonPersonalizado5 = new CapaPresentacion.BotonPersonalizado();
+            this.botonPersonalizado4 = new CapaPresentacion.BotonPersonalizado();
+            this.botonPersonalizado3 = new CapaPresentacion.BotonPersonalizado();
+            this.botonPersonalizado2 = new CapaPresentacion.BotonPersonalizado();
+            this.btnCancelar = new CapaPresentacion.BotonPersonalizado();
+            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.textPersonalizado1 = new CapaPresentacion.TextPersonalizado();
             this.pMenu.SuspendLayout();
             this.pSubmenuUtilerias.SuspendLayout();
@@ -842,27 +842,6 @@ namespace CapaPresentacion
             this.pLogo.TabIndex = 0;
             this.pLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pLogo_MouseDown);
             // 
-            // botonPersonalizado1
-            // 
-            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.botonPersonalizado1.BorderRadius = 20;
-            this.botonPersonalizado1.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
-            this.botonPersonalizado1.Location = new System.Drawing.Point(-28, 29);
-            this.botonPersonalizado1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.botonPersonalizado1.Name = "botonPersonalizado1";
-            this.botonPersonalizado1.Size = new System.Drawing.Size(394, 85);
-            this.botonPersonalizado1.TabIndex = 2;
-            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.UseVisualStyleBackColor = false;
-            // 
             // psuperior
             // 
             this.psuperior.BackColor = System.Drawing.Color.DarkCyan;
@@ -1113,46 +1092,6 @@ namespace CapaPresentacion
             this.panel4.Size = new System.Drawing.Size(671, 325);
             this.panel4.TabIndex = 19;
             // 
-            // botonPersonalizado6
-            // 
-            this.botonPersonalizado6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado6.BorderRadius = 20;
-            this.botonPersonalizado6.BorderSize = 0;
-            this.botonPersonalizado6.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado6.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado6.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado6.Image")));
-            this.botonPersonalizado6.Location = new System.Drawing.Point(603, 245);
-            this.botonPersonalizado6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.botonPersonalizado6.Name = "botonPersonalizado6";
-            this.botonPersonalizado6.Size = new System.Drawing.Size(60, 62);
-            this.botonPersonalizado6.TabIndex = 18;
-            this.botonPersonalizado6.TextColor = System.Drawing.Color.White;
-            this.botonPersonalizado6.UseVisualStyleBackColor = false;
-            this.botonPersonalizado6.Visible = false;
-            // 
-            // botonPersonalizado5
-            // 
-            this.botonPersonalizado5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado5.BorderRadius = 20;
-            this.botonPersonalizado5.BorderSize = 0;
-            this.botonPersonalizado5.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado5.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado5.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado5.Image")));
-            this.botonPersonalizado5.Location = new System.Drawing.Point(279, 243);
-            this.botonPersonalizado5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.botonPersonalizado5.Name = "botonPersonalizado5";
-            this.botonPersonalizado5.Size = new System.Drawing.Size(60, 62);
-            this.botonPersonalizado5.TabIndex = 17;
-            this.botonPersonalizado5.TextColor = System.Drawing.Color.White;
-            this.botonPersonalizado5.UseVisualStyleBackColor = false;
-            this.botonPersonalizado5.Visible = false;
-            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.White;
@@ -1199,30 +1138,6 @@ namespace CapaPresentacion
             this.lblIncapacidades.Size = new System.Drawing.Size(121, 40);
             this.lblIncapacidades.TabIndex = 27;
             this.lblIncapacidades.Text = "EXOS";
-            // 
-            // botonPersonalizado4
-            // 
-            this.botonPersonalizado4.BackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado4.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado4.BorderRadius = 20;
-            this.botonPersonalizado4.BorderSize = 2;
-            this.botonPersonalizado4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.botonPersonalizado4.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonPersonalizado4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado4.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado4.Image")));
-            this.botonPersonalizado4.Location = new System.Drawing.Point(0, 0);
-            this.botonPersonalizado4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.botonPersonalizado4.Name = "botonPersonalizado4";
-            this.botonPersonalizado4.Padding = new System.Windows.Forms.Padding(0, 0, 22, 0);
-            this.botonPersonalizado4.Size = new System.Drawing.Size(132, 115);
-            this.botonPersonalizado4.TabIndex = 13;
-            this.botonPersonalizado4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado4.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -1271,30 +1186,6 @@ namespace CapaPresentacion
             this.label6.TabIndex = 25;
             this.label6.Text = "Trabajadores";
             // 
-            // botonPersonalizado3
-            // 
-            this.botonPersonalizado3.BackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado3.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado3.BorderRadius = 20;
-            this.botonPersonalizado3.BorderSize = 2;
-            this.botonPersonalizado3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.botonPersonalizado3.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonPersonalizado3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
-            this.botonPersonalizado3.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado3.Image")));
-            this.botonPersonalizado3.Location = new System.Drawing.Point(0, 0);
-            this.botonPersonalizado3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.botonPersonalizado3.Name = "botonPersonalizado3";
-            this.botonPersonalizado3.Padding = new System.Windows.Forms.Padding(0, 0, 22, 0);
-            this.botonPersonalizado3.Size = new System.Drawing.Size(124, 115);
-            this.botonPersonalizado3.TabIndex = 13;
-            this.botonPersonalizado3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
-            this.botonPersonalizado3.UseVisualStyleBackColor = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
@@ -1342,30 +1233,6 @@ namespace CapaPresentacion
             this.lblConsultas.TabIndex = 25;
             this.lblConsultas.Text = "EXOS";
             // 
-            // botonPersonalizado2
-            // 
-            this.botonPersonalizado2.BackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado2.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.botonPersonalizado2.BorderRadius = 20;
-            this.botonPersonalizado2.BorderSize = 2;
-            this.botonPersonalizado2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.botonPersonalizado2.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.botonPersonalizado2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonPersonalizado2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado2.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado2.Image")));
-            this.botonPersonalizado2.Location = new System.Drawing.Point(0, 0);
-            this.botonPersonalizado2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.botonPersonalizado2.Name = "botonPersonalizado2";
-            this.botonPersonalizado2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
-            this.botonPersonalizado2.Size = new System.Drawing.Size(130, 115);
-            this.botonPersonalizado2.TabIndex = 13;
-            this.botonPersonalizado2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
-            this.botonPersonalizado2.UseVisualStyleBackColor = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -1412,30 +1279,6 @@ namespace CapaPresentacion
             this.lblAccidentes.Size = new System.Drawing.Size(121, 40);
             this.lblAccidentes.TabIndex = 23;
             this.lblAccidentes.Text = "EXOS";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnCancelar.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.btnCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnCancelar.BorderRadius = 20;
-            this.btnCancelar.BorderSize = 2;
-            this.btnCancelar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(0, 0);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Padding = new System.Windows.Forms.Padding(0, 0, 22, 0);
-            this.btnCancelar.Size = new System.Drawing.Size(124, 115);
-            this.btnCancelar.TabIndex = 13;
-            this.btnCancelar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // panel15
             // 
@@ -1504,6 +1347,163 @@ namespace CapaPresentacion
             this.label1.Size = new System.Drawing.Size(59, 16);
             this.label1.TabIndex = 22;
             this.label1.Text = "Nombre:";
+            // 
+            // botonPersonalizado6
+            // 
+            this.botonPersonalizado6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado6.BorderRadius = 20;
+            this.botonPersonalizado6.BorderSize = 0;
+            this.botonPersonalizado6.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado6.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado6.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado6.Image")));
+            this.botonPersonalizado6.Location = new System.Drawing.Point(603, 245);
+            this.botonPersonalizado6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.botonPersonalizado6.Name = "botonPersonalizado6";
+            this.botonPersonalizado6.Size = new System.Drawing.Size(60, 62);
+            this.botonPersonalizado6.TabIndex = 18;
+            this.botonPersonalizado6.TextColor = System.Drawing.Color.White;
+            this.botonPersonalizado6.UseVisualStyleBackColor = false;
+            this.botonPersonalizado6.Visible = false;
+            // 
+            // botonPersonalizado5
+            // 
+            this.botonPersonalizado5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado5.BorderRadius = 20;
+            this.botonPersonalizado5.BorderSize = 0;
+            this.botonPersonalizado5.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado5.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado5.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado5.Image")));
+            this.botonPersonalizado5.Location = new System.Drawing.Point(279, 243);
+            this.botonPersonalizado5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.botonPersonalizado5.Name = "botonPersonalizado5";
+            this.botonPersonalizado5.Size = new System.Drawing.Size(60, 62);
+            this.botonPersonalizado5.TabIndex = 17;
+            this.botonPersonalizado5.TextColor = System.Drawing.Color.White;
+            this.botonPersonalizado5.UseVisualStyleBackColor = false;
+            this.botonPersonalizado5.Visible = false;
+            // 
+            // botonPersonalizado4
+            // 
+            this.botonPersonalizado4.BackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado4.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado4.BorderRadius = 20;
+            this.botonPersonalizado4.BorderSize = 2;
+            this.botonPersonalizado4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.botonPersonalizado4.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonPersonalizado4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado4.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado4.Image")));
+            this.botonPersonalizado4.Location = new System.Drawing.Point(0, 0);
+            this.botonPersonalizado4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.botonPersonalizado4.Name = "botonPersonalizado4";
+            this.botonPersonalizado4.Padding = new System.Windows.Forms.Padding(0, 0, 22, 0);
+            this.botonPersonalizado4.Size = new System.Drawing.Size(132, 115);
+            this.botonPersonalizado4.TabIndex = 13;
+            this.botonPersonalizado4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado4.UseVisualStyleBackColor = false;
+            // 
+            // botonPersonalizado3
+            // 
+            this.botonPersonalizado3.BackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado3.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado3.BorderRadius = 20;
+            this.botonPersonalizado3.BorderSize = 2;
+            this.botonPersonalizado3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.botonPersonalizado3.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonPersonalizado3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
+            this.botonPersonalizado3.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado3.Image")));
+            this.botonPersonalizado3.Location = new System.Drawing.Point(0, 0);
+            this.botonPersonalizado3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.botonPersonalizado3.Name = "botonPersonalizado3";
+            this.botonPersonalizado3.Padding = new System.Windows.Forms.Padding(0, 0, 22, 0);
+            this.botonPersonalizado3.Size = new System.Drawing.Size(124, 115);
+            this.botonPersonalizado3.TabIndex = 13;
+            this.botonPersonalizado3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
+            this.botonPersonalizado3.UseVisualStyleBackColor = false;
+            // 
+            // botonPersonalizado2
+            // 
+            this.botonPersonalizado2.BackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado2.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.botonPersonalizado2.BorderRadius = 20;
+            this.botonPersonalizado2.BorderSize = 2;
+            this.botonPersonalizado2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.botonPersonalizado2.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.botonPersonalizado2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonPersonalizado2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado2.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado2.Image")));
+            this.botonPersonalizado2.Location = new System.Drawing.Point(0, 0);
+            this.botonPersonalizado2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.botonPersonalizado2.Name = "botonPersonalizado2";
+            this.botonPersonalizado2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 0);
+            this.botonPersonalizado2.Size = new System.Drawing.Size(130, 115);
+            this.botonPersonalizado2.TabIndex = 13;
+            this.botonPersonalizado2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
+            this.botonPersonalizado2.UseVisualStyleBackColor = false;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnCancelar.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.btnCancelar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnCancelar.BorderRadius = 20;
+            this.btnCancelar.BorderSize = 2;
+            this.btnCancelar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkCyan;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.Location = new System.Drawing.Point(0, 0);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Padding = new System.Windows.Forms.Padding(0, 0, 22, 0);
+            this.btnCancelar.Size = new System.Drawing.Size(124, 115);
+            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            // 
+            // botonPersonalizado1
+            // 
+            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.botonPersonalizado1.BorderRadius = 20;
+            this.botonPersonalizado1.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
+            this.botonPersonalizado1.Location = new System.Drawing.Point(-28, 29);
+            this.botonPersonalizado1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.botonPersonalizado1.Name = "botonPersonalizado1";
+            this.botonPersonalizado1.Size = new System.Drawing.Size(394, 85);
+            this.botonPersonalizado1.TabIndex = 2;
+            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.UseVisualStyleBackColor = false;
             // 
             // textPersonalizado1
             // 
