@@ -251,7 +251,7 @@ namespace CapaPresentacion
             pSubmenuAccidentes.Visible = false;
             pSubmenuExpediente.Visible = false;
             pSubmenuNotaMedica.Visible = false;
-            pSubmenuCumplimientoLegal.Visible = false;
+            //pSubmenuCumplimientoLegal.Visible = false;
             pSubmenuEmpleados.Visible = false;
             pSubmenuReportes.Visible = false;
             pSubmenuUtilerias.Visible = false;
@@ -264,8 +264,8 @@ namespace CapaPresentacion
                 pSubmenuExpediente.Visible = false;
             if (pSubmenuNotaMedica.Visible == true)
                 pSubmenuNotaMedica.Visible = false;
-            if (pSubmenuCumplimientoLegal.Visible == true)
-                pSubmenuCumplimientoLegal.Visible = false;
+            //if (pSubmenuCumplimientoLegal.Visible == true)
+            //    pSubmenuCumplimientoLegal.Visible = false;
             if (pSubmenuEmpleados.Visible == true)
                 pSubmenuEmpleados.Visible = false;
             if (pSubmenuReportes.Visible == true)
@@ -364,10 +364,10 @@ namespace CapaPresentacion
             hideSubMenu();
         }
 
-        private void btnCumpliminetoLegal_Click(object sender, EventArgs e)
-        {
-            showSubMenu(pSubmenuCumplimientoLegal);
-        }
+        //private void btnCumpliminetoLegal_Click(object sender, EventArgs e)
+        //{
+        //    showSubMenu(pSubmenuCumplimientoLegal);
+        //}
 
  
     private void panel_Paint(object sender, PaintEventArgs e)
