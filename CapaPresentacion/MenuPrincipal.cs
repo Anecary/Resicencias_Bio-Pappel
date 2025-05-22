@@ -496,6 +496,12 @@ namespace CapaPresentacion
                     case "frmActualizaNotaMedica":
                         nombreArchivo = "AnexarAExpediente.pdf";
                         break;
+                    case "frmReportes_Investigacion_Accidente":
+                        nombreArchivo = "ReportesAccidentes.pdf";
+                        break;
+                    case "frmReportes_Consultas_Medicas":
+                        nombreArchivo = "ReportesConsultas.pdf";
+                        break;
                     case "frmRespaldar":
                         nombreArchivo = "Respaldar.pdf";
                         break;
@@ -513,7 +519,7 @@ namespace CapaPresentacion
 
         private void AbrirAyudaPDF(string nombreArchivo)
         {
-            string rutaPDF = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Ayudas", nombreArchivo);
+            string rutaPDF = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Ayuda", nombreArchivo);
 
             if (File.Exists(rutaPDF))
             {
