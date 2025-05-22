@@ -481,7 +481,24 @@ namespace CapaPresentacion
                     case "frmConsultaAccidentes":
                         nombreArchivo = "ConsultarAccidente.pdf";
                         break;
-
+                    case "frmExpedienteMedico":
+                        nombreArchivo = "NuevoExpediente.pdf";
+                        break;
+                    case "frmModificarExpediente":
+                        nombreArchivo = "ActualizarExpediente.pdf";
+                        break;
+                    case "frmNotaMedica":
+                        nombreArchivo = "NuevaNotaMedica.pdf";
+                        break;
+                    case "frmConsultaNotaMedica":
+                        nombreArchivo = "ConsultarNotaMedica.pdf";
+                        break;
+                    case "frmActualizaNotaMedica":
+                        nombreArchivo = "AnexarAExpediente.pdf";
+                        break;
+                    case "frmRespaldar":
+                        nombreArchivo = "Respaldar.pdf";
+                        break;
                     default:
                         nombreArchivo = "Menu.pdf";
                         break;

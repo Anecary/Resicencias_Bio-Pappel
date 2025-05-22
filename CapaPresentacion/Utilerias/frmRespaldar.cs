@@ -33,7 +33,7 @@ namespace CapaPresentacion.Utilerias
         {
             try
             {
-                string fechaHora = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                string fechaHora = DateTime.Now.ToString("yyyy_MM_dd_HH");
                 string nombreArchivo = $"backup_{fechaHora}.sql";
 
                 string rutaCarpeta = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Respaldo"));
