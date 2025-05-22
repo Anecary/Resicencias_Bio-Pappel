@@ -24,7 +24,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             this.KeyPreview = true;
-            this.KeyDown += new KeyEventHandler(Form1_KeyDown);
+            this.KeyDown += new KeyEventHandler(FormPrincipal_KeyDown);
             customizeDesign();
             //pInicio.Visible = true;
             foreach (Control control in this.Controls)
@@ -444,33 +444,82 @@ namespace CapaPresentacion
 
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            AbrirAyudaPDF();
+            AbrirAyudaPDF("Menu.pdf");
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)
             {
-                AbrirAyudaPDF();
+                string nombreFormulario = activeForm != null ? activeForm.GetType().Name : "Menu";
+
+                string nombreArchivo;
+
+                switch (nombreFormulario)
+                {
+                    case "frmNewEmpleados2":
+                        nombreArchivo = "NuevoEmpleado.pdf";
+                        break;
+                    case "frmAltaEmpleado":
+                        nombreArchivo = "AltasEmpleado.pdf";
+                        break;
+                    case "frmConsultarEmpleados":
+                        nombreArchivo = "ConsultarEmpleado.pdf";
+                        break;
+                    case "frmActualizarEmpleado":
+                        nombreArchivo = "ActualizarEmpleado.pdf";
+                        break;
+                    case "frmPuestos":
+                        nombreArchivo = "Puestos.pdf";
+                        break;
+                    case "frmSecciones":
+                        nombreArchivo = "Secciones.pdf";
+                        break;
+                    case "frmNewAccidente":
+                        nombreArchivo = "NuevoAccidente.pdf";
+                        break;
+                    case "frmConsultaAccidentes":
+                        nombreArchivo = "ConsultarAccidente.pdf";
+                        break;
+
+                    default:
+                        nombreArchivo = "Menu.pdf";
+                        break;
+                }
+
+                AbrirAyudaPDF(nombreArchivo);
             }
         }
 
-        private void AbrirAyudaPDF()
+
+
+
+        private void AbrirAyudaPDF(string nombreArchivo)
         {
-            string rutaPDF = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Ayudas", "menu.pdf");
+            string rutaPDF = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Ayudas", nombreArchivo);
 
             if (File.Exists(rutaPDF))
             {
-                Process.Start(new ProcessStartInfo
+                try
                 {
-                    FileName = rutaPDF,
-                    UseShellExecute = true // Usa el visor predeterminado del sistema
-                });
+                    Process.Start(new ProcessStartInfo
+                    {
+                        FileName = rutaPDF,
+                        UseShellExecute = true // Usa el visor predeterminado
+                    });
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("No se pudo abrir el archivo de ayuda.\n\n" + ex.Message,
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("El archivo de ayuda no se encontró.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El archivo de ayuda no se encontró:\n" + rutaPDF,
+                                "Archivo no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
     }
 }

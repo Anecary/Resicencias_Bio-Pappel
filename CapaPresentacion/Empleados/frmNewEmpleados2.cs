@@ -3,6 +3,7 @@ using CapaNegocios;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Media;
