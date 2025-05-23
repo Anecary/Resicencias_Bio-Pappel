@@ -48,7 +48,7 @@ namespace CapaEntidad
         public bool ExistenITRs { get; set; }
         public bool EquipoAdecuado { get; set; }
         public bool ConociaTrabajo { get; set; }
-        public bool ExistiaSupervision { get; set; } // Corrección de ortografía
+        public bool ExistiaSupervision { get; set; } 
         public string RiesgosJson { get; set; }
         public string ActosInsegurosJson { get; set; }
         public string CondicionesInsegurasJson { get; set; }

@@ -108,8 +108,6 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
-                Console.WriteLine("JAJAJAJAJJAJAJAJAJAJAJJAJAJAJAJAJJA");
-                Console.WriteLine(ex.ToString());
                 return -1;
             }
             finally
