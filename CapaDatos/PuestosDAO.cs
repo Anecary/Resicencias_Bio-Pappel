@@ -18,10 +18,8 @@ namespace CapaDatos
         public int ObtenerUltimoIdInsertado(string nombreTabla, string nombreColumnaId)
         {
             int ultimoId = 0;
-
             // Consulta SQL para obtener el último ID insertado
             string query = $"SELECT MAX({nombreColumnaId}) FROM {nombreTabla};";
-
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 try
@@ -42,7 +40,6 @@ namespace CapaDatos
                     throw new Exception("Error al obtener el último ID: " + ex.Message);
                 }
             }
-
             return ultimoId;
         }
 
@@ -62,7 +59,6 @@ namespace CapaDatos
                         {
                             // Indica que es un procedimiento almacenado
                             command.CommandType = CommandType.StoredProcedure;
-
                             // Crea un adaptador para llenar el DataTable
                             using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                             {
@@ -76,10 +72,7 @@ namespace CapaDatos
                         throw new Exception("Error al ejecutar el procedimiento almacenado: " + ex.Message);
                     }
                 }
-
                 return dataTable;
-
-            
         }
 
         public void InsertarPuesto(string puesto)

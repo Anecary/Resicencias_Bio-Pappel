@@ -223,14 +223,16 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     else
                     {
                         cboxFechasAccidentes.DataSource = null;
-                        MostrarNotificacion("Alerta", "Este empleado no tiene accidentes registrados.", Color.FromArgb(255, 152, 0), 3);
+                        var result = RJMessageBox.Show("Este empleado no tiene accidentes registrados.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       
                     }
 
                     cboxFechasAccidentes.SelectedIndexChanged += cboxFechasAccidentes_SelectedIndexChanged;
                 }
                 else
                 {
-                    MostrarNotificacion("Alerta", "Número de nómina no encontrado", Color.FromArgb(255, 152, 0), 3);
+                    var result = RJMessageBox.Show(" Número de nómina no encontrado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                   
                     txtNumeroNomina.Focus();
                     txtNombreEmpleado.Clear();
                     txtIdEmpleado.Clear();
@@ -238,15 +240,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
             else
             {
-                MostrarNotificacion("Alerta", "El campo 'Número de Nómina' está vacío, llénelo para continuar", Color.FromArgb(255, 152, 0), 3);
+                var result = RJMessageBox.Show("El campo 'Número de Nómina' está vacío, llénelo para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNumeroNomina.Focus();
             }
         }
-        public void MostrarNotificacion(string titulo, string mensaje, Color color, int icono)
-        {
-            frmNotificacion c = new frmNotificacion("Bio-Pappel", titulo, mensaje, color, icono);
-            c.ShowDialog();
-        }
+
 
         private void frmConsultaAccidentes_Load(object sender, EventArgs e)
         {
@@ -255,15 +253,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
         private void cboxFechasAccidentes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //MessageBox.Show(cboxFechasAccidentes.SelectedValue.ToString());
-            dgvDetalleRiesgos.DataSource = accidentesCN.consultarDetalleInvAccidente_Riesgos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteRiesgos"];
-            dgvDetalleActosInseguros.DataSource = accidentesCN.consultarDetalleInvAccidente_ActosInseguros(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteActosInseguros"];
-            dgvDetalleCondicionesInseguras.DataSource = accidentesCN.consultarDetalleInvAccidente_CondicionesInseguras(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteCondicionesInseguras"];
-            dgvTestigos.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosTestigos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosTestigos"];
-            dgvEmpleadoConocimiento.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosConocimiento(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosConocimiento"];
-            dgvEmpleadosInvolucrados.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosInvolucrados(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosInvolucrados"];
-
-
             DataTable t = accidentesCN.consultarInvAccidentePorID(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["InvestigacionAccidentePorID"];
 
             if (t.Rows.Count > 0)
@@ -449,6 +438,14 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
 
             }
+           
+            dgvDetalleRiesgos.DataSource = accidentesCN.consultarDetalleInvAccidente_Riesgos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteRiesgos"];
+            dgvDetalleActosInseguros.DataSource = accidentesCN.consultarDetalleInvAccidente_ActosInseguros(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteActosInseguros"];
+            dgvDetalleCondicionesInseguras.DataSource = accidentesCN.consultarDetalleInvAccidente_CondicionesInseguras(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteCondicionesInseguras"];
+            dgvTestigos.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosTestigos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosTestigos"];
+            dgvEmpleadoConocimiento.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosConocimiento(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosConocimiento"];
+            dgvEmpleadosInvolucrados.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosInvolucrados(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosInvolucrados"];
+
             DataTable t2 = accidentesCN.consultarInvAccidentesAcciones(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["InvestigacionAccidenteAcciones"];
 
             if (t2.Rows.Count > 0)

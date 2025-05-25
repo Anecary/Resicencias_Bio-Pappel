@@ -224,9 +224,6 @@ namespace CapaPresentacion.Empleados
                 RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-
         private void txtNoNomina_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Permite letras, números, guión y teclas de control como borrar (Backspace)

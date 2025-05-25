@@ -51,7 +51,7 @@ namespace CapaPresentacion.Empleados
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void Panel1_Paint(object sender, PaintEventArgs e)
@@ -109,7 +109,7 @@ namespace CapaPresentacion.Empleados
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -123,7 +123,7 @@ namespace CapaPresentacion.Empleados
                 // Valida que el campo no esté vacío
                 if (string.IsNullOrWhiteSpace(puesto))
                 {
-                    MessageBox.Show("El campo no puede estar vacío.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("El campo no puede estar vacío.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -131,7 +131,7 @@ namespace CapaPresentacion.Empleados
                 negocios.InsertarPuesto(puesto);
 
                 // Muestra un mensaje de éxito
-                MessageBox.Show("Puesto insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("Puesto insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Limpia el TextBox
                 txtIdPuesto.Clear();
@@ -150,7 +150,7 @@ namespace CapaPresentacion.Empleados
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

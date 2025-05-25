@@ -145,7 +145,7 @@ namespace CapaPresentacion.Empleados
                 dataGridView1.DataSource = null;
 
 
-                //
+                //Invoca el metodo ObtenerSecciones() de la capa de negocio
                 DataTable puestos = negocios.ObtenerSecciones();
 
                 // Asigna el DataTable al DataGridView
