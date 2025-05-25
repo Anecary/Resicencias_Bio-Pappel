@@ -237,29 +237,29 @@ namespace CapaPresentacion.Investigacion_Accidentes
             panelVisitado[btnSeguimientoCaso] = false;
             panelVisitado[btnControlAcciones] = false;
 
-            
 
-            //Combo para la sección A
-            cboxSecciones.SelectedIndexChanged -= cboxSecciones_SelectedIndexChanged;
-            cboxSecciones.DataSource = seccionesCN.ConcultaGeneral2().Tables["Secciones"];
-            cboxSecciones.DisplayMember = "seccion";
-            cboxSecciones.ValueMember = "idseccion";
-            if (cboxSecciones.Items.Count > 0)
-            {
-                cboxSecciones.SelectedIndex = 0;
-            }
-            cboxSecciones.SelectedIndexChanged += cboxSecciones_SelectedIndexChanged;
 
-            //Combo para la sección B
-            cboxSeccionesB.SelectedIndexChanged -= cboxSeccionesB_SelectedIndexChanged;
-            cboxSeccionesB.DataSource = seccionesCN.ConcultaGeneral2().Tables["Secciones"];
-            cboxSeccionesB.DisplayMember = "seccion";
-            cboxSeccionesB.ValueMember = "idseccion";
-            if (cboxSeccionesB.Items.Count > 0)
+            //Código para cargar el Combo de la sección A
+            cboxSeccionA.SelectedIndexChanged -= cboxSecciones_SelectedIndexChanged;
+            cboxSeccionA.DataSource = seccionesCN.ConcultaGeneral2().Tables["Secciones"];
+            cboxSeccionA.DisplayMember = "seccion";
+            cboxSeccionA.ValueMember = "idseccion";
+            if (cboxSeccionA.Items.Count > 0)
             {
-                cboxSeccionesB.SelectedIndex = 0;
+                cboxSeccionA.SelectedIndex = 0;
             }
-            cboxSeccionesB.SelectedIndexChanged += cboxSeccionesB_SelectedIndexChanged;
+            cboxSeccionA.SelectedIndexChanged += cboxSecciones_SelectedIndexChanged;
+
+            //Código para cargar el Combo de la sección A
+            cboxSeccionB.SelectedIndexChanged -= cboxSeccionesB_SelectedIndexChanged;
+            cboxSeccionB.DataSource = seccionesCN.ConcultaGeneral2().Tables["Secciones"];
+            cboxSeccionB.DisplayMember = "seccion";
+            cboxSeccionB.ValueMember = "idseccion";
+            if (cboxSeccionB.Items.Count > 0)
+            {
+                cboxSeccionB.SelectedIndex = 0;
+            }
+            cboxSeccionB.SelectedIndexChanged += cboxSeccionesB_SelectedIndexChanged;
 
             cargarRiesgos();
             cargarActosInseguros();
@@ -332,15 +332,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
                     int edad = 0;
                     edad = fechaNacimiento != DateTime.MinValue
-                        ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(edad) ? 1 : 0)
-                        : 0;
-
-                    // Calcular antigüedad correctamente
-                    //int antiguedad = 0;
-                    //antiguedad = fechaIngresoAlPuesto != DateTime.MinValue
-                    //    ? fechaActual.Year - fechaIngresoAlPuesto.Year - (fechaActual < fechaIngresoAlPuesto.AddYears(antiguedad) ? 1 : 0)
-                    //    : 0;
-
+                        ? fechaActual.Year - fechaNacimiento.Year - (fechaActual < fechaNacimiento.AddYears(edad) ? 1 : 0): 0;
 
                     int antiguedadAnios = 0;
                     int antiguedadMeses = 0;
@@ -365,6 +357,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     txtPuesto.Text = dr["puesto"] as string ?? "N/A";
                     //txtAntiguedad.Text = antiguedad > 0 ? antiguedad.ToString() : "N/A";
                     txtAntiguedad.Text = (antiguedadAnios > 0 || antiguedadMeses > 0) ? $"{antiguedadAnios} año(s) {antiguedadMeses} mes(es)" : "0 meses";
+                    
                     txtNumNominaTestigo.Enabled = true;
                     btnBuscarTestigo.Enabled = true;
                 }
@@ -489,29 +482,14 @@ namespace CapaPresentacion.Investigacion_Accidentes
             DateTime fecha_hora_Accidente = dtpFechaAccidente.Value.Date + dtpHoraAccidente.Value.TimeOfDay;
             string testigosJson = ConvertirTestigosAJson(dgvTestigos);
 
-            if (fechaRegistro < haceUnMes || fechaRegistro > ahora)
-            {
-                RJMessageBox.Show("La fecha de registro debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (DiaDescansoPrevio < haceUnMes || DiaDescansoPrevio > ahora)
-            {
-                RJMessageBox.Show("El último dia de descanso previo debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (fecha_hora_Accidente < haceUnMes || fecha_hora_Accidente > ahora)
-            {
-                RJMessageBox.Show("La fecha del accidente debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
+      
             //Detalle Accidente
             Boolean lesion30Dias = false;
             lesion30Dias = rbtnlesion30DiasSi.Checked ? true : false;
             Boolean lesion12Meses = false;
             lesion12Meses = rbtnlesion12MesesSi.Checked ? true : false;
             string proceso = cboxProceso.Text;
-            int idSeccionA = Convert.ToInt32(cboxSecciones.SelectedValue);
+            int idSeccionA = Convert.ToInt32(cboxSeccionA.SelectedValue);
             string lugarAccidente = txtLugarAccidente.Text;
             string causanteLesion = txtObjCausanteLesion.Text;
             string equipoProteccionUsado = txtEquipoProteccionUsado.Text;
@@ -532,7 +510,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             danosMateriales = rbtnDanosMaterialesSi.Checked ? true : false;
             string equipoDanado = txtEquipoDanado.Text;
             string sustituiblePor = txtSustituiblePor.Text;
-            int idSeccionB = Convert.ToInt32(cboxSeccionesB.SelectedValue);
+            int idSeccionB = Convert.ToInt32(cboxSeccionB.SelectedValue);
 
             
             //Factores de Seguridad
@@ -578,9 +556,23 @@ namespace CapaPresentacion.Investigacion_Accidentes
             DateTime fecha_Hora_Seguimiento = dtpFechaSeguimiento.Value.Date + dtpHoraSeguimiento.Value.TimeOfDay;
             int empleadoSeguimiento = Convert.ToInt32(txtidNombreSST.Text);
             DateTime fecha_Hora_recepcion = dtpFechaRecepcion.Value.Date + dtpHoraRecepcion.Value.TimeOfDay;
-            
-           
 
+
+            if (fechaRegistro < haceUnMes || fechaRegistro > ahora)
+            {
+                RJMessageBox.Show("La fecha de registro debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (DiaDescansoPrevio < haceUnMes || DiaDescansoPrevio > ahora)
+            {
+                RJMessageBox.Show("El último dia de descanso previo debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (fecha_hora_Accidente < haceUnMes || fecha_hora_Accidente > ahora)
+            {
+                RJMessageBox.Show("La fecha del accidente debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (fecha_Hora_Seguimiento < haceUnMes || fecha_Hora_Seguimiento > ahora)
             {
                 RJMessageBox.Show("La fecha de seguimiento debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -593,7 +585,9 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 RJMessageBox.Show("La fecha de recepción debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (cboxSecciones.SelectedValue == null || !int.TryParse(cboxSecciones.SelectedValue.ToString(), out int idSeccionAB))
+
+
+            if (cboxSeccionA.SelectedValue == null || !int.TryParse(cboxSeccionA.SelectedValue.ToString(), out int idSeccionAB))
             {
                 RJMessageBox.Show("Debes seleccionar una sección válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -713,9 +707,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 int numnero_accidente = int.Parse(txtNoAccidente.Text);
 
                 
-
-
-                // Llamada al método para limpiar todos los controles en el formulario
                 LimpiarControles(this);
                 LimpiarDateTimePickers();
                 txtNumeroNomina.Focus();
@@ -728,22 +719,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
             {
                 var resultado = RJMessageBox.Show(" No se ha podido grabar el Reporte de Accidente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            //if (!string.IsNullOrWhiteSpace(cboxCondicion.Text) || !string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) || !string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) || !string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
-            //    !string.IsNullOrWhiteSpace(txtLugarAccidente.Text) || !string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text) || !string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text) || !string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) || !string.IsNullOrWhiteSpace(txtEquipoDanado.Text) || !string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
-            //    !string.IsNullOrWhiteSpace(txtOtro.Text) || !string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) || !string.IsNullOrWhiteSpace(txtTratamiento.Text) || !string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
-            //    !string.IsNullOrWhiteSpace(txtAccionesCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtquienCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) || !string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) || !string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) || !string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) || !string.IsNullOrWhiteSpace(txtSeguimiento.Text) || !string.IsNullOrWhiteSpace(txtidNombreSST.Text)
-            //    )
-            //{
-            //    // int registro = accidentesCN.InsertarAccidente(noAccidente, condicion, fechaRegistro, idEmpleado, numnomina, puesto, antiguedad, edad, turno, tiempoExtra, totalHrsExtras, DiaDescansoPrevio, parteCuerpoAfectada, trabajoDesempeñado, tipoLesion, fecha_hora_Accidente,
-            //    //lesion30Dias, lesion12Meses, proceso, idSeccionA, lugarAccidente, causanteLesion, equipoProteccionUsado, equipoProteccionNecesario, causaAccidente, descripcionAccidente, realizoTrabajoAntes, trabajoHabitual, trabajoProgramado, trabajoNecesario, trabajoUrgente, danosMateriales, equipoDanado, sustituiblePor, idSeccionB,
-            //    //existenITRs, equipoAdecuado, conociaTrabajo, existiaSupervicion, riesgosJson, actosInsegurosJson, condicionesInsegurasJson,
-            //    //empleadosConocimientoJson, empleadosInvolucradosJson, continuaTrabajando, enviadoDomicilio, enviadoAtencionMedica, otro, diagnosticoFinal, tratamiento, incapacidad,
-            //    //accionesCorrectivasPropuestas, quienCorrectivasPropuesta, cuandoCorrectivasPropuestas, accionesPreventivasPropuestas, quienPreventivoPropuesto, cuandoPreventivasPropuestas, seguimiento, fecha_Hora_Seguimiento, empleadoSeguimiento, fecha_Hora_recepcion,
-            //    // testigosJson);
-
-            //}
-
         }
 
 
