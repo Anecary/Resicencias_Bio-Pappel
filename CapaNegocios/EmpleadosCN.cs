@@ -138,7 +138,6 @@ namespace CapaNegocios
         {
             try
             {
-                Console.WriteLine("Hola");
                 empleadosDAO.actualizarEmpleado(empleados);
             }
             catch (Exception ex)

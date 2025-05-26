@@ -143,47 +143,7 @@ namespace CapaPresentacion.Expediente
             }
             return false; // No se encontraron campos vacíos
         }
-        public void ValidacionNumeros(KeyPressEventArgs e)
-        {
-            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
-                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
-                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
-                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right))
-            {
-                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
-            }
-        }
-        public void ValidacionNumerosDecimal(object sender, KeyPressEventArgs e)
-        {
-            var textBox = sender as TextPersonalizado;
-
-            // Verifica si es un punto decimal
-            if (e.KeyChar == '.')
-            {
-                if (textBox.Text.Contains("."))
-                {
-                    RJMessageBox.Show("Solo se permite un punto decimal", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    e.Handled = true; // Bloquea la entrada de un segundo punto
-                }
-                return; // Permite el primer punto y sale de la función
-            }
-
-            // Validar otros caracteres permitidos
-            if (!(char.IsDigit(e.KeyChar) ||
-                  e.KeyChar == (char)Keys.Back ||
-                  e.KeyChar == (char)Keys.Delete ||
-                  e.KeyChar == (char)Keys.Enter ||
-                  e.KeyChar == (char)Keys.Tab ||
-                  e.KeyChar == (char)Keys.Escape ||
-                  e.KeyChar == (char)Keys.Left ||
-                  e.KeyChar == (char)Keys.Right))
-            {
-                RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                e.Handled = true;
-            }
-        }
+       
 
         private void MostrarPanel(Panel panelAMostrar, Button botonPresionado)
         {
@@ -536,10 +496,51 @@ namespace CapaPresentacion.Expediente
             rbtnTransfusiones.Checked = false;
 
         }
+        public void ValidacionNumeros(KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right))
+            {
+                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
+            }
+        }
+       
         private void txtPulso_KeyPress(object sender, KeyPressEventArgs e)
         {
             ValidacionNumeros(e);
+        }
+        public void ValidacionNumerosDecimal(object sender, KeyPressEventArgs e)
+        {
+            var textBox = sender as TextPersonalizado;
+
+            // Verifica si es un punto decimal
+            if (e.KeyChar == '.')
+            {
+                if (textBox.Text.Contains("."))
+                {
+                    RJMessageBox.Show("Solo se permite un punto decimal", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    e.Handled = true; // Bloquea la entrada de un segundo punto
+                }
+                return; // Permite el primer punto y sale de la función
+            }
+
+            // Validar otros caracteres permitidos
+            if (!(char.IsDigit(e.KeyChar) ||
+                  e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete ||
+                  e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab ||
+                  e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left ||
+                  e.KeyChar == (char)Keys.Right))
+            {
+                RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
         }
 
         private void txtTemperatura_KeyPress(object sender, KeyPressEventArgs e)
@@ -593,7 +594,6 @@ namespace CapaPresentacion.Expediente
         private void CalcularIMC()
         {
             double talla = 0, peso = 0, imc = 0;
-
             // Verificamos si los valores de peso y talla son válidos
             if (double.TryParse(txtTalla.Text, out talla) && talla > 0 &&
                 double.TryParse(txtPeso.Text, out peso) && peso > 0)
@@ -618,7 +618,6 @@ namespace CapaPresentacion.Expediente
             {
                 return;  // Permite que el control pase sin hacer nada si el campo está vacío
             }
-
             // Intentar convertir solo si no está vacío
             double peso;
             if (double.TryParse(txtPeso.Text, out peso)) // Usa TryParse para evitar excepciones
@@ -652,9 +651,7 @@ namespace CapaPresentacion.Expediente
             if (string.IsNullOrWhiteSpace(txtTalla.Text))
             {
                 return;  
-            }
-
-            
+            }            
             double talla;
             if (double.TryParse(txtTalla.Text, out talla)) 
             {

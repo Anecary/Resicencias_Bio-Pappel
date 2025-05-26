@@ -8,13 +8,13 @@ namespace CapaEntidad
 {
     public class ConsultaMedica
     {
-        public int IdEmpleado {  get; set; }       // p_idEmpleado
-        public int IdConsulta { get; set; }        // p_idConsulta
-        public string NumExpediente { get; set; }  // p_numExpediente
-        public DateTime Fecha { get; set; }        // p_fecha
-        public string Observaciones { get; set; }  // p_observaciones
-        public string Diagnostico { get; set; }    // p_diagnostico
-        public string Proceso { get; set; }        // p_proceso
-        public int IdTipoCausa { get; set; }       // p_idTipoCausa
+        public int IdEmpleado {  get; set; }
+        public int IdConsulta { get; set; }
+        public string NumExpediente { get; set; }
+        public DateTime Fecha { get; set; }
+        public string Observaciones { get; set; }
+        public string Diagnostico { get; set; }
+        public string Proceso { get; set; }
+        public int IdTipoCausa { get; set; }
     }
 }

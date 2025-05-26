@@ -60,6 +60,7 @@
             this.txtDomicilio = new CapaPresentacion.TextPersonalizado();
             this.label57 = new System.Windows.Forms.Label();
             this.txtNumeroNomina = new CapaPresentacion.TextPersonalizado();
+            this.cboxNumExpediente2 = new CapaPresentacion.comboBoxPersonalizado();
             this.label1 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.txtIdEmpleado = new MaterialSkin.Controls.MaterialTextBox();
@@ -193,8 +194,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.comboBoxPersonalizado1 = new CapaPresentacion.comboBoxPersonalizado();
-            this.cboxNumExpediente2 = new CapaPresentacion.comboBoxPersonalizado();
             this.panel1.SuspendLayout();
             this.pContenedor.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
@@ -320,7 +319,6 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.Controls.Add(this.comboBoxPersonalizado1);
             this.panel5.Controls.Add(this.label69);
             this.panel5.Controls.Add(this.txtPuesto);
             this.panel5.Controls.Add(this.label59);
@@ -725,6 +723,29 @@
             this.txtNumeroNomina.Size = new System.Drawing.Size(263, 35);
             this.txtNumeroNomina.TabIndex = 176;
             this.txtNumeroNomina.UnderlinedStyle = true;
+            // 
+            // cboxNumExpediente2
+            // 
+            this.cboxNumExpediente2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboxNumExpediente2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboxNumExpediente2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboxNumExpediente2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.cboxNumExpediente2.BorderSize = 1;
+            this.cboxNumExpediente2.DisplayMember = "";
+            this.cboxNumExpediente2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboxNumExpediente2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxNumExpediente2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.cboxNumExpediente2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.cboxNumExpediente2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboxNumExpediente2.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboxNumExpediente2.Location = new System.Drawing.Point(140, 44);
+            this.cboxNumExpediente2.MinimumSize = new System.Drawing.Size(200, 50);
+            this.cboxNumExpediente2.Name = "cboxNumExpediente2";
+            this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(1);
+            this.cboxNumExpediente2.Size = new System.Drawing.Size(252, 50);
+            this.cboxNumExpediente2.TabIndex = 121;
+            this.cboxNumExpediente2.ValueMember = "";
+            this.cboxNumExpediente2.OnSelectedIndexChanged += new System.EventHandler(this.cboxNumExpediente2_OnSelectedIndexChanged);
             // 
             // label1
             // 
@@ -2967,51 +2988,6 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Consulta de Expediente Clínico";
             // 
-            // comboBoxPersonalizado1
-            // 
-            this.comboBoxPersonalizado1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.comboBoxPersonalizado1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.comboBoxPersonalizado1.BorderSize = 1;
-            this.comboBoxPersonalizado1.DisplayMember = "";
-            this.comboBoxPersonalizado1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.comboBoxPersonalizado1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBoxPersonalizado1.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBoxPersonalizado1.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.comboBoxPersonalizado1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.comboBoxPersonalizado1.ListTextColor = System.Drawing.Color.DimGray;
-            this.comboBoxPersonalizado1.Location = new System.Drawing.Point(398, 58);
-            this.comboBoxPersonalizado1.MinimumSize = new System.Drawing.Size(0, 30);
-            this.comboBoxPersonalizado1.Name = "comboBoxPersonalizado1";
-            this.comboBoxPersonalizado1.Padding = new System.Windows.Forms.Padding(1);
-            this.comboBoxPersonalizado1.Size = new System.Drawing.Size(212, 30);
-            this.comboBoxPersonalizado1.TabIndex = 206;
-            this.comboBoxPersonalizado1.Text = "";
-            this.comboBoxPersonalizado1.ValueMember = "";
-            // 
-            // cboxNumExpediente2
-            // 
-            this.cboxNumExpediente2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboxNumExpediente2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboxNumExpediente2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboxNumExpediente2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.cboxNumExpediente2.BorderSize = 1;
-            this.cboxNumExpediente2.DisplayMember = "";
-            this.cboxNumExpediente2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboxNumExpediente2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxNumExpediente2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.cboxNumExpediente2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.cboxNumExpediente2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cboxNumExpediente2.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboxNumExpediente2.Location = new System.Drawing.Point(140, 44);
-            this.cboxNumExpediente2.MinimumSize = new System.Drawing.Size(200, 50);
-            this.cboxNumExpediente2.Name = "cboxNumExpediente2";
-            this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(1);
-            this.cboxNumExpediente2.Size = new System.Drawing.Size(252, 50);
-            this.cboxNumExpediente2.TabIndex = 121;
-            this.cboxNumExpediente2.Text = "";
-            this.cboxNumExpediente2.ValueMember = "";
-            this.cboxNumExpediente2.OnSelectedIndexChanged += new System.EventHandler(this.cboxNumExpediente2_OnSelectedIndexChanged);
-            // 
             // frmModificarExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3222,7 +3198,6 @@
         private System.Windows.Forms.Label label69;
         private TextPersonalizado txtPuesto;
         private TextPersonalizado txtHeredoFamiliar;
-        private comboBoxPersonalizado comboBoxPersonalizado1;
         private comboBoxPersonalizado cboxNumExpediente2;
     }
 }
