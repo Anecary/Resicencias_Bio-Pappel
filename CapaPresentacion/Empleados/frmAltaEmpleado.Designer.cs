@@ -256,6 +256,7 @@
             this.cmbTurno.MinimumSize = new System.Drawing.Size(200, 30);
             this.cmbTurno.Name = "cmbTurno";
             this.cmbTurno.Padding = new System.Windows.Forms.Padding(1);
+            this.cmbTurno.SelectedIndex = 1;
             this.cmbTurno.Size = new System.Drawing.Size(249, 30);
             this.cmbTurno.TabIndex = 158;
             this.cmbTurno.ValueMember = "";

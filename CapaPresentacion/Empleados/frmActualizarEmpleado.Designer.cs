@@ -235,6 +235,7 @@
             this.cmbPuesto.Size = new System.Drawing.Size(497, 49);
             this.cmbPuesto.StartIndex = 0;
             this.cmbPuesto.TabIndex = 12;
+            this.cmbPuesto.SelectedIndexChanged += new System.EventHandler(this.cmbPuesto_SelectedIndexChanged);
             // 
             // label19
             // 
@@ -536,6 +537,7 @@
             this.txtTelefono.Size = new System.Drawing.Size(253, 35);
             this.txtTelefono.TabIndex = 9;
             this.txtTelefono.UnderlinedStyle = true;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // label15
             // 
@@ -717,6 +719,7 @@
             this.txtCp.Size = new System.Drawing.Size(218, 35);
             this.txtCp.TabIndex = 3;
             this.txtCp.UnderlinedStyle = true;
+            this.txtCp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCp_KeyPress);
             // 
             // label9
             // 

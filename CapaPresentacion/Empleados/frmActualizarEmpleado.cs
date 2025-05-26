@@ -138,10 +138,6 @@ namespace CapaPresentacion.Empleados
                 };
 
                 negocios.actualizarEmpleado(empleados);
-                //RJMessageBox.Show(empleados.Puesto.ToString());
-                //RJMessageBox.Show(empleados.EstadoCivil.ToString());
-                //RJMessageBox.Show(empleados.DomicilioEstado.ToString());
-                //RJMessageBox.Show(empleados.Turno.ToString());
                 RJMessageBox.Show("Empleado actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 limpiar();
@@ -297,6 +293,29 @@ namespace CapaPresentacion.Empleados
                 e.Handled = true; // Bloquea la tecla
                 SystemSounds.Beep.Play(); // Sonido opcional
             }
+        }
+        public void ValidacionNumeros(KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right))
+            {
+                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
+                SystemSounds.Beep.Play();
+                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumeros(e);
+        }
+
+        private void txtCp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidacionNumeros(e);
         }
     }
 }

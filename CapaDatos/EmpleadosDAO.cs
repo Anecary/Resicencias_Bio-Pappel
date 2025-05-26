@@ -377,7 +377,58 @@ namespace CapaDatos
                 return data;
             }
         }
-        
 
+        public DataSet empleadoExiste(string numNomina)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objconexion.Conecta();
+                adapter = new MySqlDataAdapter("VerificarEmpleadoExiste", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_nss = new MySqlParameter("@p_nss", MySqlDbType.VarChar);
+                p_nss.Direction = ParameterDirection.Input;
+                p_nss.Value = numNomina;
+                adapter.SelectCommand.Parameters.Add(p_nss);
+
+                adapter.Fill(data, "ConsultaEmpleadoExiste");
+                return data;
+            }
+        }
+        public void actualizarEmpleadoReingreso(EmpleadosCE empleados)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    // Crea un comando para ejecutar el procedimiento almacenado
+                    using (MySqlCommand command = new MySqlCommand("ActualizarEmpleadoReingreso", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        // Agrega los parámetros del procedimiento almacenado
+                        command.Parameters.AddWithValue("p_idEmpleado", empleados.IdEmpleado);
+                        command.Parameters.AddWithValue("p_sexo", empleados.Sexo);
+                        command.Parameters.AddWithValue("p_estado_civil", empleados.EstadoCivil);
+                        command.Parameters.AddWithValue("p_domicilio_Calle", empleados.DomicilioCalle);
+                        command.Parameters.AddWithValue("p_domicilio_Numero", empleados.DomicilioNumero);
+                        command.Parameters.AddWithValue("p_domicilio_Colonia", empleados.DomicilioColonia);
+                        command.Parameters.AddWithValue("p_domicilio_CP", empleados.DomicilioCP);
+                        command.Parameters.AddWithValue("p_domicilio_Ciudad", empleados.DomicilioCiudad);
+                        command.Parameters.AddWithValue("p_domicilio_Estado", empleados.DomicilioEstado);
+                        command.Parameters.AddWithValue("p_telefono", empleados.Telefono);
+
+                        // Ejecuta el procedimiento almacenado
+                        command.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al insertar el empleado: " + ex.Message);
+                }
+            }
+        }
     }
 }

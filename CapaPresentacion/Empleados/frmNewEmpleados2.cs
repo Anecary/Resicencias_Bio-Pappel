@@ -3,6 +3,7 @@ using CapaNegocios;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using System;
+using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -85,19 +86,6 @@ namespace CapaPresentacion.Empleados
                     RJMessageBox.Show("Todos los campos son obligatorios.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return; // Detiene la ejecución si hay campos vacíos
                 }
-                int edad = DateTime.Today.Year - dtpFechaNacimiento.Value.Year;
-
-                if (dtpFechaNacimiento.Value.Date > DateTime.Today.AddYears(-edad))
-                {
-                    edad--;
-                }
-
-                if (edad <= 18)
-                {
-                    RJMessageBox.Show("Ingrese una fecha de nacimiento válida. Debe tener al menos 18 años.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
                 // Obtener valores después de la validación
                 string nombre = txtNombre.Text.Trim();
                 string apellidoPaterno = txtApellidoP.Text.Trim();
@@ -115,6 +103,64 @@ namespace CapaPresentacion.Empleados
                 string domicilioEstado = cboEstado.Text.Trim();
                 string telefono = txtTelefono.Text.Trim();
 
+                DataTable t = negocios.empleadoExiste(txtNss.Text).Tables["ConsultaEmpleadoExiste"];
+
+                if (t.Rows.Count > 0)
+                {
+                    DataRow dr = t.Rows[0];
+                    int idEmpleado = Convert.ToInt32(dr["idEmpleado"]);
+                    RJMessageBox.Show(idEmpleado.ToString());
+
+                    var result = RJMessageBox.Show(
+                         "El colaborador con el NSS " + txtNss.Text + " ya se encuentra registrado en el sistema.\n\n" +
+                         "¿Desea actualizar sus datos? Al hacerlo, la información actual será reemplazada por la recién ingresada " +
+                         "y será necesario dar de alta nuevamente al empleado.",
+                         "ADVERTENCIA",
+                         MessageBoxButtons.YesNo,
+                         MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        EmpleadosCE empleadoReingreso = new EmpleadosCE
+                        {
+                            IdEmpleado = idEmpleado,
+                            Nombre = nombre,
+                            Sexo = sexo,
+                            EstadoCivil = estadoCivil,
+                            DomicilioCalle = domicilioCalle,
+                            DomicilioNumero = domicilioNumero,
+                            DomicilioColonia = domicilioColonia,
+                            DomicilioCP = domicilioCP,
+                            DomicilioCiudad = domicilioCiudad,
+                            DomicilioEstado = domicilioEstado,
+                            Telefono = telefono
+                        };
+                        negocios.actualizarEmpleadoReingreso(empleadoReingreso);
+                        RJMessageBox.Show("Empleado actualizado correctamente para reingreso.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LimpiarControles();
+                        return;
+                    }
+                    if (result == DialogResult.No)
+                    {
+                        return;
+                    }
+                }
+
+                int edad = DateTime.Today.Year - dtpFechaNacimiento.Value.Year;
+
+                if (dtpFechaNacimiento.Value.Date > DateTime.Today.AddYears(-edad))
+                {
+                    edad--;
+                }
+
+                if (edad <= 18)
+                {
+                    RJMessageBox.Show("Ingrese una fecha de nacimiento válida. Debe tener al menos 18 años.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+
+
                 // Llamada al método de negocios para insertar el empleado
                 EmpleadosCE empleados = new EmpleadosCE
                 {
@@ -126,11 +172,11 @@ namespace CapaPresentacion.Empleados
                     EstadoCivil = estadoCivil,
                     NSS = nss,
                     RFC = rfc,
-                    DomicilioCalle= domicilioCalle,
+                    DomicilioCalle = domicilioCalle,
                     DomicilioNumero = domicilioNumero,
-                    DomicilioColonia= domicilioColonia,
-                    DomicilioCP= domicilioCP,
-                    DomicilioCiudad= domicilioCiudad,
+                    DomicilioColonia = domicilioColonia,
+                    DomicilioCP = domicilioCP,
+                    DomicilioCiudad = domicilioCiudad,
                     DomicilioEstado = domicilioEstado,
                     Telefono = telefono
                 };
