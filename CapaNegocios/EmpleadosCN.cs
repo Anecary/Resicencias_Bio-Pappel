@@ -146,11 +146,25 @@ namespace CapaNegocios
             }
         }
 
-
         public DataSet ConsultaEmpleadoNumNomina(string numNomina)
         {
             return empleadosDAO.consultaEmpleadoNumNomina(numNomina);
         }
-        
+
+        public DataSet empleadoExiste(string numNomina)
+        {
+            return empleadosDAO.empleadoExiste(numNomina);
+        }
+        public void actualizarEmpleadoReingreso(EmpleadosCE empleadosReingreso)
+        {
+            try
+            {
+                empleadosDAO.actualizarEmpleadoReingreso(empleadosReingreso);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error en la capa de negocios: " + ex.Message);
+            }
+        }
     }
 }

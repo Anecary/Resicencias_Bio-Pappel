@@ -661,9 +661,9 @@
             this.cmbEstadoCivil.MinimumSize = new System.Drawing.Size(200, 30);
             this.cmbEstadoCivil.Name = "cmbEstadoCivil";
             this.cmbEstadoCivil.Padding = new System.Windows.Forms.Padding(1);
+            this.cmbEstadoCivil.SelectedIndex = 1;
             this.cmbEstadoCivil.Size = new System.Drawing.Size(200, 30);
             this.cmbEstadoCivil.TabIndex = 155;
-            this.cmbEstadoCivil.Text = "";
             this.cmbEstadoCivil.ValueMember = "";
             // 
             // cmbSexo
@@ -685,9 +685,9 @@
             this.cmbSexo.MinimumSize = new System.Drawing.Size(200, 30);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Padding = new System.Windows.Forms.Padding(1);
+            this.cmbSexo.SelectedIndex = 1;
             this.cmbSexo.Size = new System.Drawing.Size(200, 30);
             this.cmbSexo.TabIndex = 157;
-            this.cmbSexo.Text = "";
             this.cmbSexo.ValueMember = "";
             // 
             // cboEstado
@@ -739,9 +739,9 @@
             this.cboEstado.MinimumSize = new System.Drawing.Size(200, 30);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Padding = new System.Windows.Forms.Padding(1);
+            this.cboEstado.SelectedIndex = 1;
             this.cboEstado.Size = new System.Drawing.Size(200, 30);
             this.cboEstado.TabIndex = 154;
-            this.cboEstado.Text = "";
             this.cboEstado.ValueMember = "";
             // 
             // pSeccionesDatos
