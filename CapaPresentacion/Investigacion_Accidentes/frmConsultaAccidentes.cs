@@ -280,6 +280,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     txtDiaDescansoPrevio.Text = "Sin fecha"; // O cualquier otro valor predeterminado
                 }
                 txtDebidoA.Text = dr["debido_a"].ToString();
+                
                 txtParteCuerpoAfectada.Text = dr["parte_cuerpo_afectada"].ToString();
                 txtTrabajoDesempenado.Text = dr["trabajo_Desempeñado"].ToString();
                 txtTipoLesion.Text = dr["tipo_Lesion"].ToString();

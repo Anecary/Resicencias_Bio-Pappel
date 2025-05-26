@@ -533,7 +533,7 @@ namespace CapaPresentacion.Expediente
             if (registro > 0)
             {
                 MostrarPanel(pDatosGenerales);
-                var result = RJMessageBox.Show(" El Reporte de Accidente se ha guardado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var result = RJMessageBox.Show(" Expediente médico actualizado exitosamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
                 // Llamada al método para limpiar todos los controles en el formulario
@@ -545,7 +545,7 @@ namespace CapaPresentacion.Expediente
             }
             else
             {
-                var result = RJMessageBox.Show(" No se ha podido grabar el Reporte de Accidente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var result = RJMessageBox.Show(" No se han podido grabar los cambios al expediente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 

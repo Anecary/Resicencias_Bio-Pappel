@@ -295,168 +295,175 @@ namespace CapaPresentacion.Expediente
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            DateTime ahora = DateTime.Now;
-            DateTime haceUnMes = ahora.AddMonths(-1);
-
-            string numExpediente = txtNoExpediente.Text;
-            int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
-            string numNomina = txtNumeroNomina.Text;
-            DateTime fechaApertura = dtpFechaApertura.Value;
-            string heredoFamiliar = txtHeredoFamiliar.Text;
-            string diagnostico = txtDiagnostico.Text;
-
-
-            string casa = txtCasa.Text;
-            string alimentacion = txtAlimentacion.Text;
-            string animales = txtAnimales.Text;
-            string inmunizaciones = txtInmunizaciones.Text;
-            string toxicomanias = txtToxicomanias.Text;
-            string trabajoActividadesAnteriores = txtTrabajosYActAnteriores.Text;
-            string deportes = txtDeportesRecreacion.Text;
-            string entornoFamiliar = txtEntornoFamiliar.Text;
-            string escolaridad = txtEscolaridad.Text;
-
-            Boolean hospitalizaciones = false;
-            hospitalizaciones = rbtnHozpitalizaciones.Checked ? true : false;
-            Boolean cirugias = false;
-            cirugias = rbtnCirugias.Checked ? true : false;
-            Boolean transfusiones = false;
-            transfusiones = rbtnTransfusiones.Checked ? true : false;
-            string alergias = txtAlergias.Text;
-
-            string sistemaNerviosoCentral = txtSNerviosoCentral.Text;
-            string sistemaCardiovascular = txtSCardiovascular.Text;
-            string sistemaRespiratorio = txtSRespiratorio.Text;
-            string sistemaGastrointestinal = txtSGastrointestinal.Text;
-            string sistemaEndocrinico = txtSEndocrino.Text;
-            string sistemaGenitourinario = txtSGenitoUrinario.Text;
-            string sistemaMusculoesqueletico = txtSMusculoEsqueletico.Text;
-            string organoSentidos = txtOrganoSentidos.Text;
-            string ginecoObstetricos = txtGinecoObstetrico.Text;
-            string grupoSanguineo = cboxGrupoSanguineo.Text;
-
-
-            string estudiosLaboratorio = txtEstudiosLaboratorio.Text;
-            string estudiosRadiologicos = txtEstudiosRadiologicos.Text;
-            string otros = txtOtros.Text;
-
-
-            string constitucion_Fisica = cboxConstitucionFisica.Text;
-            double talla = Convert.ToDouble(txtTalla.Text);
-            double peso = Convert.ToDouble(txtPeso.Text);
-            double imc = Convert.ToDouble(txtIMC.Text);
-            string grado = cboxGrado.Text;
-            double fc = Convert.ToDouble(txtFC.Text);
-            double fr = Convert.ToDouble(txtFR.Text);
-            int pulso = Convert.ToInt32(txtPulso.Text);
-            string ta = txtTA.Text;
-            double temperatura = Convert.ToDouble(txtTemperatura.Text);
-
-
-            string craneo = txtCraneo.Text;
-            string ojos = txtOjos.Text;
-            string oidos = txtOidos.Text;
-            string nariz = txtNariz.Text;
-            string boca = txtBoca.Text;
-            string cuello = txtCuello.Text;
-            string torax = txtTorax.Text;
-            string abdomen = txtAbdomen.Text;
-            string genitourinario = txtGenitourinario.Text;
-            string musculoEsqueletico = txtMusculoEsqueletico.Text;
-            string neurologico = txtNeurologico.Text;
-
-            
-
-            if (fechaApertura < haceUnMes || fechaApertura > ahora)
+            try
             {
-                RJMessageBox.Show("La fecha de seguimiento debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+                DateTime ahora = DateTime.Now;
+                DateTime haceUnMes = ahora.AddMonths(-1);
+
+                string numExpediente = txtNoExpediente.Text;
+                int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
+                string numNomina = txtNumeroNomina.Text;
+                DateTime fechaApertura = dtpFechaApertura.Value;
+                string heredoFamiliar = txtHeredoFamiliar.Text;
+                string diagnostico = txtDiagnostico.Text;
 
 
-            ExpedientesCE expediente = new ExpedientesCE { 
-                NumExpediente = numExpediente,
-                IdEmpleado = idEmpleado,
-                NumNomina = numNomina,
-                FechaApertura = fechaApertura,
-                HeredoFamiliar = heredoFamiliar,
-                DiagnosticoInicial = diagnostico,
+                string casa = txtCasa.Text;
+                string alimentacion = txtAlimentacion.Text;
+                string animales = txtAnimales.Text;
+                string inmunizaciones = txtInmunizaciones.Text;
+                string toxicomanias = txtToxicomanias.Text;
+                string trabajoActividadesAnteriores = txtTrabajosYActAnteriores.Text;
+                string deportes = txtDeportesRecreacion.Text;
+                string entornoFamiliar = txtEntornoFamiliar.Text;
+                string escolaridad = txtEscolaridad.Text;
 
-                Casa = casa,
-                Alimentacion = alimentacion,
-                Animales = animales,
-                Inmunizaciones = inmunizaciones,
-                Toxicomanias = toxicomanias,
-                TrabajoActividadesAnteriores = trabajoActividadesAnteriores,
-                Deportes = deportes,
-                EntornoFamiliar = entornoFamiliar,
-                Escolaridad = escolaridad,
+                Boolean hospitalizaciones = false;
+                hospitalizaciones = rbtnHozpitalizaciones.Checked ? true : false;
+                Boolean cirugias = false;
+                cirugias = rbtnCirugias.Checked ? true : false;
+                Boolean transfusiones = false;
+                transfusiones = rbtnTransfusiones.Checked ? true : false;
+                string alergias = txtAlergias.Text;
 
-                Hospitalizaciones = hospitalizaciones,
-                Cirugias = cirugias,
-                Transfusiones = transfusiones,
-                Alergias = alergias,
-
-                SistemaNerviosoCentral = sistemaNerviosoCentral,
-                SistemaCardiovascular = sistemaCardiovascular,
-                SistemaRespiratorio = sistemaRespiratorio,
-                SistemaGastrointestinal = sistemaGastrointestinal,
-                SistemaEndocrinico = sistemaEndocrinico,
-                SistemaGenitourinario = sistemaGenitourinario,
-                SistemaMusculoesqueletico = sistemaMusculoesqueletico,
-                OrganoSentidos = organoSentidos,
-                GinecoObstetricos = ginecoObstetricos,
-                GrupoSanguineo = grupoSanguineo,
+                string sistemaNerviosoCentral = txtSNerviosoCentral.Text;
+                string sistemaCardiovascular = txtSCardiovascular.Text;
+                string sistemaRespiratorio = txtSRespiratorio.Text;
+                string sistemaGastrointestinal = txtSGastrointestinal.Text;
+                string sistemaEndocrinico = txtSEndocrino.Text;
+                string sistemaGenitourinario = txtSGenitoUrinario.Text;
+                string sistemaMusculoesqueletico = txtSMusculoEsqueletico.Text;
+                string organoSentidos = txtOrganoSentidos.Text;
+                string ginecoObstetricos = txtGinecoObstetrico.Text;
+                string grupoSanguineo = cboxGrupoSanguineo.Text;
 
 
-                EstudiosLaboratorio = estudiosLaboratorio,
-                EstudiosRadiologicos = estudiosRadiologicos,
-                Otros = otros,
+                string estudiosLaboratorio = txtEstudiosLaboratorio.Text;
+                string estudiosRadiologicos = txtEstudiosRadiologicos.Text;
+                string otros = txtOtros.Text;
 
 
-                Constitucion_Fisica = constitucion_Fisica,
-                Talla = talla,
-                Peso = peso,
-                IMC = imc,
-                Grado = grado,
-                Fc = fc,
-                Fr = fr,
-                Pulso = pulso,
-                Ta = ta,
-                Temperatura = temperatura,
+                string constitucion_Fisica = cboxConstitucionFisica.Text;
+                double talla = Convert.ToDouble(txtTalla.Text);
+                double peso = Convert.ToDouble(txtPeso.Text);
+                double imc = Convert.ToDouble(txtIMC.Text);
+                string grado = cboxGrado.Text;
+                double fc = Convert.ToDouble(txtFC.Text);
+                double fr = Convert.ToDouble(txtFR.Text);
+                int pulso = Convert.ToInt32(txtPulso.Text);
+                string ta = txtTA.Text;
+                double temperatura = Convert.ToDouble(txtTemperatura.Text);
 
 
-                Craneo = craneo,
-                Ojos = ojos,
-                Oidos = oidos,
-                Nariz = nariz,
-                Boca = boca,
-                Cuello = cuello,
-                Torax = torax,
-                Abdomen = abdomen,
-                Genitourinario = genitourinario,
-                MusculoEsqueletico = musculoEsqueletico,
-                Neurologico = neurologico,
-
-                UltimaActualizacion = fechaApertura
-            };
-
-            int registro = expedientesCN.insertarExpediente(expediente);
-            if (registro > 0)
-            {
-                MostrarPanel(pDatosGenerales, btnDatosGenerales);
-                var result = RJMessageBox.Show(" El Reporte de Accidente se ha guardado correctamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string craneo = txtCraneo.Text;
+                string ojos = txtOjos.Text;
+                string oidos = txtOidos.Text;
+                string nariz = txtNariz.Text;
+                string boca = txtBoca.Text;
+                string cuello = txtCuello.Text;
+                string torax = txtTorax.Text;
+                string abdomen = txtAbdomen.Text;
+                string genitourinario = txtGenitourinario.Text;
+                string musculoEsqueletico = txtMusculoEsqueletico.Text;
+                string neurologico = txtNeurologico.Text;
 
 
-                // Llamada al método para limpiar todos los controles en el formulario
-                //LimpiarControles(this);
-                txtNumeroNomina.Focus();
-                limiarFormulario();
-                //txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
-            }
-            else
-            {
-                var result = RJMessageBox.Show(" No se ha podido grabar el Reporte de Accidente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                if (fechaApertura < haceUnMes || fechaApertura > ahora)
+                {
+                    RJMessageBox.Show("La fecha de seguimiento debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+
+                ExpedientesCE expediente = new ExpedientesCE
+                {
+                    NumExpediente = numExpediente,
+                    IdEmpleado = idEmpleado,
+                    NumNomina = numNomina,
+                    FechaApertura = fechaApertura,
+                    HeredoFamiliar = heredoFamiliar,
+                    DiagnosticoInicial = diagnostico,
+
+                    Casa = casa,
+                    Alimentacion = alimentacion,
+                    Animales = animales,
+                    Inmunizaciones = inmunizaciones,
+                    Toxicomanias = toxicomanias,
+                    TrabajoActividadesAnteriores = trabajoActividadesAnteriores,
+                    Deportes = deportes,
+                    EntornoFamiliar = entornoFamiliar,
+                    Escolaridad = escolaridad,
+
+                    Hospitalizaciones = hospitalizaciones,
+                    Cirugias = cirugias,
+                    Transfusiones = transfusiones,
+                    Alergias = alergias,
+
+                    SistemaNerviosoCentral = sistemaNerviosoCentral,
+                    SistemaCardiovascular = sistemaCardiovascular,
+                    SistemaRespiratorio = sistemaRespiratorio,
+                    SistemaGastrointestinal = sistemaGastrointestinal,
+                    SistemaEndocrinico = sistemaEndocrinico,
+                    SistemaGenitourinario = sistemaGenitourinario,
+                    SistemaMusculoesqueletico = sistemaMusculoesqueletico,
+                    OrganoSentidos = organoSentidos,
+                    GinecoObstetricos = ginecoObstetricos,
+                    GrupoSanguineo = grupoSanguineo,
+
+
+                    EstudiosLaboratorio = estudiosLaboratorio,
+                    EstudiosRadiologicos = estudiosRadiologicos,
+                    Otros = otros,
+
+
+                    Constitucion_Fisica = constitucion_Fisica,
+                    Talla = talla,
+                    Peso = peso,
+                    IMC = imc,
+                    Grado = grado,
+                    Fc = fc,
+                    Fr = fr,
+                    Pulso = pulso,
+                    Ta = ta,
+                    Temperatura = temperatura,
+
+
+                    Craneo = craneo,
+                    Ojos = ojos,
+                    Oidos = oidos,
+                    Nariz = nariz,
+                    Boca = boca,
+                    Cuello = cuello,
+                    Torax = torax,
+                    Abdomen = abdomen,
+                    Genitourinario = genitourinario,
+                    MusculoEsqueletico = musculoEsqueletico,
+                    Neurologico = neurologico,
+
+                    UltimaActualizacion = fechaApertura
+                };
+
+                int registro = expedientesCN.insertarExpediente(expediente);
+                if (registro > 0)
+                {
+                    MostrarPanel(pDatosGenerales, btnDatosGenerales);
+                    var result = RJMessageBox.Show(" El expediente médico se ha guardado correctamente.", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                    // Llamada al método para limpiar todos los controles en el formulario
+                    //LimpiarControles(this);
+                    txtNumeroNomina.Focus();
+                    limiarFormulario();
+                    //txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
+                }
+                else
+                {
+                    var result = RJMessageBox.Show(" No se ha podido grabar el expediente médico.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            } catch (Exception ex)
+                {
+                RJMessageBox.Show(" No se ha podido grabar el expediente médico.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public void limiarFormulario()
