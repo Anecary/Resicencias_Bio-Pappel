@@ -302,7 +302,7 @@ namespace CapaDatos
                                 string domicilio_ciudad = reader.GetString("Ciudad");
                                 string domicilio_colonia = reader.GetString("Colonia");
                                 string domicilio_calle = reader.GetString("Calle");
-                                string domicilio_numero = reader.GetInt32("Numero").ToString();
+                                string domicilio_numero = reader.GetString("Numero").ToString();
                                 string telefono = reader.GetString("Telefono");
                                 char turno = reader.GetString("Turno")[0];
                                 DateTime fecha = reader.GetDateTime("Fecha");
