@@ -96,7 +96,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 }
             }
         }
-
+        //para creacion de un nuevo accidente, se debe crear otro para consulta donde resiva parametro 
         public DataTable obtenerDatosRevision()
         {
             DataTable tabla = new DataTable();
@@ -108,7 +108,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     connection.Open();
 
                     // Consulta SQL para obtener todos los datos de la tabla revisiones
-                    string consulta = "SELECT codigo, fecha_emision, fecha_revision, no_revision FROM revisiones WHERE idRevision=1;;";
+                    string consulta = "SELECT codigo, fecha_emision, fecha_revision, no_revision FROM revisiones WHERE idRevision = (  SELECT MAX(idRevision)  FROM revisiones);;";
 
                     using (MySqlCommand comando = new MySqlCommand(consulta, connection))
                     {

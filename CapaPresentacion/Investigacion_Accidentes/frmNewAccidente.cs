@@ -264,10 +264,17 @@ namespace CapaPresentacion.Investigacion_Accidentes
             cargarRiesgos();
             cargarActosInseguros();
             cargarCondicionesInseguras();
-
+            
             panelActual = pDatosGenerales;
             botonActual = btnDatosGenerales;
 
+
+            //cargar revisiones
+            var datos = accidentesCN.obtenerDatosRevision();
+            label9.Text = datos.codigo.ToString();
+            label7.Text = datos.fechaEmision.ToString();
+            label8.Text = datos.fechaRevision.ToString();
+            label6.Text = datos.noRevision.ToString();
         }
 
         public void cargarRiesgos()

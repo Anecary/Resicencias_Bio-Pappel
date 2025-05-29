@@ -212,5 +212,19 @@ namespace CapaNegocios
 
             return dtReporte;
         }
+
+        public (string codigo, string fechaEmision, string fechaRevision, string noRevision) obtenerDatosRevision()
+        {
+            var datos = accidentesDAO.obtenerDatosRevision();
+
+            string codigo = datos.codigo;
+            string fechaEmision = datos.fechaEmision;
+            string fechaRevision = datos.fechaRevision;
+            string noRevision = datos.noRevision;
+
+            // Por ejemplo, cambiar valores o validarlos aquí
+
+            return (codigo, fechaEmision, fechaRevision, noRevision);
+        }
     }
 }

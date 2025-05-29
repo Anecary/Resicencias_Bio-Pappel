@@ -715,5 +715,42 @@ namespace CapaDatos
 
             return dt; // Retornar el DataTable con los datos
         }
+
+        public (string codigo, string fechaEmision, string fechaRevision, string noRevision) obtenerDatosRevision()
+        {
+            using (MySqlConnection conn = objConexion.Conecta())
+            {
+                try
+                {
+                    conn.Open();
+
+                    string consulta = @"SELECT codigo, fecha_emision, fecha_revision, no_revision 
+                                FROM revisiones 
+                                WHERE idRevision = (SELECT MAX(idRevision) FROM revisiones);";
+
+                    using (MySqlCommand comando = new MySqlCommand(consulta, conn))
+                    using (MySqlDataReader reader = comando.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string codigo = reader["codigo"].ToString();
+                            string fechaEmision = Convert.ToDateTime(reader["fecha_emision"]).ToString("yyyy-MM-dd");
+                            string fechaRevision = Convert.ToDateTime(reader["fecha_revision"]).ToString("yyyy-MM-dd");
+                            string noRevision = reader["no_revision"].ToString();
+
+                            return (codigo, fechaEmision, fechaRevision, noRevision);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Aquí puedes registrar el error si quieres
+                }
+            }
+
+            // Devuelve valores vacíos si no hay datos
+            return ("", "", "", "");
+        }
+
     }
 }

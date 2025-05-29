@@ -65,13 +65,13 @@ namespace CapaPresentacion.Reportes
                 case "Accidentes por Incapacidad Departamento":
                     obtener_IncapDepto();
                     break;
-                case "Accidentes por Condicion":
+                case "Accidentes por Condición":
                     obtener_Condici();
                     break;
                 case "Accidentes por Edad":
                     obtener_Edad();
                     break;
-                case "Accidentes Debido A":
+                case "Accidentes debido A":
                     obtener_Debido();
                     break;
                 case "Accidentes por clasificación":
