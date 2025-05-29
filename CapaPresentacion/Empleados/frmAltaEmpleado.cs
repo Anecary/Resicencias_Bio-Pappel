@@ -21,6 +21,7 @@ namespace CapaPresentacion.Empleados
     {
         private EmpleadosCN negocios = new EmpleadosCN();
         private PuestosCN negociosP = new PuestosCN();
+        private ExpedientesCN expedientesCN = new ExpedientesCN();
         private MaterialSkinManager materialSkinManager;
         public frmAltaEmpleado()
         {
@@ -91,7 +92,10 @@ namespace CapaPresentacion.Empleados
                 txtIdPuesto.Text = idPuesto.ToString();
             }
         }
-
+        static string ObtenerNomenclatura(string nombre)
+        {
+            return string.Concat(nombre.Split(' ').Select(palabra => palabra[0]));
+        }
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             try
@@ -105,6 +109,30 @@ namespace CapaPresentacion.Empleados
                     return; // Detiene la ejecución si hay campos vacíos
                 }
                 string nss = txtNssBusqueda.Text;
+
+                DataTable verificacion = expedientesCN.verificarExpedienteExisteNSS(nss).Tables["ExpedienteExisteNSS"];
+                if (verificacion.Rows.Count > 0)
+                {
+                    DataRow dr = verificacion.Rows[0];
+                    int idEmpleado = Convert.ToInt32(dr["idEmpleado"]);
+                    
+                    // Ya existe un expediente para este número de nómina
+                    RJMessageBox.Show("Este empleado ya tiene un expediente registrado. Se actualizara su Número de Expediente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    string numeroExpediente = ObtenerNomenclatura(txtNombreCompleto.Text) + "-" + txtNoNomina.Text;
+
+                    ExpedientesCE expedientes = new ExpedientesCE
+                    {
+                        IdEmpleado = idEmpleado,
+                        NumExpediente = numeroExpediente,
+                        NumNomina = txtNoNomina.Text
+                    };
+                    
+                    int actualizarexpediente = expedientesCN.actualizarNumExpediente(expedientes);
+                    
+
+                }
+
                 string numero_nomina = txtNoNomina.Text.Trim();
                 DateTime fecha_ingreso_puesto = dtpFechaIngreso.Value;
                 DateTime fecha_ingreso_empresa = dtpFechaIngreso.Value;
@@ -122,7 +150,7 @@ namespace CapaPresentacion.Empleados
                 };
 
                 negocios.altaEmpleado(empleado);
-                RJMessageBox.Show("Empleado insertado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("El empleado ha sido dado de Alta correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LimpiarControles();
 

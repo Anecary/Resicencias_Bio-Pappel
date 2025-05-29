@@ -109,7 +109,7 @@ namespace CapaPresentacion.Empleados
                 {
                     DataRow dr = t.Rows[0];
                     int idEmpleado = Convert.ToInt32(dr["idEmpleado"]);
-                    RJMessageBox.Show(idEmpleado.ToString());
+                    //RJMessageBox.Show(idEmpleado.ToString());
 
                     var result = RJMessageBox.Show(
                          "El colaborador con el NSS " + txtNss.Text + " ya se encuentra registrado en el sistema.\n\n" +
@@ -202,8 +202,9 @@ namespace CapaPresentacion.Empleados
             txtApellidoP.Clear();
             txtApellidoM.Clear();
             dtpFechaNacimiento.Value = DateTime.Now;
-            cmbSexo.SelectedIndex = -1;
-            cmbEstadoCivil.SelectedIndex = -1;
+            cmbSexo.SelectedIndex = 1;
+            cmbEstadoCivil.SelectedIndex = 1;
+            cboEstado.SelectedIndex = 1;
             txtNss.Clear();
             txtRFC.Clear();
             txtCalle.Clear();
