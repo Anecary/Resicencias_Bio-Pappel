@@ -172,9 +172,19 @@ namespace CapaPresentacion.Expediente
         }
         private void btnBuscarEmpleado_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtNumeroNomina.Text))
+            string numeroNomina = txtNumeroNomina.Text;
+            if (!string.IsNullOrWhiteSpace(numeroNomina))
             {
-                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
+                DataTable verificacion = expedientesCN.verificarExpedienteExiste(numeroNomina).Tables["ExpedienteExiste"];
+                if (verificacion.Rows.Count > 0)
+                {
+                    // Ya existe un expediente para este número de nómina
+                    RJMessageBox.Show("Este empleado ya tiene un expediente registrado.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtNumeroNomina.Text = "";
+                    txtNumeroNomina.Focus();
+                    return;
+                }
+                DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(numeroNomina).Tables["ConsultaEmpleado"];
 
                 if (t.Rows.Count > 0)
                 {
@@ -429,6 +439,18 @@ namespace CapaPresentacion.Expediente
         public void limiarFormulario()
         {
             // Limpiar TextBox
+            txtNombreEmpleado.Text = "";
+            txtIdEmpleado.Text = "";
+            txtEdad.Text = "";
+            txtSexo.Text = "";
+            txtEstadoCivil.Text = "";
+            txtNSS.Text = "";
+            txtTelefono.Text = "";
+            txtDomicilio.Text = "";
+            txtFechaIngreso.Text = "";
+            txtPuesto.Text = "";
+            txtNoExpediente.Text = "";
+
             // Limpiar TextBoxes con .Text = ""
             txtNoExpediente.Text = "";
             txtIdEmpleado.Text = "";

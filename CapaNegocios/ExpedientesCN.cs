@@ -30,5 +30,17 @@ namespace CapaNegocios
         {
             return expedientesDAO.ActualizarExpediente(expediente);
         }
+        public DataSet verificarExpedienteExiste(string numNomina)
+        {
+            return expedientesDAO.verificarExpedienteExiste(numNomina);
+        }
+        public DataSet verificarExpedienteExisteNSS(string nss)
+        {
+            return expedientesDAO.verificarExpedienteExisteNSS(nss);
+        }
+        public int actualizarNumExpediente(ExpedientesCE expedientes)
+        {
+            return expedientesDAO.actualizarNumeroExpediente(expedientes);
+        }
     }
 }

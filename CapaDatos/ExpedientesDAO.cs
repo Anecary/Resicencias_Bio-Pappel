@@ -227,5 +227,66 @@ namespace CapaDatos
                 conn.Close();
             }
         }
+        public DataSet verificarExpedienteExiste(string numExpediente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("VerificarExpedienteExiste2", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_numExpediente = new MySqlParameter("@p_numNomina", MySqlDbType.VarChar);
+                p_numExpediente.Direction = ParameterDirection.Input;
+                p_numExpediente.Value = numExpediente;
+                adapter.SelectCommand.Parameters.Add(p_numExpediente);
+
+                adapter.Fill(data, "ExpedienteExiste");
+                return data;
+            }
+        }
+        public DataSet verificarExpedienteExisteNSS(string numExpediente)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+                adapter = new MySqlDataAdapter("VerificarExpedienteExisteNss", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_numExpediente = new MySqlParameter("@p_nss", MySqlDbType.VarChar);
+                p_numExpediente.Direction = ParameterDirection.Input;
+                p_numExpediente.Value = numExpediente;
+                adapter.SelectCommand.Parameters.Add(p_numExpediente);
+
+                adapter.Fill(data, "ExpedienteExisteNSS");
+                return data;
+            }
+        }
+        public int actualizarNumeroExpediente(ExpedientesCE expedientes)
+        {
+            try
+            {
+                conn = objConexion.Conecta();
+                MySqlCommand cmd = new MySqlCommand("ActualizarNumeroExpediente", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                //Insercion de Datos Generales
+                cmd.Parameters.AddWithValue("@p_idEmpleado", expedientes.IdEmpleado);
+                cmd.Parameters.AddWithValue("@p_numExpediente", expedientes.NumExpediente);
+                cmd.Parameters.AddWithValue("@p_numNomina", expedientes.NumNomina);
+
+
+                conn.Open();
+                int filasAfectadas = cmd.ExecuteNonQuery();
+
+                return filasAfectadas;
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
