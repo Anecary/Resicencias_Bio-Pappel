@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRevisiones));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pContenedor = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.pPuestos = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCodigo = new CapaPresentacion.TextPersonalizado();
-            this.txtNumRevision = new CapaPresentacion.TextPersonalizado();
-            this.btnGuardar = new CapaPresentacion.BotonPersonalizado();
+            this.label66 = new System.Windows.Forms.Label();
             this.dgvRevisiones = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dtpFechaIngreso = new CapaPresentacion.selectorFechaPersonalizado();
             this.selectorFechaPersonalizado1 = new CapaPresentacion.selectorFechaPersonalizado();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dtpFechaIngreso = new CapaPresentacion.selectorFechaPersonalizado();
+            this.txtCodigo = new CapaPresentacion.TextPersonalizado();
+            this.txtNumRevision = new CapaPresentacion.TextPersonalizado();
+            this.btnGuardar = new CapaPresentacion.BotonPersonalizado();
             this.pContenedor.SuspendLayout();
             this.pPuestos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRevisiones)).BeginInit();
@@ -68,6 +68,17 @@
             this.pContenedor.Size = new System.Drawing.Size(934, 532);
             this.pContenedor.TabIndex = 10;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(5, 661);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.TabIndex = 153;
+            this.label3.Text = "Id. Puesto:";
+            // 
             // pPuestos
             // 
             this.pPuestos.Controls.Add(this.label5);
@@ -85,6 +96,28 @@
             this.pPuestos.Size = new System.Drawing.Size(886, 602);
             this.pPuestos.TabIndex = 34;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label5.Location = new System.Drawing.Point(492, 111);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(137, 16);
+            this.label5.TabIndex = 166;
+            this.label5.Text = "Fecha de Revisión";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label4.Location = new System.Drawing.Point(50, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 16);
+            this.label4.TabIndex = 165;
+            this.label4.Text = "Fecha de Emisión";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -96,104 +129,49 @@
             this.label2.TabIndex = 154;
             this.label2.Text = "Código";
             // 
-            // txtCodigo
+            // label66
             // 
-            this.txtCodigo.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCodigo.BorderColor = System.Drawing.Color.Gray;
-            this.txtCodigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtCodigo.BorderRadius = 12;
-            this.txtCodigo.BorderSize = 2;
-            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCodigo.Location = new System.Drawing.Point(492, 37);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCodigo.MaxLength = 30;
-            this.txtCodigo.Multiline = false;
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCodigo.PasswordChar = false;
-            this.txtCodigo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCodigo.PlaceholderText = "";
-            this.txtCodigo.Size = new System.Drawing.Size(307, 35);
-            this.txtCodigo.TabIndex = 153;
-            this.txtCodigo.UnderlinedStyle = true;
-            // 
-            // txtNumRevision
-            // 
-            this.txtNumRevision.BackColor = System.Drawing.Color.White;
-            this.txtNumRevision.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumRevision.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumRevision.BorderRadius = 12;
-            this.txtNumRevision.BorderSize = 2;
-            this.txtNumRevision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumRevision.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumRevision.Location = new System.Drawing.Point(46, 38);
-            this.txtNumRevision.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumRevision.MaxLength = 32767;
-            this.txtNumRevision.Multiline = false;
-            this.txtNumRevision.Name = "txtNumRevision";
-            this.txtNumRevision.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumRevision.PasswordChar = false;
-            this.txtNumRevision.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumRevision.PlaceholderText = "";
-            this.txtNumRevision.Size = new System.Drawing.Size(328, 35);
-            this.txtNumRevision.TabIndex = 151;
-            this.txtNumRevision.UnderlinedStyle = true;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGuardar.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnGuardar.BorderRadius = 20;
-            this.btnGuardar.BorderSize = 0;
-            this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(337, 200);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnGuardar.Size = new System.Drawing.Size(184, 53);
-            this.btnGuardar.TabIndex = 149;
-            this.btnGuardar.Text = " Guardar";
-            this.btnGuardar.TextColor = System.Drawing.Color.White;
-            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label66.Location = new System.Drawing.Point(50, 22);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(126, 16);
+            this.label66.TabIndex = 152;
+            this.label66.Text = "Número Revisión";
             // 
             // dgvRevisiones
             // 
             this.dgvRevisiones.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvRevisiones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvRevisiones.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvRevisiones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRevisiones.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dgvRevisiones.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRevisiones.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvRevisiones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRevisiones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRevisiones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvRevisiones.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRevisiones.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRevisiones.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvRevisiones.EnableHeadersVisualStyles = false;
             this.dgvRevisiones.Location = new System.Drawing.Point(19, 277);
             this.dgvRevisiones.Name = "dgvRevisiones";
@@ -245,27 +223,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Revisiones";
             // 
-            // label66
+            // selectorFechaPersonalizado1
             // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label66.Location = new System.Drawing.Point(50, 22);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(126, 16);
-            this.label66.TabIndex = 152;
-            this.label66.Text = "Número Revisión";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(5, 661);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 16);
-            this.label3.TabIndex = 153;
-            this.label3.Text = "Id. Puesto:";
+            this.selectorFechaPersonalizado1.BorderColor = System.Drawing.Color.DarkCyan;
+            this.selectorFechaPersonalizado1.BorderSize = 1;
+            this.selectorFechaPersonalizado1.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
+            this.selectorFechaPersonalizado1.CalendarTitleBackColor = System.Drawing.Color.DarkCyan;
+            this.selectorFechaPersonalizado1.Enabled = false;
+            this.selectorFechaPersonalizado1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.selectorFechaPersonalizado1.Location = new System.Drawing.Point(495, 130);
+            this.selectorFechaPersonalizado1.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.selectorFechaPersonalizado1.MinimumSize = new System.Drawing.Size(4, 35);
+            this.selectorFechaPersonalizado1.Name = "selectorFechaPersonalizado1";
+            this.selectorFechaPersonalizado1.Size = new System.Drawing.Size(304, 35);
+            this.selectorFechaPersonalizado1.SkinColor = System.Drawing.Color.WhiteSmoke;
+            this.selectorFechaPersonalizado1.TabIndex = 164;
+            this.selectorFechaPersonalizado1.TextColor = System.Drawing.Color.DimGray;
             // 
             // dtpFechaIngreso
             // 
@@ -284,44 +257,72 @@
             this.dtpFechaIngreso.TabIndex = 163;
             this.dtpFechaIngreso.TextColor = System.Drawing.Color.DimGray;
             // 
-            // selectorFechaPersonalizado1
+            // txtCodigo
             // 
-            this.selectorFechaPersonalizado1.BorderColor = System.Drawing.Color.DarkCyan;
-            this.selectorFechaPersonalizado1.BorderSize = 1;
-            this.selectorFechaPersonalizado1.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
-            this.selectorFechaPersonalizado1.CalendarTitleBackColor = System.Drawing.Color.DarkCyan;
-            this.selectorFechaPersonalizado1.Enabled = false;
-            this.selectorFechaPersonalizado1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.selectorFechaPersonalizado1.Location = new System.Drawing.Point(495, 130);
-            this.selectorFechaPersonalizado1.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.selectorFechaPersonalizado1.MinimumSize = new System.Drawing.Size(4, 35);
-            this.selectorFechaPersonalizado1.Name = "selectorFechaPersonalizado1";
-            this.selectorFechaPersonalizado1.Size = new System.Drawing.Size(304, 35);
-            this.selectorFechaPersonalizado1.SkinColor = System.Drawing.Color.WhiteSmoke;
-            this.selectorFechaPersonalizado1.TabIndex = 164;
-            this.selectorFechaPersonalizado1.TextColor = System.Drawing.Color.DimGray;
+            this.txtCodigo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCodigo.BorderColor = System.Drawing.Color.Gray;
+            this.txtCodigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtCodigo.BorderRadius = 12;
+            this.txtCodigo.BorderSize = 2;
+            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCodigo.Location = new System.Drawing.Point(492, 37);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.MaxLength = 30;
+            this.txtCodigo.Multiline = false;
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCodigo.PasswordChar = false;
+            this.txtCodigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCodigo.PlaceholderText = "";
+            this.txtCodigo.Size = new System.Drawing.Size(307, 35);
+            this.txtCodigo.TabIndex = 153;
+            this.txtCodigo.UnderlinedStyle = true;
             // 
-            // label4
+            // txtNumRevision
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label4.Location = new System.Drawing.Point(50, 111);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 16);
-            this.label4.TabIndex = 165;
-            this.label4.Text = "Fecha de Emisión";
+            this.txtNumRevision.BackColor = System.Drawing.Color.White;
+            this.txtNumRevision.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumRevision.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumRevision.BorderRadius = 12;
+            this.txtNumRevision.BorderSize = 2;
+            this.txtNumRevision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumRevision.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumRevision.Location = new System.Drawing.Point(46, 38);
+            this.txtNumRevision.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumRevision.MaxLength = 3;
+            this.txtNumRevision.Multiline = false;
+            this.txtNumRevision.Name = "txtNumRevision";
+            this.txtNumRevision.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumRevision.PasswordChar = false;
+            this.txtNumRevision.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumRevision.PlaceholderText = "";
+            this.txtNumRevision.Size = new System.Drawing.Size(328, 35);
+            this.txtNumRevision.TabIndex = 151;
+            this.txtNumRevision.UnderlinedStyle = true;
             // 
-            // label5
+            // btnGuardar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label5.Location = new System.Drawing.Point(492, 111);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 16);
-            this.label5.TabIndex = 166;
-            this.label5.Text = "Fecha de Revisión";
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGuardar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGuardar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGuardar.BorderRadius = 20;
+            this.btnGuardar.BorderSize = 0;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(337, 200);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGuardar.Size = new System.Drawing.Size(184, 53);
+            this.btnGuardar.TabIndex = 149;
+            this.btnGuardar.Text = " Guardar";
+            this.btnGuardar.TextColor = System.Drawing.Color.White;
+            this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // frmRevisiones
             // 

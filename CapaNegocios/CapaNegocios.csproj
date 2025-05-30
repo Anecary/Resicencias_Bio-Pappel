@@ -51,6 +51,7 @@
     <Compile Include="HomeCN.cs" />
     <Compile Include="PuestosCN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RevisionesCN.cs" />
     <Compile Include="SeccionesCN.cs" />
   </ItemGroup>
   <ItemGroup>

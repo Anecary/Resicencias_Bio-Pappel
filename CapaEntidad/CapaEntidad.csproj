@@ -50,6 +50,7 @@
     <Compile Include="ExpedientesCE.cs" />
     <Compile Include="PuestosCE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RevisionesCE.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
