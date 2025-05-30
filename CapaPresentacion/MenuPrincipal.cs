@@ -544,5 +544,10 @@ namespace CapaPresentacion
             }
         }
 
+        private void btnRevisiones_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Utilerias.frmRevisiones());
+            hideSubMenu();
+        }
     }
 }
