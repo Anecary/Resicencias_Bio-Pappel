@@ -226,5 +226,19 @@ namespace CapaNegocios
 
             return (codigo, fechaEmision, fechaRevision, noRevision);
         }
+
+        public (string codigo, string fechaEmision, string fechaRevision) ObtenerDatosRevisionPorNumero(int noRevision)
+        {
+            var datos = accidentesDAO.ObtenerDatosRevisionPorNumero(noRevision);
+
+            string codigo = datos.codigo;
+            string fechaEmision = datos.fechaEmision;
+            string fechaRevision = datos.fechaRevision;
+  
+
+            // Por ejemplo, cambiar valores o validarlos aquí
+
+            return (codigo, fechaEmision, fechaRevision);
+        }
     }
 }

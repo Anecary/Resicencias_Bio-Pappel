@@ -20,10 +20,12 @@ namespace CapaPresentacion.Investigacion_Accidentes
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["Conection"].ConnectionString;
         int accidenteID;
-        public Llamar_reporte(int id)
+        int numeroRevision;
+        public Llamar_reporte(int id, int noR)
         {
             InitializeComponent();
             accidenteID = id;
+            numeroRevision = noR;
         }
 
         private void Llamar_reporte_Load(object sender, EventArgs e)
@@ -108,10 +110,12 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     connection.Open();
 
                     // Consulta SQL para obtener todos los datos de la tabla revisiones
-                    string consulta = "SELECT codigo, fecha_emision, fecha_revision, no_revision FROM revisiones WHERE idRevision = (  SELECT MAX(idRevision)  FROM revisiones);;";
+                    string consulta = "SELECT codigo, fecha_emision, fecha_revision, no_revision FROM revisiones WHERE no_revision = @noRevision";
+
 
                     using (MySqlCommand comando = new MySqlCommand(consulta, connection))
                     {
+                        comando.Parameters.AddWithValue("@noRevision", numeroRevision);
                         using (MySqlDataAdapter adaptador = new MySqlDataAdapter(comando))
                         {
                             // Llenar el DataTable con los datos obtenidos

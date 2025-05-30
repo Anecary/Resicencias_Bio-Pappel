@@ -370,6 +370,8 @@ namespace CapaDatos
             }
         }
 
+
+
         /*---+++++AREA DE REPORTES+++++----*/
         public DataTable ObtenerReporteAccidentes(int año)
         {
@@ -751,6 +753,46 @@ namespace CapaDatos
 
             // Devuelve valores vacíos si no hay datos
             return ("", "", "", "");
+        }
+
+        public (string codigo, string fechaEmision, string fechaRevision) ObtenerDatosRevisionPorNumero(int noRevision)
+        {
+            using (MySqlConnection conn = objConexion.Conecta())
+            {
+                try
+                {
+                    conn.Open();
+
+                    string consulta = @"SELECT codigo, fecha_emision, fecha_revision
+                                FROM revisiones 
+                                WHERE no_revision = @noRevision
+                                ORDER BY idRevision DESC
+                                LIMIT 1;"; // Por si hay varias revisiones con el mismo número
+
+                    using (MySqlCommand comando = new MySqlCommand(consulta, conn))
+                    {
+                        comando.Parameters.AddWithValue("@noRevision", noRevision);
+
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string codigo = reader["codigo"].ToString();
+                                string fechaEmision = Convert.ToDateTime(reader["fecha_emision"]).ToString("yyyy-MM-dd");
+                                string fechaRevision = Convert.ToDateTime(reader["fecha_revision"]).ToString("yyyy-MM-dd");
+
+                                return (codigo, fechaEmision, fechaRevision);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Aquí puedes registrar el error si lo deseas
+                }
+            }
+
+            return ("", "", "");
         }
 
     }

@@ -720,7 +720,9 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 txtNumeroNomina.Focus();
                 txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
 
-                var Llamar_reporte = new Llamar_reporte(0);
+                int numeroR = int.Parse(lblNuRevision.Text.ToString());
+
+                var Llamar_reporte = new Llamar_reporte(0, numeroR);
                 Llamar_reporte.Show();
             }
             else

@@ -309,6 +309,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 txtEquipoProteccionNecesario.Text = dr["equipo_Proteccion_Necesario"].ToString();
                 txtDescripcionAccidente.Text = dr["descripcion_accidente"].ToString();
                 txtCausaAccidente.Text = dr["causas_basicas_accidente"].ToString();
+                label6.Text = dr["numRevisionHistorico"].ToString();
+                var datos = accidentesCN.ObtenerDatosRevisionPorNumero(int.Parse(label6.Text.ToString()));
+                label8.Text = datos.fechaRevision.ToString();
+                label7.Text = datos.fechaEmision.ToString();
+                label9.Text = datos.codigo.ToString();
                 if (dr["trabajo_Realizado_Antes"] != DBNull.Value)
                 {
                     rbtnRealizoTrabajoAntesSi.Checked = Convert.ToBoolean(dr["trabajo_Realizado_Antes"]);
@@ -489,8 +494,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
         private void btnImprimirReporte_Click(object sender, EventArgs e)
         {
             int id = int.Parse(cboxFechasAccidentes.SelectedValue.ToString());
-
-            var Llamar_reporte = new Llamar_reporte(id);
+            int noR = int.Parse(label6.Text.ToString());
+            var Llamar_reporte = new Llamar_reporte(id, noR);
             Llamar_reporte.Show();
         }
     }
