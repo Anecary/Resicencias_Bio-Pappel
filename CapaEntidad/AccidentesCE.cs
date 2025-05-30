@@ -11,6 +11,7 @@ namespace CapaEntidad
         public int NoAccidente { get; set; }
         public string Condicion { get; set; }
         public DateTime FechaRegistro { get; set; }
+        public string NumRevisionHistorico { get; set; }
         public int IdEmpleado { get; set; }
         public string NumNomina { get; set; }
         public string Puesto { get; set; }

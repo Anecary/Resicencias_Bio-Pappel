@@ -31,6 +31,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_NoAccidente", accidente.NoAccidente);
                 cmd.Parameters.AddWithValue("@p_Condicion", accidente.Condicion);
                 cmd.Parameters.AddWithValue("@p_FechaRegistro", accidente.FechaRegistro);
+                cmd.Parameters.AddWithValue("@p_numRevisionHistorico", accidente.NumRevisionHistorico);
                 cmd.Parameters.AddWithValue("@p_idEmpleado", accidente.IdEmpleado);
                 cmd.Parameters.AddWithValue("@p_numNomina", accidente.NumNomina);
                 cmd.Parameters.AddWithValue("@p_Puesto", accidente.Puesto);

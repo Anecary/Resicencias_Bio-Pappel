@@ -274,7 +274,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             label9.Text = datos.codigo.ToString();
             label7.Text = datos.fechaEmision.ToString();
             label8.Text = datos.fechaRevision.ToString();
-            label6.Text = datos.noRevision.ToString();
+            lblNuRevision.Text = datos.noRevision.ToString();
         }
 
         public void cargarRiesgos()
@@ -703,7 +703,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 FechaHoraSeguimiento = fecha_Hora_Seguimiento,
                 EmpleadoSeguimiento = empleadoSeguimiento,
                 FechaHoraRecepcion = fecha_Hora_recepcion,
-                TestigosJson = testigosJson
+                TestigosJson = testigosJson,
+                NumRevisionHistorico = lblNuRevision.Text
             };
             int registro = accidentesCN.InsertarAccidente(accidente);
             if (registro > 0)
