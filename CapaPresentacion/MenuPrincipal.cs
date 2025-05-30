@@ -543,7 +543,6 @@ namespace CapaPresentacion
                                 "Archivo no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
         private void btnRevisiones_Click(object sender, EventArgs e)
         {
             openChildForm(new Utilerias.frmRevisiones());
