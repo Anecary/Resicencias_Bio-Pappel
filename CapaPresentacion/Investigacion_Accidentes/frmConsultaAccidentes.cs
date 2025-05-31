@@ -261,6 +261,10 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
                 txtCondicion.Text = dr["condicion"].ToString();
                 txtNumAccidente.Text = dr["accidente_no"].ToString();
+                txtEdad.Text = dr["edad"].ToString();
+                txtAntiguedad.Text = dr["antiguedad"].ToString();
+                txtTurno.Text = dr["turno"].ToString();
+                txtPuesto.Text = dr["puesto"].ToString();
                 if (dr["tiempo_extra"] != DBNull.Value)
                 {
                     rbtnTiempoExtra.Checked = Convert.ToBoolean(dr["tiempo_extra"]);

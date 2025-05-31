@@ -454,15 +454,27 @@ namespace CapaPresentacion.Investigacion_Accidentes
         }
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            // Validaciones previas antes de convertir a entero
-            if (string.IsNullOrWhiteSpace(txtNoAccidente.Text) ||
-                string.IsNullOrWhiteSpace(txtIdEmpleado.Text) ||
-                string.IsNullOrWhiteSpace(txtidNombreSST.Text))
-            {
-                var result = RJMessageBox.Show(" Existen campos vacíos, llénelos para continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            List<string> camposVacios = new List<string>();
 
-                return; // Detiene la ejecución si hay campos vacíos
+            if (string.IsNullOrWhiteSpace(txtNoAccidente.Text))
+                camposVacios.Add("Número de Accidente");
+
+            if (string.IsNullOrWhiteSpace(txtIdEmpleado.Text))
+                camposVacios.Add("ID Empleado");
+
+            if (string.IsNullOrWhiteSpace(txtidNombreSST.Text))
+                camposVacios.Add("ID Nombre SST");
+
+            if (string.IsNullOrWhiteSpace(txtTotalhrs.Text))
+                camposVacios.Add("Total de Horas Trabajadas");
+
+            if (camposVacios.Count > 0)
+            {
+                string mensaje = "Los siguientes campos están vacíos:\n- " + string.Join("\n- ", camposVacios);
+                RJMessageBox.Show(mensaje, "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
+
 
             DateTime ahora = DateTime.Now;
             DateTime haceUnMes = ahora.AddMonths(-1);
@@ -612,7 +624,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) ||
                 string.IsNullOrWhiteSpace(txtEquipoDanado.Text) ||
                 string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
-                string.IsNullOrWhiteSpace(txtOtro.Text) ||
                 string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) ||
                 string.IsNullOrWhiteSpace(txtTratamiento.Text) ||
                 string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
