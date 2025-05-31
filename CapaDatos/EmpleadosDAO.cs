@@ -430,5 +430,87 @@ namespace CapaDatos
                 }
             }
         }
+        public (string numnomina, string nombreCompleto, DateTime fecha_nac, char sexo, string nss, string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa, int idEmpleado) ConsultaEmpleadoNominaONss(string numnomina_nss)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("ObtenerEmpleadoPorNominaONSS", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("p_nss_nomina", numnomina_nss);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read()) // Si hay resultados
+                            {
+                                string numnomina = reader.GetString("numero_nomina");
+                                string nombreCompleto = reader.GetString("nombre_completo");
+                                DateTime fecha_nac = reader.GetDateTime("fecha_nacimiento");
+                                char sexo = reader.GetChar("sexo");
+                                string nss = reader.GetString("nss");
+                                string estado_civil = reader.GetString("estado_civil");
+                                string domicilio = reader.GetString("dom");
+                                string domicilio_CP = reader.GetString("domicilio_CP");
+                                string telefono = reader.GetString("telefono");
+                                char turno = reader.GetChar("turno");
+                                string puesto = reader.GetString("puesto");  // Reemplaza si "puesto" puede ser NULL
+                                int antiguedad = reader.GetInt32("antiguedad");
+                                DateTime fecha_ingreso_empresa = reader.GetDateTime("fecha_ingreso_empresa");
+                                int idEmpleado = reader.GetInt32("idEmpleado");
+
+                                return (numnomina, nombreCompleto, fecha_nac, sexo, nss, estado_civil, domicilio, domicilio_CP, telefono, turno, puesto, antiguedad, fecha_ingreso_empresa, idEmpleado);
+                            }
+                            else
+                            {
+                                throw new Exception("No se encontró un empleado con ese NSS.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al buscar el empleado: " + ex.Message);
+                }
+            }
+        }
+        public DataSet consultarInvAccidentePorEmpleado(int idempleado)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objconexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerInvestigacionAccidenteXEmpleado", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idempleado = new MySqlParameter("@p_idempleado", MySqlDbType.Int32);
+                p_idempleado.Direction = ParameterDirection.Input;
+                p_idempleado.Value = idempleado;
+                adapter.SelectCommand.Parameters.Add(p_idempleado);
+
+                adapter.Fill(data, "InvestigacionAccidentePorEmpleado");
+                return data;
+            }
+        }
+
+        public DataSet ObtenerTotalAccidentesXCondicion(int idEmpleado)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objconexion.Conecta();
+                adapter = new MySqlDataAdapter("ObtenerTotalAccidentesXCondicion", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                MySqlParameter p_idEmpleado = new MySqlParameter("@p_idEmpleado", MySqlDbType.Int32);
+                p_idEmpleado.Direction = ParameterDirection.Input;
+                p_idEmpleado.Value = idEmpleado;
+                adapter.SelectCommand.Parameters.Add(p_idEmpleado);
+
+                adapter.Fill(data, "AccidentesEmpleadoXCondicion");
+                return data;
+            }
+        }
     }
 }

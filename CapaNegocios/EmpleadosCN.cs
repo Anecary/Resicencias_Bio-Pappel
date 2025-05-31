@@ -166,5 +166,31 @@ namespace CapaNegocios
                 throw new Exception("Error en la capa de negocios: " + ex.Message);
             }
         }
+        public (string numnomina, string nombreCompleto, DateTime fecha_nac, char sexo, string nss, string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa, int idEmpleado) ConsultaEmpleadoNominaONss(string numnomina_nss)
+        {
+            if (string.IsNullOrWhiteSpace(numnomina_nss))
+            {
+                throw new Exception("El NSS no puede estar vacío.");
+            }
+
+            // Llama a la capa de datos para obtener los valores
+            var datos = empleadosDAO.ConsultaEmpleadoNominaONss(numnomina_nss);
+
+            if (string.IsNullOrEmpty(datos.nombreCompleto)) // Si no se encontró un empleado
+            {
+                throw new Exception("No se encontró un empleado con el NSS proporcionado.");
+            }
+
+            return datos;  // Devuelve los datos separados
+        }
+
+        public DataSet consultarInvAccidentePorEmpleado(int idempleado)
+        {
+            return empleadosDAO.consultarInvAccidentePorEmpleado(idempleado);
+        }
+        public DataSet ObtenerTotalAccidentesXCondicion(int idEmpleado)
+        { 
+            return empleadosDAO.ObtenerTotalAccidentesXCondicion(idEmpleado);
+        }
     }
 }

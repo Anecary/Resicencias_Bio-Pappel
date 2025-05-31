@@ -370,6 +370,8 @@ namespace CapaDatos
             }
         }
 
+       
+
 
 
         /*---+++++AREA DE REPORTES+++++----*/

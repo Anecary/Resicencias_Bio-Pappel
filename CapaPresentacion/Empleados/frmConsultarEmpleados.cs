@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace CapaPresentacion.Empleados
 {
@@ -38,6 +39,7 @@ namespace CapaPresentacion.Empleados
             panel4.Paint += new PaintEventHandler(Panel1_Paint);
             panel5.Paint += new PaintEventHandler(Panel1_Paint);
             panel6.Paint += new PaintEventHandler(Panel1_Paint);
+            panel7.Paint += new PaintEventHandler(Panel1_Paint);
 
 
         }
@@ -181,8 +183,8 @@ namespace CapaPresentacion.Empleados
                     return;
                 }
 
-                var datosEmpleado = negocios.consultaIndividual(numero_nomina);
-
+                var datosEmpleado = negocios.ConsultaEmpleadoNominaONss(numero_nomina);
+                txtnumeronomina.Text = datosEmpleado.numnomina;
                 txtNombre.Text = datosEmpleado.nombreCompleto;
                 txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
                 txtSexo.Text = datosEmpleado.sexo.ToString();
@@ -196,12 +198,54 @@ namespace CapaPresentacion.Empleados
                 txtAntiguedad.Text = datosEmpleado.antiguedad.ToString();
                 txtPuesto.Text = datosEmpleado.puesto.ToString();
                 txtFechaIngreso.Text = datosEmpleado.fecha_ingreso_empresa.ToString("yyyy-MM-dd");
+                txtIdEmpleado.Text = datosEmpleado.idEmpleado.ToString();
 
+                DataTable data = negocios.consultarInvAccidentePorEmpleado(Convert.ToInt32(txtIdEmpleado.Text)).Tables["InvestigacionAccidentePorEmpleado"];
+                dgvHistorico.DataSource = data;
+                dgvHistorico.Columns["idEmpleado"].Visible = false;
+
+                llenarChartAccidentesXCondicion(Convert.ToInt32(txtIdEmpleado.Text));
             }
             catch (Exception ex)
             {
 
             }
+
         }
+        private void llenarChartAccidentesXCondicion(int idEmpleado)
+        {
+            DataSet ds = negocios.ObtenerTotalAccidentesXCondicion(idEmpleado);
+
+            // Asegúrate que la tabla en el DataSet tenga el nombre correcto
+            // Si no lo estás nombrando, puedes usar Tables[0] directamente
+            DataTable tabla = ds.Tables["AccidentesEmpleadoXCondicion"];
+
+            chartAccidentesXCondicion.Series.Clear();
+            chartAccidentesXCondicion.Series.Add("Condiciones");
+
+            chartAccidentesXCondicion.Series["Condiciones"].ChartType = SeriesChartType.Column;
+            chartAccidentesXCondicion.Series["Condiciones"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in tabla.Rows)
+            {
+                string condicion = row["Condición"].ToString();
+                int cantidad = Convert.ToInt32(row["Cantidad de Accidentes"]);
+
+                chartAccidentesXCondicion.Series["Condiciones"].Points.AddXY(condicion, cantidad);
+                //chartAccidentesXCondicion.Series["Condiciones"].Color = Color.FromArgb(100, 180, 255); 
+
+            }
+
+            chartAccidentesXCondicion.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartAccidentesXCondicion.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartAccidentesXCondicion.Legends[0].Enabled = false;
+            chartAccidentesXCondicion.ChartAreas[0].AxisX.LabelStyle.Angle = -45;
+            chartAccidentesXCondicion.ChartAreas[0].AxisX.Interval = 1;
+            chartAccidentesXCondicion.ChartAreas[0].AxisX.IsLabelAutoFit = true;
+            chartAccidentesXCondicion.ChartAreas[0].AxisX.LabelStyle.Font = new Font("Arial", 8);
+            chartAccidentesXCondicion.Series["Condiciones"].Color = Color.DarkCyan; 
+
+        }
+
     }
 }
