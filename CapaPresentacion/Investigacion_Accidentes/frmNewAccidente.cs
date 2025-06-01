@@ -465,15 +465,15 @@ namespace CapaPresentacion.Investigacion_Accidentes
             if (string.IsNullOrWhiteSpace(txtidNombreSST.Text))
                 camposVacios.Add("ID Nombre SST");
 
-            if (string.IsNullOrWhiteSpace(txtTotalhrs.Text))
-                camposVacios.Add("Total de Horas Trabajadas");
-
             if (camposVacios.Count > 0)
             {
                 string mensaje = "Los siguientes campos están vacíos:\n- " + string.Join("\n- ", camposVacios);
                 RJMessageBox.Show(mensaje, "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            
+
+            // Luego usas valorParaGuardar para guardar en la base de datos o lo que necesites
 
 
             DateTime ahora = DateTime.Now;
@@ -492,7 +492,17 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
             Boolean tiempoExtra = false;
             tiempoExtra = rbtnHrsExtrasSi.Checked ? true : false;
-            string totalHrsExtras = txtTotalhrs.Text;
+            //string totalHrsExtras = txtTotalhrs.Text;
+            string hrsTrabajo;
+
+            if (string.IsNullOrWhiteSpace(txtTotalhrs.Text))
+            {
+                hrsTrabajo = txtTotalhrs.PlaceholderText;  // Usar el placeholder
+            }
+            else
+            {
+                hrsTrabajo = txtTotalhrs.Text;             // Usar el texto real
+            }
             DateTime DiaDescansoPrevio = dtpDiaDescanso.Value;
             string debidoA = cboxDebidoA.Text;
             string parteCuerpoAfectada = txtParteCuerpoAfectada.Text;
@@ -612,44 +622,88 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 return;
             }
 
-            bool hayCamposVacios =
-                string.IsNullOrWhiteSpace(cboxCondicion.Text) ||
-                string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text) ||
-                string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text) ||
-                string.IsNullOrWhiteSpace(txtTipoLesion.Text) ||
-                string.IsNullOrWhiteSpace(txtLugarAccidente.Text) ||
-                string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text) ||
-                string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text) ||
-                string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text) ||
-                string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text) ||
-                string.IsNullOrWhiteSpace(txtEquipoDanado.Text) ||
-                string.IsNullOrWhiteSpace(txtSustituiblePor.Text) ||
-                string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text) ||
-                string.IsNullOrWhiteSpace(txtTratamiento.Text) ||
-                string.IsNullOrWhiteSpace(txtIncapacidad.Text) ||
-                string.IsNullOrWhiteSpace(txtAccionesCorrectivas.Text) ||
-                string.IsNullOrWhiteSpace(txtquienCorrectivas.Text) ||
-                string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text) ||
-                string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text) ||
-                string.IsNullOrWhiteSpace(txtQuienPreventivas.Text) ||
-                string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text) ||
-                string.IsNullOrWhiteSpace(txtSeguimiento.Text);
+            List<string> otroscamposVacios = new List<string>();
 
+            if (string.IsNullOrWhiteSpace(cboxCondicion.Text))
+                otroscamposVacios.Add("Condición");
 
-            if (hayCamposVacios)
+            if (string.IsNullOrWhiteSpace(txtParteCuerpoAfectada.Text))
+                otroscamposVacios.Add("Parte del cuerpo afectada");
+
+            if (string.IsNullOrWhiteSpace(txtTrabajoDesempeñado.Text))
+                otroscamposVacios.Add("Trabajo desempeñado");
+
+            if (string.IsNullOrWhiteSpace(txtTipoLesion.Text))
+                otroscamposVacios.Add("Tipo de lesión");
+
+            if (string.IsNullOrWhiteSpace(txtLugarAccidente.Text))
+                otroscamposVacios.Add("Lugar del accidente");
+
+            if (string.IsNullOrWhiteSpace(txtObjCausanteLesion.Text))
+                otroscamposVacios.Add("Objeto causante de lesión");
+
+            if (string.IsNullOrWhiteSpace(txtEquipoProteccionUsado.Text))
+                otroscamposVacios.Add("Equipo de protección usado");
+
+            if (string.IsNullOrWhiteSpace(txtEquipoProteccionNecesario.Text))
+                otroscamposVacios.Add("Equipo de protección necesario");
+
+            if (string.IsNullOrWhiteSpace(txtDescripcionAccidente.Text))
+                otroscamposVacios.Add("Descripción del accidente");
+
+            if (string.IsNullOrWhiteSpace(txtEquipoDanado.Text))
+                otroscamposVacios.Add("Equipo dañado");
+
+            if (string.IsNullOrWhiteSpace(txtSustituiblePor.Text))
+                otroscamposVacios.Add("Sustituible por");
+
+            if (string.IsNullOrWhiteSpace(txtDiagnosticoFinal.Text))
+                otroscamposVacios.Add("Diagnóstico final");
+
+            if (string.IsNullOrWhiteSpace(txtTratamiento.Text))
+                otroscamposVacios.Add("Tratamiento");
+
+            if (string.IsNullOrWhiteSpace(txtIncapacidad.Text))
+                otroscamposVacios.Add("Incapacidad");
+
+            if (string.IsNullOrWhiteSpace(txtAccionesCorrectivas.Text))
+                otroscamposVacios.Add("Acciones correctivas");
+
+            if (string.IsNullOrWhiteSpace(txtquienCorrectivas.Text))
+                otroscamposVacios.Add("¿Quién realiza acciones correctivas?");
+
+            if (string.IsNullOrWhiteSpace(txtCuandoCorrectivas.Text))
+                otroscamposVacios.Add("¿Cuándo se realizan acciones correctivas?");
+
+            if (string.IsNullOrWhiteSpace(txtAccionesPreventivasProp.Text))
+                otroscamposVacios.Add("Acciones preventivas propuestas");
+
+            if (string.IsNullOrWhiteSpace(txtQuienPreventivas.Text))
+                otroscamposVacios.Add("¿Quién realiza acciones preventivas?");
+
+            if (string.IsNullOrWhiteSpace(txtCuandoPreventivas.Text))
+                otroscamposVacios.Add("¿Cuándo se realizan acciones preventivas?");
+
+            if (string.IsNullOrWhiteSpace(txtSeguimiento.Text))
+                otroscamposVacios.Add("Seguimiento");
+
+            if (otroscamposVacios.Count > 0)
             {
+                string mensaje = "Los siguientes campos están vacíos:\n- " + string.Join("\n- ", otroscamposVacios);
+                //RJMessageBox.Show(mensaje, "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 DialogResult result = RJMessageBox.Show(
-                    "Existen otros campos vacíos. ¿Deseas guardar de todos modos?",
+                    mensaje,
                     "Confirmar guardado",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning);
 
-                if (result == DialogResult.No)
+                if (result != DialogResult.Yes)
                 {
                     return;
                 }
-
             }
+
             AccidentesCE accidente = new AccidentesCE
             {
                 NoAccidente = noAccidente,
@@ -662,7 +716,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 Edad = edad,
                 Turno = turno,
                 TiempoExtra = tiempoExtra,
-                TotalHrsExtras = totalHrsExtras,
+                TotalHrsExtras = hrsTrabajo,
                 DiaDescansoPrevio = DiaDescansoPrevio,
                 DebidoA = debidoA,
                 ParteCuerpoAfectada = parteCuerpoAfectada,

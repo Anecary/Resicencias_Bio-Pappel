@@ -267,6 +267,42 @@ namespace CapaPresentacion.Expediente
         {
             try
             {
+                List<string> camposVacios = new List<string>();
+
+                if (string.IsNullOrWhiteSpace(txtNumeroNomina.Text))
+                    camposVacios.Add("Número de Nómina");
+
+                if (string.IsNullOrWhiteSpace(txtNoExpediente.Text))
+                    camposVacios.Add("Número de Expediente");
+
+                if (string.IsNullOrWhiteSpace(txtTalla.Text) || !double.TryParse(txtTalla.Text, out _))
+                    camposVacios.Add("Talla");
+
+                if (string.IsNullOrWhiteSpace(txtPeso.Text) || !double.TryParse(txtPeso.Text, out _))
+                    camposVacios.Add("Peso");
+
+                if (string.IsNullOrWhiteSpace(txtIMC.Text) || !double.TryParse(txtIMC.Text, out _))
+                    camposVacios.Add("IMC");
+
+                if (string.IsNullOrWhiteSpace(txtFC.Text) || !double.TryParse(txtFC.Text, out _))
+                    camposVacios.Add("Frecuencia Cardiaca (FC)");
+
+                if (string.IsNullOrWhiteSpace(txtFR.Text) || !double.TryParse(txtFR.Text, out _))
+                    camposVacios.Add("Frecuencia Respiratoria (FR)");
+
+                if (string.IsNullOrWhiteSpace(txtPulso.Text) || !int.TryParse(txtPulso.Text, out _))
+                    camposVacios.Add("Pulso");
+
+                if (string.IsNullOrWhiteSpace(txtTemperatura.Text) || !double.TryParse(txtTemperatura.Text, out _))
+                    camposVacios.Add("Temperatura");
+
+                if (camposVacios.Count > 0)
+                {
+                    string mensaje = "Los siguientes campos están vacíos o tienen un formato inválido:\n- " + string.Join("\n- ", camposVacios);
+                    RJMessageBox.Show(mensaje, "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 DateTime ahora = DateTime.Now;
                 DateTime haceUnMes = ahora.AddMonths(-1);
 

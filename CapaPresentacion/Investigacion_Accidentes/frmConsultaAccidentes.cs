@@ -442,13 +442,16 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 txtDiagnosticoFinal.Text = dr["diagnostico_final"].ToString();
                 txtTratamiento.Text = dr["tratamiento"].ToString();
                 txtincapacidad.Text = dr["incapacidad"].ToString();
-                txtFechaRecepcion.Text = Convert.ToDateTime(dr["fecha_Recepcion_Documento"]).ToString("dd/MMMM/yyyy");
-
-
-
-
+                if (dr["fecha_Recepcion_Documento"] != DBNull.Value && dr["fecha_Recepcion_Documento"] != null)
+                {
+                    txtFechaRecepcion.Text = Convert.ToDateTime(dr["fecha_Recepcion_Documento"]).ToString("dd/MMMM/yyyy");
+                }
+                else
+                {
+                    txtFechaRecepcion.Text = "";  
+                }
             }
-           
+
             dgvDetalleRiesgos.DataSource = accidentesCN.consultarDetalleInvAccidente_Riesgos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteRiesgos"];
             dgvDetalleActosInseguros.DataSource = accidentesCN.consultarDetalleInvAccidente_ActosInseguros(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteActosInseguros"];
             dgvDetalleCondicionesInseguras.DataSource = accidentesCN.consultarDetalleInvAccidente_CondicionesInseguras(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteCondicionesInseguras"];
