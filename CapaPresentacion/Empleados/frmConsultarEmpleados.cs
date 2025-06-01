@@ -1,4 +1,5 @@
 ﻿using CapaNegocios;
+using CapaPresentacion.Investigacion_Accidentes;
 using MaterialSkin;
 using System;
 using System.Collections.Generic;
@@ -203,6 +204,8 @@ namespace CapaPresentacion.Empleados
                 DataTable data = negocios.consultarInvAccidentePorEmpleado(Convert.ToInt32(txtIdEmpleado.Text)).Tables["InvestigacionAccidentePorEmpleado"];
                 dgvHistorico.DataSource = data;
                 dgvHistorico.Columns["idEmpleado"].Visible = false;
+                dgvHistorico.Columns["Id Accidente"].Visible = false;
+                dgvHistorico.Columns["numRevisionHistorico"].Visible = false;
 
                 llenarChartAccidentesXCondicion(Convert.ToInt32(txtIdEmpleado.Text));
             }
@@ -212,6 +215,28 @@ namespace CapaPresentacion.Empleados
             }
 
         }
+        private void dgvHistorico_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvHistorico.Rows[e.RowIndex];
+
+                // Obtener el idConsulta de la fila seleccionada
+                //string hola = Convert.ToString(fila.Cells["idConsulta"].Value);
+                //dgvHistorico.Columns["idEmpleado"].Visible = false;
+                
+                //int idEmpleado = Convert.ToInt32(dgvHistorico.Columns["idEmpleado"]);
+                //int noRevision = Convert.ToInt32(dgvHistorico.Columns["numRevisionHistorico"]);
+                int idEmpleado = Convert.ToInt32(dgvHistorico.Rows[e.RowIndex].Cells["idEmpleado"].Value);
+                int noRevision = Convert.ToInt32(dgvHistorico.Rows[e.RowIndex].Cells["numRevisionHistorico"].Value);
+                
+                //int noRevision = int.Parse(dgvHistorico.Columns["numRevisionHistorico"].ToString());
+                var Llamar_reporte = new Llamar_reporte(idEmpleado, noRevision);
+                Llamar_reporte.Show();
+            }
+        }
+
+
         private void llenarChartAccidentesXCondicion(int idEmpleado)
         {
             DataSet ds = negocios.ObtenerTotalAccidentesXCondicion(idEmpleado);
@@ -247,5 +272,6 @@ namespace CapaPresentacion.Empleados
 
         }
 
+        
     }
 }

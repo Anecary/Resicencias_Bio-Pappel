@@ -233,6 +233,7 @@ namespace CapaPresentacion.Nota_Medica
             this.btnRegresar = new CapaPresentacion.BotonPersonalizado();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
             this.pContenedorNotaMedica.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
@@ -280,7 +281,7 @@ namespace CapaPresentacion.Nota_Medica
             this.panel1.Controls.Add(this.pEstudiosParaclinicos);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 145);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(945, 495);
             this.panel1.TabIndex = 8;
@@ -288,12 +289,13 @@ namespace CapaPresentacion.Nota_Medica
             // pDatosGenerales
             // 
             this.pDatosGenerales.AutoScroll = true;
+            this.pDatosGenerales.Controls.Add(this.label87);
             this.pDatosGenerales.Controls.Add(this.panel3);
             this.pDatosGenerales.Controls.Add(this.panel4);
             this.pDatosGenerales.Location = new System.Drawing.Point(0, 0);
-            this.pDatosGenerales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pDatosGenerales.Margin = new System.Windows.Forms.Padding(2);
             this.pDatosGenerales.Name = "pDatosGenerales";
-            this.pDatosGenerales.Size = new System.Drawing.Size(945, 521);
+            this.pDatosGenerales.Size = new System.Drawing.Size(945, 500);
             this.pDatosGenerales.TabIndex = 136;
             // 
             // panel3
@@ -352,7 +354,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaIngreso.ForeColor = System.Drawing.Color.DimGray;
             this.txtFechaIngreso.Location = new System.Drawing.Point(446, 336);
-            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.txtFechaIngreso.MaxLength = 32767;
             this.txtFechaIngreso.Multiline = false;
             this.txtFechaIngreso.Name = "txtFechaIngreso";
@@ -386,7 +388,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
             this.txtPuesto.Location = new System.Drawing.Point(18, 336);
-            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
             this.txtPuesto.MaxLength = 32767;
             this.txtPuesto.Multiline = false;
             this.txtPuesto.Name = "txtPuesto";
@@ -420,7 +422,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtNSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNSS.ForeColor = System.Drawing.Color.DimGray;
             this.txtNSS.Location = new System.Drawing.Point(630, 271);
-            this.txtNSS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNSS.Margin = new System.Windows.Forms.Padding(4);
             this.txtNSS.MaxLength = 32767;
             this.txtNSS.Multiline = false;
             this.txtNSS.Name = "txtNSS";
@@ -454,7 +456,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstadoCivil.ForeColor = System.Drawing.Color.DimGray;
             this.txtEstadoCivil.Location = new System.Drawing.Point(446, 271);
-            this.txtEstadoCivil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstadoCivil.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstadoCivil.MaxLength = 32767;
             this.txtEstadoCivil.Multiline = false;
             this.txtEstadoCivil.Name = "txtEstadoCivil";
@@ -488,7 +490,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSexo.ForeColor = System.Drawing.Color.DimGray;
             this.txtSexo.Location = new System.Drawing.Point(202, 271);
-            this.txtSexo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSexo.Margin = new System.Windows.Forms.Padding(4);
             this.txtSexo.MaxLength = 32767;
             this.txtSexo.Multiline = false;
             this.txtSexo.Name = "txtSexo";
@@ -522,7 +524,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
             this.txtEdad.Location = new System.Drawing.Point(18, 271);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
             this.txtEdad.MaxLength = 32767;
             this.txtEdad.Multiline = false;
             this.txtEdad.Name = "txtEdad";
@@ -556,7 +558,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
             this.txtTelefono.Location = new System.Drawing.Point(446, 140);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.MaxLength = 32767;
             this.txtTelefono.Multiline = false;
             this.txtTelefono.Name = "txtTelefono";
@@ -590,7 +592,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomicilio.ForeColor = System.Drawing.Color.DimGray;
             this.txtDomicilio.Location = new System.Drawing.Point(18, 206);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomicilio.MaxLength = 32767;
             this.txtDomicilio.Multiline = false;
             this.txtDomicilio.Name = "txtDomicilio";
@@ -624,7 +626,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdEmpleado.ForeColor = System.Drawing.Color.DimGray;
             this.txtIdEmpleado.Location = new System.Drawing.Point(630, 70);
-            this.txtIdEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdEmpleado.MaxLength = 32767;
             this.txtIdEmpleado.Multiline = false;
             this.txtIdEmpleado.Name = "txtIdEmpleado";
@@ -658,7 +660,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
             this.txtNombreEmpleado.Location = new System.Drawing.Point(18, 140);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreEmpleado.MaxLength = 32767;
             this.txtNombreEmpleado.Multiline = false;
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
@@ -692,7 +694,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
             this.txtNumeroNomina.Location = new System.Drawing.Point(446, 70);
-            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroNomina.MaxLength = 32767;
             this.txtNumeroNomina.Multiline = false;
             this.txtNumeroNomina.Name = "txtNumeroNomina";
@@ -732,7 +734,7 @@ namespace CapaPresentacion.Nota_Medica
             this.cboxNumExpediente2.Location = new System.Drawing.Point(135, 55);
             this.cboxNumExpediente2.MinimumSize = new System.Drawing.Size(200, 50);
             this.cboxNumExpediente2.Name = "cboxNumExpediente2";
-            this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(2);
             this.cboxNumExpediente2.Size = new System.Drawing.Size(243, 50);
             this.cboxNumExpediente2.TabIndex = 150;
             this.cboxNumExpediente2.ValueMember = "";
@@ -790,7 +792,7 @@ namespace CapaPresentacion.Nota_Medica
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(22, 509);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(886, 695);
+            this.panel4.Size = new System.Drawing.Size(886, 692);
             this.panel4.TabIndex = 114;
             // 
             // txtDiagnostico
@@ -803,7 +805,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiagnostico.ForeColor = System.Drawing.Color.DimGray;
             this.txtDiagnostico.Location = new System.Drawing.Point(18, 410);
-            this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiagnostico.MaxLength = 32767;
             this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
@@ -825,7 +827,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservaciones.ForeColor = System.Drawing.Color.DimGray;
             this.txtObservaciones.Location = new System.Drawing.Point(18, 164);
-            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4);
             this.txtObservaciones.MaxLength = 32767;
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
@@ -887,7 +889,7 @@ namespace CapaPresentacion.Nota_Medica
             this.cboxTipoCausa.IntegralHeight = false;
             this.cboxTipoCausa.ItemHeight = 43;
             this.cboxTipoCausa.Location = new System.Drawing.Point(296, 72);
-            this.cboxTipoCausa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxTipoCausa.Margin = new System.Windows.Forms.Padding(2);
             this.cboxTipoCausa.MaxDropDownItems = 4;
             this.cboxTipoCausa.MouseState = MaterialSkin.MouseState.OUT;
             this.cboxTipoCausa.Name = "cboxTipoCausa";
@@ -911,7 +913,7 @@ namespace CapaPresentacion.Nota_Medica
             this.cboxCausaConsulta.IntegralHeight = false;
             this.cboxCausaConsulta.ItemHeight = 43;
             this.cboxCausaConsulta.Location = new System.Drawing.Point(18, 72);
-            this.cboxCausaConsulta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxCausaConsulta.Margin = new System.Windows.Forms.Padding(2);
             this.cboxCausaConsulta.MaxDropDownItems = 4;
             this.cboxCausaConsulta.MouseState = MaterialSkin.MouseState.OUT;
             this.cboxCausaConsulta.Name = "cboxCausaConsulta";
@@ -1037,7 +1039,7 @@ namespace CapaPresentacion.Nota_Medica
             this.pDatosSinExpediente.Controls.Add(this.panelSin);
             this.pDatosSinExpediente.Controls.Add(this.panel14);
             this.pDatosSinExpediente.Location = new System.Drawing.Point(0, 0);
-            this.pDatosSinExpediente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pDatosSinExpediente.Margin = new System.Windows.Forms.Padding(2);
             this.pDatosSinExpediente.Name = "pDatosSinExpediente";
             this.pDatosSinExpediente.Size = new System.Drawing.Size(945, 521);
             this.pDatosSinExpediente.TabIndex = 137;
@@ -1084,7 +1086,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtNombreEmpleadoSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreEmpleadoSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtNombreEmpleadoSin.Location = new System.Drawing.Point(449, 63);
-            this.txtNombreEmpleadoSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreEmpleadoSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreEmpleadoSin.MaxLength = 32767;
             this.txtNombreEmpleadoSin.Multiline = false;
             this.txtNombreEmpleadoSin.Name = "txtNombreEmpleadoSin";
@@ -1117,7 +1119,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtNoSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoSS.ForeColor = System.Drawing.Color.DimGray;
             this.txtNoSS.Location = new System.Drawing.Point(18, 63);
-            this.txtNoSS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNoSS.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoSS.MaxLength = 32767;
             this.txtNoSS.Multiline = false;
             this.txtNoSS.Name = "txtNoSS";
@@ -1151,7 +1153,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtTelefonoSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtTelefonoSin.Location = new System.Drawing.Point(449, 130);
-            this.txtTelefonoSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefonoSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefonoSin.MaxLength = 32767;
             this.txtTelefonoSin.Multiline = false;
             this.txtTelefonoSin.Name = "txtTelefonoSin";
@@ -1185,7 +1187,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtDomicilioSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomicilioSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtDomicilioSin.Location = new System.Drawing.Point(18, 197);
-            this.txtDomicilioSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomicilioSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomicilioSin.MaxLength = 32767;
             this.txtDomicilioSin.Multiline = false;
             this.txtDomicilioSin.Name = "txtDomicilioSin";
@@ -1219,7 +1221,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtIdEmpleadoSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdEmpleadoSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtIdEmpleadoSin.Location = new System.Drawing.Point(18, 130);
-            this.txtIdEmpleadoSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdEmpleadoSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdEmpleadoSin.MaxLength = 32767;
             this.txtIdEmpleadoSin.Multiline = false;
             this.txtIdEmpleadoSin.Name = "txtIdEmpleadoSin";
@@ -1295,7 +1297,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtDiagnosticoSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiagnosticoSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtDiagnosticoSin.Location = new System.Drawing.Point(18, 414);
-            this.txtDiagnosticoSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiagnosticoSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiagnosticoSin.MaxLength = 32767;
             this.txtDiagnosticoSin.Multiline = true;
             this.txtDiagnosticoSin.Name = "txtDiagnosticoSin";
@@ -1317,7 +1319,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtObservacionesSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservacionesSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtObservacionesSin.Location = new System.Drawing.Point(18, 167);
-            this.txtObservacionesSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtObservacionesSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtObservacionesSin.MaxLength = 32767;
             this.txtObservacionesSin.Multiline = true;
             this.txtObservacionesSin.Name = "txtObservacionesSin";
@@ -1379,7 +1381,7 @@ namespace CapaPresentacion.Nota_Medica
             this.cboxTipoCausaSin.IntegralHeight = false;
             this.cboxTipoCausaSin.ItemHeight = 43;
             this.cboxTipoCausaSin.Location = new System.Drawing.Point(296, 71);
-            this.cboxTipoCausaSin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxTipoCausaSin.Margin = new System.Windows.Forms.Padding(2);
             this.cboxTipoCausaSin.MaxDropDownItems = 4;
             this.cboxTipoCausaSin.MouseState = MaterialSkin.MouseState.OUT;
             this.cboxTipoCausaSin.Name = "cboxTipoCausaSin";
@@ -1403,7 +1405,7 @@ namespace CapaPresentacion.Nota_Medica
             this.cboxCausaConsultaSin.IntegralHeight = false;
             this.cboxCausaConsultaSin.ItemHeight = 43;
             this.cboxCausaConsultaSin.Location = new System.Drawing.Point(18, 71);
-            this.cboxCausaConsultaSin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxCausaConsultaSin.Margin = new System.Windows.Forms.Padding(2);
             this.cboxCausaConsultaSin.MaxDropDownItems = 4;
             this.cboxCausaConsultaSin.MouseState = MaterialSkin.MouseState.OUT;
             this.cboxCausaConsultaSin.Name = "cboxCausaConsultaSin";
@@ -1577,7 +1579,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtHeredoFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHeredoFamiliar.ForeColor = System.Drawing.Color.DimGray;
             this.txtHeredoFamiliar.Location = new System.Drawing.Point(13, 62);
-            this.txtHeredoFamiliar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHeredoFamiliar.Margin = new System.Windows.Forms.Padding(4);
             this.txtHeredoFamiliar.MaxLength = 32767;
             this.txtHeredoFamiliar.Multiline = true;
             this.txtHeredoFamiliar.Name = "txtHeredoFamiliar";
@@ -1767,7 +1769,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtCasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCasa.ForeColor = System.Drawing.Color.DimGray;
             this.txtCasa.Location = new System.Drawing.Point(29, 72);
-            this.txtCasa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCasa.Margin = new System.Windows.Forms.Padding(4);
             this.txtCasa.MaxLength = 32767;
             this.txtCasa.Multiline = true;
             this.txtCasa.Name = "txtCasa";
@@ -1790,7 +1792,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtAlimentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlimentacion.ForeColor = System.Drawing.Color.DimGray;
             this.txtAlimentacion.Location = new System.Drawing.Point(29, 154);
-            this.txtAlimentacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAlimentacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtAlimentacion.MaxLength = 32767;
             this.txtAlimentacion.Multiline = true;
             this.txtAlimentacion.Name = "txtAlimentacion";
@@ -1813,7 +1815,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtAnimales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAnimales.ForeColor = System.Drawing.Color.DimGray;
             this.txtAnimales.Location = new System.Drawing.Point(29, 242);
-            this.txtAnimales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAnimales.Margin = new System.Windows.Forms.Padding(4);
             this.txtAnimales.MaxLength = 32767;
             this.txtAnimales.Multiline = true;
             this.txtAnimales.Name = "txtAnimales";
@@ -1836,7 +1838,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtInmunizaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInmunizaciones.ForeColor = System.Drawing.Color.DimGray;
             this.txtInmunizaciones.Location = new System.Drawing.Point(29, 324);
-            this.txtInmunizaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtInmunizaciones.Margin = new System.Windows.Forms.Padding(4);
             this.txtInmunizaciones.MaxLength = 32767;
             this.txtInmunizaciones.Multiline = true;
             this.txtInmunizaciones.Name = "txtInmunizaciones";
@@ -1859,7 +1861,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtToxicomanias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtToxicomanias.ForeColor = System.Drawing.Color.DimGray;
             this.txtToxicomanias.Location = new System.Drawing.Point(29, 412);
-            this.txtToxicomanias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtToxicomanias.Margin = new System.Windows.Forms.Padding(4);
             this.txtToxicomanias.MaxLength = 32767;
             this.txtToxicomanias.Multiline = true;
             this.txtToxicomanias.Name = "txtToxicomanias";
@@ -1882,7 +1884,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtTrabajosYActAnteriores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTrabajosYActAnteriores.ForeColor = System.Drawing.Color.DimGray;
             this.txtTrabajosYActAnteriores.Location = new System.Drawing.Point(29, 507);
-            this.txtTrabajosYActAnteriores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTrabajosYActAnteriores.Margin = new System.Windows.Forms.Padding(4);
             this.txtTrabajosYActAnteriores.MaxLength = 32767;
             this.txtTrabajosYActAnteriores.Multiline = true;
             this.txtTrabajosYActAnteriores.Name = "txtTrabajosYActAnteriores";
@@ -1905,7 +1907,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtDeportesRecreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeportesRecreacion.ForeColor = System.Drawing.Color.DimGray;
             this.txtDeportesRecreacion.Location = new System.Drawing.Point(29, 606);
-            this.txtDeportesRecreacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDeportesRecreacion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDeportesRecreacion.MaxLength = 32767;
             this.txtDeportesRecreacion.Multiline = true;
             this.txtDeportesRecreacion.Name = "txtDeportesRecreacion";
@@ -1928,7 +1930,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtEntornoFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEntornoFamiliar.ForeColor = System.Drawing.Color.DimGray;
             this.txtEntornoFamiliar.Location = new System.Drawing.Point(29, 687);
-            this.txtEntornoFamiliar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEntornoFamiliar.Margin = new System.Windows.Forms.Padding(4);
             this.txtEntornoFamiliar.MaxLength = 32767;
             this.txtEntornoFamiliar.Multiline = true;
             this.txtEntornoFamiliar.Name = "txtEntornoFamiliar";
@@ -1951,7 +1953,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtEscolaridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEscolaridad.ForeColor = System.Drawing.Color.DimGray;
             this.txtEscolaridad.Location = new System.Drawing.Point(29, 774);
-            this.txtEscolaridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEscolaridad.Margin = new System.Windows.Forms.Padding(4);
             this.txtEscolaridad.MaxLength = 32767;
             this.txtEscolaridad.Multiline = true;
             this.txtEscolaridad.Name = "txtEscolaridad";
@@ -2056,7 +2058,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtGrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrado.ForeColor = System.Drawing.Color.DimGray;
             this.txtGrado.Location = new System.Drawing.Point(693, 69);
-            this.txtGrado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGrado.Margin = new System.Windows.Forms.Padding(4);
             this.txtGrado.MaxLength = 32767;
             this.txtGrado.Multiline = false;
             this.txtGrado.Name = "txtGrado";
@@ -2090,7 +2092,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtConstitucionFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConstitucionFisica.ForeColor = System.Drawing.Color.DimGray;
             this.txtConstitucionFisica.Location = new System.Drawing.Point(19, 69);
-            this.txtConstitucionFisica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtConstitucionFisica.Margin = new System.Windows.Forms.Padding(4);
             this.txtConstitucionFisica.MaxLength = 32767;
             this.txtConstitucionFisica.Multiline = false;
             this.txtConstitucionFisica.Name = "txtConstitucionFisica";
@@ -2113,7 +2115,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtNeurologico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNeurologico.ForeColor = System.Drawing.Color.DimGray;
             this.txtNeurologico.Location = new System.Drawing.Point(15, 1052);
-            this.txtNeurologico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNeurologico.Margin = new System.Windows.Forms.Padding(4);
             this.txtNeurologico.MaxLength = 32767;
             this.txtNeurologico.Multiline = true;
             this.txtNeurologico.Name = "txtNeurologico";
@@ -2136,7 +2138,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtMusculoEsqueletico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMusculoEsqueletico.ForeColor = System.Drawing.Color.DimGray;
             this.txtMusculoEsqueletico.Location = new System.Drawing.Point(17, 968);
-            this.txtMusculoEsqueletico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMusculoEsqueletico.Margin = new System.Windows.Forms.Padding(4);
             this.txtMusculoEsqueletico.MaxLength = 32767;
             this.txtMusculoEsqueletico.Multiline = true;
             this.txtMusculoEsqueletico.Name = "txtMusculoEsqueletico";
@@ -2181,7 +2183,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtIMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIMC.ForeColor = System.Drawing.Color.DimGray;
             this.txtIMC.Location = new System.Drawing.Point(537, 69);
-            this.txtIMC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIMC.Margin = new System.Windows.Forms.Padding(4);
             this.txtIMC.MaxLength = 32767;
             this.txtIMC.Multiline = false;
             this.txtIMC.Name = "txtIMC";
@@ -2204,7 +2206,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPeso.ForeColor = System.Drawing.Color.DimGray;
             this.txtPeso.Location = new System.Drawing.Point(382, 69);
-            this.txtPeso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPeso.Margin = new System.Windows.Forms.Padding(4);
             this.txtPeso.MaxLength = 32767;
             this.txtPeso.Multiline = false;
             this.txtPeso.Name = "txtPeso";
@@ -2238,7 +2240,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtTalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTalla.ForeColor = System.Drawing.Color.DimGray;
             this.txtTalla.Location = new System.Drawing.Point(225, 69);
-            this.txtTalla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTalla.Margin = new System.Windows.Forms.Padding(4);
             this.txtTalla.MaxLength = 32767;
             this.txtTalla.Multiline = false;
             this.txtTalla.Name = "txtTalla";
@@ -2272,7 +2274,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtTemperatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTemperatura.ForeColor = System.Drawing.Color.DimGray;
             this.txtTemperatura.Location = new System.Drawing.Point(693, 141);
-            this.txtTemperatura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTemperatura.Margin = new System.Windows.Forms.Padding(4);
             this.txtTemperatura.MaxLength = 32767;
             this.txtTemperatura.Multiline = false;
             this.txtTemperatura.Name = "txtTemperatura";
@@ -2306,7 +2308,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTA.ForeColor = System.Drawing.Color.DimGray;
             this.txtTA.Location = new System.Drawing.Point(537, 141);
-            this.txtTA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTA.Margin = new System.Windows.Forms.Padding(4);
             this.txtTA.MaxLength = 32767;
             this.txtTA.Multiline = false;
             this.txtTA.Name = "txtTA";
@@ -2340,7 +2342,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtPulso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPulso.ForeColor = System.Drawing.Color.DimGray;
             this.txtPulso.Location = new System.Drawing.Point(382, 141);
-            this.txtPulso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPulso.Margin = new System.Windows.Forms.Padding(4);
             this.txtPulso.MaxLength = 32767;
             this.txtPulso.Multiline = false;
             this.txtPulso.Name = "txtPulso";
@@ -2374,7 +2376,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFR.ForeColor = System.Drawing.Color.DimGray;
             this.txtFR.Location = new System.Drawing.Point(225, 141);
-            this.txtFR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFR.Margin = new System.Windows.Forms.Padding(4);
             this.txtFR.MaxLength = 32767;
             this.txtFR.Multiline = false;
             this.txtFR.Name = "txtFR";
@@ -2408,7 +2410,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFC.ForeColor = System.Drawing.Color.DimGray;
             this.txtFC.Location = new System.Drawing.Point(19, 141);
-            this.txtFC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFC.Margin = new System.Windows.Forms.Padding(4);
             this.txtFC.MaxLength = 32767;
             this.txtFC.Multiline = false;
             this.txtFC.Name = "txtFC";
@@ -2563,7 +2565,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtCraneo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCraneo.ForeColor = System.Drawing.Color.DimGray;
             this.txtCraneo.Location = new System.Drawing.Point(18, 211);
-            this.txtCraneo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCraneo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCraneo.MaxLength = 32767;
             this.txtCraneo.Multiline = true;
             this.txtCraneo.Name = "txtCraneo";
@@ -2586,7 +2588,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtOjos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOjos.ForeColor = System.Drawing.Color.DimGray;
             this.txtOjos.Location = new System.Drawing.Point(18, 300);
-            this.txtOjos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOjos.Margin = new System.Windows.Forms.Padding(4);
             this.txtOjos.MaxLength = 32767;
             this.txtOjos.Multiline = true;
             this.txtOjos.Name = "txtOjos";
@@ -2609,7 +2611,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtOidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOidos.ForeColor = System.Drawing.Color.DimGray;
             this.txtOidos.Location = new System.Drawing.Point(15, 386);
-            this.txtOidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOidos.Margin = new System.Windows.Forms.Padding(4);
             this.txtOidos.MaxLength = 32767;
             this.txtOidos.Multiline = true;
             this.txtOidos.Name = "txtOidos";
@@ -2632,7 +2634,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtNariz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNariz.ForeColor = System.Drawing.Color.DimGray;
             this.txtNariz.Location = new System.Drawing.Point(20, 470);
-            this.txtNariz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNariz.Margin = new System.Windows.Forms.Padding(4);
             this.txtNariz.MaxLength = 32767;
             this.txtNariz.Multiline = true;
             this.txtNariz.Name = "txtNariz";
@@ -2655,7 +2657,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtBoca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoca.ForeColor = System.Drawing.Color.DimGray;
             this.txtBoca.Location = new System.Drawing.Point(17, 555);
-            this.txtBoca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoca.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoca.MaxLength = 32767;
             this.txtBoca.Multiline = true;
             this.txtBoca.Name = "txtBoca";
@@ -2678,7 +2680,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtCuello.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuello.ForeColor = System.Drawing.Color.DimGray;
             this.txtCuello.Location = new System.Drawing.Point(15, 634);
-            this.txtCuello.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCuello.Margin = new System.Windows.Forms.Padding(4);
             this.txtCuello.MaxLength = 32767;
             this.txtCuello.Multiline = true;
             this.txtCuello.Name = "txtCuello";
@@ -2701,7 +2703,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtTorax.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTorax.ForeColor = System.Drawing.Color.DimGray;
             this.txtTorax.Location = new System.Drawing.Point(15, 718);
-            this.txtTorax.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTorax.Margin = new System.Windows.Forms.Padding(4);
             this.txtTorax.MaxLength = 32767;
             this.txtTorax.Multiline = true;
             this.txtTorax.Name = "txtTorax";
@@ -2724,7 +2726,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtAbdomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAbdomen.ForeColor = System.Drawing.Color.DimGray;
             this.txtAbdomen.Location = new System.Drawing.Point(13, 812);
-            this.txtAbdomen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAbdomen.Margin = new System.Windows.Forms.Padding(4);
             this.txtAbdomen.MaxLength = 32767;
             this.txtAbdomen.Multiline = true;
             this.txtAbdomen.Name = "txtAbdomen";
@@ -2747,7 +2749,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtGenitourinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenitourinario.ForeColor = System.Drawing.Color.DimGray;
             this.txtGenitourinario.Location = new System.Drawing.Point(14, 891);
-            this.txtGenitourinario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGenitourinario.Margin = new System.Windows.Forms.Padding(4);
             this.txtGenitourinario.MaxLength = 32767;
             this.txtGenitourinario.Multiline = true;
             this.txtGenitourinario.Name = "txtGenitourinario";
@@ -2828,7 +2830,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrupoSanguineo.ForeColor = System.Drawing.Color.DimGray;
             this.txtGrupoSanguineo.Location = new System.Drawing.Point(17, 885);
-            this.txtGrupoSanguineo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGrupoSanguineo.Margin = new System.Windows.Forms.Padding(4);
             this.txtGrupoSanguineo.MaxLength = 32767;
             this.txtGrupoSanguineo.Multiline = true;
             this.txtGrupoSanguineo.Name = "txtGrupoSanguineo";
@@ -2851,7 +2853,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtSCardiovascular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSCardiovascular.ForeColor = System.Drawing.Color.DimGray;
             this.txtSCardiovascular.Location = new System.Drawing.Point(18, 212);
-            this.txtSCardiovascular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSCardiovascular.Margin = new System.Windows.Forms.Padding(4);
             this.txtSCardiovascular.MaxLength = 32767;
             this.txtSCardiovascular.Multiline = true;
             this.txtSCardiovascular.Name = "txtSCardiovascular";
@@ -2874,7 +2876,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtSNerviosoCentral.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSNerviosoCentral.ForeColor = System.Drawing.Color.DimGray;
             this.txtSNerviosoCentral.Location = new System.Drawing.Point(18, 131);
-            this.txtSNerviosoCentral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSNerviosoCentral.Margin = new System.Windows.Forms.Padding(4);
             this.txtSNerviosoCentral.MaxLength = 32767;
             this.txtSNerviosoCentral.Multiline = true;
             this.txtSNerviosoCentral.Name = "txtSNerviosoCentral";
@@ -2908,7 +2910,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtAlergias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAlergias.ForeColor = System.Drawing.Color.DimGray;
             this.txtAlergias.Location = new System.Drawing.Point(620, 52);
-            this.txtAlergias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAlergias.Margin = new System.Windows.Forms.Padding(4);
             this.txtAlergias.MaxLength = 32767;
             this.txtAlergias.Multiline = false;
             this.txtAlergias.Name = "txtAlergias";
@@ -3127,7 +3129,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtSRespiratorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSRespiratorio.ForeColor = System.Drawing.Color.DimGray;
             this.txtSRespiratorio.Location = new System.Drawing.Point(18, 294);
-            this.txtSRespiratorio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSRespiratorio.Margin = new System.Windows.Forms.Padding(4);
             this.txtSRespiratorio.MaxLength = 32767;
             this.txtSRespiratorio.Multiline = true;
             this.txtSRespiratorio.Name = "txtSRespiratorio";
@@ -3150,7 +3152,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtSGastrointestinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSGastrointestinal.ForeColor = System.Drawing.Color.DimGray;
             this.txtSGastrointestinal.Location = new System.Drawing.Point(18, 380);
-            this.txtSGastrointestinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSGastrointestinal.Margin = new System.Windows.Forms.Padding(4);
             this.txtSGastrointestinal.MaxLength = 32767;
             this.txtSGastrointestinal.Multiline = true;
             this.txtSGastrointestinal.Name = "txtSGastrointestinal";
@@ -3173,7 +3175,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtSEndocrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSEndocrino.ForeColor = System.Drawing.Color.DimGray;
             this.txtSEndocrino.Location = new System.Drawing.Point(18, 466);
-            this.txtSEndocrino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSEndocrino.Margin = new System.Windows.Forms.Padding(4);
             this.txtSEndocrino.MaxLength = 32767;
             this.txtSEndocrino.Multiline = true;
             this.txtSEndocrino.Name = "txtSEndocrino";
@@ -3196,7 +3198,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtSGenitoUrinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSGenitoUrinario.ForeColor = System.Drawing.Color.DimGray;
             this.txtSGenitoUrinario.Location = new System.Drawing.Point(18, 549);
-            this.txtSGenitoUrinario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSGenitoUrinario.Margin = new System.Windows.Forms.Padding(4);
             this.txtSGenitoUrinario.MaxLength = 32767;
             this.txtSGenitoUrinario.Multiline = true;
             this.txtSGenitoUrinario.Name = "txtSGenitoUrinario";
@@ -3219,7 +3221,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtSMusculoEsqueletico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSMusculoEsqueletico.ForeColor = System.Drawing.Color.DimGray;
             this.txtSMusculoEsqueletico.Location = new System.Drawing.Point(18, 635);
-            this.txtSMusculoEsqueletico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSMusculoEsqueletico.Margin = new System.Windows.Forms.Padding(4);
             this.txtSMusculoEsqueletico.MaxLength = 32767;
             this.txtSMusculoEsqueletico.Multiline = true;
             this.txtSMusculoEsqueletico.Name = "txtSMusculoEsqueletico";
@@ -3242,7 +3244,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtOrganoSentidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrganoSentidos.ForeColor = System.Drawing.Color.DimGray;
             this.txtOrganoSentidos.Location = new System.Drawing.Point(18, 721);
-            this.txtOrganoSentidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrganoSentidos.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrganoSentidos.MaxLength = 32767;
             this.txtOrganoSentidos.Multiline = true;
             this.txtOrganoSentidos.Name = "txtOrganoSentidos";
@@ -3265,7 +3267,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtGinecoObstetrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGinecoObstetrico.ForeColor = System.Drawing.Color.DimGray;
             this.txtGinecoObstetrico.Location = new System.Drawing.Point(18, 802);
-            this.txtGinecoObstetrico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGinecoObstetrico.Margin = new System.Windows.Forms.Padding(4);
             this.txtGinecoObstetrico.MaxLength = 32767;
             this.txtGinecoObstetrico.Multiline = true;
             this.txtGinecoObstetrico.Name = "txtGinecoObstetrico";
@@ -3320,7 +3322,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtDiagnosticoExp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiagnosticoExp.ForeColor = System.Drawing.Color.DimGray;
             this.txtDiagnosticoExp.Location = new System.Drawing.Point(21, 33);
-            this.txtDiagnosticoExp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiagnosticoExp.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiagnosticoExp.MaxLength = 32767;
             this.txtDiagnosticoExp.Multiline = true;
             this.txtDiagnosticoExp.Name = "txtDiagnosticoExp";
@@ -3413,7 +3415,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtEstudiosLaboratorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstudiosLaboratorio.ForeColor = System.Drawing.Color.DimGray;
             this.txtEstudiosLaboratorio.Location = new System.Drawing.Point(14, 63);
-            this.txtEstudiosLaboratorio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstudiosLaboratorio.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstudiosLaboratorio.MaxLength = 32767;
             this.txtEstudiosLaboratorio.Multiline = true;
             this.txtEstudiosLaboratorio.Name = "txtEstudiosLaboratorio";
@@ -3436,7 +3438,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtEstudiosRadiologicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstudiosRadiologicos.ForeColor = System.Drawing.Color.DimGray;
             this.txtEstudiosRadiologicos.Location = new System.Drawing.Point(14, 261);
-            this.txtEstudiosRadiologicos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstudiosRadiologicos.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstudiosRadiologicos.MaxLength = 32767;
             this.txtEstudiosRadiologicos.Multiline = true;
             this.txtEstudiosRadiologicos.Name = "txtEstudiosRadiologicos";
@@ -3459,7 +3461,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtOtros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOtros.ForeColor = System.Drawing.Color.DimGray;
             this.txtOtros.Location = new System.Drawing.Point(17, 459);
-            this.txtOtros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOtros.Margin = new System.Windows.Forms.Padding(4);
             this.txtOtros.MaxLength = 32767;
             this.txtOtros.Multiline = true;
             this.txtOtros.Name = "txtOtros";
@@ -3681,6 +3683,17 @@ namespace CapaPresentacion.Nota_Medica
             this.label1.TabIndex = 0;
             this.label1.Text = "Nota Médica";
             // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.Color.White;
+            this.label87.Location = new System.Drawing.Point(-106, 1210);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(184, 24);
+            this.label87.TabIndex = 176;
+            this.label87.Text = "Fecha de emisión:";
+            // 
             // frmNotaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3693,6 +3706,7 @@ namespace CapaPresentacion.Nota_Medica
             this.pContenedorNotaMedica.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.pDatosGenerales.ResumeLayout(false);
+            this.pDatosGenerales.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -3932,5 +3946,6 @@ namespace CapaPresentacion.Nota_Medica
         private TextPersonalizado txtDeportesRecreacion;
         private TextPersonalizado txtEntornoFamiliar;
         private TextPersonalizado txtEscolaridad;
+        private System.Windows.Forms.Label label87;
     }
 }

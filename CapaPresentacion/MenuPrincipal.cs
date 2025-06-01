@@ -45,93 +45,14 @@ namespace CapaPresentacion
         }
         private void frmMenu_Load(object sender, EventArgs e)
         {
+
+            lblTrabajadores.Text = homeCN.ConcultaNumTrabajadores().Tables["TotalEmpleados"].Rows[0][0].ToString();
             cargarDashboard();
             CargarGraficoCausas();
             LlenarChartTurno();
             LlenarChartSecciones();
         }
-        private void cargarDashboard()
-        {
-            lblTrabajadores.Text = homeCN.ConcultaNumTrabajadores().Tables["TotalEmpleados"].Rows[0][0].ToString();
-            lblConsultas.Text = homeCN.ObtenerNumConsultas().Tables["TotalConsultas"].Rows[0][0].ToString();
-            lblAccidentes.Text = homeCN.ObtenerNumAccidentes().Tables["TotalAccidentes"].Rows[0][0].ToString();
-            lblIncapacidades.Text = homeCN.ObtenerNumIncapacidades().Tables["TotalIncapacidades"].Rows[0][0].ToString();
-        }
-        private void LlenarChartTurno()
-        {
-            DataSet ds = homeCN.ObtenerAccidentesTurno();
-
-            chartTurno.Series.Clear();
-            chartTurno.Series.Add("Turnos");
-
-            chartTurno.Series["Turnos"].ChartType = SeriesChartType.Column; // o Column si prefieres barras
-            chartTurno.Series["Turnos"].IsValueShownAsLabel = true;
-
-            foreach (DataRow row in ds.Tables["AccidentesXTurno"].Rows)
-            {
-                string turno = row["turno"].ToString();
-                int total = Convert.ToInt32(row["total_accidentes"]);
-
-                chartTurno.Series["Turnos"].Points.AddXY(turno, total);
-            }
-
-            //chartTurno.Titles.Clear();
-            
-            chartTurno.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
-            chartTurno.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
-            chartTurno.Legends[0].Enabled = false;  // Desactivar la leyenda por completo
-
-        }
-        private void LlenarChartSecciones()
-        {
-            DataSet ds = homeCN.ObtenerSeccionesConIncidentes();
-
-            chartSecciones.Series.Clear();
-            chartSecciones.Series.Add("Secciones");
-
-            chartSecciones.Series["Secciones"].ChartType = SeriesChartType.Column;
-            chartSecciones.Series["Secciones"].IsValueShownAsLabel = true;
-
-            foreach (DataRow row in ds.Tables["SeccionesAccidentes"].Rows)
-            {
-                string seccion = row["seccion"].ToString();
-                int total = Convert.ToInt32(row["total"]);
-
-                chartSecciones.Series["Secciones"].Points.AddXY(seccion, total);
-            }
-
-            chartSecciones.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
-            chartSecciones.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
-            chartSecciones.Legends[0].Enabled = false; // O puedes cambiarlo a true si quieres mostrar "Secciones"
-        }
-
-        private void CargarGraficoCausas()
-        {
-            chartCausas.Series.Clear();
-
-            Series series = new Series("Causas más frecuentes");
-            series.ChartType = SeriesChartType.Doughnut;
-
-            // Mostrar el valor numérico (total) en cada rebanada
-            series.Label = "#VAL (#PERCENT{P0})"; // Muestra algo como "5 (25%)"
-            series.LegendText = "#VALX"; // Muestra el nombre de la causa en la leyenda
-
-            DataSet ds = homeCN.ObtenerCausasMasFrecuentes();
-
-            if (ds.Tables["CausasPrincipales"].Rows.Count > 0)
-            {
-                foreach (DataRow fila in ds.Tables["CausasPrincipales"].Rows)
-                {
-                    string causa = fila["causas"].ToString();
-                    int total = Convert.ToInt32(fila["total"]);
-
-                    series.Points.AddXY(causa, total);
-                }
-            }
-
-            chartCausas.Series.Add(series);
-            chartCausas.Legends[0].Enabled = true;
-        }
+        
 
 
         //Movimiento del Formulario
@@ -174,6 +95,7 @@ namespace CapaPresentacion
             CargarGraficoCausas();
             LlenarChartTurno();
             LlenarChartSecciones();
+
             hideSubMenu();
             SetInitialView();
         }
@@ -547,6 +469,393 @@ namespace CapaPresentacion
         {
             openChildForm(new Utilerias.frmRevisiones());
             hideSubMenu();
+        }
+        private void cargarDashboard()
+        {
+            // Consultas totales
+            DataSet dsConsultas = homeCN.ObtenerNumConsultas();
+            if (dsConsultas.Tables.Contains("TotalConsultas") && dsConsultas.Tables["TotalConsultas"].Rows.Count > 0)
+            {
+                lblConsultas.Text = dsConsultas.Tables["TotalConsultas"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblConsultas.Text = "0";
+            }
+
+            DataSet dsAccidentes = homeCN.ObtenerNumAccidentes();
+            if (dsAccidentes.Tables.Contains("TotalAccidentes") && dsAccidentes.Tables["TotalAccidentes"].Rows.Count > 0)
+            {
+                lblAccidentes.Text = dsAccidentes.Tables["TotalAccidentes"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblAccidentes.Text = "0";
+            }
+
+            DataSet dsIncapacidades = homeCN.ObtenerNumIncapacidades();
+            if (dsIncapacidades.Tables.Contains("TotalIncapacidades") && dsIncapacidades.Tables["TotalIncapacidades"].Rows.Count > 0)
+            {
+                lblIncapacidades.Text = dsIncapacidades.Tables["TotalIncapacidades"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblIncapacidades.Text = "0";
+            }
+
+        }
+        private void LlenarChartTurno()
+        {
+            DataSet ds = homeCN.ObtenerAccidentesTurno();
+
+            chartTurno.Series.Clear();
+            chartTurno.Series.Add("Turnos");
+
+            chartTurno.Series["Turnos"].ChartType = SeriesChartType.Column; // o Column si prefieres barras
+            chartTurno.Series["Turnos"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in ds.Tables["AccidentesXTurno"].Rows)
+            {
+                string turno = row["turno"].ToString();
+                int total = Convert.ToInt32(row["total_accidentes"]);
+
+                chartTurno.Series["Turnos"].Points.AddXY(turno, total);
+            }
+
+            //chartTurno.Titles.Clear();
+
+            chartTurno.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartTurno.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartTurno.Legends[0].Enabled = false;  // Desactivar la leyenda por completo
+            chartTurno.Series["Turnos"].Color = Color.DarkCyan;
+
+        }
+        private void LlenarChartSecciones()
+        {
+            DataSet ds = homeCN.ObtenerSeccionesConIncidentes();
+
+            chartSecciones.Series.Clear();
+            chartSecciones.Series.Add("Secciones");
+
+            chartSecciones.Series["Secciones"].ChartType = SeriesChartType.Column;
+            chartSecciones.Series["Secciones"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in ds.Tables["SeccionesAccidentes"].Rows)
+            {
+                string seccion = row["seccion"].ToString();
+                int total = Convert.ToInt32(row["total"]);
+
+                chartSecciones.Series["Secciones"].Points.AddXY(seccion, total);
+            }
+
+            chartSecciones.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartSecciones.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartSecciones.Legends[0].Enabled = false; // O puedes cambiarlo a true si quieres mostrar "Secciones"
+            chartSecciones.Series["Secciones"].Color = Color.DarkCyan;
+        }
+
+        private void CargarGraficoCausas()
+        {
+            chartCausas.Series.Clear();
+
+            Series series = new Series("Causas más frecuentes");
+            series.ChartType = SeriesChartType.Doughnut;
+
+            // Mostrar el valor numérico (total) en cada rebanada
+            series.Label = "#VAL (#PERCENT{P0})"; // Muestra algo como "5 (25%)"
+            series.LegendText = "#VALX"; // Muestra el nombre de la causa en la leyenda
+
+            DataSet ds = homeCN.ObtenerCausasMasFrecuentes();
+
+            if (ds.Tables["CausasPrincipales"].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables["CausasPrincipales"].Rows)
+                {
+                    string causa = fila["causas"].ToString();
+                    int total = Convert.ToInt32(fila["total"]);
+
+                    series.Points.AddXY(causa, total);
+                }
+            }
+
+            chartCausas.Series.Add(series);
+            chartCausas.Legends[0].Enabled = true;
+        }
+        private void btnMesActual_Click(object sender, EventArgs e)
+        {
+            ocultarRango();
+            cargarDashboard();
+            CargarGraficoCausas();
+            LlenarChartTurno();
+            LlenarChartSecciones();
+        }
+
+        private void cargarDashboardMesPasado()
+        {
+            // Consultas del mes pasado
+            DataSet dsConsultas = homeCN.ObtenerNumConsultasMesPasado();
+            if (dsConsultas.Tables.Contains("TotalConsultas") && dsConsultas.Tables["TotalConsultas"].Rows.Count > 0)
+            {
+                lblConsultas.Text = dsConsultas.Tables["TotalConsultas"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblConsultas.Text = "0";
+            }
+
+            DataSet dsAccidentes = homeCN.ObtenerNumAccidentesMesPasado();
+            if (dsAccidentes.Tables.Contains("TotalAccidentes") && dsAccidentes.Tables["TotalAccidentes"].Rows.Count > 0)
+            {
+                lblAccidentes.Text = dsAccidentes.Tables["TotalAccidentes"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblAccidentes.Text = "0";
+            }
+
+            DataSet dsIncapacidades = homeCN.ObtenerNumIncapacidadesMesPasado();
+            if (dsIncapacidades.Tables.Contains("TotalIncapacidades") && dsIncapacidades.Tables["TotalIncapacidades"].Rows.Count > 0)
+            {
+                lblIncapacidades.Text = dsIncapacidades.Tables["TotalIncapacidades"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblIncapacidades.Text = "0";
+            }
+
+        }
+        private void LlenarChartTurnoMesPasado()
+        {
+            DataSet ds = homeCN.ObtenerAccidentesTurnoMesPasado();
+
+            chartTurno.Series.Clear();
+            chartTurno.Series.Add("Turnos");
+
+            chartTurno.Series["Turnos"].ChartType = SeriesChartType.Column; // o Column si prefieres barras
+            chartTurno.Series["Turnos"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in ds.Tables["AccidentesXTurno"].Rows)
+            {
+                string turno = row["turno"].ToString();
+                int total = Convert.ToInt32(row["total_accidentes"]);
+
+                chartTurno.Series["Turnos"].Points.AddXY(turno, total);
+            }
+
+            //chartTurno.Titles.Clear();
+
+            chartTurno.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartTurno.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartTurno.Legends[0].Enabled = false;  // Desactivar la leyenda por completo
+            chartTurno.Series["Turnos"].Color = Color.DarkCyan;
+
+        }
+        private void LlenarChartSeccionesMesPasado()
+        {
+            DataSet ds = homeCN.ObtenerSeccionesConIncidentesMesPasado();
+
+            chartSecciones.Series.Clear();
+            chartSecciones.Series.Add("Secciones");
+
+            chartSecciones.Series["Secciones"].ChartType = SeriesChartType.Column;
+            chartSecciones.Series["Secciones"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in ds.Tables["SeccionesAccidentes"].Rows)
+            {
+                string seccion = row["seccion"].ToString();
+                int total = Convert.ToInt32(row["total"]);
+
+                chartSecciones.Series["Secciones"].Points.AddXY(seccion, total);
+            }
+
+            chartSecciones.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartSecciones.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartSecciones.Legends[0].Enabled = false; // O puedes cambiarlo a true si quieres mostrar "Secciones"
+            chartSecciones.Series["Secciones"].Color = Color.DarkCyan;
+        }
+
+        private void CargarGraficoCausasMesPasado()
+        {
+            chartCausas.Series.Clear();
+
+            Series series = new Series("Causas más frecuentes");
+            series.ChartType = SeriesChartType.Doughnut;
+
+            // Mostrar el valor numérico (total) en cada rebanada
+            series.Label = "#VAL (#PERCENT{P0})"; // Muestra algo como "5 (25%)"
+            series.LegendText = "#VALX"; // Muestra el nombre de la causa en la leyenda
+
+            DataSet ds = homeCN.ObtenerCausasMasFrecuentesMesPasado();
+
+            if (ds.Tables["CausasPrincipales"].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables["CausasPrincipales"].Rows)
+                {
+                    string causa = fila["causas"].ToString();
+                    int total = Convert.ToInt32(fila["total"]);
+
+                    series.Points.AddXY(causa, total);
+                }
+            }
+
+            chartCausas.Series.Add(series);
+            chartCausas.Legends[0].Enabled = true;
+        }
+        public void ocultarRango()
+        {
+            dtpdesde.Visible = false;
+            dtphasta.Visible = false;
+            btnConsultapersonalizado.Visible = false;
+        }
+        private void btnMesAnterior_Click(object sender, EventArgs e)
+        {
+            ocultarRango();
+            cargarDashboardMesPasado();
+            LlenarChartTurnoMesPasado();
+            LlenarChartSeccionesMesPasado();
+            CargarGraficoCausasMesPasado();
+        }
+
+        private void btnPersonalizado_Click(object sender, EventArgs e)
+        {
+            btnConsultapersonalizado.Visible = true;
+            dtpdesde.Visible = true;
+            dtphasta.Visible = true;
+        }
+        
+        private void btnConsultapersonalizado_Click(object sender, EventArgs e)
+        {
+            DateTime desde = dtpdesde.Value.Date;
+            DateTime hasta = dtphasta.Value.Date;
+
+            if (desde > hasta)
+            {
+                RJMessageBox.Show("La fecha 'desde' no puede ser mayor que la fecha 'hasta'.", "Rango de fechas incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Detiene la ejecución si las fechas no son válidas
+            }
+
+            LlenarChartTurnoPersonalizado(desde, hasta);
+            LlenarChartSeccionesPorRango(desde, hasta);
+            CargarGraficoCausasPorRango(desde, hasta);
+            cargarDashboardRango(desde, hasta);
+        }
+        private void cargarDashboardRango(DateTime desde, DateTime hasta)
+        {
+            // Total de Consultas
+            DataSet dsConsultas = homeCN.ObtenerTotalConsultasPorRango(desde, hasta);
+            if (dsConsultas.Tables.Contains("TotalConsultasRango") && dsConsultas.Tables["TotalConsultasRango"].Rows.Count > 0)
+            {
+                lblConsultas.Text = dsConsultas.Tables["TotalConsultasRango"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblConsultas.Text = "0";
+            }
+
+            // Total de Accidentes
+            DataSet dsAccidentes = homeCN.ObtenerNumAccidentesPorRango(desde, hasta);
+            if (dsAccidentes.Tables.Contains("TotalAccidentes") && dsAccidentes.Tables["TotalAccidentes"].Rows.Count > 0)
+            {
+                lblAccidentes.Text = dsAccidentes.Tables["TotalAccidentes"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblAccidentes.Text = "0";
+            }
+
+            // Total de Incapacidades
+            DataSet dsIncapacidades = homeCN.ObtenerNumIncapacidadesPorRango(desde, hasta);
+            if (dsIncapacidades.Tables.Contains("TotalIncapacidades") && dsIncapacidades.Tables["TotalIncapacidades"].Rows.Count > 0)
+            {
+                lblIncapacidades.Text = dsIncapacidades.Tables["TotalIncapacidades"].Rows[0][0].ToString();
+            }
+            else
+            {
+                lblIncapacidades.Text = "0";
+            }
+        }
+
+        private void LlenarChartTurnoPersonalizado(DateTime desde, DateTime hasta)
+        {
+
+
+            DataSet ds = homeCN.ObtenerAccidentesTurnoPorRango(desde, hasta);
+
+            chartTurno.Series.Clear();
+            chartTurno.Series.Add("Turnos");
+
+            chartTurno.Series["Turnos"].ChartType = SeriesChartType.Column; // o Column si prefieres barras
+            chartTurno.Series["Turnos"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in ds.Tables["AccidentesXTurnoPersonalizado"].Rows)
+            {
+                string turno = row["turno"].ToString();
+                int total = Convert.ToInt32(row["total_accidentes"]);
+
+                chartTurno.Series["Turnos"].Points.AddXY(turno, total);
+            }
+
+            //chartTurno.Titles.Clear();
+
+            chartTurno.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartTurno.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartTurno.Legends[0].Enabled = false;  // Desactivar la leyenda por completo
+            chartTurno.Series["Turnos"].Color = Color.DarkCyan;
+
+        }
+        private void LlenarChartSeccionesPorRango(DateTime desde, DateTime hasta)
+        {
+
+            DataSet ds = homeCN.ObtenerSeccionesConIncidentesPorRango(desde, hasta);
+
+            chartSecciones.Series.Clear();
+            chartSecciones.Series.Add("Secciones");
+
+            chartSecciones.Series["Secciones"].ChartType = SeriesChartType.Column;
+            chartSecciones.Series["Secciones"].IsValueShownAsLabel = true;
+
+            foreach (DataRow row in ds.Tables["SeccionesAccidentes"].Rows)
+            {
+                string seccion = row["seccion"].ToString();
+                int total = Convert.ToInt32(row["total"]);
+
+                chartSecciones.Series["Secciones"].Points.AddXY(seccion, total);
+            }
+
+            chartSecciones.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartSecciones.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartSecciones.Legends[0].Enabled = false; // O puedes cambiarlo a true si quieres mostrar "Secciones"
+            chartSecciones.Series["Secciones"].Color = Color.DarkCyan;
+        }
+
+        private void CargarGraficoCausasPorRango(DateTime desde, DateTime hasta)
+        {
+           
+
+            chartCausas.Series.Clear();
+
+            Series series = new Series("Causas más frecuentes");
+            series.ChartType = SeriesChartType.Doughnut;
+
+            // Mostrar el valor numérico (total) en cada rebanada
+            series.Label = "#VAL (#PERCENT{P0})"; // Muestra algo como "5 (25%)"
+            series.LegendText = "#VALX"; // Muestra el nombre de la causa en la leyenda
+
+            DataSet ds = homeCN.ObtenerCausasMasFrecuentesPorRango(desde, hasta);
+
+            if (ds.Tables["CausasPrincipales"].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables["CausasPrincipales"].Rows)
+                {
+                    string causa = fila["causas"].ToString();
+                    int total = Convert.ToInt32(fila["total"]);
+
+                    series.Points.AddXY(causa, total);
+                }
+            }
+
+            chartCausas.Series.Add(series);
+            chartCausas.Legends[0].Enabled = true;
         }
     }
 }
