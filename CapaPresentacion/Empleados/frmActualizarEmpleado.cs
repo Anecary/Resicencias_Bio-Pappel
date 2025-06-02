@@ -188,6 +188,7 @@ namespace CapaPresentacion.Empleados
             btnActualizar.Enabled = false;
             btnBuscarEmpleadoNN.Enabled = true;
             btmCancelar.Enabled = false;
+            btmBaja.Enabled = false;
         }
 
         private void btmCancelar_Click(object sender, EventArgs e)
@@ -215,54 +216,72 @@ namespace CapaPresentacion.Empleados
                 //    return;
                 //}
 
-                txtNombre.Text = datosEmpleado.nombreCompleto;
-                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
-                txtSexo.Text = datosEmpleado.sexo.ToString();
-                txtNss.Text = datosEmpleado.nss.ToString();
-                cmbEstadoCivil.SelectedItem = datosEmpleado.estado_civil;
-                txtCp.Text = datosEmpleado.domicilio_CP;
-                cmbEstado.SelectedItem = datosEmpleado.domicilio_estado;
-                txtCiudad.Text = datosEmpleado.domicilio_ciudad.ToString();
-                txtColonia.Text = datosEmpleado.domicilio_colonia.ToString();
-                txtCalle.Text = datosEmpleado.domicilio_calle.ToString();
-                txtNumero.Text = datosEmpleado.domicilio_numero.ToString();
-                txtTelefono.Text = datosEmpleado.telefono.ToString();
-                cmbPuesto.SelectedItem = datosEmpleado.puesto;
-                char turno = datosEmpleado.turno;
-                dtpFecha.Value = datosEmpleado.fecha;
 
-                Dictionary<char, string> turnosMap = new Dictionary<char, string>
-                {
-                    { 'M', "Matutino" },
-                    { 'V', "Vespertino" },
-                    { 'N', "Nocturno" }
-                };
+                char estado = datosEmpleado.estado;
 
-                // Verificar si la letra existe en el diccionario y seleccionarla en el ComboBox
-                if (turnosMap.ContainsKey(turno))
+                MessageBox.Show(estado.ToString());
+
+                if (estado == 'A')
                 {
-                    cmbTurno.SelectedItem = turnosMap[turno];
+                    txtNombre.Text = datosEmpleado.nombreCompleto;
+                    txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
+                    txtSexo.Text = datosEmpleado.sexo.ToString();
+                    txtNss.Text = datosEmpleado.nss.ToString();
+                    cmbEstadoCivil.SelectedItem = datosEmpleado.estado_civil;
+                    txtCp.Text = datosEmpleado.domicilio_CP;
+                    cmbEstado.SelectedItem = datosEmpleado.domicilio_estado;
+                    txtCiudad.Text = datosEmpleado.domicilio_ciudad.ToString();
+                    txtColonia.Text = datosEmpleado.domicilio_colonia.ToString();
+                    txtCalle.Text = datosEmpleado.domicilio_calle.ToString();
+                    txtNumero.Text = datosEmpleado.domicilio_numero.ToString();
+                    txtTelefono.Text = datosEmpleado.telefono.ToString();
+                    cmbPuesto.SelectedItem = datosEmpleado.puesto;
+                    char turno = datosEmpleado.turno;
+                    btmBaja.Enabled = true;
+
+                    dtpFecha.Value = datosEmpleado.fecha;
+
+                    Dictionary<char, string> turnosMap = new Dictionary<char, string>
+                    {
+                        { 'M', "Matutino" },
+                        { 'V', "Vespertino" },
+                        { 'N', "Nocturno" }
+                    };
+
+                    // Verificar si la letra existe en el diccionario y seleccionarla en el ComboBox
+                    if (turnosMap.ContainsKey(turno))
+                    {
+                        cmbTurno.SelectedItem = turnosMap[turno];
+                    }
+
+                    txtCp.Enabled = true; txtCp.BackColor = Color.White;
+                    cmbEstadoCivil.Enabled = true; cmbEstadoCivil.BackColor = Color.White;
+                    txtCiudad.Enabled = true; txtCiudad.BackColor = Color.White;
+                    txtColonia.Enabled = true; txtColonia.BackColor = Color.White;
+                    txtCalle.Enabled = true; txtCalle.BackColor = Color.White;
+                    txtNumero.Enabled = true; txtNumero.BackColor = Color.White;
+                    txtTelefono.Enabled = true; txtTelefono.BackColor = Color.White;
+
+                    dtpFecha.Enabled = true; dtpFecha.SkinColor = Color.White;
+
+                    cmbEstado.Enabled = true; cmbEstado.BackColor = Color.White;
+                    cmbPuesto.Enabled = true; cmbPuesto.BackColor = Color.White;
+                    cmbTurno.Enabled = true; cmbTurno.BackColor = Color.White;
+
+
+                    txtNoNomina.Enabled = false; txtNoNomina.BackColor = Color.WhiteSmoke;
+                    btmCancelar.Enabled = true;
+                    btnActualizar.Enabled = true;
+                    btnBuscarEmpleadoNN.Enabled = false;
+                }
+                else
+                {
+                    RJMessageBox.Show("El empleado que se desea modificar debe estar dado de alta", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtNoNomina.Text = "";
+                    txtNoNomina.Focus();
                 }
 
-                txtCp.Enabled = true; txtCp.BackColor = Color.White;
-                cmbEstadoCivil.Enabled = true; cmbEstadoCivil.BackColor = Color.White;
-                txtCiudad.Enabled = true; txtCiudad.BackColor = Color.White;
-                txtColonia.Enabled = true;txtColonia.BackColor = Color.White;
-                txtCalle.Enabled = true; txtCalle.BackColor = Color.White;
-                txtNumero.Enabled = true; txtNumero.BackColor = Color.White;
-                txtTelefono.Enabled = true; txtTelefono.BackColor = Color.White;
 
-                dtpFecha.Enabled = true; dtpFecha.SkinColor = Color.White;
-
-                cmbEstado.Enabled = true; cmbEstado.BackColor = Color.White;
-                cmbPuesto.Enabled = true; cmbPuesto.BackColor = Color.White;
-                cmbTurno.Enabled = true;cmbTurno.BackColor = Color.White;
-
-                
-                txtNoNomina.Enabled = false; txtNoNomina.BackColor = Color.WhiteSmoke;
-                btmCancelar.Enabled = true;
-                btnActualizar.Enabled = true;
-                btnBuscarEmpleadoNN.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -316,6 +335,17 @@ namespace CapaPresentacion.Empleados
         private void txtCp_KeyPress(object sender, KeyPressEventArgs e)
         {
             ValidacionNumeros(e);
+        }
+
+        private void btmBaja_Click(object sender, EventArgs e)
+        {
+            DialogResult result = RJMessageBox.Show("Seguro que quieres dar de baja a este empleado", "Alerta", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes) 
+            {
+                negocios.bajaEmpleado(txtNoNomina.Text.ToString());
+                RJMessageBox.Show("Empleado se dio de baja", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                limpiar();
+            }
         }
     }
 }

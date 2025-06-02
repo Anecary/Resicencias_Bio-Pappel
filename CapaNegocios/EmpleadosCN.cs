@@ -116,7 +116,7 @@ namespace CapaNegocios
         }
 
         public (string nombreCompleto, DateTime fecha_nac, char sexo, string nss, string estado_civil, string domicilio_CP,
-            string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero, string telefono, char turno, DateTime fecha ,string puesto) ConsultaIndivisualActualizar(string numero_nomina)
+            string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero, string telefono, char turno, DateTime fecha, char estado ,string puesto) ConsultaIndivisualActualizar(string numero_nomina)
         {
             if (string.IsNullOrWhiteSpace(numero_nomina))
             {
@@ -191,6 +191,18 @@ namespace CapaNegocios
         public DataSet ObtenerTotalAccidentesXCondicion(int idEmpleado)
         { 
             return empleadosDAO.ObtenerTotalAccidentesXCondicion(idEmpleado);
+        }
+
+        public void bajaEmpleado(string noNomina)
+        {
+            try
+            {
+                empleadosDAO.bajaEmpleado(noNomina);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error en la capa de negocios: " + ex.Message);
+            }
         }
     }
 }

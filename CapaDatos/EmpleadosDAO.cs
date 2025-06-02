@@ -274,7 +274,7 @@ namespace CapaDatos
         }
 
         public (string nombreCompleto, DateTime fecha_nac, char sexo, string nss,string estado_civil, string domicilio_CP, 
-            string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero, string telefono, char turno, DateTime fecha ,string puesto) ConsultaIndivisualActualizar(string numero_nomina)
+            string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero, string telefono, char turno, DateTime fecha, char estado ,string puesto) ConsultaIndivisualActualizar(string numero_nomina)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -291,23 +291,27 @@ namespace CapaDatos
                         {
                             if (reader.Read()) // Si hay resultados
                             {
-                                
+
                                 string nombreCompleto = reader.GetString("nombre_completo");
                                 DateTime fecha_nac = reader.GetDateTime("Fecha_Nacimiento");
                                 char sexo = reader.GetChar("Sexo");
                                 string nss = reader.GetString("Numero_Seguro");
                                 string estado_civil = reader.GetString("Estado_Civil");
-                                string domicilio_CP = reader.GetString("Codigo_Postal");          
+                                string domicilio_CP = reader.GetString("Codigo_Postal");
                                 string domicilio_estado = reader.GetString("Estado");
                                 string domicilio_ciudad = reader.GetString("Ciudad");
                                 string domicilio_colonia = reader.GetString("Colonia");
                                 string domicilio_calle = reader.GetString("Calle");
                                 string domicilio_numero = reader.GetString("Numero").ToString();
                                 string telefono = reader.GetString("Telefono");
-                                char turno = reader.GetString("Turno")[0];
-                                DateTime fecha = reader.GetDateTime("Fecha");
-                                string puesto = reader.GetString("Puesto");  // Reemplaza si "puesto" puede ser NULL
-                                return (nombreCompleto, fecha_nac, sexo, nss, estado_civil, domicilio_CP, domicilio_estado,domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero ,telefono, turno, fecha,puesto);
+                                Console.WriteLine("todo 1");
+                                char turno = reader.IsDBNull(reader.GetOrdinal("Turno")) ? '-' : reader.GetString("Turno")[0];
+                                Console.WriteLine("todo 2");
+                                DateTime fecha = reader.IsDBNull(reader.GetOrdinal("Fecha")) ? DateTime.MinValue : reader.GetDateTime("Fecha");
+                                char estado = reader.GetString("estado_Empleado")[0];
+                                string puesto = reader.IsDBNull(reader.GetOrdinal("Puesto")) ? "" : reader.GetString("Puesto");  // Reemplaza si "puesto" puede ser NULL
+                                Console.WriteLine("todo 3");
+                                return (nombreCompleto, fecha_nac, sexo, nss, estado_civil, domicilio_CP, domicilio_estado,domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero ,telefono, turno, fecha, estado,puesto);
                             }
                             else
                             {
@@ -510,6 +514,31 @@ namespace CapaDatos
 
                 adapter.Fill(data, "AccidentesEmpleadoXCondicion");
                 return data;
+            }
+        }
+
+        public void bajaEmpleado(string nonomina)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand("DarDeBajaEmpleado", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("p_numero_nomina", nonomina);
+
+                        command.ExecuteNonQuery();
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al dar de alta al empleado: " + ex.Message);
             }
         }
     }
