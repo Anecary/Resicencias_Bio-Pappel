@@ -149,7 +149,7 @@
             this.pBase.Controls.Add(this.pConsultaEmpleados);
             this.pBase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pBase.Location = new System.Drawing.Point(0, 45);
-            this.pBase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pBase.Margin = new System.Windows.Forms.Padding(2);
             this.pBase.Name = "pBase";
             this.pBase.Size = new System.Drawing.Size(945, 495);
             this.pBase.TabIndex = 36;
@@ -227,7 +227,7 @@
             this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
             this.txtPuesto.Location = new System.Drawing.Point(470, 148);
-            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
             this.txtPuesto.MaxLength = 32767;
             this.txtPuesto.Multiline = false;
             this.txtPuesto.Name = "txtPuesto";
@@ -261,7 +261,7 @@
             this.txtNSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNSS.ForeColor = System.Drawing.Color.DimGray;
             this.txtNSS.Location = new System.Drawing.Point(653, 271);
-            this.txtNSS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNSS.Margin = new System.Windows.Forms.Padding(4);
             this.txtNSS.MaxLength = 32767;
             this.txtNSS.Multiline = false;
             this.txtNSS.Name = "txtNSS";
@@ -295,7 +295,7 @@
             this.txtEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstadoCivil.ForeColor = System.Drawing.Color.DimGray;
             this.txtEstadoCivil.Location = new System.Drawing.Point(470, 271);
-            this.txtEstadoCivil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEstadoCivil.Margin = new System.Windows.Forms.Padding(4);
             this.txtEstadoCivil.MaxLength = 32767;
             this.txtEstadoCivil.Multiline = false;
             this.txtEstadoCivil.Name = "txtEstadoCivil";
@@ -329,7 +329,7 @@
             this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSexo.ForeColor = System.Drawing.Color.DimGray;
             this.txtSexo.Location = new System.Drawing.Point(209, 271);
-            this.txtSexo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSexo.Margin = new System.Windows.Forms.Padding(4);
             this.txtSexo.MaxLength = 32767;
             this.txtSexo.Multiline = false;
             this.txtSexo.Name = "txtSexo";
@@ -363,7 +363,7 @@
             this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
             this.txtEdad.Location = new System.Drawing.Point(26, 271);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
             this.txtEdad.MaxLength = 32767;
             this.txtEdad.Multiline = false;
             this.txtEdad.Name = "txtEdad";
@@ -397,7 +397,7 @@
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
             this.txtTelefono.Location = new System.Drawing.Point(656, 70);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.MaxLength = 32767;
             this.txtTelefono.Multiline = false;
             this.txtTelefono.Name = "txtTelefono";
@@ -431,7 +431,7 @@
             this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomicilio.ForeColor = System.Drawing.Color.DimGray;
             this.txtDomicilio.Location = new System.Drawing.Point(26, 207);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomicilio.MaxLength = 32767;
             this.txtDomicilio.Multiline = false;
             this.txtDomicilio.Name = "txtDomicilio";
@@ -465,7 +465,7 @@
             this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
             this.txtNombreEmpleado.Location = new System.Drawing.Point(22, 148);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreEmpleado.MaxLength = 32767;
             this.txtNombreEmpleado.Multiline = false;
             this.txtNombreEmpleado.Name = "txtNombreEmpleado";
@@ -499,7 +499,7 @@
             this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
             this.txtNumeroNomina.Location = new System.Drawing.Point(470, 70);
-            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroNomina.MaxLength = 32767;
             this.txtNumeroNomina.Multiline = false;
             this.txtNumeroNomina.Name = "txtNumeroNomina";
@@ -539,7 +539,7 @@
             this.cboxNumExpediente2.Location = new System.Drawing.Point(136, 56);
             this.cboxNumExpediente2.MinimumSize = new System.Drawing.Size(200, 50);
             this.cboxNumExpediente2.Name = "cboxNumExpediente2";
-            this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(2);
             this.cboxNumExpediente2.Size = new System.Drawing.Size(243, 50);
             this.cboxNumExpediente2.TabIndex = 197;
             this.cboxNumExpediente2.ValueMember = "";
@@ -606,7 +606,7 @@
             this.pConsultaNotaIndividual.Controls.Add(this.label5);
             this.pConsultaNotaIndividual.Location = new System.Drawing.Point(0, 0);
             this.pConsultaNotaIndividual.Name = "pConsultaNotaIndividual";
-            this.pConsultaNotaIndividual.Size = new System.Drawing.Size(945, 666);
+            this.pConsultaNotaIndividual.Size = new System.Drawing.Size(945, 500);
             this.pConsultaNotaIndividual.TabIndex = 137;
             // 
             // pConsultaIndividual
@@ -654,7 +654,7 @@
             this.txtIdConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdConsulta.ForeColor = System.Drawing.Color.DimGray;
             this.txtIdConsulta.Location = new System.Drawing.Point(20, 82);
-            this.txtIdConsulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdConsulta.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdConsulta.MaxLength = 32767;
             this.txtIdConsulta.Multiline = false;
             this.txtIdConsulta.Name = "txtIdConsulta";
@@ -688,7 +688,7 @@
             this.txtProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProceso.ForeColor = System.Drawing.Color.DimGray;
             this.txtProceso.Location = new System.Drawing.Point(448, 215);
-            this.txtProceso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProceso.Margin = new System.Windows.Forms.Padding(4);
             this.txtProceso.MaxLength = 32767;
             this.txtProceso.Multiline = false;
             this.txtProceso.Name = "txtProceso";
@@ -722,7 +722,7 @@
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.ForeColor = System.Drawing.Color.DimGray;
             this.txtDescripcion.Location = new System.Drawing.Point(448, 148);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.MaxLength = 32767;
             this.txtDescripcion.Multiline = false;
             this.txtDescripcion.Name = "txtDescripcion";
@@ -756,7 +756,7 @@
             this.txtFechaNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaNota.ForeColor = System.Drawing.Color.DimGray;
             this.txtFechaNota.Location = new System.Drawing.Point(20, 214);
-            this.txtFechaNota.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFechaNota.Margin = new System.Windows.Forms.Padding(4);
             this.txtFechaNota.MaxLength = 32767;
             this.txtFechaNota.Multiline = false;
             this.txtFechaNota.Name = "txtFechaNota";
@@ -790,7 +790,7 @@
             this.txtCausaConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCausaConsulta.ForeColor = System.Drawing.Color.DimGray;
             this.txtCausaConsulta.Location = new System.Drawing.Point(20, 148);
-            this.txtCausaConsulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCausaConsulta.Margin = new System.Windows.Forms.Padding(4);
             this.txtCausaConsulta.MaxLength = 32767;
             this.txtCausaConsulta.Multiline = false;
             this.txtCausaConsulta.Name = "txtCausaConsulta";
@@ -813,7 +813,7 @@
             this.txtDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiagnostico.ForeColor = System.Drawing.Color.DimGray;
             this.txtDiagnostico.Location = new System.Drawing.Point(18, 565);
-            this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiagnostico.MaxLength = 32767;
             this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
@@ -836,7 +836,7 @@
             this.txtObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservaciones.ForeColor = System.Drawing.Color.DimGray;
             this.txtObservaciones.Location = new System.Drawing.Point(18, 312);
-            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4);
             this.txtObservaciones.MaxLength = 32767;
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
@@ -922,7 +922,7 @@
             this.pConsultaEmpleados.Controls.Add(this.pNotaEmpleado);
             this.pConsultaEmpleados.Location = new System.Drawing.Point(0, 0);
             this.pConsultaEmpleados.Name = "pConsultaEmpleados";
-            this.pConsultaEmpleados.Size = new System.Drawing.Size(945, 666);
+            this.pConsultaEmpleados.Size = new System.Drawing.Size(945, 500);
             this.pConsultaEmpleados.TabIndex = 141;
             // 
             // label6
@@ -930,7 +930,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(-3, 975);
+            this.label6.Location = new System.Drawing.Point(-3, 633);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(111, 16);
             this.label6.TabIndex = 112;
@@ -979,7 +979,7 @@
             this.txtNombreEmpleadoSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreEmpleadoSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtNombreEmpleadoSin.Location = new System.Drawing.Point(448, 81);
-            this.txtNombreEmpleadoSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreEmpleadoSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreEmpleadoSin.MaxLength = 32767;
             this.txtNombreEmpleadoSin.Multiline = false;
             this.txtNombreEmpleadoSin.Name = "txtNombreEmpleadoSin";
@@ -1012,7 +1012,7 @@
             this.txtNoSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoSS.ForeColor = System.Drawing.Color.DimGray;
             this.txtNoSS.Location = new System.Drawing.Point(17, 81);
-            this.txtNoSS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNoSS.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoSS.MaxLength = 32767;
             this.txtNoSS.Multiline = false;
             this.txtNoSS.Name = "txtNoSS";
@@ -1046,7 +1046,7 @@
             this.txtTelefonoSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtTelefonoSin.Location = new System.Drawing.Point(448, 149);
-            this.txtTelefonoSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefonoSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefonoSin.MaxLength = 32767;
             this.txtTelefonoSin.Multiline = false;
             this.txtTelefonoSin.Name = "txtTelefonoSin";
@@ -1080,7 +1080,7 @@
             this.txtDomicilioSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomicilioSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtDomicilioSin.Location = new System.Drawing.Point(17, 215);
-            this.txtDomicilioSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomicilioSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomicilioSin.MaxLength = 32767;
             this.txtDomicilioSin.Multiline = false;
             this.txtDomicilioSin.Name = "txtDomicilioSin";
@@ -1114,7 +1114,7 @@
             this.txtIdEmpleadoSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdEmpleadoSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtIdEmpleadoSin.Location = new System.Drawing.Point(17, 149);
-            this.txtIdEmpleadoSin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdEmpleadoSin.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdEmpleadoSin.MaxLength = 32767;
             this.txtIdEmpleadoSin.Multiline = false;
             this.txtIdEmpleadoSin.Name = "txtIdEmpleadoSin";
