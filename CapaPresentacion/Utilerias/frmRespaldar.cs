@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace CapaPresentacion.Utilerias
@@ -17,13 +19,41 @@ namespace CapaPresentacion.Utilerias
         public frmRespaldar()
         {
             InitializeComponent();
+
+            panel1.Paint += new PaintEventHandler(Panel1_Paint);
+            panel4.Paint += new PaintEventHandler(Panel1_Paint);
+
         }
 
         private void frmRespaldar_Load(object sender, EventArgs e)
         {
 
         }
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel != null)
+            {
+                // Definir el radio de los bordes redondeados
+                int radius = 20;
 
+                // Crear un `GraphicsPath` para el área recortada del panel
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius * 2, radius * 2, 180, 90);
+                path.AddArc(panel.Width - radius * 2, 0, radius * 2, radius * 2, 270, 90);
+                path.AddArc(panel.Width - radius * 2, panel.Height - radius * 2, radius * 2, radius * 2, 0, 90);
+                path.AddArc(0, panel.Height - radius * 2, radius * 2, radius * 2, 90, 90);
+                path.CloseFigure();
+
+                // Aplicar el área recortada al panel
+                panel.Region = new Region(path);
+
+                // Dibujar el borde con el color deseado
+                Pen pen = new Pen(Color.FromArgb(6, 103, 105), 5); // Cambia el color aquí
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                e.Graphics.DrawPath(pen, path);
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             HacerBackup();
@@ -59,11 +89,11 @@ namespace CapaPresentacion.Utilerias
                 }
 
                 RegistrarBackup("root", rutaArchivo);
-                MessageBox.Show("Respaldo realizado con éxito.", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("Respaldo realizado con éxito.", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al realizar respaldo:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show($"Error al realizar respaldo:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -86,7 +116,7 @@ namespace CapaPresentacion.Utilerias
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al registrar el respaldo:\n{ex.Message}", "Error SQL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RJMessageBox.Show($"Error al registrar el respaldo:\n{ex.Message}", "Error SQL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -136,11 +166,11 @@ namespace CapaPresentacion.Utilerias
                         proceso.WaitForExit();
                     }
 
-                    MessageBox.Show("Restauración completada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RJMessageBox.Show("Restauración completada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error al restaurar la base de datos:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    RJMessageBox.Show($"Error al restaurar la base de datos:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
