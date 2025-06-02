@@ -6,46 +6,46 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.19436cm</Width>
+              <Width>3.13657cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.0306cm</Width>
+              <Width>0.97281cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.97768cm</Width>
+              <Width>0.91989cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.0306cm</Width>
+              <Width>0.97281cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.24226cm</Width>
+              <Width>1.18447cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.15407cm</Width>
+              <Width>1.09628cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.06588cm</Width>
+              <Width>1.00809cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.96004cm</Width>
+              <Width>0.90225cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.99532cm</Width>
+              <Width>1.22857cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.01296cm</Width>
+              <Width>0.95517cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.96004cm</Width>
+              <Width>0.90225cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.04413cm</Width>
+              <Width>0.98634cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.99532cm</Width>
+              <Width>0.93753cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.54213cm</Width>
+              <Width>1.48434cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -542,7 +542,6 @@
                             <TextRun>
                               <Value>TOTAL</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
@@ -1067,9 +1066,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>0.88759cm</Top>
-        <Left>0.26552cm</Left>
+        <Left>0.08846cm</Left>
         <Height>1.2cm</Height>
-        <Width>17.20536cm</Width>
+        <Width>16.68737cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1079,7 +1078,7 @@
       <Line Name="Line2">
         <Top>0.17639cm</Top>
         <Height>0cm</Height>
-        <Width>18.06414cm</Width>
+        <Width>16.95289cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1093,7 +1092,7 @@
     <Height>4.00694in</Height>
     <Style />
   </Body>
-  <Width>7.11187in</Width>
+  <Width>6.67437in</Width>
   <Page>
     <PageHeader>
       <Height>3.03528cm</Height>
@@ -1122,8 +1121,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox44</rd:DefaultName>
-          <Top>0.40257cm</Top>
-          <Left>10.55006cm</Left>
+          <Top>0.28306cm</Top>
+          <Left>9.14777cm</Left>
           <Height>0.6cm</Height>
           <Width>3.08734cm</Width>
           <Style>
@@ -1155,8 +1154,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox64</rd:DefaultName>
-          <Top>0.40257cm</Top>
-          <Left>13.77851cm</Left>
+          <Top>0.28306cm</Top>
+          <Left>12.37622cm</Left>
           <Height>0.6cm</Height>
           <Width>4.28563cm</Width>
           <ZIndex>1</ZIndex>
@@ -1194,7 +1193,7 @@
                 <TextRun>
                   <Value>Reporte accidentes por Incapacidad Departamento</Value>
                   <Style>
-                    <FontSize>20pt</FontSize>
+                    <FontSize>16pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                     <Color>#066769</Color>
                   </Style>
@@ -1209,7 +1208,7 @@
           <Top>1.05945cm</Top>
           <Left>5.94943cm</Left>
           <Height>1.97583cm</Height>
-          <Width>11.79721cm</Width>
+          <Width>10.71242cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>

@@ -92,46 +92,46 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>3.44112cm</Width>
+                  <Width>2.82144cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.92279cm</Width>
+                  <Width>0.94096cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.0639cm</Width>
+                  <Width>0.9226cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.02336cm</Width>
+                  <Width>0.9773cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.0051cm</Width>
+                  <Width>0.99871cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.93454cm</Width>
+                  <Width>1.06138cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.0051cm</Width>
+                  <Width>0.92124cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.98747cm</Width>
+                  <Width>0.90171cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.98336cm</Width>
+                  <Width>1.00343cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.07565cm</Width>
+                  <Width>1.15339cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.02273cm</Width>
+                  <Width>0.93697cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.92573cm</Width>
+                  <Width>1.05164cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.93455cm</Width>
+                  <Width>0.92816cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.86057cm</Width>
+                  <Width>1.5896cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -630,7 +630,6 @@
                                 <TextRun>
                                   <Value>TOTAL</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1157,9 +1156,9 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.94933cm</Top>
-            <Left>0.32315cm</Left>
+            <Left>0.01302cm</Left>
             <Height>1.2cm</Height>
-            <Width>17.18603cm</Width>
+            <Width>16.20853cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1169,7 +1168,7 @@
           <Line Name="Line2">
             <Top>0.30715cm</Top>
             <Height>0cm</Height>
-            <Width>18.20057cm</Width>
+            <Width>16.40676cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1180,10 +1179,10 @@
             </Style>
           </Line>
         </ReportItems>
-        <Height>5.14434in</Height>
+        <Height>4.42559in</Height>
         <Style />
       </Body>
-      <Width>7.16558in</Width>
+      <Width>6.45935in</Width>
       <Page>
         <PageHeader>
           <Height>3cm</Height>
@@ -1226,7 +1225,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox44</rd:DefaultName>
               <Top>0.39187cm</Top>
-              <Left>10.51546cm</Left>
+              <Left>8.70747cm</Left>
               <Height>0.6cm</Height>
               <Width>3.08734cm</Width>
               <ZIndex>1</ZIndex>
@@ -1260,7 +1259,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox64</rd:DefaultName>
               <Top>0.39187cm</Top>
-              <Left>13.74391cm</Left>
+              <Left>11.93592cm</Left>
               <Height>0.6cm</Height>
               <Width>4.28563cm</Width>
               <ZIndex>2</ZIndex>
@@ -1283,7 +1282,7 @@
                     <TextRun>
                       <Value>Reporte sobre accidentes según su Tipo de Lesión</Value>
                       <Style>
-                        <FontSize>20pt</FontSize>
+                        <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Color>#066769</Color>
                       </Style>
@@ -1295,10 +1294,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox31</rd:DefaultName>
-              <Top>1.16826cm</Top>
-              <Left>5.97493cm</Left>
+              <Top>1.20353cm</Top>
+              <Left>6.0102cm</Left>
               <Height>1.79647cm</Height>
-              <Width>12.19572cm</Width>
+              <Width>10.21135cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>
