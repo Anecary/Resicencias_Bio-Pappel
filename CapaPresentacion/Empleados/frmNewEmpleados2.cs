@@ -112,38 +112,11 @@ namespace CapaPresentacion.Empleados
                     //RJMessageBox.Show(idEmpleado.ToString());
 
                     var result = RJMessageBox.Show(
-                         "El colaborador con el NSS " + txtNss.Text + " ya se encuentra registrado en el sistema.\n\n" +
-                         "¿Desea actualizar sus datos? Al hacerlo, la información actual será reemplazada por la recién ingresada " +
-                         "y será necesario dar de alta nuevamente al empleado.",
+                         "El colaborador con el NSS " + txtNss.Text + " ya se encuentra registrado en el sistema.\n\n",                         
                          "ADVERTENCIA",
-                         MessageBoxButtons.YesNo,
+                         MessageBoxButtons.OK,
                          MessageBoxIcon.Warning);
-
-                    if (result == DialogResult.Yes)
-                    {
-                        EmpleadosCE empleadoReingreso = new EmpleadosCE
-                        {
-                            IdEmpleado = idEmpleado,
-                            Nombre = nombre,
-                            Sexo = sexo,
-                            EstadoCivil = estadoCivil,
-                            DomicilioCalle = domicilioCalle,
-                            DomicilioNumero = domicilioNumero,
-                            DomicilioColonia = domicilioColonia,
-                            DomicilioCP = domicilioCP,
-                            DomicilioCiudad = domicilioCiudad,
-                            DomicilioEstado = domicilioEstado,
-                            Telefono = telefono
-                        };
-                        negocios.actualizarEmpleadoReingreso(empleadoReingreso);
-                        RJMessageBox.Show("Empleado actualizado correctamente para reingreso.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LimpiarControles();
                         return;
-                    }
-                    if (result == DialogResult.No)
-                    {
-                        return;
-                    }
                 }
 
                 int edad = DateTime.Today.Year - dtpFechaNacimiento.Value.Year;

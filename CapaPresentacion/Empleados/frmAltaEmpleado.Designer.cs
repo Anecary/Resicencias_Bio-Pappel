@@ -44,6 +44,7 @@
             this.txtIdPuesto = new MaterialSkin.Controls.MaterialTextBox();
             this.txtNoNomina = new CapaPresentacion.TextPersonalizado();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtidempleado = new CapaPresentacion.TextPersonalizado();
             this.label5 = new System.Windows.Forms.Label();
             this.txtDomicilio = new CapaPresentacion.TextPersonalizado();
             this.label4 = new System.Windows.Forms.Label();
@@ -319,6 +320,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.txtidempleado);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.txtDomicilio);
             this.panel3.Controls.Add(this.label4);
@@ -332,6 +334,30 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(916, 181);
             this.panel3.TabIndex = 60;
+            // 
+            // txtidempleado
+            // 
+            this.txtidempleado.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtidempleado.BorderColor = System.Drawing.Color.Gray;
+            this.txtidempleado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtidempleado.BorderRadius = 12;
+            this.txtidempleado.BorderSize = 2;
+            this.txtidempleado.Enabled = false;
+            this.txtidempleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidempleado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtidempleado.Location = new System.Drawing.Point(756, 83);
+            this.txtidempleado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidempleado.MaxLength = 32767;
+            this.txtidempleado.Multiline = false;
+            this.txtidempleado.Name = "txtidempleado";
+            this.txtidempleado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtidempleado.PasswordChar = false;
+            this.txtidempleado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtidempleado.PlaceholderText = "";
+            this.txtidempleado.Size = new System.Drawing.Size(102, 35);
+            this.txtidempleado.TabIndex = 136;
+            this.txtidempleado.UnderlinedStyle = true;
+            this.txtidempleado.Visible = false;
             // 
             // label5
             // 
@@ -442,9 +468,9 @@
             this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.label66.Location = new System.Drawing.Point(56, 24);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(145, 16);
+            this.label66.Size = new System.Drawing.Size(176, 16);
             this.label66.TabIndex = 129;
-            this.label66.Text = "Número de Seguro: ";
+            this.label66.Text = "Número de Nomina/NSS";
             // 
             // txtNssBusqueda
             // 
@@ -599,5 +625,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private selectorFechaPersonalizado dtpFechaIngreso;
+        private TextPersonalizado txtidempleado;
     }
 }

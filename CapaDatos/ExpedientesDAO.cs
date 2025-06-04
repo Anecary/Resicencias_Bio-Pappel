@@ -252,7 +252,7 @@ namespace CapaDatos
                 adapter = new MySqlDataAdapter("VerificarExpedienteExisteNss", conn);
                 adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-                MySqlParameter p_numExpediente = new MySqlParameter("@p_nss", MySqlDbType.VarChar);
+                MySqlParameter p_numExpediente = new MySqlParameter("@p_numnomina_nss", MySqlDbType.VarChar);
                 p_numExpediente.Direction = ParameterDirection.Input;
                 p_numExpediente.Value = numExpediente;
                 adapter.SelectCommand.Parameters.Add(p_numExpediente);

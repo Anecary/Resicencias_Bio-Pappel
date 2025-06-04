@@ -92,46 +92,46 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.39064cm</Width>
+                  <Width>1.30817cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.15251cm</Width>
+                  <Width>1.07004cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.0996cm</Width>
+                  <Width>1.01713cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.17897cm</Width>
+                  <Width>1.0965cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.07314cm</Width>
+                  <Width>0.99067cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.12606cm</Width>
+                  <Width>1.04359cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.04668cm</Width>
+                  <Width>0.96421cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.94085cm</Width>
+                  <Width>0.85838cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.18084cm</Width>
+                  <Width>1.09837cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.17897cm</Width>
+                  <Width>1.0965cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.17897cm</Width>
+                  <Width>1.0965cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.04668cm</Width>
+                  <Width>0.96421cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.02022cm</Width>
+                  <Width>0.93775cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.63418cm</Width>
+                  <Width>2.55171cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -630,7 +630,6 @@
                                 <TextRun>
                                   <Value>TOTAL</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1159,7 +1158,7 @@
             <Top>0.81704cm</Top>
             <Left>0.35017cm</Left>
             <Height>1.2cm</Height>
-            <Width>17.24831cm</Width>
+            <Width>16.09377cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1908,8 +1907,8 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet_AccidentesxAño</DataSetName>
-            <Top>8.67516cm</Top>
-            <Left>1.65829cm</Left>
+            <Top>4.44183cm</Top>
+            <Left>1.22487cm</Left>
             <Height>7.06375cm</Height>
             <Width>14.06167cm</Width>
             <ZIndex>1</ZIndex>
@@ -1925,7 +1924,7 @@
           <Line Name="Line2">
             <Top>0.17639cm</Top>
             <Height>0cm</Height>
-            <Width>18.06414cm</Width>
+            <Width>16.58248cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1939,7 +1938,7 @@
         <Height>6.67708in</Height>
         <Style />
       </Body>
-      <Width>7.11187in</Width>
+      <Width>6.52854in</Width>
       <Page>
         <PageHeader>
           <Height>3cm</Height>
@@ -1968,8 +1967,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox44</rd:DefaultName>
-              <Top>0.3175cm</Top>
-              <Left>10.40788cm</Left>
+              <Top>0.35277cm</Top>
+              <Left>8.89458cm</Left>
               <Height>0.6cm</Height>
               <Width>3.08734cm</Width>
               <Style>
@@ -2001,8 +2000,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox64</rd:DefaultName>
-              <Top>0.3175cm</Top>
-              <Left>13.67161cm</Left>
+              <Top>0.35277cm</Top>
+              <Left>12.15831cm</Left>
               <Height>0.6cm</Height>
               <Width>4.28563cm</Width>
               <ZIndex>1</ZIndex>
@@ -2020,10 +2019,10 @@
               <Source>Embedded</Source>
               <Value>biopappellogoremovebgpreview</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>0.3175cm</Top>
-              <Left>0.35017cm</Left>
+              <Top>0.35277cm</Top>
+              <Left>0.14222cm</Left>
               <Height>2.135cm</Height>
-              <Width>5.90437cm</Width>
+              <Width>5.5075cm</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -2040,7 +2039,7 @@
                     <TextRun>
                       <Value>Reportes sobre accidentes por año </Value>
                       <Style>
-                        <FontSize>20pt</FontSize>
+                        <FontSize>18pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Color>#066769</Color>
                       </Style>
@@ -2052,10 +2051,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox62</rd:DefaultName>
-              <Top>1.16431cm</Top>
-              <Left>6.58093cm</Left>
+              <Top>1.19958cm</Top>
+              <Left>6.04659cm</Left>
               <Height>1.76514cm</Height>
-              <Width>11.37631cm</Width>
+              <Width>10.39735cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>

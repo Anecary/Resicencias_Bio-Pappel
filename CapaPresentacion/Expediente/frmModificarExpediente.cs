@@ -361,6 +361,7 @@ namespace CapaPresentacion.Expediente
                 txtSGenitoUrinario.Text = GetStringValue(dr["SistemaGenitourinario"]);
                 txtSMusculoEsqueletico.Text = GetStringValue(dr["SistemaMusculoesqueletico"]);
                 txtOrganoSentidos.Text = GetStringValue(dr["Organo_Sentidos"]);
+                txtGinecoObstetrico.Text = GetStringValue(dr["ginecoObstetricos"]);
                 txtGrupoSanguineo.Text = GetStringValue(dr["Grupo_Sanguineo"]);
 
                 // Estudios

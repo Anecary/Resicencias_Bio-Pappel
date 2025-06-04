@@ -43,6 +43,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btmBaja = new CapaPresentacion.BotonPersonalizado();
             this.label66 = new System.Windows.Forms.Label();
             this.txtNoNomina = new CapaPresentacion.TextPersonalizado();
             this.btnBuscarEmpleadoNN = new CapaPresentacion.BotonPersonalizado();
@@ -301,6 +302,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.btmBaja);
             this.panel3.Controls.Add(this.label66);
             this.panel3.Controls.Add(this.txtNoNomina);
             this.panel3.Controls.Add(this.btnBuscarEmpleadoNN);
@@ -309,6 +311,30 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(883, 110);
             this.panel3.TabIndex = 96;
+            // 
+            // btmBaja
+            // 
+            this.btmBaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmBaja.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btmBaja.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btmBaja.BorderRadius = 20;
+            this.btmBaja.BorderSize = 0;
+            this.btmBaja.Enabled = false;
+            this.btmBaja.FlatAppearance.BorderSize = 0;
+            this.btmBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btmBaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmBaja.ForeColor = System.Drawing.Color.White;
+            this.btmBaja.Image = ((System.Drawing.Image)(resources.GetObject("btmBaja.Image")));
+            this.btmBaja.Location = new System.Drawing.Point(588, 41);
+            this.btmBaja.Name = "btmBaja";
+            this.btmBaja.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btmBaja.Size = new System.Drawing.Size(193, 53);
+            this.btmBaja.TabIndex = 145;
+            this.btmBaja.Text = "Dar de baja";
+            this.btmBaja.TextColor = System.Drawing.Color.White;
+            this.btmBaja.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btmBaja.UseVisualStyleBackColor = false;
+            this.btmBaja.Click += new System.EventHandler(this.btmBaja_Click);
             // 
             // label66
             // 
@@ -332,7 +358,7 @@
             this.txtNoNomina.ForeColor = System.Drawing.Color.DimGray;
             this.txtNoNomina.Location = new System.Drawing.Point(52, 59);
             this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNoNomina.MaxLength = 32767;
+            this.txtNoNomina.MaxLength = 15;
             this.txtNoNomina.Multiline = false;
             this.txtNoNomina.Name = "txtNoNomina";
             this.txtNoNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -527,7 +553,7 @@
             this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
             this.txtTelefono.Location = new System.Drawing.Point(605, 323);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTelefono.MaxLength = 13;
+            this.txtTelefono.MaxLength = 10;
             this.txtTelefono.Multiline = false;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -562,7 +588,7 @@
             this.txtNumero.ForeColor = System.Drawing.Color.DimGray;
             this.txtNumero.Location = new System.Drawing.Point(491, 323);
             this.txtNumero.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumero.MaxLength = 32767;
+            this.txtNumero.MaxLength = 7;
             this.txtNumero.Multiline = false;
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -596,7 +622,7 @@
             this.txtCalle.ForeColor = System.Drawing.Color.DimGray;
             this.txtCalle.Location = new System.Drawing.Point(283, 323);
             this.txtCalle.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCalle.MaxLength = 32767;
+            this.txtCalle.MaxLength = 40;
             this.txtCalle.Multiline = false;
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -630,7 +656,7 @@
             this.txtColonia.ForeColor = System.Drawing.Color.DimGray;
             this.txtColonia.Location = new System.Drawing.Point(48, 323);
             this.txtColonia.Margin = new System.Windows.Forms.Padding(4);
-            this.txtColonia.MaxLength = 32767;
+            this.txtColonia.MaxLength = 40;
             this.txtColonia.Multiline = false;
             this.txtColonia.Name = "txtColonia";
             this.txtColonia.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -664,7 +690,7 @@
             this.txtCiudad.ForeColor = System.Drawing.Color.DimGray;
             this.txtCiudad.Location = new System.Drawing.Point(491, 248);
             this.txtCiudad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCiudad.MaxLength = 32767;
+            this.txtCiudad.MaxLength = 40;
             this.txtCiudad.Multiline = false;
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -896,7 +922,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(693, 42);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Actualizar Informacion de Colaboradores";
+            this.label1.Text = "Actualizar Información de Colaboradores";
             // 
             // pictureBox2
             // 
@@ -983,5 +1009,6 @@
         private MaterialSkin.Controls.MaterialComboBox cmbPuesto;
         private MaterialSkin.Controls.MaterialComboBox cmbEstado;
         private MaterialSkin.Controls.MaterialComboBox cmbEstadoCivil;
+        private BotonPersonalizado btmBaja;
     }
 }

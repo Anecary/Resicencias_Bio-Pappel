@@ -543,7 +543,7 @@ namespace CapaPresentacion.Nota_Medica
                 txtSGenitoUrinario.Text = row["SistemaGenitourinario"]?.ToString() ?? "";
                 txtSMusculoEsqueletico.Text = row["SistemaMusculoesqueletico"]?.ToString() ?? "";
                 txtOrganoSentidos.Text = row["Organo_Sentidos"]?.ToString() ?? "";
-                txtGinecoObstetrico.Text = row["Grupo_Sanguineo"]?.ToString() ?? "";
+                txtGinecoObstetrico.Text = row["ginecoObstetricos"]?.ToString() ?? "";
                 txtGrupoSanguineo.Text = row["Grupo_Sanguineo"]?.ToString() ?? "";
                 txtEstudiosLaboratorio.Text = row["Estudios_Laboratorio"]?.ToString() ?? "";
                 txtEstudiosRadiologicos.Text = row["Estudios_Radiologicos"]?.ToString() ?? "";

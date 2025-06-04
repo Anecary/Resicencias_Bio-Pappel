@@ -92,46 +92,46 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.44544cm</Width>
+                  <Width>1.32897cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.20732cm</Width>
+                  <Width>1.09085cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.18086cm</Width>
+                  <Width>1.06439cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.26023cm</Width>
+                  <Width>1.14376cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.18086cm</Width>
+                  <Width>1.06439cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.28669cm</Width>
+                  <Width>1.17022cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.12794cm</Width>
+                  <Width>1.01147cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.99565cm</Width>
+                  <Width>0.87918cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.23378cm</Width>
+                  <Width>1.11731cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.20732cm</Width>
+                  <Width>1.09085cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.1544cm</Width>
+                  <Width>1.03793cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.18086cm</Width>
+                  <Width>1.06439cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.12794cm</Width>
+                  <Width>1.01147cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.63065cm</Width>
+                  <Width>1.51418cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -630,7 +630,6 @@
                                 <TextRun>
                                   <Value>TOTAL</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Color>White</Color>
                                   </Style>
@@ -1159,7 +1158,7 @@
             <Top>1.10807cm</Top>
             <Left>0.30808cm</Left>
             <Height>1.2cm</Height>
-            <Width>17.21994cm</Width>
+            <Width>15.58935cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1511,8 +1510,8 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet_Turno</DataSetName>
-            <Top>4.91808cm</Top>
-            <Left>2.06409cm</Left>
+            <Top>4.28308cm</Top>
+            <Left>0.92638cm</Left>
             <Height>5.79375cm</Height>
             <Width>13.83334cm</Width>
             <ZIndex>1</ZIndex>
@@ -1527,9 +1526,8 @@
           </Chart>
           <Line Name="Line2">
             <Top>0.38014cm</Top>
-            <Left>0cm</Left>
             <Height>0cm</Height>
-            <Width>18.20057cm</Width>
+            <Width>16.18974cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1540,10 +1538,10 @@
             </Style>
           </Line>
         </ReportItems>
-        <Height>6.79167in</Height>
+        <Height>4.28125in</Height>
         <Style />
       </Body>
-      <Width>7.16558in</Width>
+      <Width>6.37391in</Width>
       <Page>
         <PageHeader>
           <Height>3cm</Height>
@@ -1572,8 +1570,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox44</rd:DefaultName>
-              <Top>0.39856cm</Top>
-              <Left>10.51546cm</Left>
+              <Top>0.36328cm</Top>
+              <Left>8.38335cm</Left>
               <Height>0.6cm</Height>
               <Width>3.08734cm</Width>
               <Style>
@@ -1605,8 +1603,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox64</rd:DefaultName>
-              <Top>0.39856cm</Top>
-              <Left>13.74391cm</Left>
+              <Top>0.36328cm</Top>
+              <Left>11.6118cm</Left>
               <Height>0.6cm</Height>
               <Width>4.28563cm</Width>
               <ZIndex>1</ZIndex>
@@ -1644,7 +1642,7 @@
                     <TextRun>
                       <Value>Reportes sobre accidentes por turno </Value>
                       <Style>
-                        <FontSize>20pt</FontSize>
+                        <FontSize>16pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Color>#066769</Color>
                       </Style>
@@ -1659,7 +1657,7 @@
               <Top>1.13967cm</Top>
               <Left>6.32647cm</Left>
               <Height>1.76417cm</Height>
-              <Width>11.7075cm</Width>
+              <Width>9.57096cm</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>

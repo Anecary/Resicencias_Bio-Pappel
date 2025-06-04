@@ -47,7 +47,7 @@ namespace CapaPresentacion.Reportes
                 case "Accidentes por año":
                     Accidentes_x_año();
                     break;
-                case "Accidentes por seccion":
+                case "Accidentes por sección":
                     obtener_Secciones();
                     break;
                 case "Accidentes por semana":

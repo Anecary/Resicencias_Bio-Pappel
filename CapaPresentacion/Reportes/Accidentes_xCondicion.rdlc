@@ -6,46 +6,46 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5869cm</Width>
+              <Width>2.53587cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.16162cm</Width>
+              <Width>1.11059cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.12635cm</Width>
+              <Width>1.07532cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.10871cm</Width>
+              <Width>1.05768cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.07474cm</Width>
+              <Width>1.02371cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.07343cm</Width>
+              <Width>1.0224cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.00224cm</Width>
+              <Width>0.95121cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.12635cm</Width>
+              <Width>1.07532cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.09107cm</Width>
+              <Width>1.04004cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.12635cm</Width>
+              <Width>1.07532cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.12635cm</Width>
+              <Width>1.07532cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.10871cm</Width>
+              <Width>1.05768cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.07343cm</Width>
+              <Width>1.0224cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.54968cm</Width>
+              <Width>1.49865cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -544,7 +544,6 @@
                             <TextRun>
                               <Value>TOTAL</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
@@ -1071,9 +1070,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet_Condicion</DataSetName>
         <Top>1.16981cm</Top>
-        <Left>0.28343cm</Left>
+        <Left>0.08042cm</Left>
         <Height>1.2cm</Height>
-        <Width>17.33593cm</Width>
+        <Width>16.62156cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1083,7 +1082,7 @@
       <Line Name="Line2">
         <Top>0.29917cm</Top>
         <Height>0cm</Height>
-        <Width>18.06414cm</Width>
+        <Width>16.90499cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1097,7 +1096,7 @@
     <Height>5.61111in</Height>
     <Style />
   </Body>
-  <Width>7.11187in</Width>
+  <Width>6.65551in</Width>
   <Page>
     <PageHeader>
       <Height>3cm</Height>
@@ -1141,7 +1140,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox44</rd:DefaultName>
           <Top>0.35545cm</Top>
-          <Left>10.4246cm</Left>
+          <Left>8.78418cm</Left>
           <Height>0.6cm</Height>
           <Width>3.08734cm</Width>
           <ZIndex>1</ZIndex>
@@ -1175,7 +1174,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox64</rd:DefaultName>
           <Top>0.35545cm</Top>
-          <Left>13.68833cm</Left>
+          <Left>12.04791cm</Left>
           <Height>0.6cm</Height>
           <Width>4.28563cm</Width>
           <ZIndex>2</ZIndex>
@@ -1198,7 +1197,7 @@
                 <TextRun>
                   <Value>Reporte accidentes por Condición</Value>
                   <Style>
-                    <FontSize>20pt</FontSize>
+                    <FontSize>16pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                     <Color>#066769</Color>
                   </Style>
@@ -1213,7 +1212,7 @@
           <Top>1.29059cm</Top>
           <Left>6.36419cm</Left>
           <Height>1.70941cm</Height>
-          <Width>11.60977cm</Width>
+          <Width>9.96935cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>

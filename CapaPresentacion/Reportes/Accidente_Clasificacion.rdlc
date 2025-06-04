@@ -36,7 +36,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox64</rd:DefaultName>
         <Top>0.49333cm</Top>
-        <Left>13.63063cm</Left>
+        <Left>12.25065cm</Left>
         <Height>0.6cm</Height>
         <Width>4.28563cm</Width>
         <ZIndex>1</ZIndex>
@@ -73,7 +73,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox44</rd:DefaultName>
         <Top>0.49333cm</Top>
-        <Left>10.3669cm</Left>
+        <Left>8.98692cm</Left>
         <Height>0.6cm</Height>
         <Width>3.08734cm</Width>
         <ZIndex>2</ZIndex>
@@ -96,7 +96,7 @@
               <TextRun>
                 <Value>Reportes sobre accidentes por clasificación</Value>
                 <Style>
-                  <FontSize>20pt</FontSize>
+                  <FontSize>16pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <Color>#066769</Color>
                 </Style>
@@ -111,7 +111,7 @@
         <Top>1.26972cm</Top>
         <Left>6.20876cm</Left>
         <Height>1.76417cm</Height>
-        <Width>11.7075cm</Width>
+        <Width>10.32752cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -126,7 +126,7 @@
       <Line Name="Line2">
         <Top>3.06917cm</Top>
         <Height>0cm</Height>
-        <Width>18.04426cm</Width>
+        <Width>16.88009cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -140,46 +140,46 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.22033cm</Width>
+              <Width>2.74347cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.08263cm</Width>
+              <Width>1.01081cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.05617cm</Width>
+              <Width>0.98435cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.05235cm</Width>
+              <Width>0.98053cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.98171cm</Width>
+              <Width>0.90989cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.10526cm</Width>
+              <Width>1.03344cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.99943cm</Width>
+              <Width>0.92761cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.86714cm</Width>
+              <Width>0.79532cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.10527cm</Width>
+              <Width>1.03345cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.07881cm</Width>
+              <Width>1.00699cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.07881cm</Width>
+              <Width>1.00699cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.02589cm</Width>
+              <Width>1.29789cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.96131cm</Width>
+              <Width>0.88949cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.61339cm</Width>
+              <Width>1.72137cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -652,7 +652,6 @@
                             <TextRun>
                               <Value>TOTAL</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
@@ -1151,7 +1150,7 @@
         <Top>3.64807cm</Top>
         <Left>0.3132cm</Left>
         <Height>1.34666cm</Height>
-        <Width>17.22854cm</Width>
+        <Width>16.34164cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -1160,10 +1159,10 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>4.83333in</Height>
+    <Height>4.375in</Height>
     <Style />
   </Body>
-  <Width>7.10404in</Width>
+  <Width>6.64571in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
