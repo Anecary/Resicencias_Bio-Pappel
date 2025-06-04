@@ -40,7 +40,7 @@ namespace CapaNegocios
             }
         }
 
-        public (string nombreCompleto, string telefono, string domicilio, string estado) ObtenerEmpleadoPorNSS(string nss)
+        public (string nombreCompleto, string telefono, string domicilio, string estado, string numnomina, int idempleado) ObtenerEmpleadoPorNSS(string nss)
         {
             if (string.IsNullOrWhiteSpace(nss))
             {

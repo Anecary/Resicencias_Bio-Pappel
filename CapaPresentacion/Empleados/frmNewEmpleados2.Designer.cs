@@ -218,7 +218,7 @@
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(383, 35);
             this.dtpFechaNacimiento.SkinColor = System.Drawing.Color.White;
-            this.dtpFechaNacimiento.TabIndex = 160;
+            this.dtpFechaNacimiento.TabIndex = 5;
             this.dtpFechaNacimiento.TextColor = System.Drawing.Color.DarkGray;
             // 
             // label16
@@ -276,7 +276,7 @@
             this.txtApellidoM.ForeColor = System.Drawing.Color.DimGray;
             this.txtApellidoM.Location = new System.Drawing.Point(700, 30);
             this.txtApellidoM.Margin = new System.Windows.Forms.Padding(4);
-            this.txtApellidoM.MaxLength = 25;
+            this.txtApellidoM.MaxLength = 30;
             this.txtApellidoM.Multiline = false;
             this.txtApellidoM.Name = "txtApellidoM";
             this.txtApellidoM.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -310,7 +310,7 @@
             this.txtApellidoP.ForeColor = System.Drawing.Color.DimGray;
             this.txtApellidoP.Location = new System.Drawing.Point(496, 30);
             this.txtApellidoP.Margin = new System.Windows.Forms.Padding(4);
-            this.txtApellidoP.MaxLength = 25;
+            this.txtApellidoP.MaxLength = 30;
             this.txtApellidoP.Multiline = false;
             this.txtApellidoP.Name = "txtApellidoP";
             this.txtApellidoP.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -363,7 +363,7 @@
             this.txtCp.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtCp.PlaceholderText = "";
             this.txtCp.Size = new System.Drawing.Size(200, 35);
-            this.txtCp.TabIndex = 146;
+            this.txtCp.TabIndex = 9;
             this.txtCp.UnderlinedStyle = true;
             this.txtCp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCp_KeyPress_1);
             // 
@@ -389,7 +389,7 @@
             this.txtNumero.ForeColor = System.Drawing.Color.DimGray;
             this.txtNumero.Location = new System.Drawing.Point(18, 364);
             this.txtNumero.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumero.MaxLength = 20;
+            this.txtNumero.MaxLength = 7;
             this.txtNumero.Multiline = false;
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -397,7 +397,7 @@
             this.txtNumero.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNumero.PlaceholderText = "";
             this.txtNumero.Size = new System.Drawing.Size(419, 35);
-            this.txtNumero.TabIndex = 144;
+            this.txtNumero.TabIndex = 14;
             this.txtNumero.UnderlinedStyle = true;
             this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
@@ -423,7 +423,7 @@
             this.txtColonia.ForeColor = System.Drawing.Color.DimGray;
             this.txtColonia.Location = new System.Drawing.Point(18, 298);
             this.txtColonia.Margin = new System.Windows.Forms.Padding(4);
-            this.txtColonia.MaxLength = 25;
+            this.txtColonia.MaxLength = 40;
             this.txtColonia.Multiline = false;
             this.txtColonia.Name = "txtColonia";
             this.txtColonia.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -431,7 +431,7 @@
             this.txtColonia.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtColonia.PlaceholderText = "";
             this.txtColonia.Size = new System.Drawing.Size(419, 35);
-            this.txtColonia.TabIndex = 142;
+            this.txtColonia.TabIndex = 12;
             this.txtColonia.UnderlinedStyle = true;
             this.txtColonia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtColonia_KeyPress);
             // 
@@ -457,7 +457,7 @@
             this.txtCalle.ForeColor = System.Drawing.Color.DimGray;
             this.txtCalle.Location = new System.Drawing.Point(496, 364);
             this.txtCalle.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCalle.MaxLength = 32767;
+            this.txtCalle.MaxLength = 40;
             this.txtCalle.Multiline = false;
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -465,7 +465,7 @@
             this.txtCalle.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtCalle.PlaceholderText = "";
             this.txtCalle.Size = new System.Drawing.Size(383, 35);
-            this.txtCalle.TabIndex = 140;
+            this.txtCalle.TabIndex = 15;
             this.txtCalle.UnderlinedStyle = true;
             this.txtCalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCalle_KeyPress);
             // 
@@ -491,7 +491,7 @@
             this.txtMunicipio.ForeColor = System.Drawing.Color.DimGray;
             this.txtMunicipio.Location = new System.Drawing.Point(494, 298);
             this.txtMunicipio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMunicipio.MaxLength = 32767;
+            this.txtMunicipio.MaxLength = 40;
             this.txtMunicipio.Multiline = false;
             this.txtMunicipio.Name = "txtMunicipio";
             this.txtMunicipio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -499,7 +499,7 @@
             this.txtMunicipio.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMunicipio.PlaceholderText = "";
             this.txtMunicipio.Size = new System.Drawing.Size(383, 35);
-            this.txtMunicipio.TabIndex = 138;
+            this.txtMunicipio.TabIndex = 13;
             this.txtMunicipio.UnderlinedStyle = true;
             this.txtMunicipio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMunicipio_KeyPress);
             // 
@@ -525,7 +525,7 @@
             this.txtNss.ForeColor = System.Drawing.Color.DimGray;
             this.txtNss.Location = new System.Drawing.Point(496, 231);
             this.txtNss.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNss.MaxLength = 15;
+            this.txtNss.MaxLength = 14;
             this.txtNss.Multiline = false;
             this.txtNss.Name = "txtNss";
             this.txtNss.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -533,7 +533,7 @@
             this.txtNss.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNss.PlaceholderText = "";
             this.txtNss.Size = new System.Drawing.Size(383, 35);
-            this.txtNss.TabIndex = 136;
+            this.txtNss.TabIndex = 11;
             this.txtNss.UnderlinedStyle = true;
             this.txtNss.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNss_KeyPress);
             // 
@@ -567,7 +567,7 @@
             this.txtRFC.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtRFC.PlaceholderText = "";
             this.txtRFC.Size = new System.Drawing.Size(383, 35);
-            this.txtRFC.TabIndex = 134;
+            this.txtRFC.TabIndex = 8;
             this.txtRFC.UnderlinedStyle = true;
             this.txtRFC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRFC_KeyPress);
             // 
@@ -593,7 +593,7 @@
             this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
             this.txtTelefono.Location = new System.Drawing.Point(18, 98);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTelefono.MaxLength = 13;
+            this.txtTelefono.MaxLength = 10;
             this.txtTelefono.Multiline = false;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -627,7 +627,7 @@
             this.txtNombre.ForeColor = System.Drawing.Color.DimGray;
             this.txtNombre.Location = new System.Drawing.Point(18, 30);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombre.MaxLength = 25;
+            this.txtNombre.MaxLength = 30;
             this.txtNombre.Multiline = false;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -663,7 +663,7 @@
             this.cmbEstadoCivil.Padding = new System.Windows.Forms.Padding(1);
             this.cmbEstadoCivil.SelectedIndex = 1;
             this.cmbEstadoCivil.Size = new System.Drawing.Size(200, 30);
-            this.cmbEstadoCivil.TabIndex = 155;
+            this.cmbEstadoCivil.TabIndex = 7;
             this.cmbEstadoCivil.ValueMember = "";
             // 
             // cmbSexo
@@ -687,7 +687,7 @@
             this.cmbSexo.Padding = new System.Windows.Forms.Padding(1);
             this.cmbSexo.SelectedIndex = 1;
             this.cmbSexo.Size = new System.Drawing.Size(200, 30);
-            this.cmbSexo.TabIndex = 157;
+            this.cmbSexo.TabIndex = 6;
             this.cmbSexo.ValueMember = "";
             // 
             // cboEstado
@@ -741,7 +741,7 @@
             this.cboEstado.Padding = new System.Windows.Forms.Padding(1);
             this.cboEstado.SelectedIndex = 1;
             this.cboEstado.Size = new System.Drawing.Size(200, 30);
-            this.cboEstado.TabIndex = 154;
+            this.cboEstado.TabIndex = 10;
             this.cboEstado.ValueMember = "";
             // 
             // pSeccionesDatos

@@ -109,12 +109,12 @@ namespace CapaPresentacion.Empleados
                     return; // Detiene la ejecución si hay campos vacíos
                 }
                 string nss = txtNssBusqueda.Text;
-
                 DataTable verificacion = expedientesCN.verificarExpedienteExisteNSS(nss).Tables["ExpedienteExisteNSS"];
+
                 if (verificacion.Rows.Count > 0)
                 {
                     DataRow dr = verificacion.Rows[0];
-                    int idEmpleado = Convert.ToInt32(dr["idEmpleado"]);
+                    txtidempleado.Text =dr["idEmpleado"].ToString();
                     
                     // Ya existe un expediente para este número de nómina
                     RJMessageBox.Show("Este empleado ya tiene un expediente registrado. Se actualizara su Número de Expediente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -123,7 +123,7 @@ namespace CapaPresentacion.Empleados
 
                     ExpedientesCE expedientes = new ExpedientesCE
                     {
-                        IdEmpleado = idEmpleado,
+                        IdEmpleado = Convert.ToInt32(txtidempleado.Text),
                         NumExpediente = numeroExpediente,
                         NumNomina = txtNoNomina.Text
                     };
@@ -138,17 +138,17 @@ namespace CapaPresentacion.Empleados
                 DateTime fecha_ingreso_empresa = dtpFechaIngreso.Value;
                 char turno = cmbTurno.SelectedItem.ToString()[0];
                 int idPuesto = int.Parse(txtIdPuesto.Text);
-
                 EmpleadosCE empleado = new EmpleadosCE
                 {
-                    NSS = nss,
+                    IdEmpleado= Convert.ToInt32(txtidempleado.Text),
+                    //NSS = nss,
                     NumeroNomina = numero_nomina,
                     FechaIngresoPuesto = fecha_ingreso_puesto,
                     FechaIngresoEmpresa = fecha_ingreso_empresa,
                     Turno = turno,
                     IdPuestoActual = idPuesto
                 };
-
+                //MessageBox.Show(txtidempleado.Text);
                 negocios.altaEmpleado(empleado);
                 RJMessageBox.Show("El empleado ha sido dado de Alta correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -196,11 +196,12 @@ namespace CapaPresentacion.Empleados
             txtTelefono.Text = "";
             txtDomicilio.Text = "";
             txtNoNomina.Text = "";
+            txtidempleado.Text = "";
 
             txtNoNomina.Enabled = false; txtNoNomina.BackColor = Color.WhiteSmoke;
-            cmbPuestos.SelectedIndex = 0;
+            cmbPuestos.SelectedIndex = 1;
             cmbPuestos.Enabled = false;cmbPuestos.BackColor = Color.WhiteSmoke;
-            cmbTurno.SelectedIndex = 0;
+            cmbTurno.SelectedIndex = 1;
             cmbTurno.Enabled = false; cmbTurno.BackColor = Color.WhiteSmoke;
 
             dtpFechaIngreso.Enabled = false; dtpFechaIngreso.SkinColor= Color.WhiteSmoke;
@@ -235,6 +236,8 @@ namespace CapaPresentacion.Empleados
                 txtNombreCompleto.Text = datosEmpleado.nombreCompleto;
                 txtTelefono.Text = datosEmpleado.telefono;
                 txtDomicilio.Text = datosEmpleado.domicilio;
+                txtNoNomina.Text = string.IsNullOrWhiteSpace(datosEmpleado.numnomina) ? string.Empty : datosEmpleado.numnomina;
+                txtidempleado.Text = datosEmpleado.idempleado.ToString();
 
                 txtNoNomina.Enabled = true; txtNoNomina.BackColor = Color.White;
                 cmbPuestos.Enabled = true; cmbPuestos.BackColor = Color.White;

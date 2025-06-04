@@ -71,7 +71,7 @@ namespace CapaDatos
                     {
                         command.CommandType = CommandType.StoredProcedure;
 
-                        command.Parameters.AddWithValue("p_nss", empleado.NSS);
+                        command.Parameters.AddWithValue("p_idEmpleado", empleado.IdEmpleado);
                         command.Parameters.AddWithValue("p_numero_nomina", empleado.NumeroNomina);
                         command.Parameters.AddWithValue("p_idPuesto_Actual", empleado.IdPuestoActual);
                         command.Parameters.AddWithValue("p_fecha_ingreso_puesto", empleado.FechaIngresoPuesto);
@@ -88,7 +88,7 @@ namespace CapaDatos
             }
         }
 
-        public (string nombreCompleto, string telefono, string domicilio, string estado) BusquedaParaActualizar(string nss)
+        public (string nombreCompleto, string telefono, string domicilio, string estado, string numnomina, int idempleado) BusquedaParaActualizar(string nss)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -96,10 +96,10 @@ namespace CapaDatos
                 {
                     connection.Open();
 
-                    using (MySqlCommand command = new MySqlCommand("obtNSS", connection))
+                    using (MySqlCommand command = new MySqlCommand("ObtenerNumNominaNSS", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
-                        command.Parameters.AddWithValue("p_nss", nss);
+                        command.Parameters.AddWithValue("p_numNomina_nss", nss);
 
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
@@ -109,8 +109,9 @@ namespace CapaDatos
                                 string telefono = reader.GetString("telefono");
                                 string domicilio = reader.GetString("dom");
                                 string estado = reader.GetString("estado");
-
-                                return (nombreCompleto, telefono, domicilio, estado);
+                                string numeronomina = reader.IsDBNull(reader.GetOrdinal("numero_nomina")) ? "" : reader.GetString("numero_nomina");
+                                int idempleado = reader.GetInt32("idempleado");
+                                return (nombreCompleto, telefono, domicilio, estado, numeronomina, idempleado);
                             }
                             else
                             {
