@@ -42,6 +42,10 @@ namespace CapaPresentacion
             panel12.Paint += new PaintEventHandler(panel_Paint);
             panel13.Paint += new PaintEventHandler(panel_Paint);
             panel14.Paint += new PaintEventHandler(panel_Paint);
+            this.pDerecho.MouseDown += new MouseEventHandler(pDerecho_MouseDown);
+            this.pInferior.MouseDown += new MouseEventHandler(pInferior_MouseDown);
+
+
         }
         private void frmMenu_Load(object sender, EventArgs e)
         {
@@ -52,8 +56,6 @@ namespace CapaPresentacion
             LlenarChartTurno();
             LlenarChartSecciones();
         }
-        
-
 
         //Movimiento del Formulario
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -61,6 +63,14 @@ namespace CapaPresentacion
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+        // Constantes necesarias
+        private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int HTBOTTOMRIGHT = 17; // esquina inferior derecha
+        private const int HTLEFT = 10;
+        private const int HTRIGHT = 11;
+        private const int HTTOP = 12;
+        private const int HTBOTTOM = 15;
+
         private void psuperior_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -856,6 +866,23 @@ namespace CapaPresentacion
 
             chartCausas.Series.Add(series);
             chartCausas.Legends[0].Enabled = true;
+        }
+
+        private void psuperior_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pDerecho_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTRIGHT, 0);
+        }
+
+        private void pInferior_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTBOTTOM, 0);
         }
     }
 }

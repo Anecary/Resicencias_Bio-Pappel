@@ -31,18 +31,18 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pMenu = new System.Windows.Forms.Panel();
             this.pSubmenuUtilerias = new System.Windows.Forms.Panel();
             this.btnRevisiones = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@ namespace CapaPresentacion
             this.btnEmpleados = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pLogo = new System.Windows.Forms.Panel();
+            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.psuperior = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnRestaurar = new System.Windows.Forms.Button();
@@ -83,6 +84,13 @@ namespace CapaPresentacion
             this.btnCerrar = new System.Windows.Forms.Button();
             this.pContenedor = new System.Windows.Forms.Panel();
             this.pInicio = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.btnConsultapersonalizado = new CapaPresentacion.BotonPersonalizado();
+            this.btnPersonalizado = new CapaPresentacion.BotonPersonalizado();
+            this.btnMesAnterior = new CapaPresentacion.BotonPersonalizado();
+            this.dtphasta = new CapaPresentacion.selectorFechaPersonalizado();
+            this.btnMesActual = new CapaPresentacion.BotonPersonalizado();
+            this.dtpdesde = new CapaPresentacion.selectorFechaPersonalizado();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.chartTurno = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -91,42 +99,34 @@ namespace CapaPresentacion
             this.panel12 = new System.Windows.Forms.Panel();
             this.chartCausas = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.botonPersonalizado6 = new CapaPresentacion.BotonPersonalizado();
+            this.botonPersonalizado5 = new CapaPresentacion.BotonPersonalizado();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.lblIncapacidades = new System.Windows.Forms.Label();
+            this.botonPersonalizado4 = new CapaPresentacion.BotonPersonalizado();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.lblTrabajadores = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.botonPersonalizado3 = new CapaPresentacion.BotonPersonalizado();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblConsultas = new System.Windows.Forms.Label();
+            this.botonPersonalizado2 = new CapaPresentacion.BotonPersonalizado();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.lblAccidentes = new System.Windows.Forms.Label();
+            this.btnCancelar = new CapaPresentacion.BotonPersonalizado();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pDerecho = new System.Windows.Forms.Panel();
+            this.pInferior = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.btnConsultapersonalizado = new CapaPresentacion.BotonPersonalizado();
-            this.btnPersonalizado = new CapaPresentacion.BotonPersonalizado();
-            this.btnMesAnterior = new CapaPresentacion.BotonPersonalizado();
-            this.dtphasta = new CapaPresentacion.selectorFechaPersonalizado();
-            this.btnMesActual = new CapaPresentacion.BotonPersonalizado();
-            this.dtpdesde = new CapaPresentacion.selectorFechaPersonalizado();
-            this.botonPersonalizado6 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado5 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado4 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado3 = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado2 = new CapaPresentacion.BotonPersonalizado();
-            this.btnCancelar = new CapaPresentacion.BotonPersonalizado();
-            this.botonPersonalizado1 = new CapaPresentacion.BotonPersonalizado();
             this.textPersonalizado1 = new CapaPresentacion.TextPersonalizado();
             this.pMenu.SuspendLayout();
             this.pSubmenuUtilerias.SuspendLayout();
@@ -139,6 +139,7 @@ namespace CapaPresentacion
             this.psuperior.SuspendLayout();
             this.pContenedor.SuspendLayout();
             this.pInicio.SuspendLayout();
+            this.panel16.SuspendLayout();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTurno)).BeginInit();
             this.panel13.SuspendLayout();
@@ -156,7 +157,6 @@ namespace CapaPresentacion
             this.panel5.SuspendLayout();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // pMenu
@@ -803,6 +803,26 @@ namespace CapaPresentacion
             this.pLogo.TabIndex = 0;
             this.pLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pLogo_MouseDown);
             // 
+            // botonPersonalizado1
+            // 
+            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.botonPersonalizado1.BorderRadius = 20;
+            this.botonPersonalizado1.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
+            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
+            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 19);
+            this.botonPersonalizado1.Name = "botonPersonalizado1";
+            this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
+            this.botonPersonalizado1.TabIndex = 2;
+            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
+            this.botonPersonalizado1.UseVisualStyleBackColor = false;
+            // 
             // psuperior
             // 
             this.psuperior.BackColor = System.Drawing.Color.DarkCyan;
@@ -815,6 +835,7 @@ namespace CapaPresentacion
             this.psuperior.Name = "psuperior";
             this.psuperior.Size = new System.Drawing.Size(950, 30);
             this.psuperior.TabIndex = 1;
+            this.psuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.psuperior_Paint);
             this.psuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.psuperior_MouseDown);
             // 
             // btnMinimizar
@@ -913,367 +934,6 @@ namespace CapaPresentacion
             this.pInicio.Name = "pInicio";
             this.pInicio.Size = new System.Drawing.Size(945, 665);
             this.pInicio.TabIndex = 1;
-            // 
-            // pSeccionesDatos
-            // 
-            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 88);
-            this.pSeccionesDatos.Name = "pSeccionesDatos";
-            this.pSeccionesDatos.Size = new System.Drawing.Size(945, 22);
-            this.pSeccionesDatos.TabIndex = 25;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Controls.Add(this.chartTurno);
-            this.panel14.Location = new System.Drawing.Point(485, 399);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(448, 253);
-            this.panel14.TabIndex = 24;
-            // 
-            // chartTurno
-            // 
-            chartArea4.Name = "ChartArea1";
-            this.chartTurno.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartTurno.Legends.Add(legend4);
-            this.chartTurno.Location = new System.Drawing.Point(29, 12);
-            this.chartTurno.Name = "chartTurno";
-            this.chartTurno.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series4.ChartArea = "ChartArea1";
-            series4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series4.IsValueShownAsLabel = true;
-            series4.IsVisibleInLegend = false;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartTurno.Series.Add(series4);
-            this.chartTurno.Size = new System.Drawing.Size(398, 225);
-            this.chartTurno.TabIndex = 0;
-            title4.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.Name = "Title1";
-            title4.Text = "Accidentes por Turno ";
-            this.chartTurno.Titles.Add(title4);
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.Controls.Add(this.chartSecciones);
-            this.panel13.Location = new System.Drawing.Point(14, 399);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(448, 253);
-            this.panel13.TabIndex = 23;
-            // 
-            // chartSecciones
-            // 
-            chartArea5.Name = "ChartArea1";
-            this.chartSecciones.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartSecciones.Legends.Add(legend5);
-            this.chartSecciones.Location = new System.Drawing.Point(12, 12);
-            this.chartSecciones.Name = "chartSecciones";
-            this.chartSecciones.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
-            series5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series5.IsValueShownAsLabel = true;
-            series5.IsVisibleInLegend = false;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartSecciones.Series.Add(series5);
-            this.chartSecciones.Size = new System.Drawing.Size(411, 225);
-            this.chartSecciones.TabIndex = 0;
-            title5.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title5.Name = "Title1";
-            title5.Text = "Top 5 Secciones con más Accidentes";
-            this.chartSecciones.Titles.Add(title5);
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Controls.Add(this.chartCausas);
-            this.panel12.Location = new System.Drawing.Point(485, 173);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(448, 211);
-            this.panel12.TabIndex = 22;
-            // 
-            // chartCausas
-            // 
-            chartArea6.Name = "ChartArea1";
-            this.chartCausas.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chartCausas.Legends.Add(legend6);
-            this.chartCausas.Location = new System.Drawing.Point(44, 12);
-            this.chartCausas.Name = "chartCausas";
-            this.chartCausas.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series6.IsValueShownAsLabel = true;
-            series6.IsVisibleInLegend = false;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chartCausas.Series.Add(series6);
-            this.chartCausas.Size = new System.Drawing.Size(383, 187);
-            this.chartCausas.TabIndex = 0;
-            title6.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title6.Name = "Title1";
-            title6.Text = "Top causas más frecuentes";
-            this.chartCausas.Titles.Add(title6);
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.botonPersonalizado6);
-            this.panel4.Controls.Add(this.botonPersonalizado5);
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.panel3);
-            this.panel4.Location = new System.Drawing.Point(14, 173);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(448, 211);
-            this.panel4.TabIndex = 19;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.botonPersonalizado4);
-            this.panel10.Location = new System.Drawing.Point(229, 17);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(199, 75);
-            this.panel10.TabIndex = 16;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel11.Controls.Add(this.label5);
-            this.panel11.Controls.Add(this.lblIncapacidades);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(65, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(134, 75);
-            this.panel11.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(14, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 18);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Incapacidades";
-            // 
-            // lblIncapacidades
-            // 
-            this.lblIncapacidades.AutoSize = true;
-            this.lblIncapacidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncapacidades.ForeColor = System.Drawing.Color.Black;
-            this.lblIncapacidades.Location = new System.Drawing.Point(14, 14);
-            this.lblIncapacidades.Name = "lblIncapacidades";
-            this.lblIncapacidades.Size = new System.Drawing.Size(85, 29);
-            this.lblIncapacidades.TabIndex = 27;
-            this.lblIncapacidades.Text = "EXOS";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.botonPersonalizado3);
-            this.panel8.Location = new System.Drawing.Point(8, 17);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(199, 75);
-            this.panel8.TabIndex = 15;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel9.Controls.Add(this.lblTrabajadores);
-            this.panel9.Controls.Add(this.label6);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(66, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(133, 75);
-            this.panel9.TabIndex = 14;
-            // 
-            // lblTrabajadores
-            // 
-            this.lblTrabajadores.AutoSize = true;
-            this.lblTrabajadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrabajadores.ForeColor = System.Drawing.Color.Black;
-            this.lblTrabajadores.Location = new System.Drawing.Point(18, 14);
-            this.lblTrabajadores.Name = "lblTrabajadores";
-            this.lblTrabajadores.Size = new System.Drawing.Size(85, 29);
-            this.lblTrabajadores.TabIndex = 25;
-            this.lblTrabajadores.Text = "EXOS";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(13, 52);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 18);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Trabajadores";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Controls.Add(this.botonPersonalizado2);
-            this.panel6.Location = new System.Drawing.Point(229, 105);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(199, 75);
-            this.panel6.TabIndex = 15;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Controls.Add(this.lblConsultas);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(64, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(135, 75);
-            this.panel7.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(17, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 18);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Consultas";
-            // 
-            // lblConsultas
-            // 
-            this.lblConsultas.AutoSize = true;
-            this.lblConsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConsultas.ForeColor = System.Drawing.Color.Black;
-            this.lblConsultas.Location = new System.Drawing.Point(17, 12);
-            this.lblConsultas.Name = "lblConsultas";
-            this.lblConsultas.Size = new System.Drawing.Size(85, 29);
-            this.lblConsultas.TabIndex = 25;
-            this.lblConsultas.Text = "EXOS";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.btnCancelar);
-            this.panel3.Location = new System.Drawing.Point(8, 105);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(199, 75);
-            this.panel3.TabIndex = 14;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.lblAccidentes);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(66, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(133, 75);
-            this.panel5.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(13, 52);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 18);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Accidentes";
-            // 
-            // lblAccidentes
-            // 
-            this.lblAccidentes.AutoSize = true;
-            this.lblAccidentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccidentes.ForeColor = System.Drawing.Color.Black;
-            this.lblAccidentes.Location = new System.Drawing.Point(13, 12);
-            this.lblAccidentes.Name = "lblAccidentes";
-            this.lblAccidentes.Size = new System.Drawing.Size(85, 29);
-            this.lblAccidentes.TabIndex = 23;
-            this.lblAccidentes.Text = "EXOS";
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Controls.Add(this.label7);
-            this.panel15.Controls.Add(this.pictureBox2);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(945, 88);
-            this.panel15.TabIndex = 26;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label7.Location = new System.Drawing.Point(4, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(632, 29);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "CONTROL DE EXPEDIENTES MÉDICOS Y ANEXOS";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(645, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 88);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1195, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 670);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(250, 695);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(945, 5);
-            this.panel2.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(204, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 16);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Nombre:";
             // 
             // panel16
             // 
@@ -1409,6 +1069,130 @@ namespace CapaPresentacion
             this.dtpdesde.TextColor = System.Drawing.Color.DarkCyan;
             this.dtpdesde.Visible = false;
             // 
+            // pSeccionesDatos
+            // 
+            this.pSeccionesDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.pSeccionesDatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSeccionesDatos.Location = new System.Drawing.Point(0, 88);
+            this.pSeccionesDatos.Name = "pSeccionesDatos";
+            this.pSeccionesDatos.Size = new System.Drawing.Size(945, 22);
+            this.pSeccionesDatos.TabIndex = 25;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Controls.Add(this.chartTurno);
+            this.panel14.Location = new System.Drawing.Point(485, 399);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(448, 253);
+            this.panel14.TabIndex = 24;
+            // 
+            // chartTurno
+            // 
+            chartArea10.Name = "ChartArea1";
+            this.chartTurno.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.chartTurno.Legends.Add(legend10);
+            this.chartTurno.Location = new System.Drawing.Point(29, 12);
+            this.chartTurno.Name = "chartTurno";
+            this.chartTurno.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series10.ChartArea = "ChartArea1";
+            series10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series10.IsValueShownAsLabel = true;
+            series10.IsVisibleInLegend = false;
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            this.chartTurno.Series.Add(series10);
+            this.chartTurno.Size = new System.Drawing.Size(398, 225);
+            this.chartTurno.TabIndex = 0;
+            title10.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title10.Name = "Title1";
+            title10.Text = "Accidentes por Turno ";
+            this.chartTurno.Titles.Add(title10);
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.Controls.Add(this.chartSecciones);
+            this.panel13.Location = new System.Drawing.Point(14, 399);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(448, 253);
+            this.panel13.TabIndex = 23;
+            // 
+            // chartSecciones
+            // 
+            chartArea11.Name = "ChartArea1";
+            this.chartSecciones.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.chartSecciones.Legends.Add(legend11);
+            this.chartSecciones.Location = new System.Drawing.Point(12, 12);
+            this.chartSecciones.Name = "chartSecciones";
+            this.chartSecciones.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
+            series11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series11.IsValueShownAsLabel = true;
+            series11.IsVisibleInLegend = false;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            this.chartSecciones.Series.Add(series11);
+            this.chartSecciones.Size = new System.Drawing.Size(411, 225);
+            this.chartSecciones.TabIndex = 0;
+            title11.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title11.Name = "Title1";
+            title11.Text = "Top 5 Secciones con más Accidentes";
+            this.chartSecciones.Titles.Add(title11);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Controls.Add(this.chartCausas);
+            this.panel12.Location = new System.Drawing.Point(485, 173);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(448, 211);
+            this.panel12.TabIndex = 22;
+            // 
+            // chartCausas
+            // 
+            chartArea12.Name = "ChartArea1";
+            this.chartCausas.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.chartCausas.Legends.Add(legend12);
+            this.chartCausas.Location = new System.Drawing.Point(44, 12);
+            this.chartCausas.Name = "chartCausas";
+            this.chartCausas.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series12.IsValueShownAsLabel = true;
+            series12.IsVisibleInLegend = false;
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            this.chartCausas.Series.Add(series12);
+            this.chartCausas.Size = new System.Drawing.Size(383, 187);
+            this.chartCausas.TabIndex = 0;
+            title12.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title12.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title12.Name = "Title1";
+            title12.Text = "Top causas más frecuentes";
+            this.chartCausas.Titles.Add(title12);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.botonPersonalizado6);
+            this.panel4.Controls.Add(this.botonPersonalizado5);
+            this.panel4.Controls.Add(this.panel10);
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Location = new System.Drawing.Point(14, 173);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(448, 211);
+            this.panel4.TabIndex = 19;
+            // 
             // botonPersonalizado6
             // 
             this.botonPersonalizado6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
@@ -1447,6 +1231,49 @@ namespace CapaPresentacion
             this.botonPersonalizado5.UseVisualStyleBackColor = false;
             this.botonPersonalizado5.Visible = false;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.botonPersonalizado4);
+            this.panel10.Location = new System.Drawing.Point(229, 17);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(199, 75);
+            this.panel10.TabIndex = 16;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel11.Controls.Add(this.label5);
+            this.panel11.Controls.Add(this.lblIncapacidades);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel11.Location = new System.Drawing.Point(65, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(134, 75);
+            this.panel11.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(14, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(115, 18);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Incapacidades";
+            // 
+            // lblIncapacidades
+            // 
+            this.lblIncapacidades.AutoSize = true;
+            this.lblIncapacidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIncapacidades.ForeColor = System.Drawing.Color.Black;
+            this.lblIncapacidades.Location = new System.Drawing.Point(14, 14);
+            this.lblIncapacidades.Name = "lblIncapacidades";
+            this.lblIncapacidades.Size = new System.Drawing.Size(85, 29);
+            this.lblIncapacidades.TabIndex = 27;
+            this.lblIncapacidades.Text = "EXOS";
+            // 
             // botonPersonalizado4
             // 
             this.botonPersonalizado4.BackColor = System.Drawing.Color.DarkCyan;
@@ -1469,6 +1296,49 @@ namespace CapaPresentacion
             this.botonPersonalizado4.TabIndex = 13;
             this.botonPersonalizado4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
             this.botonPersonalizado4.UseVisualStyleBackColor = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.botonPersonalizado3);
+            this.panel8.Location = new System.Drawing.Point(8, 17);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(199, 75);
+            this.panel8.TabIndex = 15;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel9.Controls.Add(this.lblTrabajadores);
+            this.panel9.Controls.Add(this.label6);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(66, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(133, 75);
+            this.panel9.TabIndex = 14;
+            // 
+            // lblTrabajadores
+            // 
+            this.lblTrabajadores.AutoSize = true;
+            this.lblTrabajadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrabajadores.ForeColor = System.Drawing.Color.Black;
+            this.lblTrabajadores.Location = new System.Drawing.Point(18, 14);
+            this.lblTrabajadores.Name = "lblTrabajadores";
+            this.lblTrabajadores.Size = new System.Drawing.Size(85, 29);
+            this.lblTrabajadores.TabIndex = 25;
+            this.lblTrabajadores.Text = "EXOS";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(13, 52);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 18);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Trabajadores";
             // 
             // botonPersonalizado3
             // 
@@ -1493,6 +1363,49 @@ namespace CapaPresentacion
             this.botonPersonalizado3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(176)))), ((int)(((byte)(136)))));
             this.botonPersonalizado3.UseVisualStyleBackColor = false;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.botonPersonalizado2);
+            this.panel6.Location = new System.Drawing.Point(229, 105);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(199, 75);
+            this.panel6.TabIndex = 15;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Controls.Add(this.lblConsultas);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(64, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(135, 75);
+            this.panel7.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(17, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 18);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Consultas";
+            // 
+            // lblConsultas
+            // 
+            this.lblConsultas.AutoSize = true;
+            this.lblConsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConsultas.ForeColor = System.Drawing.Color.Black;
+            this.lblConsultas.Location = new System.Drawing.Point(17, 12);
+            this.lblConsultas.Name = "lblConsultas";
+            this.lblConsultas.Size = new System.Drawing.Size(85, 29);
+            this.lblConsultas.TabIndex = 25;
+            this.lblConsultas.Text = "EXOS";
+            // 
             // botonPersonalizado2
             // 
             this.botonPersonalizado2.BackColor = System.Drawing.Color.DarkCyan;
@@ -1515,6 +1428,49 @@ namespace CapaPresentacion
             this.botonPersonalizado2.TabIndex = 13;
             this.botonPersonalizado2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(194)))), ((int)(((byte)(249)))));
             this.botonPersonalizado2.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.btnCancelar);
+            this.panel3.Location = new System.Drawing.Point(8, 105);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(199, 75);
+            this.panel3.TabIndex = 14;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.lblAccidentes);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(66, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(133, 75);
+            this.panel5.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(13, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 18);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Accidentes";
+            // 
+            // lblAccidentes
+            // 
+            this.lblAccidentes.AutoSize = true;
+            this.lblAccidentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccidentes.ForeColor = System.Drawing.Color.Black;
+            this.lblAccidentes.Location = new System.Drawing.Point(13, 12);
+            this.lblAccidentes.Name = "lblAccidentes";
+            this.lblAccidentes.Size = new System.Drawing.Size(85, 29);
+            this.lblAccidentes.TabIndex = 23;
+            this.lblAccidentes.Text = "EXOS";
             // 
             // btnCancelar
             // 
@@ -1539,25 +1495,72 @@ namespace CapaPresentacion
             this.btnCancelar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // botonPersonalizado1
+            // panel15
             // 
-            this.botonPersonalizado1.BackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.BackgroundColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.botonPersonalizado1.BorderRadius = 20;
-            this.botonPersonalizado1.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.BorderSize = 0;
-            this.botonPersonalizado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonPersonalizado1.ForeColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.Image = ((System.Drawing.Image)(resources.GetObject("botonPersonalizado1.Image")));
-            this.botonPersonalizado1.Location = new System.Drawing.Point(-19, 19);
-            this.botonPersonalizado1.Name = "botonPersonalizado1";
-            this.botonPersonalizado1.Size = new System.Drawing.Size(263, 55);
-            this.botonPersonalizado1.TabIndex = 2;
-            this.botonPersonalizado1.TextColor = System.Drawing.Color.White;
-            this.botonPersonalizado1.UseVisualStyleBackColor = false;
+            this.panel15.BackColor = System.Drawing.Color.White;
+            this.panel15.Controls.Add(this.label7);
+            this.panel15.Controls.Add(this.pictureBox2);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(945, 88);
+            this.panel15.TabIndex = 26;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label7.Location = new System.Drawing.Point(4, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(632, 29);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "CONTROL DE EXPEDIENTES MÉDICOS Y ANEXOS";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(645, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(300, 88);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pDerecho
+            // 
+            this.pDerecho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.pDerecho.Cursor = System.Windows.Forms.Cursors.SizeWE;
+            this.pDerecho.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pDerecho.Location = new System.Drawing.Point(1195, 30);
+            this.pDerecho.Name = "pDerecho";
+            this.pDerecho.Size = new System.Drawing.Size(5, 670);
+            this.pDerecho.TabIndex = 3;
+            this.pDerecho.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pDerecho_MouseDown);
+            // 
+            // pInferior
+            // 
+            this.pInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.pInferior.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.pInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pInferior.Location = new System.Drawing.Point(250, 695);
+            this.pInferior.Name = "pInferior";
+            this.pInferior.Size = new System.Drawing.Size(945, 5);
+            this.pInferior.TabIndex = 4;
+            this.pInferior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pInferior_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(204, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Nombre:";
             // 
             // textPersonalizado1
             // 
@@ -1587,13 +1590,13 @@ namespace CapaPresentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.pContenedor);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pInferior);
+            this.Controls.Add(this.pDerecho);
             this.Controls.Add(this.psuperior);
             this.Controls.Add(this.pMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1200, 700);
-            this.MinimumSize = new System.Drawing.Size(1200, 700);
+            this.MaximumSize = new System.Drawing.Size(2200, 1700);
+            this.MinimumSize = new System.Drawing.Size(200, 70);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmMenu_Load);
@@ -1610,6 +1613,7 @@ namespace CapaPresentacion
             this.psuperior.PerformLayout();
             this.pContenedor.ResumeLayout(false);
             this.pInicio.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartTurno)).EndInit();
             this.panel13.ResumeLayout(false);
@@ -1632,7 +1636,6 @@ namespace CapaPresentacion
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel16.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1661,8 +1664,8 @@ namespace CapaPresentacion
         private System.Windows.Forms.Button btnSecciones;
         private System.Windows.Forms.Button btnPuestos;
         private System.Windows.Forms.Button btnConsultarEmpleados;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pDerecho;
+        private System.Windows.Forms.Panel pInferior;
         private System.Windows.Forms.Button btnActualizarEmpleado;
         private System.Windows.Forms.Panel pInicio;
         private System.Windows.Forms.Button btnCerrar;
