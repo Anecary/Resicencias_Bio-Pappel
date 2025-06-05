@@ -31,18 +31,18 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pMenu = new System.Windows.Forms.Panel();
             this.pSubmenuUtilerias = new System.Windows.Forms.Panel();
             this.btnRevisiones = new System.Windows.Forms.Button();
@@ -1080,6 +1080,7 @@ namespace CapaPresentacion
             // 
             // panel14
             // 
+            this.panel14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel14.BackColor = System.Drawing.Color.White;
             this.panel14.Controls.Add(this.chartTurno);
             this.panel14.Location = new System.Drawing.Point(485, 399);
@@ -1089,27 +1090,28 @@ namespace CapaPresentacion
             // 
             // chartTurno
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chartTurno.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chartTurno.Legends.Add(legend10);
-            this.chartTurno.Location = new System.Drawing.Point(29, 12);
+            chartArea1.Name = "ChartArea1";
+            this.chartTurno.ChartAreas.Add(chartArea1);
+            this.chartTurno.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chartTurno.Legends.Add(legend1);
+            this.chartTurno.Location = new System.Drawing.Point(0, 0);
             this.chartTurno.Name = "chartTurno";
             this.chartTurno.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series10.ChartArea = "ChartArea1";
-            series10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series10.IsValueShownAsLabel = true;
-            series10.IsVisibleInLegend = false;
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            this.chartTurno.Series.Add(series10);
-            this.chartTurno.Size = new System.Drawing.Size(398, 225);
+            series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartTurno.Series.Add(series1);
+            this.chartTurno.Size = new System.Drawing.Size(448, 253);
             this.chartTurno.TabIndex = 0;
-            title10.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title10.Name = "Title1";
-            title10.Text = "Accidentes por Turno ";
-            this.chartTurno.Titles.Add(title10);
+            title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "Title1";
+            title1.Text = "Accidentes por Turno ";
+            this.chartTurno.Titles.Add(title1);
             // 
             // panel13
             // 
@@ -1122,31 +1124,35 @@ namespace CapaPresentacion
             // 
             // chartSecciones
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chartSecciones.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chartSecciones.Legends.Add(legend11);
-            this.chartSecciones.Location = new System.Drawing.Point(12, 12);
+            chartArea2.Name = "ChartArea1";
+            this.chartSecciones.ChartAreas.Add(chartArea2);
+            this.chartSecciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend2.Name = "Legend1";
+            this.chartSecciones.Legends.Add(legend2);
+            this.chartSecciones.Location = new System.Drawing.Point(0, 0);
             this.chartSecciones.Name = "chartSecciones";
             this.chartSecciones.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
-            series11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series11.IsValueShownAsLabel = true;
-            series11.IsVisibleInLegend = false;
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.chartSecciones.Series.Add(series11);
-            this.chartSecciones.Size = new System.Drawing.Size(411, 225);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar;
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.IsValueShownAsLabel = true;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartSecciones.Series.Add(series2);
+            this.chartSecciones.Size = new System.Drawing.Size(448, 253);
             this.chartSecciones.TabIndex = 0;
-            title11.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title11.Name = "Title1";
-            title11.Text = "Top 5 Secciones con más Accidentes";
-            this.chartSecciones.Titles.Add(title11);
+            title2.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "Title1";
+            title2.Text = "Top 5 Secciones con más Accidentes";
+            this.chartSecciones.Titles.Add(title2);
             // 
             // panel12
             // 
+            this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.Controls.Add(this.chartCausas);
             this.panel12.Location = new System.Drawing.Point(485, 173);
@@ -1156,28 +1162,28 @@ namespace CapaPresentacion
             // 
             // chartCausas
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chartCausas.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chartCausas.Legends.Add(legend12);
+            chartArea3.Name = "ChartArea1";
+            this.chartCausas.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartCausas.Legends.Add(legend3);
             this.chartCausas.Location = new System.Drawing.Point(44, 12);
             this.chartCausas.Name = "chartCausas";
             this.chartCausas.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series12.IsValueShownAsLabel = true;
-            series12.IsVisibleInLegend = false;
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            this.chartCausas.Series.Add(series12);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series3.IsValueShownAsLabel = true;
+            series3.IsVisibleInLegend = false;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartCausas.Series.Add(series3);
             this.chartCausas.Size = new System.Drawing.Size(383, 187);
             this.chartCausas.TabIndex = 0;
-            title12.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title12.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title12.Name = "Title1";
-            title12.Text = "Top causas más frecuentes";
-            this.chartCausas.Titles.Add(title12);
+            title3.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.Name = "Title1";
+            title3.Text = "Top causas más frecuentes";
+            this.chartCausas.Titles.Add(title3);
             // 
             // panel4
             // 

@@ -125,7 +125,7 @@
             this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
             this.txtPuesto.Location = new System.Drawing.Point(358, 107);
             this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPuesto.MaxLength = 30;
+            this.txtPuesto.MaxLength = 50;
             this.txtPuesto.Multiline = false;
             this.txtPuesto.Name = "txtPuesto";
             this.txtPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);

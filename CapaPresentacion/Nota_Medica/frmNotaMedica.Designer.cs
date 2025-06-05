@@ -34,6 +34,7 @@ namespace CapaPresentacion.Nota_Medica
             this.pContenedorNotaMedica = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pDatosGenerales = new System.Windows.Forms.Panel();
+            this.label87 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label69 = new System.Windows.Forms.Label();
             this.txtFechaIngreso = new CapaPresentacion.TextPersonalizado();
@@ -106,7 +107,6 @@ namespace CapaPresentacion.Nota_Medica
             this.label32 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.txtHeredoFamiliar = new CapaPresentacion.TextPersonalizado();
-            this.label46 = new System.Windows.Forms.Label();
             this.pNoPatologicos = new System.Windows.Forms.Panel();
             this.label76 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -233,7 +233,6 @@ namespace CapaPresentacion.Nota_Medica
             this.btnRegresar = new CapaPresentacion.BotonPersonalizado();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
             this.pContenedorNotaMedica.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
@@ -272,13 +271,13 @@ namespace CapaPresentacion.Nota_Medica
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pDatosGenerales);
-            this.panel1.Controls.Add(this.pDatosSinExpediente);
             this.panel1.Controls.Add(this.pAntecedentes);
             this.panel1.Controls.Add(this.pNoPatologicos);
             this.panel1.Controls.Add(this.pExploracionFisica);
             this.panel1.Controls.Add(this.pPatologicos);
             this.panel1.Controls.Add(this.pEstudiosParaclinicos);
+            this.panel1.Controls.Add(this.pDatosGenerales);
+            this.panel1.Controls.Add(this.pDatosSinExpediente);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 145);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -297,6 +296,17 @@ namespace CapaPresentacion.Nota_Medica
             this.pDatosGenerales.Name = "pDatosGenerales";
             this.pDatosGenerales.Size = new System.Drawing.Size(945, 500);
             this.pDatosGenerales.TabIndex = 136;
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.Color.White;
+            this.label87.Location = new System.Drawing.Point(-106, 1210);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(184, 24);
+            this.label87.TabIndex = 176;
+            this.label87.Text = "Fecha de emisión:";
             // 
             // panel3
             // 
@@ -806,7 +816,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtDiagnostico.ForeColor = System.Drawing.Color.DimGray;
             this.txtDiagnostico.Location = new System.Drawing.Point(18, 410);
             this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDiagnostico.MaxLength = 32767;
+            this.txtDiagnostico.MaxLength = 16383;
             this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
             this.txtDiagnostico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -828,7 +838,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtObservaciones.ForeColor = System.Drawing.Color.DimGray;
             this.txtObservaciones.Location = new System.Drawing.Point(18, 164);
             this.txtObservaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.txtObservaciones.MaxLength = 32767;
+            this.txtObservaciones.MaxLength = 16383;
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1120,7 +1130,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtNoSS.ForeColor = System.Drawing.Color.DimGray;
             this.txtNoSS.Location = new System.Drawing.Point(18, 63);
             this.txtNoSS.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNoSS.MaxLength = 32767;
+            this.txtNoSS.MaxLength = 14;
             this.txtNoSS.Multiline = false;
             this.txtNoSS.Name = "txtNoSS";
             this.txtNoSS.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1298,7 +1308,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtDiagnosticoSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtDiagnosticoSin.Location = new System.Drawing.Point(18, 414);
             this.txtDiagnosticoSin.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDiagnosticoSin.MaxLength = 32767;
+            this.txtDiagnosticoSin.MaxLength = 16383;
             this.txtDiagnosticoSin.Multiline = true;
             this.txtDiagnosticoSin.Name = "txtDiagnosticoSin";
             this.txtDiagnosticoSin.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1320,7 +1330,7 @@ namespace CapaPresentacion.Nota_Medica
             this.txtObservacionesSin.ForeColor = System.Drawing.Color.DimGray;
             this.txtObservacionesSin.Location = new System.Drawing.Point(18, 167);
             this.txtObservacionesSin.Margin = new System.Windows.Forms.Padding(4);
-            this.txtObservacionesSin.MaxLength = 32767;
+            this.txtObservacionesSin.MaxLength = 16383;
             this.txtObservacionesSin.Multiline = true;
             this.txtObservacionesSin.Name = "txtObservacionesSin";
             this.txtObservacionesSin.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1529,10 +1539,9 @@ namespace CapaPresentacion.Nota_Medica
             // 
             this.pAntecedentes.AutoScroll = true;
             this.pAntecedentes.Controls.Add(this.panel5);
-            this.pAntecedentes.Controls.Add(this.label46);
             this.pAntecedentes.Location = new System.Drawing.Point(0, 0);
             this.pAntecedentes.Name = "pAntecedentes";
-            this.pAntecedentes.Size = new System.Drawing.Size(945, 521);
+            this.pAntecedentes.Size = new System.Drawing.Size(945, 500);
             this.pAntecedentes.TabIndex = 129;
             // 
             // panel5
@@ -1590,16 +1599,6 @@ namespace CapaPresentacion.Nota_Medica
             this.txtHeredoFamiliar.Size = new System.Drawing.Size(873, 188);
             this.txtHeredoFamiliar.TabIndex = 173;
             this.txtHeredoFamiliar.UnderlinedStyle = true;
-            // 
-            // label46
-            // 
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Transparent;
-            this.label46.Location = new System.Drawing.Point(-3, 756);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(144, 18);
-            this.label46.TabIndex = 111;
-            this.label46.Text = "Trabajo habitual";
             // 
             // pNoPatologicos
             // 
@@ -3683,17 +3682,6 @@ namespace CapaPresentacion.Nota_Medica
             this.label1.TabIndex = 0;
             this.label1.Text = "Nota Médica";
             // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.ForeColor = System.Drawing.Color.White;
-            this.label87.Location = new System.Drawing.Point(-106, 1210);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(184, 24);
-            this.label87.TabIndex = 176;
-            this.label87.Text = "Fecha de emisión:";
-            // 
             // frmNotaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3757,7 +3745,6 @@ namespace CapaPresentacion.Nota_Medica
         private BotonPersonalizado btnRegresar;
         private System.Windows.Forms.Button btnAntecedentes;
         private System.Windows.Forms.Panel pAntecedentes;
-        private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label labelExp;
         private System.Windows.Forms.Panel pDatosGenerales;
         private System.Windows.Forms.Panel panel3;

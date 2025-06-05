@@ -400,7 +400,7 @@
             this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
             this.txtNumeroNomina.Location = new System.Drawing.Point(15, 39);
             this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumeroNomina.MaxLength = 32767;
+            this.txtNumeroNomina.MaxLength = 15;
             this.txtNumeroNomina.Multiline = false;
             this.txtNumeroNomina.Name = "txtNumeroNomina";
             this.txtNumeroNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1027,7 +1027,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 7675);
+            this.button2.Location = new System.Drawing.Point(728, 7867);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(0, 50);
             this.button2.TabIndex = 91;

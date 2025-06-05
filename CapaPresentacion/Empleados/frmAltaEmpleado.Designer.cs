@@ -305,7 +305,7 @@
             this.txtNoNomina.ForeColor = System.Drawing.Color.DimGray;
             this.txtNoNomina.Location = new System.Drawing.Point(56, 41);
             this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNoNomina.MaxLength = 32767;
+            this.txtNoNomina.MaxLength = 15;
             this.txtNoNomina.Multiline = false;
             this.txtNoNomina.Name = "txtNoNomina";
             this.txtNoNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -483,7 +483,7 @@
             this.txtNssBusqueda.ForeColor = System.Drawing.Color.DimGray;
             this.txtNssBusqueda.Location = new System.Drawing.Point(52, 40);
             this.txtNssBusqueda.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNssBusqueda.MaxLength = 32767;
+            this.txtNssBusqueda.MaxLength = 15;
             this.txtNssBusqueda.Multiline = false;
             this.txtNssBusqueda.Name = "txtNssBusqueda";
             this.txtNssBusqueda.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);

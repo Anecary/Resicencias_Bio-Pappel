@@ -286,7 +286,7 @@
             this.txtHeredoFamiliar.ForeColor = System.Drawing.Color.DimGray;
             this.txtHeredoFamiliar.Location = new System.Drawing.Point(13, 62);
             this.txtHeredoFamiliar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHeredoFamiliar.MaxLength = 32767;
+            this.txtHeredoFamiliar.MaxLength = 16383;
             this.txtHeredoFamiliar.Multiline = true;
             this.txtHeredoFamiliar.Name = "txtHeredoFamiliar";
             this.txtHeredoFamiliar.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -668,7 +668,7 @@
             this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
             this.txtNumeroNomina.Location = new System.Drawing.Point(16, 53);
             this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumeroNomina.MaxLength = 32767;
+            this.txtNumeroNomina.MaxLength = 15;
             this.txtNumeroNomina.Multiline = false;
             this.txtNumeroNomina.Name = "txtNumeroNomina";
             this.txtNumeroNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -901,7 +901,7 @@
             this.txtDiagnostico.ForeColor = System.Drawing.Color.DimGray;
             this.txtDiagnostico.Location = new System.Drawing.Point(21, 33);
             this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDiagnostico.MaxLength = 32767;
+            this.txtDiagnostico.MaxLength = 16383;
             this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
             this.txtDiagnostico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -993,7 +993,7 @@
             this.txtEstudiosLaboratorio.ForeColor = System.Drawing.Color.DimGray;
             this.txtEstudiosLaboratorio.Location = new System.Drawing.Point(14, 63);
             this.txtEstudiosLaboratorio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEstudiosLaboratorio.MaxLength = 32767;
+            this.txtEstudiosLaboratorio.MaxLength = 16383;
             this.txtEstudiosLaboratorio.Multiline = true;
             this.txtEstudiosLaboratorio.Name = "txtEstudiosLaboratorio";
             this.txtEstudiosLaboratorio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1015,7 +1015,7 @@
             this.txtEstudiosRadiologicos.ForeColor = System.Drawing.Color.DimGray;
             this.txtEstudiosRadiologicos.Location = new System.Drawing.Point(14, 261);
             this.txtEstudiosRadiologicos.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEstudiosRadiologicos.MaxLength = 32767;
+            this.txtEstudiosRadiologicos.MaxLength = 16383;
             this.txtEstudiosRadiologicos.Multiline = true;
             this.txtEstudiosRadiologicos.Name = "txtEstudiosRadiologicos";
             this.txtEstudiosRadiologicos.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1037,7 +1037,7 @@
             this.txtOtros.ForeColor = System.Drawing.Color.DimGray;
             this.txtOtros.Location = new System.Drawing.Point(17, 459);
             this.txtOtros.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOtros.MaxLength = 32767;
+            this.txtOtros.MaxLength = 16383;
             this.txtOtros.Multiline = true;
             this.txtOtros.Name = "txtOtros";
             this.txtOtros.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1117,7 +1117,7 @@
             this.txtSCardiovascular.ForeColor = System.Drawing.Color.DimGray;
             this.txtSCardiovascular.Location = new System.Drawing.Point(18, 212);
             this.txtSCardiovascular.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSCardiovascular.MaxLength = 32767;
+            this.txtSCardiovascular.MaxLength = 500;
             this.txtSCardiovascular.Multiline = true;
             this.txtSCardiovascular.Name = "txtSCardiovascular";
             this.txtSCardiovascular.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1139,7 +1139,7 @@
             this.txtSNerviosoCentral.ForeColor = System.Drawing.Color.DimGray;
             this.txtSNerviosoCentral.Location = new System.Drawing.Point(18, 131);
             this.txtSNerviosoCentral.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSNerviosoCentral.MaxLength = 32767;
+            this.txtSNerviosoCentral.MaxLength = 500;
             this.txtSNerviosoCentral.Multiline = true;
             this.txtSNerviosoCentral.Name = "txtSNerviosoCentral";
             this.txtSNerviosoCentral.Padding = new System.Windows.Forms.Padding(10, 7, 10, 20);
@@ -1172,7 +1172,7 @@
             this.txtAlergias.ForeColor = System.Drawing.Color.DimGray;
             this.txtAlergias.Location = new System.Drawing.Point(620, 52);
             this.txtAlergias.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAlergias.MaxLength = 32767;
+            this.txtAlergias.MaxLength = 400;
             this.txtAlergias.Multiline = false;
             this.txtAlergias.Name = "txtAlergias";
             this.txtAlergias.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1418,7 +1418,7 @@
             this.txtSRespiratorio.ForeColor = System.Drawing.Color.DimGray;
             this.txtSRespiratorio.Location = new System.Drawing.Point(18, 294);
             this.txtSRespiratorio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSRespiratorio.MaxLength = 32767;
+            this.txtSRespiratorio.MaxLength = 500;
             this.txtSRespiratorio.Multiline = true;
             this.txtSRespiratorio.Name = "txtSRespiratorio";
             this.txtSRespiratorio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1440,7 +1440,7 @@
             this.txtSGastrointestinal.ForeColor = System.Drawing.Color.DimGray;
             this.txtSGastrointestinal.Location = new System.Drawing.Point(18, 380);
             this.txtSGastrointestinal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSGastrointestinal.MaxLength = 32767;
+            this.txtSGastrointestinal.MaxLength = 500;
             this.txtSGastrointestinal.Multiline = true;
             this.txtSGastrointestinal.Name = "txtSGastrointestinal";
             this.txtSGastrointestinal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1462,7 +1462,7 @@
             this.txtSEndocrino.ForeColor = System.Drawing.Color.DimGray;
             this.txtSEndocrino.Location = new System.Drawing.Point(18, 466);
             this.txtSEndocrino.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSEndocrino.MaxLength = 32767;
+            this.txtSEndocrino.MaxLength = 500;
             this.txtSEndocrino.Multiline = true;
             this.txtSEndocrino.Name = "txtSEndocrino";
             this.txtSEndocrino.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1484,7 +1484,7 @@
             this.txtSGenitoUrinario.ForeColor = System.Drawing.Color.DimGray;
             this.txtSGenitoUrinario.Location = new System.Drawing.Point(18, 549);
             this.txtSGenitoUrinario.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSGenitoUrinario.MaxLength = 32767;
+            this.txtSGenitoUrinario.MaxLength = 500;
             this.txtSGenitoUrinario.Multiline = true;
             this.txtSGenitoUrinario.Name = "txtSGenitoUrinario";
             this.txtSGenitoUrinario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1506,7 +1506,7 @@
             this.txtSMusculoEsqueletico.ForeColor = System.Drawing.Color.DimGray;
             this.txtSMusculoEsqueletico.Location = new System.Drawing.Point(18, 635);
             this.txtSMusculoEsqueletico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSMusculoEsqueletico.MaxLength = 32767;
+            this.txtSMusculoEsqueletico.MaxLength = 500;
             this.txtSMusculoEsqueletico.Multiline = true;
             this.txtSMusculoEsqueletico.Name = "txtSMusculoEsqueletico";
             this.txtSMusculoEsqueletico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1528,7 +1528,7 @@
             this.txtOrganoSentidos.ForeColor = System.Drawing.Color.DimGray;
             this.txtOrganoSentidos.Location = new System.Drawing.Point(18, 721);
             this.txtOrganoSentidos.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOrganoSentidos.MaxLength = 32767;
+            this.txtOrganoSentidos.MaxLength = 500;
             this.txtOrganoSentidos.Multiline = true;
             this.txtOrganoSentidos.Name = "txtOrganoSentidos";
             this.txtOrganoSentidos.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1550,7 +1550,7 @@
             this.txtGinecoObstetrico.ForeColor = System.Drawing.Color.DimGray;
             this.txtGinecoObstetrico.Location = new System.Drawing.Point(18, 802);
             this.txtGinecoObstetrico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGinecoObstetrico.MaxLength = 32767;
+            this.txtGinecoObstetrico.MaxLength = 500;
             this.txtGinecoObstetrico.Multiline = true;
             this.txtGinecoObstetrico.Name = "txtGinecoObstetrico";
             this.txtGinecoObstetrico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1641,7 +1641,7 @@
             this.txtNeurologico.ForeColor = System.Drawing.Color.DimGray;
             this.txtNeurologico.Location = new System.Drawing.Point(15, 1052);
             this.txtNeurologico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNeurologico.MaxLength = 32767;
+            this.txtNeurologico.MaxLength = 16383;
             this.txtNeurologico.Multiline = true;
             this.txtNeurologico.Name = "txtNeurologico";
             this.txtNeurologico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1663,7 +1663,7 @@
             this.txtMusculoEsqueletico.ForeColor = System.Drawing.Color.DimGray;
             this.txtMusculoEsqueletico.Location = new System.Drawing.Point(17, 968);
             this.txtMusculoEsqueletico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMusculoEsqueletico.MaxLength = 32767;
+            this.txtMusculoEsqueletico.MaxLength = 16383;
             this.txtMusculoEsqueletico.Multiline = true;
             this.txtMusculoEsqueletico.Name = "txtMusculoEsqueletico";
             this.txtMusculoEsqueletico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1707,7 +1707,7 @@
             this.txtIMC.ForeColor = System.Drawing.Color.DimGray;
             this.txtIMC.Location = new System.Drawing.Point(537, 69);
             this.txtIMC.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIMC.MaxLength = 32767;
+            this.txtIMC.MaxLength = 4;
             this.txtIMC.Multiline = false;
             this.txtIMC.Name = "txtIMC";
             this.txtIMC.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1729,7 +1729,7 @@
             this.txtPeso.ForeColor = System.Drawing.Color.DimGray;
             this.txtPeso.Location = new System.Drawing.Point(382, 69);
             this.txtPeso.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPeso.MaxLength = 32767;
+            this.txtPeso.MaxLength = 3;
             this.txtPeso.Multiline = false;
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1764,7 +1764,7 @@
             this.txtTalla.ForeColor = System.Drawing.Color.DimGray;
             this.txtTalla.Location = new System.Drawing.Point(225, 69);
             this.txtTalla.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTalla.MaxLength = 32767;
+            this.txtTalla.MaxLength = 4;
             this.txtTalla.Multiline = false;
             this.txtTalla.Name = "txtTalla";
             this.txtTalla.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1799,7 +1799,7 @@
             this.txtTemperatura.ForeColor = System.Drawing.Color.DimGray;
             this.txtTemperatura.Location = new System.Drawing.Point(693, 141);
             this.txtTemperatura.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTemperatura.MaxLength = 32767;
+            this.txtTemperatura.MaxLength = 2;
             this.txtTemperatura.Multiline = false;
             this.txtTemperatura.Name = "txtTemperatura";
             this.txtTemperatura.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1833,7 +1833,7 @@
             this.txtTA.ForeColor = System.Drawing.Color.DimGray;
             this.txtTA.Location = new System.Drawing.Point(537, 141);
             this.txtTA.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTA.MaxLength = 32767;
+            this.txtTA.MaxLength = 12;
             this.txtTA.Multiline = false;
             this.txtTA.Name = "txtTA";
             this.txtTA.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1867,7 +1867,7 @@
             this.txtPulso.ForeColor = System.Drawing.Color.DimGray;
             this.txtPulso.Location = new System.Drawing.Point(382, 141);
             this.txtPulso.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPulso.MaxLength = 32767;
+            this.txtPulso.MaxLength = 4;
             this.txtPulso.Multiline = false;
             this.txtPulso.Name = "txtPulso";
             this.txtPulso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1901,7 +1901,7 @@
             this.txtFR.ForeColor = System.Drawing.Color.DimGray;
             this.txtFR.Location = new System.Drawing.Point(225, 141);
             this.txtFR.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFR.MaxLength = 32767;
+            this.txtFR.MaxLength = 4;
             this.txtFR.Multiline = false;
             this.txtFR.Name = "txtFR";
             this.txtFR.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1935,7 +1935,7 @@
             this.txtFC.ForeColor = System.Drawing.Color.DimGray;
             this.txtFC.Location = new System.Drawing.Point(19, 141);
             this.txtFC.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFC.MaxLength = 32767;
+            this.txtFC.MaxLength = 4;
             this.txtFC.Multiline = false;
             this.txtFC.Name = "txtFC";
             this.txtFC.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2084,8 +2084,15 @@
             this.cboxGrado.IntegralHeight = false;
             this.cboxGrado.ItemHeight = 43;
             this.cboxGrado.Items.AddRange(new object[] {
+            "Bajo peso (delgadez)",
+            "Delgadez severa",
+            "Delgadez moderada",
+            "Delgadez leve",
+            "Peso normal",
             "Sobrepeso",
-            "Obesidad"});
+            "Obesidad tipo I",
+            "Obesidad tipo II",
+            "Obesidad tipo III"});
             this.cboxGrado.Location = new System.Drawing.Point(693, 57);
             this.cboxGrado.MaxDropDownItems = 4;
             this.cboxGrado.MouseState = MaterialSkin.MouseState.OUT;
@@ -2154,7 +2161,7 @@
             this.txtCraneo.ForeColor = System.Drawing.Color.DimGray;
             this.txtCraneo.Location = new System.Drawing.Point(18, 211);
             this.txtCraneo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCraneo.MaxLength = 32767;
+            this.txtCraneo.MaxLength = 16383;
             this.txtCraneo.Multiline = true;
             this.txtCraneo.Name = "txtCraneo";
             this.txtCraneo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2176,7 +2183,7 @@
             this.txtOjos.ForeColor = System.Drawing.Color.DimGray;
             this.txtOjos.Location = new System.Drawing.Point(18, 300);
             this.txtOjos.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOjos.MaxLength = 32767;
+            this.txtOjos.MaxLength = 16383;
             this.txtOjos.Multiline = true;
             this.txtOjos.Name = "txtOjos";
             this.txtOjos.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2198,7 +2205,7 @@
             this.txtOidos.ForeColor = System.Drawing.Color.DimGray;
             this.txtOidos.Location = new System.Drawing.Point(15, 386);
             this.txtOidos.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOidos.MaxLength = 32767;
+            this.txtOidos.MaxLength = 16383;
             this.txtOidos.Multiline = true;
             this.txtOidos.Name = "txtOidos";
             this.txtOidos.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2220,7 +2227,7 @@
             this.txtNariz.ForeColor = System.Drawing.Color.DimGray;
             this.txtNariz.Location = new System.Drawing.Point(20, 470);
             this.txtNariz.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNariz.MaxLength = 32767;
+            this.txtNariz.MaxLength = 16383;
             this.txtNariz.Multiline = true;
             this.txtNariz.Name = "txtNariz";
             this.txtNariz.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2242,7 +2249,7 @@
             this.txtBoca.ForeColor = System.Drawing.Color.DimGray;
             this.txtBoca.Location = new System.Drawing.Point(17, 555);
             this.txtBoca.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBoca.MaxLength = 32767;
+            this.txtBoca.MaxLength = 16383;
             this.txtBoca.Multiline = true;
             this.txtBoca.Name = "txtBoca";
             this.txtBoca.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2264,7 +2271,7 @@
             this.txtCuello.ForeColor = System.Drawing.Color.DimGray;
             this.txtCuello.Location = new System.Drawing.Point(15, 634);
             this.txtCuello.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCuello.MaxLength = 32767;
+            this.txtCuello.MaxLength = 16383;
             this.txtCuello.Multiline = true;
             this.txtCuello.Name = "txtCuello";
             this.txtCuello.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2286,7 +2293,7 @@
             this.txtTorax.ForeColor = System.Drawing.Color.DimGray;
             this.txtTorax.Location = new System.Drawing.Point(15, 718);
             this.txtTorax.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTorax.MaxLength = 32767;
+            this.txtTorax.MaxLength = 16383;
             this.txtTorax.Multiline = true;
             this.txtTorax.Name = "txtTorax";
             this.txtTorax.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2308,7 +2315,7 @@
             this.txtAbdomen.ForeColor = System.Drawing.Color.DimGray;
             this.txtAbdomen.Location = new System.Drawing.Point(13, 812);
             this.txtAbdomen.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAbdomen.MaxLength = 32767;
+            this.txtAbdomen.MaxLength = 16383;
             this.txtAbdomen.Multiline = true;
             this.txtAbdomen.Name = "txtAbdomen";
             this.txtAbdomen.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2330,7 +2337,7 @@
             this.txtGenitourinario.ForeColor = System.Drawing.Color.DimGray;
             this.txtGenitourinario.Location = new System.Drawing.Point(14, 891);
             this.txtGenitourinario.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGenitourinario.MaxLength = 32767;
+            this.txtGenitourinario.MaxLength = 16383;
             this.txtGenitourinario.Multiline = true;
             this.txtGenitourinario.Name = "txtGenitourinario";
             this.txtGenitourinario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2509,7 +2516,7 @@
             this.txtCasa.ForeColor = System.Drawing.Color.DimGray;
             this.txtCasa.Location = new System.Drawing.Point(29, 72);
             this.txtCasa.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCasa.MaxLength = 32767;
+            this.txtCasa.MaxLength = 500;
             this.txtCasa.Multiline = true;
             this.txtCasa.Name = "txtCasa";
             this.txtCasa.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2531,7 +2538,7 @@
             this.txtAlimentacion.ForeColor = System.Drawing.Color.DimGray;
             this.txtAlimentacion.Location = new System.Drawing.Point(29, 154);
             this.txtAlimentacion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAlimentacion.MaxLength = 32767;
+            this.txtAlimentacion.MaxLength = 500;
             this.txtAlimentacion.Multiline = true;
             this.txtAlimentacion.Name = "txtAlimentacion";
             this.txtAlimentacion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2553,7 +2560,7 @@
             this.txtAnimales.ForeColor = System.Drawing.Color.DimGray;
             this.txtAnimales.Location = new System.Drawing.Point(29, 242);
             this.txtAnimales.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAnimales.MaxLength = 32767;
+            this.txtAnimales.MaxLength = 500;
             this.txtAnimales.Multiline = true;
             this.txtAnimales.Name = "txtAnimales";
             this.txtAnimales.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2575,7 +2582,7 @@
             this.txtInmunizaciones.ForeColor = System.Drawing.Color.DimGray;
             this.txtInmunizaciones.Location = new System.Drawing.Point(29, 324);
             this.txtInmunizaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.txtInmunizaciones.MaxLength = 32767;
+            this.txtInmunizaciones.MaxLength = 500;
             this.txtInmunizaciones.Multiline = true;
             this.txtInmunizaciones.Name = "txtInmunizaciones";
             this.txtInmunizaciones.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2597,7 +2604,7 @@
             this.txtToxicomanias.ForeColor = System.Drawing.Color.DimGray;
             this.txtToxicomanias.Location = new System.Drawing.Point(29, 412);
             this.txtToxicomanias.Margin = new System.Windows.Forms.Padding(4);
-            this.txtToxicomanias.MaxLength = 32767;
+            this.txtToxicomanias.MaxLength = 500;
             this.txtToxicomanias.Multiline = true;
             this.txtToxicomanias.Name = "txtToxicomanias";
             this.txtToxicomanias.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2619,7 +2626,7 @@
             this.txtTrabajosYActAnteriores.ForeColor = System.Drawing.Color.DimGray;
             this.txtTrabajosYActAnteriores.Location = new System.Drawing.Point(29, 507);
             this.txtTrabajosYActAnteriores.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTrabajosYActAnteriores.MaxLength = 32767;
+            this.txtTrabajosYActAnteriores.MaxLength = 500;
             this.txtTrabajosYActAnteriores.Multiline = true;
             this.txtTrabajosYActAnteriores.Name = "txtTrabajosYActAnteriores";
             this.txtTrabajosYActAnteriores.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2641,7 +2648,7 @@
             this.txtDeportesRecreacion.ForeColor = System.Drawing.Color.DimGray;
             this.txtDeportesRecreacion.Location = new System.Drawing.Point(29, 606);
             this.txtDeportesRecreacion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDeportesRecreacion.MaxLength = 32767;
+            this.txtDeportesRecreacion.MaxLength = 500;
             this.txtDeportesRecreacion.Multiline = true;
             this.txtDeportesRecreacion.Name = "txtDeportesRecreacion";
             this.txtDeportesRecreacion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2663,7 +2670,7 @@
             this.txtEntornoFamiliar.ForeColor = System.Drawing.Color.DimGray;
             this.txtEntornoFamiliar.Location = new System.Drawing.Point(29, 687);
             this.txtEntornoFamiliar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEntornoFamiliar.MaxLength = 32767;
+            this.txtEntornoFamiliar.MaxLength = 500;
             this.txtEntornoFamiliar.Multiline = true;
             this.txtEntornoFamiliar.Name = "txtEntornoFamiliar";
             this.txtEntornoFamiliar.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -2685,7 +2692,7 @@
             this.txtEscolaridad.ForeColor = System.Drawing.Color.DimGray;
             this.txtEscolaridad.Location = new System.Drawing.Point(29, 774);
             this.txtEscolaridad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEscolaridad.MaxLength = 32767;
+            this.txtEscolaridad.MaxLength = 30;
             this.txtEscolaridad.Multiline = true;
             this.txtEscolaridad.Name = "txtEscolaridad";
             this.txtEscolaridad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
