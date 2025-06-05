@@ -31,61 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModificarExpediente));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedor = new System.Windows.Forms.Panel();
-            this.pPatologicos = new System.Windows.Forms.Panel();
-            this.topePagina = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.rbtnTransfusiones = new CapaPresentacion.radioButtonPersonalizado();
-            this.label14 = new System.Windows.Forms.Label();
-            this.rbtnCirugias = new CapaPresentacion.radioButtonPersonalizado();
-            this.label13 = new System.Windows.Forms.Label();
-            this.rbtnHozpitalizaciones = new CapaPresentacion.radioButtonPersonalizado();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtAlergias = new CapaPresentacion.TextPersonalizado();
-            this.txtSNerviosoCentral = new CapaPresentacion.TextPersonalizado();
-            this.txtSCardiovascular = new CapaPresentacion.TextPersonalizado();
-            this.txtSRespiratorio = new CapaPresentacion.TextPersonalizado();
-            this.txtSGastrointestinal = new CapaPresentacion.TextPersonalizado();
-            this.txtSEndocrino = new CapaPresentacion.TextPersonalizado();
-            this.txtSGenitoUrinario = new CapaPresentacion.TextPersonalizado();
-            this.txtSMusculoEsqueletico = new CapaPresentacion.TextPersonalizado();
-            this.txtOrganoSentidos = new CapaPresentacion.TextPersonalizado();
-            this.txtGinecoObstetrico = new CapaPresentacion.TextPersonalizado();
-            this.cboxGrupoSanguineo = new MaterialSkin.Controls.MaterialComboBox();
-            this.txtGrupoSanguineo = new CapaPresentacion.TextPersonalizado();
-            this.pNoPatologicos = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCasa = new CapaPresentacion.TextPersonalizado();
-            this.txtAlimentacion = new CapaPresentacion.TextPersonalizado();
-            this.txtAnimales = new CapaPresentacion.TextPersonalizado();
-            this.txtInmunizaciones = new CapaPresentacion.TextPersonalizado();
-            this.txtToxicomanias = new CapaPresentacion.TextPersonalizado();
-            this.txtTrabajosYActAnteriores = new CapaPresentacion.TextPersonalizado();
-            this.txtDeportesRecreacion = new CapaPresentacion.TextPersonalizado();
-            this.txtEntornoFamiliar = new CapaPresentacion.TextPersonalizado();
-            this.txtEscolaridad = new CapaPresentacion.TextPersonalizado();
             this.pExploracionFisica = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -181,6 +126,61 @@
             this.txtEstudiosLaboratorio = new CapaPresentacion.TextPersonalizado();
             this.txtEstudiosRadiologicos = new CapaPresentacion.TextPersonalizado();
             this.txtOtros = new CapaPresentacion.TextPersonalizado();
+            this.pPatologicos = new System.Windows.Forms.Panel();
+            this.topePagina = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.rbtnTransfusiones = new CapaPresentacion.radioButtonPersonalizado();
+            this.label14 = new System.Windows.Forms.Label();
+            this.rbtnCirugias = new CapaPresentacion.radioButtonPersonalizado();
+            this.label13 = new System.Windows.Forms.Label();
+            this.rbtnHozpitalizaciones = new CapaPresentacion.radioButtonPersonalizado();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtAlergias = new CapaPresentacion.TextPersonalizado();
+            this.txtSNerviosoCentral = new CapaPresentacion.TextPersonalizado();
+            this.txtSCardiovascular = new CapaPresentacion.TextPersonalizado();
+            this.txtSRespiratorio = new CapaPresentacion.TextPersonalizado();
+            this.txtSGastrointestinal = new CapaPresentacion.TextPersonalizado();
+            this.txtSEndocrino = new CapaPresentacion.TextPersonalizado();
+            this.txtSGenitoUrinario = new CapaPresentacion.TextPersonalizado();
+            this.txtSMusculoEsqueletico = new CapaPresentacion.TextPersonalizado();
+            this.txtOrganoSentidos = new CapaPresentacion.TextPersonalizado();
+            this.txtGinecoObstetrico = new CapaPresentacion.TextPersonalizado();
+            this.cboxGrupoSanguineo = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtGrupoSanguineo = new CapaPresentacion.TextPersonalizado();
+            this.pNoPatologicos = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCasa = new CapaPresentacion.TextPersonalizado();
+            this.txtAlimentacion = new CapaPresentacion.TextPersonalizado();
+            this.txtAnimales = new CapaPresentacion.TextPersonalizado();
+            this.txtInmunizaciones = new CapaPresentacion.TextPersonalizado();
+            this.txtToxicomanias = new CapaPresentacion.TextPersonalizado();
+            this.txtTrabajosYActAnteriores = new CapaPresentacion.TextPersonalizado();
+            this.txtDeportesRecreacion = new CapaPresentacion.TextPersonalizado();
+            this.txtEntornoFamiliar = new CapaPresentacion.TextPersonalizado();
+            this.txtEscolaridad = new CapaPresentacion.TextPersonalizado();
             this.pSeccionesExpediente = new System.Windows.Forms.Panel();
             this.btnEstudiosParaclinicos = new System.Windows.Forms.Button();
             this.btnExploracionFisica = new System.Windows.Forms.Button();
@@ -196,10 +196,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pContenedor.SuspendLayout();
-            this.pPatologicos.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.pNoPatologicos.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.pExploracionFisica.SuspendLayout();
             this.panel10.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
@@ -208,6 +204,10 @@
             this.pEstudiosParaclinicos.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.pPatologicos.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.pNoPatologicos.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.pSeccionesExpediente.SuspendLayout();
             this.panel34.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -228,931 +228,16 @@
             // 
             // pContenedor
             // 
-            this.pContenedor.Controls.Add(this.pPatologicos);
-            this.pContenedor.Controls.Add(this.pNoPatologicos);
             this.pContenedor.Controls.Add(this.pExploracionFisica);
             this.pContenedor.Controls.Add(this.pDatosGenerales);
             this.pContenedor.Controls.Add(this.pEstudiosParaclinicos);
+            this.pContenedor.Controls.Add(this.pPatologicos);
+            this.pContenedor.Controls.Add(this.pNoPatologicos);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(0, 190);
             this.pContenedor.Name = "pContenedor";
             this.pContenedor.Size = new System.Drawing.Size(945, 450);
             this.pContenedor.TabIndex = 15;
-            // 
-            // pPatologicos
-            // 
-            this.pPatologicos.AutoScroll = true;
-            this.pPatologicos.Controls.Add(this.topePagina);
-            this.pPatologicos.Controls.Add(this.panel8);
-            this.pPatologicos.Location = new System.Drawing.Point(0, 0);
-            this.pPatologicos.Name = "pPatologicos";
-            this.pPatologicos.Size = new System.Drawing.Size(945, 450);
-            this.pPatologicos.TabIndex = 112;
-            // 
-            // topePagina
-            // 
-            this.topePagina.AutoSize = true;
-            this.topePagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.topePagina.ForeColor = System.Drawing.Color.Transparent;
-            this.topePagina.Location = new System.Drawing.Point(2, 975);
-            this.topePagina.Name = "topePagina";
-            this.topePagina.Size = new System.Drawing.Size(111, 16);
-            this.topePagina.TabIndex = 112;
-            this.topePagina.Text = "Tipo de Lesión";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel8.Controls.Add(this.label46);
-            this.panel8.Controls.Add(this.label24);
-            this.panel8.Controls.Add(this.label12);
-            this.panel8.Controls.Add(this.label23);
-            this.panel8.Controls.Add(this.label21);
-            this.panel8.Controls.Add(this.label20);
-            this.panel8.Controls.Add(this.label19);
-            this.panel8.Controls.Add(this.label18);
-            this.panel8.Controls.Add(this.label17);
-            this.panel8.Controls.Add(this.label16);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Controls.Add(this.rbtnTransfusiones);
-            this.panel8.Controls.Add(this.label14);
-            this.panel8.Controls.Add(this.rbtnCirugias);
-            this.panel8.Controls.Add(this.label13);
-            this.panel8.Controls.Add(this.rbtnHozpitalizaciones);
-            this.panel8.Controls.Add(this.label64);
-            this.panel8.Controls.Add(this.label22);
-            this.panel8.Controls.Add(this.txtAlergias);
-            this.panel8.Controls.Add(this.txtSNerviosoCentral);
-            this.panel8.Controls.Add(this.txtSCardiovascular);
-            this.panel8.Controls.Add(this.txtSRespiratorio);
-            this.panel8.Controls.Add(this.txtSGastrointestinal);
-            this.panel8.Controls.Add(this.txtSEndocrino);
-            this.panel8.Controls.Add(this.txtSGenitoUrinario);
-            this.panel8.Controls.Add(this.txtSMusculoEsqueletico);
-            this.panel8.Controls.Add(this.txtOrganoSentidos);
-            this.panel8.Controls.Add(this.txtGinecoObstetrico);
-            this.panel8.Controls.Add(this.cboxGrupoSanguineo);
-            this.panel8.Controls.Add(this.txtGrupoSanguineo);
-            this.panel8.Location = new System.Drawing.Point(13, 19);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(900, 949);
-            this.panel8.TabIndex = 97;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label46.Location = new System.Drawing.Point(630, 40);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(69, 16);
-            this.label46.TabIndex = 182;
-            this.label46.Text = "Alérgias:";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label24.Location = new System.Drawing.Point(18, 863);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(131, 16);
-            this.label24.TabIndex = 148;
-            this.label24.Text = "Grupo Sanguíneo:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label12.Location = new System.Drawing.Point(18, 784);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(144, 16);
-            this.label12.TabIndex = 146;
-            this.label12.Text = "Gineco-Obstétricos:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label23.Location = new System.Drawing.Point(18, 696);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(172, 16);
-            this.label23.TabIndex = 144;
-            this.label23.Text = "Órgano de los sentidos:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label21.Location = new System.Drawing.Point(18, 611);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(214, 16);
-            this.label21.TabIndex = 142;
-            this.label21.Text = "Sistema Músculo-esquelético:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label20.Location = new System.Drawing.Point(18, 530);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(173, 16);
-            this.label20.TabIndex = 140;
-            this.label20.Text = "Sistema Genito-urinario:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label19.Location = new System.Drawing.Point(18, 445);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(141, 16);
-            this.label19.TabIndex = 138;
-            this.label19.Text = "Sistema Endócrino:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label18.Location = new System.Drawing.Point(18, 357);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(179, 16);
-            this.label18.TabIndex = 136;
-            this.label18.Text = "Sistema Gastrointestinal:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label17.Location = new System.Drawing.Point(18, 277);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(157, 16);
-            this.label17.TabIndex = 134;
-            this.label17.Text = "Sistema Respiratorio:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label16.Location = new System.Drawing.Point(18, 193);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(176, 16);
-            this.label16.TabIndex = 132;
-            this.label16.Text = "Sistema Cardiovascular:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label15.Location = new System.Drawing.Point(18, 114);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(187, 16);
-            this.label15.TabIndex = 130;
-            this.label15.Text = "Sistema Nervioso Central:";
-            // 
-            // rbtnTransfusiones
-            // 
-            this.rbtnTransfusiones.Enabled = false;
-            this.rbtnTransfusiones.Location = new System.Drawing.Point(534, 51);
-            this.rbtnTransfusiones.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTransfusiones.Name = "rbtnTransfusiones";
-            this.rbtnTransfusiones.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTransfusiones.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTransfusiones.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnTransfusiones.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTransfusiones.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTransfusiones.TabIndex = 128;
-            this.rbtnTransfusiones.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label14.Location = new System.Drawing.Point(417, 60);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 16);
-            this.label14.TabIndex = 127;
-            this.label14.Text = "Transfusiones:";
-            // 
-            // rbtnCirugias
-            // 
-            this.rbtnCirugias.Enabled = false;
-            this.rbtnCirugias.Location = new System.Drawing.Point(326, 51);
-            this.rbtnCirugias.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnCirugias.Name = "rbtnCirugias";
-            this.rbtnCirugias.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnCirugias.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnCirugias.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnCirugias.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnCirugias.Size = new System.Drawing.Size(83, 34);
-            this.rbtnCirugias.TabIndex = 126;
-            this.rbtnCirugias.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label13.Location = new System.Drawing.Point(252, 60);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 16);
-            this.label13.TabIndex = 125;
-            this.label13.Text = "Cirugías:";
-            // 
-            // rbtnHozpitalizaciones
-            // 
-            this.rbtnHozpitalizaciones.Enabled = false;
-            this.rbtnHozpitalizaciones.Location = new System.Drawing.Point(153, 51);
-            this.rbtnHozpitalizaciones.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnHozpitalizaciones.Name = "rbtnHozpitalizaciones";
-            this.rbtnHozpitalizaciones.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnHozpitalizaciones.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnHozpitalizaciones.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnHozpitalizaciones.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnHozpitalizaciones.Size = new System.Drawing.Size(83, 34);
-            this.rbtnHozpitalizaciones.TabIndex = 124;
-            this.rbtnHozpitalizaciones.UseVisualStyleBackColor = true;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label64.Location = new System.Drawing.Point(18, 60);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(135, 16);
-            this.label64.TabIndex = 123;
-            this.label64.Text = "Hospitalizaciones:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label22.Location = new System.Drawing.Point(12, 10);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(142, 25);
-            this.label22.TabIndex = 96;
-            this.label22.Text = "Patológicos:";
-            // 
-            // txtAlergias
-            // 
-            this.txtAlergias.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtAlergias.BorderColor = System.Drawing.Color.Gray;
-            this.txtAlergias.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAlergias.BorderRadius = 12;
-            this.txtAlergias.BorderSize = 2;
-            this.txtAlergias.Enabled = false;
-            this.txtAlergias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlergias.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAlergias.Location = new System.Drawing.Point(623, 56);
-            this.txtAlergias.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAlergias.MaxLength = 400;
-            this.txtAlergias.Multiline = false;
-            this.txtAlergias.Name = "txtAlergias";
-            this.txtAlergias.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAlergias.PasswordChar = false;
-            this.txtAlergias.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAlergias.PlaceholderText = "";
-            this.txtAlergias.Size = new System.Drawing.Size(257, 35);
-            this.txtAlergias.TabIndex = 181;
-            this.txtAlergias.UnderlinedStyle = true;
-            // 
-            // txtSNerviosoCentral
-            // 
-            this.txtSNerviosoCentral.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSNerviosoCentral.BorderColor = System.Drawing.Color.Gray;
-            this.txtSNerviosoCentral.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSNerviosoCentral.BorderRadius = 12;
-            this.txtSNerviosoCentral.BorderSize = 2;
-            this.txtSNerviosoCentral.Enabled = false;
-            this.txtSNerviosoCentral.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSNerviosoCentral.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSNerviosoCentral.Location = new System.Drawing.Point(18, 134);
-            this.txtSNerviosoCentral.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSNerviosoCentral.MaxLength = 500;
-            this.txtSNerviosoCentral.Multiline = true;
-            this.txtSNerviosoCentral.Name = "txtSNerviosoCentral";
-            this.txtSNerviosoCentral.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSNerviosoCentral.PasswordChar = false;
-            this.txtSNerviosoCentral.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSNerviosoCentral.PlaceholderText = "";
-            this.txtSNerviosoCentral.Size = new System.Drawing.Size(870, 59);
-            this.txtSNerviosoCentral.TabIndex = 183;
-            this.txtSNerviosoCentral.UnderlinedStyle = true;
-            // 
-            // txtSCardiovascular
-            // 
-            this.txtSCardiovascular.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSCardiovascular.BorderColor = System.Drawing.Color.Gray;
-            this.txtSCardiovascular.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSCardiovascular.BorderRadius = 12;
-            this.txtSCardiovascular.BorderSize = 2;
-            this.txtSCardiovascular.Enabled = false;
-            this.txtSCardiovascular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSCardiovascular.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSCardiovascular.Location = new System.Drawing.Point(18, 214);
-            this.txtSCardiovascular.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSCardiovascular.MaxLength = 500;
-            this.txtSCardiovascular.Multiline = true;
-            this.txtSCardiovascular.Name = "txtSCardiovascular";
-            this.txtSCardiovascular.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSCardiovascular.PasswordChar = false;
-            this.txtSCardiovascular.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSCardiovascular.PlaceholderText = "";
-            this.txtSCardiovascular.Size = new System.Drawing.Size(870, 59);
-            this.txtSCardiovascular.TabIndex = 184;
-            this.txtSCardiovascular.UnderlinedStyle = true;
-            // 
-            // txtSRespiratorio
-            // 
-            this.txtSRespiratorio.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSRespiratorio.BorderColor = System.Drawing.Color.Gray;
-            this.txtSRespiratorio.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSRespiratorio.BorderRadius = 12;
-            this.txtSRespiratorio.BorderSize = 2;
-            this.txtSRespiratorio.Enabled = false;
-            this.txtSRespiratorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSRespiratorio.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSRespiratorio.Location = new System.Drawing.Point(18, 297);
-            this.txtSRespiratorio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSRespiratorio.MaxLength = 500;
-            this.txtSRespiratorio.Multiline = true;
-            this.txtSRespiratorio.Name = "txtSRespiratorio";
-            this.txtSRespiratorio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSRespiratorio.PasswordChar = false;
-            this.txtSRespiratorio.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSRespiratorio.PlaceholderText = "";
-            this.txtSRespiratorio.Size = new System.Drawing.Size(870, 59);
-            this.txtSRespiratorio.TabIndex = 185;
-            this.txtSRespiratorio.UnderlinedStyle = true;
-            // 
-            // txtSGastrointestinal
-            // 
-            this.txtSGastrointestinal.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSGastrointestinal.BorderColor = System.Drawing.Color.Gray;
-            this.txtSGastrointestinal.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSGastrointestinal.BorderRadius = 12;
-            this.txtSGastrointestinal.BorderSize = 2;
-            this.txtSGastrointestinal.Enabled = false;
-            this.txtSGastrointestinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSGastrointestinal.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSGastrointestinal.Location = new System.Drawing.Point(18, 380);
-            this.txtSGastrointestinal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSGastrointestinal.MaxLength = 500;
-            this.txtSGastrointestinal.Multiline = true;
-            this.txtSGastrointestinal.Name = "txtSGastrointestinal";
-            this.txtSGastrointestinal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSGastrointestinal.PasswordChar = false;
-            this.txtSGastrointestinal.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSGastrointestinal.PlaceholderText = "";
-            this.txtSGastrointestinal.Size = new System.Drawing.Size(870, 59);
-            this.txtSGastrointestinal.TabIndex = 186;
-            this.txtSGastrointestinal.UnderlinedStyle = true;
-            // 
-            // txtSEndocrino
-            // 
-            this.txtSEndocrino.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSEndocrino.BorderColor = System.Drawing.Color.Gray;
-            this.txtSEndocrino.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSEndocrino.BorderRadius = 12;
-            this.txtSEndocrino.BorderSize = 2;
-            this.txtSEndocrino.Enabled = false;
-            this.txtSEndocrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSEndocrino.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSEndocrino.Location = new System.Drawing.Point(18, 470);
-            this.txtSEndocrino.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSEndocrino.MaxLength = 500;
-            this.txtSEndocrino.Multiline = true;
-            this.txtSEndocrino.Name = "txtSEndocrino";
-            this.txtSEndocrino.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSEndocrino.PasswordChar = false;
-            this.txtSEndocrino.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSEndocrino.PlaceholderText = "";
-            this.txtSEndocrino.Size = new System.Drawing.Size(870, 59);
-            this.txtSEndocrino.TabIndex = 187;
-            this.txtSEndocrino.UnderlinedStyle = true;
-            // 
-            // txtSGenitoUrinario
-            // 
-            this.txtSGenitoUrinario.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSGenitoUrinario.BorderColor = System.Drawing.Color.Gray;
-            this.txtSGenitoUrinario.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSGenitoUrinario.BorderRadius = 12;
-            this.txtSGenitoUrinario.BorderSize = 2;
-            this.txtSGenitoUrinario.Enabled = false;
-            this.txtSGenitoUrinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSGenitoUrinario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSGenitoUrinario.Location = new System.Drawing.Point(18, 550);
-            this.txtSGenitoUrinario.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSGenitoUrinario.MaxLength = 500;
-            this.txtSGenitoUrinario.Multiline = true;
-            this.txtSGenitoUrinario.Name = "txtSGenitoUrinario";
-            this.txtSGenitoUrinario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSGenitoUrinario.PasswordChar = false;
-            this.txtSGenitoUrinario.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSGenitoUrinario.PlaceholderText = "";
-            this.txtSGenitoUrinario.Size = new System.Drawing.Size(870, 59);
-            this.txtSGenitoUrinario.TabIndex = 188;
-            this.txtSGenitoUrinario.UnderlinedStyle = true;
-            // 
-            // txtSMusculoEsqueletico
-            // 
-            this.txtSMusculoEsqueletico.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSMusculoEsqueletico.BorderColor = System.Drawing.Color.Gray;
-            this.txtSMusculoEsqueletico.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSMusculoEsqueletico.BorderRadius = 12;
-            this.txtSMusculoEsqueletico.BorderSize = 2;
-            this.txtSMusculoEsqueletico.Enabled = false;
-            this.txtSMusculoEsqueletico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSMusculoEsqueletico.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSMusculoEsqueletico.Location = new System.Drawing.Point(18, 637);
-            this.txtSMusculoEsqueletico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSMusculoEsqueletico.MaxLength = 500;
-            this.txtSMusculoEsqueletico.Multiline = true;
-            this.txtSMusculoEsqueletico.Name = "txtSMusculoEsqueletico";
-            this.txtSMusculoEsqueletico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSMusculoEsqueletico.PasswordChar = false;
-            this.txtSMusculoEsqueletico.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSMusculoEsqueletico.PlaceholderText = "";
-            this.txtSMusculoEsqueletico.Size = new System.Drawing.Size(870, 59);
-            this.txtSMusculoEsqueletico.TabIndex = 189;
-            this.txtSMusculoEsqueletico.UnderlinedStyle = true;
-            // 
-            // txtOrganoSentidos
-            // 
-            this.txtOrganoSentidos.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtOrganoSentidos.BorderColor = System.Drawing.Color.Gray;
-            this.txtOrganoSentidos.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOrganoSentidos.BorderRadius = 12;
-            this.txtOrganoSentidos.BorderSize = 2;
-            this.txtOrganoSentidos.Enabled = false;
-            this.txtOrganoSentidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrganoSentidos.ForeColor = System.Drawing.Color.DimGray;
-            this.txtOrganoSentidos.Location = new System.Drawing.Point(18, 722);
-            this.txtOrganoSentidos.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOrganoSentidos.MaxLength = 500;
-            this.txtOrganoSentidos.Multiline = true;
-            this.txtOrganoSentidos.Name = "txtOrganoSentidos";
-            this.txtOrganoSentidos.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtOrganoSentidos.PasswordChar = false;
-            this.txtOrganoSentidos.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOrganoSentidos.PlaceholderText = "";
-            this.txtOrganoSentidos.Size = new System.Drawing.Size(870, 59);
-            this.txtOrganoSentidos.TabIndex = 190;
-            this.txtOrganoSentidos.UnderlinedStyle = true;
-            // 
-            // txtGinecoObstetrico
-            // 
-            this.txtGinecoObstetrico.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtGinecoObstetrico.BorderColor = System.Drawing.Color.Gray;
-            this.txtGinecoObstetrico.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtGinecoObstetrico.BorderRadius = 12;
-            this.txtGinecoObstetrico.BorderSize = 2;
-            this.txtGinecoObstetrico.Enabled = false;
-            this.txtGinecoObstetrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGinecoObstetrico.ForeColor = System.Drawing.Color.DimGray;
-            this.txtGinecoObstetrico.Location = new System.Drawing.Point(18, 802);
-            this.txtGinecoObstetrico.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGinecoObstetrico.MaxLength = 500;
-            this.txtGinecoObstetrico.Multiline = true;
-            this.txtGinecoObstetrico.Name = "txtGinecoObstetrico";
-            this.txtGinecoObstetrico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtGinecoObstetrico.PasswordChar = false;
-            this.txtGinecoObstetrico.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtGinecoObstetrico.PlaceholderText = "";
-            this.txtGinecoObstetrico.Size = new System.Drawing.Size(870, 59);
-            this.txtGinecoObstetrico.TabIndex = 191;
-            this.txtGinecoObstetrico.UnderlinedStyle = true;
-            // 
-            // cboxGrupoSanguineo
-            // 
-            this.cboxGrupoSanguineo.AutoResize = false;
-            this.cboxGrupoSanguineo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxGrupoSanguineo.Depth = 0;
-            this.cboxGrupoSanguineo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxGrupoSanguineo.DropDownHeight = 174;
-            this.cboxGrupoSanguineo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxGrupoSanguineo.DropDownWidth = 121;
-            this.cboxGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxGrupoSanguineo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxGrupoSanguineo.FormattingEnabled = true;
-            this.cboxGrupoSanguineo.IntegralHeight = false;
-            this.cboxGrupoSanguineo.ItemHeight = 43;
-            this.cboxGrupoSanguineo.Items.AddRange(new object[] {
-            "O+",
-            "O-",
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "AB+",
-            "AB-"});
-            this.cboxGrupoSanguineo.Location = new System.Drawing.Point(18, 887);
-            this.cboxGrupoSanguineo.MaxDropDownItems = 4;
-            this.cboxGrupoSanguineo.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxGrupoSanguineo.Name = "cboxGrupoSanguineo";
-            this.cboxGrupoSanguineo.Size = new System.Drawing.Size(863, 49);
-            this.cboxGrupoSanguineo.StartIndex = 0;
-            this.cboxGrupoSanguineo.TabIndex = 150;
-            this.cboxGrupoSanguineo.Visible = false;
-            // 
-            // txtGrupoSanguineo
-            // 
-            this.txtGrupoSanguineo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtGrupoSanguineo.BorderColor = System.Drawing.Color.Gray;
-            this.txtGrupoSanguineo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtGrupoSanguineo.BorderRadius = 12;
-            this.txtGrupoSanguineo.BorderSize = 2;
-            this.txtGrupoSanguineo.Enabled = false;
-            this.txtGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGrupoSanguineo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtGrupoSanguineo.Location = new System.Drawing.Point(18, 883);
-            this.txtGrupoSanguineo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGrupoSanguineo.MaxLength = 32767;
-            this.txtGrupoSanguineo.Multiline = true;
-            this.txtGrupoSanguineo.Name = "txtGrupoSanguineo";
-            this.txtGrupoSanguineo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtGrupoSanguineo.PasswordChar = false;
-            this.txtGrupoSanguineo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtGrupoSanguineo.PlaceholderText = "";
-            this.txtGrupoSanguineo.Size = new System.Drawing.Size(870, 59);
-            this.txtGrupoSanguineo.TabIndex = 192;
-            this.txtGrupoSanguineo.UnderlinedStyle = true;
-            // 
-            // pNoPatologicos
-            // 
-            this.pNoPatologicos.AutoScroll = true;
-            this.pNoPatologicos.Controls.Add(this.label4);
-            this.pNoPatologicos.Controls.Add(this.panel6);
-            this.pNoPatologicos.Location = new System.Drawing.Point(0, 0);
-            this.pNoPatologicos.Name = "pNoPatologicos";
-            this.pNoPatologicos.Size = new System.Drawing.Size(945, 450);
-            this.pNoPatologicos.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(3, 895);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 18);
-            this.label4.TabIndex = 111;
-            this.label4.Text = "Trabajo habitual";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.label8);
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.label6);
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.label66);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.txtCasa);
-            this.panel6.Controls.Add(this.txtAlimentacion);
-            this.panel6.Controls.Add(this.txtAnimales);
-            this.panel6.Controls.Add(this.txtInmunizaciones);
-            this.panel6.Controls.Add(this.txtToxicomanias);
-            this.panel6.Controls.Add(this.txtTrabajosYActAnteriores);
-            this.panel6.Controls.Add(this.txtDeportesRecreacion);
-            this.panel6.Controls.Add(this.txtEntornoFamiliar);
-            this.panel6.Controls.Add(this.txtEscolaridad);
-            this.panel6.Location = new System.Drawing.Point(8, 19);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(900, 873);
-            this.panel6.TabIndex = 97;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label11.Location = new System.Drawing.Point(30, 755);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 16);
-            this.label11.TabIndex = 134;
-            this.label11.Text = "Escolaridad:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label10.Location = new System.Drawing.Point(30, 669);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 16);
-            this.label10.TabIndex = 133;
-            this.label10.Text = "Entorno familiar:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label9.Location = new System.Drawing.Point(30, 572);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(165, 16);
-            this.label9.TabIndex = 132;
-            this.label9.Text = "Deportes y recreación:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label8.Location = new System.Drawing.Point(30, 476);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(245, 16);
-            this.label8.TabIndex = 131;
-            this.label8.Text = "Trabajos y actividades anteriores:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label7.Location = new System.Drawing.Point(30, 390);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 16);
-            this.label7.TabIndex = 130;
-            this.label7.Text = "Toxicomanías:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(30, 304);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 16);
-            this.label6.TabIndex = 129;
-            this.label6.Text = "Inmunizaciones:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label3.Location = new System.Drawing.Point(30, 218);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
-            this.label3.TabIndex = 128;
-            this.label3.Text = "Animales:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label2.Location = new System.Drawing.Point(30, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 16);
-            this.label2.TabIndex = 127;
-            this.label2.Text = "Casa:";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label66.Location = new System.Drawing.Point(30, 132);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(100, 16);
-            this.label66.TabIndex = 126;
-            this.label66.Text = "Alimentación:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label5.Location = new System.Drawing.Point(12, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 25);
-            this.label5.TabIndex = 96;
-            this.label5.Text = "No Patológicos:";
-            // 
-            // txtCasa
-            // 
-            this.txtCasa.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCasa.BorderColor = System.Drawing.Color.Gray;
-            this.txtCasa.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtCasa.BorderRadius = 12;
-            this.txtCasa.BorderSize = 2;
-            this.txtCasa.Enabled = false;
-            this.txtCasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCasa.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCasa.Location = new System.Drawing.Point(30, 67);
-            this.txtCasa.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCasa.MaxLength = 500;
-            this.txtCasa.Multiline = true;
-            this.txtCasa.Name = "txtCasa";
-            this.txtCasa.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCasa.PasswordChar = false;
-            this.txtCasa.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCasa.PlaceholderText = "";
-            this.txtCasa.Size = new System.Drawing.Size(835, 60);
-            this.txtCasa.TabIndex = 173;
-            this.txtCasa.UnderlinedStyle = true;
-            // 
-            // txtAlimentacion
-            // 
-            this.txtAlimentacion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtAlimentacion.BorderColor = System.Drawing.Color.Gray;
-            this.txtAlimentacion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAlimentacion.BorderRadius = 12;
-            this.txtAlimentacion.BorderSize = 2;
-            this.txtAlimentacion.Enabled = false;
-            this.txtAlimentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlimentacion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAlimentacion.Location = new System.Drawing.Point(30, 152);
-            this.txtAlimentacion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAlimentacion.MaxLength = 500;
-            this.txtAlimentacion.Multiline = true;
-            this.txtAlimentacion.Name = "txtAlimentacion";
-            this.txtAlimentacion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAlimentacion.PasswordChar = false;
-            this.txtAlimentacion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAlimentacion.PlaceholderText = "";
-            this.txtAlimentacion.Size = new System.Drawing.Size(835, 60);
-            this.txtAlimentacion.TabIndex = 174;
-            this.txtAlimentacion.UnderlinedStyle = true;
-            // 
-            // txtAnimales
-            // 
-            this.txtAnimales.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtAnimales.BorderColor = System.Drawing.Color.Gray;
-            this.txtAnimales.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAnimales.BorderRadius = 12;
-            this.txtAnimales.BorderSize = 2;
-            this.txtAnimales.Enabled = false;
-            this.txtAnimales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAnimales.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAnimales.Location = new System.Drawing.Point(30, 239);
-            this.txtAnimales.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAnimales.MaxLength = 500;
-            this.txtAnimales.Multiline = true;
-            this.txtAnimales.Name = "txtAnimales";
-            this.txtAnimales.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAnimales.PasswordChar = false;
-            this.txtAnimales.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAnimales.PlaceholderText = "";
-            this.txtAnimales.Size = new System.Drawing.Size(835, 60);
-            this.txtAnimales.TabIndex = 175;
-            this.txtAnimales.UnderlinedStyle = true;
-            // 
-            // txtInmunizaciones
-            // 
-            this.txtInmunizaciones.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtInmunizaciones.BorderColor = System.Drawing.Color.Gray;
-            this.txtInmunizaciones.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtInmunizaciones.BorderRadius = 12;
-            this.txtInmunizaciones.BorderSize = 2;
-            this.txtInmunizaciones.Enabled = false;
-            this.txtInmunizaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInmunizaciones.ForeColor = System.Drawing.Color.DimGray;
-            this.txtInmunizaciones.Location = new System.Drawing.Point(30, 320);
-            this.txtInmunizaciones.Margin = new System.Windows.Forms.Padding(4);
-            this.txtInmunizaciones.MaxLength = 500;
-            this.txtInmunizaciones.Multiline = true;
-            this.txtInmunizaciones.Name = "txtInmunizaciones";
-            this.txtInmunizaciones.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtInmunizaciones.PasswordChar = false;
-            this.txtInmunizaciones.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtInmunizaciones.PlaceholderText = "";
-            this.txtInmunizaciones.Size = new System.Drawing.Size(835, 60);
-            this.txtInmunizaciones.TabIndex = 176;
-            this.txtInmunizaciones.UnderlinedStyle = true;
-            // 
-            // txtToxicomanias
-            // 
-            this.txtToxicomanias.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtToxicomanias.BorderColor = System.Drawing.Color.Gray;
-            this.txtToxicomanias.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtToxicomanias.BorderRadius = 12;
-            this.txtToxicomanias.BorderSize = 2;
-            this.txtToxicomanias.Enabled = false;
-            this.txtToxicomanias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtToxicomanias.ForeColor = System.Drawing.Color.DimGray;
-            this.txtToxicomanias.Location = new System.Drawing.Point(30, 410);
-            this.txtToxicomanias.Margin = new System.Windows.Forms.Padding(4);
-            this.txtToxicomanias.MaxLength = 500;
-            this.txtToxicomanias.Multiline = true;
-            this.txtToxicomanias.Name = "txtToxicomanias";
-            this.txtToxicomanias.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtToxicomanias.PasswordChar = false;
-            this.txtToxicomanias.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtToxicomanias.PlaceholderText = "";
-            this.txtToxicomanias.Size = new System.Drawing.Size(835, 60);
-            this.txtToxicomanias.TabIndex = 177;
-            this.txtToxicomanias.UnderlinedStyle = true;
-            // 
-            // txtTrabajosYActAnteriores
-            // 
-            this.txtTrabajosYActAnteriores.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtTrabajosYActAnteriores.BorderColor = System.Drawing.Color.Gray;
-            this.txtTrabajosYActAnteriores.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTrabajosYActAnteriores.BorderRadius = 12;
-            this.txtTrabajosYActAnteriores.BorderSize = 2;
-            this.txtTrabajosYActAnteriores.Enabled = false;
-            this.txtTrabajosYActAnteriores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrabajosYActAnteriores.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTrabajosYActAnteriores.Location = new System.Drawing.Point(30, 506);
-            this.txtTrabajosYActAnteriores.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTrabajosYActAnteriores.MaxLength = 500;
-            this.txtTrabajosYActAnteriores.Multiline = true;
-            this.txtTrabajosYActAnteriores.Name = "txtTrabajosYActAnteriores";
-            this.txtTrabajosYActAnteriores.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTrabajosYActAnteriores.PasswordChar = false;
-            this.txtTrabajosYActAnteriores.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTrabajosYActAnteriores.PlaceholderText = "";
-            this.txtTrabajosYActAnteriores.Size = new System.Drawing.Size(835, 60);
-            this.txtTrabajosYActAnteriores.TabIndex = 178;
-            this.txtTrabajosYActAnteriores.UnderlinedStyle = true;
-            // 
-            // txtDeportesRecreacion
-            // 
-            this.txtDeportesRecreacion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtDeportesRecreacion.BorderColor = System.Drawing.Color.Gray;
-            this.txtDeportesRecreacion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtDeportesRecreacion.BorderRadius = 12;
-            this.txtDeportesRecreacion.BorderSize = 2;
-            this.txtDeportesRecreacion.Enabled = false;
-            this.txtDeportesRecreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeportesRecreacion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDeportesRecreacion.Location = new System.Drawing.Point(30, 604);
-            this.txtDeportesRecreacion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDeportesRecreacion.MaxLength = 500;
-            this.txtDeportesRecreacion.Multiline = true;
-            this.txtDeportesRecreacion.Name = "txtDeportesRecreacion";
-            this.txtDeportesRecreacion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDeportesRecreacion.PasswordChar = false;
-            this.txtDeportesRecreacion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDeportesRecreacion.PlaceholderText = "";
-            this.txtDeportesRecreacion.Size = new System.Drawing.Size(835, 60);
-            this.txtDeportesRecreacion.TabIndex = 179;
-            this.txtDeportesRecreacion.UnderlinedStyle = true;
-            // 
-            // txtEntornoFamiliar
-            // 
-            this.txtEntornoFamiliar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEntornoFamiliar.BorderColor = System.Drawing.Color.Gray;
-            this.txtEntornoFamiliar.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEntornoFamiliar.BorderRadius = 12;
-            this.txtEntornoFamiliar.BorderSize = 2;
-            this.txtEntornoFamiliar.Enabled = false;
-            this.txtEntornoFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEntornoFamiliar.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEntornoFamiliar.Location = new System.Drawing.Point(30, 691);
-            this.txtEntornoFamiliar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEntornoFamiliar.MaxLength = 500;
-            this.txtEntornoFamiliar.Multiline = true;
-            this.txtEntornoFamiliar.Name = "txtEntornoFamiliar";
-            this.txtEntornoFamiliar.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEntornoFamiliar.PasswordChar = false;
-            this.txtEntornoFamiliar.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEntornoFamiliar.PlaceholderText = "";
-            this.txtEntornoFamiliar.Size = new System.Drawing.Size(835, 60);
-            this.txtEntornoFamiliar.TabIndex = 180;
-            this.txtEntornoFamiliar.UnderlinedStyle = true;
-            // 
-            // txtEscolaridad
-            // 
-            this.txtEscolaridad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEscolaridad.BorderColor = System.Drawing.Color.Gray;
-            this.txtEscolaridad.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEscolaridad.BorderRadius = 12;
-            this.txtEscolaridad.BorderSize = 2;
-            this.txtEscolaridad.Enabled = false;
-            this.txtEscolaridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEscolaridad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEscolaridad.Location = new System.Drawing.Point(30, 781);
-            this.txtEscolaridad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEscolaridad.MaxLength = 30;
-            this.txtEscolaridad.Multiline = true;
-            this.txtEscolaridad.Name = "txtEscolaridad";
-            this.txtEscolaridad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEscolaridad.PasswordChar = false;
-            this.txtEscolaridad.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEscolaridad.PlaceholderText = "";
-            this.txtEscolaridad.Size = new System.Drawing.Size(835, 60);
-            this.txtEscolaridad.TabIndex = 181;
-            this.txtEscolaridad.UnderlinedStyle = true;
             // 
             // pExploracionFisica
             // 
@@ -1258,6 +343,7 @@
             this.txtTemperatura.Size = new System.Drawing.Size(178, 35);
             this.txtTemperatura.TabIndex = 195;
             this.txtTemperatura.UnderlinedStyle = true;
+            this.txtTemperatura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTemperatura_KeyPress);
             // 
             // label52
             // 
@@ -1292,6 +378,7 @@
             this.txtTA.Size = new System.Drawing.Size(130, 35);
             this.txtTA.TabIndex = 193;
             this.txtTA.UnderlinedStyle = true;
+            this.txtTA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTA_KeyPress);
             // 
             // label51
             // 
@@ -1326,6 +413,7 @@
             this.txtPulso.Size = new System.Drawing.Size(130, 35);
             this.txtPulso.TabIndex = 191;
             this.txtPulso.UnderlinedStyle = true;
+            this.txtPulso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPulso_KeyPress);
             // 
             // label50
             // 
@@ -1360,6 +448,7 @@
             this.txtFR.Size = new System.Drawing.Size(130, 35);
             this.txtFR.TabIndex = 189;
             this.txtFR.UnderlinedStyle = true;
+            this.txtFR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFR_KeyPress);
             // 
             // label49
             // 
@@ -1371,7 +460,6 @@
             this.label49.Size = new System.Drawing.Size(38, 16);
             this.label49.TabIndex = 188;
             this.label49.Text = "F.C.:";
-            this.label49.Click += new System.EventHandler(this.label49_Click);
             // 
             // txtFC
             // 
@@ -1395,6 +483,7 @@
             this.txtFC.Size = new System.Drawing.Size(179, 35);
             this.txtFC.TabIndex = 187;
             this.txtFC.UnderlinedStyle = true;
+            this.txtFC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFC_KeyPress);
             // 
             // label48
             // 
@@ -1429,6 +518,7 @@
             this.txtIMC.Size = new System.Drawing.Size(130, 35);
             this.txtIMC.TabIndex = 185;
             this.txtIMC.UnderlinedStyle = true;
+            this.txtIMC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIMC_KeyPress);
             // 
             // label47
             // 
@@ -1463,6 +553,8 @@
             this.txtPeso.Size = new System.Drawing.Size(130, 35);
             this.txtPeso.TabIndex = 183;
             this.txtPeso.UnderlinedStyle = true;
+            this.txtPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeso_KeyPress);
+            this.txtPeso.Validating += new System.ComponentModel.CancelEventHandler(this.txtPeso_Validating);
             // 
             // label60
             // 
@@ -1497,6 +589,8 @@
             this.txtTalla.Size = new System.Drawing.Size(130, 35);
             this.txtTalla.TabIndex = 181;
             this.txtTalla.UnderlinedStyle = true;
+            this.txtTalla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTalla_KeyPress);
+            this.txtTalla.Validating += new System.ComponentModel.CancelEventHandler(this.txtTalla_Validating);
             // 
             // label39
             // 
@@ -1508,7 +602,6 @@
             this.label39.Size = new System.Drawing.Size(96, 16);
             this.label39.TabIndex = 152;
             this.label39.Text = "Neurológico:";
-            this.label39.Click += new System.EventHandler(this.label39_Click);
             // 
             // label38
             // 
@@ -1520,7 +613,6 @@
             this.label38.Size = new System.Drawing.Size(159, 16);
             this.label38.TabIndex = 150;
             this.label38.Text = "Músculo- Esquelético:";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
             // 
             // label37
             // 
@@ -1532,7 +624,6 @@
             this.label37.Size = new System.Drawing.Size(108, 16);
             this.label37.TabIndex = 148;
             this.label37.Text = "Genitourinario:";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // label36
             // 
@@ -1555,7 +646,6 @@
             this.label35.Size = new System.Drawing.Size(51, 16);
             this.label35.TabIndex = 144;
             this.label35.Text = "Tórax:";
-            this.label35.Click += new System.EventHandler(this.label35_Click);
             // 
             // label34
             // 
@@ -1567,7 +657,6 @@
             this.label34.Size = new System.Drawing.Size(55, 16);
             this.label34.TabIndex = 142;
             this.label34.Text = "Cuello:";
-            this.label34.Click += new System.EventHandler(this.label34_Click);
             // 
             // label27
             // 
@@ -1579,7 +668,6 @@
             this.label27.Size = new System.Drawing.Size(47, 16);
             this.label27.TabIndex = 140;
             this.label27.Text = "Boca:";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // label25
             // 
@@ -1591,7 +679,6 @@
             this.label25.Size = new System.Drawing.Size(47, 16);
             this.label25.TabIndex = 138;
             this.label25.Text = "Nariz:";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // label33
             // 
@@ -1603,7 +690,6 @@
             this.label33.Size = new System.Drawing.Size(52, 16);
             this.label33.TabIndex = 136;
             this.label33.Text = "Oídos:";
-            this.label33.Click += new System.EventHandler(this.label33_Click);
             // 
             // label31
             // 
@@ -1615,7 +701,6 @@
             this.label31.Size = new System.Drawing.Size(43, 16);
             this.label31.TabIndex = 134;
             this.label31.Text = "Ojos:";
-            this.label31.Click += new System.EventHandler(this.label31_Click);
             // 
             // label30
             // 
@@ -1627,7 +712,6 @@
             this.label30.Size = new System.Drawing.Size(61, 16);
             this.label30.TabIndex = 132;
             this.label30.Text = "Cráneo:";
-            this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
             // label29
             // 
@@ -1694,8 +778,15 @@
             this.cboxGrado.IntegralHeight = false;
             this.cboxGrado.ItemHeight = 43;
             this.cboxGrado.Items.AddRange(new object[] {
+            "Bajo peso (delgadez)",
+            "Delgadez severa",
+            "Delgadez moderada",
+            "Delgadez leve",
+            "Peso normal",
             "Sobrepeso",
-            "Obesidad"});
+            "Obesidad tipo I",
+            "Obesidad tipo II",
+            "Obesidad tipo III"});
             this.cboxGrado.Location = new System.Drawing.Point(693, 57);
             this.cboxGrado.MaxDropDownItems = 4;
             this.cboxGrado.MouseState = MaterialSkin.MouseState.OUT;
@@ -2782,6 +1873,921 @@
             this.txtOtros.TabIndex = 175;
             this.txtOtros.UnderlinedStyle = true;
             // 
+            // pPatologicos
+            // 
+            this.pPatologicos.AutoScroll = true;
+            this.pPatologicos.Controls.Add(this.topePagina);
+            this.pPatologicos.Controls.Add(this.panel8);
+            this.pPatologicos.Location = new System.Drawing.Point(0, 0);
+            this.pPatologicos.Name = "pPatologicos";
+            this.pPatologicos.Size = new System.Drawing.Size(945, 450);
+            this.pPatologicos.TabIndex = 112;
+            // 
+            // topePagina
+            // 
+            this.topePagina.AutoSize = true;
+            this.topePagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topePagina.ForeColor = System.Drawing.Color.Transparent;
+            this.topePagina.Location = new System.Drawing.Point(2, 975);
+            this.topePagina.Name = "topePagina";
+            this.topePagina.Size = new System.Drawing.Size(111, 16);
+            this.topePagina.TabIndex = 112;
+            this.topePagina.Text = "Tipo de Lesión";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.Controls.Add(this.label46);
+            this.panel8.Controls.Add(this.label24);
+            this.panel8.Controls.Add(this.label12);
+            this.panel8.Controls.Add(this.label23);
+            this.panel8.Controls.Add(this.label21);
+            this.panel8.Controls.Add(this.label20);
+            this.panel8.Controls.Add(this.label19);
+            this.panel8.Controls.Add(this.label18);
+            this.panel8.Controls.Add(this.label17);
+            this.panel8.Controls.Add(this.label16);
+            this.panel8.Controls.Add(this.label15);
+            this.panel8.Controls.Add(this.rbtnTransfusiones);
+            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.rbtnCirugias);
+            this.panel8.Controls.Add(this.label13);
+            this.panel8.Controls.Add(this.rbtnHozpitalizaciones);
+            this.panel8.Controls.Add(this.label64);
+            this.panel8.Controls.Add(this.label22);
+            this.panel8.Controls.Add(this.txtAlergias);
+            this.panel8.Controls.Add(this.txtSNerviosoCentral);
+            this.panel8.Controls.Add(this.txtSCardiovascular);
+            this.panel8.Controls.Add(this.txtSRespiratorio);
+            this.panel8.Controls.Add(this.txtSGastrointestinal);
+            this.panel8.Controls.Add(this.txtSEndocrino);
+            this.panel8.Controls.Add(this.txtSGenitoUrinario);
+            this.panel8.Controls.Add(this.txtSMusculoEsqueletico);
+            this.panel8.Controls.Add(this.txtOrganoSentidos);
+            this.panel8.Controls.Add(this.txtGinecoObstetrico);
+            this.panel8.Controls.Add(this.cboxGrupoSanguineo);
+            this.panel8.Controls.Add(this.txtGrupoSanguineo);
+            this.panel8.Location = new System.Drawing.Point(13, 19);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(900, 949);
+            this.panel8.TabIndex = 97;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label46.Location = new System.Drawing.Point(630, 40);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(69, 16);
+            this.label46.TabIndex = 182;
+            this.label46.Text = "Alérgias:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label24.Location = new System.Drawing.Point(18, 863);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(131, 16);
+            this.label24.TabIndex = 148;
+            this.label24.Text = "Grupo Sanguíneo:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label12.Location = new System.Drawing.Point(18, 784);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(144, 16);
+            this.label12.TabIndex = 146;
+            this.label12.Text = "Gineco-Obstétricos:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label23.Location = new System.Drawing.Point(18, 696);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(172, 16);
+            this.label23.TabIndex = 144;
+            this.label23.Text = "Órgano de los sentidos:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label21.Location = new System.Drawing.Point(18, 611);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(214, 16);
+            this.label21.TabIndex = 142;
+            this.label21.Text = "Sistema Músculo-esquelético:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label20.Location = new System.Drawing.Point(18, 530);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(173, 16);
+            this.label20.TabIndex = 140;
+            this.label20.Text = "Sistema Genito-urinario:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label19.Location = new System.Drawing.Point(18, 445);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(141, 16);
+            this.label19.TabIndex = 138;
+            this.label19.Text = "Sistema Endócrino:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label18.Location = new System.Drawing.Point(18, 357);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(179, 16);
+            this.label18.TabIndex = 136;
+            this.label18.Text = "Sistema Gastrointestinal:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label17.Location = new System.Drawing.Point(18, 277);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(157, 16);
+            this.label17.TabIndex = 134;
+            this.label17.Text = "Sistema Respiratorio:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label16.Location = new System.Drawing.Point(18, 193);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(176, 16);
+            this.label16.TabIndex = 132;
+            this.label16.Text = "Sistema Cardiovascular:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label15.Location = new System.Drawing.Point(18, 114);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(187, 16);
+            this.label15.TabIndex = 130;
+            this.label15.Text = "Sistema Nervioso Central:";
+            // 
+            // rbtnTransfusiones
+            // 
+            this.rbtnTransfusiones.Enabled = false;
+            this.rbtnTransfusiones.Location = new System.Drawing.Point(534, 51);
+            this.rbtnTransfusiones.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTransfusiones.Name = "rbtnTransfusiones";
+            this.rbtnTransfusiones.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTransfusiones.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTransfusiones.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnTransfusiones.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTransfusiones.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTransfusiones.TabIndex = 128;
+            this.rbtnTransfusiones.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label14.Location = new System.Drawing.Point(417, 60);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 16);
+            this.label14.TabIndex = 127;
+            this.label14.Text = "Transfusiones:";
+            // 
+            // rbtnCirugias
+            // 
+            this.rbtnCirugias.Enabled = false;
+            this.rbtnCirugias.Location = new System.Drawing.Point(326, 51);
+            this.rbtnCirugias.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnCirugias.Name = "rbtnCirugias";
+            this.rbtnCirugias.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnCirugias.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnCirugias.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnCirugias.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnCirugias.Size = new System.Drawing.Size(83, 34);
+            this.rbtnCirugias.TabIndex = 126;
+            this.rbtnCirugias.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label13.Location = new System.Drawing.Point(252, 60);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 16);
+            this.label13.TabIndex = 125;
+            this.label13.Text = "Cirugías:";
+            // 
+            // rbtnHozpitalizaciones
+            // 
+            this.rbtnHozpitalizaciones.Enabled = false;
+            this.rbtnHozpitalizaciones.Location = new System.Drawing.Point(153, 51);
+            this.rbtnHozpitalizaciones.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnHozpitalizaciones.Name = "rbtnHozpitalizaciones";
+            this.rbtnHozpitalizaciones.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnHozpitalizaciones.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnHozpitalizaciones.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnHozpitalizaciones.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnHozpitalizaciones.Size = new System.Drawing.Size(83, 34);
+            this.rbtnHozpitalizaciones.TabIndex = 124;
+            this.rbtnHozpitalizaciones.UseVisualStyleBackColor = true;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label64.Location = new System.Drawing.Point(18, 60);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(135, 16);
+            this.label64.TabIndex = 123;
+            this.label64.Text = "Hospitalizaciones:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label22.Location = new System.Drawing.Point(12, 10);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(142, 25);
+            this.label22.TabIndex = 96;
+            this.label22.Text = "Patológicos:";
+            // 
+            // txtAlergias
+            // 
+            this.txtAlergias.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtAlergias.BorderColor = System.Drawing.Color.Gray;
+            this.txtAlergias.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAlergias.BorderRadius = 12;
+            this.txtAlergias.BorderSize = 2;
+            this.txtAlergias.Enabled = false;
+            this.txtAlergias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlergias.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAlergias.Location = new System.Drawing.Point(623, 56);
+            this.txtAlergias.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAlergias.MaxLength = 400;
+            this.txtAlergias.Multiline = false;
+            this.txtAlergias.Name = "txtAlergias";
+            this.txtAlergias.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAlergias.PasswordChar = false;
+            this.txtAlergias.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAlergias.PlaceholderText = "";
+            this.txtAlergias.Size = new System.Drawing.Size(257, 35);
+            this.txtAlergias.TabIndex = 181;
+            this.txtAlergias.UnderlinedStyle = true;
+            // 
+            // txtSNerviosoCentral
+            // 
+            this.txtSNerviosoCentral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSNerviosoCentral.BorderColor = System.Drawing.Color.Gray;
+            this.txtSNerviosoCentral.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSNerviosoCentral.BorderRadius = 12;
+            this.txtSNerviosoCentral.BorderSize = 2;
+            this.txtSNerviosoCentral.Enabled = false;
+            this.txtSNerviosoCentral.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSNerviosoCentral.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSNerviosoCentral.Location = new System.Drawing.Point(18, 134);
+            this.txtSNerviosoCentral.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSNerviosoCentral.MaxLength = 500;
+            this.txtSNerviosoCentral.Multiline = true;
+            this.txtSNerviosoCentral.Name = "txtSNerviosoCentral";
+            this.txtSNerviosoCentral.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSNerviosoCentral.PasswordChar = false;
+            this.txtSNerviosoCentral.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSNerviosoCentral.PlaceholderText = "";
+            this.txtSNerviosoCentral.Size = new System.Drawing.Size(870, 59);
+            this.txtSNerviosoCentral.TabIndex = 183;
+            this.txtSNerviosoCentral.UnderlinedStyle = true;
+            // 
+            // txtSCardiovascular
+            // 
+            this.txtSCardiovascular.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSCardiovascular.BorderColor = System.Drawing.Color.Gray;
+            this.txtSCardiovascular.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSCardiovascular.BorderRadius = 12;
+            this.txtSCardiovascular.BorderSize = 2;
+            this.txtSCardiovascular.Enabled = false;
+            this.txtSCardiovascular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSCardiovascular.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSCardiovascular.Location = new System.Drawing.Point(18, 214);
+            this.txtSCardiovascular.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSCardiovascular.MaxLength = 500;
+            this.txtSCardiovascular.Multiline = true;
+            this.txtSCardiovascular.Name = "txtSCardiovascular";
+            this.txtSCardiovascular.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSCardiovascular.PasswordChar = false;
+            this.txtSCardiovascular.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSCardiovascular.PlaceholderText = "";
+            this.txtSCardiovascular.Size = new System.Drawing.Size(870, 59);
+            this.txtSCardiovascular.TabIndex = 184;
+            this.txtSCardiovascular.UnderlinedStyle = true;
+            // 
+            // txtSRespiratorio
+            // 
+            this.txtSRespiratorio.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSRespiratorio.BorderColor = System.Drawing.Color.Gray;
+            this.txtSRespiratorio.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSRespiratorio.BorderRadius = 12;
+            this.txtSRespiratorio.BorderSize = 2;
+            this.txtSRespiratorio.Enabled = false;
+            this.txtSRespiratorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSRespiratorio.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSRespiratorio.Location = new System.Drawing.Point(18, 297);
+            this.txtSRespiratorio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSRespiratorio.MaxLength = 500;
+            this.txtSRespiratorio.Multiline = true;
+            this.txtSRespiratorio.Name = "txtSRespiratorio";
+            this.txtSRespiratorio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSRespiratorio.PasswordChar = false;
+            this.txtSRespiratorio.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSRespiratorio.PlaceholderText = "";
+            this.txtSRespiratorio.Size = new System.Drawing.Size(870, 59);
+            this.txtSRespiratorio.TabIndex = 185;
+            this.txtSRespiratorio.UnderlinedStyle = true;
+            // 
+            // txtSGastrointestinal
+            // 
+            this.txtSGastrointestinal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSGastrointestinal.BorderColor = System.Drawing.Color.Gray;
+            this.txtSGastrointestinal.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSGastrointestinal.BorderRadius = 12;
+            this.txtSGastrointestinal.BorderSize = 2;
+            this.txtSGastrointestinal.Enabled = false;
+            this.txtSGastrointestinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSGastrointestinal.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSGastrointestinal.Location = new System.Drawing.Point(18, 380);
+            this.txtSGastrointestinal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSGastrointestinal.MaxLength = 500;
+            this.txtSGastrointestinal.Multiline = true;
+            this.txtSGastrointestinal.Name = "txtSGastrointestinal";
+            this.txtSGastrointestinal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSGastrointestinal.PasswordChar = false;
+            this.txtSGastrointestinal.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSGastrointestinal.PlaceholderText = "";
+            this.txtSGastrointestinal.Size = new System.Drawing.Size(870, 59);
+            this.txtSGastrointestinal.TabIndex = 186;
+            this.txtSGastrointestinal.UnderlinedStyle = true;
+            // 
+            // txtSEndocrino
+            // 
+            this.txtSEndocrino.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSEndocrino.BorderColor = System.Drawing.Color.Gray;
+            this.txtSEndocrino.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSEndocrino.BorderRadius = 12;
+            this.txtSEndocrino.BorderSize = 2;
+            this.txtSEndocrino.Enabled = false;
+            this.txtSEndocrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSEndocrino.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSEndocrino.Location = new System.Drawing.Point(18, 470);
+            this.txtSEndocrino.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSEndocrino.MaxLength = 500;
+            this.txtSEndocrino.Multiline = true;
+            this.txtSEndocrino.Name = "txtSEndocrino";
+            this.txtSEndocrino.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSEndocrino.PasswordChar = false;
+            this.txtSEndocrino.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSEndocrino.PlaceholderText = "";
+            this.txtSEndocrino.Size = new System.Drawing.Size(870, 59);
+            this.txtSEndocrino.TabIndex = 187;
+            this.txtSEndocrino.UnderlinedStyle = true;
+            // 
+            // txtSGenitoUrinario
+            // 
+            this.txtSGenitoUrinario.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSGenitoUrinario.BorderColor = System.Drawing.Color.Gray;
+            this.txtSGenitoUrinario.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSGenitoUrinario.BorderRadius = 12;
+            this.txtSGenitoUrinario.BorderSize = 2;
+            this.txtSGenitoUrinario.Enabled = false;
+            this.txtSGenitoUrinario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSGenitoUrinario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSGenitoUrinario.Location = new System.Drawing.Point(18, 550);
+            this.txtSGenitoUrinario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSGenitoUrinario.MaxLength = 500;
+            this.txtSGenitoUrinario.Multiline = true;
+            this.txtSGenitoUrinario.Name = "txtSGenitoUrinario";
+            this.txtSGenitoUrinario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSGenitoUrinario.PasswordChar = false;
+            this.txtSGenitoUrinario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSGenitoUrinario.PlaceholderText = "";
+            this.txtSGenitoUrinario.Size = new System.Drawing.Size(870, 59);
+            this.txtSGenitoUrinario.TabIndex = 188;
+            this.txtSGenitoUrinario.UnderlinedStyle = true;
+            // 
+            // txtSMusculoEsqueletico
+            // 
+            this.txtSMusculoEsqueletico.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSMusculoEsqueletico.BorderColor = System.Drawing.Color.Gray;
+            this.txtSMusculoEsqueletico.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSMusculoEsqueletico.BorderRadius = 12;
+            this.txtSMusculoEsqueletico.BorderSize = 2;
+            this.txtSMusculoEsqueletico.Enabled = false;
+            this.txtSMusculoEsqueletico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSMusculoEsqueletico.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSMusculoEsqueletico.Location = new System.Drawing.Point(18, 637);
+            this.txtSMusculoEsqueletico.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSMusculoEsqueletico.MaxLength = 500;
+            this.txtSMusculoEsqueletico.Multiline = true;
+            this.txtSMusculoEsqueletico.Name = "txtSMusculoEsqueletico";
+            this.txtSMusculoEsqueletico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSMusculoEsqueletico.PasswordChar = false;
+            this.txtSMusculoEsqueletico.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSMusculoEsqueletico.PlaceholderText = "";
+            this.txtSMusculoEsqueletico.Size = new System.Drawing.Size(870, 59);
+            this.txtSMusculoEsqueletico.TabIndex = 189;
+            this.txtSMusculoEsqueletico.UnderlinedStyle = true;
+            // 
+            // txtOrganoSentidos
+            // 
+            this.txtOrganoSentidos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtOrganoSentidos.BorderColor = System.Drawing.Color.Gray;
+            this.txtOrganoSentidos.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOrganoSentidos.BorderRadius = 12;
+            this.txtOrganoSentidos.BorderSize = 2;
+            this.txtOrganoSentidos.Enabled = false;
+            this.txtOrganoSentidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrganoSentidos.ForeColor = System.Drawing.Color.DimGray;
+            this.txtOrganoSentidos.Location = new System.Drawing.Point(18, 722);
+            this.txtOrganoSentidos.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOrganoSentidos.MaxLength = 500;
+            this.txtOrganoSentidos.Multiline = true;
+            this.txtOrganoSentidos.Name = "txtOrganoSentidos";
+            this.txtOrganoSentidos.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtOrganoSentidos.PasswordChar = false;
+            this.txtOrganoSentidos.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOrganoSentidos.PlaceholderText = "";
+            this.txtOrganoSentidos.Size = new System.Drawing.Size(870, 59);
+            this.txtOrganoSentidos.TabIndex = 190;
+            this.txtOrganoSentidos.UnderlinedStyle = true;
+            // 
+            // txtGinecoObstetrico
+            // 
+            this.txtGinecoObstetrico.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtGinecoObstetrico.BorderColor = System.Drawing.Color.Gray;
+            this.txtGinecoObstetrico.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtGinecoObstetrico.BorderRadius = 12;
+            this.txtGinecoObstetrico.BorderSize = 2;
+            this.txtGinecoObstetrico.Enabled = false;
+            this.txtGinecoObstetrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGinecoObstetrico.ForeColor = System.Drawing.Color.DimGray;
+            this.txtGinecoObstetrico.Location = new System.Drawing.Point(18, 802);
+            this.txtGinecoObstetrico.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGinecoObstetrico.MaxLength = 500;
+            this.txtGinecoObstetrico.Multiline = true;
+            this.txtGinecoObstetrico.Name = "txtGinecoObstetrico";
+            this.txtGinecoObstetrico.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtGinecoObstetrico.PasswordChar = false;
+            this.txtGinecoObstetrico.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtGinecoObstetrico.PlaceholderText = "";
+            this.txtGinecoObstetrico.Size = new System.Drawing.Size(870, 59);
+            this.txtGinecoObstetrico.TabIndex = 191;
+            this.txtGinecoObstetrico.UnderlinedStyle = true;
+            // 
+            // cboxGrupoSanguineo
+            // 
+            this.cboxGrupoSanguineo.AutoResize = false;
+            this.cboxGrupoSanguineo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxGrupoSanguineo.Depth = 0;
+            this.cboxGrupoSanguineo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxGrupoSanguineo.DropDownHeight = 174;
+            this.cboxGrupoSanguineo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxGrupoSanguineo.DropDownWidth = 121;
+            this.cboxGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxGrupoSanguineo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxGrupoSanguineo.FormattingEnabled = true;
+            this.cboxGrupoSanguineo.IntegralHeight = false;
+            this.cboxGrupoSanguineo.ItemHeight = 43;
+            this.cboxGrupoSanguineo.Items.AddRange(new object[] {
+            "O+",
+            "O-",
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-"});
+            this.cboxGrupoSanguineo.Location = new System.Drawing.Point(18, 887);
+            this.cboxGrupoSanguineo.MaxDropDownItems = 4;
+            this.cboxGrupoSanguineo.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxGrupoSanguineo.Name = "cboxGrupoSanguineo";
+            this.cboxGrupoSanguineo.Size = new System.Drawing.Size(863, 49);
+            this.cboxGrupoSanguineo.StartIndex = 0;
+            this.cboxGrupoSanguineo.TabIndex = 150;
+            this.cboxGrupoSanguineo.Visible = false;
+            // 
+            // txtGrupoSanguineo
+            // 
+            this.txtGrupoSanguineo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtGrupoSanguineo.BorderColor = System.Drawing.Color.Gray;
+            this.txtGrupoSanguineo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtGrupoSanguineo.BorderRadius = 12;
+            this.txtGrupoSanguineo.BorderSize = 2;
+            this.txtGrupoSanguineo.Enabled = false;
+            this.txtGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGrupoSanguineo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtGrupoSanguineo.Location = new System.Drawing.Point(18, 883);
+            this.txtGrupoSanguineo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGrupoSanguineo.MaxLength = 32767;
+            this.txtGrupoSanguineo.Multiline = true;
+            this.txtGrupoSanguineo.Name = "txtGrupoSanguineo";
+            this.txtGrupoSanguineo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtGrupoSanguineo.PasswordChar = false;
+            this.txtGrupoSanguineo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtGrupoSanguineo.PlaceholderText = "";
+            this.txtGrupoSanguineo.Size = new System.Drawing.Size(870, 59);
+            this.txtGrupoSanguineo.TabIndex = 192;
+            this.txtGrupoSanguineo.UnderlinedStyle = true;
+            // 
+            // pNoPatologicos
+            // 
+            this.pNoPatologicos.AutoScroll = true;
+            this.pNoPatologicos.Controls.Add(this.label4);
+            this.pNoPatologicos.Controls.Add(this.panel6);
+            this.pNoPatologicos.Location = new System.Drawing.Point(0, 0);
+            this.pNoPatologicos.Name = "pNoPatologicos";
+            this.pNoPatologicos.Size = new System.Drawing.Size(945, 450);
+            this.pNoPatologicos.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(3, 895);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 18);
+            this.label4.TabIndex = 111;
+            this.label4.Text = "Trabajo habitual";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Controls.Add(this.label66);
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Controls.Add(this.txtCasa);
+            this.panel6.Controls.Add(this.txtAlimentacion);
+            this.panel6.Controls.Add(this.txtAnimales);
+            this.panel6.Controls.Add(this.txtInmunizaciones);
+            this.panel6.Controls.Add(this.txtToxicomanias);
+            this.panel6.Controls.Add(this.txtTrabajosYActAnteriores);
+            this.panel6.Controls.Add(this.txtDeportesRecreacion);
+            this.panel6.Controls.Add(this.txtEntornoFamiliar);
+            this.panel6.Controls.Add(this.txtEscolaridad);
+            this.panel6.Location = new System.Drawing.Point(8, 19);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(900, 873);
+            this.panel6.TabIndex = 97;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label11.Location = new System.Drawing.Point(30, 755);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 16);
+            this.label11.TabIndex = 134;
+            this.label11.Text = "Escolaridad:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label10.Location = new System.Drawing.Point(30, 669);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(119, 16);
+            this.label10.TabIndex = 133;
+            this.label10.Text = "Entorno familiar:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label9.Location = new System.Drawing.Point(30, 572);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 16);
+            this.label9.TabIndex = 132;
+            this.label9.Text = "Deportes y recreación:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label8.Location = new System.Drawing.Point(30, 476);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(245, 16);
+            this.label8.TabIndex = 131;
+            this.label8.Text = "Trabajos y actividades anteriores:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label7.Location = new System.Drawing.Point(30, 390);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(108, 16);
+            this.label7.TabIndex = 130;
+            this.label7.Text = "Toxicomanías:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label6.Location = new System.Drawing.Point(30, 304);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 16);
+            this.label6.TabIndex = 129;
+            this.label6.Text = "Inmunizaciones:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label3.Location = new System.Drawing.Point(30, 218);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.TabIndex = 128;
+            this.label3.Text = "Animales:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label2.Location = new System.Drawing.Point(30, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 16);
+            this.label2.TabIndex = 127;
+            this.label2.Text = "Casa:";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label66.Location = new System.Drawing.Point(30, 132);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(100, 16);
+            this.label66.TabIndex = 126;
+            this.label66.Text = "Alimentación:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label5.Location = new System.Drawing.Point(12, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(178, 25);
+            this.label5.TabIndex = 96;
+            this.label5.Text = "No Patológicos:";
+            // 
+            // txtCasa
+            // 
+            this.txtCasa.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCasa.BorderColor = System.Drawing.Color.Gray;
+            this.txtCasa.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtCasa.BorderRadius = 12;
+            this.txtCasa.BorderSize = 2;
+            this.txtCasa.Enabled = false;
+            this.txtCasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCasa.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCasa.Location = new System.Drawing.Point(30, 67);
+            this.txtCasa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCasa.MaxLength = 500;
+            this.txtCasa.Multiline = true;
+            this.txtCasa.Name = "txtCasa";
+            this.txtCasa.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCasa.PasswordChar = false;
+            this.txtCasa.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCasa.PlaceholderText = "";
+            this.txtCasa.Size = new System.Drawing.Size(835, 60);
+            this.txtCasa.TabIndex = 173;
+            this.txtCasa.UnderlinedStyle = true;
+            // 
+            // txtAlimentacion
+            // 
+            this.txtAlimentacion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtAlimentacion.BorderColor = System.Drawing.Color.Gray;
+            this.txtAlimentacion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAlimentacion.BorderRadius = 12;
+            this.txtAlimentacion.BorderSize = 2;
+            this.txtAlimentacion.Enabled = false;
+            this.txtAlimentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlimentacion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAlimentacion.Location = new System.Drawing.Point(30, 152);
+            this.txtAlimentacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAlimentacion.MaxLength = 500;
+            this.txtAlimentacion.Multiline = true;
+            this.txtAlimentacion.Name = "txtAlimentacion";
+            this.txtAlimentacion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAlimentacion.PasswordChar = false;
+            this.txtAlimentacion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAlimentacion.PlaceholderText = "";
+            this.txtAlimentacion.Size = new System.Drawing.Size(835, 60);
+            this.txtAlimentacion.TabIndex = 174;
+            this.txtAlimentacion.UnderlinedStyle = true;
+            // 
+            // txtAnimales
+            // 
+            this.txtAnimales.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtAnimales.BorderColor = System.Drawing.Color.Gray;
+            this.txtAnimales.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAnimales.BorderRadius = 12;
+            this.txtAnimales.BorderSize = 2;
+            this.txtAnimales.Enabled = false;
+            this.txtAnimales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnimales.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAnimales.Location = new System.Drawing.Point(30, 239);
+            this.txtAnimales.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAnimales.MaxLength = 500;
+            this.txtAnimales.Multiline = true;
+            this.txtAnimales.Name = "txtAnimales";
+            this.txtAnimales.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAnimales.PasswordChar = false;
+            this.txtAnimales.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAnimales.PlaceholderText = "";
+            this.txtAnimales.Size = new System.Drawing.Size(835, 60);
+            this.txtAnimales.TabIndex = 175;
+            this.txtAnimales.UnderlinedStyle = true;
+            // 
+            // txtInmunizaciones
+            // 
+            this.txtInmunizaciones.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtInmunizaciones.BorderColor = System.Drawing.Color.Gray;
+            this.txtInmunizaciones.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtInmunizaciones.BorderRadius = 12;
+            this.txtInmunizaciones.BorderSize = 2;
+            this.txtInmunizaciones.Enabled = false;
+            this.txtInmunizaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInmunizaciones.ForeColor = System.Drawing.Color.DimGray;
+            this.txtInmunizaciones.Location = new System.Drawing.Point(30, 320);
+            this.txtInmunizaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.txtInmunizaciones.MaxLength = 500;
+            this.txtInmunizaciones.Multiline = true;
+            this.txtInmunizaciones.Name = "txtInmunizaciones";
+            this.txtInmunizaciones.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtInmunizaciones.PasswordChar = false;
+            this.txtInmunizaciones.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtInmunizaciones.PlaceholderText = "";
+            this.txtInmunizaciones.Size = new System.Drawing.Size(835, 60);
+            this.txtInmunizaciones.TabIndex = 176;
+            this.txtInmunizaciones.UnderlinedStyle = true;
+            // 
+            // txtToxicomanias
+            // 
+            this.txtToxicomanias.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtToxicomanias.BorderColor = System.Drawing.Color.Gray;
+            this.txtToxicomanias.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtToxicomanias.BorderRadius = 12;
+            this.txtToxicomanias.BorderSize = 2;
+            this.txtToxicomanias.Enabled = false;
+            this.txtToxicomanias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtToxicomanias.ForeColor = System.Drawing.Color.DimGray;
+            this.txtToxicomanias.Location = new System.Drawing.Point(30, 410);
+            this.txtToxicomanias.Margin = new System.Windows.Forms.Padding(4);
+            this.txtToxicomanias.MaxLength = 500;
+            this.txtToxicomanias.Multiline = true;
+            this.txtToxicomanias.Name = "txtToxicomanias";
+            this.txtToxicomanias.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtToxicomanias.PasswordChar = false;
+            this.txtToxicomanias.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtToxicomanias.PlaceholderText = "";
+            this.txtToxicomanias.Size = new System.Drawing.Size(835, 60);
+            this.txtToxicomanias.TabIndex = 177;
+            this.txtToxicomanias.UnderlinedStyle = true;
+            // 
+            // txtTrabajosYActAnteriores
+            // 
+            this.txtTrabajosYActAnteriores.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTrabajosYActAnteriores.BorderColor = System.Drawing.Color.Gray;
+            this.txtTrabajosYActAnteriores.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTrabajosYActAnteriores.BorderRadius = 12;
+            this.txtTrabajosYActAnteriores.BorderSize = 2;
+            this.txtTrabajosYActAnteriores.Enabled = false;
+            this.txtTrabajosYActAnteriores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTrabajosYActAnteriores.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTrabajosYActAnteriores.Location = new System.Drawing.Point(30, 506);
+            this.txtTrabajosYActAnteriores.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTrabajosYActAnteriores.MaxLength = 500;
+            this.txtTrabajosYActAnteriores.Multiline = true;
+            this.txtTrabajosYActAnteriores.Name = "txtTrabajosYActAnteriores";
+            this.txtTrabajosYActAnteriores.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTrabajosYActAnteriores.PasswordChar = false;
+            this.txtTrabajosYActAnteriores.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTrabajosYActAnteriores.PlaceholderText = "";
+            this.txtTrabajosYActAnteriores.Size = new System.Drawing.Size(835, 60);
+            this.txtTrabajosYActAnteriores.TabIndex = 178;
+            this.txtTrabajosYActAnteriores.UnderlinedStyle = true;
+            // 
+            // txtDeportesRecreacion
+            // 
+            this.txtDeportesRecreacion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDeportesRecreacion.BorderColor = System.Drawing.Color.Gray;
+            this.txtDeportesRecreacion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtDeportesRecreacion.BorderRadius = 12;
+            this.txtDeportesRecreacion.BorderSize = 2;
+            this.txtDeportesRecreacion.Enabled = false;
+            this.txtDeportesRecreacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeportesRecreacion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDeportesRecreacion.Location = new System.Drawing.Point(30, 604);
+            this.txtDeportesRecreacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDeportesRecreacion.MaxLength = 500;
+            this.txtDeportesRecreacion.Multiline = true;
+            this.txtDeportesRecreacion.Name = "txtDeportesRecreacion";
+            this.txtDeportesRecreacion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDeportesRecreacion.PasswordChar = false;
+            this.txtDeportesRecreacion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDeportesRecreacion.PlaceholderText = "";
+            this.txtDeportesRecreacion.Size = new System.Drawing.Size(835, 60);
+            this.txtDeportesRecreacion.TabIndex = 179;
+            this.txtDeportesRecreacion.UnderlinedStyle = true;
+            // 
+            // txtEntornoFamiliar
+            // 
+            this.txtEntornoFamiliar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEntornoFamiliar.BorderColor = System.Drawing.Color.Gray;
+            this.txtEntornoFamiliar.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEntornoFamiliar.BorderRadius = 12;
+            this.txtEntornoFamiliar.BorderSize = 2;
+            this.txtEntornoFamiliar.Enabled = false;
+            this.txtEntornoFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEntornoFamiliar.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEntornoFamiliar.Location = new System.Drawing.Point(30, 691);
+            this.txtEntornoFamiliar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEntornoFamiliar.MaxLength = 500;
+            this.txtEntornoFamiliar.Multiline = true;
+            this.txtEntornoFamiliar.Name = "txtEntornoFamiliar";
+            this.txtEntornoFamiliar.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEntornoFamiliar.PasswordChar = false;
+            this.txtEntornoFamiliar.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEntornoFamiliar.PlaceholderText = "";
+            this.txtEntornoFamiliar.Size = new System.Drawing.Size(835, 60);
+            this.txtEntornoFamiliar.TabIndex = 180;
+            this.txtEntornoFamiliar.UnderlinedStyle = true;
+            // 
+            // txtEscolaridad
+            // 
+            this.txtEscolaridad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEscolaridad.BorderColor = System.Drawing.Color.Gray;
+            this.txtEscolaridad.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEscolaridad.BorderRadius = 12;
+            this.txtEscolaridad.BorderSize = 2;
+            this.txtEscolaridad.Enabled = false;
+            this.txtEscolaridad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEscolaridad.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEscolaridad.Location = new System.Drawing.Point(30, 781);
+            this.txtEscolaridad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEscolaridad.MaxLength = 30;
+            this.txtEscolaridad.Multiline = true;
+            this.txtEscolaridad.Name = "txtEscolaridad";
+            this.txtEscolaridad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEscolaridad.PasswordChar = false;
+            this.txtEscolaridad.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEscolaridad.PlaceholderText = "";
+            this.txtEscolaridad.Size = new System.Drawing.Size(835, 60);
+            this.txtEscolaridad.TabIndex = 181;
+            this.txtEscolaridad.UnderlinedStyle = true;
+            // 
             // pSeccionesExpediente
             // 
             this.pSeccionesExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
@@ -3002,13 +3008,6 @@
             this.Load += new System.EventHandler(this.frmModificarExpediente_Load);
             this.panel1.ResumeLayout(false);
             this.pContenedor.ResumeLayout(false);
-            this.pPatologicos.ResumeLayout(false);
-            this.pPatologicos.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.pNoPatologicos.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.pExploracionFisica.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -3023,6 +3022,13 @@
             this.panel7.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.pPatologicos.ResumeLayout(false);
+            this.pPatologicos.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.pNoPatologicos.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.pSeccionesExpediente.ResumeLayout(false);
             this.panel34.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

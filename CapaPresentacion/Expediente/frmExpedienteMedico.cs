@@ -711,34 +711,5 @@ namespace CapaPresentacion.Expediente
         }
 
 
-        private void txtTalla_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(txtTalla.Text))
-            {
-                return;  
-            }            
-            double talla;
-            if (double.TryParse(txtTalla.Text, out talla)) 
-            {
-                if (talla > 5 || talla < 0.5)
-                {
-                    var result = RJMessageBox.Show("Por favor, ingresa una talla válida. Recuerda que la talla debe estar en metros y ser un valor positivo.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtTalla.Clear();
-                    txtTalla.Focus();
-                }
-                else
-                {
-                    CalcularIMC();
-                }
-            }
-            else
-            {
-                
-                var result = RJMessageBox.Show("Por favor, ingresa un número válido para la talla.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtTalla.Clear();
-                txtTalla.Focus();
-            }
-        }
-
     }
 }
