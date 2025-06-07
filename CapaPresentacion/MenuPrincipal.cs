@@ -49,7 +49,7 @@ namespace CapaPresentacion
         }
         private void frmMenu_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
             lblTrabajadores.Text = homeCN.ConcultaNumTrabajadores().Tables["TotalEmpleados"].Rows[0][0].ToString();
             cargarDashboard();
             CargarGraficoCausas();

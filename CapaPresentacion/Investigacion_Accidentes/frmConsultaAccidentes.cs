@@ -37,7 +37,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
             panel1.Paint += new PaintEventHandler(Panel1_Paint);
             panel4.Paint += new PaintEventHandler(Panel1_Paint);
-            panel6.Paint += new PaintEventHandler(Panel1_Paint);
+            panel5.Paint += new PaintEventHandler(Panel1_Paint);
             panel7.Paint += new PaintEventHandler(Panel1_Paint);
             panel14.Paint += new PaintEventHandler(Panel1_Paint);
             panel15.Paint += new PaintEventHandler(Panel1_Paint);
