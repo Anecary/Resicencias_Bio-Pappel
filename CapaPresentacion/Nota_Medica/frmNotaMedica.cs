@@ -38,6 +38,7 @@ namespace CapaPresentacion.Nota_Medica
             );
 
             panel3.Paint += new PaintEventHandler(Panel1_Paint);
+            panel5.Paint += new PaintEventHandler(Panel1_Paint);
             panel4.Paint += new PaintEventHandler(Panel1_Paint);
             panel7.Paint += new PaintEventHandler(Panel1_Paint);
             panel8.Paint += new PaintEventHandler(Panel1_Paint);

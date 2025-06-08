@@ -1340,7 +1340,7 @@
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(77)))), ((int)(((byte)(141)))));
-            this.label32.Location = new System.Drawing.Point(17, 12);
+            this.label32.Location = new System.Drawing.Point(15, 15);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(235, 24);
             this.label32.TabIndex = 16;

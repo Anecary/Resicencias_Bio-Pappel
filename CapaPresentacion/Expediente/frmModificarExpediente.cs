@@ -399,156 +399,164 @@ namespace CapaPresentacion.Expediente
 
         private void btnGrabarActualizacion_Click(object sender, EventArgs e)
         {
-            string numExpediente = cboxNumExpediente2.SelectedValue.ToString();
-            string heredoFamiliar = txtHeredoFamiliar.Text;
-            string diagnostico = txtDiagnostico.Text;
+            try
+            { 
+                string numExpediente = cboxNumExpediente2.SelectedValue.ToString();
+                string heredoFamiliar = txtHeredoFamiliar.Text;
+                string diagnostico = txtDiagnostico.Text;
 
 
-            string casa = txtCasa.Text;
-            string alimentacion = txtAlimentacion.Text;
-            string animales = txtAnimales.Text;
-            string inmunizaciones = txtInmunizaciones.Text;
-            string toxicomanias = txtToxicomanias.Text;
-            string trabajoActividadesAnteriores = txtTrabajosYActAnteriores.Text;
-            string deportes = txtDeportesRecreacion.Text;
-            string entornoFamiliar = txtEntornoFamiliar.Text;
-            string escolaridad = txtEscolaridad.Text;
+                string casa = txtCasa.Text;
+                string alimentacion = txtAlimentacion.Text;
+                string animales = txtAnimales.Text;
+                string inmunizaciones = txtInmunizaciones.Text;
+                string toxicomanias = txtToxicomanias.Text;
+                string trabajoActividadesAnteriores = txtTrabajosYActAnteriores.Text;
+                string deportes = txtDeportesRecreacion.Text;
+                string entornoFamiliar = txtEntornoFamiliar.Text;
+                string escolaridad = txtEscolaridad.Text;
 
-            Boolean hospitalizaciones = false;
-            hospitalizaciones = rbtnHozpitalizaciones.Checked ? true : false;
-            Boolean cirugias = false;
-            cirugias = rbtnCirugias.Checked ? true : false;
-            Boolean transfusiones = false;
-            transfusiones = rbtnTransfusiones.Checked ? true : false;
-            string alergias = txtAlergias.Text;
+                Boolean hospitalizaciones = false;
+                hospitalizaciones = rbtnHozpitalizaciones.Checked ? true : false;
+                Boolean cirugias = false;
+                cirugias = rbtnCirugias.Checked ? true : false;
+                Boolean transfusiones = false;
+                transfusiones = rbtnTransfusiones.Checked ? true : false;
+                string alergias = txtAlergias.Text;
 
-            string sistemaNerviosoCentral = txtSNerviosoCentral.Text;
-            string sistemaCardiovascular = txtSCardiovascular.Text;
-            string sistemaRespiratorio = txtSRespiratorio.Text;
-            string sistemaGastrointestinal = txtSGastrointestinal.Text;
-            string sistemaEndocrinico = txtSEndocrino.Text;
-            string sistemaGenitourinario = txtSGenitoUrinario.Text;
-            string sistemaMusculoesqueletico = txtSMusculoEsqueletico.Text;
-            string organoSentidos = txtOrganoSentidos.Text;
-            string ginecoObstetricos = txtGinecoObstetrico.Text;
-            string grupoSanguineo = cboxGrupoSanguineo.Text;
-
-
-            string estudiosLaboratorio = txtEstudiosLaboratorio.Text;
-            string estudiosRadiologicos = txtEstudiosRadiologicos.Text;
-            string otros = txtOtros.Text;
+                string sistemaNerviosoCentral = txtSNerviosoCentral.Text;
+                string sistemaCardiovascular = txtSCardiovascular.Text;
+                string sistemaRespiratorio = txtSRespiratorio.Text;
+                string sistemaGastrointestinal = txtSGastrointestinal.Text;
+                string sistemaEndocrinico = txtSEndocrino.Text;
+                string sistemaGenitourinario = txtSGenitoUrinario.Text;
+                string sistemaMusculoesqueletico = txtSMusculoEsqueletico.Text;
+                string organoSentidos = txtOrganoSentidos.Text;
+                string ginecoObstetricos = txtGinecoObstetrico.Text;
+                string grupoSanguineo = cboxGrupoSanguineo.Text;
 
 
-            string constitucion_Fisica = cboxConstitucionFisica.Text;
-            double talla = Convert.ToDouble(txtTalla.Text);
-            double peso = Convert.ToDouble(txtPeso.Text);
-            double imc = Convert.ToDouble(txtIMC.Text);
-            string grado = cboxGrado.Text;
-            double fc = Convert.ToDouble(txtFC.Text);
-            double fr = Convert.ToDouble(txtFR.Text);
-            int pulso = Convert.ToInt32(txtPulso.Text);
-            string ta = txtTA.Text;
-            double temperatura = Convert.ToDouble(txtTemperatura.Text);
+                string estudiosLaboratorio = txtEstudiosLaboratorio.Text;
+                string estudiosRadiologicos = txtEstudiosRadiologicos.Text;
+                string otros = txtOtros.Text;
 
 
-            string craneo = txtCraneo.Text;
-            string ojos = txtOjos.Text;
-            string oidos = txtOidos.Text;
-            string nariz = txtNariz.Text;
-            string boca = txtBoca.Text;
-            string cuello = txtCuello.Text;
-            string torax = txtTorax.Text;
-            string abdomen = txtAbdomen.Text;
-            string genitourinario = txtGenitourinario.Text;
-            string musculoEsqueletico = txtMusculoEsqueletico.Text;
-            string neurologico = txtNeurologico.Text;
-
-            DateTime ultimaActualizacion = DateTime.Now.Date;
-
-            ExpedientesCE expediente = new ExpedientesCE
-            {
-                NumExpediente = numExpediente,
-                HeredoFamiliar = heredoFamiliar,
-                DiagnosticoInicial = diagnostico,
-
-                Casa = casa,
-                Alimentacion = alimentacion,
-                Animales = animales,
-                Inmunizaciones = inmunizaciones,
-                Toxicomanias = toxicomanias,
-                TrabajoActividadesAnteriores = trabajoActividadesAnteriores,
-                Deportes = deportes,
-                EntornoFamiliar = entornoFamiliar,
-                Escolaridad = escolaridad,
-
-                Hospitalizaciones = hospitalizaciones,
-                Cirugias = cirugias,
-                Transfusiones = transfusiones,
-                Alergias = alergias,
-
-                SistemaNerviosoCentral = sistemaNerviosoCentral,
-                SistemaCardiovascular = sistemaCardiovascular,
-                SistemaRespiratorio = sistemaRespiratorio,
-                SistemaGastrointestinal = sistemaGastrointestinal,
-                SistemaEndocrinico = sistemaEndocrinico,
-                SistemaGenitourinario = sistemaGenitourinario,
-                SistemaMusculoesqueletico = sistemaMusculoesqueletico,
-                OrganoSentidos = organoSentidos,
-                GinecoObstetricos = ginecoObstetricos,
-                GrupoSanguineo = grupoSanguineo,
+                string constitucion_Fisica = cboxConstitucionFisica.Text;
+                double talla = Convert.ToDouble(txtTalla.Text);
+                double peso = Convert.ToDouble(txtPeso.Text);
+                double imc = Convert.ToDouble(txtIMC.Text);
+                string grado = cboxGrado.Text;
+                double fc = Convert.ToDouble(txtFC.Text);
+                double fr = Convert.ToDouble(txtFR.Text);
+                int pulso = Convert.ToInt32(txtPulso.Text);
+                string ta = txtTA.Text;
+                double temperatura = Convert.ToDouble(txtTemperatura.Text);
 
 
-                EstudiosLaboratorio = estudiosLaboratorio,
-                EstudiosRadiologicos = estudiosRadiologicos,
-                Otros = otros,
+                string craneo = txtCraneo.Text;
+                string ojos = txtOjos.Text;
+                string oidos = txtOidos.Text;
+                string nariz = txtNariz.Text;
+                string boca = txtBoca.Text;
+                string cuello = txtCuello.Text;
+                string torax = txtTorax.Text;
+                string abdomen = txtAbdomen.Text;
+                string genitourinario = txtGenitourinario.Text;
+                string musculoEsqueletico = txtMusculoEsqueletico.Text;
+                string neurologico = txtNeurologico.Text;
+
+                DateTime ultimaActualizacion = DateTime.Now.Date;
+            
+
+                ExpedientesCE expediente = new ExpedientesCE
+                {
+                    NumExpediente = numExpediente,
+                    HeredoFamiliar = heredoFamiliar,
+                    DiagnosticoInicial = diagnostico,
+
+                    Casa = casa,
+                    Alimentacion = alimentacion,
+                    Animales = animales,
+                    Inmunizaciones = inmunizaciones,
+                    Toxicomanias = toxicomanias,
+                    TrabajoActividadesAnteriores = trabajoActividadesAnteriores,
+                    Deportes = deportes,
+                    EntornoFamiliar = entornoFamiliar,
+                    Escolaridad = escolaridad,
+
+                    Hospitalizaciones = hospitalizaciones,
+                    Cirugias = cirugias,
+                    Transfusiones = transfusiones,
+                    Alergias = alergias,
+
+                    SistemaNerviosoCentral = sistemaNerviosoCentral,
+                    SistemaCardiovascular = sistemaCardiovascular,
+                    SistemaRespiratorio = sistemaRespiratorio,
+                    SistemaGastrointestinal = sistemaGastrointestinal,
+                    SistemaEndocrinico = sistemaEndocrinico,
+                    SistemaGenitourinario = sistemaGenitourinario,
+                    SistemaMusculoesqueletico = sistemaMusculoesqueletico,
+                    OrganoSentidos = organoSentidos,
+                    GinecoObstetricos = ginecoObstetricos,
+                    GrupoSanguineo = grupoSanguineo,
 
 
-                Constitucion_Fisica = constitucion_Fisica,
-                Talla = talla,
-                Peso = peso,
-                IMC = imc,
-                Grado = grado,
-                Fc = fc,
-                Fr = fr,
-                Pulso = pulso,
-                Ta = ta,
-                Temperatura = temperatura,
+                    EstudiosLaboratorio = estudiosLaboratorio,
+                    EstudiosRadiologicos = estudiosRadiologicos,
+                    Otros = otros,
 
 
-                Craneo = craneo,
-                Ojos = ojos,
-                Oidos = oidos,
-                Nariz = nariz,
-                Boca = boca,
-                Cuello = cuello,
-                Torax = torax,
-                Abdomen = abdomen,
-                Genitourinario = genitourinario,
-                MusculoEsqueletico = musculoEsqueletico,
-                Neurologico = neurologico,
-
-                UltimaActualizacion = ultimaActualizacion
-            };
-
-            int registro = expedientesCN.actualizarExpediente(expediente);
-            if (registro > 0)
-            {
-                MostrarPanel(pDatosGenerales);
-                var result = RJMessageBox.Show(" Expediente médico actualizado exitosamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Constitucion_Fisica = constitucion_Fisica,
+                    Talla = talla,
+                    Peso = peso,
+                    IMC = imc,
+                    Grado = grado,
+                    Fc = fc,
+                    Fr = fr,
+                    Pulso = pulso,
+                    Ta = ta,
+                    Temperatura = temperatura,
 
 
-                // Llamada al método para limpiar todos los controles en el formulario
-                //LimpiarControles(this);
-                txtNumeroNomina.Focus();
-                //txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
-                desactivarCampos();
+                    Craneo = craneo,
+                    Ojos = ojos,
+                    Oidos = oidos,
+                    Nariz = nariz,
+                    Boca = boca,
+                    Cuello = cuello,
+                    Torax = torax,
+                    Abdomen = abdomen,
+                    Genitourinario = genitourinario,
+                    MusculoEsqueletico = musculoEsqueletico,
+                    Neurologico = neurologico,
 
+                    UltimaActualizacion = ultimaActualizacion
+                };
+
+                int registro = expedientesCN.actualizarExpediente(expediente);
+                if (registro > 0)
+                {
+                    MostrarPanel(pDatosGenerales);
+                    var result = RJMessageBox.Show(" Expediente médico actualizado exitosamente", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                    // Llamada al método para limpiar todos los controles en el formulario
+                    //LimpiarControles(this);
+                    txtNumeroNomina.Focus();
+                    //txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
+                    desactivarCampos();
+
+                }
+                else
+                {
+                    var result = RJMessageBox.Show(" No se han podido grabar los cambios al expediente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
-            else
+            catch (Exception ex)
             {
-                var result = RJMessageBox.Show(" No se han podido grabar los cambios al expediente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RJMessageBox.Show("Error, al intentar grabar, campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
 
         }
         public void ValidacionNumeros(KeyPressEventArgs e)
@@ -608,19 +616,30 @@ namespace CapaPresentacion.Expediente
         }
         private void txtTalla_Validating(object sender, CancelEventArgs e)
         {
-            double talla = Convert.ToDouble(txtTalla.Text);
-            if (talla > 5 || talla < .5)
+            if (string.IsNullOrWhiteSpace(txtTalla.Text))
             {
-                var result = RJMessageBox.Show("Por favor, ingresa una talla válida. Recuerda que la talla debe estar en metros y ser un valor positivo.",
-                                "Advertencia",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
-                txtTalla.Clear();
-                txtTalla.Focus();
+                return;
+            }
+            double talla;
+            if (double.TryParse(txtTalla.Text, out talla))
+            {
+                if (talla > 3 || talla < 0.5)
+                {
+                    var result = RJMessageBox.Show("Por favor, ingresa una talla válida. Recuerda que la talla debe estar en metros y ser un valor positivo.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtTalla.Clear();
+                    txtTalla.Focus();
+                }
+                else
+                {
+                    CalcularIMC();
+                }
             }
             else
             {
-                CalcularIMC();
+
+                var result = RJMessageBox.Show("Por favor, ingresa un número válido para la talla.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtTalla.Clear();
+                txtTalla.Focus();
             }
         }
 
@@ -680,61 +699,6 @@ namespace CapaPresentacion.Expediente
         private void txtTemperatura_KeyPress(object sender, KeyPressEventArgs e)
         {
             ValidacionNumerosDecimal(sender, e);
-        }
-
-        private void label49_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label30_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label31_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label33_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label27_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label34_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label35_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label37_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label38_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label39_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
