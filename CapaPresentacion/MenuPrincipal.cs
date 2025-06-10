@@ -875,14 +875,18 @@ namespace CapaPresentacion
 
         private void pDerecho_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTRIGHT, 0);
+           
         }
 
         private void pInferior_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTBOTTOM, 0);
+            
+        }
+
+        private void btnExportarExpedientes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Expediente.frmExportarExpediente());
+            hideSubMenu();
         }
     }
 }

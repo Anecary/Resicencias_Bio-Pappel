@@ -3,6 +3,7 @@ using CapaEntidad;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,14 @@ namespace CapaNegocios
         public int actualizarNumExpediente(ExpedientesCE expedientes)
         {
             return expedientesDAO.actualizarNumeroExpediente(expedientes);
+        }
+        public DataSet CargaDataGridVista()
+        {
+            return expedientesDAO.CargaDataGridVista();
+        }
+        public DataSet consultaCamposDinamico(string columnas)
+        {
+            return expedientesDAO.consultaCamposDinamico(columnas);
         }
     }
 }

@@ -137,6 +137,7 @@ namespace CapaDatos
                 return data;
             }
         }
+        
         public int ActualizarExpediente(ExpedientesCE expediente)
         {
             try
@@ -288,5 +289,41 @@ namespace CapaDatos
                 conn.Close();
             }
         }
+        public DataSet CargaDataGridVista()
+        {
+            DataSet data = new DataSet();
+
+            using (conn = objConexion.Conecta())
+            {
+                adapter = new MySqlDataAdapter("call CargaVistaExpediente", conn);
+                adapter.Fill(data, "vistaExpedientes");
+            }
+
+            return data;
+        }
+        public DataSet consultaCamposDinamico(string columnas)
+        {
+            using (DataSet data = new DataSet())
+            {
+                conn = objConexion.Conecta();
+
+                // Asegúrate de usar el nombre correcto del procedimiento
+                adapter = new MySqlDataAdapter("ExportarExpedienteDinamico", conn);
+                adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+                // Definir el parámetro de columnas
+                MySqlParameter p_columnas = new MySqlParameter("@columnas", MySqlDbType.VarChar);
+                p_columnas.Direction = ParameterDirection.Input;
+                p_columnas.Value = columnas;
+                adapter.SelectCommand.Parameters.Add(p_columnas);
+
+                // Llenar el DataSet
+                adapter.Fill(data, "ConsultaExpedienteDinamico");
+
+                return data;
+            }
+        }
+
+
     }
 }
