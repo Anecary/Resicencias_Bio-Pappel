@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExportarExpediente));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmExportarExpediente));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnExportarExpediente = new CapaPresentacion.BotonPersonalizado();
+            this.btnSeleccionarTodo = new CapaPresentacion.BotonPersonalizado();
             this.dgvVistaExpedientes = new System.Windows.Forms.DataGridView();
+            this.btnAnularSeleccion = new CapaPresentacion.BotonPersonalizado();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,9 +47,6 @@
             this.rowTabla = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rowCampo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rowCampoOriginal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExportarExpediente = new CapaPresentacion.BotonPersonalizado();
-            this.btnSeleccionarTodo = new CapaPresentacion.BotonPersonalizado();
-            this.btnAnularSeleccion = new CapaPresentacion.BotonPersonalizado();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -86,6 +86,52 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(884, 421);
             this.panel4.TabIndex = 155;
+            // 
+            // btnExportarExpediente
+            // 
+            this.btnExportarExpediente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExportarExpediente.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnExportarExpediente.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.btnExportarExpediente.BorderColor = System.Drawing.Color.DarkCyan;
+            this.btnExportarExpediente.BorderRadius = 10;
+            this.btnExportarExpediente.BorderSize = 2;
+            this.btnExportarExpediente.FlatAppearance.BorderSize = 0;
+            this.btnExportarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportarExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportarExpediente.ForeColor = System.Drawing.Color.White;
+            this.btnExportarExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnExportarExpediente.Image")));
+            this.btnExportarExpediente.Location = new System.Drawing.Point(690, 26);
+            this.btnExportarExpediente.Name = "btnExportarExpediente";
+            this.btnExportarExpediente.Size = new System.Drawing.Size(150, 45);
+            this.btnExportarExpediente.TabIndex = 155;
+            this.btnExportarExpediente.Text = "Exportar";
+            this.btnExportarExpediente.TextColor = System.Drawing.Color.White;
+            this.btnExportarExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExportarExpediente.UseVisualStyleBackColor = false;
+            this.btnExportarExpediente.Click += new System.EventHandler(this.btnExportarExpediente_Click);
+            // 
+            // btnSeleccionarTodo
+            // 
+            this.btnSeleccionarTodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSeleccionarTodo.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnSeleccionarTodo.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.btnSeleccionarTodo.BorderColor = System.Drawing.Color.DarkCyan;
+            this.btnSeleccionarTodo.BorderRadius = 10;
+            this.btnSeleccionarTodo.BorderSize = 2;
+            this.btnSeleccionarTodo.FlatAppearance.BorderSize = 0;
+            this.btnSeleccionarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeleccionarTodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeleccionarTodo.ForeColor = System.Drawing.Color.White;
+            this.btnSeleccionarTodo.Image = ((System.Drawing.Image)(resources.GetObject("btnSeleccionarTodo.Image")));
+            this.btnSeleccionarTodo.Location = new System.Drawing.Point(141, 26);
+            this.btnSeleccionarTodo.Name = "btnSeleccionarTodo";
+            this.btnSeleccionarTodo.Size = new System.Drawing.Size(214, 45);
+            this.btnSeleccionarTodo.TabIndex = 101;
+            this.btnSeleccionarTodo.Text = "Seleccionar Todo";
+            this.btnSeleccionarTodo.TextColor = System.Drawing.Color.White;
+            this.btnSeleccionarTodo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSeleccionarTodo.UseVisualStyleBackColor = false;
+            this.btnSeleccionarTodo.Click += new System.EventHandler(this.btnSeleccionarTodo_Click);
             // 
             // dgvVistaExpedientes
             // 
@@ -133,6 +179,29 @@
             this.dgvVistaExpedientes.RowTemplate.Height = 35;
             this.dgvVistaExpedientes.Size = new System.Drawing.Size(811, 312);
             this.dgvVistaExpedientes.TabIndex = 154;
+            // 
+            // btnAnularSeleccion
+            // 
+            this.btnAnularSeleccion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAnularSeleccion.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnAnularSeleccion.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.btnAnularSeleccion.BorderColor = System.Drawing.Color.DarkCyan;
+            this.btnAnularSeleccion.BorderRadius = 10;
+            this.btnAnularSeleccion.BorderSize = 2;
+            this.btnAnularSeleccion.FlatAppearance.BorderSize = 0;
+            this.btnAnularSeleccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnularSeleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnularSeleccion.ForeColor = System.Drawing.Color.White;
+            this.btnAnularSeleccion.Image = ((System.Drawing.Image)(resources.GetObject("btnAnularSeleccion.Image")));
+            this.btnAnularSeleccion.Location = new System.Drawing.Point(408, 26);
+            this.btnAnularSeleccion.Name = "btnAnularSeleccion";
+            this.btnAnularSeleccion.Size = new System.Drawing.Size(193, 45);
+            this.btnAnularSeleccion.TabIndex = 102;
+            this.btnAnularSeleccion.Text = " Anular Selección";
+            this.btnAnularSeleccion.TextColor = System.Drawing.Color.White;
+            this.btnAnularSeleccion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnularSeleccion.UseVisualStyleBackColor = false;
+            this.btnAnularSeleccion.Click += new System.EventHandler(this.btnAnularSeleccion_Click);
             // 
             // panel3
             // 
@@ -198,75 +267,7 @@
             this.rowCampoOriginal.HeaderText = "Campo Original";
             this.rowCampoOriginal.Name = "rowCampoOriginal";
             this.rowCampoOriginal.ReadOnly = true;
-            // 
-            // btnExportarExpediente
-            // 
-            this.btnExportarExpediente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExportarExpediente.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnExportarExpediente.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.btnExportarExpediente.BorderColor = System.Drawing.Color.DarkCyan;
-            this.btnExportarExpediente.BorderRadius = 10;
-            this.btnExportarExpediente.BorderSize = 2;
-            this.btnExportarExpediente.FlatAppearance.BorderSize = 0;
-            this.btnExportarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExportarExpediente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExportarExpediente.ForeColor = System.Drawing.Color.White;
-            this.btnExportarExpediente.Image = ((System.Drawing.Image)(resources.GetObject("btnExportarExpediente.Image")));
-            this.btnExportarExpediente.Location = new System.Drawing.Point(690, 26);
-            this.btnExportarExpediente.Name = "btnExportarExpediente";
-            this.btnExportarExpediente.Size = new System.Drawing.Size(150, 45);
-            this.btnExportarExpediente.TabIndex = 155;
-            this.btnExportarExpediente.Text = "Exportar";
-            this.btnExportarExpediente.TextColor = System.Drawing.Color.White;
-            this.btnExportarExpediente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExportarExpediente.UseVisualStyleBackColor = false;
-            this.btnExportarExpediente.Click += new System.EventHandler(this.btnExportarExpediente_Click);
-            // 
-            // btnSeleccionarTodo
-            // 
-            this.btnSeleccionarTodo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSeleccionarTodo.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnSeleccionarTodo.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.btnSeleccionarTodo.BorderColor = System.Drawing.Color.DarkCyan;
-            this.btnSeleccionarTodo.BorderRadius = 10;
-            this.btnSeleccionarTodo.BorderSize = 2;
-            this.btnSeleccionarTodo.FlatAppearance.BorderSize = 0;
-            this.btnSeleccionarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeleccionarTodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeleccionarTodo.ForeColor = System.Drawing.Color.White;
-            this.btnSeleccionarTodo.Image = ((System.Drawing.Image)(resources.GetObject("btnSeleccionarTodo.Image")));
-            this.btnSeleccionarTodo.Location = new System.Drawing.Point(141, 26);
-            this.btnSeleccionarTodo.Name = "btnSeleccionarTodo";
-            this.btnSeleccionarTodo.Size = new System.Drawing.Size(214, 45);
-            this.btnSeleccionarTodo.TabIndex = 101;
-            this.btnSeleccionarTodo.Text = "Seleccionar Todo";
-            this.btnSeleccionarTodo.TextColor = System.Drawing.Color.White;
-            this.btnSeleccionarTodo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSeleccionarTodo.UseVisualStyleBackColor = false;
-            this.btnSeleccionarTodo.Click += new System.EventHandler(this.btnSeleccionarTodo_Click);
-            // 
-            // btnAnularSeleccion
-            // 
-            this.btnAnularSeleccion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAnularSeleccion.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnAnularSeleccion.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.btnAnularSeleccion.BorderColor = System.Drawing.Color.DarkCyan;
-            this.btnAnularSeleccion.BorderRadius = 10;
-            this.btnAnularSeleccion.BorderSize = 2;
-            this.btnAnularSeleccion.FlatAppearance.BorderSize = 0;
-            this.btnAnularSeleccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnularSeleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnularSeleccion.ForeColor = System.Drawing.Color.White;
-            this.btnAnularSeleccion.Image = ((System.Drawing.Image)(resources.GetObject("btnAnularSeleccion.Image")));
-            this.btnAnularSeleccion.Location = new System.Drawing.Point(408, 26);
-            this.btnAnularSeleccion.Name = "btnAnularSeleccion";
-            this.btnAnularSeleccion.Size = new System.Drawing.Size(193, 45);
-            this.btnAnularSeleccion.TabIndex = 102;
-            this.btnAnularSeleccion.Text = " Anular Selección";
-            this.btnAnularSeleccion.TextColor = System.Drawing.Color.White;
-            this.btnAnularSeleccion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAnularSeleccion.UseVisualStyleBackColor = false;
-            this.btnAnularSeleccion.Click += new System.EventHandler(this.btnAnularSeleccion_Click);
+            this.rowCampoOriginal.Visible = false;
             // 
             // frmExportarExpediente
             // 
@@ -302,10 +303,10 @@
         private BotonPersonalizado btnSeleccionarTodo;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dgvVistaExpedientes;
+        private BotonPersonalizado btnExportarExpediente;
         private System.Windows.Forms.DataGridViewCheckBoxColumn rowSeleccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn rowTabla;
         private System.Windows.Forms.DataGridViewTextBoxColumn rowCampo;
         private System.Windows.Forms.DataGridViewTextBoxColumn rowCampoOriginal;
-        private BotonPersonalizado btnExportarExpediente;
     }
 }
