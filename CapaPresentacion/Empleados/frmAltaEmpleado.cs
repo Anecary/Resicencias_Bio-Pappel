@@ -150,7 +150,7 @@ namespace CapaPresentacion.Empleados
                 };
                 //MessageBox.Show(txtidempleado.Text);
                 negocios.altaEmpleado(empleado);
-                RJMessageBox.Show("El empleado ha sido dado de Alta correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RJMessageBox.Show("El empleado ha sido Activado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LimpiarControles();
 
@@ -230,7 +230,7 @@ namespace CapaPresentacion.Empleados
                 // Mostrar datos en los TextBox de Material Skin
                 if (datosEmpleado.estado != "I")
                 {
-                    RJMessageBox.Show("Empleado dado de alta.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("El empleado ya ha sido activado anteriormente.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 txtNombreCompleto.Text = datosEmpleado.nombreCompleto;
