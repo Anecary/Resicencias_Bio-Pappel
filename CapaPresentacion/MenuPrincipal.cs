@@ -23,6 +23,7 @@ namespace CapaPresentacion
         public frmMenu()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             this.KeyPreview = true;
             this.KeyDown += new KeyEventHandler(FormPrincipal_KeyDown);
             customizeDesign();
@@ -47,9 +48,20 @@ namespace CapaPresentacion
 
 
         }
+
+        protected override void WndProc(ref Message m)
+        {
+            const int WM_SYSCOMMAND = 0x0112;
+            const int SC_MOVE = 0xF010;
+
+            if (m.Msg == WM_SYSCOMMAND && (m.WParam.ToInt32() & 0xFFF0) == SC_MOVE)
+                return;
+
+            base.WndProc(ref m);
+        }
+
         private void frmMenu_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
             lblTrabajadores.Text = homeCN.ConcultaNumTrabajadores().Tables["TotalEmpleados"].Rows[0][0].ToString();
             cargarDashboard();
             CargarGraficoCausas();
@@ -875,14 +887,18 @@ namespace CapaPresentacion
 
         private void pDerecho_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTRIGHT, 0);
+           
         }
 
         private void pInferior_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTBOTTOM, 0);
+            
+        }
+
+        private void btnExportarExpedientes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Expediente.frmExportarExpediente());
+            hideSubMenu();
         }
     }
 }
