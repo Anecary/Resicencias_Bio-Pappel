@@ -22,6 +22,7 @@ namespace CapaPresentacion
         private bool isPasswordChar = false;
 
         private string text = "";
+        private int maxLength = 32767;
 
         // Caret
         private int caretPosition = 0;
@@ -60,6 +61,25 @@ namespace CapaPresentacion
         }
 
         // Properties
+        [Category("RJ Code Advance")]
+        public int MaxLength
+        {
+            get => maxLength;
+            set
+            {
+                if (value >= 1)
+                    maxLength = value;
+                else
+                    maxLength = 1;
+
+                if (text.Length > maxLength)
+                {
+                    text = text.Substring(0, maxLength);
+                    caretPosition = text.Length;
+                    Invalidate();
+                }
+            }
+        }
 
         [Category("RJ Code Advance")]
         public Color BorderColor
@@ -234,10 +254,13 @@ namespace CapaPresentacion
 
             if (!char.IsControl(e.KeyChar))
             {
-                text = text.Insert(caretPosition, e.KeyChar.ToString());
-                caretPosition++;
-                _TextChanged?.Invoke(this, EventArgs.Empty);
-                Invalidate();
+                if (text.Length < maxLength) // <<--- Validación de MaxLength
+                {
+                    text = text.Insert(caretPosition, e.KeyChar.ToString());
+                    caretPosition++;
+                    _TextChanged?.Invoke(this, EventArgs.Empty);
+                    Invalidate();
+                }
                 e.Handled = true;
             }
         }

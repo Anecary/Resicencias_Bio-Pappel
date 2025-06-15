@@ -16,6 +16,7 @@ namespace CapaPresentacion.Empleados
 {
     public partial class frmActualizarEmpleado : Form
     {
+        private bool cambioManual = true;
         private EmpleadosCN negocios = new EmpleadosCN();
         private PuestosCN negociosP = new PuestosCN();
         public frmActualizarEmpleado()
@@ -189,6 +190,10 @@ namespace CapaPresentacion.Empleados
             btnBuscarEmpleadoNN.Enabled = true;
             btmCancelar.Enabled = false;
             btmBaja.Enabled = false;
+
+            labelEstado.Text = "Estado:";
+            rbtEstado.Enabled = false;
+            rbtEstado.Checked = false;
         }
 
         private void btmCancelar_Click(object sender, EventArgs e)
@@ -219,26 +224,30 @@ namespace CapaPresentacion.Empleados
 
                 char estado = datosEmpleado.estado;
 
-                MessageBox.Show(estado.ToString());
+                txtNombre.Text = datosEmpleado.nombreCompleto;
+                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
+                txtSexo.Text = datosEmpleado.sexo.ToString();
+                txtNss.Text = datosEmpleado.nss.ToString();
+                cmbEstadoCivil.SelectedItem = datosEmpleado.estado_civil;
+                txtCp.Text = datosEmpleado.domicilio_CP;
+                cmbEstado.SelectedItem = datosEmpleado.domicilio_estado;
+                txtCiudad.Text = datosEmpleado.domicilio_ciudad.ToString();
+                txtColonia.Text = datosEmpleado.domicilio_colonia.ToString();
+                txtCalle.Text = datosEmpleado.domicilio_calle.ToString();
+                txtNumero.Text = datosEmpleado.domicilio_numero.ToString();
+                txtTelefono.Text = datosEmpleado.telefono.ToString();
+                cmbPuesto.SelectedItem = datosEmpleado.puesto;
+                char turno = datosEmpleado.turno;
+                btmCancelar.Enabled = true;
 
                 if (estado == 'A')
                 {
-                    txtNombre.Text = datosEmpleado.nombreCompleto;
-                    txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
-                    txtSexo.Text = datosEmpleado.sexo.ToString();
-                    txtNss.Text = datosEmpleado.nss.ToString();
-                    cmbEstadoCivil.SelectedItem = datosEmpleado.estado_civil;
-                    txtCp.Text = datosEmpleado.domicilio_CP;
-                    cmbEstado.SelectedItem = datosEmpleado.domicilio_estado;
-                    txtCiudad.Text = datosEmpleado.domicilio_ciudad.ToString();
-                    txtColonia.Text = datosEmpleado.domicilio_colonia.ToString();
-                    txtCalle.Text = datosEmpleado.domicilio_calle.ToString();
-                    txtNumero.Text = datosEmpleado.domicilio_numero.ToString();
-                    txtTelefono.Text = datosEmpleado.telefono.ToString();
-                    cmbPuesto.SelectedItem = datosEmpleado.puesto;
-                    char turno = datosEmpleado.turno;
                     btmBaja.Enabled = true;
-
+                    labelEstado.Text = "Estado: Activo";
+                    cambioManual = false;
+                    rbtEstado.Checked = true;
+                    rbtEstado.Enabled = true;
+                    
                     dtpFecha.Value = datosEmpleado.fecha;
 
                     Dictionary<char, string> turnosMap = new Dictionary<char, string>
@@ -270,16 +279,16 @@ namespace CapaPresentacion.Empleados
 
 
                     txtNoNomina.Enabled = false; txtNoNomina.BackColor = Color.WhiteSmoke;
-                    btmCancelar.Enabled = true;
                     btnActualizar.Enabled = true;
                     btnBuscarEmpleadoNN.Enabled = false;
                 }
                 else
                 {
-                    RJMessageBox.Show("El empleado que se desea modificar debe estar dado de alta", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtNoNomina.Text = "";
-                    txtNoNomina.Focus();
+                    labelEstado.Text = "Estado: Inactivo";
+                    rbtEstado.Checked = false;
+                    rbtEstado.Enabled = false;
                 }
+
 
 
             }
@@ -339,12 +348,26 @@ namespace CapaPresentacion.Empleados
 
         private void btmBaja_Click(object sender, EventArgs e)
         {
-            DialogResult result = RJMessageBox.Show("Seguro que quieres dar de baja a este empleado", "Alerta", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes) 
+
+        }
+
+        private void rbtEstado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cambioManual || !rbtEstado.Enabled)
+                return;
+
+            DialogResult result = RJMessageBox.Show("¿Seguro que quieres dar de baja a este empleado?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
                 negocios.bajaEmpleado(txtNoNomina.Text.ToString());
                 RJMessageBox.Show("Empleado se dio de baja", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 limpiar();
+            }
+            else
+            {
+                cambioManual = true;
+                rbtEstado.Checked = true;
+                cambioManual = false;
             }
         }
     }
