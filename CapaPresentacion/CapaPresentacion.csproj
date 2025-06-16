@@ -418,6 +418,12 @@
     <Compile Include="TextPersonalizado2.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Utilerias\frmBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\frmBitacora.Designer.cs">
+      <DependentUpon>frmBitacora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilerias\frmRespaldar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -528,6 +534,9 @@
     <EmbeddedResource Include="Reportes\Report1.rdlc" />
     <EmbeddedResource Include="TextPersonalizado.resx">
       <DependentUpon>TextPersonalizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilerias\frmBitacora.resx">
+      <DependentUpon>frmBitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utilerias\frmRespaldar.resx">
       <DependentUpon>frmRespaldar.cs</DependentUpon>
