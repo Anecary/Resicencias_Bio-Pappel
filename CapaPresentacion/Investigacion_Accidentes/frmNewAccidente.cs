@@ -1587,7 +1587,19 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
         private void txtNumNominaTestigo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validarcaracteresespeciales(e);
+            if (sender is TextBox txt)
+            {
+                // Limitar a 15 caracteres
+                if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 15)
+                {
+                    e.Handled = true;
+                    SystemSounds.Beep.Play(); // opcional
+                    return;
+                }
+
+                validarcaracteresespeciales(e); // validación adicional
+            }
         }
+
     }
 }

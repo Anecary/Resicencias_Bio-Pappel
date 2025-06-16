@@ -23,7 +23,8 @@ namespace CapaPresentacion
         public frmMenu()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Bounds = Screen.PrimaryScreen.WorkingArea;
             this.KeyPreview = true;
             this.KeyDown += new KeyEventHandler(FormPrincipal_KeyDown);
             customizeDesign();
