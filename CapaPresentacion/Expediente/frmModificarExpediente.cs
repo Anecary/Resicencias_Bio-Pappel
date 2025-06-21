@@ -312,6 +312,8 @@ namespace CapaPresentacion.Expediente
                 txtNombreEmpleado.Text = $"{GetStringValue(dr["nombre"])} {GetStringValue(dr["apellido_paterno"])} {GetStringValue(dr["apellido_materno"])}";
                 txtIdEmpleado.Text = GetStringValue(dr["idEmpleado"]);
                 txtNumeroNomina.Text = GetStringValue(dr["NumNomina"]);
+                DateTime fechaModificacion = dr["UltimaFechaActualizacion"] != DBNull.Value ? Convert.ToDateTime(dr["UltimaFechaActualizacion"]) : DateTime.MinValue;
+                txtUltimaModificacion.Text = fechaModificacion.ToString("dd-MMMM-yyyy");
 
                 DateTime fechaNacimiento = dr["fecha_nacimiento"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_nacimiento"]) : DateTime.MinValue;
                 DateTime fechaIngresoAlPuesto = dr["fecha_ingreso_puesto"] != DBNull.Value ? Convert.ToDateTime(dr["fecha_ingreso_puesto"]) : DateTime.MinValue;

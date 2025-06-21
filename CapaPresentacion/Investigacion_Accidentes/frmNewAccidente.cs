@@ -586,32 +586,67 @@ namespace CapaPresentacion.Investigacion_Accidentes
             DateTime fecha_Hora_recepcion = dtpFechaRecepcion.Value.Date + dtpHoraRecepcion.Value.TimeOfDay;
 
 
-            if (fechaRegistro < haceUnMes || fechaRegistro > ahora)
+            // Validar que ninguna fecha sea mayor a hoy
+            if (fechaRegistro > ahora)
             {
-                RJMessageBox.Show("La fecha de registro debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (DiaDescansoPrevio < haceUnMes || DiaDescansoPrevio > ahora)
-            {
-                RJMessageBox.Show("El último dia de descanso previo debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (fecha_hora_Accidente < haceUnMes || fecha_hora_Accidente > ahora)
-            {
-                RJMessageBox.Show("La fecha del accidente debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (fecha_Hora_Seguimiento < haceUnMes || fecha_Hora_Seguimiento > ahora)
-            {
-                RJMessageBox.Show("La fecha de seguimiento debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RJMessageBox.Show("La fecha de registro no puede ser mayor al día actual.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Validar fecha_Hora_recepcion
-            if (fecha_Hora_recepcion < haceUnMes || fecha_Hora_recepcion > ahora)
+            if (DiaDescansoPrevio > ahora)
             {
-                RJMessageBox.Show("La fecha de recepción debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RJMessageBox.Show("El último día de descanso no puede ser mayor al día actual.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+            }
+
+            if (fecha_hora_Accidente > ahora)
+            {
+                RJMessageBox.Show("La fecha del accidente no puede ser mayor al día actual.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (fecha_Hora_Seguimiento > ahora)
+            {
+                RJMessageBox.Show("La fecha de seguimiento no puede ser mayor al día actual.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (fecha_Hora_recepcion > ahora)
+            {
+                RJMessageBox.Show("La fecha de recepción no puede ser mayor al día actual.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Definir una lista para recopilar fechas muy antiguas
+            List<string> fechasAntiguas = new List<string>();
+
+            // Evaluar fechas con más de un mes de antigüedad
+            if (fechaRegistro < haceUnMes)
+                fechasAntiguas.Add("Fecha de Registro");
+
+            if (DiaDescansoPrevio < haceUnMes)
+                fechasAntiguas.Add("Día de Descanso Previo");
+
+            if (fecha_hora_Accidente < haceUnMes)
+                fechasAntiguas.Add("Fecha del Accidente");
+
+            if (fecha_Hora_Seguimiento < haceUnMes)
+                fechasAntiguas.Add("Fecha de Seguimiento");
+
+            if (fecha_Hora_recepcion < haceUnMes)
+                fechasAntiguas.Add("Fecha de Recepción");
+
+            // Si hay alguna fecha muy antigua, mostrar advertencia
+            if (fechasAntiguas.Count > 0)
+            {
+                string mensajeAdvertencia = "Las siguientes fechas tienen más de un mes de antigüedad:\n- " +
+                                            string.Join("\n- ", fechasAntiguas) +
+                                            "\n\n¿Deseas continuar de todos modos?";
+
+                DialogResult result = RJMessageBox.Show(mensajeAdvertencia, "Advertencia de fechas antiguas", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result != DialogResult.Yes)
+                    return;
             }
 
 
