@@ -375,11 +375,24 @@ namespace CapaPresentacion.Expediente
 
 
 
-                if (fechaApertura < haceUnMes || fechaApertura > ahora)
+                if (fechaApertura > ahora)
                 {
-                    RJMessageBox.Show("La fecha de seguimiento debe estar dentro del último mes y no puede ser mayor a hoy.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("La fecha de recepción no puede ser mayor al día actual.", "Fecha no válida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+                else if (fechaApertura < haceUnMes)
+                {
+                    DialogResult result = RJMessageBox.Show(
+                        "La fecha de recepción tiene más de un mes de antigüedad. ¿Deseas continuar de todos modos?",
+                        "Advertencia de fecha antigua",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Warning
+                    );
+
+                    if (result != DialogResult.Yes)
+                        return;
+                }
+
 
 
                 ExpedientesCE expediente = new ExpedientesCE

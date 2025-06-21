@@ -230,11 +230,11 @@
             // 
             // pContenedor
             // 
+            this.pContenedor.Controls.Add(this.pExploracionFisica);
             this.pContenedor.Controls.Add(this.pDatosGenerales);
             this.pContenedor.Controls.Add(this.pNoPatologicos);
             this.pContenedor.Controls.Add(this.pPatologicos);
             this.pContenedor.Controls.Add(this.pEstudiosParaclinicos);
-            this.pContenedor.Controls.Add(this.pExploracionFisica);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(0, 190);
             this.pContenedor.Name = "pContenedor";
@@ -2620,20 +2620,21 @@
             this.cboxConstitucionFisica.IntegralHeight = false;
             this.cboxConstitucionFisica.ItemHeight = 43;
             this.cboxConstitucionFisica.Items.AddRange(new object[] {
-            "Regular",
-            "Atlética",
-            "Robusta",
             "Delgada",
+            "Promedio",
+            "Robusta",
+            "Atlética",
             "Gruesa",
+            "Musculosa",
             "Pequeña",
             "Fuerte",
-            "Fragil",
-            "Promedio",
-            "Musculosa",
-            "Debil",
-            "Sobrada ",
+            "Frágil",
             "En forma",
-            "Gordita"});
+            "Débil",
+            "Regular",
+            "Corporatura grande",
+            "Corporatura pequeña",
+            "Constitución normal"});
             this.cboxConstitucionFisica.Location = new System.Drawing.Point(19, 57);
             this.cboxConstitucionFisica.MaxDropDownItems = 4;
             this.cboxConstitucionFisica.MouseState = MaterialSkin.MouseState.OUT;
