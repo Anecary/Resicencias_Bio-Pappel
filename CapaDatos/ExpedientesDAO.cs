@@ -221,6 +221,8 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
+                Console.WriteLine("Error: " + ex.ToString());
+
                 return -1;
             }
             finally
