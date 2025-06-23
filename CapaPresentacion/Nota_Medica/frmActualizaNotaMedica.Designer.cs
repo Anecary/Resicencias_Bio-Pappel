@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmActualizaNotaMedica));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -183,7 +183,7 @@
             this.pConsultaMedica.Location = new System.Drawing.Point(29, 842);
             this.pConsultaMedica.Margin = new System.Windows.Forms.Padding(4);
             this.pConsultaMedica.Name = "pConsultaMedica";
-            this.pConsultaMedica.Size = new System.Drawing.Size(1182, 1088);
+            this.pConsultaMedica.Size = new System.Drawing.Size(1140, 1088);
             this.pConsultaMedica.TabIndex = 118;
             // 
             // cboxNumExpediente2
@@ -201,7 +201,7 @@
             this.cboxNumExpediente2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
             this.cboxNumExpediente2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cboxNumExpediente2.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboxNumExpediente2.Location = new System.Drawing.Point(188, 929);
+            this.cboxNumExpediente2.Location = new System.Drawing.Point(167, 929);
             this.cboxNumExpediente2.Margin = new System.Windows.Forms.Padding(4);
             this.cboxNumExpediente2.MinimumSize = new System.Drawing.Size(267, 62);
             this.cboxNumExpediente2.Name = "cboxNumExpediente2";
@@ -217,7 +217,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label15.Location = new System.Drawing.Point(27, 885);
+            this.label15.Location = new System.Drawing.Point(6, 885);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(360, 29);
@@ -238,7 +238,7 @@
             this.btnConsultaIndividual.ForeColor = System.Drawing.Color.White;
             this.btnConsultaIndividual.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultaIndividual.Image")));
             this.btnConsultaIndividual.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultaIndividual.Location = new System.Drawing.Point(318, 106);
+            this.btnConsultaIndividual.Location = new System.Drawing.Point(297, 106);
             this.btnConsultaIndividual.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultaIndividual.Name = "btnConsultaIndividual";
             this.btnConsultaIndividual.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -255,7 +255,7 @@
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label58.Location = new System.Drawing.Point(28, 951);
+            this.label58.Location = new System.Drawing.Point(7, 951);
             this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(147, 20);
@@ -275,7 +275,7 @@
             this.btmCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmCancelar.ForeColor = System.Drawing.Color.White;
             this.btmCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btmCancelar.Image")));
-            this.btmCancelar.Location = new System.Drawing.Point(639, 1010);
+            this.btmCancelar.Location = new System.Drawing.Point(618, 1010);
             this.btmCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btmCancelar.Name = "btmCancelar";
             this.btmCancelar.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
@@ -300,7 +300,7 @@
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
-            this.btnActualizar.Location = new System.Drawing.Point(371, 1010);
+            this.btnActualizar.Location = new System.Drawing.Point(350, 1010);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
@@ -323,7 +323,7 @@
             this.txtDiagnostico.Enabled = false;
             this.txtDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiagnostico.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDiagnostico.Location = new System.Drawing.Point(24, 628);
+            this.txtDiagnostico.Location = new System.Drawing.Point(3, 628);
             this.txtDiagnostico.Margin = new System.Windows.Forms.Padding(5);
             this.txtDiagnostico.MaxLength = 32767;
             this.txtDiagnostico.Multiline = true;
@@ -347,7 +347,7 @@
             this.txtObservaciones.Enabled = false;
             this.txtObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservaciones.ForeColor = System.Drawing.Color.DimGray;
-            this.txtObservaciones.Location = new System.Drawing.Point(24, 317);
+            this.txtObservaciones.Location = new System.Drawing.Point(3, 317);
             this.txtObservaciones.Margin = new System.Windows.Forms.Padding(5);
             this.txtObservaciones.MaxLength = 32767;
             this.txtObservaciones.Multiline = true;
@@ -366,7 +366,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label7.Location = new System.Drawing.Point(24, 581);
+            this.label7.Location = new System.Drawing.Point(3, 581);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(158, 29);
@@ -379,7 +379,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label13.Location = new System.Drawing.Point(24, 274);
+            this.label13.Location = new System.Drawing.Point(3, 274);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(195, 29);
@@ -392,7 +392,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label6.Location = new System.Drawing.Point(24, 79);
+            this.label6.Location = new System.Drawing.Point(3, 79);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 20);
@@ -402,14 +402,15 @@
             // txtIdConsulta
             // 
             this.txtIdConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtIdConsulta.BackColor = System.Drawing.Color.White;
+            this.txtIdConsulta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtIdConsulta.BorderColor = System.Drawing.Color.Gray;
             this.txtIdConsulta.BorderFocusColor = System.Drawing.Color.DarkCyan;
             this.txtIdConsulta.BorderRadius = 12;
             this.txtIdConsulta.BorderSize = 2;
+            this.txtIdConsulta.Enabled = false;
             this.txtIdConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdConsulta.ForeColor = System.Drawing.Color.DimGray;
-            this.txtIdConsulta.Location = new System.Drawing.Point(28, 111);
+            this.txtIdConsulta.Location = new System.Drawing.Point(7, 111);
             this.txtIdConsulta.Margin = new System.Windows.Forms.Padding(5);
             this.txtIdConsulta.MaxLength = 32767;
             this.txtIdConsulta.Multiline = false;
@@ -428,7 +429,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label11.Location = new System.Drawing.Point(776, 79);
+            this.label11.Location = new System.Drawing.Point(755, 79);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(90, 20);
@@ -446,7 +447,7 @@
             this.txtProceso.Enabled = false;
             this.txtProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProceso.ForeColor = System.Drawing.Color.DimGray;
-            this.txtProceso.Location = new System.Drawing.Point(780, 111);
+            this.txtProceso.Location = new System.Drawing.Point(759, 111);
             this.txtProceso.Margin = new System.Windows.Forms.Padding(5);
             this.txtProceso.MaxLength = 32767;
             this.txtProceso.Multiline = false;
@@ -465,7 +466,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label8.Location = new System.Drawing.Point(595, 182);
+            this.label8.Location = new System.Drawing.Point(574, 182);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(116, 20);
@@ -483,7 +484,7 @@
             this.txtDescripcion.Enabled = false;
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDescripcion.Location = new System.Drawing.Point(595, 206);
+            this.txtDescripcion.Location = new System.Drawing.Point(574, 206);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(5);
             this.txtDescripcion.MaxLength = 32767;
             this.txtDescripcion.Multiline = false;
@@ -502,7 +503,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label9.Location = new System.Drawing.Point(404, 79);
+            this.label9.Location = new System.Drawing.Point(383, 79);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(66, 20);
@@ -520,7 +521,7 @@
             this.txtFechaNota.Enabled = false;
             this.txtFechaNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFechaNota.ForeColor = System.Drawing.Color.DimGray;
-            this.txtFechaNota.Location = new System.Drawing.Point(408, 111);
+            this.txtFechaNota.Location = new System.Drawing.Point(387, 111);
             this.txtFechaNota.Margin = new System.Windows.Forms.Padding(5);
             this.txtFechaNota.MaxLength = 32767;
             this.txtFechaNota.Multiline = false;
@@ -539,7 +540,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label10.Location = new System.Drawing.Point(24, 182);
+            this.label10.Location = new System.Drawing.Point(3, 182);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(177, 20);
@@ -557,7 +558,7 @@
             this.txtCausaConsulta.Enabled = false;
             this.txtCausaConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCausaConsulta.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCausaConsulta.Location = new System.Drawing.Point(24, 206);
+            this.txtCausaConsulta.Location = new System.Drawing.Point(3, 206);
             this.txtCausaConsulta.Margin = new System.Windows.Forms.Padding(5);
             this.txtCausaConsulta.MaxLength = 32767;
             this.txtCausaConsulta.Multiline = false;
@@ -576,7 +577,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label14.Location = new System.Drawing.Point(18, 26);
+            this.label14.Location = new System.Drawing.Point(2, 26);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(240, 31);
@@ -607,7 +608,7 @@
             this.pDatosGenerales.Location = new System.Drawing.Point(29, 28);
             this.pDatosGenerales.Margin = new System.Windows.Forms.Padding(4);
             this.pDatosGenerales.Name = "pDatosGenerales";
-            this.pDatosGenerales.Size = new System.Drawing.Size(1182, 782);
+            this.pDatosGenerales.Size = new System.Drawing.Size(1140, 782);
             this.pDatosGenerales.TabIndex = 117;
             // 
             // label5
@@ -616,7 +617,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label5.Location = new System.Drawing.Point(20, 381);
+            this.label5.Location = new System.Drawing.Point(4, 381);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(236, 20);
@@ -626,38 +627,38 @@
             // dgvConsultaGeneral
             // 
             this.dgvConsultaGeneral.AllowUserToAddRows = false;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvConsultaGeneral.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvConsultaGeneral.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsultaGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dgvConsultaGeneral.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvConsultaGeneral.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dgvConsultaGeneral.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvConsultaGeneral.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvConsultaGeneral.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvConsultaGeneral.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvConsultaGeneral.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvConsultaGeneral.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvConsultaGeneral.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvConsultaGeneral.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvConsultaGeneral.EnableHeadersVisualStyles = false;
-            this.dgvConsultaGeneral.Location = new System.Drawing.Point(24, 405);
+            this.dgvConsultaGeneral.Location = new System.Drawing.Point(3, 405);
             this.dgvConsultaGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.dgvConsultaGeneral.Name = "dgvConsultaGeneral";
             this.dgvConsultaGeneral.ReadOnly = true;
@@ -674,7 +675,7 @@
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label60.Location = new System.Drawing.Point(754, 178);
+            this.label60.Location = new System.Drawing.Point(733, 178);
             this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(87, 20);
@@ -692,7 +693,7 @@
             this.txtTelefono.Enabled = false;
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTelefono.Location = new System.Drawing.Point(754, 202);
+            this.txtTelefono.Location = new System.Drawing.Point(733, 202);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(5);
             this.txtTelefono.MaxLength = 32767;
             this.txtTelefono.Multiline = false;
@@ -711,7 +712,7 @@
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label59.Location = new System.Drawing.Point(28, 274);
+            this.label59.Location = new System.Drawing.Point(7, 274);
             this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(94, 20);
@@ -729,7 +730,7 @@
             this.txtDomicilio.Enabled = false;
             this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomicilio.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDomicilio.Location = new System.Drawing.Point(28, 298);
+            this.txtDomicilio.Location = new System.Drawing.Point(7, 298);
             this.txtDomicilio.Margin = new System.Windows.Forms.Padding(5);
             this.txtDomicilio.MaxLength = 32767;
             this.txtDomicilio.Multiline = false;
@@ -748,7 +749,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label4.Location = new System.Drawing.Point(847, 77);
+            this.label4.Location = new System.Drawing.Point(826, 77);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 20);
@@ -766,7 +767,7 @@
             this.txtPuesto.Enabled = false;
             this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPuesto.Location = new System.Drawing.Point(851, 102);
+            this.txtPuesto.Location = new System.Drawing.Point(830, 102);
             this.txtPuesto.Margin = new System.Windows.Forms.Padding(5);
             this.txtPuesto.MaxLength = 32767;
             this.txtPuesto.Multiline = false;
@@ -785,7 +786,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label3.Location = new System.Drawing.Point(560, 78);
+            this.label3.Location = new System.Drawing.Point(539, 78);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 20);
@@ -803,7 +804,7 @@
             this.txtIdEmpleado.Enabled = false;
             this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdEmpleado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtIdEmpleado.Location = new System.Drawing.Point(564, 102);
+            this.txtIdEmpleado.Location = new System.Drawing.Point(543, 102);
             this.txtIdEmpleado.Margin = new System.Windows.Forms.Padding(5);
             this.txtIdEmpleado.MaxLength = 32767;
             this.txtIdEmpleado.Multiline = false;
@@ -822,7 +823,7 @@
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label53.Location = new System.Drawing.Point(24, 178);
+            this.label53.Location = new System.Drawing.Point(3, 178);
             this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(222, 20);
@@ -840,7 +841,7 @@
             this.txtNombreEmpleado.Enabled = false;
             this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(24, 202);
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(3, 202);
             this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombreEmpleado.MaxLength = 32767;
             this.txtNombreEmpleado.Multiline = false;
@@ -859,7 +860,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label12.Location = new System.Drawing.Point(24, 78);
+            this.label12.Location = new System.Drawing.Point(3, 78);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(172, 20);
@@ -876,7 +877,7 @@
             this.txtNumNomina.BorderSize = 2;
             this.txtNumNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumNomina.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNomina.Location = new System.Drawing.Point(24, 102);
+            this.txtNumNomina.Location = new System.Drawing.Point(3, 102);
             this.txtNumNomina.Margin = new System.Windows.Forms.Padding(5);
             this.txtNumNomina.MaxLength = 32767;
             this.txtNumNomina.Multiline = false;
@@ -903,7 +904,7 @@
             this.btnBuscarNotaMedica.ForeColor = System.Drawing.Color.White;
             this.btnBuscarNotaMedica.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarNotaMedica.Image")));
             this.btnBuscarNotaMedica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarNotaMedica.Location = new System.Drawing.Point(330, 97);
+            this.btnBuscarNotaMedica.Location = new System.Drawing.Point(309, 97);
             this.btnBuscarNotaMedica.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarNotaMedica.Name = "btnBuscarNotaMedica";
             this.btnBuscarNotaMedica.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
@@ -920,7 +921,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label2.Location = new System.Drawing.Point(18, 26);
+            this.label2.Location = new System.Drawing.Point(5, 25);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(315, 31);
