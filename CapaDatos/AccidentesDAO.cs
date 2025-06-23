@@ -75,9 +75,12 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@p_ubicacion_conocida", accidente.ConociaTrabajo);
                 cmd.Parameters.AddWithValue("@p_supervision", accidente.ExistiaSupervision);
                 cmd.Parameters.AddWithValue("@p_riesgosJson", accidente.RiesgosJson);
+                cmd.Parameters.AddWithValue("@p_Otrosriesgos", accidente.OtroRiesgo);
                 cmd.Parameters.AddWithValue("@p_actosInsegurosJson", accidente.ActosInsegurosJson);
+                cmd.Parameters.AddWithValue("@p_OtrosActosInseguros", accidente.OtroActoInseguro);
                 cmd.Parameters.AddWithValue("@p_condicionesInsegurasJson", accidente.CondicionesInsegurasJson);
-
+                cmd.Parameters.AddWithValue("@p_OtrasCondicionesInseguras", accidente.OtraCondicionInsegura);
+                Console.WriteLine("Holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"+accidente.CondicionesInsegurasJson);
                 //Seguimiento del Caso
                 cmd.Parameters.AddWithValue("@p_empleadosConocimientoJson", accidente.EmpleadosConocimientoJson);
                 cmd.Parameters.AddWithValue("@p_empleadosInvolucradosJson", accidente.EmpleadosInvolucradosJson);

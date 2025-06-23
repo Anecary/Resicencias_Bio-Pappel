@@ -168,6 +168,7 @@ namespace CapaPresentacion.Expediente
             txtSEndocrino.Enabled = true; txtSEndocrino.BackColor = Color.White;
             txtSGenitoUrinario.Enabled = true; txtSGenitoUrinario.BackColor = Color.White;
             txtSMusculoEsqueletico.Enabled = true; txtSMusculoEsqueletico.BackColor = Color.White;
+            txtGinecoObstetrico.Enabled = true; txtGinecoObstetrico.BackColor = Color.White;
             txtOrganoSentidos.Enabled = true; txtOrganoSentidos.BackColor = Color.White;
             txtGrupoSanguineo.Visible = false;
 
@@ -246,6 +247,7 @@ namespace CapaPresentacion.Expediente
             txtSEndocrino.Enabled = false; txtSEndocrino.BackColor = Color.WhiteSmoke;
             txtSGenitoUrinario.Enabled = false; txtSGenitoUrinario.BackColor = Color.WhiteSmoke;
             txtSMusculoEsqueletico.Enabled = false; txtSMusculoEsqueletico.BackColor = Color.WhiteSmoke;
+            txtGinecoObstetrico.Enabled = false; txtGinecoObstetrico.BackColor = Color.WhiteSmoke;
             txtOrganoSentidos.Enabled = false; txtOrganoSentidos.BackColor = Color.WhiteSmoke;
             txtGrupoSanguineo.Visible = true;
 
@@ -295,9 +297,14 @@ namespace CapaPresentacion.Expediente
 
         private void cboxNumExpediente2_OnSelectedIndexChanged(object sender, EventArgs e)
         {
+            consultaExpediente();
+        }
+
+        public void consultaExpediente()
+        {
             if (cboxNumExpediente2.SelectedValue == null)
                 btnActualizar.Enabled = false;
-            else if(cboxNumExpediente2.SelectedValue != null)
+            else if (cboxNumExpediente2.SelectedValue != null)
                 btnActualizar.Enabled = true;
 
             DataTable t = expedientesCN.consultaExpediente(cboxNumExpediente2.SelectedValue.ToString()).Tables["ConsultaNumExpediente"];
@@ -398,7 +405,6 @@ namespace CapaPresentacion.Expediente
             }
 
         }
-
         private void btnGrabarActualizacion_Click(object sender, EventArgs e)
         {
             try
@@ -559,6 +565,7 @@ namespace CapaPresentacion.Expediente
             {
                 RJMessageBox.Show("Error, al intentar grabar, campos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            consultaExpediente();
 
         }
         public void ValidacionNumeros(KeyPressEventArgs e)

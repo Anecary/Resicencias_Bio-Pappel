@@ -51,8 +51,11 @@ namespace CapaEntidad
         public bool ConociaTrabajo { get; set; }
         public bool ExistiaSupervision { get; set; } 
         public string RiesgosJson { get; set; }
+        public string OtroRiesgo {  get; set; }
         public string ActosInsegurosJson { get; set; }
+        public string OtroActoInseguro { get; set; }
         public string CondicionesInsegurasJson { get; set; }
+        public string OtraCondicionInsegura { get; set; }
         public string EmpleadosConocimientoJson { get; set; }
         public string EmpleadosInvolucradosJson { get; set; }
         public bool ContinuaTrabajando { get; set; }

@@ -432,13 +432,17 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 if (dr["otro_diagnostico"] != DBNull.Value)
                 {
                     txtOtro.Text = dr["otro_diagnostico"].ToString();
-                    txtOtro.Enabled = true;
-                    rbtnExistiaSupervicionSi.Checked = true;
+
+                    // Convertir explícitamente a booleano
+                    bool valor = false;
+                    Boolean.TryParse(dr["otro_diagnostico"].ToString(), out valor);
+                    rbtnOtro.Checked = valor;
                 }
                 else
                 {
-                    rbtnExistiaSupervicionSi.Checked = false; // Opcional, en caso de que el valor sea nulo.
+                    rbtnOtro.Checked = false;
                 }
+
                 txtDiagnosticoFinal.Text = dr["diagnostico_final"].ToString();
                 txtTratamiento.Text = dr["tratamiento"].ToString();
                 txtincapacidad.Text = dr["incapacidad"].ToString();
@@ -450,11 +454,108 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 {
                     txtFechaRecepcion.Text = "";  
                 }
+
+
+                //----------------------------------------------------------------------------------------Riesgos
+                // Cargar los riesgos existentes
+                DataTable dtRiesgos = accidentesCN.consultarDetalleInvAccidente_Riesgos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteRiesgos"];
+
+                // Verificar si existe la columna "Riesgos"
+                if (!dtRiesgos.Columns.Contains("Riesgos"))
+                {
+                    dtRiesgos.Columns.Add("Riesgos", typeof(string));
+                }
+
+                // Procesar 'otro_Riesgo' si no está vacío
+                if (dr["otro_Riesgo"] != DBNull.Value && !string.IsNullOrWhiteSpace(dr["otro_Riesgo"].ToString()))
+                {
+                    string[] riesgosExtras = dr["otro_Riesgo"].ToString().Split(',');
+
+                    foreach (string riesgo in riesgosExtras)
+                    {
+                        string riesgoLimpio = riesgo.Trim(); // elimina espacios al inicio y final
+
+                        if (!string.IsNullOrEmpty(riesgoLimpio))
+                        {
+                            DataRow nuevaFila = dtRiesgos.NewRow();
+                            nuevaFila["Riesgos"] = riesgoLimpio;
+                            dtRiesgos.Rows.Add(nuevaFila);
+                        }
+                    }
+                }
+
+                dgvDetalleRiesgos.DataSource = dtRiesgos;
+
+                //----------------------------------------------------------------------------------------Actos inseguros
+
+                DataTable dtActosInseguros = accidentesCN.consultarDetalleInvAccidente_ActosInseguros(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteActosInseguros"];
+
+                if (!dtActosInseguros.Columns.Contains("Acto Inseguro"))
+                {
+                    dtActosInseguros.Columns.Add("Acto Inseguro", typeof(string));
+                }
+                // Procesar 'otro_Riesgo' si no está vacío
+                if (dr["otro_Acto_Inseguro"] != DBNull.Value && !string.IsNullOrWhiteSpace(dr["otro_Acto_Inseguro"].ToString()))
+                {
+                    string[] actosInsegurosExtras = dr["otro_Acto_Inseguro"].ToString().Split(',');
+
+                    foreach (string actInseguros in actosInsegurosExtras)
+                    {
+                        string actoInseguroLimpio = actInseguros.Trim(); // elimina espacios al inicio y final
+
+                        if (!string.IsNullOrEmpty(actoInseguroLimpio))
+                        {
+                            DataRow nuevaFila = dtActosInseguros.NewRow();
+                            nuevaFila["Acto Inseguro"] = actoInseguroLimpio;
+                            dtActosInseguros.Rows.Add(nuevaFila);
+                        }
+                    }
+                }
+
+                dgvDetalleActosInseguros.DataSource = dtActosInseguros;
+
+                //----------------------------------------------------------------------------------------Condiciones Inseguras
+
+                // Obtener condiciones inseguras desde el procedimiento
+                DataTable dtCondicionesInseguras = accidentesCN
+                    .consultarDetalleInvAccidente_CondicionesInseguras(Convert.ToInt32(cboxFechasAccidentes.SelectedValue))
+                    .Tables["Detalle_InvAccidenteCondicionesInseguras"];
+
+                // Asegurarse de que la columna 'Condiciones Inseguras' existe
+                if (!dtCondicionesInseguras.Columns.Contains("Condiciones Inseguras"))
+                {
+                    dtCondicionesInseguras.Columns.Add("Condiciones Inseguras", typeof(string));
+                }
+
+                // Procesar 'otro_Condicion_Insegura' si no está vacío
+                if (dr["Otra_Condicion__Insegura"] != DBNull.Value && !string.IsNullOrWhiteSpace(dr["Otra_Condicion__Insegura"].ToString()))
+                {
+                    string[] condicionesExtras = dr["Otra_Condicion__Insegura"].ToString().Split(',');
+
+                    foreach (string condicion in condicionesExtras)
+                    {
+                        string condicionLimpia = condicion.Trim(); // elimina espacios al inicio y final
+
+                        if (!string.IsNullOrEmpty(condicionLimpia))
+                        {
+                            DataRow nuevaFila = dtCondicionesInseguras.NewRow();
+                            nuevaFila["Condiciones Inseguras"] = condicionLimpia;
+                            dtCondicionesInseguras.Rows.Add(nuevaFila);
+                        }
+                    }
+                }
+
+                // Asignar al DataGridView
+                dgvDetalleCondicionesInseguras.DataSource = dtCondicionesInseguras;
+
+
+
             }
 
-            dgvDetalleRiesgos.DataSource = accidentesCN.consultarDetalleInvAccidente_Riesgos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteRiesgos"];
-            dgvDetalleActosInseguros.DataSource = accidentesCN.consultarDetalleInvAccidente_ActosInseguros(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteActosInseguros"];
-            dgvDetalleCondicionesInseguras.DataSource = accidentesCN.consultarDetalleInvAccidente_CondicionesInseguras(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteCondicionesInseguras"];
+            //dgvDetalleRiesgos.DataSource = accidentesCN.consultarDetalleInvAccidente_Riesgos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteRiesgos"];
+
+            //dgvDetalleActosInseguros.DataSource = 
+            //dgvDetalleCondicionesInseguras.DataSource = 
             dgvTestigos.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosTestigos(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosTestigos"];
             dgvEmpleadoConocimiento.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosConocimiento(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosConocimiento"];
             dgvEmpleadosInvolucrados.DataSource = accidentesCN.consultarDetalleInvAccidente_EmpleadosInvolucrados(Convert.ToInt32(cboxFechasAccidentes.SelectedValue)).Tables["Detalle_InvAccidenteEmpleadosInvolucrados"];
