@@ -551,6 +551,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             Boolean existiaSupervision = false;
             existiaSupervision = rbtnExistiaSupervicionSi.Checked ? true : false;
             string riesgosJson = ConvertirRiesgosAJson(dgvRiesgos);
+            
             //MessageBox.Show(riesgosJson);
             string actosInsegurosJson = ConvertirActosInsegurosAJson(dgvActoInseguro);
             //MessageBox.Show(actosInsegurosJson);
@@ -781,8 +782,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 ConociaTrabajo = conociaTrabajo,
                 ExistiaSupervision = existiaSupervision,
                 RiesgosJson = riesgosJson,
+                OtroRiesgo = ObtenerRiesgosOtros(),
                 ActosInsegurosJson = actosInsegurosJson,
+                OtroActoInseguro = ObtenerActosInsegurosOtros(),
                 CondicionesInsegurasJson = condicionesInsegurasJson,
+                OtraCondicionInsegura = ObtenerCondicionesInsegurasOtros(),
                 EmpleadosConocimientoJson = empleadosConocimientoJson,
                 EmpleadosInvolucradosJson = empleadosInvolucradosJson,
                 ContinuaTrabajando = continuaTrabajando,
@@ -849,24 +853,123 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
             return JsonConvert.SerializeObject(testigosList);  // Convertir la lista a JSON
         }
+        public string ObtenerRiesgosOtros()
+        {
+            List<string> riesgosOtros = new List<string>();
+
+            foreach (DataGridViewRow fila in dgvRiesgos.Rows)
+            {
+                if (fila.Cells["idRiesgo"].Value != null &&
+                    Convert.ToInt32(fila.Cells["idRiesgo"].Value) == 17)
+                {
+                    // Suponiendo que la descripción del riesgo está en la columna de índice 1 (ajusta si es otra)
+                    if (fila.Cells[1].Value != null)
+                    {
+                        string descripcion = fila.Cells[1].Value.ToString().Trim();
+                        if (!string.IsNullOrEmpty(descripcion))
+                        {
+                            riesgosOtros.Add(descripcion);
+                        }
+                    }
+                }
+            }
+
+            string columnas = string.Join(", ", riesgosOtros);
+
+            // Por ejemplo, mostrarlo en consola o usarlo como necesites
+            //MessageBox.Show(columnas);
+            // O lo podrías retornar si quieres
+            // return columnas;
+            return columnas;
+
+        }
+        public string ObtenerActosInsegurosOtros()
+        {
+            List<string> actosInsegurosOtros = new List<string>();
+
+            foreach (DataGridViewRow fila in dgvActoInseguro.Rows)
+            {
+                if (fila.Cells["idActoInseguro"].Value != null &&
+                    Convert.ToInt32(fila.Cells["idActoInseguro"].Value) == 9)
+                {
+                    // Suponiendo que la descripción del riesgo está en la columna de índice 1 (ajusta si es otra)
+                    if (fila.Cells[1].Value != null)
+                    {
+                        string descripcion = fila.Cells[1].Value.ToString().Trim();
+                        if (!string.IsNullOrEmpty(descripcion))
+                        {
+                            actosInsegurosOtros.Add(descripcion);
+                        }
+                    }
+                }
+            }
+
+            string columnas = string.Join(", ", actosInsegurosOtros);
+
+            // Por ejemplo, mostrarlo en consola o usarlo como necesites
+            //MessageBox.Show(columnas);
+            // O lo podrías retornar si quieres
+            // return columnas;
+            return columnas;
+
+        }
+        public string ObtenerCondicionesInsegurasOtros()
+        {
+            List<string> condicionesInsegurasOtros = new List<string>();
+
+            foreach (DataGridViewRow fila in dgvCondicionInsegura.Rows)
+            {
+                if (fila.Cells["idCondicionInsegura"].Value != null &&
+                    Convert.ToInt32(fila.Cells["idCondicionInsegura"].Value) == 8)
+                {
+                    // Suponiendo que la descripción del riesgo está en la columna de índice 1 (ajusta si es otra)
+                    if (fila.Cells[1].Value != null)
+                    {
+                        string descripcion = fila.Cells[1].Value.ToString().Trim();
+                        if (!string.IsNullOrEmpty(descripcion))
+                        {
+                            condicionesInsegurasOtros.Add(descripcion);
+                        }
+                    }
+                }
+            }
+
+            string columnas = string.Join(", ", condicionesInsegurasOtros);
+
+            // Por ejemplo, mostrarlo en consola o usarlo como necesites
+            //MessageBox.Show(columnas);
+            // O lo podrías retornar si quieres
+            // return columnas;
+            return columnas;
+
+        }
         public string ConvertirRiesgosAJson(DataGridView dgvRiesgos)
         {
             List<Dictionary<string, object>> riesgosList = new List<Dictionary<string, object>>();
 
             for (int i = 0; i < dgvRiesgos.Rows.Count; i++)
             {
-                if (dgvRiesgos.Rows[i].Cells["idRiesgo"].Value != null)
+                if (dgvRiesgos.Rows[i].Cells[0].Value != null)
                 {
+                    int idRiesgo = Convert.ToInt32(dgvRiesgos.Rows[i].Cells[0].Value);
+
+                    // Omitir si es 17
+                    if (idRiesgo == 17)
+                        continue;
+
                     Dictionary<string, object> riesgos = new Dictionary<string, object>
-            {
-                { "IdRiesgo", Convert.ToInt32(dgvRiesgos.Rows[i].Cells["idRiesgo"].Value) }
-            };
+                    {
+                        { "IdRiesgo", idRiesgo }
+                    };
+
                     riesgosList.Add(riesgos);
                 }
             }
 
-            return JsonConvert.SerializeObject(riesgosList);  // Convertir la lista a JSON
+            return JsonConvert.SerializeObject(riesgosList);
+
         }
+        
         public string ConvertirActosInsegurosAJson(DataGridView dgvActoInseguro)
         {
             List<Dictionary<string, object>> actosInsegurosList = new List<Dictionary<string, object>>();
@@ -875,16 +978,24 @@ namespace CapaPresentacion.Investigacion_Accidentes
             {
                 if (dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value != null)
                 {
+                    int idActoInseguro = Convert.ToInt32(dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value);
+
+                    // Omitir si es 17
+                    if (idActoInseguro == 9)
+                        continue;
+
                     Dictionary<string, object> actosInseguros = new Dictionary<string, object>
-                    {
-                        { "IdActoInseguro", Convert.ToInt32(dgvActoInseguro.Rows[i].Cells["idActoInseguro"].Value) }
-                    };
+            {
+                { "IdActoInseguro", idActoInseguro }
+            };
+
                     actosInsegurosList.Add(actosInseguros);
                 }
             }
 
-            return JsonConvert.SerializeObject(actosInsegurosList);  // Convertir la lista a JSON
+            return JsonConvert.SerializeObject(actosInsegurosList);
         }
+
         public string ConvertirCondicionesInsegurasAJson(DataGridView dgvCondicionesInseguras)
         {
             List<Dictionary<string, object>> condicionesInsegurasList = new List<Dictionary<string, object>>();
@@ -893,16 +1004,24 @@ namespace CapaPresentacion.Investigacion_Accidentes
             {
                 if (dgvCondicionesInseguras.Rows[i].Cells["idCondicionInsegura"].Value != null)
                 {
+                    int idCondicionInsegura = Convert.ToInt32(dgvCondicionesInseguras.Rows[i].Cells["idCondicionInsegura"].Value);
+
+                    // Omitir si es 17
+                    if (idCondicionInsegura == 8)
+                        continue;
+
                     Dictionary<string, object> condicionesInseguras = new Dictionary<string, object>
-                    {
-                        { "IdCondicionesInseguras", Convert.ToInt32(dgvCondicionesInseguras.Rows[i].Cells["idCondicionInsegura"].Value) }
-                    };
+            {
+                { "IdCondicionesInseguras", idCondicionInsegura }
+            };
+
                     condicionesInsegurasList.Add(condicionesInseguras);
                 }
             }
 
             return JsonConvert.SerializeObject(condicionesInsegurasList);  // Convertir la lista a JSON
         }
+
         public string ConvertirEnpleadosInvolucradosAJson(DataGridView dgvEmpleadosInvolucrados)
         {
             List<Dictionary<string, object>> empleadosInvolucradosList = new List<Dictionary<string, object>>();
@@ -1009,38 +1128,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
         }
 
-        private void btnGrabarRiesgo_Click(object sender, EventArgs e)
-        {
-
-            if (!string.IsNullOrWhiteSpace(txtOtroRiesgo.Text))
-            {
-                bool riesgoExistente = accidentesCN.VerificarRiesgoExiste(txtOtroRiesgo.Text);
-
-                if (riesgoExistente)
-                {
-                    var result = RJMessageBox.Show("Error, Este riesgo ya está registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    accidentesCN.InsertaNuevoRiesgo(txtOtroRiesgo.Text);
-
-                    txtOtroRiesgo.Text = "";
-                    txtOtroRiesgo.Visible = false;
-
-                    btnAgregarRiesgo.Visible = true;
-                    btnGrabarRiesgo.Visible = false;
-
-                    cargarRiesgos();
-                }
-            }
-            else
-            {
-                var result = RJMessageBox.Show("El campo 'Otro Riesgo' está vacío, por favor ingrese un riesgo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-
-        }
-
         private void btnAgregarRiesgo_Click(object sender, EventArgs e)
         {
 
@@ -1110,37 +1197,6 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
 
         }
-
-        private void btnGrabarActoInseguro_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(txtOtroActoInseguro.Text))
-            {
-                bool actoInseguroExistente = accidentesCN.VerificarActoInseguroExiste(txtOtroActoInseguro.Text);
-
-                if (actoInseguroExistente)
-                {
-                    var result = RJMessageBox.Show("Este acto inseguro ya está registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    accidentesCN.InsertaNuevoActoInseguro(txtOtroActoInseguro.Text);
-
-                    txtOtroActoInseguro.Text = "";
-                    txtOtroActoInseguro.Visible = false;
-
-                    btnAgregarActoInseguro.Visible = true;
-                    btnGrabar.Visible = false;
-
-                    cargarActosInseguros();
-                }
-            }
-            else
-            {
-                var result = RJMessageBox.Show("El campo 'Otro Acto Inseguro' está vacío, por favor ingrese un acto inseguro", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-        }
-
         private void btnAgregarCondicion_Click(object sender, EventArgs e)
         {
             if (cboxCondicionesInseguras.SelectedValue != null && !string.IsNullOrWhiteSpace(cboxCondicionesInseguras.SelectedValue.ToString()))
@@ -1156,7 +1212,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                     {
                         condicionInseguraIngresada = true;
                         var result = RJMessageBox.Show("Esta Condición Insegura ya ha sido Ingresada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        break; 
+                        break;
                     }
                 }
 
@@ -1172,34 +1228,190 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
 
         }
-
-        private void btnGrabarCondicionInsegura_Click(object sender, EventArgs e)
+        private void btnGrabarRiesgo_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtOtraCondicion.Text))
+            string nuevoRiesgo = txtOtroRiesgo.Text.Trim().ToUpper();
+
+            if (string.IsNullOrWhiteSpace(nuevoRiesgo))
             {
-                bool condicionInseguraExistente = accidentesCN.VerificarCondicionInseguraExiste(txtOtraCondicion.Text);
-
-                if (condicionInseguraExistente)
-                {
-                    var result = RJMessageBox.Show("Esta condición insegura ya está registrada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    accidentesCN.InsertaNuevaCondicionInsegura(txtOtraCondicion.Text);
-
-                    txtOtraCondicion.Text = "";
-                    txtOtraCondicion.Visible = false;
-
-                    btnAgregarCondicion.Visible = true;
-                    btnGrabarCondicionInsegura.Visible = false;
-
-                    cargarCondicionesInseguras();
-                }
+                RJMessageBox.Show("Debes escribir un riesgo antes de agregarlo.", "Campo vacío", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                var result = RJMessageBox.Show("El campo 'Otra Condición Insegura' está vacío, por favor ingrese una condición", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                bool yaExiste = false;
+
+                // Recorremos cada fila del DataGridView
+                foreach (DataGridViewRow fila in dgvRiesgos.Rows)
+                {
+                    if (fila.Cells[1].Value != null && fila.Cells[1].Value.ToString().ToUpper() == nuevoRiesgo)
+                    {
+                        yaExiste = true;
+                        break;
+                    }
+                }
+
+                if (!yaExiste)
+                {
+                    dgvRiesgos.Rows.Add(cboxRiesgos.SelectedValue, nuevoRiesgo);
+                }
+                else
+                {
+                    RJMessageBox.Show("Este riesgo ya ha sido agregado.", "Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                txtOtroRiesgo.Text = "";
             }
+
+            //if (!string.IsNullOrWhiteSpace(txtOtroRiesgo.Text))
+            //{
+            //    bool riesgoExistente = accidentesCN.VerificarRiesgoExiste(txtOtroRiesgo.Text);
+
+            //    if (riesgoExistente)
+            //    {
+            //        var result = RJMessageBox.Show("Error, Este riesgo ya está registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //    else
+            //    {
+            //        accidentesCN.InsertaNuevoRiesgo(txtOtroRiesgo.Text);
+
+            //        txtOtroRiesgo.Text = "";
+            //        txtOtroRiesgo.Visible = false;
+
+            //        btnAgregarRiesgo.Visible = true;
+            //        btnGrabarRiesgo.Visible = false;
+
+            //        cargarRiesgos();
+            //    }
+            //}
+            //else
+            //{
+            //    var result = RJMessageBox.Show("El campo 'Otro Riesgo' está vacío, por favor ingrese un riesgo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
+
+
+        }
+        private void btnGrabarActoInseguro_Click(object sender, EventArgs e)
+        {
+            string nuevoActoInseguro = txtOtroActoInseguro.Text.Trim().ToUpper();
+
+            if (string.IsNullOrWhiteSpace(nuevoActoInseguro))
+            {
+                RJMessageBox.Show("Debes escribir un Acto Inseguro antes de agregarlo.", "Campo vacío", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                bool yaExiste = false;
+
+                // Recorremos cada fila del DataGridView
+                foreach (DataGridViewRow fila in dgvActoInseguro.Rows)
+                {
+                    if (fila.Cells[1].Value != null && fila.Cells[1].Value.ToString().ToUpper() == nuevoActoInseguro)
+                    {
+                        yaExiste = true;
+                        break;
+                    }
+                }
+
+                if (!yaExiste)
+                {
+                    dgvActoInseguro.Rows.Add(cboxActoInseguro.SelectedValue, nuevoActoInseguro);
+                }
+                else
+                {
+                    RJMessageBox.Show("Este Acto Inseguro ya ha sido agregado.", "Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                txtOtroActoInseguro.Text = "";
+            }
+            //if (!string.IsNullOrWhiteSpace(txtOtroActoInseguro.Text))
+            //{
+            //    bool actoInseguroExistente = accidentesCN.VerificarActoInseguroExiste(txtOtroActoInseguro.Text);
+
+            //    if (actoInseguroExistente)
+            //    {
+            //        var result = RJMessageBox.Show("Este acto inseguro ya está registrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //    else
+            //    {
+            //        accidentesCN.InsertaNuevoActoInseguro(txtOtroActoInseguro.Text);
+
+            //        txtOtroActoInseguro.Text = "";
+            //        txtOtroActoInseguro.Visible = false;
+
+            //        btnAgregarActoInseguro.Visible = true;
+            //        btnGrabar.Visible = false;
+
+            //        cargarActosInseguros();
+            //    }
+            //}
+            //else
+            //{
+            //    var result = RJMessageBox.Show("El campo 'Otro Acto Inseguro' está vacío, por favor ingrese un acto inseguro", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
+
+        }
+
+       
+
+        private void btnGrabarCondicionInsegura_Click(object sender, EventArgs e)
+        {
+            string nuevaCondicionInsegura = txtOtraCondicion.Text.Trim().ToUpper();
+
+            if (string.IsNullOrWhiteSpace(nuevaCondicionInsegura))
+            {
+                RJMessageBox.Show("Debes escribir una condición insegura antes de agregarlo.", "Campo vacío", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                bool yaExiste = false;
+
+                // Recorremos cada fila del DataGridView
+                foreach (DataGridViewRow fila in dgvCondicionInsegura.Rows)
+                {
+                    if (fila.Cells[1].Value != null && fila.Cells[1].Value.ToString().ToUpper() == nuevaCondicionInsegura)
+                    {
+                        yaExiste = true;
+                        break;
+                    }
+                }
+
+                if (!yaExiste)
+                {
+                    dgvCondicionInsegura.Rows.Add(cboxCondicionesInseguras.SelectedValue, nuevaCondicionInsegura);
+                }
+                else
+                {
+                    RJMessageBox.Show("Esta Condición Insegura ya ha sido agregado.", "Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                txtOtraCondicion.Text = "";
+            }
+
+            //if (!string.IsNullOrWhiteSpace(txtOtraCondicion.Text))
+            //{
+            //    bool condicionInseguraExistente = accidentesCN.VerificarCondicionInseguraExiste(txtOtraCondicion.Text);
+
+            //    if (condicionInseguraExistente)
+            //    {
+            //        var result = RJMessageBox.Show("Esta condición insegura ya está registrada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //    else
+            //    {
+            //        accidentesCN.InsertaNuevaCondicionInsegura(txtOtraCondicion.Text);
+
+            //        txtOtraCondicion.Text = "";
+            //        txtOtraCondicion.Visible = false;
+
+            //        btnAgregarCondicion.Visible = true;
+            //        btnGrabarCondicionInsegura.Visible = false;
+
+            //        cargarCondicionesInseguras();
+            //    }
+            //}
+            //else
+            //{
+            //    var result = RJMessageBox.Show("El campo 'Otra Condición Insegura' está vacío, por favor ingrese una condición", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
 
         }
 
@@ -1636,5 +1848,17 @@ namespace CapaPresentacion.Investigacion_Accidentes
             }
         }
 
+        private void botonPersonalizado1_Click(object sender, EventArgs e)
+        {
+            string hola = ObtenerRiesgosOtros();
+            MessageBox.Show(hola);
+            MessageBox.Show(ConvertirRiesgosAJson(dgvRiesgos));
+            string hola2 = ObtenerActosInsegurosOtros();
+            MessageBox.Show(hola2);
+            MessageBox.Show(ConvertirActosInsegurosAJson(dgvActoInseguro));
+            string hola3 = ObtenerCondicionesInsegurasOtros();
+            MessageBox.Show(hola3);
+            MessageBox.Show(ConvertirCondicionesInsegurasAJson(dgvCondicionInsegura));
+        }
     }
 }
