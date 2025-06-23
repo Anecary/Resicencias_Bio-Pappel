@@ -31,131 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModificarExpediente));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedor = new System.Windows.Forms.Panel();
-            this.pDatosGenerales = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtHeredoFamiliar = new CapaPresentacion.TextPersonalizado();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label70 = new System.Windows.Forms.Label();
-            this.txtUltimaModificacion = new CapaPresentacion.TextPersonalizado();
-            this.label69 = new System.Windows.Forms.Label();
-            this.txtPuesto = new CapaPresentacion.TextPersonalizado();
-            this.label59 = new System.Windows.Forms.Label();
-            this.txtNombreEmpleado = new CapaPresentacion.TextPersonalizado();
-            this.label58 = new System.Windows.Forms.Label();
-            this.txtProceso = new CapaPresentacion.TextPersonalizado();
-            this.label68 = new System.Windows.Forms.Label();
-            this.txtFechaIngreso = new CapaPresentacion.TextPersonalizado();
-            this.label67 = new System.Windows.Forms.Label();
-            this.txtTelefono = new CapaPresentacion.TextPersonalizado();
-            this.label65 = new System.Windows.Forms.Label();
-            this.txtNSS = new CapaPresentacion.TextPersonalizado();
-            this.label63 = new System.Windows.Forms.Label();
-            this.txtEstadoCivil = new CapaPresentacion.TextPersonalizado();
-            this.label61 = new System.Windows.Forms.Label();
-            this.txtSexo = new CapaPresentacion.TextPersonalizado();
-            this.label54 = new System.Windows.Forms.Label();
-            this.txtEdad = new CapaPresentacion.TextPersonalizado();
-            this.label56 = new System.Windows.Forms.Label();
-            this.txtDomicilio = new CapaPresentacion.TextPersonalizado();
-            this.label57 = new System.Windows.Forms.Label();
-            this.txtNumeroNomina = new CapaPresentacion.TextPersonalizado();
-            this.cboxNumExpediente2 = new CapaPresentacion.comboBoxPersonalizado();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.txtIdEmpleado = new MaterialSkin.Controls.MaterialTextBox();
-            this.pNoPatologicos = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCasa = new CapaPresentacion.TextPersonalizado();
-            this.txtAlimentacion = new CapaPresentacion.TextPersonalizado();
-            this.txtAnimales = new CapaPresentacion.TextPersonalizado();
-            this.txtInmunizaciones = new CapaPresentacion.TextPersonalizado();
-            this.txtToxicomanias = new CapaPresentacion.TextPersonalizado();
-            this.txtTrabajosYActAnteriores = new CapaPresentacion.TextPersonalizado();
-            this.txtDeportesRecreacion = new CapaPresentacion.TextPersonalizado();
-            this.txtEntornoFamiliar = new CapaPresentacion.TextPersonalizado();
-            this.txtEscolaridad = new CapaPresentacion.TextPersonalizado();
-            this.pPatologicos = new System.Windows.Forms.Panel();
-            this.topePagina = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.rbtnTransfusiones = new CapaPresentacion.radioButtonPersonalizado();
-            this.label14 = new System.Windows.Forms.Label();
-            this.rbtnCirugias = new CapaPresentacion.radioButtonPersonalizado();
-            this.label13 = new System.Windows.Forms.Label();
-            this.rbtnHozpitalizaciones = new CapaPresentacion.radioButtonPersonalizado();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtAlergias = new CapaPresentacion.TextPersonalizado();
-            this.txtSNerviosoCentral = new CapaPresentacion.TextPersonalizado();
-            this.txtSCardiovascular = new CapaPresentacion.TextPersonalizado();
-            this.txtSRespiratorio = new CapaPresentacion.TextPersonalizado();
-            this.txtSGastrointestinal = new CapaPresentacion.TextPersonalizado();
-            this.txtSEndocrino = new CapaPresentacion.TextPersonalizado();
-            this.txtSGenitoUrinario = new CapaPresentacion.TextPersonalizado();
-            this.txtSMusculoEsqueletico = new CapaPresentacion.TextPersonalizado();
-            this.txtOrganoSentidos = new CapaPresentacion.TextPersonalizado();
-            this.txtGinecoObstetrico = new CapaPresentacion.TextPersonalizado();
-            this.cboxGrupoSanguineo = new MaterialSkin.Controls.MaterialComboBox();
-            this.txtGrupoSanguineo = new CapaPresentacion.TextPersonalizado();
-            this.pEstudiosParaclinicos = new System.Windows.Forms.Panel();
-            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.lblLugar = new System.Windows.Forms.Label();
-            this.dtpFechaApertura = new System.Windows.Forms.DateTimePicker();
-            this.txtDiagnostico = new CapaPresentacion.TextPersonalizado();
-            this.label40 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.txtEstudiosLaboratorio = new CapaPresentacion.TextPersonalizado();
-            this.txtEstudiosRadiologicos = new CapaPresentacion.TextPersonalizado();
-            this.txtOtros = new CapaPresentacion.TextPersonalizado();
             this.pExploracionFisica = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label53 = new System.Windows.Forms.Label();
-            this.txtTemperatura = new CapaPresentacion.TextPersonalizado();
             this.label52 = new System.Windows.Forms.Label();
-            this.txtTA = new CapaPresentacion.TextPersonalizado();
             this.label51 = new System.Windows.Forms.Label();
-            this.txtPulso = new CapaPresentacion.TextPersonalizado();
             this.label50 = new System.Windows.Forms.Label();
-            this.txtFR = new CapaPresentacion.TextPersonalizado();
             this.label49 = new System.Windows.Forms.Label();
-            this.txtFC = new CapaPresentacion.TextPersonalizado();
             this.label48 = new System.Windows.Forms.Label();
-            this.txtIMC = new CapaPresentacion.TextPersonalizado();
             this.label47 = new System.Windows.Forms.Label();
-            this.txtPeso = new CapaPresentacion.TextPersonalizado();
             this.label60 = new System.Windows.Forms.Label();
-            this.txtTalla = new CapaPresentacion.TextPersonalizado();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
@@ -172,6 +58,130 @@
             this.cboxGrado = new MaterialSkin.Controls.MaterialComboBox();
             this.txtConstitucionFisica = new MaterialSkin.Controls.MaterialTextBox();
             this.txtGrado = new MaterialSkin.Controls.MaterialTextBox();
+            this.pDatosGenerales = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txtIdEmpleado = new MaterialSkin.Controls.MaterialTextBox();
+            this.pNoPatologicos = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pPatologicos = new System.Windows.Forms.Panel();
+            this.topePagina = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cboxGrupoSanguineo = new MaterialSkin.Controls.MaterialComboBox();
+            this.pEstudiosParaclinicos = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label45 = new System.Windows.Forms.Label();
+            this.lblLugar = new System.Windows.Forms.Label();
+            this.dtpFechaApertura = new System.Windows.Forms.DateTimePicker();
+            this.label40 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.pSeccionesExpediente = new System.Windows.Forms.Panel();
+            this.btnEstudiosParaclinicos = new System.Windows.Forms.Button();
+            this.btnExploracionFisica = new System.Windows.Forms.Button();
+            this.btnPatologicos = new System.Windows.Forms.Button();
+            this.btnNoPatologicos = new System.Windows.Forms.Button();
+            this.btnDatosGenerales = new System.Windows.Forms.Button();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.txtHeredoFamiliar = new CapaPresentacion.TextPersonalizado();
+            this.txtUltimaModificacion = new CapaPresentacion.TextPersonalizado();
+            this.txtPuesto = new CapaPresentacion.TextPersonalizado();
+            this.txtNombreEmpleado = new CapaPresentacion.TextPersonalizado();
+            this.txtProceso = new CapaPresentacion.TextPersonalizado();
+            this.txtFechaIngreso = new CapaPresentacion.TextPersonalizado();
+            this.txtTelefono = new CapaPresentacion.TextPersonalizado();
+            this.txtNSS = new CapaPresentacion.TextPersonalizado();
+            this.txtEstadoCivil = new CapaPresentacion.TextPersonalizado();
+            this.txtSexo = new CapaPresentacion.TextPersonalizado();
+            this.txtEdad = new CapaPresentacion.TextPersonalizado();
+            this.txtDomicilio = new CapaPresentacion.TextPersonalizado();
+            this.txtNumeroNomina = new CapaPresentacion.TextPersonalizado();
+            this.cboxNumExpediente2 = new CapaPresentacion.comboBoxPersonalizado();
+            this.txtCasa = new CapaPresentacion.TextPersonalizado();
+            this.txtAlimentacion = new CapaPresentacion.TextPersonalizado();
+            this.txtAnimales = new CapaPresentacion.TextPersonalizado();
+            this.txtInmunizaciones = new CapaPresentacion.TextPersonalizado();
+            this.txtToxicomanias = new CapaPresentacion.TextPersonalizado();
+            this.txtTrabajosYActAnteriores = new CapaPresentacion.TextPersonalizado();
+            this.txtDeportesRecreacion = new CapaPresentacion.TextPersonalizado();
+            this.txtEntornoFamiliar = new CapaPresentacion.TextPersonalizado();
+            this.txtEscolaridad = new CapaPresentacion.TextPersonalizado();
+            this.rbtnTransfusiones = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnCirugias = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnHozpitalizaciones = new CapaPresentacion.radioButtonPersonalizado();
+            this.txtAlergias = new CapaPresentacion.TextPersonalizado();
+            this.txtSNerviosoCentral = new CapaPresentacion.TextPersonalizado();
+            this.txtSCardiovascular = new CapaPresentacion.TextPersonalizado();
+            this.txtSRespiratorio = new CapaPresentacion.TextPersonalizado();
+            this.txtSGastrointestinal = new CapaPresentacion.TextPersonalizado();
+            this.txtSEndocrino = new CapaPresentacion.TextPersonalizado();
+            this.txtSGenitoUrinario = new CapaPresentacion.TextPersonalizado();
+            this.txtSMusculoEsqueletico = new CapaPresentacion.TextPersonalizado();
+            this.txtOrganoSentidos = new CapaPresentacion.TextPersonalizado();
+            this.txtGinecoObstetrico = new CapaPresentacion.TextPersonalizado();
+            this.txtGrupoSanguineo = new CapaPresentacion.TextPersonalizado();
+            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
+            this.txtDiagnostico = new CapaPresentacion.TextPersonalizado();
+            this.txtEstudiosLaboratorio = new CapaPresentacion.TextPersonalizado();
+            this.txtEstudiosRadiologicos = new CapaPresentacion.TextPersonalizado();
+            this.txtOtros = new CapaPresentacion.TextPersonalizado();
+            this.txtTemperatura = new CapaPresentacion.TextPersonalizado();
+            this.txtTA = new CapaPresentacion.TextPersonalizado();
+            this.txtPulso = new CapaPresentacion.TextPersonalizado();
+            this.txtFR = new CapaPresentacion.TextPersonalizado();
+            this.txtFC = new CapaPresentacion.TextPersonalizado();
+            this.txtIMC = new CapaPresentacion.TextPersonalizado();
+            this.txtPeso = new CapaPresentacion.TextPersonalizado();
+            this.txtTalla = new CapaPresentacion.TextPersonalizado();
             this.txtCraneo = new CapaPresentacion.TextPersonalizado();
             this.txtOjos = new CapaPresentacion.TextPersonalizado();
             this.txtOidos = new CapaPresentacion.TextPersonalizado();
@@ -183,21 +193,13 @@
             this.txtGenitourinario = new CapaPresentacion.TextPersonalizado();
             this.txtMusculoEsqueletico = new CapaPresentacion.TextPersonalizado();
             this.txtNeurologico = new CapaPresentacion.TextPersonalizado();
-            this.pSeccionesExpediente = new System.Windows.Forms.Panel();
-            this.btnEstudiosParaclinicos = new System.Windows.Forms.Button();
-            this.btnExploracionFisica = new System.Windows.Forms.Button();
-            this.btnPatologicos = new System.Windows.Forms.Button();
-            this.btnNoPatologicos = new System.Windows.Forms.Button();
-            this.btnDatosGenerales = new System.Windows.Forms.Button();
-            this.panel34 = new System.Windows.Forms.Panel();
             this.btnCancelar = new CapaPresentacion.BotonPersonalizado();
             this.btnGrabarActualizacion = new CapaPresentacion.BotonPersonalizado();
             this.btnActualizar = new CapaPresentacion.BotonPersonalizado();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pContenedor.SuspendLayout();
+            this.pExploracionFisica.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.pDatosGenerales.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -208,8 +210,6 @@
             this.pEstudiosParaclinicos.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.pExploracionFisica.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.pSeccionesExpediente.SuspendLayout();
             this.panel34.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -230,16 +230,444 @@
             // 
             // pContenedor
             // 
-            this.pContenedor.Controls.Add(this.pExploracionFisica);
-            this.pContenedor.Controls.Add(this.pDatosGenerales);
             this.pContenedor.Controls.Add(this.pNoPatologicos);
             this.pContenedor.Controls.Add(this.pPatologicos);
             this.pContenedor.Controls.Add(this.pEstudiosParaclinicos);
+            this.pContenedor.Controls.Add(this.pExploracionFisica);
+            this.pContenedor.Controls.Add(this.pDatosGenerales);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(0, 190);
             this.pContenedor.Name = "pContenedor";
             this.pContenedor.Size = new System.Drawing.Size(945, 450);
             this.pContenedor.TabIndex = 15;
+            // 
+            // pExploracionFisica
+            // 
+            this.pExploracionFisica.AutoScroll = true;
+            this.pExploracionFisica.Controls.Add(this.label28);
+            this.pExploracionFisica.Controls.Add(this.panel10);
+            this.pExploracionFisica.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pExploracionFisica.Location = new System.Drawing.Point(0, 0);
+            this.pExploracionFisica.Name = "pExploracionFisica";
+            this.pExploracionFisica.Size = new System.Drawing.Size(945, 450);
+            this.pExploracionFisica.TabIndex = 113;
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Transparent;
+            this.label28.Location = new System.Drawing.Point(9, 1156);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(144, 18);
+            this.label28.TabIndex = 111;
+            this.label28.Text = "Trabajo habitual";
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.label53);
+            this.panel10.Controls.Add(this.txtTemperatura);
+            this.panel10.Controls.Add(this.label52);
+            this.panel10.Controls.Add(this.txtTA);
+            this.panel10.Controls.Add(this.label51);
+            this.panel10.Controls.Add(this.txtPulso);
+            this.panel10.Controls.Add(this.label50);
+            this.panel10.Controls.Add(this.txtFR);
+            this.panel10.Controls.Add(this.label49);
+            this.panel10.Controls.Add(this.txtFC);
+            this.panel10.Controls.Add(this.label48);
+            this.panel10.Controls.Add(this.txtIMC);
+            this.panel10.Controls.Add(this.label47);
+            this.panel10.Controls.Add(this.txtPeso);
+            this.panel10.Controls.Add(this.label60);
+            this.panel10.Controls.Add(this.txtTalla);
+            this.panel10.Controls.Add(this.label39);
+            this.panel10.Controls.Add(this.label38);
+            this.panel10.Controls.Add(this.label37);
+            this.panel10.Controls.Add(this.label36);
+            this.panel10.Controls.Add(this.label35);
+            this.panel10.Controls.Add(this.label34);
+            this.panel10.Controls.Add(this.label27);
+            this.panel10.Controls.Add(this.label25);
+            this.panel10.Controls.Add(this.label33);
+            this.panel10.Controls.Add(this.label31);
+            this.panel10.Controls.Add(this.label30);
+            this.panel10.Controls.Add(this.label29);
+            this.panel10.Controls.Add(this.cboxConstitucionFisica);
+            this.panel10.Controls.Add(this.cboxGrado);
+            this.panel10.Controls.Add(this.txtConstitucionFisica);
+            this.panel10.Controls.Add(this.txtGrado);
+            this.panel10.Controls.Add(this.txtCraneo);
+            this.panel10.Controls.Add(this.txtOjos);
+            this.panel10.Controls.Add(this.txtOidos);
+            this.panel10.Controls.Add(this.txtBoca);
+            this.panel10.Controls.Add(this.txtNariz);
+            this.panel10.Controls.Add(this.txtCuello);
+            this.panel10.Controls.Add(this.txtTorax);
+            this.panel10.Controls.Add(this.txtAbdomen);
+            this.panel10.Controls.Add(this.txtGenitourinario);
+            this.panel10.Controls.Add(this.txtMusculoEsqueletico);
+            this.panel10.Controls.Add(this.txtNeurologico);
+            this.panel10.Location = new System.Drawing.Point(16, 15);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(900, 1136);
+            this.panel10.TabIndex = 97;
+            // 
+            // label53
+            // 
+            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label53.Location = new System.Drawing.Point(693, 122);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(100, 16);
+            this.label53.TabIndex = 196;
+            this.label53.Text = "Temperatura:";
+            // 
+            // label52
+            // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label52.Location = new System.Drawing.Point(536, 122);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(39, 16);
+            this.label52.TabIndex = 194;
+            this.label52.Text = "T.A.:";
+            // 
+            // label51
+            // 
+            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label51.Location = new System.Drawing.Point(381, 122);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(50, 16);
+            this.label51.TabIndex = 192;
+            this.label51.Text = "Pulso:";
+            // 
+            // label50
+            // 
+            this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label50.Location = new System.Drawing.Point(225, 122);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(39, 16);
+            this.label50.TabIndex = 190;
+            this.label50.Text = "F.R.:";
+            // 
+            // label49
+            // 
+            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label49.Location = new System.Drawing.Point(19, 122);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(38, 16);
+            this.label49.TabIndex = 188;
+            this.label49.Text = "F.C.:";
+            // 
+            // label48
+            // 
+            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label48.Location = new System.Drawing.Point(536, 50);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(37, 16);
+            this.label48.TabIndex = 186;
+            this.label48.Text = "IMC:";
+            // 
+            // label47
+            // 
+            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label47.Location = new System.Drawing.Point(381, 52);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(47, 16);
+            this.label47.TabIndex = 184;
+            this.label47.Text = "Peso:";
+            // 
+            // label60
+            // 
+            this.label60.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label60.Location = new System.Drawing.Point(226, 53);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(47, 16);
+            this.label60.TabIndex = 182;
+            this.label60.Text = "Talla:";
+            // 
+            // label39
+            // 
+            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label39.Location = new System.Drawing.Point(19, 1038);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(96, 16);
+            this.label39.TabIndex = 152;
+            this.label39.Text = "Neurológico:";
+            // 
+            // label38
+            // 
+            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label38.Location = new System.Drawing.Point(19, 948);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(159, 16);
+            this.label38.TabIndex = 150;
+            this.label38.Text = "Músculo- Esquelético:";
+            // 
+            // label37
+            // 
+            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label37.Location = new System.Drawing.Point(19, 870);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(108, 16);
+            this.label37.TabIndex = 148;
+            this.label37.Text = "Genitourinario:";
+            // 
+            // label36
+            // 
+            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label36.Location = new System.Drawing.Point(19, 787);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(77, 16);
+            this.label36.TabIndex = 146;
+            this.label36.Text = "Abdomen:";
+            // 
+            // label35
+            // 
+            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label35.Location = new System.Drawing.Point(19, 696);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(51, 16);
+            this.label35.TabIndex = 144;
+            this.label35.Text = "Tórax:";
+            // 
+            // label34
+            // 
+            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label34.Location = new System.Drawing.Point(19, 614);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(55, 16);
+            this.label34.TabIndex = 142;
+            this.label34.Text = "Cuello:";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label27.Location = new System.Drawing.Point(19, 531);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(47, 16);
+            this.label27.TabIndex = 140;
+            this.label27.Text = "Boca:";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label25.Location = new System.Drawing.Point(19, 449);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(47, 16);
+            this.label25.TabIndex = 138;
+            this.label25.Text = "Nariz:";
+            // 
+            // label33
+            // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label33.Location = new System.Drawing.Point(19, 359);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(52, 16);
+            this.label33.TabIndex = 136;
+            this.label33.Text = "Oídos:";
+            // 
+            // label31
+            // 
+            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label31.Location = new System.Drawing.Point(19, 272);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(43, 16);
+            this.label31.TabIndex = 134;
+            this.label31.Text = "Ojos:";
+            // 
+            // label30
+            // 
+            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label30.Location = new System.Drawing.Point(19, 189);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(61, 16);
+            this.label30.TabIndex = 132;
+            this.label30.Text = "Cráneo:";
+            // 
+            // label29
+            // 
+            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label29.Location = new System.Drawing.Point(12, 10);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(206, 25);
+            this.label29.TabIndex = 96;
+            this.label29.Text = "Exploración Física";
+            // 
+            // cboxConstitucionFisica
+            // 
+            this.cboxConstitucionFisica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxConstitucionFisica.AutoResize = false;
+            this.cboxConstitucionFisica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxConstitucionFisica.Depth = 0;
+            this.cboxConstitucionFisica.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxConstitucionFisica.DropDownHeight = 174;
+            this.cboxConstitucionFisica.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxConstitucionFisica.DropDownWidth = 121;
+            this.cboxConstitucionFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxConstitucionFisica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.cboxConstitucionFisica.FormattingEnabled = true;
+            this.cboxConstitucionFisica.Hint = "Constitución Física:";
+            this.cboxConstitucionFisica.IntegralHeight = false;
+            this.cboxConstitucionFisica.ItemHeight = 43;
+            this.cboxConstitucionFisica.Items.AddRange(new object[] {
+            "Delgada",
+            "Promedio",
+            "Robusta",
+            "Atlética",
+            "Gruesa",
+            "Musculosa",
+            "Pequeña",
+            "Fuerte",
+            "Frágil",
+            "En forma",
+            "Débil",
+            "Regular",
+            "Corporatura grande",
+            "Corporatura pequeña",
+            "Constitución normal"});
+            this.cboxConstitucionFisica.Location = new System.Drawing.Point(19, 57);
+            this.cboxConstitucionFisica.MaxDropDownItems = 4;
+            this.cboxConstitucionFisica.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxConstitucionFisica.Name = "cboxConstitucionFisica";
+            this.cboxConstitucionFisica.Size = new System.Drawing.Size(180, 49);
+            this.cboxConstitucionFisica.StartIndex = 0;
+            this.cboxConstitucionFisica.TabIndex = 114;
+            // 
+            // cboxGrado
+            // 
+            this.cboxGrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxGrado.AutoResize = false;
+            this.cboxGrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxGrado.Depth = 0;
+            this.cboxGrado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxGrado.DropDownHeight = 174;
+            this.cboxGrado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxGrado.DropDownWidth = 121;
+            this.cboxGrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxGrado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.cboxGrado.FormattingEnabled = true;
+            this.cboxGrado.Hint = "Grado:";
+            this.cboxGrado.IntegralHeight = false;
+            this.cboxGrado.ItemHeight = 43;
+            this.cboxGrado.Items.AddRange(new object[] {
+            "Bajo peso (delgadez)",
+            "Delgadez severa",
+            "Delgadez moderada",
+            "Delgadez leve",
+            "Peso normal",
+            "Sobrepeso",
+            "Obesidad tipo I",
+            "Obesidad tipo II",
+            "Obesidad tipo III"});
+            this.cboxGrado.Location = new System.Drawing.Point(693, 57);
+            this.cboxGrado.MaxDropDownItems = 4;
+            this.cboxGrado.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxGrado.Name = "cboxGrado";
+            this.cboxGrado.Size = new System.Drawing.Size(180, 49);
+            this.cboxGrado.StartIndex = 0;
+            this.cboxGrado.TabIndex = 115;
+            // 
+            // txtConstitucionFisica
+            // 
+            this.txtConstitucionFisica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtConstitucionFisica.AnimateReadOnly = false;
+            this.txtConstitucionFisica.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConstitucionFisica.Depth = 0;
+            this.txtConstitucionFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtConstitucionFisica.Hint = "Constitución Física::";
+            this.txtConstitucionFisica.LeadingIcon = null;
+            this.txtConstitucionFisica.Location = new System.Drawing.Point(19, 56);
+            this.txtConstitucionFisica.MaxLength = 50;
+            this.txtConstitucionFisica.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtConstitucionFisica.Multiline = false;
+            this.txtConstitucionFisica.Name = "txtConstitucionFisica";
+            this.txtConstitucionFisica.Size = new System.Drawing.Size(178, 50);
+            this.txtConstitucionFisica.TabIndex = 154;
+            this.txtConstitucionFisica.Text = "";
+            this.txtConstitucionFisica.TrailingIcon = null;
+            this.txtConstitucionFisica.Visible = false;
+            // 
+            // txtGrado
+            // 
+            this.txtGrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtGrado.AnimateReadOnly = false;
+            this.txtGrado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGrado.Depth = 0;
+            this.txtGrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtGrado.Hint = "Grado:";
+            this.txtGrado.LeadingIcon = null;
+            this.txtGrado.Location = new System.Drawing.Point(693, 56);
+            this.txtGrado.MaxLength = 50;
+            this.txtGrado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtGrado.Multiline = false;
+            this.txtGrado.Name = "txtGrado";
+            this.txtGrado.Size = new System.Drawing.Size(178, 50);
+            this.txtGrado.TabIndex = 153;
+            this.txtGrado.Text = "";
+            this.txtGrado.TrailingIcon = null;
+            this.txtGrado.Visible = false;
             // 
             // pDatosGenerales
             // 
@@ -265,30 +693,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(900, 288);
             this.panel4.TabIndex = 112;
-            // 
-            // txtHeredoFamiliar
-            // 
-            this.txtHeredoFamiliar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtHeredoFamiliar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtHeredoFamiliar.BorderColor = System.Drawing.Color.Gray;
-            this.txtHeredoFamiliar.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtHeredoFamiliar.BorderRadius = 12;
-            this.txtHeredoFamiliar.BorderSize = 2;
-            this.txtHeredoFamiliar.Enabled = false;
-            this.txtHeredoFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHeredoFamiliar.ForeColor = System.Drawing.Color.DimGray;
-            this.txtHeredoFamiliar.Location = new System.Drawing.Point(13, 77);
-            this.txtHeredoFamiliar.Margin = new System.Windows.Forms.Padding(4);
-            this.txtHeredoFamiliar.MaxLength = 16383;
-            this.txtHeredoFamiliar.Multiline = true;
-            this.txtHeredoFamiliar.Name = "txtHeredoFamiliar";
-            this.txtHeredoFamiliar.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtHeredoFamiliar.PasswordChar = false;
-            this.txtHeredoFamiliar.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtHeredoFamiliar.PlaceholderText = "";
-            this.txtHeredoFamiliar.Size = new System.Drawing.Size(875, 190);
-            this.txtHeredoFamiliar.TabIndex = 179;
-            this.txtHeredoFamiliar.UnderlinedStyle = true;
             // 
             // label32
             // 
@@ -374,30 +778,6 @@
             this.label70.TabIndex = 207;
             this.label70.Text = "Última Modificación: ";
             // 
-            // txtUltimaModificacion
-            // 
-            this.txtUltimaModificacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtUltimaModificacion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtUltimaModificacion.BorderColor = System.Drawing.Color.Gray;
-            this.txtUltimaModificacion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtUltimaModificacion.BorderRadius = 12;
-            this.txtUltimaModificacion.BorderSize = 2;
-            this.txtUltimaModificacion.Enabled = false;
-            this.txtUltimaModificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUltimaModificacion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUltimaModificacion.Location = new System.Drawing.Point(621, 60);
-            this.txtUltimaModificacion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUltimaModificacion.MaxLength = 32767;
-            this.txtUltimaModificacion.Multiline = false;
-            this.txtUltimaModificacion.Name = "txtUltimaModificacion";
-            this.txtUltimaModificacion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtUltimaModificacion.PasswordChar = false;
-            this.txtUltimaModificacion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtUltimaModificacion.PlaceholderText = "";
-            this.txtUltimaModificacion.Size = new System.Drawing.Size(263, 35);
-            this.txtUltimaModificacion.TabIndex = 206;
-            this.txtUltimaModificacion.UnderlinedStyle = true;
-            // 
             // label69
             // 
             this.label69.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -409,30 +789,6 @@
             this.label69.Size = new System.Drawing.Size(59, 16);
             this.label69.TabIndex = 205;
             this.label69.Text = "Puesto:";
-            // 
-            // txtPuesto
-            // 
-            this.txtPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtPuesto.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPuesto.BorderColor = System.Drawing.Color.Gray;
-            this.txtPuesto.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtPuesto.BorderRadius = 12;
-            this.txtPuesto.BorderSize = 2;
-            this.txtPuesto.Enabled = false;
-            this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPuesto.Location = new System.Drawing.Point(13, 390);
-            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPuesto.MaxLength = 32767;
-            this.txtPuesto.Multiline = false;
-            this.txtPuesto.Name = "txtPuesto";
-            this.txtPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtPuesto.PasswordChar = false;
-            this.txtPuesto.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtPuesto.PlaceholderText = "";
-            this.txtPuesto.Size = new System.Drawing.Size(646, 35);
-            this.txtPuesto.TabIndex = 204;
-            this.txtPuesto.UnderlinedStyle = true;
             // 
             // label59
             // 
@@ -446,30 +802,6 @@
             this.label59.TabIndex = 203;
             this.label59.Text = "Nombre del colaborador:";
             // 
-            // txtNombreEmpleado
-            // 
-            this.txtNombreEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNombreEmpleado.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombreEmpleado.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreEmpleado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreEmpleado.BorderRadius = 12;
-            this.txtNombreEmpleado.BorderSize = 2;
-            this.txtNombreEmpleado.Enabled = false;
-            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(13, 128);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreEmpleado.MaxLength = 32767;
-            this.txtNombreEmpleado.Multiline = false;
-            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
-            this.txtNombreEmpleado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreEmpleado.PasswordChar = false;
-            this.txtNombreEmpleado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreEmpleado.PlaceholderText = "";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(871, 35);
-            this.txtNombreEmpleado.TabIndex = 202;
-            this.txtNombreEmpleado.UnderlinedStyle = true;
-            // 
             // label58
             // 
             this.label58.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -481,30 +813,6 @@
             this.label58.Size = new System.Drawing.Size(69, 16);
             this.label58.TabIndex = 201;
             this.label58.Text = "Proceso:";
-            // 
-            // txtProceso
-            // 
-            this.txtProceso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtProceso.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtProceso.BorderColor = System.Drawing.Color.Gray;
-            this.txtProceso.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtProceso.BorderRadius = 12;
-            this.txtProceso.BorderSize = 2;
-            this.txtProceso.Enabled = false;
-            this.txtProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProceso.ForeColor = System.Drawing.Color.DimGray;
-            this.txtProceso.Location = new System.Drawing.Point(687, 321);
-            this.txtProceso.Margin = new System.Windows.Forms.Padding(4);
-            this.txtProceso.MaxLength = 32767;
-            this.txtProceso.Multiline = false;
-            this.txtProceso.Name = "txtProceso";
-            this.txtProceso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtProceso.PasswordChar = false;
-            this.txtProceso.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtProceso.PlaceholderText = "";
-            this.txtProceso.Size = new System.Drawing.Size(199, 35);
-            this.txtProceso.TabIndex = 200;
-            this.txtProceso.UnderlinedStyle = true;
             // 
             // label68
             // 
@@ -518,30 +826,6 @@
             this.label68.TabIndex = 199;
             this.label68.Text = "Fecha De Ingreso:";
             // 
-            // txtFechaIngreso
-            // 
-            this.txtFechaIngreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtFechaIngreso.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtFechaIngreso.BorderColor = System.Drawing.Color.Gray;
-            this.txtFechaIngreso.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtFechaIngreso.BorderRadius = 12;
-            this.txtFechaIngreso.BorderSize = 2;
-            this.txtFechaIngreso.Enabled = false;
-            this.txtFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaIngreso.ForeColor = System.Drawing.Color.DimGray;
-            this.txtFechaIngreso.Location = new System.Drawing.Point(687, 390);
-            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFechaIngreso.MaxLength = 32767;
-            this.txtFechaIngreso.Multiline = false;
-            this.txtFechaIngreso.Name = "txtFechaIngreso";
-            this.txtFechaIngreso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtFechaIngreso.PasswordChar = false;
-            this.txtFechaIngreso.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtFechaIngreso.PlaceholderText = "";
-            this.txtFechaIngreso.Size = new System.Drawing.Size(199, 35);
-            this.txtFechaIngreso.TabIndex = 198;
-            this.txtFechaIngreso.UnderlinedStyle = true;
-            // 
             // label67
             // 
             this.label67.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -553,30 +837,6 @@
             this.label67.Size = new System.Drawing.Size(73, 16);
             this.label67.TabIndex = 197;
             this.label67.Text = "Teléfono:";
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTelefono.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtTelefono.BorderColor = System.Drawing.Color.Gray;
-            this.txtTelefono.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTelefono.BorderRadius = 12;
-            this.txtTelefono.BorderSize = 2;
-            this.txtTelefono.Enabled = false;
-            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTelefono.Location = new System.Drawing.Point(687, 254);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTelefono.MaxLength = 32767;
-            this.txtTelefono.Multiline = false;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTelefono.PasswordChar = false;
-            this.txtTelefono.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTelefono.PlaceholderText = "";
-            this.txtTelefono.Size = new System.Drawing.Size(199, 35);
-            this.txtTelefono.TabIndex = 196;
-            this.txtTelefono.UnderlinedStyle = true;
             // 
             // label65
             // 
@@ -590,30 +850,6 @@
             this.label65.TabIndex = 195;
             this.label65.Text = "No. IMSS:";
             // 
-            // txtNSS
-            // 
-            this.txtNSS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNSS.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNSS.BorderColor = System.Drawing.Color.Gray;
-            this.txtNSS.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNSS.BorderRadius = 12;
-            this.txtNSS.BorderSize = 2;
-            this.txtNSS.Enabled = false;
-            this.txtNSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNSS.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNSS.Location = new System.Drawing.Point(687, 189);
-            this.txtNSS.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNSS.MaxLength = 32767;
-            this.txtNSS.Multiline = false;
-            this.txtNSS.Name = "txtNSS";
-            this.txtNSS.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNSS.PasswordChar = false;
-            this.txtNSS.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNSS.PlaceholderText = "";
-            this.txtNSS.Size = new System.Drawing.Size(199, 35);
-            this.txtNSS.TabIndex = 194;
-            this.txtNSS.UnderlinedStyle = true;
-            // 
             // label63
             // 
             this.label63.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -625,30 +861,6 @@
             this.label63.Size = new System.Drawing.Size(94, 16);
             this.label63.TabIndex = 193;
             this.label63.Text = "Estado Civil:";
-            // 
-            // txtEstadoCivil
-            // 
-            this.txtEstadoCivil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtEstadoCivil.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEstadoCivil.BorderColor = System.Drawing.Color.Gray;
-            this.txtEstadoCivil.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEstadoCivil.BorderRadius = 12;
-            this.txtEstadoCivil.BorderSize = 2;
-            this.txtEstadoCivil.Enabled = false;
-            this.txtEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstadoCivil.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEstadoCivil.Location = new System.Drawing.Point(463, 189);
-            this.txtEstadoCivil.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEstadoCivil.MaxLength = 32767;
-            this.txtEstadoCivil.Multiline = false;
-            this.txtEstadoCivil.Name = "txtEstadoCivil";
-            this.txtEstadoCivil.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEstadoCivil.PasswordChar = false;
-            this.txtEstadoCivil.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEstadoCivil.PlaceholderText = "";
-            this.txtEstadoCivil.Size = new System.Drawing.Size(199, 35);
-            this.txtEstadoCivil.TabIndex = 192;
-            this.txtEstadoCivil.UnderlinedStyle = true;
             // 
             // label61
             // 
@@ -662,30 +874,6 @@
             this.label61.TabIndex = 191;
             this.label61.Text = "Sexo:";
             // 
-            // txtSexo
-            // 
-            this.txtSexo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtSexo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtSexo.BorderColor = System.Drawing.Color.Gray;
-            this.txtSexo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSexo.BorderRadius = 12;
-            this.txtSexo.BorderSize = 2;
-            this.txtSexo.Enabled = false;
-            this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSexo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSexo.Location = new System.Drawing.Point(239, 189);
-            this.txtSexo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSexo.MaxLength = 32767;
-            this.txtSexo.Multiline = false;
-            this.txtSexo.Name = "txtSexo";
-            this.txtSexo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSexo.PasswordChar = false;
-            this.txtSexo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSexo.PlaceholderText = "";
-            this.txtSexo.Size = new System.Drawing.Size(199, 35);
-            this.txtSexo.TabIndex = 190;
-            this.txtSexo.UnderlinedStyle = true;
-            // 
             // label54
             // 
             this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -697,30 +885,6 @@
             this.label54.Size = new System.Drawing.Size(48, 16);
             this.label54.TabIndex = 189;
             this.label54.Text = "Edad:";
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtEdad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEdad.BorderColor = System.Drawing.Color.Gray;
-            this.txtEdad.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEdad.BorderRadius = 12;
-            this.txtEdad.BorderSize = 2;
-            this.txtEdad.Enabled = false;
-            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEdad.Location = new System.Drawing.Point(13, 189);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEdad.MaxLength = 32767;
-            this.txtEdad.Multiline = false;
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEdad.PasswordChar = false;
-            this.txtEdad.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEdad.PlaceholderText = "";
-            this.txtEdad.Size = new System.Drawing.Size(199, 35);
-            this.txtEdad.TabIndex = 188;
-            this.txtEdad.UnderlinedStyle = true;
             // 
             // label56
             // 
@@ -734,30 +898,6 @@
             this.label56.TabIndex = 179;
             this.label56.Text = "Domicilio:";
             // 
-            // txtDomicilio
-            // 
-            this.txtDomicilio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtDomicilio.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtDomicilio.BorderColor = System.Drawing.Color.Gray;
-            this.txtDomicilio.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtDomicilio.BorderRadius = 12;
-            this.txtDomicilio.BorderSize = 2;
-            this.txtDomicilio.Enabled = false;
-            this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDomicilio.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDomicilio.Location = new System.Drawing.Point(13, 273);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDomicilio.MaxLength = 32767;
-            this.txtDomicilio.Multiline = true;
-            this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDomicilio.PasswordChar = false;
-            this.txtDomicilio.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDomicilio.PlaceholderText = "";
-            this.txtDomicilio.Size = new System.Drawing.Size(647, 86);
-            this.txtDomicilio.TabIndex = 178;
-            this.txtDomicilio.UnderlinedStyle = true;
-            // 
             // label57
             // 
             this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -769,54 +909,6 @@
             this.label57.Size = new System.Drawing.Size(148, 16);
             this.label57.TabIndex = 177;
             this.label57.Text = "Número de Nómina: ";
-            // 
-            // txtNumeroNomina
-            // 
-            this.txtNumeroNomina.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNumeroNomina.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNumeroNomina.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumeroNomina.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumeroNomina.BorderRadius = 12;
-            this.txtNumeroNomina.BorderSize = 2;
-            this.txtNumeroNomina.Enabled = false;
-            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumeroNomina.Location = new System.Drawing.Point(405, 60);
-            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumeroNomina.MaxLength = 32767;
-            this.txtNumeroNomina.Multiline = false;
-            this.txtNumeroNomina.Name = "txtNumeroNomina";
-            this.txtNumeroNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumeroNomina.PasswordChar = false;
-            this.txtNumeroNomina.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumeroNomina.PlaceholderText = "";
-            this.txtNumeroNomina.Size = new System.Drawing.Size(188, 35);
-            this.txtNumeroNomina.TabIndex = 176;
-            this.txtNumeroNomina.UnderlinedStyle = true;
-            // 
-            // cboxNumExpediente2
-            // 
-            this.cboxNumExpediente2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxNumExpediente2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cboxNumExpediente2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cboxNumExpediente2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cboxNumExpediente2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.cboxNumExpediente2.BorderSize = 1;
-            this.cboxNumExpediente2.DisplayMember = "";
-            this.cboxNumExpediente2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cboxNumExpediente2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxNumExpediente2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.cboxNumExpediente2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.cboxNumExpediente2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cboxNumExpediente2.ListTextColor = System.Drawing.Color.DimGray;
-            this.cboxNumExpediente2.Location = new System.Drawing.Point(140, 44);
-            this.cboxNumExpediente2.MinimumSize = new System.Drawing.Size(200, 50);
-            this.cboxNumExpediente2.Name = "cboxNumExpediente2";
-            this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(1);
-            this.cboxNumExpediente2.Size = new System.Drawing.Size(252, 50);
-            this.cboxNumExpediente2.TabIndex = 121;
-            this.cboxNumExpediente2.ValueMember = "";
-            this.cboxNumExpediente2.OnSelectedIndexChanged += new System.EventHandler(this.cboxNumExpediente2_OnSelectedIndexChanged);
             // 
             // label1
             // 
@@ -849,7 +941,7 @@
             this.txtIdEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdEmpleado.Depth = 0;
             this.txtIdEmpleado.Enabled = false;
-            this.txtIdEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleado.Hint = "IdEmpleado";
             this.txtIdEmpleado.LeadingIcon = null;
             this.txtIdEmpleado.Location = new System.Drawing.Point(687, 106);
@@ -878,7 +970,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(3, 895);
+            this.label4.Location = new System.Drawing.Point(11, 889);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(144, 18);
             this.label4.TabIndex = 111;
@@ -908,7 +1000,7 @@
             this.panel6.Controls.Add(this.txtDeportesRecreacion);
             this.panel6.Controls.Add(this.txtEntornoFamiliar);
             this.panel6.Controls.Add(this.txtEscolaridad);
-            this.panel6.Location = new System.Drawing.Point(8, 19);
+            this.panel6.Location = new System.Drawing.Point(16, 13);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(900, 873);
             this.panel6.TabIndex = 97;
@@ -1032,6 +1124,900 @@
             this.label5.Size = new System.Drawing.Size(178, 25);
             this.label5.TabIndex = 96;
             this.label5.Text = "No Patológicos:";
+            // 
+            // pPatologicos
+            // 
+            this.pPatologicos.AutoScroll = true;
+            this.pPatologicos.Controls.Add(this.topePagina);
+            this.pPatologicos.Controls.Add(this.panel8);
+            this.pPatologicos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pPatologicos.Location = new System.Drawing.Point(0, 0);
+            this.pPatologicos.Name = "pPatologicos";
+            this.pPatologicos.Size = new System.Drawing.Size(945, 450);
+            this.pPatologicos.TabIndex = 112;
+            // 
+            // topePagina
+            // 
+            this.topePagina.AutoSize = true;
+            this.topePagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.topePagina.ForeColor = System.Drawing.Color.Transparent;
+            this.topePagina.Location = new System.Drawing.Point(1, 974);
+            this.topePagina.Name = "topePagina";
+            this.topePagina.Size = new System.Drawing.Size(111, 16);
+            this.topePagina.TabIndex = 112;
+            this.topePagina.Text = "Tipo de Lesión";
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.Controls.Add(this.label46);
+            this.panel8.Controls.Add(this.label24);
+            this.panel8.Controls.Add(this.label12);
+            this.panel8.Controls.Add(this.label23);
+            this.panel8.Controls.Add(this.label21);
+            this.panel8.Controls.Add(this.label20);
+            this.panel8.Controls.Add(this.label19);
+            this.panel8.Controls.Add(this.label18);
+            this.panel8.Controls.Add(this.label17);
+            this.panel8.Controls.Add(this.label16);
+            this.panel8.Controls.Add(this.label15);
+            this.panel8.Controls.Add(this.rbtnTransfusiones);
+            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.rbtnCirugias);
+            this.panel8.Controls.Add(this.label13);
+            this.panel8.Controls.Add(this.rbtnHozpitalizaciones);
+            this.panel8.Controls.Add(this.label64);
+            this.panel8.Controls.Add(this.label22);
+            this.panel8.Controls.Add(this.txtAlergias);
+            this.panel8.Controls.Add(this.txtSNerviosoCentral);
+            this.panel8.Controls.Add(this.txtSCardiovascular);
+            this.panel8.Controls.Add(this.txtSRespiratorio);
+            this.panel8.Controls.Add(this.txtSGastrointestinal);
+            this.panel8.Controls.Add(this.txtSEndocrino);
+            this.panel8.Controls.Add(this.txtSGenitoUrinario);
+            this.panel8.Controls.Add(this.txtSMusculoEsqueletico);
+            this.panel8.Controls.Add(this.txtOrganoSentidos);
+            this.panel8.Controls.Add(this.txtGinecoObstetrico);
+            this.panel8.Controls.Add(this.cboxGrupoSanguineo);
+            this.panel8.Controls.Add(this.txtGrupoSanguineo);
+            this.panel8.Location = new System.Drawing.Point(12, 18);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(900, 949);
+            this.panel8.TabIndex = 97;
+            // 
+            // label46
+            // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label46.Location = new System.Drawing.Point(630, 40);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(69, 16);
+            this.label46.TabIndex = 182;
+            this.label46.Text = "Alérgias:";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label24.Location = new System.Drawing.Point(18, 863);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(131, 16);
+            this.label24.TabIndex = 148;
+            this.label24.Text = "Grupo Sanguíneo:";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label12.Location = new System.Drawing.Point(18, 784);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(144, 16);
+            this.label12.TabIndex = 146;
+            this.label12.Text = "Gineco-Obstétricos:";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label23.Location = new System.Drawing.Point(18, 696);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(172, 16);
+            this.label23.TabIndex = 144;
+            this.label23.Text = "Órgano de los sentidos:";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label21.Location = new System.Drawing.Point(18, 611);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(214, 16);
+            this.label21.TabIndex = 142;
+            this.label21.Text = "Sistema Músculo-esquelético:";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label20.Location = new System.Drawing.Point(18, 530);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(173, 16);
+            this.label20.TabIndex = 140;
+            this.label20.Text = "Sistema Genito-urinario:";
+            // 
+            // label19
+            // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label19.Location = new System.Drawing.Point(18, 445);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(141, 16);
+            this.label19.TabIndex = 138;
+            this.label19.Text = "Sistema Endócrino:";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label18.Location = new System.Drawing.Point(18, 357);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(179, 16);
+            this.label18.TabIndex = 136;
+            this.label18.Text = "Sistema Gastrointestinal:";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label17.Location = new System.Drawing.Point(18, 277);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(157, 16);
+            this.label17.TabIndex = 134;
+            this.label17.Text = "Sistema Respiratorio:";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label16.Location = new System.Drawing.Point(18, 193);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(176, 16);
+            this.label16.TabIndex = 132;
+            this.label16.Text = "Sistema Cardiovascular:";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label15.Location = new System.Drawing.Point(18, 114);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(187, 16);
+            this.label15.TabIndex = 130;
+            this.label15.Text = "Sistema Nervioso Central:";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label14.Location = new System.Drawing.Point(417, 60);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 16);
+            this.label14.TabIndex = 127;
+            this.label14.Text = "Transfusiones:";
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label13.Location = new System.Drawing.Point(252, 60);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 16);
+            this.label13.TabIndex = 125;
+            this.label13.Text = "Cirugías:";
+            // 
+            // label64
+            // 
+            this.label64.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label64.Location = new System.Drawing.Point(18, 60);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(135, 16);
+            this.label64.TabIndex = 123;
+            this.label64.Text = "Hospitalizaciones:";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label22.Location = new System.Drawing.Point(12, 10);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(142, 25);
+            this.label22.TabIndex = 96;
+            this.label22.Text = "Patológicos:";
+            // 
+            // cboxGrupoSanguineo
+            // 
+            this.cboxGrupoSanguineo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxGrupoSanguineo.AutoResize = false;
+            this.cboxGrupoSanguineo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxGrupoSanguineo.Depth = 0;
+            this.cboxGrupoSanguineo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxGrupoSanguineo.DropDownHeight = 174;
+            this.cboxGrupoSanguineo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxGrupoSanguineo.DropDownWidth = 121;
+            this.cboxGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxGrupoSanguineo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxGrupoSanguineo.FormattingEnabled = true;
+            this.cboxGrupoSanguineo.IntegralHeight = false;
+            this.cboxGrupoSanguineo.ItemHeight = 43;
+            this.cboxGrupoSanguineo.Items.AddRange(new object[] {
+            "O+",
+            "O-",
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-"});
+            this.cboxGrupoSanguineo.Location = new System.Drawing.Point(18, 887);
+            this.cboxGrupoSanguineo.MaxDropDownItems = 4;
+            this.cboxGrupoSanguineo.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxGrupoSanguineo.Name = "cboxGrupoSanguineo";
+            this.cboxGrupoSanguineo.Size = new System.Drawing.Size(863, 49);
+            this.cboxGrupoSanguineo.StartIndex = 0;
+            this.cboxGrupoSanguineo.TabIndex = 150;
+            this.cboxGrupoSanguineo.Visible = false;
+            // 
+            // pEstudiosParaclinicos
+            // 
+            this.pEstudiosParaclinicos.AutoScroll = true;
+            this.pEstudiosParaclinicos.Controls.Add(this.btnGrabar);
+            this.pEstudiosParaclinicos.Controls.Add(this.panel7);
+            this.pEstudiosParaclinicos.Controls.Add(this.label40);
+            this.pEstudiosParaclinicos.Controls.Add(this.panel9);
+            this.pEstudiosParaclinicos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pEstudiosParaclinicos.Location = new System.Drawing.Point(0, 0);
+            this.pEstudiosParaclinicos.Name = "pEstudiosParaclinicos";
+            this.pEstudiosParaclinicos.Size = new System.Drawing.Size(945, 450);
+            this.pEstudiosParaclinicos.TabIndex = 113;
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel7.Controls.Add(this.label45);
+            this.panel7.Controls.Add(this.lblLugar);
+            this.panel7.Controls.Add(this.dtpFechaApertura);
+            this.panel7.Controls.Add(this.txtDiagnostico);
+            this.panel7.Location = new System.Drawing.Point(13, 686);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(900, 274);
+            this.panel7.TabIndex = 142;
+            // 
+            // label45
+            // 
+            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label45.Location = new System.Drawing.Point(19, 13);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(94, 16);
+            this.label45.TabIndex = 138;
+            this.label45.Text = "Diagnóstico:";
+            // 
+            // lblLugar
+            // 
+            this.lblLugar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblLugar.AutoSize = true;
+            this.lblLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLugar.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblLugar.Location = new System.Drawing.Point(19, 241);
+            this.lblLugar.Name = "lblLugar";
+            this.lblLugar.Size = new System.Drawing.Size(258, 16);
+            this.lblLugar.TabIndex = 141;
+            this.lblLugar.Text = "Atenquique, Mpio. de Tuxpan, Jal.; a\t\t\t\t\t\t\t\t\t";
+            // 
+            // dtpFechaApertura
+            // 
+            this.dtpFechaApertura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dtpFechaApertura.Location = new System.Drawing.Point(288, 239);
+            this.dtpFechaApertura.Name = "dtpFechaApertura";
+            this.dtpFechaApertura.Size = new System.Drawing.Size(244, 20);
+            this.dtpFechaApertura.TabIndex = 140;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.Transparent;
+            this.label40.Location = new System.Drawing.Point(6, 1020);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(111, 16);
+            this.label40.TabIndex = 112;
+            this.label40.Text = "Tipo de Lesión";
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel9.Controls.Add(this.label44);
+            this.panel9.Controls.Add(this.label43);
+            this.panel9.Controls.Add(this.label41);
+            this.panel9.Controls.Add(this.label55);
+            this.panel9.Controls.Add(this.txtEstudiosLaboratorio);
+            this.panel9.Controls.Add(this.txtEstudiosRadiologicos);
+            this.panel9.Controls.Add(this.txtOtros);
+            this.panel9.Location = new System.Drawing.Point(13, 15);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(900, 655);
+            this.panel9.TabIndex = 97;
+            // 
+            // label44
+            // 
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label44.Location = new System.Drawing.Point(14, 437);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(48, 16);
+            this.label44.TabIndex = 136;
+            this.label44.Text = "Otros:";
+            // 
+            // label43
+            // 
+            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label43.Location = new System.Drawing.Point(14, 242);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(168, 16);
+            this.label43.TabIndex = 134;
+            this.label43.Text = "Estudios Radiológicos:";
+            // 
+            // label41
+            // 
+            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label41.Location = new System.Drawing.Point(14, 47);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(212, 19);
+            this.label41.TabIndex = 132;
+            this.label41.Text = "Estudios de Laboratorio:";
+            // 
+            // label55
+            // 
+            this.label55.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label55.Location = new System.Drawing.Point(12, 10);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(246, 25);
+            this.label55.TabIndex = 96;
+            this.label55.Text = "Estudios Paraclínicos:";
+            // 
+            // pSeccionesExpediente
+            // 
+            this.pSeccionesExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.pSeccionesExpediente.Controls.Add(this.btnEstudiosParaclinicos);
+            this.pSeccionesExpediente.Controls.Add(this.btnExploracionFisica);
+            this.pSeccionesExpediente.Controls.Add(this.btnPatologicos);
+            this.pSeccionesExpediente.Controls.Add(this.btnNoPatologicos);
+            this.pSeccionesExpediente.Controls.Add(this.btnDatosGenerales);
+            this.pSeccionesExpediente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pSeccionesExpediente.Location = new System.Drawing.Point(0, 145);
+            this.pSeccionesExpediente.Name = "pSeccionesExpediente";
+            this.pSeccionesExpediente.Size = new System.Drawing.Size(945, 45);
+            this.pSeccionesExpediente.TabIndex = 13;
+            // 
+            // btnEstudiosParaclinicos
+            // 
+            this.btnEstudiosParaclinicos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEstudiosParaclinicos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEstudiosParaclinicos.FlatAppearance.BorderSize = 0;
+            this.btnEstudiosParaclinicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstudiosParaclinicos.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstudiosParaclinicos.ForeColor = System.Drawing.Color.White;
+            this.btnEstudiosParaclinicos.Location = new System.Drawing.Point(740, 0);
+            this.btnEstudiosParaclinicos.Name = "btnEstudiosParaclinicos";
+            this.btnEstudiosParaclinicos.Size = new System.Drawing.Size(185, 40);
+            this.btnEstudiosParaclinicos.TabIndex = 9;
+            this.btnEstudiosParaclinicos.Text = "Estudios Paraclínicos";
+            this.btnEstudiosParaclinicos.UseVisualStyleBackColor = true;
+            this.btnEstudiosParaclinicos.Click += new System.EventHandler(this.btnEstudiosParaclinicos_Click);
+            this.btnEstudiosParaclinicos.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnEstudiosParaclinicos.Leave += new System.EventHandler(this.btnMouseLeave);
+            // 
+            // btnExploracionFisica
+            // 
+            this.btnExploracionFisica.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExploracionFisica.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExploracionFisica.FlatAppearance.BorderSize = 0;
+            this.btnExploracionFisica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExploracionFisica.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExploracionFisica.ForeColor = System.Drawing.Color.White;
+            this.btnExploracionFisica.Location = new System.Drawing.Point(555, 0);
+            this.btnExploracionFisica.Name = "btnExploracionFisica";
+            this.btnExploracionFisica.Size = new System.Drawing.Size(185, 40);
+            this.btnExploracionFisica.TabIndex = 8;
+            this.btnExploracionFisica.Text = "Exploración Física";
+            this.btnExploracionFisica.UseVisualStyleBackColor = true;
+            this.btnExploracionFisica.Click += new System.EventHandler(this.btnExploracionFisica_Click);
+            this.btnExploracionFisica.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnExploracionFisica.Leave += new System.EventHandler(this.btnMouseLeave);
+            // 
+            // btnPatologicos
+            // 
+            this.btnPatologicos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPatologicos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPatologicos.FlatAppearance.BorderSize = 0;
+            this.btnPatologicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPatologicos.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPatologicos.ForeColor = System.Drawing.Color.White;
+            this.btnPatologicos.Location = new System.Drawing.Point(370, 0);
+            this.btnPatologicos.Name = "btnPatologicos";
+            this.btnPatologicos.Size = new System.Drawing.Size(185, 40);
+            this.btnPatologicos.TabIndex = 7;
+            this.btnPatologicos.Text = "Patológicos";
+            this.btnPatologicos.UseVisualStyleBackColor = true;
+            this.btnPatologicos.Click += new System.EventHandler(this.btnPatologicos_Click);
+            this.btnPatologicos.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnPatologicos.Leave += new System.EventHandler(this.btnMouseLeave);
+            // 
+            // btnNoPatologicos
+            // 
+            this.btnNoPatologicos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNoPatologicos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNoPatologicos.FlatAppearance.BorderSize = 0;
+            this.btnNoPatologicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNoPatologicos.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNoPatologicos.ForeColor = System.Drawing.Color.White;
+            this.btnNoPatologicos.Location = new System.Drawing.Point(185, 0);
+            this.btnNoPatologicos.Name = "btnNoPatologicos";
+            this.btnNoPatologicos.Size = new System.Drawing.Size(185, 40);
+            this.btnNoPatologicos.TabIndex = 6;
+            this.btnNoPatologicos.Text = "No Patológicos";
+            this.btnNoPatologicos.UseVisualStyleBackColor = true;
+            this.btnNoPatologicos.Click += new System.EventHandler(this.btnNoPatologicos_Click);
+            this.btnNoPatologicos.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnNoPatologicos.Leave += new System.EventHandler(this.btnMouseLeave);
+            // 
+            // btnDatosGenerales
+            // 
+            this.btnDatosGenerales.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDatosGenerales.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDatosGenerales.FlatAppearance.BorderSize = 0;
+            this.btnDatosGenerales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatosGenerales.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDatosGenerales.ForeColor = System.Drawing.Color.White;
+            this.btnDatosGenerales.Location = new System.Drawing.Point(0, 0);
+            this.btnDatosGenerales.Name = "btnDatosGenerales";
+            this.btnDatosGenerales.Size = new System.Drawing.Size(185, 40);
+            this.btnDatosGenerales.TabIndex = 5;
+            this.btnDatosGenerales.Text = "Datos Generales";
+            this.btnDatosGenerales.UseVisualStyleBackColor = true;
+            this.btnDatosGenerales.Click += new System.EventHandler(this.btnDatosGenerales_Click);
+            this.btnDatosGenerales.Enter += new System.EventHandler(this.btnMouseEnter);
+            this.btnDatosGenerales.Leave += new System.EventHandler(this.btnMouseLeave);
+            // 
+            // panel34
+            // 
+            this.panel34.BackColor = System.Drawing.Color.White;
+            this.panel34.Controls.Add(this.btnCancelar);
+            this.panel34.Controls.Add(this.btnGrabarActualizacion);
+            this.panel34.Controls.Add(this.btnActualizar);
+            this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel34.Location = new System.Drawing.Point(0, 100);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(945, 45);
+            this.panel34.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.lblTitle);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(945, 100);
+            this.panel2.TabIndex = 7;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(253, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.lblTitle.Location = new System.Drawing.Point(332, 50);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(577, 46);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Consulta de Expediente Clínico";
+            // 
+            // txtHeredoFamiliar
+            // 
+            this.txtHeredoFamiliar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtHeredoFamiliar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtHeredoFamiliar.BorderColor = System.Drawing.Color.Gray;
+            this.txtHeredoFamiliar.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtHeredoFamiliar.BorderRadius = 12;
+            this.txtHeredoFamiliar.BorderSize = 2;
+            this.txtHeredoFamiliar.Enabled = false;
+            this.txtHeredoFamiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHeredoFamiliar.ForeColor = System.Drawing.Color.DimGray;
+            this.txtHeredoFamiliar.Location = new System.Drawing.Point(13, 77);
+            this.txtHeredoFamiliar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHeredoFamiliar.MaxLength = 16383;
+            this.txtHeredoFamiliar.Multiline = true;
+            this.txtHeredoFamiliar.Name = "txtHeredoFamiliar";
+            this.txtHeredoFamiliar.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtHeredoFamiliar.PasswordChar = false;
+            this.txtHeredoFamiliar.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtHeredoFamiliar.PlaceholderText = "";
+            this.txtHeredoFamiliar.Size = new System.Drawing.Size(875, 190);
+            this.txtHeredoFamiliar.TabIndex = 179;
+            this.txtHeredoFamiliar.UnderlinedStyle = true;
+            // 
+            // txtUltimaModificacion
+            // 
+            this.txtUltimaModificacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtUltimaModificacion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUltimaModificacion.BorderColor = System.Drawing.Color.Gray;
+            this.txtUltimaModificacion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtUltimaModificacion.BorderRadius = 12;
+            this.txtUltimaModificacion.BorderSize = 2;
+            this.txtUltimaModificacion.Enabled = false;
+            this.txtUltimaModificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUltimaModificacion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUltimaModificacion.Location = new System.Drawing.Point(621, 60);
+            this.txtUltimaModificacion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUltimaModificacion.MaxLength = 32767;
+            this.txtUltimaModificacion.Multiline = false;
+            this.txtUltimaModificacion.Name = "txtUltimaModificacion";
+            this.txtUltimaModificacion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtUltimaModificacion.PasswordChar = false;
+            this.txtUltimaModificacion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtUltimaModificacion.PlaceholderText = "";
+            this.txtUltimaModificacion.Size = new System.Drawing.Size(263, 35);
+            this.txtUltimaModificacion.TabIndex = 206;
+            this.txtUltimaModificacion.UnderlinedStyle = true;
+            // 
+            // txtPuesto
+            // 
+            this.txtPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtPuesto.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPuesto.BorderColor = System.Drawing.Color.Gray;
+            this.txtPuesto.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtPuesto.BorderRadius = 12;
+            this.txtPuesto.BorderSize = 2;
+            this.txtPuesto.Enabled = false;
+            this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPuesto.Location = new System.Drawing.Point(13, 390);
+            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPuesto.MaxLength = 32767;
+            this.txtPuesto.Multiline = false;
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPuesto.PasswordChar = false;
+            this.txtPuesto.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPuesto.PlaceholderText = "";
+            this.txtPuesto.Size = new System.Drawing.Size(646, 35);
+            this.txtPuesto.TabIndex = 204;
+            this.txtPuesto.UnderlinedStyle = true;
+            // 
+            // txtNombreEmpleado
+            // 
+            this.txtNombreEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNombreEmpleado.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNombreEmpleado.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreEmpleado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreEmpleado.BorderRadius = 12;
+            this.txtNombreEmpleado.BorderSize = 2;
+            this.txtNombreEmpleado.Enabled = false;
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(13, 128);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreEmpleado.MaxLength = 32767;
+            this.txtNombreEmpleado.Multiline = false;
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreEmpleado.PasswordChar = false;
+            this.txtNombreEmpleado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreEmpleado.PlaceholderText = "";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(871, 35);
+            this.txtNombreEmpleado.TabIndex = 202;
+            this.txtNombreEmpleado.UnderlinedStyle = true;
+            // 
+            // txtProceso
+            // 
+            this.txtProceso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtProceso.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtProceso.BorderColor = System.Drawing.Color.Gray;
+            this.txtProceso.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtProceso.BorderRadius = 12;
+            this.txtProceso.BorderSize = 2;
+            this.txtProceso.Enabled = false;
+            this.txtProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProceso.ForeColor = System.Drawing.Color.DimGray;
+            this.txtProceso.Location = new System.Drawing.Point(687, 321);
+            this.txtProceso.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProceso.MaxLength = 32767;
+            this.txtProceso.Multiline = false;
+            this.txtProceso.Name = "txtProceso";
+            this.txtProceso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtProceso.PasswordChar = false;
+            this.txtProceso.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtProceso.PlaceholderText = "";
+            this.txtProceso.Size = new System.Drawing.Size(199, 35);
+            this.txtProceso.TabIndex = 200;
+            this.txtProceso.UnderlinedStyle = true;
+            // 
+            // txtFechaIngreso
+            // 
+            this.txtFechaIngreso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtFechaIngreso.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtFechaIngreso.BorderColor = System.Drawing.Color.Gray;
+            this.txtFechaIngreso.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtFechaIngreso.BorderRadius = 12;
+            this.txtFechaIngreso.BorderSize = 2;
+            this.txtFechaIngreso.Enabled = false;
+            this.txtFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaIngreso.ForeColor = System.Drawing.Color.DimGray;
+            this.txtFechaIngreso.Location = new System.Drawing.Point(687, 390);
+            this.txtFechaIngreso.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFechaIngreso.MaxLength = 32767;
+            this.txtFechaIngreso.Multiline = false;
+            this.txtFechaIngreso.Name = "txtFechaIngreso";
+            this.txtFechaIngreso.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtFechaIngreso.PasswordChar = false;
+            this.txtFechaIngreso.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtFechaIngreso.PlaceholderText = "";
+            this.txtFechaIngreso.Size = new System.Drawing.Size(199, 35);
+            this.txtFechaIngreso.TabIndex = 198;
+            this.txtFechaIngreso.UnderlinedStyle = true;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTelefono.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTelefono.BorderColor = System.Drawing.Color.Gray;
+            this.txtTelefono.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTelefono.BorderRadius = 12;
+            this.txtTelefono.BorderSize = 2;
+            this.txtTelefono.Enabled = false;
+            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTelefono.Location = new System.Drawing.Point(687, 254);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefono.MaxLength = 32767;
+            this.txtTelefono.Multiline = false;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTelefono.PasswordChar = false;
+            this.txtTelefono.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTelefono.PlaceholderText = "";
+            this.txtTelefono.Size = new System.Drawing.Size(199, 35);
+            this.txtTelefono.TabIndex = 196;
+            this.txtTelefono.UnderlinedStyle = true;
+            // 
+            // txtNSS
+            // 
+            this.txtNSS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNSS.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNSS.BorderColor = System.Drawing.Color.Gray;
+            this.txtNSS.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNSS.BorderRadius = 12;
+            this.txtNSS.BorderSize = 2;
+            this.txtNSS.Enabled = false;
+            this.txtNSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNSS.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNSS.Location = new System.Drawing.Point(687, 189);
+            this.txtNSS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNSS.MaxLength = 32767;
+            this.txtNSS.Multiline = false;
+            this.txtNSS.Name = "txtNSS";
+            this.txtNSS.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNSS.PasswordChar = false;
+            this.txtNSS.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNSS.PlaceholderText = "";
+            this.txtNSS.Size = new System.Drawing.Size(199, 35);
+            this.txtNSS.TabIndex = 194;
+            this.txtNSS.UnderlinedStyle = true;
+            // 
+            // txtEstadoCivil
+            // 
+            this.txtEstadoCivil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEstadoCivil.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEstadoCivil.BorderColor = System.Drawing.Color.Gray;
+            this.txtEstadoCivil.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEstadoCivil.BorderRadius = 12;
+            this.txtEstadoCivil.BorderSize = 2;
+            this.txtEstadoCivil.Enabled = false;
+            this.txtEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstadoCivil.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEstadoCivil.Location = new System.Drawing.Point(463, 189);
+            this.txtEstadoCivil.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstadoCivil.MaxLength = 32767;
+            this.txtEstadoCivil.Multiline = false;
+            this.txtEstadoCivil.Name = "txtEstadoCivil";
+            this.txtEstadoCivil.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEstadoCivil.PasswordChar = false;
+            this.txtEstadoCivil.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEstadoCivil.PlaceholderText = "";
+            this.txtEstadoCivil.Size = new System.Drawing.Size(199, 35);
+            this.txtEstadoCivil.TabIndex = 192;
+            this.txtEstadoCivil.UnderlinedStyle = true;
+            // 
+            // txtSexo
+            // 
+            this.txtSexo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSexo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSexo.BorderColor = System.Drawing.Color.Gray;
+            this.txtSexo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSexo.BorderRadius = 12;
+            this.txtSexo.BorderSize = 2;
+            this.txtSexo.Enabled = false;
+            this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSexo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSexo.Location = new System.Drawing.Point(239, 189);
+            this.txtSexo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSexo.MaxLength = 32767;
+            this.txtSexo.Multiline = false;
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSexo.PasswordChar = false;
+            this.txtSexo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSexo.PlaceholderText = "";
+            this.txtSexo.Size = new System.Drawing.Size(199, 35);
+            this.txtSexo.TabIndex = 190;
+            this.txtSexo.UnderlinedStyle = true;
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEdad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEdad.BorderColor = System.Drawing.Color.Gray;
+            this.txtEdad.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEdad.BorderRadius = 12;
+            this.txtEdad.BorderSize = 2;
+            this.txtEdad.Enabled = false;
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEdad.Location = new System.Drawing.Point(13, 189);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEdad.MaxLength = 32767;
+            this.txtEdad.Multiline = false;
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEdad.PasswordChar = false;
+            this.txtEdad.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEdad.PlaceholderText = "";
+            this.txtEdad.Size = new System.Drawing.Size(199, 35);
+            this.txtEdad.TabIndex = 188;
+            this.txtEdad.UnderlinedStyle = true;
+            // 
+            // txtDomicilio
+            // 
+            this.txtDomicilio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtDomicilio.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtDomicilio.BorderColor = System.Drawing.Color.Gray;
+            this.txtDomicilio.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtDomicilio.BorderRadius = 12;
+            this.txtDomicilio.BorderSize = 2;
+            this.txtDomicilio.Enabled = false;
+            this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDomicilio.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDomicilio.Location = new System.Drawing.Point(13, 273);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDomicilio.MaxLength = 32767;
+            this.txtDomicilio.Multiline = true;
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDomicilio.PasswordChar = false;
+            this.txtDomicilio.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDomicilio.PlaceholderText = "";
+            this.txtDomicilio.Size = new System.Drawing.Size(647, 86);
+            this.txtDomicilio.TabIndex = 178;
+            this.txtDomicilio.UnderlinedStyle = true;
+            // 
+            // txtNumeroNomina
+            // 
+            this.txtNumeroNomina.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNumeroNomina.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNumeroNomina.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumeroNomina.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumeroNomina.BorderRadius = 12;
+            this.txtNumeroNomina.BorderSize = 2;
+            this.txtNumeroNomina.Enabled = false;
+            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumeroNomina.Location = new System.Drawing.Point(405, 60);
+            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumeroNomina.MaxLength = 32767;
+            this.txtNumeroNomina.Multiline = false;
+            this.txtNumeroNomina.Name = "txtNumeroNomina";
+            this.txtNumeroNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumeroNomina.PasswordChar = false;
+            this.txtNumeroNomina.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumeroNomina.PlaceholderText = "";
+            this.txtNumeroNomina.Size = new System.Drawing.Size(188, 35);
+            this.txtNumeroNomina.TabIndex = 176;
+            this.txtNumeroNomina.UnderlinedStyle = true;
+            // 
+            // cboxNumExpediente2
+            // 
+            this.cboxNumExpediente2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxNumExpediente2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboxNumExpediente2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboxNumExpediente2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cboxNumExpediente2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.cboxNumExpediente2.BorderSize = 1;
+            this.cboxNumExpediente2.DisplayMember = "";
+            this.cboxNumExpediente2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboxNumExpediente2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxNumExpediente2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.cboxNumExpediente2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.cboxNumExpediente2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cboxNumExpediente2.ListTextColor = System.Drawing.Color.DimGray;
+            this.cboxNumExpediente2.Location = new System.Drawing.Point(140, 44);
+            this.cboxNumExpediente2.MinimumSize = new System.Drawing.Size(200, 50);
+            this.cboxNumExpediente2.Name = "cboxNumExpediente2";
+            this.cboxNumExpediente2.Padding = new System.Windows.Forms.Padding(1);
+            this.cboxNumExpediente2.Size = new System.Drawing.Size(252, 50);
+            this.cboxNumExpediente2.TabIndex = 121;
+            this.cboxNumExpediente2.ValueMember = "";
+            this.cboxNumExpediente2.OnSelectedIndexChanged += new System.EventHandler(this.cboxNumExpediente2_OnSelectedIndexChanged);
             // 
             // txtCasa
             // 
@@ -1249,200 +2235,6 @@
             this.txtEscolaridad.TabIndex = 181;
             this.txtEscolaridad.UnderlinedStyle = true;
             // 
-            // pPatologicos
-            // 
-            this.pPatologicos.AutoScroll = true;
-            this.pPatologicos.Controls.Add(this.topePagina);
-            this.pPatologicos.Controls.Add(this.panel8);
-            this.pPatologicos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pPatologicos.Location = new System.Drawing.Point(0, 0);
-            this.pPatologicos.Name = "pPatologicos";
-            this.pPatologicos.Size = new System.Drawing.Size(945, 450);
-            this.pPatologicos.TabIndex = 112;
-            // 
-            // topePagina
-            // 
-            this.topePagina.AutoSize = true;
-            this.topePagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.topePagina.ForeColor = System.Drawing.Color.Transparent;
-            this.topePagina.Location = new System.Drawing.Point(2, 975);
-            this.topePagina.Name = "topePagina";
-            this.topePagina.Size = new System.Drawing.Size(111, 16);
-            this.topePagina.TabIndex = 112;
-            this.topePagina.Text = "Tipo de Lesión";
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel8.Controls.Add(this.label46);
-            this.panel8.Controls.Add(this.label24);
-            this.panel8.Controls.Add(this.label12);
-            this.panel8.Controls.Add(this.label23);
-            this.panel8.Controls.Add(this.label21);
-            this.panel8.Controls.Add(this.label20);
-            this.panel8.Controls.Add(this.label19);
-            this.panel8.Controls.Add(this.label18);
-            this.panel8.Controls.Add(this.label17);
-            this.panel8.Controls.Add(this.label16);
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Controls.Add(this.rbtnTransfusiones);
-            this.panel8.Controls.Add(this.label14);
-            this.panel8.Controls.Add(this.rbtnCirugias);
-            this.panel8.Controls.Add(this.label13);
-            this.panel8.Controls.Add(this.rbtnHozpitalizaciones);
-            this.panel8.Controls.Add(this.label64);
-            this.panel8.Controls.Add(this.label22);
-            this.panel8.Controls.Add(this.txtAlergias);
-            this.panel8.Controls.Add(this.txtSNerviosoCentral);
-            this.panel8.Controls.Add(this.txtSCardiovascular);
-            this.panel8.Controls.Add(this.txtSRespiratorio);
-            this.panel8.Controls.Add(this.txtSGastrointestinal);
-            this.panel8.Controls.Add(this.txtSEndocrino);
-            this.panel8.Controls.Add(this.txtSGenitoUrinario);
-            this.panel8.Controls.Add(this.txtSMusculoEsqueletico);
-            this.panel8.Controls.Add(this.txtOrganoSentidos);
-            this.panel8.Controls.Add(this.txtGinecoObstetrico);
-            this.panel8.Controls.Add(this.cboxGrupoSanguineo);
-            this.panel8.Controls.Add(this.txtGrupoSanguineo);
-            this.panel8.Location = new System.Drawing.Point(13, 19);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(900, 949);
-            this.panel8.TabIndex = 97;
-            // 
-            // label46
-            // 
-            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label46.Location = new System.Drawing.Point(630, 40);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(69, 16);
-            this.label46.TabIndex = 182;
-            this.label46.Text = "Alérgias:";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label24.Location = new System.Drawing.Point(18, 863);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(131, 16);
-            this.label24.TabIndex = 148;
-            this.label24.Text = "Grupo Sanguíneo:";
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label12.Location = new System.Drawing.Point(18, 784);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(144, 16);
-            this.label12.TabIndex = 146;
-            this.label12.Text = "Gineco-Obstétricos:";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label23.Location = new System.Drawing.Point(18, 696);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(172, 16);
-            this.label23.TabIndex = 144;
-            this.label23.Text = "Órgano de los sentidos:";
-            // 
-            // label21
-            // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label21.Location = new System.Drawing.Point(18, 611);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(214, 16);
-            this.label21.TabIndex = 142;
-            this.label21.Text = "Sistema Músculo-esquelético:";
-            // 
-            // label20
-            // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label20.Location = new System.Drawing.Point(18, 530);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(173, 16);
-            this.label20.TabIndex = 140;
-            this.label20.Text = "Sistema Genito-urinario:";
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label19.Location = new System.Drawing.Point(18, 445);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(141, 16);
-            this.label19.TabIndex = 138;
-            this.label19.Text = "Sistema Endócrino:";
-            // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label18.Location = new System.Drawing.Point(18, 357);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(179, 16);
-            this.label18.TabIndex = 136;
-            this.label18.Text = "Sistema Gastrointestinal:";
-            // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label17.Location = new System.Drawing.Point(18, 277);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(157, 16);
-            this.label17.TabIndex = 134;
-            this.label17.Text = "Sistema Respiratorio:";
-            // 
-            // label16
-            // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label16.Location = new System.Drawing.Point(18, 193);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(176, 16);
-            this.label16.TabIndex = 132;
-            this.label16.Text = "Sistema Cardiovascular:";
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label15.Location = new System.Drawing.Point(18, 114);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(187, 16);
-            this.label15.TabIndex = 130;
-            this.label15.Text = "Sistema Nervioso Central:";
-            // 
             // rbtnTransfusiones
             // 
             this.rbtnTransfusiones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1457,18 +2249,6 @@
             this.rbtnTransfusiones.Size = new System.Drawing.Size(83, 34);
             this.rbtnTransfusiones.TabIndex = 128;
             this.rbtnTransfusiones.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label14.Location = new System.Drawing.Point(417, 60);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 16);
-            this.label14.TabIndex = 127;
-            this.label14.Text = "Transfusiones:";
             // 
             // rbtnCirugias
             // 
@@ -1485,18 +2265,6 @@
             this.rbtnCirugias.TabIndex = 126;
             this.rbtnCirugias.UseVisualStyleBackColor = true;
             // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label13.Location = new System.Drawing.Point(252, 60);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 16);
-            this.label13.TabIndex = 125;
-            this.label13.Text = "Cirugías:";
-            // 
             // rbtnHozpitalizaciones
             // 
             this.rbtnHozpitalizaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1511,30 +2279,6 @@
             this.rbtnHozpitalizaciones.Size = new System.Drawing.Size(83, 34);
             this.rbtnHozpitalizaciones.TabIndex = 124;
             this.rbtnHozpitalizaciones.UseVisualStyleBackColor = true;
-            // 
-            // label64
-            // 
-            this.label64.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label64.Location = new System.Drawing.Point(18, 60);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(135, 16);
-            this.label64.TabIndex = 123;
-            this.label64.Text = "Hospitalizaciones:";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label22.Location = new System.Drawing.Point(12, 10);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(142, 25);
-            this.label22.TabIndex = 96;
-            this.label22.Text = "Patológicos:";
             // 
             // txtAlergias
             // 
@@ -1776,39 +2520,6 @@
             this.txtGinecoObstetrico.TabIndex = 191;
             this.txtGinecoObstetrico.UnderlinedStyle = true;
             // 
-            // cboxGrupoSanguineo
-            // 
-            this.cboxGrupoSanguineo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxGrupoSanguineo.AutoResize = false;
-            this.cboxGrupoSanguineo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxGrupoSanguineo.Depth = 0;
-            this.cboxGrupoSanguineo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxGrupoSanguineo.DropDownHeight = 174;
-            this.cboxGrupoSanguineo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxGrupoSanguineo.DropDownWidth = 121;
-            this.cboxGrupoSanguineo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxGrupoSanguineo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxGrupoSanguineo.FormattingEnabled = true;
-            this.cboxGrupoSanguineo.IntegralHeight = false;
-            this.cboxGrupoSanguineo.ItemHeight = 43;
-            this.cboxGrupoSanguineo.Items.AddRange(new object[] {
-            "O+",
-            "O-",
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "AB+",
-            "AB-"});
-            this.cboxGrupoSanguineo.Location = new System.Drawing.Point(18, 887);
-            this.cboxGrupoSanguineo.MaxDropDownItems = 4;
-            this.cboxGrupoSanguineo.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxGrupoSanguineo.Name = "cboxGrupoSanguineo";
-            this.cboxGrupoSanguineo.Size = new System.Drawing.Size(863, 49);
-            this.cboxGrupoSanguineo.StartIndex = 0;
-            this.cboxGrupoSanguineo.TabIndex = 150;
-            this.cboxGrupoSanguineo.Visible = false;
-            // 
             // txtGrupoSanguineo
             // 
             this.txtGrupoSanguineo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1832,19 +2543,6 @@
             this.txtGrupoSanguineo.Size = new System.Drawing.Size(870, 59);
             this.txtGrupoSanguineo.TabIndex = 192;
             this.txtGrupoSanguineo.UnderlinedStyle = true;
-            // 
-            // pEstudiosParaclinicos
-            // 
-            this.pEstudiosParaclinicos.AutoScroll = true;
-            this.pEstudiosParaclinicos.Controls.Add(this.btnGrabar);
-            this.pEstudiosParaclinicos.Controls.Add(this.panel7);
-            this.pEstudiosParaclinicos.Controls.Add(this.label40);
-            this.pEstudiosParaclinicos.Controls.Add(this.panel9);
-            this.pEstudiosParaclinicos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pEstudiosParaclinicos.Location = new System.Drawing.Point(0, 0);
-            this.pEstudiosParaclinicos.Name = "pEstudiosParaclinicos";
-            this.pEstudiosParaclinicos.Size = new System.Drawing.Size(945, 450);
-            this.pEstudiosParaclinicos.TabIndex = 113;
             // 
             // btnGrabar
             // 
@@ -1870,52 +2568,6 @@
             this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabarActualizacion_Click);
             // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel7.Controls.Add(this.label45);
-            this.panel7.Controls.Add(this.lblLugar);
-            this.panel7.Controls.Add(this.dtpFechaApertura);
-            this.panel7.Controls.Add(this.txtDiagnostico);
-            this.panel7.Location = new System.Drawing.Point(13, 686);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(900, 274);
-            this.panel7.TabIndex = 142;
-            // 
-            // label45
-            // 
-            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label45.Location = new System.Drawing.Point(19, 13);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(94, 16);
-            this.label45.TabIndex = 138;
-            this.label45.Text = "Diagnóstico:";
-            // 
-            // lblLugar
-            // 
-            this.lblLugar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblLugar.AutoSize = true;
-            this.lblLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLugar.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblLugar.Location = new System.Drawing.Point(19, 241);
-            this.lblLugar.Name = "lblLugar";
-            this.lblLugar.Size = new System.Drawing.Size(258, 16);
-            this.lblLugar.TabIndex = 141;
-            this.lblLugar.Text = "Atenquique, Mpio. de Tuxpan, Jal.; a\t\t\t\t\t\t\t\t\t";
-            // 
-            // dtpFechaApertura
-            // 
-            this.dtpFechaApertura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dtpFechaApertura.Location = new System.Drawing.Point(288, 239);
-            this.dtpFechaApertura.Name = "dtpFechaApertura";
-            this.dtpFechaApertura.Size = new System.Drawing.Size(244, 20);
-            this.dtpFechaApertura.TabIndex = 140;
-            // 
             // txtDiagnostico
             // 
             this.txtDiagnostico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1939,81 +2591,6 @@
             this.txtDiagnostico.Size = new System.Drawing.Size(862, 168);
             this.txtDiagnostico.TabIndex = 176;
             this.txtDiagnostico.UnderlinedStyle = true;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.Transparent;
-            this.label40.Location = new System.Drawing.Point(6, 1020);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(111, 16);
-            this.label40.TabIndex = 112;
-            this.label40.Text = "Tipo de Lesión";
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel9.Controls.Add(this.label44);
-            this.panel9.Controls.Add(this.label43);
-            this.panel9.Controls.Add(this.label41);
-            this.panel9.Controls.Add(this.label55);
-            this.panel9.Controls.Add(this.txtEstudiosLaboratorio);
-            this.panel9.Controls.Add(this.txtEstudiosRadiologicos);
-            this.panel9.Controls.Add(this.txtOtros);
-            this.panel9.Location = new System.Drawing.Point(13, 15);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(900, 655);
-            this.panel9.TabIndex = 97;
-            // 
-            // label44
-            // 
-            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label44.Location = new System.Drawing.Point(14, 437);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(48, 16);
-            this.label44.TabIndex = 136;
-            this.label44.Text = "Otros:";
-            // 
-            // label43
-            // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label43.Location = new System.Drawing.Point(14, 242);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(168, 16);
-            this.label43.TabIndex = 134;
-            this.label43.Text = "Estudios Radiológicos:";
-            // 
-            // label41
-            // 
-            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label41.Location = new System.Drawing.Point(14, 47);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(212, 19);
-            this.label41.TabIndex = 132;
-            this.label41.Text = "Estudios de Laboratorio:";
-            // 
-            // label55
-            // 
-            this.label55.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label55.Location = new System.Drawing.Point(12, 10);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(246, 25);
-            this.label55.TabIndex = 96;
-            this.label55.Text = "Estudios Paraclínicos:";
             // 
             // txtEstudiosLaboratorio
             // 
@@ -2087,92 +2664,6 @@
             this.txtOtros.TabIndex = 175;
             this.txtOtros.UnderlinedStyle = true;
             // 
-            // pExploracionFisica
-            // 
-            this.pExploracionFisica.AutoScroll = true;
-            this.pExploracionFisica.Controls.Add(this.label28);
-            this.pExploracionFisica.Controls.Add(this.panel10);
-            this.pExploracionFisica.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pExploracionFisica.Location = new System.Drawing.Point(0, 0);
-            this.pExploracionFisica.Name = "pExploracionFisica";
-            this.pExploracionFisica.Size = new System.Drawing.Size(945, 450);
-            this.pExploracionFisica.TabIndex = 113;
-            // 
-            // label28
-            // 
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.Transparent;
-            this.label28.Location = new System.Drawing.Point(9, 1156);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(144, 18);
-            this.label28.TabIndex = 111;
-            this.label28.Text = "Trabajo habitual";
-            // 
-            // panel10
-            // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel10.Controls.Add(this.label53);
-            this.panel10.Controls.Add(this.txtTemperatura);
-            this.panel10.Controls.Add(this.label52);
-            this.panel10.Controls.Add(this.txtTA);
-            this.panel10.Controls.Add(this.label51);
-            this.panel10.Controls.Add(this.txtPulso);
-            this.panel10.Controls.Add(this.label50);
-            this.panel10.Controls.Add(this.txtFR);
-            this.panel10.Controls.Add(this.label49);
-            this.panel10.Controls.Add(this.txtFC);
-            this.panel10.Controls.Add(this.label48);
-            this.panel10.Controls.Add(this.txtIMC);
-            this.panel10.Controls.Add(this.label47);
-            this.panel10.Controls.Add(this.txtPeso);
-            this.panel10.Controls.Add(this.label60);
-            this.panel10.Controls.Add(this.txtTalla);
-            this.panel10.Controls.Add(this.label39);
-            this.panel10.Controls.Add(this.label38);
-            this.panel10.Controls.Add(this.label37);
-            this.panel10.Controls.Add(this.label36);
-            this.panel10.Controls.Add(this.label35);
-            this.panel10.Controls.Add(this.label34);
-            this.panel10.Controls.Add(this.label27);
-            this.panel10.Controls.Add(this.label25);
-            this.panel10.Controls.Add(this.label33);
-            this.panel10.Controls.Add(this.label31);
-            this.panel10.Controls.Add(this.label30);
-            this.panel10.Controls.Add(this.label29);
-            this.panel10.Controls.Add(this.cboxConstitucionFisica);
-            this.panel10.Controls.Add(this.cboxGrado);
-            this.panel10.Controls.Add(this.txtConstitucionFisica);
-            this.panel10.Controls.Add(this.txtGrado);
-            this.panel10.Controls.Add(this.txtCraneo);
-            this.panel10.Controls.Add(this.txtOjos);
-            this.panel10.Controls.Add(this.txtOidos);
-            this.panel10.Controls.Add(this.txtBoca);
-            this.panel10.Controls.Add(this.txtNariz);
-            this.panel10.Controls.Add(this.txtCuello);
-            this.panel10.Controls.Add(this.txtTorax);
-            this.panel10.Controls.Add(this.txtAbdomen);
-            this.panel10.Controls.Add(this.txtGenitourinario);
-            this.panel10.Controls.Add(this.txtMusculoEsqueletico);
-            this.panel10.Controls.Add(this.txtNeurologico);
-            this.panel10.Location = new System.Drawing.Point(16, 15);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(900, 1136);
-            this.panel10.TabIndex = 97;
-            // 
-            // label53
-            // 
-            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label53.Location = new System.Drawing.Point(693, 122);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(100, 16);
-            this.label53.TabIndex = 196;
-            this.label53.Text = "Temperatura:";
-            // 
             // txtTemperatura
             // 
             this.txtTemperatura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2197,18 +2688,6 @@
             this.txtTemperatura.TabIndex = 195;
             this.txtTemperatura.UnderlinedStyle = true;
             this.txtTemperatura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTemperatura_KeyPress);
-            // 
-            // label52
-            // 
-            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label52.Location = new System.Drawing.Point(536, 122);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(39, 16);
-            this.label52.TabIndex = 194;
-            this.label52.Text = "T.A.:";
             // 
             // txtTA
             // 
@@ -2235,18 +2714,6 @@
             this.txtTA.UnderlinedStyle = true;
             this.txtTA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTA_KeyPress);
             // 
-            // label51
-            // 
-            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label51.Location = new System.Drawing.Point(381, 122);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(50, 16);
-            this.label51.TabIndex = 192;
-            this.label51.Text = "Pulso:";
-            // 
             // txtPulso
             // 
             this.txtPulso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2271,18 +2738,6 @@
             this.txtPulso.TabIndex = 191;
             this.txtPulso.UnderlinedStyle = true;
             this.txtPulso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPulso_KeyPress);
-            // 
-            // label50
-            // 
-            this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label50.Location = new System.Drawing.Point(225, 122);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(39, 16);
-            this.label50.TabIndex = 190;
-            this.label50.Text = "F.R.:";
             // 
             // txtFR
             // 
@@ -2309,18 +2764,6 @@
             this.txtFR.UnderlinedStyle = true;
             this.txtFR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFR_KeyPress);
             // 
-            // label49
-            // 
-            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label49.Location = new System.Drawing.Point(19, 122);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(38, 16);
-            this.label49.TabIndex = 188;
-            this.label49.Text = "F.C.:";
-            // 
             // txtFC
             // 
             this.txtFC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2346,18 +2789,6 @@
             this.txtFC.UnderlinedStyle = true;
             this.txtFC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFC_KeyPress);
             // 
-            // label48
-            // 
-            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label48.Location = new System.Drawing.Point(536, 50);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(37, 16);
-            this.label48.TabIndex = 186;
-            this.label48.Text = "IMC:";
-            // 
             // txtIMC
             // 
             this.txtIMC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2382,18 +2813,6 @@
             this.txtIMC.TabIndex = 185;
             this.txtIMC.UnderlinedStyle = true;
             this.txtIMC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIMC_KeyPress);
-            // 
-            // label47
-            // 
-            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label47.Location = new System.Drawing.Point(381, 52);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(47, 16);
-            this.label47.TabIndex = 184;
-            this.label47.Text = "Peso:";
             // 
             // txtPeso
             // 
@@ -2421,18 +2840,6 @@
             this.txtPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeso_KeyPress);
             this.txtPeso.Validating += new System.ComponentModel.CancelEventHandler(this.txtPeso_Validating);
             // 
-            // label60
-            // 
-            this.label60.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label60.Location = new System.Drawing.Point(226, 53);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(47, 16);
-            this.label60.TabIndex = 182;
-            this.label60.Text = "Talla:";
-            // 
             // txtTalla
             // 
             this.txtTalla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2458,264 +2865,6 @@
             this.txtTalla.UnderlinedStyle = true;
             this.txtTalla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTalla_KeyPress);
             this.txtTalla.Validating += new System.ComponentModel.CancelEventHandler(this.txtTalla_Validating);
-            // 
-            // label39
-            // 
-            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label39.Location = new System.Drawing.Point(19, 1038);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(96, 16);
-            this.label39.TabIndex = 152;
-            this.label39.Text = "Neurológico:";
-            // 
-            // label38
-            // 
-            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label38.Location = new System.Drawing.Point(19, 948);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(159, 16);
-            this.label38.TabIndex = 150;
-            this.label38.Text = "Músculo- Esquelético:";
-            // 
-            // label37
-            // 
-            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label37.Location = new System.Drawing.Point(19, 870);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(108, 16);
-            this.label37.TabIndex = 148;
-            this.label37.Text = "Genitourinario:";
-            // 
-            // label36
-            // 
-            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label36.Location = new System.Drawing.Point(19, 787);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(77, 16);
-            this.label36.TabIndex = 146;
-            this.label36.Text = "Abdomen:";
-            // 
-            // label35
-            // 
-            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label35.Location = new System.Drawing.Point(19, 696);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(51, 16);
-            this.label35.TabIndex = 144;
-            this.label35.Text = "Tórax:";
-            // 
-            // label34
-            // 
-            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label34.Location = new System.Drawing.Point(19, 614);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(55, 16);
-            this.label34.TabIndex = 142;
-            this.label34.Text = "Cuello:";
-            // 
-            // label27
-            // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label27.Location = new System.Drawing.Point(19, 531);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(47, 16);
-            this.label27.TabIndex = 140;
-            this.label27.Text = "Boca:";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label25.Location = new System.Drawing.Point(19, 449);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(47, 16);
-            this.label25.TabIndex = 138;
-            this.label25.Text = "Nariz:";
-            // 
-            // label33
-            // 
-            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label33.Location = new System.Drawing.Point(19, 359);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(52, 16);
-            this.label33.TabIndex = 136;
-            this.label33.Text = "Oídos:";
-            // 
-            // label31
-            // 
-            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label31.Location = new System.Drawing.Point(19, 272);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(43, 16);
-            this.label31.TabIndex = 134;
-            this.label31.Text = "Ojos:";
-            // 
-            // label30
-            // 
-            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label30.Location = new System.Drawing.Point(19, 189);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(61, 16);
-            this.label30.TabIndex = 132;
-            this.label30.Text = "Cráneo:";
-            // 
-            // label29
-            // 
-            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label29.Location = new System.Drawing.Point(12, 10);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(206, 25);
-            this.label29.TabIndex = 96;
-            this.label29.Text = "Exploración Física";
-            // 
-            // cboxConstitucionFisica
-            // 
-            this.cboxConstitucionFisica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxConstitucionFisica.AutoResize = false;
-            this.cboxConstitucionFisica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxConstitucionFisica.Depth = 0;
-            this.cboxConstitucionFisica.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxConstitucionFisica.DropDownHeight = 174;
-            this.cboxConstitucionFisica.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxConstitucionFisica.DropDownWidth = 121;
-            this.cboxConstitucionFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxConstitucionFisica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.cboxConstitucionFisica.FormattingEnabled = true;
-            this.cboxConstitucionFisica.Hint = "Constitución Física:";
-            this.cboxConstitucionFisica.IntegralHeight = false;
-            this.cboxConstitucionFisica.ItemHeight = 43;
-            this.cboxConstitucionFisica.Items.AddRange(new object[] {
-            "Delgada",
-            "Promedio",
-            "Robusta",
-            "Atlética",
-            "Gruesa",
-            "Musculosa",
-            "Pequeña",
-            "Fuerte",
-            "Frágil",
-            "En forma",
-            "Débil",
-            "Regular",
-            "Corporatura grande",
-            "Corporatura pequeña",
-            "Constitución normal"});
-            this.cboxConstitucionFisica.Location = new System.Drawing.Point(19, 57);
-            this.cboxConstitucionFisica.MaxDropDownItems = 4;
-            this.cboxConstitucionFisica.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxConstitucionFisica.Name = "cboxConstitucionFisica";
-            this.cboxConstitucionFisica.Size = new System.Drawing.Size(180, 49);
-            this.cboxConstitucionFisica.StartIndex = 0;
-            this.cboxConstitucionFisica.TabIndex = 114;
-            // 
-            // cboxGrado
-            // 
-            this.cboxGrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxGrado.AutoResize = false;
-            this.cboxGrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxGrado.Depth = 0;
-            this.cboxGrado.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxGrado.DropDownHeight = 174;
-            this.cboxGrado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxGrado.DropDownWidth = 121;
-            this.cboxGrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxGrado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.cboxGrado.FormattingEnabled = true;
-            this.cboxGrado.Hint = "Grado:";
-            this.cboxGrado.IntegralHeight = false;
-            this.cboxGrado.ItemHeight = 43;
-            this.cboxGrado.Items.AddRange(new object[] {
-            "Bajo peso (delgadez)",
-            "Delgadez severa",
-            "Delgadez moderada",
-            "Delgadez leve",
-            "Peso normal",
-            "Sobrepeso",
-            "Obesidad tipo I",
-            "Obesidad tipo II",
-            "Obesidad tipo III"});
-            this.cboxGrado.Location = new System.Drawing.Point(693, 57);
-            this.cboxGrado.MaxDropDownItems = 4;
-            this.cboxGrado.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxGrado.Name = "cboxGrado";
-            this.cboxGrado.Size = new System.Drawing.Size(180, 49);
-            this.cboxGrado.StartIndex = 0;
-            this.cboxGrado.TabIndex = 115;
-            // 
-            // txtConstitucionFisica
-            // 
-            this.txtConstitucionFisica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtConstitucionFisica.AnimateReadOnly = false;
-            this.txtConstitucionFisica.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConstitucionFisica.Depth = 0;
-            this.txtConstitucionFisica.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtConstitucionFisica.Hint = "Constitución Física::";
-            this.txtConstitucionFisica.LeadingIcon = null;
-            this.txtConstitucionFisica.Location = new System.Drawing.Point(19, 56);
-            this.txtConstitucionFisica.MaxLength = 50;
-            this.txtConstitucionFisica.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtConstitucionFisica.Multiline = false;
-            this.txtConstitucionFisica.Name = "txtConstitucionFisica";
-            this.txtConstitucionFisica.Size = new System.Drawing.Size(178, 50);
-            this.txtConstitucionFisica.TabIndex = 154;
-            this.txtConstitucionFisica.Text = "";
-            this.txtConstitucionFisica.TrailingIcon = null;
-            this.txtConstitucionFisica.Visible = false;
-            // 
-            // txtGrado
-            // 
-            this.txtGrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtGrado.AnimateReadOnly = false;
-            this.txtGrado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtGrado.Depth = 0;
-            this.txtGrado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtGrado.Hint = "Grado:";
-            this.txtGrado.LeadingIcon = null;
-            this.txtGrado.Location = new System.Drawing.Point(693, 56);
-            this.txtGrado.MaxLength = 50;
-            this.txtGrado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtGrado.Multiline = false;
-            this.txtGrado.Name = "txtGrado";
-            this.txtGrado.Size = new System.Drawing.Size(178, 50);
-            this.txtGrado.TabIndex = 153;
-            this.txtGrado.Text = "";
-            this.txtGrado.TrailingIcon = null;
-            this.txtGrado.Visible = false;
             // 
             // txtCraneo
             // 
@@ -2981,122 +3130,6 @@
             this.txtNeurologico.TabIndex = 207;
             this.txtNeurologico.UnderlinedStyle = true;
             // 
-            // pSeccionesExpediente
-            // 
-            this.pSeccionesExpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.pSeccionesExpediente.Controls.Add(this.btnEstudiosParaclinicos);
-            this.pSeccionesExpediente.Controls.Add(this.btnExploracionFisica);
-            this.pSeccionesExpediente.Controls.Add(this.btnPatologicos);
-            this.pSeccionesExpediente.Controls.Add(this.btnNoPatologicos);
-            this.pSeccionesExpediente.Controls.Add(this.btnDatosGenerales);
-            this.pSeccionesExpediente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pSeccionesExpediente.Location = new System.Drawing.Point(0, 145);
-            this.pSeccionesExpediente.Name = "pSeccionesExpediente";
-            this.pSeccionesExpediente.Size = new System.Drawing.Size(945, 45);
-            this.pSeccionesExpediente.TabIndex = 13;
-            // 
-            // btnEstudiosParaclinicos
-            // 
-            this.btnEstudiosParaclinicos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEstudiosParaclinicos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEstudiosParaclinicos.FlatAppearance.BorderSize = 0;
-            this.btnEstudiosParaclinicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstudiosParaclinicos.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstudiosParaclinicos.ForeColor = System.Drawing.Color.White;
-            this.btnEstudiosParaclinicos.Location = new System.Drawing.Point(740, 0);
-            this.btnEstudiosParaclinicos.Name = "btnEstudiosParaclinicos";
-            this.btnEstudiosParaclinicos.Size = new System.Drawing.Size(185, 40);
-            this.btnEstudiosParaclinicos.TabIndex = 9;
-            this.btnEstudiosParaclinicos.Text = "Estudios Paraclínicos";
-            this.btnEstudiosParaclinicos.UseVisualStyleBackColor = true;
-            this.btnEstudiosParaclinicos.Click += new System.EventHandler(this.btnEstudiosParaclinicos_Click);
-            this.btnEstudiosParaclinicos.Enter += new System.EventHandler(this.btnMouseEnter);
-            this.btnEstudiosParaclinicos.Leave += new System.EventHandler(this.btnMouseLeave);
-            // 
-            // btnExploracionFisica
-            // 
-            this.btnExploracionFisica.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExploracionFisica.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExploracionFisica.FlatAppearance.BorderSize = 0;
-            this.btnExploracionFisica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExploracionFisica.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExploracionFisica.ForeColor = System.Drawing.Color.White;
-            this.btnExploracionFisica.Location = new System.Drawing.Point(555, 0);
-            this.btnExploracionFisica.Name = "btnExploracionFisica";
-            this.btnExploracionFisica.Size = new System.Drawing.Size(185, 40);
-            this.btnExploracionFisica.TabIndex = 8;
-            this.btnExploracionFisica.Text = "Exploración Física";
-            this.btnExploracionFisica.UseVisualStyleBackColor = true;
-            this.btnExploracionFisica.Click += new System.EventHandler(this.btnExploracionFisica_Click);
-            this.btnExploracionFisica.Enter += new System.EventHandler(this.btnMouseEnter);
-            this.btnExploracionFisica.Leave += new System.EventHandler(this.btnMouseLeave);
-            // 
-            // btnPatologicos
-            // 
-            this.btnPatologicos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPatologicos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPatologicos.FlatAppearance.BorderSize = 0;
-            this.btnPatologicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPatologicos.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPatologicos.ForeColor = System.Drawing.Color.White;
-            this.btnPatologicos.Location = new System.Drawing.Point(370, 0);
-            this.btnPatologicos.Name = "btnPatologicos";
-            this.btnPatologicos.Size = new System.Drawing.Size(185, 40);
-            this.btnPatologicos.TabIndex = 7;
-            this.btnPatologicos.Text = "Patológicos";
-            this.btnPatologicos.UseVisualStyleBackColor = true;
-            this.btnPatologicos.Click += new System.EventHandler(this.btnPatologicos_Click);
-            this.btnPatologicos.Enter += new System.EventHandler(this.btnMouseEnter);
-            this.btnPatologicos.Leave += new System.EventHandler(this.btnMouseLeave);
-            // 
-            // btnNoPatologicos
-            // 
-            this.btnNoPatologicos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNoPatologicos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNoPatologicos.FlatAppearance.BorderSize = 0;
-            this.btnNoPatologicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNoPatologicos.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNoPatologicos.ForeColor = System.Drawing.Color.White;
-            this.btnNoPatologicos.Location = new System.Drawing.Point(185, 0);
-            this.btnNoPatologicos.Name = "btnNoPatologicos";
-            this.btnNoPatologicos.Size = new System.Drawing.Size(185, 40);
-            this.btnNoPatologicos.TabIndex = 6;
-            this.btnNoPatologicos.Text = "No Patológicos";
-            this.btnNoPatologicos.UseVisualStyleBackColor = true;
-            this.btnNoPatologicos.Click += new System.EventHandler(this.btnNoPatologicos_Click);
-            this.btnNoPatologicos.Enter += new System.EventHandler(this.btnMouseEnter);
-            this.btnNoPatologicos.Leave += new System.EventHandler(this.btnMouseLeave);
-            // 
-            // btnDatosGenerales
-            // 
-            this.btnDatosGenerales.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDatosGenerales.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDatosGenerales.FlatAppearance.BorderSize = 0;
-            this.btnDatosGenerales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDatosGenerales.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatosGenerales.ForeColor = System.Drawing.Color.White;
-            this.btnDatosGenerales.Location = new System.Drawing.Point(0, 0);
-            this.btnDatosGenerales.Name = "btnDatosGenerales";
-            this.btnDatosGenerales.Size = new System.Drawing.Size(185, 40);
-            this.btnDatosGenerales.TabIndex = 5;
-            this.btnDatosGenerales.Text = "Datos Generales";
-            this.btnDatosGenerales.UseVisualStyleBackColor = true;
-            this.btnDatosGenerales.Click += new System.EventHandler(this.btnDatosGenerales_Click);
-            this.btnDatosGenerales.Enter += new System.EventHandler(this.btnMouseEnter);
-            this.btnDatosGenerales.Leave += new System.EventHandler(this.btnMouseLeave);
-            // 
-            // panel34
-            // 
-            this.panel34.BackColor = System.Drawing.Color.White;
-            this.panel34.Controls.Add(this.btnCancelar);
-            this.panel34.Controls.Add(this.btnGrabarActualizacion);
-            this.panel34.Controls.Add(this.btnActualizar);
-            this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel34.Location = new System.Drawing.Point(0, 100);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(945, 45);
-            this.panel34.TabIndex = 14;
-            // 
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3163,39 +3196,6 @@
             this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.lblTitle);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(945, 100);
-            this.panel2.TabIndex = 7;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(253, 100);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.lblTitle.Location = new System.Drawing.Point(332, 50);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(577, 46);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Consulta de Expediente Clínico";
-            // 
             // frmModificarExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3210,6 +3210,9 @@
             this.Load += new System.EventHandler(this.frmModificarExpediente_Load);
             this.panel1.ResumeLayout(false);
             this.pContenedor.ResumeLayout(false);
+            this.pExploracionFisica.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.pDatosGenerales.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -3228,9 +3231,6 @@
             this.panel7.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.pExploracionFisica.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.pSeccionesExpediente.ResumeLayout(false);
             this.panel34.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
