@@ -582,25 +582,31 @@ namespace CapaPresentacion.Expediente
         }
         public void ValidacionNumerosDecimal(object sender, KeyPressEventArgs e)
         {
-            // Permitir solo números, retroceso, eliminar, enter, tab, escape, y las flechas
-            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back ||
-                  e.KeyChar == (char)Keys.Delete || e.KeyChar == (char)Keys.Enter ||
-                  e.KeyChar == (char)Keys.Tab || e.KeyChar == (char)Keys.Escape ||
-                  e.KeyChar == (char)Keys.Left || e.KeyChar == (char)Keys.Right || e.KeyChar == '.'))
-            {
-                var result = RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                e.Handled = true; // Bloquea la entrada de caracteres no permitidos
-            }
-            else if (e.KeyChar == '.')
-            {
-                // Verifica si ya existe un punto en el texto
-                var textBox = sender as MaterialSkin.Controls.MaterialTextBox;
+            var textBox = sender as TextPersonalizado;
 
+            // Verifica si es un punto decimal
+            if (e.KeyChar == '.')
+            {
                 if (textBox.Text.Contains("."))
                 {
-                    var result = RJMessageBox.Show("Solo se permite un punto decimal", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RJMessageBox.Show("Solo se permite un punto decimal", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     e.Handled = true; // Bloquea la entrada de un segundo punto
                 }
+                return; // Permite el primer punto y sale de la función
+            }
+
+            // Validar otros caracteres permitidos
+            if (!(char.IsDigit(e.KeyChar) ||
+                  e.KeyChar == (char)Keys.Back ||
+                  e.KeyChar == (char)Keys.Delete ||
+                  e.KeyChar == (char)Keys.Enter ||
+                  e.KeyChar == (char)Keys.Tab ||
+                  e.KeyChar == (char)Keys.Escape ||
+                  e.KeyChar == (char)Keys.Left ||
+                  e.KeyChar == (char)Keys.Right))
+            {
+                RJMessageBox.Show("Solo se pueden introducir números", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
             }
         }
         private void CalcularIMC()

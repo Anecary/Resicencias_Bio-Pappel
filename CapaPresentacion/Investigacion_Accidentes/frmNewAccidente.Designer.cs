@@ -28,88 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNewAccidente));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pContenedorAcc = new System.Windows.Forms.Panel();
-            this.pFactoresSeguridad = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.lblcondicioninsegura = new System.Windows.Forms.Label();
-            this.dgvCondicionInsegura = new System.Windows.Forms.DataGridView();
-            this.cboxCondicionesInseguras = new MaterialSkin.Controls.MaterialComboBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.lblactoinseguro = new System.Windows.Forms.Label();
-            this.dgvActoInseguro = new System.Windows.Forms.DataGridView();
-            this.cboxActoInseguro = new MaterialSkin.Controls.MaterialComboBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.lblotroriesgo = new System.Windows.Forms.Label();
-            this.dgvRiesgos = new System.Windows.Forms.DataGridView();
-            this.idRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.riesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesriesgos = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cboxRiesgos = new MaterialSkin.Controls.MaterialComboBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.pSeguimientoCaso = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.txtIdEmpleadoInvolucrado = new MaterialSkin.Controls.MaterialTextBox();
-            this.dgvEmpleadosInvolucrados = new System.Windows.Forms.DataGridView();
-            this.numNominaEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.label81 = new System.Windows.Forms.Label();
-            this.txtIncapacidad = new System.Windows.Forms.NumericUpDown();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.rbtnOtro = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtnEnviadoDomicilio = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtnEnviadoAtencionMedica = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtnContinuaTrabajando = new MaterialSkin.Controls.MaterialRadioButton();
-            this.label42 = new System.Windows.Forms.Label();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.txtIdEmpleadoConocimiento = new MaterialSkin.Controls.MaterialTextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.dgvEmpleadosConocimiento = new System.Windows.Forms.DataGridView();
-            this.numNominaEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesConocimiento = new System.Windows.Forms.DataGridViewImageColumn();
             this.pControlAcciones = new System.Windows.Forms.Panel();
+            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
             this.panel34 = new System.Windows.Forms.Panel();
             this.dtpHoraRecepcion = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaRecepcion = new System.Windows.Forms.DateTimePicker();
@@ -117,7 +59,11 @@
             this.label61 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
             this.label76 = new System.Windows.Forms.Label();
+            this.txtNombreSST = new CapaPresentacion.TextPersonalizado();
             this.label75 = new System.Windows.Forms.Label();
+            this.txtNumNomminaSST = new CapaPresentacion.TextPersonalizado();
+            this.txtSeguimiento = new CapaPresentacion.TextPersonalizado();
+            this.btnBuscarEmpleadoSST = new CapaPresentacion.BotonPersonalizado();
             this.txtidNombreSST = new MaterialSkin.Controls.MaterialTextBox();
             this.dtpHoraSeguimiento = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaSeguimiento = new System.Windows.Forms.DateTimePicker();
@@ -128,30 +74,51 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
+            this.txtAccionesPreventivasProp = new CapaPresentacion.TextPersonalizado();
+            this.txtQuienPreventivas = new CapaPresentacion.TextPersonalizado();
+            this.txtCuandoPreventivas = new CapaPresentacion.TextPersonalizado();
             this.panel31 = new System.Windows.Forms.Panel();
             this.label53 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
+            this.txtAccionesCorrectivas = new CapaPresentacion.TextPersonalizado();
+            this.txtquienCorrectivas = new CapaPresentacion.TextPersonalizado();
+            this.txtCuandoCorrectivas = new CapaPresentacion.TextPersonalizado();
             this.label49 = new System.Windows.Forms.Label();
             this.pDetallesAccidente = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtDescripcionAccidente = new CapaPresentacion.TextPersonalizado();
             this.label62 = new System.Windows.Forms.Label();
             this.cboxCausasAccidente = new MaterialSkin.Controls.MaterialComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.rbtnTrabajoUrgenteSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnDanosMaterialesSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnTrabajoNeccesarioSi = new CapaPresentacion.radioButtonPersonalizado();
             this.cboxSeccionB = new MaterialSkin.Controls.MaterialComboBox();
+            this.rbtnTrabajoProgramadoSi = new CapaPresentacion.radioButtonPersonalizado();
             this.label31 = new System.Windows.Forms.Label();
+            this.rbtnTrabajoHabitualSi = new CapaPresentacion.radioButtonPersonalizado();
             this.label30 = new System.Windows.Forms.Label();
+            this.rbtnRealizoTrabajoAntesSi = new CapaPresentacion.radioButtonPersonalizado();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.txtEquipoDanado = new CapaPresentacion.TextPersonalizado();
             this.label25 = new System.Windows.Forms.Label();
+            this.txtSustituiblePor = new CapaPresentacion.TextPersonalizado();
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtEquipoProteccionNecesario = new CapaPresentacion.TextPersonalizado();
+            this.txtObjCausanteLesion = new CapaPresentacion.TextPersonalizado();
+            this.txtEquipoProteccionUsado = new CapaPresentacion.TextPersonalizado();
+            this.txtLugarAccidente = new CapaPresentacion.TextPersonalizado();
+            this.rbtnlesion12MesesSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnlesion30DiasSi = new CapaPresentacion.radioButtonPersonalizado();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.cboxSeccionA = new MaterialSkin.Controls.MaterialComboBox();
@@ -163,8 +130,12 @@
             this.pDatosGenerales = new System.Windows.Forms.Panel();
             this.topePagina1 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.txtNombreTestigo = new CapaPresentacion.TextPersonalizado2();
+            this.txtNumNominaTestigo = new CapaPresentacion.TextPersonalizado2();
             this.label74 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
+            this.btnBuscarTestigo = new CapaPresentacion.BotonPersonalizado();
+            this.btnAgregarTestigo = new CapaPresentacion.BotonPersonalizado();
             this.txtIdEmpleadoTestigo = new MaterialSkin.Controls.MaterialTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.dgvTestigos = new System.Windows.Forms.DataGridView();
@@ -175,14 +146,26 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label86 = new System.Windows.Forms.Label();
+            this.cboxDebidoA = new CapaPresentacion.comboBoxPersonalizado();
             this.label85 = new System.Windows.Forms.Label();
+            this.CboxTurno = new CapaPresentacion.comboBoxPersonalizado();
             this.label84 = new System.Windows.Forms.Label();
+            this.cboxCondicion = new CapaPresentacion.comboBoxPersonalizado();
+            this.txtTotalhrs = new CapaPresentacion.TextPersonalizado();
             this.label72 = new System.Windows.Forms.Label();
+            this.txtPuesto = new CapaPresentacion.TextPersonalizado();
             this.label71 = new System.Windows.Forms.Label();
+            this.txtAntiguedad = new CapaPresentacion.TextPersonalizado();
             this.label70 = new System.Windows.Forms.Label();
+            this.txtEdad = new CapaPresentacion.TextPersonalizado();
             this.label69 = new System.Windows.Forms.Label();
+            this.txtNumeroNomina = new CapaPresentacion.TextPersonalizado();
             this.label67 = new System.Windows.Forms.Label();
+            this.txtNombreEmpleado = new CapaPresentacion.TextPersonalizado();
             this.label68 = new System.Windows.Forms.Label();
+            this.txtNoAccidente = new CapaPresentacion.TextPersonalizado();
+            this.btnBuscarEmpleado = new CapaPresentacion.BotonPersonalizado();
+            this.rbtnHrsExtrasSi = new CapaPresentacion.radioButtonPersonalizado();
             this.dtpHoraAccidente = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaAccidente = new System.Windows.Forms.DateTimePicker();
             this.dtpDiaDescanso = new System.Windows.Forms.DateTimePicker();
@@ -197,6 +180,98 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.txtTrabajoDesempeñado = new CapaPresentacion.TextPersonalizado();
+            this.txtTipoLesion = new CapaPresentacion.TextPersonalizado();
+            this.txtParteCuerpoAfectada = new CapaPresentacion.TextPersonalizado();
+            this.pFactoresSeguridad = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.rbtnEquipoAdecuadoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnConociaTrabajoSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnExistiaSupervicionSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.rbtnExistenItrsSi = new CapaPresentacion.radioButtonPersonalizado();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.txtOtraCondicion = new CapaPresentacion.TextPersonalizado2();
+            this.lblcondicioninsegura = new System.Windows.Forms.Label();
+            this.btnGrabarCondicionInsegura = new CapaPresentacion.BotonPersonalizado();
+            this.btnAgregarCondicion = new CapaPresentacion.BotonPersonalizado();
+            this.dgvCondicionInsegura = new System.Windows.Forms.DataGridView();
+            this.idCondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesCondiciones = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cboxCondicionesInseguras = new MaterialSkin.Controls.MaterialComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.txtOtroActoInseguro = new CapaPresentacion.TextPersonalizado2();
+            this.lblactoinseguro = new System.Windows.Forms.Label();
+            this.btnGrabarActoInseguro = new CapaPresentacion.BotonPersonalizado();
+            this.btnAgregarActoInseguro = new CapaPresentacion.BotonPersonalizado();
+            this.dgvActoInseguro = new System.Windows.Forms.DataGridView();
+            this.idActoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.actoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesActosInseguros = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cboxActoInseguro = new MaterialSkin.Controls.MaterialComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.txtOtroRiesgo = new CapaPresentacion.TextPersonalizado2();
+            this.lblotroriesgo = new System.Windows.Forms.Label();
+            this.btnGrabarRiesgo = new CapaPresentacion.BotonPersonalizado();
+            this.btnAgregarRiesgo = new CapaPresentacion.BotonPersonalizado();
+            this.dgvRiesgos = new System.Windows.Forms.DataGridView();
+            this.idRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.riesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesriesgos = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cboxRiesgos = new MaterialSkin.Controls.MaterialComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.pSeguimientoCaso = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.txtNombreEmpleadoInvolucrado = new CapaPresentacion.TextPersonalizado2();
+            this.txtNumNominaEmpleadoInvolucrado = new CapaPresentacion.TextPersonalizado2();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.btnBuscarEmpleadoInvolucrado = new CapaPresentacion.BotonPersonalizado();
+            this.btnAgregarEmpleadoInvolucrado = new CapaPresentacion.BotonPersonalizado();
+            this.txtIdEmpleadoInvolucrado = new MaterialSkin.Controls.MaterialTextBox();
+            this.dgvEmpleadosInvolucrados = new System.Windows.Forms.DataGridView();
+            this.numNominaEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesEmpleadoInvolucrado = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label81 = new System.Windows.Forms.Label();
+            this.txtIncapacidad = new System.Windows.Forms.NumericUpDown();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.txtDiagnosticoFinal = new CapaPresentacion.TextPersonalizado();
+            this.txtTratamiento = new CapaPresentacion.TextPersonalizado();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.rbtnOtro = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtnEnviadoDomicilio = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtnEnviadoAtencionMedica = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtnContinuaTrabajando = new MaterialSkin.Controls.MaterialRadioButton();
+            this.txtOtro = new CapaPresentacion.TextPersonalizado2();
+            this.label42 = new System.Windows.Forms.Label();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.txtNumNominaEmpleadoConocimiento = new CapaPresentacion.TextPersonalizado2();
+            this.txtNombreEmpleadoConocimiento = new CapaPresentacion.TextPersonalizado2();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.btnBuscarEmpleadoConocimiento = new CapaPresentacion.BotonPersonalizado();
+            this.btnAgregarEmpleadoConocimiento = new CapaPresentacion.BotonPersonalizado();
+            this.txtIdEmpleadoConocimiento = new MaterialSkin.Controls.MaterialTextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.dgvEmpleadosConocimiento = new System.Windows.Forms.DataGridView();
+            this.numNominaEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idEmpleadoConocimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.accionesConocimiento = new System.Windows.Forms.DataGridViewImageColumn();
             this.pSeccionesDatos = new System.Windows.Forms.Panel();
             this.btnControlAcciones = new System.Windows.Forms.Button();
             this.btnSeguimientoCaso = new System.Windows.Forms.Button();
@@ -223,83 +298,21 @@
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.rbtnEquipoAdecuadoSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnConociaTrabajoSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnExistiaSupervicionSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnExistenItrsSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.txtOtraCondicion = new CapaPresentacion.TextPersonalizado2();
-            this.btnGrabarCondicionInsegura = new CapaPresentacion.BotonPersonalizado();
-            this.btnAgregarCondicion = new CapaPresentacion.BotonPersonalizado();
-            this.txtOtroActoInseguro = new CapaPresentacion.TextPersonalizado2();
-            this.btnGrabarActoInseguro = new CapaPresentacion.BotonPersonalizado();
-            this.btnAgregarActoInseguro = new CapaPresentacion.BotonPersonalizado();
-            this.txtOtroRiesgo = new CapaPresentacion.TextPersonalizado2();
-            this.btnGrabarRiesgo = new CapaPresentacion.BotonPersonalizado();
-            this.btnAgregarRiesgo = new CapaPresentacion.BotonPersonalizado();
-            this.txtNombreEmpleadoInvolucrado = new CapaPresentacion.TextPersonalizado2();
-            this.txtNumNominaEmpleadoInvolucrado = new CapaPresentacion.TextPersonalizado2();
-            this.btnBuscarEmpleadoInvolucrado = new CapaPresentacion.BotonPersonalizado();
-            this.btnAgregarEmpleadoInvolucrado = new CapaPresentacion.BotonPersonalizado();
-            this.txtDiagnosticoFinal = new CapaPresentacion.TextPersonalizado();
-            this.txtTratamiento = new CapaPresentacion.TextPersonalizado();
-            this.txtOtro = new CapaPresentacion.TextPersonalizado2();
-            this.txtNumNominaEmpleadoConocimiento = new CapaPresentacion.TextPersonalizado2();
-            this.txtNombreEmpleadoConocimiento = new CapaPresentacion.TextPersonalizado2();
-            this.btnBuscarEmpleadoConocimiento = new CapaPresentacion.BotonPersonalizado();
-            this.btnAgregarEmpleadoConocimiento = new CapaPresentacion.BotonPersonalizado();
-            this.btnGrabar = new CapaPresentacion.BotonPersonalizado();
-            this.txtNombreSST = new CapaPresentacion.TextPersonalizado();
-            this.txtNumNomminaSST = new CapaPresentacion.TextPersonalizado();
-            this.txtSeguimiento = new CapaPresentacion.TextPersonalizado();
-            this.btnBuscarEmpleadoSST = new CapaPresentacion.BotonPersonalizado();
-            this.txtAccionesPreventivasProp = new CapaPresentacion.TextPersonalizado();
-            this.txtQuienPreventivas = new CapaPresentacion.TextPersonalizado();
-            this.txtCuandoPreventivas = new CapaPresentacion.TextPersonalizado();
-            this.txtAccionesCorrectivas = new CapaPresentacion.TextPersonalizado();
-            this.txtquienCorrectivas = new CapaPresentacion.TextPersonalizado();
-            this.txtCuandoCorrectivas = new CapaPresentacion.TextPersonalizado();
-            this.txtDescripcionAccidente = new CapaPresentacion.TextPersonalizado();
-            this.rbtnTrabajoUrgenteSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnDanosMaterialesSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnTrabajoNeccesarioSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnTrabajoProgramadoSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnTrabajoHabitualSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnRealizoTrabajoAntesSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.txtEquipoDanado = new CapaPresentacion.TextPersonalizado();
-            this.txtSustituiblePor = new CapaPresentacion.TextPersonalizado();
-            this.txtEquipoProteccionNecesario = new CapaPresentacion.TextPersonalizado();
-            this.txtObjCausanteLesion = new CapaPresentacion.TextPersonalizado();
-            this.txtEquipoProteccionUsado = new CapaPresentacion.TextPersonalizado();
-            this.txtLugarAccidente = new CapaPresentacion.TextPersonalizado();
-            this.rbtnlesion12MesesSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.rbtnlesion30DiasSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.txtNombreTestigo = new CapaPresentacion.TextPersonalizado2();
-            this.txtNumNominaTestigo = new CapaPresentacion.TextPersonalizado2();
-            this.btnBuscarTestigo = new CapaPresentacion.BotonPersonalizado();
-            this.btnAgregarTestigo = new CapaPresentacion.BotonPersonalizado();
-            this.cboxDebidoA = new CapaPresentacion.comboBoxPersonalizado();
-            this.CboxTurno = new CapaPresentacion.comboBoxPersonalizado();
-            this.cboxCondicion = new CapaPresentacion.comboBoxPersonalizado();
-            this.txtTotalhrs = new CapaPresentacion.TextPersonalizado();
-            this.txtPuesto = new CapaPresentacion.TextPersonalizado();
-            this.txtAntiguedad = new CapaPresentacion.TextPersonalizado();
-            this.txtEdad = new CapaPresentacion.TextPersonalizado();
-            this.txtNumeroNomina = new CapaPresentacion.TextPersonalizado();
-            this.txtNombreEmpleado = new CapaPresentacion.TextPersonalizado();
-            this.txtNoAccidente = new CapaPresentacion.TextPersonalizado();
-            this.btnBuscarEmpleado = new CapaPresentacion.BotonPersonalizado();
-            this.rbtnHrsExtrasSi = new CapaPresentacion.radioButtonPersonalizado();
-            this.txtTrabajoDesempeñado = new CapaPresentacion.TextPersonalizado();
-            this.txtTipoLesion = new CapaPresentacion.TextPersonalizado();
-            this.txtParteCuerpoAfectada = new CapaPresentacion.TextPersonalizado();
-            this.idActoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.actoInseguro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesActosInseguros = new System.Windows.Forms.DataGridViewImageColumn();
-            this.idCondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondicionInsegura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accionesCondiciones = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.pContenedorAcc.SuspendLayout();
+            this.pControlAcciones.SuspendLayout();
+            this.panel34.SuspendLayout();
+            this.panel33.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.pDetallesAccidente.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.pDatosGenerales.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTestigos)).BeginInit();
+            this.panel14.SuspendLayout();
             this.pFactoresSeguridad.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -316,19 +329,6 @@
             this.panel28.SuspendLayout();
             this.panel27.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleadosConocimiento)).BeginInit();
-            this.pControlAcciones.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.panel33.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.pDetallesAccidente.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pDatosGenerales.SuspendLayout();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTestigos)).BeginInit();
-            this.panel14.SuspendLayout();
             this.pSeccionesDatos.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -349,981 +349,16 @@
             // 
             // pContenedorAcc
             // 
+            this.pContenedorAcc.Controls.Add(this.pSeguimientoCaso);
             this.pContenedorAcc.Controls.Add(this.pControlAcciones);
             this.pContenedorAcc.Controls.Add(this.pDetallesAccidente);
             this.pContenedorAcc.Controls.Add(this.pDatosGenerales);
             this.pContenedorAcc.Controls.Add(this.pFactoresSeguridad);
-            this.pContenedorAcc.Controls.Add(this.pSeguimientoCaso);
             this.pContenedorAcc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedorAcc.Location = new System.Drawing.Point(0, 145);
             this.pContenedorAcc.Name = "pContenedorAcc";
             this.pContenedorAcc.Size = new System.Drawing.Size(945, 495);
             this.pContenedorAcc.TabIndex = 13;
-            // 
-            // pFactoresSeguridad
-            // 
-            this.pFactoresSeguridad.AutoScroll = true;
-            this.pFactoresSeguridad.Controls.Add(this.label39);
-            this.pFactoresSeguridad.Controls.Add(this.panel20);
-            this.pFactoresSeguridad.Controls.Add(this.panel19);
-            this.pFactoresSeguridad.Controls.Add(this.panel18);
-            this.pFactoresSeguridad.Controls.Add(this.label35);
-            this.pFactoresSeguridad.Controls.Add(this.panel17);
-            this.pFactoresSeguridad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pFactoresSeguridad.Location = new System.Drawing.Point(0, 0);
-            this.pFactoresSeguridad.Name = "pFactoresSeguridad";
-            this.pFactoresSeguridad.Size = new System.Drawing.Size(945, 495);
-            this.pFactoresSeguridad.TabIndex = 15;
-            // 
-            // label39
-            // 
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Transparent;
-            this.label39.Location = new System.Drawing.Point(-4, 725);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(144, 18);
-            this.label39.TabIndex = 111;
-            this.label39.Text = "Trabajo necesario";
-            // 
-            // panel20
-            // 
-            this.panel20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel20.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel20.Controls.Add(this.rbtnEquipoAdecuadoSi);
-            this.panel20.Controls.Add(this.rbtnConociaTrabajoSi);
-            this.panel20.Controls.Add(this.rbtnExistiaSupervicionSi);
-            this.panel20.Controls.Add(this.rbtnExistenItrsSi);
-            this.panel20.Controls.Add(this.label37);
-            this.panel20.Controls.Add(this.label38);
-            this.panel20.Controls.Add(this.label40);
-            this.panel20.Controls.Add(this.label41);
-            this.panel20.Location = new System.Drawing.Point(11, 589);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(906, 111);
-            this.panel20.TabIndex = 100;
-            // 
-            // label37
-            // 
-            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label37.Location = new System.Drawing.Point(487, 71);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(144, 18);
-            this.label37.TabIndex = 107;
-            this.label37.Text = "Existía supervisión";
-            // 
-            // label38
-            // 
-            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label38.Location = new System.Drawing.Point(487, 20);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(221, 18);
-            this.label38.TabIndex = 106;
-            this.label38.Text = "Conocía el trabajador el lugar";
-            // 
-            // label40
-            // 
-            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label40.Location = new System.Drawing.Point(9, 71);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(254, 18);
-            this.label40.TabIndex = 103;
-            this.label40.Text = "Herramientas y equipo adecuado";
-            // 
-            // label41
-            // 
-            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label41.Location = new System.Drawing.Point(9, 20);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(280, 18);
-            this.label41.TabIndex = 103;
-            this.label41.Text = "Existen ITR\'s de Trabajo";
-            // 
-            // panel19
-            // 
-            this.panel19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel19.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel19.Controls.Add(this.txtOtraCondicion);
-            this.panel19.Controls.Add(this.lblcondicioninsegura);
-            this.panel19.Controls.Add(this.btnGrabarCondicionInsegura);
-            this.panel19.Controls.Add(this.btnAgregarCondicion);
-            this.panel19.Controls.Add(this.dgvCondicionInsegura);
-            this.panel19.Controls.Add(this.cboxCondicionesInseguras);
-            this.panel19.Controls.Add(this.label36);
-            this.panel19.Location = new System.Drawing.Point(10, 404);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(906, 169);
-            this.panel19.TabIndex = 78;
-            // 
-            // lblcondicioninsegura
-            // 
-            this.lblcondicioninsegura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblcondicioninsegura.AutoSize = true;
-            this.lblcondicioninsegura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcondicioninsegura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.lblcondicioninsegura.Location = new System.Drawing.Point(13, 97);
-            this.lblcondicioninsegura.Name = "lblcondicioninsegura";
-            this.lblcondicioninsegura.Size = new System.Drawing.Size(177, 16);
-            this.lblcondicioninsegura.TabIndex = 183;
-            this.lblcondicioninsegura.Text = "Otra Condicion Insegura:";
-            this.lblcondicioninsegura.Visible = false;
-            // 
-            // dgvCondicionInsegura
-            // 
-            this.dgvCondicionInsegura.AllowUserToAddRows = false;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvCondicionInsegura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle39;
-            this.dgvCondicionInsegura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dgvCondicionInsegura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCondicionInsegura.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dgvCondicionInsegura.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvCondicionInsegura.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvCondicionInsegura.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCondicionInsegura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
-            this.dgvCondicionInsegura.ColumnHeadersHeight = 45;
-            this.dgvCondicionInsegura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idCondicionInsegura,
-            this.CondicionInsegura,
-            this.accionesCondiciones});
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCondicionInsegura.DefaultCellStyle = dataGridViewCellStyle41;
-            this.dgvCondicionInsegura.EnableHeadersVisualStyles = false;
-            this.dgvCondicionInsegura.Location = new System.Drawing.Point(536, 33);
-            this.dgvCondicionInsegura.Name = "dgvCondicionInsegura";
-            this.dgvCondicionInsegura.ReadOnly = true;
-            this.dgvCondicionInsegura.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvCondicionInsegura.RowHeadersVisible = false;
-            this.dgvCondicionInsegura.RowHeadersWidth = 51;
-            this.dgvCondicionInsegura.RowTemplate.Height = 35;
-            this.dgvCondicionInsegura.Size = new System.Drawing.Size(360, 127);
-            this.dgvCondicionInsegura.TabIndex = 18;
-            this.dgvCondicionInsegura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCondicionInsegura_CellClick);
-            // 
-            // cboxCondicionesInseguras
-            // 
-            this.cboxCondicionesInseguras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxCondicionesInseguras.AutoResize = false;
-            this.cboxCondicionesInseguras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxCondicionesInseguras.Depth = 0;
-            this.cboxCondicionesInseguras.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxCondicionesInseguras.DropDownHeight = 174;
-            this.cboxCondicionesInseguras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxCondicionesInseguras.DropDownWidth = 121;
-            this.cboxCondicionesInseguras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxCondicionesInseguras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxCondicionesInseguras.FormattingEnabled = true;
-            this.cboxCondicionesInseguras.Hint = "Condiciones Inseguras";
-            this.cboxCondicionesInseguras.IntegralHeight = false;
-            this.cboxCondicionesInseguras.ItemHeight = 43;
-            this.cboxCondicionesInseguras.Location = new System.Drawing.Point(9, 33);
-            this.cboxCondicionesInseguras.MaxDropDownItems = 4;
-            this.cboxCondicionesInseguras.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxCondicionesInseguras.Name = "cboxCondicionesInseguras";
-            this.cboxCondicionesInseguras.Size = new System.Drawing.Size(375, 49);
-            this.cboxCondicionesInseguras.StartIndex = 0;
-            this.cboxCondicionesInseguras.TabIndex = 0;
-            this.cboxCondicionesInseguras.SelectedIndexChanged += new System.EventHandler(this.cboxCondicionesInseguras_SelectedIndexChanged);
-            // 
-            // label36
-            // 
-            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label36.Location = new System.Drawing.Point(5, 10);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(456, 20);
-            this.label36.TabIndex = 17;
-            this.label36.Text = "Condiciones Inseguras en la Realización de la Actividad";
-            // 
-            // panel18
-            // 
-            this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel18.Controls.Add(this.txtOtroActoInseguro);
-            this.panel18.Controls.Add(this.lblactoinseguro);
-            this.panel18.Controls.Add(this.btnGrabarActoInseguro);
-            this.panel18.Controls.Add(this.btnAgregarActoInseguro);
-            this.panel18.Controls.Add(this.dgvActoInseguro);
-            this.panel18.Controls.Add(this.cboxActoInseguro);
-            this.panel18.Controls.Add(this.label34);
-            this.panel18.Location = new System.Drawing.Point(11, 223);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(906, 169);
-            this.panel18.TabIndex = 77;
-            // 
-            // lblactoinseguro
-            // 
-            this.lblactoinseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblactoinseguro.AutoSize = true;
-            this.lblactoinseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblactoinseguro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.lblactoinseguro.Location = new System.Drawing.Point(13, 96);
-            this.lblactoinseguro.Name = "lblactoinseguro";
-            this.lblactoinseguro.Size = new System.Drawing.Size(139, 16);
-            this.lblactoinseguro.TabIndex = 181;
-            this.lblactoinseguro.Text = "Otro Acto Inseguro:";
-            this.lblactoinseguro.Visible = false;
-            // 
-            // dgvActoInseguro
-            // 
-            this.dgvActoInseguro.AllowUserToAddRows = false;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvActoInseguro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle42;
-            this.dgvActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dgvActoInseguro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvActoInseguro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dgvActoInseguro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvActoInseguro.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvActoInseguro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvActoInseguro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
-            this.dgvActoInseguro.ColumnHeadersHeight = 45;
-            this.dgvActoInseguro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idActoInseguro,
-            this.actoInseguro,
-            this.accionesActosInseguros});
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvActoInseguro.DefaultCellStyle = dataGridViewCellStyle44;
-            this.dgvActoInseguro.EnableHeadersVisualStyles = false;
-            this.dgvActoInseguro.Location = new System.Drawing.Point(536, 33);
-            this.dgvActoInseguro.Name = "dgvActoInseguro";
-            this.dgvActoInseguro.ReadOnly = true;
-            this.dgvActoInseguro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvActoInseguro.RowHeadersVisible = false;
-            this.dgvActoInseguro.RowHeadersWidth = 51;
-            this.dgvActoInseguro.RowTemplate.Height = 35;
-            this.dgvActoInseguro.Size = new System.Drawing.Size(360, 127);
-            this.dgvActoInseguro.TabIndex = 18;
-            this.dgvActoInseguro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvActoInseguro_CellClick);
-            // 
-            // cboxActoInseguro
-            // 
-            this.cboxActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxActoInseguro.AutoResize = false;
-            this.cboxActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxActoInseguro.Depth = 0;
-            this.cboxActoInseguro.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxActoInseguro.DropDownHeight = 174;
-            this.cboxActoInseguro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxActoInseguro.DropDownWidth = 121;
-            this.cboxActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxActoInseguro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxActoInseguro.FormattingEnabled = true;
-            this.cboxActoInseguro.Hint = "Actos Inseguros";
-            this.cboxActoInseguro.IntegralHeight = false;
-            this.cboxActoInseguro.ItemHeight = 43;
-            this.cboxActoInseguro.Location = new System.Drawing.Point(9, 33);
-            this.cboxActoInseguro.MaxDropDownItems = 4;
-            this.cboxActoInseguro.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxActoInseguro.Name = "cboxActoInseguro";
-            this.cboxActoInseguro.Size = new System.Drawing.Size(375, 49);
-            this.cboxActoInseguro.StartIndex = 0;
-            this.cboxActoInseguro.TabIndex = 0;
-            this.cboxActoInseguro.SelectedIndexChanged += new System.EventHandler(this.cboxActoInseguro_SelectedIndexChanged);
-            // 
-            // label34
-            // 
-            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label34.Location = new System.Drawing.Point(5, 10);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(404, 20);
-            this.label34.TabIndex = 17;
-            this.label34.Text = "Actos Inseguros en la Realización de la Actividad";
-            // 
-            // label35
-            // 
-            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label35.Location = new System.Drawing.Point(10, 11);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(251, 25);
-            this.label35.TabIndex = 21;
-            this.label35.Text = "Factores de Seguridad";
-            // 
-            // panel17
-            // 
-            this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel17.Controls.Add(this.txtOtroRiesgo);
-            this.panel17.Controls.Add(this.lblotroriesgo);
-            this.panel17.Controls.Add(this.btnGrabarRiesgo);
-            this.panel17.Controls.Add(this.btnAgregarRiesgo);
-            this.panel17.Controls.Add(this.dgvRiesgos);
-            this.panel17.Controls.Add(this.cboxRiesgos);
-            this.panel17.Controls.Add(this.label33);
-            this.panel17.Location = new System.Drawing.Point(10, 40);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(906, 169);
-            this.panel17.TabIndex = 18;
-            // 
-            // lblotroriesgo
-            // 
-            this.lblotroriesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblotroriesgo.AutoSize = true;
-            this.lblotroriesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblotroriesgo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.lblotroriesgo.Location = new System.Drawing.Point(12, 95);
-            this.lblotroriesgo.Name = "lblotroriesgo";
-            this.lblotroriesgo.Size = new System.Drawing.Size(94, 16);
-            this.lblotroriesgo.TabIndex = 179;
-            this.lblotroriesgo.Text = "Otro Riesgo:";
-            this.lblotroriesgo.Visible = false;
-            // 
-            // dgvRiesgos
-            // 
-            this.dgvRiesgos.AllowUserToAddRows = false;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvRiesgos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle45;
-            this.dgvRiesgos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dgvRiesgos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvRiesgos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dgvRiesgos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvRiesgos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvRiesgos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRiesgos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
-            this.dgvRiesgos.ColumnHeadersHeight = 45;
-            this.dgvRiesgos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idRiesgo,
-            this.riesgo,
-            this.accionesriesgos});
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRiesgos.DefaultCellStyle = dataGridViewCellStyle48;
-            this.dgvRiesgos.EnableHeadersVisualStyles = false;
-            this.dgvRiesgos.Location = new System.Drawing.Point(536, 33);
-            this.dgvRiesgos.Name = "dgvRiesgos";
-            this.dgvRiesgos.ReadOnly = true;
-            this.dgvRiesgos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvRiesgos.RowHeadersVisible = false;
-            this.dgvRiesgos.RowHeadersWidth = 51;
-            this.dgvRiesgos.RowTemplate.Height = 35;
-            this.dgvRiesgos.Size = new System.Drawing.Size(360, 127);
-            this.dgvRiesgos.TabIndex = 18;
-            this.dgvRiesgos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRiesgos_CellClick);
-            // 
-            // idRiesgo
-            // 
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.idRiesgo.DefaultCellStyle = dataGridViewCellStyle47;
-            this.idRiesgo.HeaderText = "id Riesgo";
-            this.idRiesgo.MinimumWidth = 6;
-            this.idRiesgo.Name = "idRiesgo";
-            this.idRiesgo.ReadOnly = true;
-            // 
-            // riesgo
-            // 
-            this.riesgo.HeaderText = "Riesgos";
-            this.riesgo.MinimumWidth = 6;
-            this.riesgo.Name = "riesgo";
-            this.riesgo.ReadOnly = true;
-            // 
-            // accionesriesgos
-            // 
-            this.accionesriesgos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.accionesriesgos.HeaderText = "";
-            this.accionesriesgos.Image = ((System.Drawing.Image)(resources.GetObject("accionesriesgos.Image")));
-            this.accionesriesgos.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.accionesriesgos.MinimumWidth = 6;
-            this.accionesriesgos.Name = "accionesriesgos";
-            this.accionesriesgos.ReadOnly = true;
-            this.accionesriesgos.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.accionesriesgos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.accionesriesgos.Width = 50;
-            // 
-            // cboxRiesgos
-            // 
-            this.cboxRiesgos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxRiesgos.AutoResize = false;
-            this.cboxRiesgos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cboxRiesgos.Depth = 0;
-            this.cboxRiesgos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cboxRiesgos.DropDownHeight = 174;
-            this.cboxRiesgos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxRiesgos.DropDownWidth = 121;
-            this.cboxRiesgos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cboxRiesgos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cboxRiesgos.FormattingEnabled = true;
-            this.cboxRiesgos.Hint = "Riesgo";
-            this.cboxRiesgos.IntegralHeight = false;
-            this.cboxRiesgos.ItemHeight = 43;
-            this.cboxRiesgos.Items.AddRange(new object[] {
-            "Otro"});
-            this.cboxRiesgos.Location = new System.Drawing.Point(9, 33);
-            this.cboxRiesgos.MaxDropDownItems = 4;
-            this.cboxRiesgos.MouseState = MaterialSkin.MouseState.OUT;
-            this.cboxRiesgos.Name = "cboxRiesgos";
-            this.cboxRiesgos.Size = new System.Drawing.Size(375, 49);
-            this.cboxRiesgos.StartIndex = 0;
-            this.cboxRiesgos.TabIndex = 0;
-            this.cboxRiesgos.SelectedIndexChanged += new System.EventHandler(this.cboxRiesgos_SelectedIndexChanged);
-            // 
-            // label33
-            // 
-            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label33.Location = new System.Drawing.Point(5, 10);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(188, 20);
-            this.label33.TabIndex = 17;
-            this.label33.Text = "Riesgos del Accidente";
-            // 
-            // pSeguimientoCaso
-            // 
-            this.pSeguimientoCaso.AutoScroll = true;
-            this.pSeguimientoCaso.Controls.Add(this.panel26);
-            this.pSeguimientoCaso.Controls.Add(this.label45);
-            this.pSeguimientoCaso.Controls.Add(this.panel29);
-            this.pSeguimientoCaso.Controls.Add(this.panel28);
-            this.pSeguimientoCaso.Controls.Add(this.label42);
-            this.pSeguimientoCaso.Controls.Add(this.panel27);
-            this.pSeguimientoCaso.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pSeguimientoCaso.Location = new System.Drawing.Point(0, 0);
-            this.pSeguimientoCaso.Name = "pSeguimientoCaso";
-            this.pSeguimientoCaso.Size = new System.Drawing.Size(945, 495);
-            this.pSeguimientoCaso.TabIndex = 16;
-            this.pSeguimientoCaso.Paint += new System.Windows.Forms.PaintEventHandler(this.pSeguimientoCaso_Paint);
-            // 
-            // panel26
-            // 
-            this.panel26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel26.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel26.Controls.Add(this.txtNombreEmpleadoInvolucrado);
-            this.panel26.Controls.Add(this.txtNumNominaEmpleadoInvolucrado);
-            this.panel26.Controls.Add(this.label79);
-            this.panel26.Controls.Add(this.label80);
-            this.panel26.Controls.Add(this.btnBuscarEmpleadoInvolucrado);
-            this.panel26.Controls.Add(this.btnAgregarEmpleadoInvolucrado);
-            this.panel26.Controls.Add(this.txtIdEmpleadoInvolucrado);
-            this.panel26.Controls.Add(this.dgvEmpleadosInvolucrados);
-            this.panel26.Controls.Add(this.label44);
-            this.panel26.Location = new System.Drawing.Point(11, 700);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(916, 237);
-            this.panel26.TabIndex = 101;
-            // 
-            // label79
-            // 
-            this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label79.Location = new System.Drawing.Point(256, 35);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(262, 16);
-            this.label79.TabIndex = 185;
-            this.label79.Text = "Nombre de colaborador Involucrado:";
-            // 
-            // label80
-            // 
-            this.label80.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label80.Location = new System.Drawing.Point(19, 35);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(148, 16);
-            this.label80.TabIndex = 183;
-            this.label80.Text = "Número de Nómina: ";
-            // 
-            // txtIdEmpleadoInvolucrado
-            // 
-            this.txtIdEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtIdEmpleadoInvolucrado.AnimateReadOnly = false;
-            this.txtIdEmpleadoInvolucrado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdEmpleadoInvolucrado.Depth = 0;
-            this.txtIdEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtIdEmpleadoInvolucrado.LeadingIcon = null;
-            this.txtIdEmpleadoInvolucrado.Location = new System.Drawing.Point(651, 27);
-            this.txtIdEmpleadoInvolucrado.MaxLength = 50;
-            this.txtIdEmpleadoInvolucrado.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtIdEmpleadoInvolucrado.Multiline = false;
-            this.txtIdEmpleadoInvolucrado.Name = "txtIdEmpleadoInvolucrado";
-            this.txtIdEmpleadoInvolucrado.Size = new System.Drawing.Size(100, 50);
-            this.txtIdEmpleadoInvolucrado.TabIndex = 102;
-            this.txtIdEmpleadoInvolucrado.Text = "";
-            this.txtIdEmpleadoInvolucrado.TrailingIcon = null;
-            this.txtIdEmpleadoInvolucrado.Visible = false;
-            // 
-            // dgvEmpleadosInvolucrados
-            // 
-            this.dgvEmpleadosInvolucrados.AllowUserToAddRows = false;
-            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle49.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvEmpleadosInvolucrados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
-            this.dgvEmpleadosInvolucrados.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dgvEmpleadosInvolucrados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvEmpleadosInvolucrados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dgvEmpleadosInvolucrados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvEmpleadosInvolucrados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvEmpleadosInvolucrados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpleadosInvolucrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
-            this.dgvEmpleadosInvolucrados.ColumnHeadersHeight = 45;
-            this.dgvEmpleadosInvolucrados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numNominaEmpleadoInvolucrado,
-            this.nombreEmpleadoInvolucrado,
-            this.IdEmpleadoInvolucrado,
-            this.accionesEmpleadoInvolucrado});
-            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle51.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvEmpleadosInvolucrados.DefaultCellStyle = dataGridViewCellStyle51;
-            this.dgvEmpleadosInvolucrados.EnableHeadersVisualStyles = false;
-            this.dgvEmpleadosInvolucrados.Location = new System.Drawing.Point(13, 106);
-            this.dgvEmpleadosInvolucrados.Name = "dgvEmpleadosInvolucrados";
-            this.dgvEmpleadosInvolucrados.RowHeadersVisible = false;
-            this.dgvEmpleadosInvolucrados.RowHeadersWidth = 51;
-            this.dgvEmpleadosInvolucrados.RowTemplate.Height = 35;
-            this.dgvEmpleadosInvolucrados.Size = new System.Drawing.Size(889, 118);
-            this.dgvEmpleadosInvolucrados.TabIndex = 101;
-            this.dgvEmpleadosInvolucrados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleadosInvolucrados_CellClick);
-            // 
-            // numNominaEmpleadoInvolucrado
-            // 
-            this.numNominaEmpleadoInvolucrado.HeaderText = "Número Nómina";
-            this.numNominaEmpleadoInvolucrado.MinimumWidth = 6;
-            this.numNominaEmpleadoInvolucrado.Name = "numNominaEmpleadoInvolucrado";
-            // 
-            // nombreEmpleadoInvolucrado
-            // 
-            this.nombreEmpleadoInvolucrado.HeaderText = "Nombre";
-            this.nombreEmpleadoInvolucrado.MinimumWidth = 6;
-            this.nombreEmpleadoInvolucrado.Name = "nombreEmpleadoInvolucrado";
-            // 
-            // IdEmpleadoInvolucrado
-            // 
-            this.IdEmpleadoInvolucrado.HeaderText = "Id Empleado Involucrado";
-            this.IdEmpleadoInvolucrado.MinimumWidth = 6;
-            this.IdEmpleadoInvolucrado.Name = "IdEmpleadoInvolucrado";
-            this.IdEmpleadoInvolucrado.Visible = false;
-            // 
-            // accionesEmpleadoInvolucrado
-            // 
-            this.accionesEmpleadoInvolucrado.HeaderText = "";
-            this.accionesEmpleadoInvolucrado.Image = ((System.Drawing.Image)(resources.GetObject("accionesEmpleadoInvolucrado.Image")));
-            this.accionesEmpleadoInvolucrado.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.accionesEmpleadoInvolucrado.MinimumWidth = 6;
-            this.accionesEmpleadoInvolucrado.Name = "accionesEmpleadoInvolucrado";
-            this.accionesEmpleadoInvolucrado.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.accionesEmpleadoInvolucrado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // label44
-            // 
-            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label44.Location = new System.Drawing.Point(13, 4);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(275, 20);
-            this.label44.TabIndex = 24;
-            this.label44.Text = "Nombre del personal involucrado:";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(8, 946);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(65, 20);
-            this.label45.TabIndex = 103;
-            this.label45.Text = "Código";
-            // 
-            // panel29
-            // 
-            this.panel29.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel29.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel29.Controls.Add(this.label81);
-            this.panel29.Controls.Add(this.txtIncapacidad);
-            this.panel29.Controls.Add(this.label47);
-            this.panel29.Controls.Add(this.label46);
-            this.panel29.Controls.Add(this.txtDiagnosticoFinal);
-            this.panel29.Controls.Add(this.txtTratamiento);
-            this.panel29.Location = new System.Drawing.Point(11, 389);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(914, 290);
-            this.panel29.TabIndex = 102;
-            // 
-            // label81
-            // 
-            this.label81.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label81.Location = new System.Drawing.Point(19, 201);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(156, 18);
-            this.label81.TabIndex = 183;
-            this.label81.Text = "Dia(s) de incapacidad";
-            // 
-            // txtIncapacidad
-            // 
-            this.txtIncapacidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtIncapacidad.Location = new System.Drawing.Point(18, 223);
-            this.txtIncapacidad.Maximum = new decimal(new int[] {
-            365,
-            0,
-            0,
-            0});
-            this.txtIncapacidad.Name = "txtIncapacidad";
-            this.txtIncapacidad.Size = new System.Drawing.Size(178, 20);
-            this.txtIncapacidad.TabIndex = 182;
-            // 
-            // label47
-            // 
-            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label47.Location = new System.Drawing.Point(17, 108);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(156, 18);
-            this.label47.TabIndex = 102;
-            this.label47.Text = "Tratamiento:";
-            // 
-            // label46
-            // 
-            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label46.Location = new System.Drawing.Point(17, 19);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(156, 18);
-            this.label46.TabIndex = 100;
-            this.label46.Text = "Diagnóstico Final:";
-            // 
-            // panel28
-            // 
-            this.panel28.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel28.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel28.Controls.Add(this.rbtnOtro);
-            this.panel28.Controls.Add(this.rbtnEnviadoDomicilio);
-            this.panel28.Controls.Add(this.rbtnEnviadoAtencionMedica);
-            this.panel28.Controls.Add(this.rbtnContinuaTrabajando);
-            this.panel28.Controls.Add(this.txtOtro);
-            this.panel28.Location = new System.Drawing.Point(11, 301);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(916, 67);
-            this.panel28.TabIndex = 101;
-            // 
-            // rbtnOtro
-            // 
-            this.rbtnOtro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnOtro.AutoSize = true;
-            this.rbtnOtro.Depth = 0;
-            this.rbtnOtro.Location = new System.Drawing.Point(647, 15);
-            this.rbtnOtro.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnOtro.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnOtro.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnOtro.Name = "rbtnOtro";
-            this.rbtnOtro.Ripple = true;
-            this.rbtnOtro.Size = new System.Drawing.Size(65, 37);
-            this.rbtnOtro.TabIndex = 1;
-            this.rbtnOtro.TabStop = true;
-            this.rbtnOtro.Text = "Otro";
-            this.rbtnOtro.UseVisualStyleBackColor = true;
-            this.rbtnOtro.CheckedChanged += new System.EventHandler(this.rbtnOtro_CheckedChanged);
-            // 
-            // rbtnEnviadoDomicilio
-            // 
-            this.rbtnEnviadoDomicilio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnEnviadoDomicilio.AutoSize = true;
-            this.rbtnEnviadoDomicilio.Depth = 0;
-            this.rbtnEnviadoDomicilio.Location = new System.Drawing.Point(205, 15);
-            this.rbtnEnviadoDomicilio.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnEnviadoDomicilio.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnEnviadoDomicilio.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnEnviadoDomicilio.Name = "rbtnEnviadoDomicilio";
-            this.rbtnEnviadoDomicilio.Ripple = true;
-            this.rbtnEnviadoDomicilio.Size = new System.Drawing.Size(195, 37);
-            this.rbtnEnviadoDomicilio.TabIndex = 1;
-            this.rbtnEnviadoDomicilio.TabStop = true;
-            this.rbtnEnviadoDomicilio.Text = "Enviado a su domicilio";
-            this.rbtnEnviadoDomicilio.UseVisualStyleBackColor = true;
-            // 
-            // rbtnEnviadoAtencionMedica
-            // 
-            this.rbtnEnviadoAtencionMedica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnEnviadoAtencionMedica.AutoSize = true;
-            this.rbtnEnviadoAtencionMedica.Depth = 0;
-            this.rbtnEnviadoAtencionMedica.Location = new System.Drawing.Point(413, 15);
-            this.rbtnEnviadoAtencionMedica.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnEnviadoAtencionMedica.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnEnviadoAtencionMedica.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnEnviadoAtencionMedica.Name = "rbtnEnviadoAtencionMedica";
-            this.rbtnEnviadoAtencionMedica.Ripple = true;
-            this.rbtnEnviadoAtencionMedica.Size = new System.Drawing.Size(226, 37);
-            this.rbtnEnviadoAtencionMedica.TabIndex = 0;
-            this.rbtnEnviadoAtencionMedica.TabStop = true;
-            this.rbtnEnviadoAtencionMedica.Text = "Enviado a atención médica";
-            this.rbtnEnviadoAtencionMedica.UseVisualStyleBackColor = true;
-            // 
-            // rbtnContinuaTrabajando
-            // 
-            this.rbtnContinuaTrabajando.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnContinuaTrabajando.AutoSize = true;
-            this.rbtnContinuaTrabajando.Depth = 0;
-            this.rbtnContinuaTrabajando.Location = new System.Drawing.Point(12, 15);
-            this.rbtnContinuaTrabajando.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtnContinuaTrabajando.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtnContinuaTrabajando.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtnContinuaTrabajando.Name = "rbtnContinuaTrabajando";
-            this.rbtnContinuaTrabajando.Ripple = true;
-            this.rbtnContinuaTrabajando.Size = new System.Drawing.Size(180, 37);
-            this.rbtnContinuaTrabajando.TabIndex = 0;
-            this.rbtnContinuaTrabajando.TabStop = true;
-            this.rbtnContinuaTrabajando.Text = "Continua trabajando";
-            this.rbtnContinuaTrabajando.UseVisualStyleBackColor = true;
-            // 
-            // label42
-            // 
-            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label42.Location = new System.Drawing.Point(9, 15);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(242, 25);
-            this.label42.TabIndex = 22;
-            this.label42.Text = "Seguimiento del Caso";
-            // 
-            // panel27
-            // 
-            this.panel27.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel27.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel27.Controls.Add(this.txtNumNominaEmpleadoConocimiento);
-            this.panel27.Controls.Add(this.txtNombreEmpleadoConocimiento);
-            this.panel27.Controls.Add(this.label78);
-            this.panel27.Controls.Add(this.label77);
-            this.panel27.Controls.Add(this.btnBuscarEmpleadoConocimiento);
-            this.panel27.Controls.Add(this.btnAgregarEmpleadoConocimiento);
-            this.panel27.Controls.Add(this.txtIdEmpleadoConocimiento);
-            this.panel27.Controls.Add(this.label43);
-            this.panel27.Controls.Add(this.dgvEmpleadosConocimiento);
-            this.panel27.Location = new System.Drawing.Point(11, 43);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(916, 237);
-            this.panel27.TabIndex = 95;
-            // 
-            // label78
-            // 
-            this.label78.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label78.Location = new System.Drawing.Point(256, 35);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(407, 16);
-            this.label78.TabIndex = 181;
-            this.label78.Text = "Nombre de colaborador con conocimiento de los hechos: ";
-            // 
-            // label77
-            // 
-            this.label77.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label77.Location = new System.Drawing.Point(19, 35);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(148, 16);
-            this.label77.TabIndex = 179;
-            this.label77.Text = "Número de Nómina: ";
-            // 
-            // txtIdEmpleadoConocimiento
-            // 
-            this.txtIdEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtIdEmpleadoConocimiento.AnimateReadOnly = false;
-            this.txtIdEmpleadoConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdEmpleadoConocimiento.Depth = 0;
-            this.txtIdEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtIdEmpleadoConocimiento.LeadingIcon = null;
-            this.txtIdEmpleadoConocimiento.Location = new System.Drawing.Point(660, 33);
-            this.txtIdEmpleadoConocimiento.MaxLength = 50;
-            this.txtIdEmpleadoConocimiento.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtIdEmpleadoConocimiento.Multiline = false;
-            this.txtIdEmpleadoConocimiento.Name = "txtIdEmpleadoConocimiento";
-            this.txtIdEmpleadoConocimiento.Size = new System.Drawing.Size(100, 50);
-            this.txtIdEmpleadoConocimiento.TabIndex = 101;
-            this.txtIdEmpleadoConocimiento.Text = "";
-            this.txtIdEmpleadoConocimiento.TrailingIcon = null;
-            this.txtIdEmpleadoConocimiento.Visible = false;
-            // 
-            // label43
-            // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.label43.Location = new System.Drawing.Point(16, 7);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(408, 20);
-            this.label43.TabIndex = 24;
-            this.label43.Text = "Persona(s) que tomo conocimiento de los hechos:";
-            // 
-            // dgvEmpleadosConocimiento
-            // 
-            this.dgvEmpleadosConocimiento.AllowUserToAddRows = false;
-            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle52.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvEmpleadosConocimiento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle52;
-            this.dgvEmpleadosConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dgvEmpleadosConocimiento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvEmpleadosConocimiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.dgvEmpleadosConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvEmpleadosConocimiento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvEmpleadosConocimiento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpleadosConocimiento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
-            this.dgvEmpleadosConocimiento.ColumnHeadersHeight = 40;
-            this.dgvEmpleadosConocimiento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numNominaEmpleadoConocimiento,
-            this.nombreEmpleadoConocimiento,
-            this.idEmpleadoConocimiento,
-            this.accionesConocimiento});
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvEmpleadosConocimiento.DefaultCellStyle = dataGridViewCellStyle54;
-            this.dgvEmpleadosConocimiento.EnableHeadersVisualStyles = false;
-            this.dgvEmpleadosConocimiento.Location = new System.Drawing.Point(13, 106);
-            this.dgvEmpleadosConocimiento.Name = "dgvEmpleadosConocimiento";
-            this.dgvEmpleadosConocimiento.RowHeadersVisible = false;
-            this.dgvEmpleadosConocimiento.RowHeadersWidth = 51;
-            this.dgvEmpleadosConocimiento.RowTemplate.Height = 35;
-            this.dgvEmpleadosConocimiento.Size = new System.Drawing.Size(889, 118);
-            this.dgvEmpleadosConocimiento.TabIndex = 91;
-            this.dgvEmpleadosConocimiento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleadosConocimiento_CellClick);
-            // 
-            // numNominaEmpleadoConocimiento
-            // 
-            this.numNominaEmpleadoConocimiento.HeaderText = "Número Nómina";
-            this.numNominaEmpleadoConocimiento.MinimumWidth = 6;
-            this.numNominaEmpleadoConocimiento.Name = "numNominaEmpleadoConocimiento";
-            // 
-            // nombreEmpleadoConocimiento
-            // 
-            this.nombreEmpleadoConocimiento.HeaderText = "Nombre";
-            this.nombreEmpleadoConocimiento.MinimumWidth = 6;
-            this.nombreEmpleadoConocimiento.Name = "nombreEmpleadoConocimiento";
-            // 
-            // idEmpleadoConocimiento
-            // 
-            this.idEmpleadoConocimiento.HeaderText = "Id Empleado Conocimiento";
-            this.idEmpleadoConocimiento.MinimumWidth = 6;
-            this.idEmpleadoConocimiento.Name = "idEmpleadoConocimiento";
-            this.idEmpleadoConocimiento.Visible = false;
-            // 
-            // accionesConocimiento
-            // 
-            this.accionesConocimiento.HeaderText = "";
-            this.accionesConocimiento.Image = ((System.Drawing.Image)(resources.GetObject("accionesConocimiento.Image")));
-            this.accionesConocimiento.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.accionesConocimiento.MinimumWidth = 6;
-            this.accionesConocimiento.Name = "accionesConocimiento";
-            this.accionesConocimiento.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.accionesConocimiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // pControlAcciones
             // 
@@ -1340,6 +375,30 @@
             this.pControlAcciones.Name = "pControlAcciones";
             this.pControlAcciones.Size = new System.Drawing.Size(945, 495);
             this.pControlAcciones.TabIndex = 17;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnGrabar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabar.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGrabar.BorderRadius = 20;
+            this.btnGrabar.BorderSize = 0;
+            this.btnGrabar.FlatAppearance.BorderSize = 0;
+            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabar.ForeColor = System.Drawing.Color.White;
+            this.btnGrabar.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Image")));
+            this.btnGrabar.Location = new System.Drawing.Point(381, 703);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGrabar.Size = new System.Drawing.Size(186, 60);
+            this.btnGrabar.TabIndex = 119;
+            this.btnGrabar.Text = " Grabar";
+            this.btnGrabar.TextColor = System.Drawing.Color.White;
+            this.btnGrabar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // panel34
             // 
@@ -1427,6 +486,30 @@
             this.label76.TabIndex = 184;
             this.label76.Text = "Nombre Proceso SST";
             // 
+            // txtNombreSST
+            // 
+            this.txtNombreSST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNombreSST.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombreSST.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreSST.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreSST.BorderRadius = 12;
+            this.txtNombreSST.BorderSize = 2;
+            this.txtNombreSST.Enabled = false;
+            this.txtNombreSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreSST.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreSST.Location = new System.Drawing.Point(287, 156);
+            this.txtNombreSST.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreSST.MaxLength = 32767;
+            this.txtNombreSST.Multiline = false;
+            this.txtNombreSST.Name = "txtNombreSST";
+            this.txtNombreSST.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreSST.PasswordChar = false;
+            this.txtNombreSST.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreSST.PlaceholderText = "";
+            this.txtNombreSST.Size = new System.Drawing.Size(591, 35);
+            this.txtNombreSST.TabIndex = 183;
+            this.txtNombreSST.UnderlinedStyle = true;
+            // 
             // label75
             // 
             this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1439,6 +522,74 @@
             this.label75.TabIndex = 182;
             this.label75.Text = "Número de Nómina: ";
             // 
+            // txtNumNomminaSST
+            // 
+            this.txtNumNomminaSST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNumNomminaSST.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNumNomminaSST.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumNomminaSST.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumNomminaSST.BorderRadius = 12;
+            this.txtNumNomminaSST.BorderSize = 2;
+            this.txtNumNomminaSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumNomminaSST.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumNomminaSST.Location = new System.Drawing.Point(23, 156);
+            this.txtNumNomminaSST.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumNomminaSST.MaxLength = 15;
+            this.txtNumNomminaSST.Multiline = false;
+            this.txtNumNomminaSST.Name = "txtNumNomminaSST";
+            this.txtNumNomminaSST.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumNomminaSST.PasswordChar = false;
+            this.txtNumNomminaSST.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNomminaSST.PlaceholderText = "";
+            this.txtNumNomminaSST.Size = new System.Drawing.Size(202, 35);
+            this.txtNumNomminaSST.TabIndex = 181;
+            this.txtNumNomminaSST.UnderlinedStyle = true;
+            // 
+            // txtSeguimiento
+            // 
+            this.txtSeguimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSeguimiento.BackColor = System.Drawing.Color.White;
+            this.txtSeguimiento.BorderColor = System.Drawing.Color.Gray;
+            this.txtSeguimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSeguimiento.BorderRadius = 12;
+            this.txtSeguimiento.BorderSize = 2;
+            this.txtSeguimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeguimiento.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSeguimiento.Location = new System.Drawing.Point(23, 34);
+            this.txtSeguimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSeguimiento.MaxLength = 30;
+            this.txtSeguimiento.Multiline = true;
+            this.txtSeguimiento.Name = "txtSeguimiento";
+            this.txtSeguimiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSeguimiento.PasswordChar = false;
+            this.txtSeguimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSeguimiento.PlaceholderText = "";
+            this.txtSeguimiento.Size = new System.Drawing.Size(855, 60);
+            this.txtSeguimiento.TabIndex = 180;
+            this.txtSeguimiento.UnderlinedStyle = true;
+            // 
+            // btnBuscarEmpleadoSST
+            // 
+            this.btnBuscarEmpleadoSST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnBuscarEmpleadoSST.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoSST.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoSST.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarEmpleadoSST.BorderRadius = 20;
+            this.btnBuscarEmpleadoSST.BorderSize = 0;
+            this.btnBuscarEmpleadoSST.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleadoSST.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleadoSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleadoSST.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoSST.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoSST.Image")));
+            this.btnBuscarEmpleadoSST.Location = new System.Drawing.Point(232, 153);
+            this.btnBuscarEmpleadoSST.Name = "btnBuscarEmpleadoSST";
+            this.btnBuscarEmpleadoSST.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarEmpleadoSST.TabIndex = 120;
+            this.btnBuscarEmpleadoSST.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoSST.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarEmpleadoSST.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleadoSST.Click += new System.EventHandler(this.btnBuscarEmpleadoSST_Click);
+            // 
             // txtidNombreSST
             // 
             this.txtidNombreSST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1446,7 +597,7 @@
             this.txtidNombreSST.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtidNombreSST.Depth = 0;
             this.txtidNombreSST.Enabled = false;
-            this.txtidNombreSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtidNombreSST.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtidNombreSST.LeadingIcon = null;
             this.txtidNombreSST.Location = new System.Drawing.Point(714, 142);
             this.txtidNombreSST.MaxLength = 18;
@@ -1565,6 +716,75 @@
             this.label57.TabIndex = 25;
             this.label57.Text = "Acciones Preventivas";
             // 
+            // txtAccionesPreventivasProp
+            // 
+            this.txtAccionesPreventivasProp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAccionesPreventivasProp.BackColor = System.Drawing.Color.White;
+            this.txtAccionesPreventivasProp.BorderColor = System.Drawing.Color.Gray;
+            this.txtAccionesPreventivasProp.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAccionesPreventivasProp.BorderRadius = 12;
+            this.txtAccionesPreventivasProp.BorderSize = 2;
+            this.txtAccionesPreventivasProp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAccionesPreventivasProp.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAccionesPreventivasProp.Location = new System.Drawing.Point(22, 67);
+            this.txtAccionesPreventivasProp.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAccionesPreventivasProp.MaxLength = 50;
+            this.txtAccionesPreventivasProp.Multiline = true;
+            this.txtAccionesPreventivasProp.Name = "txtAccionesPreventivasProp";
+            this.txtAccionesPreventivasProp.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAccionesPreventivasProp.PasswordChar = false;
+            this.txtAccionesPreventivasProp.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAccionesPreventivasProp.PlaceholderText = "";
+            this.txtAccionesPreventivasProp.Size = new System.Drawing.Size(255, 60);
+            this.txtAccionesPreventivasProp.TabIndex = 177;
+            this.txtAccionesPreventivasProp.UnderlinedStyle = true;
+            // 
+            // txtQuienPreventivas
+            // 
+            this.txtQuienPreventivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtQuienPreventivas.BackColor = System.Drawing.Color.White;
+            this.txtQuienPreventivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtQuienPreventivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtQuienPreventivas.BorderRadius = 12;
+            this.txtQuienPreventivas.BorderSize = 2;
+            this.txtQuienPreventivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuienPreventivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtQuienPreventivas.Location = new System.Drawing.Point(322, 66);
+            this.txtQuienPreventivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuienPreventivas.MaxLength = 30;
+            this.txtQuienPreventivas.Multiline = true;
+            this.txtQuienPreventivas.Name = "txtQuienPreventivas";
+            this.txtQuienPreventivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtQuienPreventivas.PasswordChar = false;
+            this.txtQuienPreventivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtQuienPreventivas.PlaceholderText = "";
+            this.txtQuienPreventivas.Size = new System.Drawing.Size(255, 60);
+            this.txtQuienPreventivas.TabIndex = 178;
+            this.txtQuienPreventivas.UnderlinedStyle = true;
+            // 
+            // txtCuandoPreventivas
+            // 
+            this.txtCuandoPreventivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtCuandoPreventivas.BackColor = System.Drawing.Color.White;
+            this.txtCuandoPreventivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtCuandoPreventivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtCuandoPreventivas.BorderRadius = 12;
+            this.txtCuandoPreventivas.BorderSize = 2;
+            this.txtCuandoPreventivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuandoPreventivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCuandoPreventivas.Location = new System.Drawing.Point(619, 67);
+            this.txtCuandoPreventivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCuandoPreventivas.MaxLength = 30;
+            this.txtCuandoPreventivas.Multiline = true;
+            this.txtCuandoPreventivas.Name = "txtCuandoPreventivas";
+            this.txtCuandoPreventivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCuandoPreventivas.PasswordChar = false;
+            this.txtCuandoPreventivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCuandoPreventivas.PlaceholderText = "";
+            this.txtCuandoPreventivas.Size = new System.Drawing.Size(255, 60);
+            this.txtCuandoPreventivas.TabIndex = 179;
+            this.txtCuandoPreventivas.UnderlinedStyle = true;
+            // 
             // panel31
             // 
             this.panel31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1630,6 +850,75 @@
             this.label50.TabIndex = 25;
             this.label50.Text = "Acciones Correctivas";
             // 
+            // txtAccionesCorrectivas
+            // 
+            this.txtAccionesCorrectivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAccionesCorrectivas.BackColor = System.Drawing.Color.White;
+            this.txtAccionesCorrectivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtAccionesCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAccionesCorrectivas.BorderRadius = 12;
+            this.txtAccionesCorrectivas.BorderSize = 2;
+            this.txtAccionesCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAccionesCorrectivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAccionesCorrectivas.Location = new System.Drawing.Point(18, 67);
+            this.txtAccionesCorrectivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAccionesCorrectivas.MaxLength = 16383;
+            this.txtAccionesCorrectivas.Multiline = true;
+            this.txtAccionesCorrectivas.Name = "txtAccionesCorrectivas";
+            this.txtAccionesCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAccionesCorrectivas.PasswordChar = false;
+            this.txtAccionesCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAccionesCorrectivas.PlaceholderText = "";
+            this.txtAccionesCorrectivas.Size = new System.Drawing.Size(255, 60);
+            this.txtAccionesCorrectivas.TabIndex = 174;
+            this.txtAccionesCorrectivas.UnderlinedStyle = true;
+            // 
+            // txtquienCorrectivas
+            // 
+            this.txtquienCorrectivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtquienCorrectivas.BackColor = System.Drawing.Color.White;
+            this.txtquienCorrectivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtquienCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtquienCorrectivas.BorderRadius = 12;
+            this.txtquienCorrectivas.BorderSize = 2;
+            this.txtquienCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtquienCorrectivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtquienCorrectivas.Location = new System.Drawing.Point(319, 64);
+            this.txtquienCorrectivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtquienCorrectivas.MaxLength = 30;
+            this.txtquienCorrectivas.Multiline = true;
+            this.txtquienCorrectivas.Name = "txtquienCorrectivas";
+            this.txtquienCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtquienCorrectivas.PasswordChar = false;
+            this.txtquienCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtquienCorrectivas.PlaceholderText = "";
+            this.txtquienCorrectivas.Size = new System.Drawing.Size(259, 60);
+            this.txtquienCorrectivas.TabIndex = 175;
+            this.txtquienCorrectivas.UnderlinedStyle = true;
+            // 
+            // txtCuandoCorrectivas
+            // 
+            this.txtCuandoCorrectivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtCuandoCorrectivas.BackColor = System.Drawing.Color.White;
+            this.txtCuandoCorrectivas.BorderColor = System.Drawing.Color.Gray;
+            this.txtCuandoCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtCuandoCorrectivas.BorderRadius = 12;
+            this.txtCuandoCorrectivas.BorderSize = 2;
+            this.txtCuandoCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuandoCorrectivas.ForeColor = System.Drawing.Color.DimGray;
+            this.txtCuandoCorrectivas.Location = new System.Drawing.Point(615, 67);
+            this.txtCuandoCorrectivas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCuandoCorrectivas.MaxLength = 30;
+            this.txtCuandoCorrectivas.Multiline = true;
+            this.txtCuandoCorrectivas.Name = "txtCuandoCorrectivas";
+            this.txtCuandoCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCuandoCorrectivas.PasswordChar = false;
+            this.txtCuandoCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCuandoCorrectivas.PlaceholderText = "";
+            this.txtCuandoCorrectivas.Size = new System.Drawing.Size(255, 60);
+            this.txtCuandoCorrectivas.TabIndex = 176;
+            this.txtCuandoCorrectivas.UnderlinedStyle = true;
+            // 
             // label49
             // 
             this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1669,6 +958,29 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(899, 180);
             this.panel5.TabIndex = 126;
+            // 
+            // txtDescripcionAccidente
+            // 
+            this.txtDescripcionAccidente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtDescripcionAccidente.BackColor = System.Drawing.Color.White;
+            this.txtDescripcionAccidente.BorderColor = System.Drawing.Color.Gray;
+            this.txtDescripcionAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtDescripcionAccidente.BorderRadius = 12;
+            this.txtDescripcionAccidente.BorderSize = 2;
+            this.txtDescripcionAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionAccidente.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDescripcionAccidente.Location = new System.Drawing.Point(9, 27);
+            this.txtDescripcionAccidente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcionAccidente.MaxLength = 16383;
+            this.txtDescripcionAccidente.Multiline = true;
+            this.txtDescripcionAccidente.Name = "txtDescripcionAccidente";
+            this.txtDescripcionAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDescripcionAccidente.PasswordChar = false;
+            this.txtDescripcionAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDescripcionAccidente.PlaceholderText = "";
+            this.txtDescripcionAccidente.Size = new System.Drawing.Size(880, 75);
+            this.txtDescripcionAccidente.TabIndex = 187;
+            this.txtDescripcionAccidente.UnderlinedStyle = true;
             // 
             // label62
             // 
@@ -1770,6 +1082,48 @@
             this.panel7.Size = new System.Drawing.Size(900, 266);
             this.panel7.TabIndex = 104;
             // 
+            // rbtnTrabajoUrgenteSi
+            // 
+            this.rbtnTrabajoUrgenteSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnTrabajoUrgenteSi.Location = new System.Drawing.Point(338, 218);
+            this.rbtnTrabajoUrgenteSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoUrgenteSi.Name = "rbtnTrabajoUrgenteSi";
+            this.rbtnTrabajoUrgenteSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoUrgenteSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoUrgenteSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnTrabajoUrgenteSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoUrgenteSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoUrgenteSi.TabIndex = 124;
+            this.rbtnTrabajoUrgenteSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnDanosMaterialesSi
+            // 
+            this.rbtnDanosMaterialesSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnDanosMaterialesSi.Location = new System.Drawing.Point(691, 10);
+            this.rbtnDanosMaterialesSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnDanosMaterialesSi.Name = "rbtnDanosMaterialesSi";
+            this.rbtnDanosMaterialesSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnDanosMaterialesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnDanosMaterialesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnDanosMaterialesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnDanosMaterialesSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnDanosMaterialesSi.TabIndex = 125;
+            this.rbtnDanosMaterialesSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnTrabajoNeccesarioSi
+            // 
+            this.rbtnTrabajoNeccesarioSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnTrabajoNeccesarioSi.Location = new System.Drawing.Point(338, 166);
+            this.rbtnTrabajoNeccesarioSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoNeccesarioSi.Name = "rbtnTrabajoNeccesarioSi";
+            this.rbtnTrabajoNeccesarioSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoNeccesarioSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoNeccesarioSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnTrabajoNeccesarioSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoNeccesarioSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoNeccesarioSi.TabIndex = 123;
+            this.rbtnTrabajoNeccesarioSi.UseVisualStyleBackColor = true;
+            // 
             // cboxSeccionB
             // 
             this.cboxSeccionB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1795,6 +1149,20 @@
             this.cboxSeccionB.TabIndex = 116;
             this.cboxSeccionB.SelectedIndexChanged += new System.EventHandler(this.cboxSeccionesB_SelectedIndexChanged);
             // 
+            // rbtnTrabajoProgramadoSi
+            // 
+            this.rbtnTrabajoProgramadoSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnTrabajoProgramadoSi.Location = new System.Drawing.Point(338, 114);
+            this.rbtnTrabajoProgramadoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoProgramadoSi.Name = "rbtnTrabajoProgramadoSi";
+            this.rbtnTrabajoProgramadoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoProgramadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoProgramadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnTrabajoProgramadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoProgramadoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoProgramadoSi.TabIndex = 122;
+            this.rbtnTrabajoProgramadoSi.UseVisualStyleBackColor = true;
+            // 
             // label31
             // 
             this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1806,6 +1174,20 @@
             this.label31.TabIndex = 114;
             this.label31.Text = "Sustituible por:";
             // 
+            // rbtnTrabajoHabitualSi
+            // 
+            this.rbtnTrabajoHabitualSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnTrabajoHabitualSi.Location = new System.Drawing.Point(338, 62);
+            this.rbtnTrabajoHabitualSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnTrabajoHabitualSi.Name = "rbtnTrabajoHabitualSi";
+            this.rbtnTrabajoHabitualSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnTrabajoHabitualSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnTrabajoHabitualSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnTrabajoHabitualSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnTrabajoHabitualSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnTrabajoHabitualSi.TabIndex = 121;
+            this.rbtnTrabajoHabitualSi.UseVisualStyleBackColor = true;
+            // 
             // label30
             // 
             this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1816,6 +1198,20 @@
             this.label30.Size = new System.Drawing.Size(413, 23);
             this.label30.TabIndex = 112;
             this.label30.Text = "Equipo,pieza, maquinaria dañada:";
+            // 
+            // rbtnRealizoTrabajoAntesSi
+            // 
+            this.rbtnRealizoTrabajoAntesSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnRealizoTrabajoAntesSi.Location = new System.Drawing.Point(338, 10);
+            this.rbtnRealizoTrabajoAntesSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnRealizoTrabajoAntesSi.Name = "rbtnRealizoTrabajoAntesSi";
+            this.rbtnRealizoTrabajoAntesSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnRealizoTrabajoAntesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnRealizoTrabajoAntesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnRealizoTrabajoAntesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnRealizoTrabajoAntesSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnRealizoTrabajoAntesSi.TabIndex = 120;
+            this.rbtnRealizoTrabajoAntesSi.UseVisualStyleBackColor = true;
             // 
             // label29
             // 
@@ -1850,6 +1246,29 @@
             this.label27.TabIndex = 106;
             this.label27.Text = "Trabajo programado";
             // 
+            // txtEquipoDanado
+            // 
+            this.txtEquipoDanado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEquipoDanado.BackColor = System.Drawing.Color.White;
+            this.txtEquipoDanado.BorderColor = System.Drawing.Color.Gray;
+            this.txtEquipoDanado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEquipoDanado.BorderRadius = 12;
+            this.txtEquipoDanado.BorderSize = 2;
+            this.txtEquipoDanado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEquipoDanado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEquipoDanado.Location = new System.Drawing.Point(455, 73);
+            this.txtEquipoDanado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEquipoDanado.MaxLength = 50;
+            this.txtEquipoDanado.Multiline = true;
+            this.txtEquipoDanado.Name = "txtEquipoDanado";
+            this.txtEquipoDanado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEquipoDanado.PasswordChar = false;
+            this.txtEquipoDanado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEquipoDanado.PlaceholderText = "";
+            this.txtEquipoDanado.Size = new System.Drawing.Size(420, 52);
+            this.txtEquipoDanado.TabIndex = 185;
+            this.txtEquipoDanado.UnderlinedStyle = true;
+            // 
             // label25
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -1860,6 +1279,29 @@
             this.label25.Size = new System.Drawing.Size(144, 18);
             this.label25.TabIndex = 104;
             this.label25.Text = "Trabajo urgente";
+            // 
+            // txtSustituiblePor
+            // 
+            this.txtSustituiblePor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSustituiblePor.BackColor = System.Drawing.Color.White;
+            this.txtSustituiblePor.BorderColor = System.Drawing.Color.Gray;
+            this.txtSustituiblePor.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtSustituiblePor.BorderRadius = 12;
+            this.txtSustituiblePor.BorderSize = 2;
+            this.txtSustituiblePor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSustituiblePor.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSustituiblePor.Location = new System.Drawing.Point(455, 146);
+            this.txtSustituiblePor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSustituiblePor.MaxLength = 50;
+            this.txtSustituiblePor.Multiline = true;
+            this.txtSustituiblePor.Name = "txtSustituiblePor";
+            this.txtSustituiblePor.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSustituiblePor.PasswordChar = false;
+            this.txtSustituiblePor.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSustituiblePor.PlaceholderText = "";
+            this.txtSustituiblePor.Size = new System.Drawing.Size(420, 52);
+            this.txtSustituiblePor.TabIndex = 186;
+            this.txtSustituiblePor.UnderlinedStyle = true;
             // 
             // label24
             // 
@@ -1914,6 +1356,126 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(900, 362);
             this.panel4.TabIndex = 98;
+            // 
+            // txtEquipoProteccionNecesario
+            // 
+            this.txtEquipoProteccionNecesario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEquipoProteccionNecesario.BackColor = System.Drawing.Color.White;
+            this.txtEquipoProteccionNecesario.BorderColor = System.Drawing.Color.Gray;
+            this.txtEquipoProteccionNecesario.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEquipoProteccionNecesario.BorderRadius = 12;
+            this.txtEquipoProteccionNecesario.BorderSize = 2;
+            this.txtEquipoProteccionNecesario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEquipoProteccionNecesario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEquipoProteccionNecesario.Location = new System.Drawing.Point(455, 275);
+            this.txtEquipoProteccionNecesario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEquipoProteccionNecesario.MaxLength = 50;
+            this.txtEquipoProteccionNecesario.Multiline = true;
+            this.txtEquipoProteccionNecesario.Name = "txtEquipoProteccionNecesario";
+            this.txtEquipoProteccionNecesario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEquipoProteccionNecesario.PasswordChar = false;
+            this.txtEquipoProteccionNecesario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEquipoProteccionNecesario.PlaceholderText = "";
+            this.txtEquipoProteccionNecesario.Size = new System.Drawing.Size(432, 74);
+            this.txtEquipoProteccionNecesario.TabIndex = 184;
+            this.txtEquipoProteccionNecesario.UnderlinedStyle = true;
+            // 
+            // txtObjCausanteLesion
+            // 
+            this.txtObjCausanteLesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtObjCausanteLesion.BackColor = System.Drawing.Color.White;
+            this.txtObjCausanteLesion.BorderColor = System.Drawing.Color.Gray;
+            this.txtObjCausanteLesion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtObjCausanteLesion.BorderRadius = 12;
+            this.txtObjCausanteLesion.BorderSize = 2;
+            this.txtObjCausanteLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObjCausanteLesion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtObjCausanteLesion.Location = new System.Drawing.Point(9, 275);
+            this.txtObjCausanteLesion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtObjCausanteLesion.MaxLength = 50;
+            this.txtObjCausanteLesion.Multiline = true;
+            this.txtObjCausanteLesion.Name = "txtObjCausanteLesion";
+            this.txtObjCausanteLesion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtObjCausanteLesion.PasswordChar = false;
+            this.txtObjCausanteLesion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtObjCausanteLesion.PlaceholderText = "";
+            this.txtObjCausanteLesion.Size = new System.Drawing.Size(432, 74);
+            this.txtObjCausanteLesion.TabIndex = 183;
+            this.txtObjCausanteLesion.UnderlinedStyle = true;
+            // 
+            // txtEquipoProteccionUsado
+            // 
+            this.txtEquipoProteccionUsado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEquipoProteccionUsado.BackColor = System.Drawing.Color.White;
+            this.txtEquipoProteccionUsado.BorderColor = System.Drawing.Color.Gray;
+            this.txtEquipoProteccionUsado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEquipoProteccionUsado.BorderRadius = 12;
+            this.txtEquipoProteccionUsado.BorderSize = 2;
+            this.txtEquipoProteccionUsado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEquipoProteccionUsado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEquipoProteccionUsado.Location = new System.Drawing.Point(455, 164);
+            this.txtEquipoProteccionUsado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEquipoProteccionUsado.MaxLength = 50;
+            this.txtEquipoProteccionUsado.Multiline = true;
+            this.txtEquipoProteccionUsado.Name = "txtEquipoProteccionUsado";
+            this.txtEquipoProteccionUsado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEquipoProteccionUsado.PasswordChar = false;
+            this.txtEquipoProteccionUsado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEquipoProteccionUsado.PlaceholderText = "";
+            this.txtEquipoProteccionUsado.Size = new System.Drawing.Size(432, 74);
+            this.txtEquipoProteccionUsado.TabIndex = 182;
+            this.txtEquipoProteccionUsado.UnderlinedStyle = true;
+            // 
+            // txtLugarAccidente
+            // 
+            this.txtLugarAccidente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtLugarAccidente.BackColor = System.Drawing.Color.White;
+            this.txtLugarAccidente.BorderColor = System.Drawing.Color.Gray;
+            this.txtLugarAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtLugarAccidente.BorderRadius = 12;
+            this.txtLugarAccidente.BorderSize = 2;
+            this.txtLugarAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLugarAccidente.ForeColor = System.Drawing.Color.DimGray;
+            this.txtLugarAccidente.Location = new System.Drawing.Point(9, 164);
+            this.txtLugarAccidente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLugarAccidente.MaxLength = 25;
+            this.txtLugarAccidente.Multiline = true;
+            this.txtLugarAccidente.Name = "txtLugarAccidente";
+            this.txtLugarAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtLugarAccidente.PasswordChar = false;
+            this.txtLugarAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtLugarAccidente.PlaceholderText = "";
+            this.txtLugarAccidente.Size = new System.Drawing.Size(432, 74);
+            this.txtLugarAccidente.TabIndex = 181;
+            this.txtLugarAccidente.UnderlinedStyle = true;
+            // 
+            // rbtnlesion12MesesSi
+            // 
+            this.rbtnlesion12MesesSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnlesion12MesesSi.Location = new System.Drawing.Point(779, 18);
+            this.rbtnlesion12MesesSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnlesion12MesesSi.Name = "rbtnlesion12MesesSi";
+            this.rbtnlesion12MesesSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnlesion12MesesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnlesion12MesesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnlesion12MesesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnlesion12MesesSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnlesion12MesesSi.TabIndex = 120;
+            this.rbtnlesion12MesesSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnlesion30DiasSi
+            // 
+            this.rbtnlesion30DiasSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnlesion30DiasSi.Location = new System.Drawing.Point(333, 18);
+            this.rbtnlesion30DiasSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnlesion30DiasSi.Name = "rbtnlesion30DiasSi";
+            this.rbtnlesion30DiasSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnlesion30DiasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnlesion30DiasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnlesion30DiasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnlesion30DiasSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnlesion30DiasSi.TabIndex = 119;
+            this.rbtnlesion30DiasSi.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -2103,6 +1665,52 @@
             this.panel15.Size = new System.Drawing.Size(916, 275);
             this.panel15.TabIndex = 94;
             // 
+            // txtNombreTestigo
+            // 
+            this.txtNombreTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNombreTestigo.BackColor = System.Drawing.Color.White;
+            this.txtNombreTestigo.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreTestigo.BorderRadius = 12;
+            this.txtNombreTestigo.BorderSize = 2;
+            this.txtNombreTestigo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreTestigo.Enabled = false;
+            this.txtNombreTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtNombreTestigo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreTestigo.Location = new System.Drawing.Point(286, 54);
+            this.txtNombreTestigo.MaxLength = 32767;
+            this.txtNombreTestigo.Name = "txtNombreTestigo";
+            this.txtNombreTestigo.Padding = new System.Windows.Forms.Padding(5);
+            this.txtNombreTestigo.PasswordChar = false;
+            this.txtNombreTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreTestigo.PlaceholderText = "";
+            this.txtNombreTestigo.Size = new System.Drawing.Size(467, 30);
+            this.txtNombreTestigo.TabIndex = 205;
+            this.txtNombreTestigo.UnderlinedStyle = true;
+            // 
+            // txtNumNominaTestigo
+            // 
+            this.txtNumNominaTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNumNominaTestigo.BackColor = System.Drawing.Color.White;
+            this.txtNumNominaTestigo.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumNominaTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumNominaTestigo.BorderRadius = 12;
+            this.txtNumNominaTestigo.BorderSize = 2;
+            this.txtNumNominaTestigo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNumNominaTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtNumNominaTestigo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumNominaTestigo.Location = new System.Drawing.Point(20, 53);
+            this.txtNumNominaTestigo.MaxLength = 15;
+            this.txtNumNominaTestigo.Name = "txtNumNominaTestigo";
+            this.txtNumNominaTestigo.Padding = new System.Windows.Forms.Padding(5);
+            this.txtNumNominaTestigo.PasswordChar = false;
+            this.txtNumNominaTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNominaTestigo.PlaceholderText = "";
+            this.txtNumNominaTestigo.Size = new System.Drawing.Size(199, 30);
+            this.txtNumNominaTestigo.TabIndex = 204;
+            this.txtNumNominaTestigo.UnderlinedStyle = true;
+            this.txtNumNominaTestigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumNominaTestigo_KeyPress);
+            // 
             // label74
             // 
             this.label74.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2127,6 +1735,54 @@
             this.label73.TabIndex = 189;
             this.label73.Text = "No. Nómina: ";
             // 
+            // btnBuscarTestigo
+            // 
+            this.btnBuscarTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnBuscarTestigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarTestigo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarTestigo.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarTestigo.BorderRadius = 20;
+            this.btnBuscarTestigo.BorderSize = 0;
+            this.btnBuscarTestigo.FlatAppearance.BorderSize = 0;
+            this.btnBuscarTestigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarTestigo.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarTestigo.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarTestigo.Image")));
+            this.btnBuscarTestigo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarTestigo.Location = new System.Drawing.Point(225, 47);
+            this.btnBuscarTestigo.Name = "btnBuscarTestigo";
+            this.btnBuscarTestigo.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnBuscarTestigo.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarTestigo.TabIndex = 107;
+            this.btnBuscarTestigo.TextColor = System.Drawing.Color.White;
+            this.btnBuscarTestigo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarTestigo.UseVisualStyleBackColor = false;
+            this.btnBuscarTestigo.Click += new System.EventHandler(this.btnBuscarTestigo_Click);
+            // 
+            // btnAgregarTestigo
+            // 
+            this.btnAgregarTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnAgregarTestigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarTestigo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarTestigo.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnAgregarTestigo.BorderRadius = 20;
+            this.btnAgregarTestigo.BorderSize = 0;
+            this.btnAgregarTestigo.FlatAppearance.BorderSize = 0;
+            this.btnAgregarTestigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarTestigo.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarTestigo.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarTestigo.Image")));
+            this.btnAgregarTestigo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarTestigo.Location = new System.Drawing.Point(778, 36);
+            this.btnAgregarTestigo.Name = "btnAgregarTestigo";
+            this.btnAgregarTestigo.Size = new System.Drawing.Size(125, 51);
+            this.btnAgregarTestigo.TabIndex = 106;
+            this.btnAgregarTestigo.Text = " Agregar";
+            this.btnAgregarTestigo.TextColor = System.Drawing.Color.White;
+            this.btnAgregarTestigo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarTestigo.UseVisualStyleBackColor = false;
+            this.btnAgregarTestigo.Click += new System.EventHandler(this.btnAgregarTestigo_Click);
+            // 
             // txtIdEmpleadoTestigo
             // 
             this.txtIdEmpleadoTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2134,7 +1790,7 @@
             this.txtIdEmpleadoTestigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdEmpleadoTestigo.Depth = 0;
             this.txtIdEmpleadoTestigo.Enabled = false;
-            this.txtIdEmpleadoTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleadoTestigo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleadoTestigo.Hint = "Id Empleado Testigo: ";
             this.txtIdEmpleadoTestigo.LeadingIcon = null;
             this.txtIdEmpleadoTestigo.Location = new System.Drawing.Point(594, 36);
@@ -2163,41 +1819,41 @@
             // dgvTestigos
             // 
             this.dgvTestigos.AllowUserToAddRows = false;
-            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvTestigos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvTestigos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvTestigos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dgvTestigos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTestigos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.dgvTestigos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTestigos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvTestigos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTestigos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTestigos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvTestigos.ColumnHeadersHeight = 40;
             this.dgvTestigos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numNomina,
             this.Column1,
             this.IdEmpleadoTestigo,
             this.acciones});
-            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle57.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTestigos.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTestigos.DefaultCellStyle = dataGridViewCellStyle22;
             this.dgvTestigos.EnableHeadersVisualStyles = false;
             this.dgvTestigos.Location = new System.Drawing.Point(14, 108);
             this.dgvTestigos.Name = "dgvTestigos";
@@ -2251,7 +1907,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(728, 27496);
+            this.button2.Location = new System.Drawing.Point(728, 27734);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 50);
             this.button2.TabIndex = 91;
@@ -2319,6 +1975,44 @@
             this.label86.TabIndex = 203;
             this.label86.Text = "Debido A:";
             // 
+            // cboxDebidoA
+            // 
+            this.cboxDebidoA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxDebidoA.BackColor = System.Drawing.Color.White;
+            this.cboxDebidoA.BorderColor = System.Drawing.Color.DarkCyan;
+            this.cboxDebidoA.BorderSize = 1;
+            this.cboxDebidoA.DisplayMember = "";
+            this.cboxDebidoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxDebidoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cboxDebidoA.ForeColor = System.Drawing.Color.DimGray;
+            this.cboxDebidoA.IconColor = System.Drawing.Color.DarkCyan;
+            this.cboxDebidoA.Items.AddRange(new object[] {
+            "Reac. Gente",
+            "Act. Inseg.",
+            "Dispos. Seg.",
+            "Posic. Gente",
+            "Herramient.",
+            "No EPP",
+            "No Proced.",
+            "Maq./ equip.",
+            "Materiales",
+            "Derrames",
+            "Otra gente",
+            "Objetos",
+            "Operación",
+            "Estruc./inst.",
+            "Transp./Vehic."});
+            this.cboxDebidoA.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.cboxDebidoA.ListTextColor = System.Drawing.Color.White;
+            this.cboxDebidoA.Location = new System.Drawing.Point(513, 247);
+            this.cboxDebidoA.MinimumSize = new System.Drawing.Size(0, 30);
+            this.cboxDebidoA.Name = "cboxDebidoA";
+            this.cboxDebidoA.Padding = new System.Windows.Forms.Padding(1);
+            this.cboxDebidoA.SelectedIndex = 1;
+            this.cboxDebidoA.Size = new System.Drawing.Size(394, 30);
+            this.cboxDebidoA.TabIndex = 202;
+            this.cboxDebidoA.ValueMember = "";
+            // 
             // label85
             // 
             this.label85.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2330,6 +2024,33 @@
             this.label85.Size = new System.Drawing.Size(51, 16);
             this.label85.TabIndex = 201;
             this.label85.Text = "Turno:";
+            // 
+            // CboxTurno
+            // 
+            this.CboxTurno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.CboxTurno.BackColor = System.Drawing.Color.White;
+            this.CboxTurno.BorderColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.BorderSize = 1;
+            this.CboxTurno.DisplayMember = "";
+            this.CboxTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CboxTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.CboxTurno.ForeColor = System.Drawing.Color.DimGray;
+            this.CboxTurno.IconColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.Items.AddRange(new object[] {
+            "Matutino",
+            "Vespertino",
+            "Nocturno",
+            "Mixto"});
+            this.CboxTurno.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.CboxTurno.ListTextColor = System.Drawing.Color.White;
+            this.CboxTurno.Location = new System.Drawing.Point(756, 125);
+            this.CboxTurno.MinimumSize = new System.Drawing.Size(0, 30);
+            this.CboxTurno.Name = "CboxTurno";
+            this.CboxTurno.Padding = new System.Windows.Forms.Padding(1);
+            this.CboxTurno.SelectedIndex = 1;
+            this.CboxTurno.Size = new System.Drawing.Size(151, 30);
+            this.CboxTurno.TabIndex = 200;
+            this.CboxTurno.ValueMember = "";
             // 
             // label84
             // 
@@ -2343,6 +2064,59 @@
             this.label84.TabIndex = 199;
             this.label84.Text = "Condición:";
             // 
+            // cboxCondicion
+            // 
+            this.cboxCondicion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxCondicion.BackColor = System.Drawing.Color.White;
+            this.cboxCondicion.BorderColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.BorderSize = 1;
+            this.cboxCondicion.DisplayMember = "";
+            this.cboxCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cboxCondicion.ForeColor = System.Drawing.Color.DimGray;
+            this.cboxCondicion.IconColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.Items.AddRange(new object[] {
+            "Leve",
+            "Moderado",
+            "Grave",
+            "Mortal",
+            "Otra"});
+            this.cboxCondicion.ListBackColor = System.Drawing.Color.DarkCyan;
+            this.cboxCondicion.ListTextColor = System.Drawing.Color.White;
+            this.cboxCondicion.Location = new System.Drawing.Point(13, 63);
+            this.cboxCondicion.MinimumSize = new System.Drawing.Size(0, 30);
+            this.cboxCondicion.Name = "cboxCondicion";
+            this.cboxCondicion.Padding = new System.Windows.Forms.Padding(1);
+            this.cboxCondicion.SelectedIndex = 1;
+            this.cboxCondicion.Size = new System.Drawing.Size(151, 30);
+            this.cboxCondicion.TabIndex = 198;
+            this.cboxCondicion.ValueMember = "";
+            // 
+            // txtTotalhrs
+            // 
+            this.txtTotalhrs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTotalhrs.BackColor = System.Drawing.Color.White;
+            this.txtTotalhrs.BorderColor = System.Drawing.Color.Gray;
+            this.txtTotalhrs.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTotalhrs.BorderRadius = 12;
+            this.txtTotalhrs.BorderSize = 2;
+            this.txtTotalhrs.Enabled = false;
+            this.txtTotalhrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalhrs.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTotalhrs.Location = new System.Drawing.Point(219, 186);
+            this.txtTotalhrs.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotalhrs.MaxLength = 2;
+            this.txtTotalhrs.Multiline = false;
+            this.txtTotalhrs.Name = "txtTotalhrs";
+            this.txtTotalhrs.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTotalhrs.PasswordChar = false;
+            this.txtTotalhrs.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTotalhrs.PlaceholderText = "8";
+            this.txtTotalhrs.Size = new System.Drawing.Size(152, 35);
+            this.txtTotalhrs.TabIndex = 194;
+            this.txtTotalhrs.UnderlinedStyle = true;
+            this.txtTotalhrs.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTotalhrs_KeyPress);
+            // 
             // label72
             // 
             this.label72.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2354,6 +2128,30 @@
             this.label72.Size = new System.Drawing.Size(101, 16);
             this.label72.TabIndex = 193;
             this.label72.Text = "Total de Hrs: ";
+            // 
+            // txtPuesto
+            // 
+            this.txtPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtPuesto.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPuesto.BorderColor = System.Drawing.Color.Gray;
+            this.txtPuesto.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtPuesto.BorderRadius = 12;
+            this.txtPuesto.BorderSize = 2;
+            this.txtPuesto.Enabled = false;
+            this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPuesto.Location = new System.Drawing.Point(389, 186);
+            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPuesto.MaxLength = 32767;
+            this.txtPuesto.Multiline = false;
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPuesto.PasswordChar = false;
+            this.txtPuesto.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPuesto.PlaceholderText = "";
+            this.txtPuesto.Size = new System.Drawing.Size(214, 35);
+            this.txtPuesto.TabIndex = 192;
+            this.txtPuesto.UnderlinedStyle = true;
             // 
             // label71
             // 
@@ -2367,6 +2165,30 @@
             this.label71.TabIndex = 191;
             this.label71.Text = "Puesto:";
             // 
+            // txtAntiguedad
+            // 
+            this.txtAntiguedad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtAntiguedad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtAntiguedad.BorderColor = System.Drawing.Color.Gray;
+            this.txtAntiguedad.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtAntiguedad.BorderRadius = 12;
+            this.txtAntiguedad.BorderSize = 2;
+            this.txtAntiguedad.Enabled = false;
+            this.txtAntiguedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAntiguedad.ForeColor = System.Drawing.Color.DimGray;
+            this.txtAntiguedad.Location = new System.Drawing.Point(619, 186);
+            this.txtAntiguedad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAntiguedad.MaxLength = 32767;
+            this.txtAntiguedad.Multiline = false;
+            this.txtAntiguedad.Name = "txtAntiguedad";
+            this.txtAntiguedad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAntiguedad.PasswordChar = false;
+            this.txtAntiguedad.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAntiguedad.PlaceholderText = "";
+            this.txtAntiguedad.Size = new System.Drawing.Size(288, 35);
+            this.txtAntiguedad.TabIndex = 190;
+            this.txtAntiguedad.UnderlinedStyle = true;
+            // 
             // label70
             // 
             this.label70.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2378,6 +2200,30 @@
             this.label70.Size = new System.Drawing.Size(52, 16);
             this.label70.TabIndex = 189;
             this.label70.Text = "Edad: ";
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtEdad.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEdad.BorderColor = System.Drawing.Color.Gray;
+            this.txtEdad.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtEdad.BorderRadius = 12;
+            this.txtEdad.BorderSize = 2;
+            this.txtEdad.Enabled = false;
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEdad.Location = new System.Drawing.Point(616, 120);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEdad.MaxLength = 32767;
+            this.txtEdad.Multiline = false;
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEdad.PasswordChar = false;
+            this.txtEdad.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEdad.PlaceholderText = "";
+            this.txtEdad.Size = new System.Drawing.Size(138, 35);
+            this.txtEdad.TabIndex = 188;
+            this.txtEdad.UnderlinedStyle = true;
             // 
             // label69
             // 
@@ -2391,6 +2237,30 @@
             this.label69.TabIndex = 187;
             this.label69.Text = "No. Nómina: ";
             // 
+            // txtNumeroNomina
+            // 
+            this.txtNumeroNomina.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNumeroNomina.BackColor = System.Drawing.Color.White;
+            this.txtNumeroNomina.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumeroNomina.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumeroNomina.BorderRadius = 12;
+            this.txtNumeroNomina.BorderSize = 2;
+            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumeroNomina.Location = new System.Drawing.Point(9, 123);
+            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumeroNomina.MaxLength = 15;
+            this.txtNumeroNomina.Multiline = false;
+            this.txtNumeroNomina.Name = "txtNumeroNomina";
+            this.txtNumeroNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNumeroNomina.PasswordChar = false;
+            this.txtNumeroNomina.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumeroNomina.PlaceholderText = "";
+            this.txtNumeroNomina.Size = new System.Drawing.Size(149, 35);
+            this.txtNumeroNomina.TabIndex = 186;
+            this.txtNumeroNomina.UnderlinedStyle = true;
+            this.txtNumeroNomina.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroNomina_KeyPress);
+            // 
             // label67
             // 
             this.label67.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2403,6 +2273,30 @@
             this.label67.TabIndex = 185;
             this.label67.Text = "Nombre: ";
             // 
+            // txtNombreEmpleado
+            // 
+            this.txtNombreEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNombreEmpleado.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNombreEmpleado.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreEmpleado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreEmpleado.BorderRadius = 12;
+            this.txtNombreEmpleado.BorderSize = 2;
+            this.txtNombreEmpleado.Enabled = false;
+            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(219, 120);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreEmpleado.MaxLength = 32767;
+            this.txtNombreEmpleado.Multiline = false;
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNombreEmpleado.PasswordChar = false;
+            this.txtNombreEmpleado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreEmpleado.PlaceholderText = "";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(387, 35);
+            this.txtNombreEmpleado.TabIndex = 184;
+            this.txtNombreEmpleado.UnderlinedStyle = true;
+            // 
             // label68
             // 
             this.label68.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -2414,6 +2308,69 @@
             this.label68.Size = new System.Drawing.Size(112, 16);
             this.label68.TabIndex = 183;
             this.label68.Text = "Accidente No.: ";
+            // 
+            // txtNoAccidente
+            // 
+            this.txtNoAccidente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNoAccidente.BackColor = System.Drawing.Color.White;
+            this.txtNoAccidente.BorderColor = System.Drawing.Color.Gray;
+            this.txtNoAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNoAccidente.BorderRadius = 12;
+            this.txtNoAccidente.BorderSize = 2;
+            this.txtNoAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoAccidente.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNoAccidente.Location = new System.Drawing.Point(181, 59);
+            this.txtNoAccidente.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNoAccidente.MaxLength = 32767;
+            this.txtNoAccidente.Multiline = false;
+            this.txtNoAccidente.Name = "txtNoAccidente";
+            this.txtNoAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNoAccidente.PasswordChar = false;
+            this.txtNoAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNoAccidente.PlaceholderText = "";
+            this.txtNoAccidente.Size = new System.Drawing.Size(422, 35);
+            this.txtNoAccidente.TabIndex = 182;
+            this.txtNoAccidente.UnderlinedStyle = true;
+            this.txtNoAccidente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoAccidente_KeyPress);
+            // 
+            // btnBuscarEmpleado
+            // 
+            this.btnBuscarEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnBuscarEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleado.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnBuscarEmpleado.BorderRadius = 20;
+            this.btnBuscarEmpleado.BorderSize = 0;
+            this.btnBuscarEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarEmpleado.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleado.Image")));
+            this.btnBuscarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarEmpleado.Location = new System.Drawing.Point(167, 112);
+            this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
+            this.btnBuscarEmpleado.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnBuscarEmpleado.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarEmpleado.TabIndex = 124;
+            this.btnBuscarEmpleado.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscarEmpleado.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
+            // 
+            // rbtnHrsExtrasSi
+            // 
+            this.rbtnHrsExtrasSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnHrsExtrasSi.Location = new System.Drawing.Point(126, 186);
+            this.rbtnHrsExtrasSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnHrsExtrasSi.Name = "rbtnHrsExtrasSi";
+            this.rbtnHrsExtrasSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnHrsExtrasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnHrsExtrasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnHrsExtrasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnHrsExtrasSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnHrsExtrasSi.TabIndex = 122;
+            this.rbtnHrsExtrasSi.UseVisualStyleBackColor = true;
+            this.rbtnHrsExtrasSi.CheckedChanged += new System.EventHandler(this.rbtnHrsExtrasSi_CheckedChanged);
             // 
             // dtpHoraAccidente
             // 
@@ -2528,7 +2485,7 @@
             this.txtIdEmpleado.AnimateReadOnly = false;
             this.txtIdEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdEmpleado.Depth = 0;
-            this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtIdEmpleado.Hint = "Id Empleado: ";
             this.txtIdEmpleado.LeadingIcon = null;
             this.txtIdEmpleado.Location = new System.Drawing.Point(444, 109);
@@ -2577,6 +2534,1618 @@
             this.label21.Size = new System.Drawing.Size(190, 16);
             this.label21.TabIndex = 101;
             this.label21.Text = "Parte del Cuerpo Afectada";
+            // 
+            // txtTrabajoDesempeñado
+            // 
+            this.txtTrabajoDesempeñado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTrabajoDesempeñado.BackColor = System.Drawing.Color.White;
+            this.txtTrabajoDesempeñado.BorderColor = System.Drawing.Color.Gray;
+            this.txtTrabajoDesempeñado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTrabajoDesempeñado.BorderRadius = 12;
+            this.txtTrabajoDesempeñado.BorderSize = 2;
+            this.txtTrabajoDesempeñado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTrabajoDesempeñado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTrabajoDesempeñado.Location = new System.Drawing.Point(14, 302);
+            this.txtTrabajoDesempeñado.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTrabajoDesempeñado.MaxLength = 30;
+            this.txtTrabajoDesempeñado.Multiline = true;
+            this.txtTrabajoDesempeñado.Name = "txtTrabajoDesempeñado";
+            this.txtTrabajoDesempeñado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTrabajoDesempeñado.PasswordChar = false;
+            this.txtTrabajoDesempeñado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTrabajoDesempeñado.PlaceholderText = "";
+            this.txtTrabajoDesempeñado.Size = new System.Drawing.Size(887, 59);
+            this.txtTrabajoDesempeñado.TabIndex = 195;
+            this.txtTrabajoDesempeñado.UnderlinedStyle = true;
+            // 
+            // txtTipoLesion
+            // 
+            this.txtTipoLesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTipoLesion.BackColor = System.Drawing.Color.White;
+            this.txtTipoLesion.BorderColor = System.Drawing.Color.Gray;
+            this.txtTipoLesion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTipoLesion.BorderRadius = 12;
+            this.txtTipoLesion.BorderSize = 2;
+            this.txtTipoLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipoLesion.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTipoLesion.Location = new System.Drawing.Point(14, 393);
+            this.txtTipoLesion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipoLesion.MaxLength = 30;
+            this.txtTipoLesion.Multiline = true;
+            this.txtTipoLesion.Name = "txtTipoLesion";
+            this.txtTipoLesion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTipoLesion.PasswordChar = false;
+            this.txtTipoLesion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTipoLesion.PlaceholderText = "";
+            this.txtTipoLesion.Size = new System.Drawing.Size(887, 77);
+            this.txtTipoLesion.TabIndex = 196;
+            this.txtTipoLesion.UnderlinedStyle = true;
+            // 
+            // txtParteCuerpoAfectada
+            // 
+            this.txtParteCuerpoAfectada.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtParteCuerpoAfectada.BackColor = System.Drawing.Color.White;
+            this.txtParteCuerpoAfectada.BorderColor = System.Drawing.Color.Gray;
+            this.txtParteCuerpoAfectada.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtParteCuerpoAfectada.BorderRadius = 12;
+            this.txtParteCuerpoAfectada.BorderSize = 2;
+            this.txtParteCuerpoAfectada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtParteCuerpoAfectada.ForeColor = System.Drawing.Color.DimGray;
+            this.txtParteCuerpoAfectada.Location = new System.Drawing.Point(14, 503);
+            this.txtParteCuerpoAfectada.Margin = new System.Windows.Forms.Padding(4);
+            this.txtParteCuerpoAfectada.MaxLength = 30;
+            this.txtParteCuerpoAfectada.Multiline = true;
+            this.txtParteCuerpoAfectada.Name = "txtParteCuerpoAfectada";
+            this.txtParteCuerpoAfectada.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtParteCuerpoAfectada.PasswordChar = false;
+            this.txtParteCuerpoAfectada.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtParteCuerpoAfectada.PlaceholderText = "";
+            this.txtParteCuerpoAfectada.Size = new System.Drawing.Size(887, 77);
+            this.txtParteCuerpoAfectada.TabIndex = 197;
+            this.txtParteCuerpoAfectada.UnderlinedStyle = true;
+            // 
+            // pFactoresSeguridad
+            // 
+            this.pFactoresSeguridad.AutoScroll = true;
+            this.pFactoresSeguridad.Controls.Add(this.label39);
+            this.pFactoresSeguridad.Controls.Add(this.panel20);
+            this.pFactoresSeguridad.Controls.Add(this.panel19);
+            this.pFactoresSeguridad.Controls.Add(this.panel18);
+            this.pFactoresSeguridad.Controls.Add(this.label35);
+            this.pFactoresSeguridad.Controls.Add(this.panel17);
+            this.pFactoresSeguridad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pFactoresSeguridad.Location = new System.Drawing.Point(0, 0);
+            this.pFactoresSeguridad.Name = "pFactoresSeguridad";
+            this.pFactoresSeguridad.Size = new System.Drawing.Size(945, 495);
+            this.pFactoresSeguridad.TabIndex = 15;
+            // 
+            // label39
+            // 
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Transparent;
+            this.label39.Location = new System.Drawing.Point(-4, 725);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(144, 18);
+            this.label39.TabIndex = 111;
+            this.label39.Text = "Trabajo necesario";
+            // 
+            // panel20
+            // 
+            this.panel20.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel20.Controls.Add(this.rbtnEquipoAdecuadoSi);
+            this.panel20.Controls.Add(this.rbtnConociaTrabajoSi);
+            this.panel20.Controls.Add(this.rbtnExistiaSupervicionSi);
+            this.panel20.Controls.Add(this.rbtnExistenItrsSi);
+            this.panel20.Controls.Add(this.label37);
+            this.panel20.Controls.Add(this.label38);
+            this.panel20.Controls.Add(this.label40);
+            this.panel20.Controls.Add(this.label41);
+            this.panel20.Location = new System.Drawing.Point(11, 589);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(906, 111);
+            this.panel20.TabIndex = 100;
+            // 
+            // rbtnEquipoAdecuadoSi
+            // 
+            this.rbtnEquipoAdecuadoSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnEquipoAdecuadoSi.Location = new System.Drawing.Point(282, 63);
+            this.rbtnEquipoAdecuadoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnEquipoAdecuadoSi.Name = "rbtnEquipoAdecuadoSi";
+            this.rbtnEquipoAdecuadoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnEquipoAdecuadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnEquipoAdecuadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnEquipoAdecuadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnEquipoAdecuadoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnEquipoAdecuadoSi.TabIndex = 126;
+            this.rbtnEquipoAdecuadoSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnConociaTrabajoSi
+            // 
+            this.rbtnConociaTrabajoSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnConociaTrabajoSi.Location = new System.Drawing.Point(751, 12);
+            this.rbtnConociaTrabajoSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnConociaTrabajoSi.Name = "rbtnConociaTrabajoSi";
+            this.rbtnConociaTrabajoSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnConociaTrabajoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnConociaTrabajoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnConociaTrabajoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnConociaTrabajoSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnConociaTrabajoSi.TabIndex = 125;
+            this.rbtnConociaTrabajoSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnExistiaSupervicionSi
+            // 
+            this.rbtnExistiaSupervicionSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnExistiaSupervicionSi.Location = new System.Drawing.Point(751, 63);
+            this.rbtnExistiaSupervicionSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnExistiaSupervicionSi.Name = "rbtnExistiaSupervicionSi";
+            this.rbtnExistiaSupervicionSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnExistiaSupervicionSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnExistiaSupervicionSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnExistiaSupervicionSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnExistiaSupervicionSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnExistiaSupervicionSi.TabIndex = 124;
+            this.rbtnExistiaSupervicionSi.UseVisualStyleBackColor = true;
+            // 
+            // rbtnExistenItrsSi
+            // 
+            this.rbtnExistenItrsSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnExistenItrsSi.Location = new System.Drawing.Point(282, 12);
+            this.rbtnExistenItrsSi.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rbtnExistenItrsSi.Name = "rbtnExistenItrsSi";
+            this.rbtnExistenItrsSi.OffBackColor = System.Drawing.Color.Gray;
+            this.rbtnExistenItrsSi.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rbtnExistenItrsSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.rbtnExistenItrsSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rbtnExistenItrsSi.Size = new System.Drawing.Size(83, 34);
+            this.rbtnExistenItrsSi.TabIndex = 123;
+            this.rbtnExistenItrsSi.UseVisualStyleBackColor = true;
+            // 
+            // label37
+            // 
+            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label37.Location = new System.Drawing.Point(487, 71);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(144, 18);
+            this.label37.TabIndex = 107;
+            this.label37.Text = "Existía supervisión";
+            // 
+            // label38
+            // 
+            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label38.Location = new System.Drawing.Point(487, 20);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(221, 18);
+            this.label38.TabIndex = 106;
+            this.label38.Text = "Conocía el trabajador el lugar";
+            // 
+            // label40
+            // 
+            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label40.Location = new System.Drawing.Point(9, 71);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(254, 18);
+            this.label40.TabIndex = 103;
+            this.label40.Text = "Herramientas y equipo adecuado";
+            // 
+            // label41
+            // 
+            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label41.Location = new System.Drawing.Point(9, 20);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(280, 18);
+            this.label41.TabIndex = 103;
+            this.label41.Text = "Existen ITR\'s de Trabajo";
+            // 
+            // panel19
+            // 
+            this.panel19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel19.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel19.Controls.Add(this.txtOtraCondicion);
+            this.panel19.Controls.Add(this.lblcondicioninsegura);
+            this.panel19.Controls.Add(this.btnGrabarCondicionInsegura);
+            this.panel19.Controls.Add(this.btnAgregarCondicion);
+            this.panel19.Controls.Add(this.dgvCondicionInsegura);
+            this.panel19.Controls.Add(this.cboxCondicionesInseguras);
+            this.panel19.Controls.Add(this.label36);
+            this.panel19.Location = new System.Drawing.Point(10, 404);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(906, 169);
+            this.panel19.TabIndex = 78;
+            // 
+            // txtOtraCondicion
+            // 
+            this.txtOtraCondicion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtOtraCondicion.BackColor = System.Drawing.Color.White;
+            this.txtOtraCondicion.BorderColor = System.Drawing.Color.Gray;
+            this.txtOtraCondicion.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOtraCondicion.BorderRadius = 12;
+            this.txtOtraCondicion.BorderSize = 2;
+            this.txtOtraCondicion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOtraCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtOtraCondicion.ForeColor = System.Drawing.Color.Black;
+            this.txtOtraCondicion.Location = new System.Drawing.Point(11, 118);
+            this.txtOtraCondicion.MaxLength = 32767;
+            this.txtOtraCondicion.Name = "txtOtraCondicion";
+            this.txtOtraCondicion.Padding = new System.Windows.Forms.Padding(5);
+            this.txtOtraCondicion.PasswordChar = false;
+            this.txtOtraCondicion.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOtraCondicion.PlaceholderText = "";
+            this.txtOtraCondicion.Size = new System.Drawing.Size(375, 30);
+            this.txtOtraCondicion.TabIndex = 184;
+            this.txtOtraCondicion.UnderlinedStyle = true;
+            this.txtOtraCondicion.Visible = false;
+            // 
+            // lblcondicioninsegura
+            // 
+            this.lblcondicioninsegura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblcondicioninsegura.AutoSize = true;
+            this.lblcondicioninsegura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcondicioninsegura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.lblcondicioninsegura.Location = new System.Drawing.Point(13, 97);
+            this.lblcondicioninsegura.Name = "lblcondicioninsegura";
+            this.lblcondicioninsegura.Size = new System.Drawing.Size(177, 16);
+            this.lblcondicioninsegura.TabIndex = 183;
+            this.lblcondicioninsegura.Text = "Otra Condicion Insegura:";
+            this.lblcondicioninsegura.Visible = false;
+            // 
+            // btnGrabarCondicionInsegura
+            // 
+            this.btnGrabarCondicionInsegura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnGrabarCondicionInsegura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarCondicionInsegura.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarCondicionInsegura.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGrabarCondicionInsegura.BorderRadius = 20;
+            this.btnGrabarCondicionInsegura.BorderSize = 0;
+            this.btnGrabarCondicionInsegura.FlatAppearance.BorderSize = 0;
+            this.btnGrabarCondicionInsegura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabarCondicionInsegura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabarCondicionInsegura.ForeColor = System.Drawing.Color.White;
+            this.btnGrabarCondicionInsegura.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabarCondicionInsegura.Image")));
+            this.btnGrabarCondicionInsegura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGrabarCondicionInsegura.Location = new System.Drawing.Point(400, 97);
+            this.btnGrabarCondicionInsegura.Name = "btnGrabarCondicionInsegura";
+            this.btnGrabarCondicionInsegura.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnGrabarCondicionInsegura.Size = new System.Drawing.Size(125, 51);
+            this.btnGrabarCondicionInsegura.TabIndex = 108;
+            this.btnGrabarCondicionInsegura.Text = " Guardar";
+            this.btnGrabarCondicionInsegura.TextColor = System.Drawing.Color.White;
+            this.btnGrabarCondicionInsegura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGrabarCondicionInsegura.UseVisualStyleBackColor = false;
+            this.btnGrabarCondicionInsegura.Visible = false;
+            this.btnGrabarCondicionInsegura.Click += new System.EventHandler(this.btnGrabarCondicionInsegura_Click);
+            // 
+            // btnAgregarCondicion
+            // 
+            this.btnAgregarCondicion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnAgregarCondicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarCondicion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarCondicion.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnAgregarCondicion.BorderRadius = 20;
+            this.btnAgregarCondicion.BorderSize = 0;
+            this.btnAgregarCondicion.FlatAppearance.BorderSize = 0;
+            this.btnAgregarCondicion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCondicion.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarCondicion.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCondicion.Image")));
+            this.btnAgregarCondicion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCondicion.Location = new System.Drawing.Point(400, 32);
+            this.btnAgregarCondicion.Name = "btnAgregarCondicion";
+            this.btnAgregarCondicion.Size = new System.Drawing.Size(125, 51);
+            this.btnAgregarCondicion.TabIndex = 107;
+            this.btnAgregarCondicion.Text = " Agregar";
+            this.btnAgregarCondicion.TextColor = System.Drawing.Color.White;
+            this.btnAgregarCondicion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarCondicion.UseVisualStyleBackColor = false;
+            this.btnAgregarCondicion.Click += new System.EventHandler(this.btnAgregarCondicion_Click);
+            // 
+            // dgvCondicionInsegura
+            // 
+            this.dgvCondicionInsegura.AllowUserToAddRows = false;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvCondicionInsegura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
+            this.dgvCondicionInsegura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvCondicionInsegura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCondicionInsegura.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgvCondicionInsegura.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvCondicionInsegura.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvCondicionInsegura.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCondicionInsegura.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            this.dgvCondicionInsegura.ColumnHeadersHeight = 45;
+            this.dgvCondicionInsegura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idCondicionInsegura,
+            this.CondicionInsegura,
+            this.accionesCondiciones});
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCondicionInsegura.DefaultCellStyle = dataGridViewCellStyle25;
+            this.dgvCondicionInsegura.EnableHeadersVisualStyles = false;
+            this.dgvCondicionInsegura.Location = new System.Drawing.Point(536, 33);
+            this.dgvCondicionInsegura.Name = "dgvCondicionInsegura";
+            this.dgvCondicionInsegura.ReadOnly = true;
+            this.dgvCondicionInsegura.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCondicionInsegura.RowHeadersVisible = false;
+            this.dgvCondicionInsegura.RowHeadersWidth = 51;
+            this.dgvCondicionInsegura.RowTemplate.Height = 35;
+            this.dgvCondicionInsegura.Size = new System.Drawing.Size(360, 127);
+            this.dgvCondicionInsegura.TabIndex = 18;
+            this.dgvCondicionInsegura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCondicionInsegura_CellClick);
+            // 
+            // idCondicionInsegura
+            // 
+            this.idCondicionInsegura.HeaderText = "Id Consición Insegura";
+            this.idCondicionInsegura.MinimumWidth = 6;
+            this.idCondicionInsegura.Name = "idCondicionInsegura";
+            this.idCondicionInsegura.ReadOnly = true;
+            // 
+            // CondicionInsegura
+            // 
+            this.CondicionInsegura.FillWeight = 149.2386F;
+            this.CondicionInsegura.HeaderText = "Condición Insegura";
+            this.CondicionInsegura.MinimumWidth = 6;
+            this.CondicionInsegura.Name = "CondicionInsegura";
+            this.CondicionInsegura.ReadOnly = true;
+            // 
+            // accionesCondiciones
+            // 
+            this.accionesCondiciones.FillWeight = 50.76142F;
+            this.accionesCondiciones.HeaderText = "";
+            this.accionesCondiciones.Image = ((System.Drawing.Image)(resources.GetObject("accionesCondiciones.Image")));
+            this.accionesCondiciones.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesCondiciones.MinimumWidth = 6;
+            this.accionesCondiciones.Name = "accionesCondiciones";
+            this.accionesCondiciones.ReadOnly = true;
+            this.accionesCondiciones.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesCondiciones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // cboxCondicionesInseguras
+            // 
+            this.cboxCondicionesInseguras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxCondicionesInseguras.AutoResize = false;
+            this.cboxCondicionesInseguras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxCondicionesInseguras.Depth = 0;
+            this.cboxCondicionesInseguras.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxCondicionesInseguras.DropDownHeight = 174;
+            this.cboxCondicionesInseguras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxCondicionesInseguras.DropDownWidth = 121;
+            this.cboxCondicionesInseguras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxCondicionesInseguras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxCondicionesInseguras.FormattingEnabled = true;
+            this.cboxCondicionesInseguras.Hint = "Condiciones Inseguras";
+            this.cboxCondicionesInseguras.IntegralHeight = false;
+            this.cboxCondicionesInseguras.ItemHeight = 43;
+            this.cboxCondicionesInseguras.Location = new System.Drawing.Point(9, 33);
+            this.cboxCondicionesInseguras.MaxDropDownItems = 4;
+            this.cboxCondicionesInseguras.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxCondicionesInseguras.Name = "cboxCondicionesInseguras";
+            this.cboxCondicionesInseguras.Size = new System.Drawing.Size(375, 49);
+            this.cboxCondicionesInseguras.StartIndex = 0;
+            this.cboxCondicionesInseguras.TabIndex = 0;
+            this.cboxCondicionesInseguras.SelectedIndexChanged += new System.EventHandler(this.cboxCondicionesInseguras_SelectedIndexChanged);
+            // 
+            // label36
+            // 
+            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label36.Location = new System.Drawing.Point(5, 10);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(456, 20);
+            this.label36.TabIndex = 17;
+            this.label36.Text = "Condiciones Inseguras en la Realización de la Actividad";
+            // 
+            // panel18
+            // 
+            this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel18.Controls.Add(this.txtOtroActoInseguro);
+            this.panel18.Controls.Add(this.lblactoinseguro);
+            this.panel18.Controls.Add(this.btnGrabarActoInseguro);
+            this.panel18.Controls.Add(this.btnAgregarActoInseguro);
+            this.panel18.Controls.Add(this.dgvActoInseguro);
+            this.panel18.Controls.Add(this.cboxActoInseguro);
+            this.panel18.Controls.Add(this.label34);
+            this.panel18.Location = new System.Drawing.Point(11, 223);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(906, 169);
+            this.panel18.TabIndex = 77;
+            // 
+            // txtOtroActoInseguro
+            // 
+            this.txtOtroActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtOtroActoInseguro.BackColor = System.Drawing.Color.White;
+            this.txtOtroActoInseguro.BorderColor = System.Drawing.Color.Gray;
+            this.txtOtroActoInseguro.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOtroActoInseguro.BorderRadius = 12;
+            this.txtOtroActoInseguro.BorderSize = 2;
+            this.txtOtroActoInseguro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOtroActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtOtroActoInseguro.ForeColor = System.Drawing.Color.Black;
+            this.txtOtroActoInseguro.Location = new System.Drawing.Point(11, 123);
+            this.txtOtroActoInseguro.MaxLength = 32767;
+            this.txtOtroActoInseguro.Name = "txtOtroActoInseguro";
+            this.txtOtroActoInseguro.Padding = new System.Windows.Forms.Padding(5);
+            this.txtOtroActoInseguro.PasswordChar = false;
+            this.txtOtroActoInseguro.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOtroActoInseguro.PlaceholderText = "";
+            this.txtOtroActoInseguro.Size = new System.Drawing.Size(375, 30);
+            this.txtOtroActoInseguro.TabIndex = 181;
+            this.txtOtroActoInseguro.UnderlinedStyle = true;
+            this.txtOtroActoInseguro.Visible = false;
+            // 
+            // lblactoinseguro
+            // 
+            this.lblactoinseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblactoinseguro.AutoSize = true;
+            this.lblactoinseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblactoinseguro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.lblactoinseguro.Location = new System.Drawing.Point(13, 96);
+            this.lblactoinseguro.Name = "lblactoinseguro";
+            this.lblactoinseguro.Size = new System.Drawing.Size(139, 16);
+            this.lblactoinseguro.TabIndex = 181;
+            this.lblactoinseguro.Text = "Otro Acto Inseguro:";
+            this.lblactoinseguro.Visible = false;
+            // 
+            // btnGrabarActoInseguro
+            // 
+            this.btnGrabarActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnGrabarActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarActoInseguro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarActoInseguro.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGrabarActoInseguro.BorderRadius = 20;
+            this.btnGrabarActoInseguro.BorderSize = 0;
+            this.btnGrabarActoInseguro.FlatAppearance.BorderSize = 0;
+            this.btnGrabarActoInseguro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabarActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabarActoInseguro.ForeColor = System.Drawing.Color.White;
+            this.btnGrabarActoInseguro.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabarActoInseguro.Image")));
+            this.btnGrabarActoInseguro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGrabarActoInseguro.Location = new System.Drawing.Point(400, 95);
+            this.btnGrabarActoInseguro.Name = "btnGrabarActoInseguro";
+            this.btnGrabarActoInseguro.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnGrabarActoInseguro.Size = new System.Drawing.Size(125, 51);
+            this.btnGrabarActoInseguro.TabIndex = 108;
+            this.btnGrabarActoInseguro.Text = " Guardar";
+            this.btnGrabarActoInseguro.TextColor = System.Drawing.Color.White;
+            this.btnGrabarActoInseguro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGrabarActoInseguro.UseVisualStyleBackColor = false;
+            this.btnGrabarActoInseguro.Visible = false;
+            this.btnGrabarActoInseguro.Click += new System.EventHandler(this.btnGrabarActoInseguro_Click);
+            // 
+            // btnAgregarActoInseguro
+            // 
+            this.btnAgregarActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnAgregarActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarActoInseguro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarActoInseguro.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnAgregarActoInseguro.BorderRadius = 20;
+            this.btnAgregarActoInseguro.BorderSize = 0;
+            this.btnAgregarActoInseguro.FlatAppearance.BorderSize = 0;
+            this.btnAgregarActoInseguro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarActoInseguro.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarActoInseguro.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarActoInseguro.Image")));
+            this.btnAgregarActoInseguro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarActoInseguro.Location = new System.Drawing.Point(400, 32);
+            this.btnAgregarActoInseguro.Name = "btnAgregarActoInseguro";
+            this.btnAgregarActoInseguro.Size = new System.Drawing.Size(125, 51);
+            this.btnAgregarActoInseguro.TabIndex = 107;
+            this.btnAgregarActoInseguro.Text = " Agregar";
+            this.btnAgregarActoInseguro.TextColor = System.Drawing.Color.White;
+            this.btnAgregarActoInseguro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarActoInseguro.UseVisualStyleBackColor = false;
+            this.btnAgregarActoInseguro.Click += new System.EventHandler(this.btnAgregarActoInseguro_Click);
+            // 
+            // dgvActoInseguro
+            // 
+            this.dgvActoInseguro.AllowUserToAddRows = false;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvActoInseguro.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            this.dgvActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvActoInseguro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvActoInseguro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgvActoInseguro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvActoInseguro.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvActoInseguro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvActoInseguro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            this.dgvActoInseguro.ColumnHeadersHeight = 45;
+            this.dgvActoInseguro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idActoInseguro,
+            this.actoInseguro,
+            this.accionesActosInseguros});
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvActoInseguro.DefaultCellStyle = dataGridViewCellStyle28;
+            this.dgvActoInseguro.EnableHeadersVisualStyles = false;
+            this.dgvActoInseguro.Location = new System.Drawing.Point(536, 33);
+            this.dgvActoInseguro.Name = "dgvActoInseguro";
+            this.dgvActoInseguro.ReadOnly = true;
+            this.dgvActoInseguro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvActoInseguro.RowHeadersVisible = false;
+            this.dgvActoInseguro.RowHeadersWidth = 51;
+            this.dgvActoInseguro.RowTemplate.Height = 35;
+            this.dgvActoInseguro.Size = new System.Drawing.Size(360, 127);
+            this.dgvActoInseguro.TabIndex = 18;
+            this.dgvActoInseguro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvActoInseguro_CellClick);
+            // 
+            // idActoInseguro
+            // 
+            this.idActoInseguro.HeaderText = "Id Acto Inseguro";
+            this.idActoInseguro.MinimumWidth = 6;
+            this.idActoInseguro.Name = "idActoInseguro";
+            this.idActoInseguro.ReadOnly = true;
+            // 
+            // actoInseguro
+            // 
+            this.actoInseguro.FillWeight = 149.2386F;
+            this.actoInseguro.HeaderText = "Acto Inseguro";
+            this.actoInseguro.MinimumWidth = 6;
+            this.actoInseguro.Name = "actoInseguro";
+            this.actoInseguro.ReadOnly = true;
+            // 
+            // accionesActosInseguros
+            // 
+            this.accionesActosInseguros.FillWeight = 50.76142F;
+            this.accionesActosInseguros.HeaderText = "";
+            this.accionesActosInseguros.Image = ((System.Drawing.Image)(resources.GetObject("accionesActosInseguros.Image")));
+            this.accionesActosInseguros.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesActosInseguros.MinimumWidth = 6;
+            this.accionesActosInseguros.Name = "accionesActosInseguros";
+            this.accionesActosInseguros.ReadOnly = true;
+            this.accionesActosInseguros.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesActosInseguros.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // cboxActoInseguro
+            // 
+            this.cboxActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxActoInseguro.AutoResize = false;
+            this.cboxActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxActoInseguro.Depth = 0;
+            this.cboxActoInseguro.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxActoInseguro.DropDownHeight = 174;
+            this.cboxActoInseguro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxActoInseguro.DropDownWidth = 121;
+            this.cboxActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxActoInseguro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxActoInseguro.FormattingEnabled = true;
+            this.cboxActoInseguro.Hint = "Actos Inseguros";
+            this.cboxActoInseguro.IntegralHeight = false;
+            this.cboxActoInseguro.ItemHeight = 43;
+            this.cboxActoInseguro.Location = new System.Drawing.Point(9, 33);
+            this.cboxActoInseguro.MaxDropDownItems = 4;
+            this.cboxActoInseguro.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxActoInseguro.Name = "cboxActoInseguro";
+            this.cboxActoInseguro.Size = new System.Drawing.Size(375, 49);
+            this.cboxActoInseguro.StartIndex = 0;
+            this.cboxActoInseguro.TabIndex = 0;
+            this.cboxActoInseguro.SelectedIndexChanged += new System.EventHandler(this.cboxActoInseguro_SelectedIndexChanged);
+            // 
+            // label34
+            // 
+            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label34.Location = new System.Drawing.Point(5, 10);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(404, 20);
+            this.label34.TabIndex = 17;
+            this.label34.Text = "Actos Inseguros en la Realización de la Actividad";
+            // 
+            // label35
+            // 
+            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label35.Location = new System.Drawing.Point(10, 11);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(251, 25);
+            this.label35.TabIndex = 21;
+            this.label35.Text = "Factores de Seguridad";
+            // 
+            // panel17
+            // 
+            this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel17.Controls.Add(this.txtOtroRiesgo);
+            this.panel17.Controls.Add(this.lblotroriesgo);
+            this.panel17.Controls.Add(this.btnGrabarRiesgo);
+            this.panel17.Controls.Add(this.btnAgregarRiesgo);
+            this.panel17.Controls.Add(this.dgvRiesgos);
+            this.panel17.Controls.Add(this.cboxRiesgos);
+            this.panel17.Controls.Add(this.label33);
+            this.panel17.Location = new System.Drawing.Point(10, 40);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(906, 169);
+            this.panel17.TabIndex = 18;
+            // 
+            // txtOtroRiesgo
+            // 
+            this.txtOtroRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtOtroRiesgo.BackColor = System.Drawing.Color.White;
+            this.txtOtroRiesgo.BorderColor = System.Drawing.Color.Gray;
+            this.txtOtroRiesgo.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOtroRiesgo.BorderRadius = 12;
+            this.txtOtroRiesgo.BorderSize = 2;
+            this.txtOtroRiesgo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOtroRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtOtroRiesgo.ForeColor = System.Drawing.Color.Black;
+            this.txtOtroRiesgo.Location = new System.Drawing.Point(12, 116);
+            this.txtOtroRiesgo.MaxLength = 32767;
+            this.txtOtroRiesgo.Name = "txtOtroRiesgo";
+            this.txtOtroRiesgo.Padding = new System.Windows.Forms.Padding(5);
+            this.txtOtroRiesgo.PasswordChar = false;
+            this.txtOtroRiesgo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOtroRiesgo.PlaceholderText = "";
+            this.txtOtroRiesgo.Size = new System.Drawing.Size(375, 30);
+            this.txtOtroRiesgo.TabIndex = 180;
+            this.txtOtroRiesgo.UnderlinedStyle = true;
+            this.txtOtroRiesgo.Visible = false;
+            // 
+            // lblotroriesgo
+            // 
+            this.lblotroriesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblotroriesgo.AutoSize = true;
+            this.lblotroriesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblotroriesgo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.lblotroriesgo.Location = new System.Drawing.Point(12, 95);
+            this.lblotroriesgo.Name = "lblotroriesgo";
+            this.lblotroriesgo.Size = new System.Drawing.Size(94, 16);
+            this.lblotroriesgo.TabIndex = 179;
+            this.lblotroriesgo.Text = "Otro Riesgo:";
+            this.lblotroriesgo.Visible = false;
+            // 
+            // btnGrabarRiesgo
+            // 
+            this.btnGrabarRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnGrabarRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarRiesgo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnGrabarRiesgo.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnGrabarRiesgo.BorderRadius = 20;
+            this.btnGrabarRiesgo.BorderSize = 0;
+            this.btnGrabarRiesgo.FlatAppearance.BorderSize = 0;
+            this.btnGrabarRiesgo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrabarRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGrabarRiesgo.ForeColor = System.Drawing.Color.White;
+            this.btnGrabarRiesgo.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabarRiesgo.Image")));
+            this.btnGrabarRiesgo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGrabarRiesgo.Location = new System.Drawing.Point(400, 97);
+            this.btnGrabarRiesgo.Name = "btnGrabarRiesgo";
+            this.btnGrabarRiesgo.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnGrabarRiesgo.Size = new System.Drawing.Size(125, 51);
+            this.btnGrabarRiesgo.TabIndex = 106;
+            this.btnGrabarRiesgo.Text = " Guardar";
+            this.btnGrabarRiesgo.TextColor = System.Drawing.Color.White;
+            this.btnGrabarRiesgo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGrabarRiesgo.UseVisualStyleBackColor = false;
+            this.btnGrabarRiesgo.Visible = false;
+            this.btnGrabarRiesgo.Click += new System.EventHandler(this.btnGrabarRiesgo_Click);
+            // 
+            // btnAgregarRiesgo
+            // 
+            this.btnAgregarRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnAgregarRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarRiesgo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarRiesgo.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnAgregarRiesgo.BorderRadius = 20;
+            this.btnAgregarRiesgo.BorderSize = 0;
+            this.btnAgregarRiesgo.FlatAppearance.BorderSize = 0;
+            this.btnAgregarRiesgo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarRiesgo.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarRiesgo.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarRiesgo.Image")));
+            this.btnAgregarRiesgo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarRiesgo.Location = new System.Drawing.Point(400, 32);
+            this.btnAgregarRiesgo.Name = "btnAgregarRiesgo";
+            this.btnAgregarRiesgo.Size = new System.Drawing.Size(125, 51);
+            this.btnAgregarRiesgo.TabIndex = 105;
+            this.btnAgregarRiesgo.Text = " Agregar";
+            this.btnAgregarRiesgo.TextColor = System.Drawing.Color.White;
+            this.btnAgregarRiesgo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarRiesgo.UseVisualStyleBackColor = false;
+            this.btnAgregarRiesgo.Click += new System.EventHandler(this.btnAgregarRiesgo_Click);
+            // 
+            // dgvRiesgos
+            // 
+            this.dgvRiesgos.AllowUserToAddRows = false;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvRiesgos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            this.dgvRiesgos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvRiesgos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRiesgos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgvRiesgos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRiesgos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvRiesgos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiesgos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            this.dgvRiesgos.ColumnHeadersHeight = 45;
+            this.dgvRiesgos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idRiesgo,
+            this.riesgo,
+            this.accionesriesgos});
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiesgos.DefaultCellStyle = dataGridViewCellStyle32;
+            this.dgvRiesgos.EnableHeadersVisualStyles = false;
+            this.dgvRiesgos.Location = new System.Drawing.Point(536, 33);
+            this.dgvRiesgos.Name = "dgvRiesgos";
+            this.dgvRiesgos.ReadOnly = true;
+            this.dgvRiesgos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvRiesgos.RowHeadersVisible = false;
+            this.dgvRiesgos.RowHeadersWidth = 51;
+            this.dgvRiesgos.RowTemplate.Height = 35;
+            this.dgvRiesgos.Size = new System.Drawing.Size(360, 127);
+            this.dgvRiesgos.TabIndex = 18;
+            this.dgvRiesgos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRiesgos_CellClick);
+            // 
+            // idRiesgo
+            // 
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.idRiesgo.DefaultCellStyle = dataGridViewCellStyle31;
+            this.idRiesgo.HeaderText = "id Riesgo";
+            this.idRiesgo.MinimumWidth = 6;
+            this.idRiesgo.Name = "idRiesgo";
+            this.idRiesgo.ReadOnly = true;
+            // 
+            // riesgo
+            // 
+            this.riesgo.HeaderText = "Riesgos";
+            this.riesgo.MinimumWidth = 6;
+            this.riesgo.Name = "riesgo";
+            this.riesgo.ReadOnly = true;
+            // 
+            // accionesriesgos
+            // 
+            this.accionesriesgos.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.accionesriesgos.HeaderText = "";
+            this.accionesriesgos.Image = ((System.Drawing.Image)(resources.GetObject("accionesriesgos.Image")));
+            this.accionesriesgos.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesriesgos.MinimumWidth = 6;
+            this.accionesriesgos.Name = "accionesriesgos";
+            this.accionesriesgos.ReadOnly = true;
+            this.accionesriesgos.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesriesgos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.accionesriesgos.Width = 50;
+            // 
+            // cboxRiesgos
+            // 
+            this.cboxRiesgos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cboxRiesgos.AutoResize = false;
+            this.cboxRiesgos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cboxRiesgos.Depth = 0;
+            this.cboxRiesgos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cboxRiesgos.DropDownHeight = 174;
+            this.cboxRiesgos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxRiesgos.DropDownWidth = 121;
+            this.cboxRiesgos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cboxRiesgos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cboxRiesgos.FormattingEnabled = true;
+            this.cboxRiesgos.Hint = "Riesgo";
+            this.cboxRiesgos.IntegralHeight = false;
+            this.cboxRiesgos.ItemHeight = 43;
+            this.cboxRiesgos.Items.AddRange(new object[] {
+            "Otro"});
+            this.cboxRiesgos.Location = new System.Drawing.Point(9, 33);
+            this.cboxRiesgos.MaxDropDownItems = 4;
+            this.cboxRiesgos.MouseState = MaterialSkin.MouseState.OUT;
+            this.cboxRiesgos.Name = "cboxRiesgos";
+            this.cboxRiesgos.Size = new System.Drawing.Size(375, 49);
+            this.cboxRiesgos.StartIndex = 0;
+            this.cboxRiesgos.TabIndex = 0;
+            this.cboxRiesgos.SelectedIndexChanged += new System.EventHandler(this.cboxRiesgos_SelectedIndexChanged);
+            // 
+            // label33
+            // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label33.Location = new System.Drawing.Point(5, 10);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(188, 20);
+            this.label33.TabIndex = 17;
+            this.label33.Text = "Riesgos del Accidente";
+            // 
+            // pSeguimientoCaso
+            // 
+            this.pSeguimientoCaso.AutoScroll = true;
+            this.pSeguimientoCaso.Controls.Add(this.panel26);
+            this.pSeguimientoCaso.Controls.Add(this.label45);
+            this.pSeguimientoCaso.Controls.Add(this.panel29);
+            this.pSeguimientoCaso.Controls.Add(this.panel28);
+            this.pSeguimientoCaso.Controls.Add(this.label42);
+            this.pSeguimientoCaso.Controls.Add(this.panel27);
+            this.pSeguimientoCaso.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pSeguimientoCaso.Location = new System.Drawing.Point(0, 0);
+            this.pSeguimientoCaso.Name = "pSeguimientoCaso";
+            this.pSeguimientoCaso.Size = new System.Drawing.Size(945, 495);
+            this.pSeguimientoCaso.TabIndex = 16;
+            this.pSeguimientoCaso.Paint += new System.Windows.Forms.PaintEventHandler(this.pSeguimientoCaso_Paint);
+            // 
+            // panel26
+            // 
+            this.panel26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel26.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel26.Controls.Add(this.txtNombreEmpleadoInvolucrado);
+            this.panel26.Controls.Add(this.txtNumNominaEmpleadoInvolucrado);
+            this.panel26.Controls.Add(this.label79);
+            this.panel26.Controls.Add(this.label80);
+            this.panel26.Controls.Add(this.btnBuscarEmpleadoInvolucrado);
+            this.panel26.Controls.Add(this.btnAgregarEmpleadoInvolucrado);
+            this.panel26.Controls.Add(this.txtIdEmpleadoInvolucrado);
+            this.panel26.Controls.Add(this.dgvEmpleadosInvolucrados);
+            this.panel26.Controls.Add(this.label44);
+            this.panel26.Location = new System.Drawing.Point(11, 700);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(916, 237);
+            this.panel26.TabIndex = 101;
+            // 
+            // txtNombreEmpleadoInvolucrado
+            // 
+            this.txtNombreEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNombreEmpleadoInvolucrado.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNombreEmpleadoInvolucrado.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreEmpleadoInvolucrado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreEmpleadoInvolucrado.BorderRadius = 12;
+            this.txtNombreEmpleadoInvolucrado.BorderSize = 2;
+            this.txtNombreEmpleadoInvolucrado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreEmpleadoInvolucrado.Enabled = false;
+            this.txtNombreEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtNombreEmpleadoInvolucrado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreEmpleadoInvolucrado.Location = new System.Drawing.Point(257, 53);
+            this.txtNombreEmpleadoInvolucrado.MaxLength = 32767;
+            this.txtNombreEmpleadoInvolucrado.Name = "txtNombreEmpleadoInvolucrado";
+            this.txtNombreEmpleadoInvolucrado.Padding = new System.Windows.Forms.Padding(5);
+            this.txtNombreEmpleadoInvolucrado.PasswordChar = false;
+            this.txtNombreEmpleadoInvolucrado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreEmpleadoInvolucrado.PlaceholderText = "";
+            this.txtNombreEmpleadoInvolucrado.Size = new System.Drawing.Size(503, 30);
+            this.txtNombreEmpleadoInvolucrado.TabIndex = 187;
+            this.txtNombreEmpleadoInvolucrado.UnderlinedStyle = true;
+            // 
+            // txtNumNominaEmpleadoInvolucrado
+            // 
+            this.txtNumNominaEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNumNominaEmpleadoInvolucrado.BackColor = System.Drawing.Color.White;
+            this.txtNumNominaEmpleadoInvolucrado.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumNominaEmpleadoInvolucrado.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumNominaEmpleadoInvolucrado.BorderRadius = 12;
+            this.txtNumNominaEmpleadoInvolucrado.BorderSize = 2;
+            this.txtNumNominaEmpleadoInvolucrado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNumNominaEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtNumNominaEmpleadoInvolucrado.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumNominaEmpleadoInvolucrado.Location = new System.Drawing.Point(16, 53);
+            this.txtNumNominaEmpleadoInvolucrado.MaxLength = 15;
+            this.txtNumNominaEmpleadoInvolucrado.Name = "txtNumNominaEmpleadoInvolucrado";
+            this.txtNumNominaEmpleadoInvolucrado.Padding = new System.Windows.Forms.Padding(5);
+            this.txtNumNominaEmpleadoInvolucrado.PasswordChar = false;
+            this.txtNumNominaEmpleadoInvolucrado.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNominaEmpleadoInvolucrado.PlaceholderText = "";
+            this.txtNumNominaEmpleadoInvolucrado.Size = new System.Drawing.Size(171, 30);
+            this.txtNumNominaEmpleadoInvolucrado.TabIndex = 186;
+            this.txtNumNominaEmpleadoInvolucrado.UnderlinedStyle = true;
+            this.txtNumNominaEmpleadoInvolucrado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumNominaEmpleadoInvolucrado_KeyPress);
+            // 
+            // label79
+            // 
+            this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label79.Location = new System.Drawing.Point(256, 35);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(262, 16);
+            this.label79.TabIndex = 185;
+            this.label79.Text = "Nombre de colaborador Involucrado:";
+            // 
+            // label80
+            // 
+            this.label80.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label80.Location = new System.Drawing.Point(19, 35);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(148, 16);
+            this.label80.TabIndex = 183;
+            this.label80.Text = "Número de Nómina: ";
+            // 
+            // btnBuscarEmpleadoInvolucrado
+            // 
+            this.btnBuscarEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnBuscarEmpleadoInvolucrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoInvolucrado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoInvolucrado.BorderColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoInvolucrado.BorderRadius = 20;
+            this.btnBuscarEmpleadoInvolucrado.BorderSize = 0;
+            this.btnBuscarEmpleadoInvolucrado.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleadoInvolucrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleadoInvolucrado.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoInvolucrado.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoInvolucrado.Image")));
+            this.btnBuscarEmpleadoInvolucrado.Location = new System.Drawing.Point(195, 38);
+            this.btnBuscarEmpleadoInvolucrado.Name = "btnBuscarEmpleadoInvolucrado";
+            this.btnBuscarEmpleadoInvolucrado.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarEmpleadoInvolucrado.TabIndex = 105;
+            this.btnBuscarEmpleadoInvolucrado.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoInvolucrado.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleadoInvolucrado.Click += new System.EventHandler(this.btnBuscarEmpleadoInvolucrado_Click);
+            // 
+            // btnAgregarEmpleadoInvolucrado
+            // 
+            this.btnAgregarEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnAgregarEmpleadoInvolucrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarEmpleadoInvolucrado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarEmpleadoInvolucrado.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnAgregarEmpleadoInvolucrado.BorderRadius = 20;
+            this.btnAgregarEmpleadoInvolucrado.BorderSize = 0;
+            this.btnAgregarEmpleadoInvolucrado.FlatAppearance.BorderSize = 0;
+            this.btnAgregarEmpleadoInvolucrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEmpleadoInvolucrado.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarEmpleadoInvolucrado.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarEmpleadoInvolucrado.Image")));
+            this.btnAgregarEmpleadoInvolucrado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarEmpleadoInvolucrado.Location = new System.Drawing.Point(777, 29);
+            this.btnAgregarEmpleadoInvolucrado.Name = "btnAgregarEmpleadoInvolucrado";
+            this.btnAgregarEmpleadoInvolucrado.Size = new System.Drawing.Size(125, 58);
+            this.btnAgregarEmpleadoInvolucrado.TabIndex = 103;
+            this.btnAgregarEmpleadoInvolucrado.Text = "Agregar";
+            this.btnAgregarEmpleadoInvolucrado.TextColor = System.Drawing.Color.White;
+            this.btnAgregarEmpleadoInvolucrado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarEmpleadoInvolucrado.UseVisualStyleBackColor = false;
+            this.btnAgregarEmpleadoInvolucrado.Click += new System.EventHandler(this.btnAgregarEmpleadoInvolucrado_Click);
+            // 
+            // txtIdEmpleadoInvolucrado
+            // 
+            this.txtIdEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtIdEmpleadoInvolucrado.AnimateReadOnly = false;
+            this.txtIdEmpleadoInvolucrado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdEmpleadoInvolucrado.Depth = 0;
+            this.txtIdEmpleadoInvolucrado.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleadoInvolucrado.LeadingIcon = null;
+            this.txtIdEmpleadoInvolucrado.Location = new System.Drawing.Point(651, 27);
+            this.txtIdEmpleadoInvolucrado.MaxLength = 50;
+            this.txtIdEmpleadoInvolucrado.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtIdEmpleadoInvolucrado.Multiline = false;
+            this.txtIdEmpleadoInvolucrado.Name = "txtIdEmpleadoInvolucrado";
+            this.txtIdEmpleadoInvolucrado.Size = new System.Drawing.Size(100, 50);
+            this.txtIdEmpleadoInvolucrado.TabIndex = 102;
+            this.txtIdEmpleadoInvolucrado.Text = "";
+            this.txtIdEmpleadoInvolucrado.TrailingIcon = null;
+            this.txtIdEmpleadoInvolucrado.Visible = false;
+            // 
+            // dgvEmpleadosInvolucrados
+            // 
+            this.dgvEmpleadosInvolucrados.AllowUserToAddRows = false;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEmpleadosInvolucrados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
+            this.dgvEmpleadosInvolucrados.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvEmpleadosInvolucrados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmpleadosInvolucrados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgvEmpleadosInvolucrados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEmpleadosInvolucrados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvEmpleadosInvolucrados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleadosInvolucrados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            this.dgvEmpleadosInvolucrados.ColumnHeadersHeight = 45;
+            this.dgvEmpleadosInvolucrados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.numNominaEmpleadoInvolucrado,
+            this.nombreEmpleadoInvolucrado,
+            this.IdEmpleadoInvolucrado,
+            this.accionesEmpleadoInvolucrado});
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmpleadosInvolucrados.DefaultCellStyle = dataGridViewCellStyle35;
+            this.dgvEmpleadosInvolucrados.EnableHeadersVisualStyles = false;
+            this.dgvEmpleadosInvolucrados.Location = new System.Drawing.Point(13, 106);
+            this.dgvEmpleadosInvolucrados.Name = "dgvEmpleadosInvolucrados";
+            this.dgvEmpleadosInvolucrados.RowHeadersVisible = false;
+            this.dgvEmpleadosInvolucrados.RowHeadersWidth = 51;
+            this.dgvEmpleadosInvolucrados.RowTemplate.Height = 35;
+            this.dgvEmpleadosInvolucrados.Size = new System.Drawing.Size(889, 118);
+            this.dgvEmpleadosInvolucrados.TabIndex = 101;
+            this.dgvEmpleadosInvolucrados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleadosInvolucrados_CellClick);
+            // 
+            // numNominaEmpleadoInvolucrado
+            // 
+            this.numNominaEmpleadoInvolucrado.HeaderText = "Número Nómina";
+            this.numNominaEmpleadoInvolucrado.MinimumWidth = 6;
+            this.numNominaEmpleadoInvolucrado.Name = "numNominaEmpleadoInvolucrado";
+            // 
+            // nombreEmpleadoInvolucrado
+            // 
+            this.nombreEmpleadoInvolucrado.HeaderText = "Nombre";
+            this.nombreEmpleadoInvolucrado.MinimumWidth = 6;
+            this.nombreEmpleadoInvolucrado.Name = "nombreEmpleadoInvolucrado";
+            // 
+            // IdEmpleadoInvolucrado
+            // 
+            this.IdEmpleadoInvolucrado.HeaderText = "Id Empleado Involucrado";
+            this.IdEmpleadoInvolucrado.MinimumWidth = 6;
+            this.IdEmpleadoInvolucrado.Name = "IdEmpleadoInvolucrado";
+            this.IdEmpleadoInvolucrado.Visible = false;
+            // 
+            // accionesEmpleadoInvolucrado
+            // 
+            this.accionesEmpleadoInvolucrado.HeaderText = "";
+            this.accionesEmpleadoInvolucrado.Image = ((System.Drawing.Image)(resources.GetObject("accionesEmpleadoInvolucrado.Image")));
+            this.accionesEmpleadoInvolucrado.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesEmpleadoInvolucrado.MinimumWidth = 6;
+            this.accionesEmpleadoInvolucrado.Name = "accionesEmpleadoInvolucrado";
+            this.accionesEmpleadoInvolucrado.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesEmpleadoInvolucrado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // label44
+            // 
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label44.Location = new System.Drawing.Point(13, 4);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(275, 20);
+            this.label44.TabIndex = 24;
+            this.label44.Text = "Nombre del personal involucrado:";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.White;
+            this.label45.Location = new System.Drawing.Point(8, 946);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(65, 20);
+            this.label45.TabIndex = 103;
+            this.label45.Text = "Código";
+            // 
+            // panel29
+            // 
+            this.panel29.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel29.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel29.Controls.Add(this.label81);
+            this.panel29.Controls.Add(this.txtIncapacidad);
+            this.panel29.Controls.Add(this.label47);
+            this.panel29.Controls.Add(this.label46);
+            this.panel29.Controls.Add(this.txtDiagnosticoFinal);
+            this.panel29.Controls.Add(this.txtTratamiento);
+            this.panel29.Location = new System.Drawing.Point(11, 389);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(914, 290);
+            this.panel29.TabIndex = 102;
+            // 
+            // label81
+            // 
+            this.label81.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label81.Location = new System.Drawing.Point(19, 201);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(156, 18);
+            this.label81.TabIndex = 183;
+            this.label81.Text = "Dia(s) de incapacidad";
+            // 
+            // txtIncapacidad
+            // 
+            this.txtIncapacidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtIncapacidad.Location = new System.Drawing.Point(18, 223);
+            this.txtIncapacidad.Maximum = new decimal(new int[] {
+            365,
+            0,
+            0,
+            0});
+            this.txtIncapacidad.Name = "txtIncapacidad";
+            this.txtIncapacidad.Size = new System.Drawing.Size(178, 20);
+            this.txtIncapacidad.TabIndex = 182;
+            // 
+            // label47
+            // 
+            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label47.Location = new System.Drawing.Point(17, 108);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(156, 18);
+            this.label47.TabIndex = 102;
+            this.label47.Text = "Tratamiento:";
+            // 
+            // label46
+            // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label46.Location = new System.Drawing.Point(17, 19);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(156, 18);
+            this.label46.TabIndex = 100;
+            this.label46.Text = "Diagnóstico Final:";
+            // 
+            // txtDiagnosticoFinal
+            // 
+            this.txtDiagnosticoFinal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtDiagnosticoFinal.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDiagnosticoFinal.BorderColor = System.Drawing.Color.Gray;
+            this.txtDiagnosticoFinal.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtDiagnosticoFinal.BorderRadius = 12;
+            this.txtDiagnosticoFinal.BorderSize = 2;
+            this.txtDiagnosticoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiagnosticoFinal.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDiagnosticoFinal.Location = new System.Drawing.Point(16, 40);
+            this.txtDiagnosticoFinal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiagnosticoFinal.MaxLength = 1000;
+            this.txtDiagnosticoFinal.Multiline = true;
+            this.txtDiagnosticoFinal.Name = "txtDiagnosticoFinal";
+            this.txtDiagnosticoFinal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDiagnosticoFinal.PasswordChar = false;
+            this.txtDiagnosticoFinal.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDiagnosticoFinal.PlaceholderText = "";
+            this.txtDiagnosticoFinal.Size = new System.Drawing.Size(875, 65);
+            this.txtDiagnosticoFinal.TabIndex = 179;
+            this.txtDiagnosticoFinal.UnderlinedStyle = true;
+            // 
+            // txtTratamiento
+            // 
+            this.txtTratamiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTratamiento.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTratamiento.BorderColor = System.Drawing.Color.Gray;
+            this.txtTratamiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtTratamiento.BorderRadius = 12;
+            this.txtTratamiento.BorderSize = 2;
+            this.txtTratamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTratamiento.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTratamiento.Location = new System.Drawing.Point(16, 120);
+            this.txtTratamiento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTratamiento.MaxLength = 1000;
+            this.txtTratamiento.Multiline = true;
+            this.txtTratamiento.Name = "txtTratamiento";
+            this.txtTratamiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTratamiento.PasswordChar = false;
+            this.txtTratamiento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTratamiento.PlaceholderText = "";
+            this.txtTratamiento.Size = new System.Drawing.Size(875, 65);
+            this.txtTratamiento.TabIndex = 180;
+            this.txtTratamiento.UnderlinedStyle = true;
+            // 
+            // panel28
+            // 
+            this.panel28.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel28.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel28.Controls.Add(this.rbtnOtro);
+            this.panel28.Controls.Add(this.rbtnEnviadoDomicilio);
+            this.panel28.Controls.Add(this.rbtnEnviadoAtencionMedica);
+            this.panel28.Controls.Add(this.rbtnContinuaTrabajando);
+            this.panel28.Controls.Add(this.txtOtro);
+            this.panel28.Location = new System.Drawing.Point(11, 301);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(916, 67);
+            this.panel28.TabIndex = 101;
+            // 
+            // rbtnOtro
+            // 
+            this.rbtnOtro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnOtro.AutoSize = true;
+            this.rbtnOtro.Depth = 0;
+            this.rbtnOtro.Location = new System.Drawing.Point(647, 15);
+            this.rbtnOtro.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtnOtro.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtnOtro.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtnOtro.Name = "rbtnOtro";
+            this.rbtnOtro.Ripple = true;
+            this.rbtnOtro.Size = new System.Drawing.Size(65, 37);
+            this.rbtnOtro.TabIndex = 1;
+            this.rbtnOtro.TabStop = true;
+            this.rbtnOtro.Text = "Otro";
+            this.rbtnOtro.UseVisualStyleBackColor = true;
+            this.rbtnOtro.CheckedChanged += new System.EventHandler(this.rbtnOtro_CheckedChanged);
+            // 
+            // rbtnEnviadoDomicilio
+            // 
+            this.rbtnEnviadoDomicilio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnEnviadoDomicilio.AutoSize = true;
+            this.rbtnEnviadoDomicilio.Depth = 0;
+            this.rbtnEnviadoDomicilio.Location = new System.Drawing.Point(205, 15);
+            this.rbtnEnviadoDomicilio.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtnEnviadoDomicilio.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtnEnviadoDomicilio.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtnEnviadoDomicilio.Name = "rbtnEnviadoDomicilio";
+            this.rbtnEnviadoDomicilio.Ripple = true;
+            this.rbtnEnviadoDomicilio.Size = new System.Drawing.Size(195, 37);
+            this.rbtnEnviadoDomicilio.TabIndex = 1;
+            this.rbtnEnviadoDomicilio.TabStop = true;
+            this.rbtnEnviadoDomicilio.Text = "Enviado a su domicilio";
+            this.rbtnEnviadoDomicilio.UseVisualStyleBackColor = true;
+            // 
+            // rbtnEnviadoAtencionMedica
+            // 
+            this.rbtnEnviadoAtencionMedica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnEnviadoAtencionMedica.AutoSize = true;
+            this.rbtnEnviadoAtencionMedica.Depth = 0;
+            this.rbtnEnviadoAtencionMedica.Location = new System.Drawing.Point(413, 15);
+            this.rbtnEnviadoAtencionMedica.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtnEnviadoAtencionMedica.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtnEnviadoAtencionMedica.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtnEnviadoAtencionMedica.Name = "rbtnEnviadoAtencionMedica";
+            this.rbtnEnviadoAtencionMedica.Ripple = true;
+            this.rbtnEnviadoAtencionMedica.Size = new System.Drawing.Size(226, 37);
+            this.rbtnEnviadoAtencionMedica.TabIndex = 0;
+            this.rbtnEnviadoAtencionMedica.TabStop = true;
+            this.rbtnEnviadoAtencionMedica.Text = "Enviado a atención médica";
+            this.rbtnEnviadoAtencionMedica.UseVisualStyleBackColor = true;
+            // 
+            // rbtnContinuaTrabajando
+            // 
+            this.rbtnContinuaTrabajando.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.rbtnContinuaTrabajando.AutoSize = true;
+            this.rbtnContinuaTrabajando.Depth = 0;
+            this.rbtnContinuaTrabajando.Location = new System.Drawing.Point(12, 15);
+            this.rbtnContinuaTrabajando.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtnContinuaTrabajando.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtnContinuaTrabajando.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtnContinuaTrabajando.Name = "rbtnContinuaTrabajando";
+            this.rbtnContinuaTrabajando.Ripple = true;
+            this.rbtnContinuaTrabajando.Size = new System.Drawing.Size(180, 37);
+            this.rbtnContinuaTrabajando.TabIndex = 0;
+            this.rbtnContinuaTrabajando.TabStop = true;
+            this.rbtnContinuaTrabajando.Text = "Continua trabajando";
+            this.rbtnContinuaTrabajando.UseVisualStyleBackColor = true;
+            // 
+            // txtOtro
+            // 
+            this.txtOtro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtOtro.BackColor = System.Drawing.Color.White;
+            this.txtOtro.BorderColor = System.Drawing.Color.Gray;
+            this.txtOtro.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtOtro.BorderRadius = 12;
+            this.txtOtro.BorderSize = 2;
+            this.txtOtro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtOtro.ForeColor = System.Drawing.Color.Black;
+            this.txtOtro.Location = new System.Drawing.Point(720, 19);
+            this.txtOtro.MaxLength = 32767;
+            this.txtOtro.Name = "txtOtro";
+            this.txtOtro.Padding = new System.Windows.Forms.Padding(5);
+            this.txtOtro.PasswordChar = false;
+            this.txtOtro.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOtro.PlaceholderText = "";
+            this.txtOtro.Size = new System.Drawing.Size(181, 30);
+            this.txtOtro.TabIndex = 184;
+            this.txtOtro.UnderlinedStyle = true;
+            this.txtOtro.Visible = false;
+            // 
+            // label42
+            // 
+            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label42.Location = new System.Drawing.Point(9, 15);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(242, 25);
+            this.label42.TabIndex = 22;
+            this.label42.Text = "Seguimiento del Caso";
+            // 
+            // panel27
+            // 
+            this.panel27.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel27.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel27.Controls.Add(this.txtNumNominaEmpleadoConocimiento);
+            this.panel27.Controls.Add(this.txtNombreEmpleadoConocimiento);
+            this.panel27.Controls.Add(this.label78);
+            this.panel27.Controls.Add(this.label77);
+            this.panel27.Controls.Add(this.btnBuscarEmpleadoConocimiento);
+            this.panel27.Controls.Add(this.btnAgregarEmpleadoConocimiento);
+            this.panel27.Controls.Add(this.txtIdEmpleadoConocimiento);
+            this.panel27.Controls.Add(this.label43);
+            this.panel27.Controls.Add(this.dgvEmpleadosConocimiento);
+            this.panel27.Location = new System.Drawing.Point(11, 43);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(916, 237);
+            this.panel27.TabIndex = 95;
+            // 
+            // txtNumNominaEmpleadoConocimiento
+            // 
+            this.txtNumNominaEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNumNominaEmpleadoConocimiento.BackColor = System.Drawing.Color.White;
+            this.txtNumNominaEmpleadoConocimiento.BorderColor = System.Drawing.Color.Gray;
+            this.txtNumNominaEmpleadoConocimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNumNominaEmpleadoConocimiento.BorderRadius = 12;
+            this.txtNumNominaEmpleadoConocimiento.BorderSize = 2;
+            this.txtNumNominaEmpleadoConocimiento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNumNominaEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtNumNominaEmpleadoConocimiento.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNumNominaEmpleadoConocimiento.Location = new System.Drawing.Point(16, 53);
+            this.txtNumNominaEmpleadoConocimiento.MaxLength = 15;
+            this.txtNumNominaEmpleadoConocimiento.Name = "txtNumNominaEmpleadoConocimiento";
+            this.txtNumNominaEmpleadoConocimiento.Padding = new System.Windows.Forms.Padding(5);
+            this.txtNumNominaEmpleadoConocimiento.PasswordChar = false;
+            this.txtNumNominaEmpleadoConocimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNumNominaEmpleadoConocimiento.PlaceholderText = "";
+            this.txtNumNominaEmpleadoConocimiento.Size = new System.Drawing.Size(171, 30);
+            this.txtNumNominaEmpleadoConocimiento.TabIndex = 183;
+            this.txtNumNominaEmpleadoConocimiento.UnderlinedStyle = true;
+            this.txtNumNominaEmpleadoConocimiento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumNominaEmpleadoConocimiento_KeyPress);
+            // 
+            // txtNombreEmpleadoConocimiento
+            // 
+            this.txtNombreEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtNombreEmpleadoConocimiento.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNombreEmpleadoConocimiento.BorderColor = System.Drawing.Color.Gray;
+            this.txtNombreEmpleadoConocimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
+            this.txtNombreEmpleadoConocimiento.BorderRadius = 12;
+            this.txtNombreEmpleadoConocimiento.BorderSize = 2;
+            this.txtNombreEmpleadoConocimiento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombreEmpleadoConocimiento.Enabled = false;
+            this.txtNombreEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.txtNombreEmpleadoConocimiento.ForeColor = System.Drawing.Color.DimGray;
+            this.txtNombreEmpleadoConocimiento.Location = new System.Drawing.Point(257, 53);
+            this.txtNombreEmpleadoConocimiento.MaxLength = 32767;
+            this.txtNombreEmpleadoConocimiento.Name = "txtNombreEmpleadoConocimiento";
+            this.txtNombreEmpleadoConocimiento.Padding = new System.Windows.Forms.Padding(5);
+            this.txtNombreEmpleadoConocimiento.PasswordChar = false;
+            this.txtNombreEmpleadoConocimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNombreEmpleadoConocimiento.PlaceholderText = "";
+            this.txtNombreEmpleadoConocimiento.Size = new System.Drawing.Size(503, 30);
+            this.txtNombreEmpleadoConocimiento.TabIndex = 182;
+            this.txtNombreEmpleadoConocimiento.UnderlinedStyle = true;
+            // 
+            // label78
+            // 
+            this.label78.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label78.Location = new System.Drawing.Point(256, 35);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(407, 16);
+            this.label78.TabIndex = 181;
+            this.label78.Text = "Nombre de colaborador con conocimiento de los hechos: ";
+            // 
+            // label77
+            // 
+            this.label77.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label77.Location = new System.Drawing.Point(19, 35);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(148, 16);
+            this.label77.TabIndex = 179;
+            this.label77.Text = "Número de Nómina: ";
+            // 
+            // btnBuscarEmpleadoConocimiento
+            // 
+            this.btnBuscarEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnBuscarEmpleadoConocimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoConocimiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnBuscarEmpleadoConocimiento.BorderColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoConocimiento.BorderRadius = 20;
+            this.btnBuscarEmpleadoConocimiento.BorderSize = 0;
+            this.btnBuscarEmpleadoConocimiento.FlatAppearance.BorderSize = 0;
+            this.btnBuscarEmpleadoConocimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarEmpleadoConocimiento.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoConocimiento.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoConocimiento.Image")));
+            this.btnBuscarEmpleadoConocimiento.Location = new System.Drawing.Point(194, 48);
+            this.btnBuscarEmpleadoConocimiento.Name = "btnBuscarEmpleadoConocimiento";
+            this.btnBuscarEmpleadoConocimiento.Size = new System.Drawing.Size(40, 40);
+            this.btnBuscarEmpleadoConocimiento.TabIndex = 104;
+            this.btnBuscarEmpleadoConocimiento.TextColor = System.Drawing.Color.White;
+            this.btnBuscarEmpleadoConocimiento.UseVisualStyleBackColor = false;
+            this.btnBuscarEmpleadoConocimiento.Click += new System.EventHandler(this.btnBuscarEmpleadoConocimiento_Click);
+            // 
+            // btnAgregarEmpleadoConocimiento
+            // 
+            this.btnAgregarEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnAgregarEmpleadoConocimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarEmpleadoConocimiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.btnAgregarEmpleadoConocimiento.BorderColor = System.Drawing.Color.LavenderBlush;
+            this.btnAgregarEmpleadoConocimiento.BorderRadius = 20;
+            this.btnAgregarEmpleadoConocimiento.BorderSize = 0;
+            this.btnAgregarEmpleadoConocimiento.FlatAppearance.BorderSize = 0;
+            this.btnAgregarEmpleadoConocimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEmpleadoConocimiento.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarEmpleadoConocimiento.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarEmpleadoConocimiento.Image")));
+            this.btnAgregarEmpleadoConocimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarEmpleadoConocimiento.Location = new System.Drawing.Point(777, 29);
+            this.btnAgregarEmpleadoConocimiento.Name = "btnAgregarEmpleadoConocimiento";
+            this.btnAgregarEmpleadoConocimiento.Size = new System.Drawing.Size(125, 58);
+            this.btnAgregarEmpleadoConocimiento.TabIndex = 104;
+            this.btnAgregarEmpleadoConocimiento.Text = "Agregar";
+            this.btnAgregarEmpleadoConocimiento.TextColor = System.Drawing.Color.White;
+            this.btnAgregarEmpleadoConocimiento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarEmpleadoConocimiento.UseVisualStyleBackColor = false;
+            this.btnAgregarEmpleadoConocimiento.Click += new System.EventHandler(this.btnAgregarEmpleadoConocimiento_Click);
+            // 
+            // txtIdEmpleadoConocimiento
+            // 
+            this.txtIdEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtIdEmpleadoConocimiento.AnimateReadOnly = false;
+            this.txtIdEmpleadoConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdEmpleadoConocimiento.Depth = 0;
+            this.txtIdEmpleadoConocimiento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdEmpleadoConocimiento.LeadingIcon = null;
+            this.txtIdEmpleadoConocimiento.Location = new System.Drawing.Point(660, 33);
+            this.txtIdEmpleadoConocimiento.MaxLength = 50;
+            this.txtIdEmpleadoConocimiento.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtIdEmpleadoConocimiento.Multiline = false;
+            this.txtIdEmpleadoConocimiento.Name = "txtIdEmpleadoConocimiento";
+            this.txtIdEmpleadoConocimiento.Size = new System.Drawing.Size(100, 50);
+            this.txtIdEmpleadoConocimiento.TabIndex = 101;
+            this.txtIdEmpleadoConocimiento.Text = "";
+            this.txtIdEmpleadoConocimiento.TrailingIcon = null;
+            this.txtIdEmpleadoConocimiento.Visible = false;
+            // 
+            // label43
+            // 
+            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            this.label43.Location = new System.Drawing.Point(16, 7);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(408, 20);
+            this.label43.TabIndex = 24;
+            this.label43.Text = "Persona(s) que tomo conocimiento de los hechos:";
+            // 
+            // dgvEmpleadosConocimiento
+            // 
+            this.dgvEmpleadosConocimiento.AllowUserToAddRows = false;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEmpleadosConocimiento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle36;
+            this.dgvEmpleadosConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvEmpleadosConocimiento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmpleadosConocimiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.dgvEmpleadosConocimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEmpleadosConocimiento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvEmpleadosConocimiento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpleadosConocimiento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            this.dgvEmpleadosConocimiento.ColumnHeadersHeight = 40;
+            this.dgvEmpleadosConocimiento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.numNominaEmpleadoConocimiento,
+            this.nombreEmpleadoConocimiento,
+            this.idEmpleadoConocimiento,
+            this.accionesConocimiento});
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmpleadosConocimiento.DefaultCellStyle = dataGridViewCellStyle38;
+            this.dgvEmpleadosConocimiento.EnableHeadersVisualStyles = false;
+            this.dgvEmpleadosConocimiento.Location = new System.Drawing.Point(13, 106);
+            this.dgvEmpleadosConocimiento.Name = "dgvEmpleadosConocimiento";
+            this.dgvEmpleadosConocimiento.RowHeadersVisible = false;
+            this.dgvEmpleadosConocimiento.RowHeadersWidth = 51;
+            this.dgvEmpleadosConocimiento.RowTemplate.Height = 35;
+            this.dgvEmpleadosConocimiento.Size = new System.Drawing.Size(889, 118);
+            this.dgvEmpleadosConocimiento.TabIndex = 91;
+            this.dgvEmpleadosConocimiento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleadosConocimiento_CellClick);
+            // 
+            // numNominaEmpleadoConocimiento
+            // 
+            this.numNominaEmpleadoConocimiento.HeaderText = "Número Nómina";
+            this.numNominaEmpleadoConocimiento.MinimumWidth = 6;
+            this.numNominaEmpleadoConocimiento.Name = "numNominaEmpleadoConocimiento";
+            // 
+            // nombreEmpleadoConocimiento
+            // 
+            this.nombreEmpleadoConocimiento.HeaderText = "Nombre";
+            this.nombreEmpleadoConocimiento.MinimumWidth = 6;
+            this.nombreEmpleadoConocimiento.Name = "nombreEmpleadoConocimiento";
+            // 
+            // idEmpleadoConocimiento
+            // 
+            this.idEmpleadoConocimiento.HeaderText = "Id Empleado Conocimiento";
+            this.idEmpleadoConocimiento.MinimumWidth = 6;
+            this.idEmpleadoConocimiento.Name = "idEmpleadoConocimiento";
+            this.idEmpleadoConocimiento.Visible = false;
+            // 
+            // accionesConocimiento
+            // 
+            this.accionesConocimiento.HeaderText = "";
+            this.accionesConocimiento.Image = ((System.Drawing.Image)(resources.GetObject("accionesConocimiento.Image")));
+            this.accionesConocimiento.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.accionesConocimiento.MinimumWidth = 6;
+            this.accionesConocimiento.Name = "accionesConocimiento";
+            this.accionesConocimiento.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.accionesConocimiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // pSeccionesDatos
             // 
@@ -2907,1575 +4476,6 @@
             this.dataGridViewImageColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn6.Width = 296;
             // 
-            // rbtnEquipoAdecuadoSi
-            // 
-            this.rbtnEquipoAdecuadoSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnEquipoAdecuadoSi.Location = new System.Drawing.Point(282, 63);
-            this.rbtnEquipoAdecuadoSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnEquipoAdecuadoSi.Name = "rbtnEquipoAdecuadoSi";
-            this.rbtnEquipoAdecuadoSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnEquipoAdecuadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnEquipoAdecuadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnEquipoAdecuadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnEquipoAdecuadoSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnEquipoAdecuadoSi.TabIndex = 126;
-            this.rbtnEquipoAdecuadoSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnConociaTrabajoSi
-            // 
-            this.rbtnConociaTrabajoSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnConociaTrabajoSi.Location = new System.Drawing.Point(751, 12);
-            this.rbtnConociaTrabajoSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnConociaTrabajoSi.Name = "rbtnConociaTrabajoSi";
-            this.rbtnConociaTrabajoSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnConociaTrabajoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnConociaTrabajoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnConociaTrabajoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnConociaTrabajoSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnConociaTrabajoSi.TabIndex = 125;
-            this.rbtnConociaTrabajoSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnExistiaSupervicionSi
-            // 
-            this.rbtnExistiaSupervicionSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnExistiaSupervicionSi.Location = new System.Drawing.Point(751, 63);
-            this.rbtnExistiaSupervicionSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnExistiaSupervicionSi.Name = "rbtnExistiaSupervicionSi";
-            this.rbtnExistiaSupervicionSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnExistiaSupervicionSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnExistiaSupervicionSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnExistiaSupervicionSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnExistiaSupervicionSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnExistiaSupervicionSi.TabIndex = 124;
-            this.rbtnExistiaSupervicionSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnExistenItrsSi
-            // 
-            this.rbtnExistenItrsSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnExistenItrsSi.Location = new System.Drawing.Point(282, 12);
-            this.rbtnExistenItrsSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnExistenItrsSi.Name = "rbtnExistenItrsSi";
-            this.rbtnExistenItrsSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnExistenItrsSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnExistenItrsSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnExistenItrsSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnExistenItrsSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnExistenItrsSi.TabIndex = 123;
-            this.rbtnExistenItrsSi.UseVisualStyleBackColor = true;
-            // 
-            // txtOtraCondicion
-            // 
-            this.txtOtraCondicion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtOtraCondicion.BackColor = System.Drawing.Color.White;
-            this.txtOtraCondicion.BorderColor = System.Drawing.Color.Gray;
-            this.txtOtraCondicion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOtraCondicion.BorderRadius = 12;
-            this.txtOtraCondicion.BorderSize = 2;
-            this.txtOtraCondicion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOtraCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtOtraCondicion.ForeColor = System.Drawing.Color.Black;
-            this.txtOtraCondicion.Location = new System.Drawing.Point(11, 118);
-            this.txtOtraCondicion.MaxLength = 32767;
-            this.txtOtraCondicion.Name = "txtOtraCondicion";
-            this.txtOtraCondicion.Padding = new System.Windows.Forms.Padding(5);
-            this.txtOtraCondicion.PasswordChar = false;
-            this.txtOtraCondicion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOtraCondicion.PlaceholderText = "";
-            this.txtOtraCondicion.Size = new System.Drawing.Size(375, 30);
-            this.txtOtraCondicion.TabIndex = 184;
-            this.txtOtraCondicion.UnderlinedStyle = true;
-            this.txtOtraCondicion.Visible = false;
-            // 
-            // btnGrabarCondicionInsegura
-            // 
-            this.btnGrabarCondicionInsegura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnGrabarCondicionInsegura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarCondicionInsegura.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarCondicionInsegura.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnGrabarCondicionInsegura.BorderRadius = 20;
-            this.btnGrabarCondicionInsegura.BorderSize = 0;
-            this.btnGrabarCondicionInsegura.FlatAppearance.BorderSize = 0;
-            this.btnGrabarCondicionInsegura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabarCondicionInsegura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabarCondicionInsegura.ForeColor = System.Drawing.Color.White;
-            this.btnGrabarCondicionInsegura.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabarCondicionInsegura.Image")));
-            this.btnGrabarCondicionInsegura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGrabarCondicionInsegura.Location = new System.Drawing.Point(400, 97);
-            this.btnGrabarCondicionInsegura.Name = "btnGrabarCondicionInsegura";
-            this.btnGrabarCondicionInsegura.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnGrabarCondicionInsegura.Size = new System.Drawing.Size(125, 51);
-            this.btnGrabarCondicionInsegura.TabIndex = 108;
-            this.btnGrabarCondicionInsegura.Text = " Guardar";
-            this.btnGrabarCondicionInsegura.TextColor = System.Drawing.Color.White;
-            this.btnGrabarCondicionInsegura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGrabarCondicionInsegura.UseVisualStyleBackColor = false;
-            this.btnGrabarCondicionInsegura.Visible = false;
-            this.btnGrabarCondicionInsegura.Click += new System.EventHandler(this.btnGrabarCondicionInsegura_Click);
-            // 
-            // btnAgregarCondicion
-            // 
-            this.btnAgregarCondicion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnAgregarCondicion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarCondicion.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarCondicion.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnAgregarCondicion.BorderRadius = 20;
-            this.btnAgregarCondicion.BorderSize = 0;
-            this.btnAgregarCondicion.FlatAppearance.BorderSize = 0;
-            this.btnAgregarCondicion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarCondicion.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarCondicion.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCondicion.Image")));
-            this.btnAgregarCondicion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarCondicion.Location = new System.Drawing.Point(400, 32);
-            this.btnAgregarCondicion.Name = "btnAgregarCondicion";
-            this.btnAgregarCondicion.Size = new System.Drawing.Size(125, 51);
-            this.btnAgregarCondicion.TabIndex = 107;
-            this.btnAgregarCondicion.Text = " Agregar";
-            this.btnAgregarCondicion.TextColor = System.Drawing.Color.White;
-            this.btnAgregarCondicion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarCondicion.UseVisualStyleBackColor = false;
-            this.btnAgregarCondicion.Click += new System.EventHandler(this.btnAgregarCondicion_Click);
-            // 
-            // txtOtroActoInseguro
-            // 
-            this.txtOtroActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtOtroActoInseguro.BackColor = System.Drawing.Color.White;
-            this.txtOtroActoInseguro.BorderColor = System.Drawing.Color.Gray;
-            this.txtOtroActoInseguro.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOtroActoInseguro.BorderRadius = 12;
-            this.txtOtroActoInseguro.BorderSize = 2;
-            this.txtOtroActoInseguro.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOtroActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtOtroActoInseguro.ForeColor = System.Drawing.Color.Black;
-            this.txtOtroActoInseguro.Location = new System.Drawing.Point(11, 123);
-            this.txtOtroActoInseguro.MaxLength = 32767;
-            this.txtOtroActoInseguro.Name = "txtOtroActoInseguro";
-            this.txtOtroActoInseguro.Padding = new System.Windows.Forms.Padding(5);
-            this.txtOtroActoInseguro.PasswordChar = false;
-            this.txtOtroActoInseguro.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOtroActoInseguro.PlaceholderText = "";
-            this.txtOtroActoInseguro.Size = new System.Drawing.Size(375, 30);
-            this.txtOtroActoInseguro.TabIndex = 181;
-            this.txtOtroActoInseguro.UnderlinedStyle = true;
-            this.txtOtroActoInseguro.Visible = false;
-            // 
-            // btnGrabarActoInseguro
-            // 
-            this.btnGrabarActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnGrabarActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarActoInseguro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarActoInseguro.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnGrabarActoInseguro.BorderRadius = 20;
-            this.btnGrabarActoInseguro.BorderSize = 0;
-            this.btnGrabarActoInseguro.FlatAppearance.BorderSize = 0;
-            this.btnGrabarActoInseguro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabarActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabarActoInseguro.ForeColor = System.Drawing.Color.White;
-            this.btnGrabarActoInseguro.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabarActoInseguro.Image")));
-            this.btnGrabarActoInseguro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGrabarActoInseguro.Location = new System.Drawing.Point(400, 95);
-            this.btnGrabarActoInseguro.Name = "btnGrabarActoInseguro";
-            this.btnGrabarActoInseguro.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnGrabarActoInseguro.Size = new System.Drawing.Size(125, 51);
-            this.btnGrabarActoInseguro.TabIndex = 108;
-            this.btnGrabarActoInseguro.Text = " Guardar";
-            this.btnGrabarActoInseguro.TextColor = System.Drawing.Color.White;
-            this.btnGrabarActoInseguro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGrabarActoInseguro.UseVisualStyleBackColor = false;
-            this.btnGrabarActoInseguro.Visible = false;
-            this.btnGrabarActoInseguro.Click += new System.EventHandler(this.btnGrabarActoInseguro_Click);
-            // 
-            // btnAgregarActoInseguro
-            // 
-            this.btnAgregarActoInseguro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnAgregarActoInseguro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarActoInseguro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarActoInseguro.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnAgregarActoInseguro.BorderRadius = 20;
-            this.btnAgregarActoInseguro.BorderSize = 0;
-            this.btnAgregarActoInseguro.FlatAppearance.BorderSize = 0;
-            this.btnAgregarActoInseguro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarActoInseguro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarActoInseguro.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarActoInseguro.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarActoInseguro.Image")));
-            this.btnAgregarActoInseguro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarActoInseguro.Location = new System.Drawing.Point(400, 32);
-            this.btnAgregarActoInseguro.Name = "btnAgregarActoInseguro";
-            this.btnAgregarActoInseguro.Size = new System.Drawing.Size(125, 51);
-            this.btnAgregarActoInseguro.TabIndex = 107;
-            this.btnAgregarActoInseguro.Text = " Agregar";
-            this.btnAgregarActoInseguro.TextColor = System.Drawing.Color.White;
-            this.btnAgregarActoInseguro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarActoInseguro.UseVisualStyleBackColor = false;
-            this.btnAgregarActoInseguro.Click += new System.EventHandler(this.btnAgregarActoInseguro_Click);
-            // 
-            // txtOtroRiesgo
-            // 
-            this.txtOtroRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtOtroRiesgo.BackColor = System.Drawing.Color.White;
-            this.txtOtroRiesgo.BorderColor = System.Drawing.Color.Gray;
-            this.txtOtroRiesgo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOtroRiesgo.BorderRadius = 12;
-            this.txtOtroRiesgo.BorderSize = 2;
-            this.txtOtroRiesgo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOtroRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtOtroRiesgo.ForeColor = System.Drawing.Color.Black;
-            this.txtOtroRiesgo.Location = new System.Drawing.Point(12, 116);
-            this.txtOtroRiesgo.MaxLength = 32767;
-            this.txtOtroRiesgo.Name = "txtOtroRiesgo";
-            this.txtOtroRiesgo.Padding = new System.Windows.Forms.Padding(5);
-            this.txtOtroRiesgo.PasswordChar = false;
-            this.txtOtroRiesgo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOtroRiesgo.PlaceholderText = "";
-            this.txtOtroRiesgo.Size = new System.Drawing.Size(375, 30);
-            this.txtOtroRiesgo.TabIndex = 180;
-            this.txtOtroRiesgo.UnderlinedStyle = true;
-            this.txtOtroRiesgo.Visible = false;
-            // 
-            // btnGrabarRiesgo
-            // 
-            this.btnGrabarRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnGrabarRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarRiesgo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabarRiesgo.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnGrabarRiesgo.BorderRadius = 20;
-            this.btnGrabarRiesgo.BorderSize = 0;
-            this.btnGrabarRiesgo.FlatAppearance.BorderSize = 0;
-            this.btnGrabarRiesgo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabarRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabarRiesgo.ForeColor = System.Drawing.Color.White;
-            this.btnGrabarRiesgo.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabarRiesgo.Image")));
-            this.btnGrabarRiesgo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGrabarRiesgo.Location = new System.Drawing.Point(400, 97);
-            this.btnGrabarRiesgo.Name = "btnGrabarRiesgo";
-            this.btnGrabarRiesgo.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnGrabarRiesgo.Size = new System.Drawing.Size(125, 51);
-            this.btnGrabarRiesgo.TabIndex = 106;
-            this.btnGrabarRiesgo.Text = " Guardar";
-            this.btnGrabarRiesgo.TextColor = System.Drawing.Color.White;
-            this.btnGrabarRiesgo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGrabarRiesgo.UseVisualStyleBackColor = false;
-            this.btnGrabarRiesgo.Visible = false;
-            this.btnGrabarRiesgo.Click += new System.EventHandler(this.btnGrabarRiesgo_Click);
-            // 
-            // btnAgregarRiesgo
-            // 
-            this.btnAgregarRiesgo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnAgregarRiesgo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarRiesgo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarRiesgo.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnAgregarRiesgo.BorderRadius = 20;
-            this.btnAgregarRiesgo.BorderSize = 0;
-            this.btnAgregarRiesgo.FlatAppearance.BorderSize = 0;
-            this.btnAgregarRiesgo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarRiesgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarRiesgo.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarRiesgo.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarRiesgo.Image")));
-            this.btnAgregarRiesgo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarRiesgo.Location = new System.Drawing.Point(400, 32);
-            this.btnAgregarRiesgo.Name = "btnAgregarRiesgo";
-            this.btnAgregarRiesgo.Size = new System.Drawing.Size(125, 51);
-            this.btnAgregarRiesgo.TabIndex = 105;
-            this.btnAgregarRiesgo.Text = " Agregar";
-            this.btnAgregarRiesgo.TextColor = System.Drawing.Color.White;
-            this.btnAgregarRiesgo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarRiesgo.UseVisualStyleBackColor = false;
-            this.btnAgregarRiesgo.Click += new System.EventHandler(this.btnAgregarRiesgo_Click);
-            // 
-            // txtNombreEmpleadoInvolucrado
-            // 
-            this.txtNombreEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNombreEmpleadoInvolucrado.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombreEmpleadoInvolucrado.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreEmpleadoInvolucrado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreEmpleadoInvolucrado.BorderRadius = 12;
-            this.txtNombreEmpleadoInvolucrado.BorderSize = 2;
-            this.txtNombreEmpleadoInvolucrado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreEmpleadoInvolucrado.Enabled = false;
-            this.txtNombreEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNombreEmpleadoInvolucrado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreEmpleadoInvolucrado.Location = new System.Drawing.Point(257, 53);
-            this.txtNombreEmpleadoInvolucrado.MaxLength = 32767;
-            this.txtNombreEmpleadoInvolucrado.Name = "txtNombreEmpleadoInvolucrado";
-            this.txtNombreEmpleadoInvolucrado.Padding = new System.Windows.Forms.Padding(5);
-            this.txtNombreEmpleadoInvolucrado.PasswordChar = false;
-            this.txtNombreEmpleadoInvolucrado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreEmpleadoInvolucrado.PlaceholderText = "";
-            this.txtNombreEmpleadoInvolucrado.Size = new System.Drawing.Size(503, 30);
-            this.txtNombreEmpleadoInvolucrado.TabIndex = 187;
-            this.txtNombreEmpleadoInvolucrado.UnderlinedStyle = true;
-            // 
-            // txtNumNominaEmpleadoInvolucrado
-            // 
-            this.txtNumNominaEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNumNominaEmpleadoInvolucrado.BackColor = System.Drawing.Color.White;
-            this.txtNumNominaEmpleadoInvolucrado.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNominaEmpleadoInvolucrado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNominaEmpleadoInvolucrado.BorderRadius = 12;
-            this.txtNumNominaEmpleadoInvolucrado.BorderSize = 2;
-            this.txtNumNominaEmpleadoInvolucrado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNumNominaEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNumNominaEmpleadoInvolucrado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNominaEmpleadoInvolucrado.Location = new System.Drawing.Point(16, 53);
-            this.txtNumNominaEmpleadoInvolucrado.MaxLength = 15;
-            this.txtNumNominaEmpleadoInvolucrado.Name = "txtNumNominaEmpleadoInvolucrado";
-            this.txtNumNominaEmpleadoInvolucrado.Padding = new System.Windows.Forms.Padding(5);
-            this.txtNumNominaEmpleadoInvolucrado.PasswordChar = false;
-            this.txtNumNominaEmpleadoInvolucrado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNominaEmpleadoInvolucrado.PlaceholderText = "";
-            this.txtNumNominaEmpleadoInvolucrado.Size = new System.Drawing.Size(171, 30);
-            this.txtNumNominaEmpleadoInvolucrado.TabIndex = 186;
-            this.txtNumNominaEmpleadoInvolucrado.UnderlinedStyle = true;
-            this.txtNumNominaEmpleadoInvolucrado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumNominaEmpleadoInvolucrado_KeyPress);
-            // 
-            // btnBuscarEmpleadoInvolucrado
-            // 
-            this.btnBuscarEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnBuscarEmpleadoInvolucrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleadoInvolucrado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleadoInvolucrado.BorderColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoInvolucrado.BorderRadius = 20;
-            this.btnBuscarEmpleadoInvolucrado.BorderSize = 0;
-            this.btnBuscarEmpleadoInvolucrado.FlatAppearance.BorderSize = 0;
-            this.btnBuscarEmpleadoInvolucrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarEmpleadoInvolucrado.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoInvolucrado.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoInvolucrado.Image")));
-            this.btnBuscarEmpleadoInvolucrado.Location = new System.Drawing.Point(195, 38);
-            this.btnBuscarEmpleadoInvolucrado.Name = "btnBuscarEmpleadoInvolucrado";
-            this.btnBuscarEmpleadoInvolucrado.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarEmpleadoInvolucrado.TabIndex = 105;
-            this.btnBuscarEmpleadoInvolucrado.TextColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoInvolucrado.UseVisualStyleBackColor = false;
-            this.btnBuscarEmpleadoInvolucrado.Click += new System.EventHandler(this.btnBuscarEmpleadoInvolucrado_Click);
-            // 
-            // btnAgregarEmpleadoInvolucrado
-            // 
-            this.btnAgregarEmpleadoInvolucrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnAgregarEmpleadoInvolucrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarEmpleadoInvolucrado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarEmpleadoInvolucrado.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnAgregarEmpleadoInvolucrado.BorderRadius = 20;
-            this.btnAgregarEmpleadoInvolucrado.BorderSize = 0;
-            this.btnAgregarEmpleadoInvolucrado.FlatAppearance.BorderSize = 0;
-            this.btnAgregarEmpleadoInvolucrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarEmpleadoInvolucrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEmpleadoInvolucrado.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarEmpleadoInvolucrado.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarEmpleadoInvolucrado.Image")));
-            this.btnAgregarEmpleadoInvolucrado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarEmpleadoInvolucrado.Location = new System.Drawing.Point(777, 29);
-            this.btnAgregarEmpleadoInvolucrado.Name = "btnAgregarEmpleadoInvolucrado";
-            this.btnAgregarEmpleadoInvolucrado.Size = new System.Drawing.Size(125, 58);
-            this.btnAgregarEmpleadoInvolucrado.TabIndex = 103;
-            this.btnAgregarEmpleadoInvolucrado.Text = "Agregar";
-            this.btnAgregarEmpleadoInvolucrado.TextColor = System.Drawing.Color.White;
-            this.btnAgregarEmpleadoInvolucrado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarEmpleadoInvolucrado.UseVisualStyleBackColor = false;
-            this.btnAgregarEmpleadoInvolucrado.Click += new System.EventHandler(this.btnAgregarEmpleadoInvolucrado_Click);
-            // 
-            // txtDiagnosticoFinal
-            // 
-            this.txtDiagnosticoFinal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtDiagnosticoFinal.BackColor = System.Drawing.SystemColors.Window;
-            this.txtDiagnosticoFinal.BorderColor = System.Drawing.Color.Gray;
-            this.txtDiagnosticoFinal.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtDiagnosticoFinal.BorderRadius = 12;
-            this.txtDiagnosticoFinal.BorderSize = 2;
-            this.txtDiagnosticoFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiagnosticoFinal.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDiagnosticoFinal.Location = new System.Drawing.Point(16, 40);
-            this.txtDiagnosticoFinal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDiagnosticoFinal.MaxLength = 1000;
-            this.txtDiagnosticoFinal.Multiline = true;
-            this.txtDiagnosticoFinal.Name = "txtDiagnosticoFinal";
-            this.txtDiagnosticoFinal.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDiagnosticoFinal.PasswordChar = false;
-            this.txtDiagnosticoFinal.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDiagnosticoFinal.PlaceholderText = "";
-            this.txtDiagnosticoFinal.Size = new System.Drawing.Size(875, 65);
-            this.txtDiagnosticoFinal.TabIndex = 179;
-            this.txtDiagnosticoFinal.UnderlinedStyle = true;
-            // 
-            // txtTratamiento
-            // 
-            this.txtTratamiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTratamiento.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTratamiento.BorderColor = System.Drawing.Color.Gray;
-            this.txtTratamiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTratamiento.BorderRadius = 12;
-            this.txtTratamiento.BorderSize = 2;
-            this.txtTratamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTratamiento.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTratamiento.Location = new System.Drawing.Point(16, 120);
-            this.txtTratamiento.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTratamiento.MaxLength = 1000;
-            this.txtTratamiento.Multiline = true;
-            this.txtTratamiento.Name = "txtTratamiento";
-            this.txtTratamiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTratamiento.PasswordChar = false;
-            this.txtTratamiento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTratamiento.PlaceholderText = "";
-            this.txtTratamiento.Size = new System.Drawing.Size(875, 65);
-            this.txtTratamiento.TabIndex = 180;
-            this.txtTratamiento.UnderlinedStyle = true;
-            // 
-            // txtOtro
-            // 
-            this.txtOtro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtOtro.BackColor = System.Drawing.Color.White;
-            this.txtOtro.BorderColor = System.Drawing.Color.Gray;
-            this.txtOtro.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtOtro.BorderRadius = 12;
-            this.txtOtro.BorderSize = 2;
-            this.txtOtro.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtOtro.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtOtro.Location = new System.Drawing.Point(720, 19);
-            this.txtOtro.MaxLength = 32767;
-            this.txtOtro.Name = "txtOtro";
-            this.txtOtro.Padding = new System.Windows.Forms.Padding(5);
-            this.txtOtro.PasswordChar = false;
-            this.txtOtro.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtOtro.PlaceholderText = "";
-            this.txtOtro.Size = new System.Drawing.Size(181, 30);
-            this.txtOtro.TabIndex = 184;
-            this.txtOtro.UnderlinedStyle = true;
-            this.txtOtro.Visible = false;
-            // 
-            // txtNumNominaEmpleadoConocimiento
-            // 
-            this.txtNumNominaEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNumNominaEmpleadoConocimiento.BackColor = System.Drawing.Color.White;
-            this.txtNumNominaEmpleadoConocimiento.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNominaEmpleadoConocimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNominaEmpleadoConocimiento.BorderRadius = 12;
-            this.txtNumNominaEmpleadoConocimiento.BorderSize = 2;
-            this.txtNumNominaEmpleadoConocimiento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNumNominaEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNumNominaEmpleadoConocimiento.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNominaEmpleadoConocimiento.Location = new System.Drawing.Point(16, 53);
-            this.txtNumNominaEmpleadoConocimiento.MaxLength = 15;
-            this.txtNumNominaEmpleadoConocimiento.Name = "txtNumNominaEmpleadoConocimiento";
-            this.txtNumNominaEmpleadoConocimiento.Padding = new System.Windows.Forms.Padding(5);
-            this.txtNumNominaEmpleadoConocimiento.PasswordChar = false;
-            this.txtNumNominaEmpleadoConocimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNominaEmpleadoConocimiento.PlaceholderText = "";
-            this.txtNumNominaEmpleadoConocimiento.Size = new System.Drawing.Size(171, 30);
-            this.txtNumNominaEmpleadoConocimiento.TabIndex = 183;
-            this.txtNumNominaEmpleadoConocimiento.UnderlinedStyle = true;
-            this.txtNumNominaEmpleadoConocimiento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumNominaEmpleadoConocimiento_KeyPress);
-            // 
-            // txtNombreEmpleadoConocimiento
-            // 
-            this.txtNombreEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNombreEmpleadoConocimiento.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombreEmpleadoConocimiento.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreEmpleadoConocimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreEmpleadoConocimiento.BorderRadius = 12;
-            this.txtNombreEmpleadoConocimiento.BorderSize = 2;
-            this.txtNombreEmpleadoConocimiento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreEmpleadoConocimiento.Enabled = false;
-            this.txtNombreEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNombreEmpleadoConocimiento.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreEmpleadoConocimiento.Location = new System.Drawing.Point(257, 53);
-            this.txtNombreEmpleadoConocimiento.MaxLength = 32767;
-            this.txtNombreEmpleadoConocimiento.Name = "txtNombreEmpleadoConocimiento";
-            this.txtNombreEmpleadoConocimiento.Padding = new System.Windows.Forms.Padding(5);
-            this.txtNombreEmpleadoConocimiento.PasswordChar = false;
-            this.txtNombreEmpleadoConocimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreEmpleadoConocimiento.PlaceholderText = "";
-            this.txtNombreEmpleadoConocimiento.Size = new System.Drawing.Size(503, 30);
-            this.txtNombreEmpleadoConocimiento.TabIndex = 182;
-            this.txtNombreEmpleadoConocimiento.UnderlinedStyle = true;
-            // 
-            // btnBuscarEmpleadoConocimiento
-            // 
-            this.btnBuscarEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnBuscarEmpleadoConocimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleadoConocimiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleadoConocimiento.BorderColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoConocimiento.BorderRadius = 20;
-            this.btnBuscarEmpleadoConocimiento.BorderSize = 0;
-            this.btnBuscarEmpleadoConocimiento.FlatAppearance.BorderSize = 0;
-            this.btnBuscarEmpleadoConocimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarEmpleadoConocimiento.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoConocimiento.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoConocimiento.Image")));
-            this.btnBuscarEmpleadoConocimiento.Location = new System.Drawing.Point(194, 48);
-            this.btnBuscarEmpleadoConocimiento.Name = "btnBuscarEmpleadoConocimiento";
-            this.btnBuscarEmpleadoConocimiento.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarEmpleadoConocimiento.TabIndex = 104;
-            this.btnBuscarEmpleadoConocimiento.TextColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoConocimiento.UseVisualStyleBackColor = false;
-            this.btnBuscarEmpleadoConocimiento.Click += new System.EventHandler(this.btnBuscarEmpleadoConocimiento_Click);
-            // 
-            // btnAgregarEmpleadoConocimiento
-            // 
-            this.btnAgregarEmpleadoConocimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnAgregarEmpleadoConocimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarEmpleadoConocimiento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarEmpleadoConocimiento.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnAgregarEmpleadoConocimiento.BorderRadius = 20;
-            this.btnAgregarEmpleadoConocimiento.BorderSize = 0;
-            this.btnAgregarEmpleadoConocimiento.FlatAppearance.BorderSize = 0;
-            this.btnAgregarEmpleadoConocimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarEmpleadoConocimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEmpleadoConocimiento.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarEmpleadoConocimiento.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarEmpleadoConocimiento.Image")));
-            this.btnAgregarEmpleadoConocimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarEmpleadoConocimiento.Location = new System.Drawing.Point(777, 29);
-            this.btnAgregarEmpleadoConocimiento.Name = "btnAgregarEmpleadoConocimiento";
-            this.btnAgregarEmpleadoConocimiento.Size = new System.Drawing.Size(125, 58);
-            this.btnAgregarEmpleadoConocimiento.TabIndex = 104;
-            this.btnAgregarEmpleadoConocimiento.Text = "Agregar";
-            this.btnAgregarEmpleadoConocimiento.TextColor = System.Drawing.Color.White;
-            this.btnAgregarEmpleadoConocimiento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarEmpleadoConocimiento.UseVisualStyleBackColor = false;
-            this.btnAgregarEmpleadoConocimiento.Click += new System.EventHandler(this.btnAgregarEmpleadoConocimiento_Click);
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnGrabar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnGrabar.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnGrabar.BorderRadius = 20;
-            this.btnGrabar.BorderSize = 0;
-            this.btnGrabar.FlatAppearance.BorderSize = 0;
-            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.ForeColor = System.Drawing.Color.White;
-            this.btnGrabar.Image = ((System.Drawing.Image)(resources.GetObject("btnGrabar.Image")));
-            this.btnGrabar.Location = new System.Drawing.Point(381, 703);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnGrabar.Size = new System.Drawing.Size(186, 60);
-            this.btnGrabar.TabIndex = 119;
-            this.btnGrabar.Text = " Grabar";
-            this.btnGrabar.TextColor = System.Drawing.Color.White;
-            this.btnGrabar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGrabar.UseVisualStyleBackColor = false;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            // 
-            // txtNombreSST
-            // 
-            this.txtNombreSST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNombreSST.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNombreSST.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreSST.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreSST.BorderRadius = 12;
-            this.txtNombreSST.BorderSize = 2;
-            this.txtNombreSST.Enabled = false;
-            this.txtNombreSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreSST.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreSST.Location = new System.Drawing.Point(287, 156);
-            this.txtNombreSST.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreSST.MaxLength = 32767;
-            this.txtNombreSST.Multiline = false;
-            this.txtNombreSST.Name = "txtNombreSST";
-            this.txtNombreSST.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreSST.PasswordChar = false;
-            this.txtNombreSST.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreSST.PlaceholderText = "";
-            this.txtNombreSST.Size = new System.Drawing.Size(591, 35);
-            this.txtNombreSST.TabIndex = 183;
-            this.txtNombreSST.UnderlinedStyle = true;
-            // 
-            // txtNumNomminaSST
-            // 
-            this.txtNumNomminaSST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNumNomminaSST.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNumNomminaSST.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNomminaSST.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNomminaSST.BorderRadius = 12;
-            this.txtNumNomminaSST.BorderSize = 2;
-            this.txtNumNomminaSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumNomminaSST.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNomminaSST.Location = new System.Drawing.Point(23, 156);
-            this.txtNumNomminaSST.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumNomminaSST.MaxLength = 15;
-            this.txtNumNomminaSST.Multiline = false;
-            this.txtNumNomminaSST.Name = "txtNumNomminaSST";
-            this.txtNumNomminaSST.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumNomminaSST.PasswordChar = false;
-            this.txtNumNomminaSST.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNomminaSST.PlaceholderText = "";
-            this.txtNumNomminaSST.Size = new System.Drawing.Size(202, 35);
-            this.txtNumNomminaSST.TabIndex = 181;
-            this.txtNumNomminaSST.UnderlinedStyle = true;
-            // 
-            // txtSeguimiento
-            // 
-            this.txtSeguimiento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtSeguimiento.BackColor = System.Drawing.Color.White;
-            this.txtSeguimiento.BorderColor = System.Drawing.Color.Gray;
-            this.txtSeguimiento.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSeguimiento.BorderRadius = 12;
-            this.txtSeguimiento.BorderSize = 2;
-            this.txtSeguimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeguimiento.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSeguimiento.Location = new System.Drawing.Point(23, 34);
-            this.txtSeguimiento.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSeguimiento.MaxLength = 30;
-            this.txtSeguimiento.Multiline = true;
-            this.txtSeguimiento.Name = "txtSeguimiento";
-            this.txtSeguimiento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSeguimiento.PasswordChar = false;
-            this.txtSeguimiento.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSeguimiento.PlaceholderText = "";
-            this.txtSeguimiento.Size = new System.Drawing.Size(855, 60);
-            this.txtSeguimiento.TabIndex = 180;
-            this.txtSeguimiento.UnderlinedStyle = true;
-            // 
-            // btnBuscarEmpleadoSST
-            // 
-            this.btnBuscarEmpleadoSST.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnBuscarEmpleadoSST.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleadoSST.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleadoSST.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnBuscarEmpleadoSST.BorderRadius = 20;
-            this.btnBuscarEmpleadoSST.BorderSize = 0;
-            this.btnBuscarEmpleadoSST.FlatAppearance.BorderSize = 0;
-            this.btnBuscarEmpleadoSST.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarEmpleadoSST.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarEmpleadoSST.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoSST.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleadoSST.Image")));
-            this.btnBuscarEmpleadoSST.Location = new System.Drawing.Point(232, 153);
-            this.btnBuscarEmpleadoSST.Name = "btnBuscarEmpleadoSST";
-            this.btnBuscarEmpleadoSST.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarEmpleadoSST.TabIndex = 120;
-            this.btnBuscarEmpleadoSST.TextColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleadoSST.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscarEmpleadoSST.UseVisualStyleBackColor = false;
-            this.btnBuscarEmpleadoSST.Click += new System.EventHandler(this.btnBuscarEmpleadoSST_Click);
-            // 
-            // txtAccionesPreventivasProp
-            // 
-            this.txtAccionesPreventivasProp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtAccionesPreventivasProp.BackColor = System.Drawing.Color.White;
-            this.txtAccionesPreventivasProp.BorderColor = System.Drawing.Color.Gray;
-            this.txtAccionesPreventivasProp.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAccionesPreventivasProp.BorderRadius = 12;
-            this.txtAccionesPreventivasProp.BorderSize = 2;
-            this.txtAccionesPreventivasProp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccionesPreventivasProp.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAccionesPreventivasProp.Location = new System.Drawing.Point(22, 67);
-            this.txtAccionesPreventivasProp.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAccionesPreventivasProp.MaxLength = 50;
-            this.txtAccionesPreventivasProp.Multiline = true;
-            this.txtAccionesPreventivasProp.Name = "txtAccionesPreventivasProp";
-            this.txtAccionesPreventivasProp.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAccionesPreventivasProp.PasswordChar = false;
-            this.txtAccionesPreventivasProp.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAccionesPreventivasProp.PlaceholderText = "";
-            this.txtAccionesPreventivasProp.Size = new System.Drawing.Size(255, 60);
-            this.txtAccionesPreventivasProp.TabIndex = 177;
-            this.txtAccionesPreventivasProp.UnderlinedStyle = true;
-            // 
-            // txtQuienPreventivas
-            // 
-            this.txtQuienPreventivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtQuienPreventivas.BackColor = System.Drawing.Color.White;
-            this.txtQuienPreventivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtQuienPreventivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtQuienPreventivas.BorderRadius = 12;
-            this.txtQuienPreventivas.BorderSize = 2;
-            this.txtQuienPreventivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuienPreventivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtQuienPreventivas.Location = new System.Drawing.Point(322, 66);
-            this.txtQuienPreventivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtQuienPreventivas.MaxLength = 30;
-            this.txtQuienPreventivas.Multiline = true;
-            this.txtQuienPreventivas.Name = "txtQuienPreventivas";
-            this.txtQuienPreventivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtQuienPreventivas.PasswordChar = false;
-            this.txtQuienPreventivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtQuienPreventivas.PlaceholderText = "";
-            this.txtQuienPreventivas.Size = new System.Drawing.Size(255, 60);
-            this.txtQuienPreventivas.TabIndex = 178;
-            this.txtQuienPreventivas.UnderlinedStyle = true;
-            // 
-            // txtCuandoPreventivas
-            // 
-            this.txtCuandoPreventivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtCuandoPreventivas.BackColor = System.Drawing.Color.White;
-            this.txtCuandoPreventivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtCuandoPreventivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtCuandoPreventivas.BorderRadius = 12;
-            this.txtCuandoPreventivas.BorderSize = 2;
-            this.txtCuandoPreventivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuandoPreventivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCuandoPreventivas.Location = new System.Drawing.Point(619, 67);
-            this.txtCuandoPreventivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCuandoPreventivas.MaxLength = 30;
-            this.txtCuandoPreventivas.Multiline = true;
-            this.txtCuandoPreventivas.Name = "txtCuandoPreventivas";
-            this.txtCuandoPreventivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCuandoPreventivas.PasswordChar = false;
-            this.txtCuandoPreventivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCuandoPreventivas.PlaceholderText = "";
-            this.txtCuandoPreventivas.Size = new System.Drawing.Size(255, 60);
-            this.txtCuandoPreventivas.TabIndex = 179;
-            this.txtCuandoPreventivas.UnderlinedStyle = true;
-            // 
-            // txtAccionesCorrectivas
-            // 
-            this.txtAccionesCorrectivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtAccionesCorrectivas.BackColor = System.Drawing.Color.White;
-            this.txtAccionesCorrectivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtAccionesCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAccionesCorrectivas.BorderRadius = 12;
-            this.txtAccionesCorrectivas.BorderSize = 2;
-            this.txtAccionesCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccionesCorrectivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAccionesCorrectivas.Location = new System.Drawing.Point(18, 67);
-            this.txtAccionesCorrectivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAccionesCorrectivas.MaxLength = 16383;
-            this.txtAccionesCorrectivas.Multiline = true;
-            this.txtAccionesCorrectivas.Name = "txtAccionesCorrectivas";
-            this.txtAccionesCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAccionesCorrectivas.PasswordChar = false;
-            this.txtAccionesCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAccionesCorrectivas.PlaceholderText = "";
-            this.txtAccionesCorrectivas.Size = new System.Drawing.Size(255, 60);
-            this.txtAccionesCorrectivas.TabIndex = 174;
-            this.txtAccionesCorrectivas.UnderlinedStyle = true;
-            // 
-            // txtquienCorrectivas
-            // 
-            this.txtquienCorrectivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtquienCorrectivas.BackColor = System.Drawing.Color.White;
-            this.txtquienCorrectivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtquienCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtquienCorrectivas.BorderRadius = 12;
-            this.txtquienCorrectivas.BorderSize = 2;
-            this.txtquienCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtquienCorrectivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtquienCorrectivas.Location = new System.Drawing.Point(319, 64);
-            this.txtquienCorrectivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtquienCorrectivas.MaxLength = 30;
-            this.txtquienCorrectivas.Multiline = true;
-            this.txtquienCorrectivas.Name = "txtquienCorrectivas";
-            this.txtquienCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtquienCorrectivas.PasswordChar = false;
-            this.txtquienCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtquienCorrectivas.PlaceholderText = "";
-            this.txtquienCorrectivas.Size = new System.Drawing.Size(259, 60);
-            this.txtquienCorrectivas.TabIndex = 175;
-            this.txtquienCorrectivas.UnderlinedStyle = true;
-            // 
-            // txtCuandoCorrectivas
-            // 
-            this.txtCuandoCorrectivas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtCuandoCorrectivas.BackColor = System.Drawing.Color.White;
-            this.txtCuandoCorrectivas.BorderColor = System.Drawing.Color.Gray;
-            this.txtCuandoCorrectivas.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtCuandoCorrectivas.BorderRadius = 12;
-            this.txtCuandoCorrectivas.BorderSize = 2;
-            this.txtCuandoCorrectivas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCuandoCorrectivas.ForeColor = System.Drawing.Color.DimGray;
-            this.txtCuandoCorrectivas.Location = new System.Drawing.Point(615, 67);
-            this.txtCuandoCorrectivas.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCuandoCorrectivas.MaxLength = 30;
-            this.txtCuandoCorrectivas.Multiline = true;
-            this.txtCuandoCorrectivas.Name = "txtCuandoCorrectivas";
-            this.txtCuandoCorrectivas.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCuandoCorrectivas.PasswordChar = false;
-            this.txtCuandoCorrectivas.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCuandoCorrectivas.PlaceholderText = "";
-            this.txtCuandoCorrectivas.Size = new System.Drawing.Size(255, 60);
-            this.txtCuandoCorrectivas.TabIndex = 176;
-            this.txtCuandoCorrectivas.UnderlinedStyle = true;
-            // 
-            // txtDescripcionAccidente
-            // 
-            this.txtDescripcionAccidente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtDescripcionAccidente.BackColor = System.Drawing.Color.White;
-            this.txtDescripcionAccidente.BorderColor = System.Drawing.Color.Gray;
-            this.txtDescripcionAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtDescripcionAccidente.BorderRadius = 12;
-            this.txtDescripcionAccidente.BorderSize = 2;
-            this.txtDescripcionAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcionAccidente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDescripcionAccidente.Location = new System.Drawing.Point(9, 27);
-            this.txtDescripcionAccidente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDescripcionAccidente.MaxLength = 16383;
-            this.txtDescripcionAccidente.Multiline = true;
-            this.txtDescripcionAccidente.Name = "txtDescripcionAccidente";
-            this.txtDescripcionAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDescripcionAccidente.PasswordChar = false;
-            this.txtDescripcionAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDescripcionAccidente.PlaceholderText = "";
-            this.txtDescripcionAccidente.Size = new System.Drawing.Size(880, 75);
-            this.txtDescripcionAccidente.TabIndex = 187;
-            this.txtDescripcionAccidente.UnderlinedStyle = true;
-            // 
-            // rbtnTrabajoUrgenteSi
-            // 
-            this.rbtnTrabajoUrgenteSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnTrabajoUrgenteSi.Location = new System.Drawing.Point(338, 218);
-            this.rbtnTrabajoUrgenteSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTrabajoUrgenteSi.Name = "rbtnTrabajoUrgenteSi";
-            this.rbtnTrabajoUrgenteSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTrabajoUrgenteSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTrabajoUrgenteSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnTrabajoUrgenteSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTrabajoUrgenteSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTrabajoUrgenteSi.TabIndex = 124;
-            this.rbtnTrabajoUrgenteSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnDanosMaterialesSi
-            // 
-            this.rbtnDanosMaterialesSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnDanosMaterialesSi.Location = new System.Drawing.Point(691, 10);
-            this.rbtnDanosMaterialesSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnDanosMaterialesSi.Name = "rbtnDanosMaterialesSi";
-            this.rbtnDanosMaterialesSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnDanosMaterialesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnDanosMaterialesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnDanosMaterialesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnDanosMaterialesSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnDanosMaterialesSi.TabIndex = 125;
-            this.rbtnDanosMaterialesSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnTrabajoNeccesarioSi
-            // 
-            this.rbtnTrabajoNeccesarioSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnTrabajoNeccesarioSi.Location = new System.Drawing.Point(338, 166);
-            this.rbtnTrabajoNeccesarioSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTrabajoNeccesarioSi.Name = "rbtnTrabajoNeccesarioSi";
-            this.rbtnTrabajoNeccesarioSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTrabajoNeccesarioSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTrabajoNeccesarioSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnTrabajoNeccesarioSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTrabajoNeccesarioSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTrabajoNeccesarioSi.TabIndex = 123;
-            this.rbtnTrabajoNeccesarioSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnTrabajoProgramadoSi
-            // 
-            this.rbtnTrabajoProgramadoSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnTrabajoProgramadoSi.Location = new System.Drawing.Point(338, 114);
-            this.rbtnTrabajoProgramadoSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTrabajoProgramadoSi.Name = "rbtnTrabajoProgramadoSi";
-            this.rbtnTrabajoProgramadoSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTrabajoProgramadoSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTrabajoProgramadoSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnTrabajoProgramadoSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTrabajoProgramadoSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTrabajoProgramadoSi.TabIndex = 122;
-            this.rbtnTrabajoProgramadoSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnTrabajoHabitualSi
-            // 
-            this.rbtnTrabajoHabitualSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnTrabajoHabitualSi.Location = new System.Drawing.Point(338, 62);
-            this.rbtnTrabajoHabitualSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnTrabajoHabitualSi.Name = "rbtnTrabajoHabitualSi";
-            this.rbtnTrabajoHabitualSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnTrabajoHabitualSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnTrabajoHabitualSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnTrabajoHabitualSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnTrabajoHabitualSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnTrabajoHabitualSi.TabIndex = 121;
-            this.rbtnTrabajoHabitualSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnRealizoTrabajoAntesSi
-            // 
-            this.rbtnRealizoTrabajoAntesSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnRealizoTrabajoAntesSi.Location = new System.Drawing.Point(338, 10);
-            this.rbtnRealizoTrabajoAntesSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnRealizoTrabajoAntesSi.Name = "rbtnRealizoTrabajoAntesSi";
-            this.rbtnRealizoTrabajoAntesSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnRealizoTrabajoAntesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnRealizoTrabajoAntesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnRealizoTrabajoAntesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnRealizoTrabajoAntesSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnRealizoTrabajoAntesSi.TabIndex = 120;
-            this.rbtnRealizoTrabajoAntesSi.UseVisualStyleBackColor = true;
-            // 
-            // txtEquipoDanado
-            // 
-            this.txtEquipoDanado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtEquipoDanado.BackColor = System.Drawing.Color.White;
-            this.txtEquipoDanado.BorderColor = System.Drawing.Color.Gray;
-            this.txtEquipoDanado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEquipoDanado.BorderRadius = 12;
-            this.txtEquipoDanado.BorderSize = 2;
-            this.txtEquipoDanado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEquipoDanado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEquipoDanado.Location = new System.Drawing.Point(455, 73);
-            this.txtEquipoDanado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEquipoDanado.MaxLength = 50;
-            this.txtEquipoDanado.Multiline = true;
-            this.txtEquipoDanado.Name = "txtEquipoDanado";
-            this.txtEquipoDanado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEquipoDanado.PasswordChar = false;
-            this.txtEquipoDanado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEquipoDanado.PlaceholderText = "";
-            this.txtEquipoDanado.Size = new System.Drawing.Size(420, 52);
-            this.txtEquipoDanado.TabIndex = 185;
-            this.txtEquipoDanado.UnderlinedStyle = true;
-            // 
-            // txtSustituiblePor
-            // 
-            this.txtSustituiblePor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtSustituiblePor.BackColor = System.Drawing.Color.White;
-            this.txtSustituiblePor.BorderColor = System.Drawing.Color.Gray;
-            this.txtSustituiblePor.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtSustituiblePor.BorderRadius = 12;
-            this.txtSustituiblePor.BorderSize = 2;
-            this.txtSustituiblePor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSustituiblePor.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSustituiblePor.Location = new System.Drawing.Point(455, 146);
-            this.txtSustituiblePor.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSustituiblePor.MaxLength = 50;
-            this.txtSustituiblePor.Multiline = true;
-            this.txtSustituiblePor.Name = "txtSustituiblePor";
-            this.txtSustituiblePor.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSustituiblePor.PasswordChar = false;
-            this.txtSustituiblePor.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSustituiblePor.PlaceholderText = "";
-            this.txtSustituiblePor.Size = new System.Drawing.Size(420, 52);
-            this.txtSustituiblePor.TabIndex = 186;
-            this.txtSustituiblePor.UnderlinedStyle = true;
-            // 
-            // txtEquipoProteccionNecesario
-            // 
-            this.txtEquipoProteccionNecesario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtEquipoProteccionNecesario.BackColor = System.Drawing.Color.White;
-            this.txtEquipoProteccionNecesario.BorderColor = System.Drawing.Color.Gray;
-            this.txtEquipoProteccionNecesario.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEquipoProteccionNecesario.BorderRadius = 12;
-            this.txtEquipoProteccionNecesario.BorderSize = 2;
-            this.txtEquipoProteccionNecesario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEquipoProteccionNecesario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEquipoProteccionNecesario.Location = new System.Drawing.Point(455, 275);
-            this.txtEquipoProteccionNecesario.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEquipoProteccionNecesario.MaxLength = 50;
-            this.txtEquipoProteccionNecesario.Multiline = true;
-            this.txtEquipoProteccionNecesario.Name = "txtEquipoProteccionNecesario";
-            this.txtEquipoProteccionNecesario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEquipoProteccionNecesario.PasswordChar = false;
-            this.txtEquipoProteccionNecesario.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEquipoProteccionNecesario.PlaceholderText = "";
-            this.txtEquipoProteccionNecesario.Size = new System.Drawing.Size(432, 74);
-            this.txtEquipoProteccionNecesario.TabIndex = 184;
-            this.txtEquipoProteccionNecesario.UnderlinedStyle = true;
-            // 
-            // txtObjCausanteLesion
-            // 
-            this.txtObjCausanteLesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtObjCausanteLesion.BackColor = System.Drawing.Color.White;
-            this.txtObjCausanteLesion.BorderColor = System.Drawing.Color.Gray;
-            this.txtObjCausanteLesion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtObjCausanteLesion.BorderRadius = 12;
-            this.txtObjCausanteLesion.BorderSize = 2;
-            this.txtObjCausanteLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObjCausanteLesion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtObjCausanteLesion.Location = new System.Drawing.Point(9, 275);
-            this.txtObjCausanteLesion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtObjCausanteLesion.MaxLength = 50;
-            this.txtObjCausanteLesion.Multiline = true;
-            this.txtObjCausanteLesion.Name = "txtObjCausanteLesion";
-            this.txtObjCausanteLesion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtObjCausanteLesion.PasswordChar = false;
-            this.txtObjCausanteLesion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtObjCausanteLesion.PlaceholderText = "";
-            this.txtObjCausanteLesion.Size = new System.Drawing.Size(432, 74);
-            this.txtObjCausanteLesion.TabIndex = 183;
-            this.txtObjCausanteLesion.UnderlinedStyle = true;
-            // 
-            // txtEquipoProteccionUsado
-            // 
-            this.txtEquipoProteccionUsado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtEquipoProteccionUsado.BackColor = System.Drawing.Color.White;
-            this.txtEquipoProteccionUsado.BorderColor = System.Drawing.Color.Gray;
-            this.txtEquipoProteccionUsado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEquipoProteccionUsado.BorderRadius = 12;
-            this.txtEquipoProteccionUsado.BorderSize = 2;
-            this.txtEquipoProteccionUsado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEquipoProteccionUsado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEquipoProteccionUsado.Location = new System.Drawing.Point(455, 164);
-            this.txtEquipoProteccionUsado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEquipoProteccionUsado.MaxLength = 50;
-            this.txtEquipoProteccionUsado.Multiline = true;
-            this.txtEquipoProteccionUsado.Name = "txtEquipoProteccionUsado";
-            this.txtEquipoProteccionUsado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEquipoProteccionUsado.PasswordChar = false;
-            this.txtEquipoProteccionUsado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEquipoProteccionUsado.PlaceholderText = "";
-            this.txtEquipoProteccionUsado.Size = new System.Drawing.Size(432, 74);
-            this.txtEquipoProteccionUsado.TabIndex = 182;
-            this.txtEquipoProteccionUsado.UnderlinedStyle = true;
-            // 
-            // txtLugarAccidente
-            // 
-            this.txtLugarAccidente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtLugarAccidente.BackColor = System.Drawing.Color.White;
-            this.txtLugarAccidente.BorderColor = System.Drawing.Color.Gray;
-            this.txtLugarAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtLugarAccidente.BorderRadius = 12;
-            this.txtLugarAccidente.BorderSize = 2;
-            this.txtLugarAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLugarAccidente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtLugarAccidente.Location = new System.Drawing.Point(9, 164);
-            this.txtLugarAccidente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLugarAccidente.MaxLength = 25;
-            this.txtLugarAccidente.Multiline = true;
-            this.txtLugarAccidente.Name = "txtLugarAccidente";
-            this.txtLugarAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtLugarAccidente.PasswordChar = false;
-            this.txtLugarAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtLugarAccidente.PlaceholderText = "";
-            this.txtLugarAccidente.Size = new System.Drawing.Size(432, 74);
-            this.txtLugarAccidente.TabIndex = 181;
-            this.txtLugarAccidente.UnderlinedStyle = true;
-            // 
-            // rbtnlesion12MesesSi
-            // 
-            this.rbtnlesion12MesesSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnlesion12MesesSi.Location = new System.Drawing.Point(779, 18);
-            this.rbtnlesion12MesesSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnlesion12MesesSi.Name = "rbtnlesion12MesesSi";
-            this.rbtnlesion12MesesSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnlesion12MesesSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnlesion12MesesSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnlesion12MesesSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnlesion12MesesSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnlesion12MesesSi.TabIndex = 120;
-            this.rbtnlesion12MesesSi.UseVisualStyleBackColor = true;
-            // 
-            // rbtnlesion30DiasSi
-            // 
-            this.rbtnlesion30DiasSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnlesion30DiasSi.Location = new System.Drawing.Point(333, 18);
-            this.rbtnlesion30DiasSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnlesion30DiasSi.Name = "rbtnlesion30DiasSi";
-            this.rbtnlesion30DiasSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnlesion30DiasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnlesion30DiasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnlesion30DiasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnlesion30DiasSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnlesion30DiasSi.TabIndex = 119;
-            this.rbtnlesion30DiasSi.UseVisualStyleBackColor = true;
-            // 
-            // txtNombreTestigo
-            // 
-            this.txtNombreTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNombreTestigo.BackColor = System.Drawing.Color.White;
-            this.txtNombreTestigo.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreTestigo.BorderRadius = 12;
-            this.txtNombreTestigo.BorderSize = 2;
-            this.txtNombreTestigo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombreTestigo.Enabled = false;
-            this.txtNombreTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNombreTestigo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreTestigo.Location = new System.Drawing.Point(286, 54);
-            this.txtNombreTestigo.MaxLength = 32767;
-            this.txtNombreTestigo.Name = "txtNombreTestigo";
-            this.txtNombreTestigo.Padding = new System.Windows.Forms.Padding(5);
-            this.txtNombreTestigo.PasswordChar = false;
-            this.txtNombreTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreTestigo.PlaceholderText = "";
-            this.txtNombreTestigo.Size = new System.Drawing.Size(467, 30);
-            this.txtNombreTestigo.TabIndex = 205;
-            this.txtNombreTestigo.UnderlinedStyle = true;
-            // 
-            // txtNumNominaTestigo
-            // 
-            this.txtNumNominaTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNumNominaTestigo.BackColor = System.Drawing.Color.White;
-            this.txtNumNominaTestigo.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumNominaTestigo.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumNominaTestigo.BorderRadius = 12;
-            this.txtNumNominaTestigo.BorderSize = 2;
-            this.txtNumNominaTestigo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNumNominaTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNumNominaTestigo.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumNominaTestigo.Location = new System.Drawing.Point(20, 53);
-            this.txtNumNominaTestigo.MaxLength = 15;
-            this.txtNumNominaTestigo.Name = "txtNumNominaTestigo";
-            this.txtNumNominaTestigo.Padding = new System.Windows.Forms.Padding(5);
-            this.txtNumNominaTestigo.PasswordChar = false;
-            this.txtNumNominaTestigo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumNominaTestigo.PlaceholderText = "";
-            this.txtNumNominaTestigo.Size = new System.Drawing.Size(199, 30);
-            this.txtNumNominaTestigo.TabIndex = 204;
-            this.txtNumNominaTestigo.UnderlinedStyle = true;
-            this.txtNumNominaTestigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumNominaTestigo_KeyPress);
-            // 
-            // btnBuscarTestigo
-            // 
-            this.btnBuscarTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnBuscarTestigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarTestigo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarTestigo.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnBuscarTestigo.BorderRadius = 20;
-            this.btnBuscarTestigo.BorderSize = 0;
-            this.btnBuscarTestigo.FlatAppearance.BorderSize = 0;
-            this.btnBuscarTestigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarTestigo.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarTestigo.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarTestigo.Image")));
-            this.btnBuscarTestigo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarTestigo.Location = new System.Drawing.Point(225, 47);
-            this.btnBuscarTestigo.Name = "btnBuscarTestigo";
-            this.btnBuscarTestigo.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnBuscarTestigo.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarTestigo.TabIndex = 107;
-            this.btnBuscarTestigo.TextColor = System.Drawing.Color.White;
-            this.btnBuscarTestigo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscarTestigo.UseVisualStyleBackColor = false;
-            this.btnBuscarTestigo.Click += new System.EventHandler(this.btnBuscarTestigo_Click);
-            // 
-            // btnAgregarTestigo
-            // 
-            this.btnAgregarTestigo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnAgregarTestigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarTestigo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnAgregarTestigo.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnAgregarTestigo.BorderRadius = 20;
-            this.btnAgregarTestigo.BorderSize = 0;
-            this.btnAgregarTestigo.FlatAppearance.BorderSize = 0;
-            this.btnAgregarTestigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarTestigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarTestigo.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarTestigo.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarTestigo.Image")));
-            this.btnAgregarTestigo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarTestigo.Location = new System.Drawing.Point(778, 36);
-            this.btnAgregarTestigo.Name = "btnAgregarTestigo";
-            this.btnAgregarTestigo.Size = new System.Drawing.Size(125, 51);
-            this.btnAgregarTestigo.TabIndex = 106;
-            this.btnAgregarTestigo.Text = " Agregar";
-            this.btnAgregarTestigo.TextColor = System.Drawing.Color.White;
-            this.btnAgregarTestigo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarTestigo.UseVisualStyleBackColor = false;
-            this.btnAgregarTestigo.Click += new System.EventHandler(this.btnAgregarTestigo_Click);
-            // 
-            // cboxDebidoA
-            // 
-            this.cboxDebidoA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxDebidoA.BackColor = System.Drawing.Color.White;
-            this.cboxDebidoA.BorderColor = System.Drawing.Color.DarkCyan;
-            this.cboxDebidoA.BorderSize = 1;
-            this.cboxDebidoA.DisplayMember = "";
-            this.cboxDebidoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxDebidoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cboxDebidoA.ForeColor = System.Drawing.Color.DimGray;
-            this.cboxDebidoA.IconColor = System.Drawing.Color.DarkCyan;
-            this.cboxDebidoA.Items.AddRange(new object[] {
-            "Reac. Gente",
-            "Act. Inseg.",
-            "Dispos. Seg.",
-            "Posic. Gente",
-            "Herramient.",
-            "No EPP",
-            "No Proced.",
-            "Maq./ equip.",
-            "Materiales",
-            "Derrames",
-            "Otra gente",
-            "Objetos",
-            "Operación",
-            "Estruc./inst.",
-            "Transp./Vehic."});
-            this.cboxDebidoA.ListBackColor = System.Drawing.Color.DarkCyan;
-            this.cboxDebidoA.ListTextColor = System.Drawing.Color.White;
-            this.cboxDebidoA.Location = new System.Drawing.Point(513, 247);
-            this.cboxDebidoA.MinimumSize = new System.Drawing.Size(0, 30);
-            this.cboxDebidoA.Name = "cboxDebidoA";
-            this.cboxDebidoA.Padding = new System.Windows.Forms.Padding(1);
-            this.cboxDebidoA.SelectedIndex = 1;
-            this.cboxDebidoA.Size = new System.Drawing.Size(394, 30);
-            this.cboxDebidoA.TabIndex = 202;
-            this.cboxDebidoA.ValueMember = "";
-            // 
-            // CboxTurno
-            // 
-            this.CboxTurno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.CboxTurno.BackColor = System.Drawing.Color.White;
-            this.CboxTurno.BorderColor = System.Drawing.Color.DarkCyan;
-            this.CboxTurno.BorderSize = 1;
-            this.CboxTurno.DisplayMember = "";
-            this.CboxTurno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CboxTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CboxTurno.ForeColor = System.Drawing.Color.DimGray;
-            this.CboxTurno.IconColor = System.Drawing.Color.DarkCyan;
-            this.CboxTurno.Items.AddRange(new object[] {
-            "Matutino",
-            "Vespertino",
-            "Nocturno",
-            "Mixto"});
-            this.CboxTurno.ListBackColor = System.Drawing.Color.DarkCyan;
-            this.CboxTurno.ListTextColor = System.Drawing.Color.White;
-            this.CboxTurno.Location = new System.Drawing.Point(756, 125);
-            this.CboxTurno.MinimumSize = new System.Drawing.Size(0, 30);
-            this.CboxTurno.Name = "CboxTurno";
-            this.CboxTurno.Padding = new System.Windows.Forms.Padding(1);
-            this.CboxTurno.SelectedIndex = 1;
-            this.CboxTurno.Size = new System.Drawing.Size(151, 30);
-            this.CboxTurno.TabIndex = 200;
-            this.CboxTurno.ValueMember = "";
-            // 
-            // cboxCondicion
-            // 
-            this.cboxCondicion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cboxCondicion.BackColor = System.Drawing.Color.White;
-            this.cboxCondicion.BorderColor = System.Drawing.Color.DarkCyan;
-            this.cboxCondicion.BorderSize = 1;
-            this.cboxCondicion.DisplayMember = "";
-            this.cboxCondicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxCondicion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cboxCondicion.ForeColor = System.Drawing.Color.DimGray;
-            this.cboxCondicion.IconColor = System.Drawing.Color.DarkCyan;
-            this.cboxCondicion.Items.AddRange(new object[] {
-            "Leve",
-            "Moderado",
-            "Grave",
-            "Mortal",
-            "Otra"});
-            this.cboxCondicion.ListBackColor = System.Drawing.Color.DarkCyan;
-            this.cboxCondicion.ListTextColor = System.Drawing.Color.White;
-            this.cboxCondicion.Location = new System.Drawing.Point(13, 63);
-            this.cboxCondicion.MinimumSize = new System.Drawing.Size(0, 30);
-            this.cboxCondicion.Name = "cboxCondicion";
-            this.cboxCondicion.Padding = new System.Windows.Forms.Padding(1);
-            this.cboxCondicion.SelectedIndex = 1;
-            this.cboxCondicion.Size = new System.Drawing.Size(151, 30);
-            this.cboxCondicion.TabIndex = 198;
-            this.cboxCondicion.ValueMember = "";
-            // 
-            // txtTotalhrs
-            // 
-            this.txtTotalhrs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTotalhrs.BackColor = System.Drawing.Color.White;
-            this.txtTotalhrs.BorderColor = System.Drawing.Color.Gray;
-            this.txtTotalhrs.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTotalhrs.BorderRadius = 12;
-            this.txtTotalhrs.BorderSize = 2;
-            this.txtTotalhrs.Enabled = false;
-            this.txtTotalhrs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalhrs.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTotalhrs.Location = new System.Drawing.Point(219, 186);
-            this.txtTotalhrs.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTotalhrs.MaxLength = 2;
-            this.txtTotalhrs.Multiline = false;
-            this.txtTotalhrs.Name = "txtTotalhrs";
-            this.txtTotalhrs.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTotalhrs.PasswordChar = false;
-            this.txtTotalhrs.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTotalhrs.PlaceholderText = "8";
-            this.txtTotalhrs.Size = new System.Drawing.Size(152, 35);
-            this.txtTotalhrs.TabIndex = 194;
-            this.txtTotalhrs.UnderlinedStyle = true;
-            this.txtTotalhrs.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTotalhrs_KeyPress);
-            // 
-            // txtPuesto
-            // 
-            this.txtPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtPuesto.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPuesto.BorderColor = System.Drawing.Color.Gray;
-            this.txtPuesto.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtPuesto.BorderRadius = 12;
-            this.txtPuesto.BorderSize = 2;
-            this.txtPuesto.Enabled = false;
-            this.txtPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPuesto.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPuesto.Location = new System.Drawing.Point(389, 186);
-            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPuesto.MaxLength = 32767;
-            this.txtPuesto.Multiline = false;
-            this.txtPuesto.Name = "txtPuesto";
-            this.txtPuesto.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtPuesto.PasswordChar = false;
-            this.txtPuesto.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtPuesto.PlaceholderText = "";
-            this.txtPuesto.Size = new System.Drawing.Size(214, 35);
-            this.txtPuesto.TabIndex = 192;
-            this.txtPuesto.UnderlinedStyle = true;
-            // 
-            // txtAntiguedad
-            // 
-            this.txtAntiguedad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtAntiguedad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtAntiguedad.BorderColor = System.Drawing.Color.Gray;
-            this.txtAntiguedad.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtAntiguedad.BorderRadius = 12;
-            this.txtAntiguedad.BorderSize = 2;
-            this.txtAntiguedad.Enabled = false;
-            this.txtAntiguedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAntiguedad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAntiguedad.Location = new System.Drawing.Point(619, 186);
-            this.txtAntiguedad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAntiguedad.MaxLength = 32767;
-            this.txtAntiguedad.Multiline = false;
-            this.txtAntiguedad.Name = "txtAntiguedad";
-            this.txtAntiguedad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAntiguedad.PasswordChar = false;
-            this.txtAntiguedad.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAntiguedad.PlaceholderText = "";
-            this.txtAntiguedad.Size = new System.Drawing.Size(288, 35);
-            this.txtAntiguedad.TabIndex = 190;
-            this.txtAntiguedad.UnderlinedStyle = true;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtEdad.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEdad.BorderColor = System.Drawing.Color.Gray;
-            this.txtEdad.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtEdad.BorderRadius = 12;
-            this.txtEdad.BorderSize = 2;
-            this.txtEdad.Enabled = false;
-            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.ForeColor = System.Drawing.Color.DimGray;
-            this.txtEdad.Location = new System.Drawing.Point(616, 120);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEdad.MaxLength = 32767;
-            this.txtEdad.Multiline = false;
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEdad.PasswordChar = false;
-            this.txtEdad.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEdad.PlaceholderText = "";
-            this.txtEdad.Size = new System.Drawing.Size(138, 35);
-            this.txtEdad.TabIndex = 188;
-            this.txtEdad.UnderlinedStyle = true;
-            // 
-            // txtNumeroNomina
-            // 
-            this.txtNumeroNomina.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNumeroNomina.BackColor = System.Drawing.Color.White;
-            this.txtNumeroNomina.BorderColor = System.Drawing.Color.Gray;
-            this.txtNumeroNomina.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNumeroNomina.BorderRadius = 12;
-            this.txtNumeroNomina.BorderSize = 2;
-            this.txtNumeroNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroNomina.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNumeroNomina.Location = new System.Drawing.Point(9, 123);
-            this.txtNumeroNomina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNumeroNomina.MaxLength = 15;
-            this.txtNumeroNomina.Multiline = false;
-            this.txtNumeroNomina.Name = "txtNumeroNomina";
-            this.txtNumeroNomina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNumeroNomina.PasswordChar = false;
-            this.txtNumeroNomina.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNumeroNomina.PlaceholderText = "";
-            this.txtNumeroNomina.Size = new System.Drawing.Size(149, 35);
-            this.txtNumeroNomina.TabIndex = 186;
-            this.txtNumeroNomina.UnderlinedStyle = true;
-            this.txtNumeroNomina.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroNomina_KeyPress);
-            // 
-            // txtNombreEmpleado
-            // 
-            this.txtNombreEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNombreEmpleado.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNombreEmpleado.BorderColor = System.Drawing.Color.Gray;
-            this.txtNombreEmpleado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNombreEmpleado.BorderRadius = 12;
-            this.txtNombreEmpleado.BorderSize = 2;
-            this.txtNombreEmpleado.Enabled = false;
-            this.txtNombreEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreEmpleado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombreEmpleado.Location = new System.Drawing.Point(219, 120);
-            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombreEmpleado.MaxLength = 32767;
-            this.txtNombreEmpleado.Multiline = false;
-            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
-            this.txtNombreEmpleado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNombreEmpleado.PasswordChar = false;
-            this.txtNombreEmpleado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNombreEmpleado.PlaceholderText = "";
-            this.txtNombreEmpleado.Size = new System.Drawing.Size(387, 35);
-            this.txtNombreEmpleado.TabIndex = 184;
-            this.txtNombreEmpleado.UnderlinedStyle = true;
-            // 
-            // txtNoAccidente
-            // 
-            this.txtNoAccidente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNoAccidente.BackColor = System.Drawing.Color.White;
-            this.txtNoAccidente.BorderColor = System.Drawing.Color.Gray;
-            this.txtNoAccidente.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtNoAccidente.BorderRadius = 12;
-            this.txtNoAccidente.BorderSize = 2;
-            this.txtNoAccidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoAccidente.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNoAccidente.Location = new System.Drawing.Point(181, 59);
-            this.txtNoAccidente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNoAccidente.MaxLength = 32767;
-            this.txtNoAccidente.Multiline = false;
-            this.txtNoAccidente.Name = "txtNoAccidente";
-            this.txtNoAccidente.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNoAccidente.PasswordChar = false;
-            this.txtNoAccidente.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNoAccidente.PlaceholderText = "";
-            this.txtNoAccidente.Size = new System.Drawing.Size(422, 35);
-            this.txtNoAccidente.TabIndex = 182;
-            this.txtNoAccidente.UnderlinedStyle = true;
-            this.txtNoAccidente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNoAccidente_KeyPress);
-            // 
-            // btnBuscarEmpleado
-            // 
-            this.btnBuscarEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnBuscarEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.btnBuscarEmpleado.BorderColor = System.Drawing.Color.LavenderBlush;
-            this.btnBuscarEmpleado.BorderRadius = 20;
-            this.btnBuscarEmpleado.BorderSize = 0;
-            this.btnBuscarEmpleado.FlatAppearance.BorderSize = 0;
-            this.btnBuscarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarEmpleado.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarEmpleado.Image")));
-            this.btnBuscarEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarEmpleado.Location = new System.Drawing.Point(167, 112);
-            this.btnBuscarEmpleado.Name = "btnBuscarEmpleado";
-            this.btnBuscarEmpleado.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnBuscarEmpleado.Size = new System.Drawing.Size(40, 40);
-            this.btnBuscarEmpleado.TabIndex = 124;
-            this.btnBuscarEmpleado.TextColor = System.Drawing.Color.White;
-            this.btnBuscarEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscarEmpleado.UseVisualStyleBackColor = false;
-            this.btnBuscarEmpleado.Click += new System.EventHandler(this.btnBuscarEmpleado_Click);
-            // 
-            // rbtnHrsExtrasSi
-            // 
-            this.rbtnHrsExtrasSi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.rbtnHrsExtrasSi.Location = new System.Drawing.Point(126, 186);
-            this.rbtnHrsExtrasSi.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rbtnHrsExtrasSi.Name = "rbtnHrsExtrasSi";
-            this.rbtnHrsExtrasSi.OffBackColor = System.Drawing.Color.Gray;
-            this.rbtnHrsExtrasSi.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rbtnHrsExtrasSi.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(103)))), ((int)(((byte)(105)))));
-            this.rbtnHrsExtrasSi.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rbtnHrsExtrasSi.Size = new System.Drawing.Size(83, 34);
-            this.rbtnHrsExtrasSi.TabIndex = 122;
-            this.rbtnHrsExtrasSi.UseVisualStyleBackColor = true;
-            this.rbtnHrsExtrasSi.CheckedChanged += new System.EventHandler(this.rbtnHrsExtrasSi_CheckedChanged);
-            // 
-            // txtTrabajoDesempeñado
-            // 
-            this.txtTrabajoDesempeñado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTrabajoDesempeñado.BackColor = System.Drawing.Color.White;
-            this.txtTrabajoDesempeñado.BorderColor = System.Drawing.Color.Gray;
-            this.txtTrabajoDesempeñado.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTrabajoDesempeñado.BorderRadius = 12;
-            this.txtTrabajoDesempeñado.BorderSize = 2;
-            this.txtTrabajoDesempeñado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrabajoDesempeñado.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTrabajoDesempeñado.Location = new System.Drawing.Point(14, 302);
-            this.txtTrabajoDesempeñado.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTrabajoDesempeñado.MaxLength = 30;
-            this.txtTrabajoDesempeñado.Multiline = true;
-            this.txtTrabajoDesempeñado.Name = "txtTrabajoDesempeñado";
-            this.txtTrabajoDesempeñado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTrabajoDesempeñado.PasswordChar = false;
-            this.txtTrabajoDesempeñado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTrabajoDesempeñado.PlaceholderText = "";
-            this.txtTrabajoDesempeñado.Size = new System.Drawing.Size(887, 59);
-            this.txtTrabajoDesempeñado.TabIndex = 195;
-            this.txtTrabajoDesempeñado.UnderlinedStyle = true;
-            // 
-            // txtTipoLesion
-            // 
-            this.txtTipoLesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTipoLesion.BackColor = System.Drawing.Color.White;
-            this.txtTipoLesion.BorderColor = System.Drawing.Color.Gray;
-            this.txtTipoLesion.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtTipoLesion.BorderRadius = 12;
-            this.txtTipoLesion.BorderSize = 2;
-            this.txtTipoLesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipoLesion.ForeColor = System.Drawing.Color.DimGray;
-            this.txtTipoLesion.Location = new System.Drawing.Point(14, 393);
-            this.txtTipoLesion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTipoLesion.MaxLength = 30;
-            this.txtTipoLesion.Multiline = true;
-            this.txtTipoLesion.Name = "txtTipoLesion";
-            this.txtTipoLesion.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTipoLesion.PasswordChar = false;
-            this.txtTipoLesion.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTipoLesion.PlaceholderText = "";
-            this.txtTipoLesion.Size = new System.Drawing.Size(887, 77);
-            this.txtTipoLesion.TabIndex = 196;
-            this.txtTipoLesion.UnderlinedStyle = true;
-            // 
-            // txtParteCuerpoAfectada
-            // 
-            this.txtParteCuerpoAfectada.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtParteCuerpoAfectada.BackColor = System.Drawing.Color.White;
-            this.txtParteCuerpoAfectada.BorderColor = System.Drawing.Color.Gray;
-            this.txtParteCuerpoAfectada.BorderFocusColor = System.Drawing.Color.DarkCyan;
-            this.txtParteCuerpoAfectada.BorderRadius = 12;
-            this.txtParteCuerpoAfectada.BorderSize = 2;
-            this.txtParteCuerpoAfectada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParteCuerpoAfectada.ForeColor = System.Drawing.Color.DimGray;
-            this.txtParteCuerpoAfectada.Location = new System.Drawing.Point(14, 503);
-            this.txtParteCuerpoAfectada.Margin = new System.Windows.Forms.Padding(4);
-            this.txtParteCuerpoAfectada.MaxLength = 30;
-            this.txtParteCuerpoAfectada.Multiline = true;
-            this.txtParteCuerpoAfectada.Name = "txtParteCuerpoAfectada";
-            this.txtParteCuerpoAfectada.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtParteCuerpoAfectada.PasswordChar = false;
-            this.txtParteCuerpoAfectada.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtParteCuerpoAfectada.PlaceholderText = "";
-            this.txtParteCuerpoAfectada.Size = new System.Drawing.Size(887, 77);
-            this.txtParteCuerpoAfectada.TabIndex = 197;
-            this.txtParteCuerpoAfectada.UnderlinedStyle = true;
-            // 
-            // idActoInseguro
-            // 
-            this.idActoInseguro.HeaderText = "Id Acto Inseguro";
-            this.idActoInseguro.MinimumWidth = 6;
-            this.idActoInseguro.Name = "idActoInseguro";
-            this.idActoInseguro.ReadOnly = true;
-            // 
-            // actoInseguro
-            // 
-            this.actoInseguro.FillWeight = 149.2386F;
-            this.actoInseguro.HeaderText = "Acto Inseguro";
-            this.actoInseguro.MinimumWidth = 6;
-            this.actoInseguro.Name = "actoInseguro";
-            this.actoInseguro.ReadOnly = true;
-            // 
-            // accionesActosInseguros
-            // 
-            this.accionesActosInseguros.FillWeight = 50.76142F;
-            this.accionesActosInseguros.HeaderText = "";
-            this.accionesActosInseguros.Image = ((System.Drawing.Image)(resources.GetObject("accionesActosInseguros.Image")));
-            this.accionesActosInseguros.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.accionesActosInseguros.MinimumWidth = 6;
-            this.accionesActosInseguros.Name = "accionesActosInseguros";
-            this.accionesActosInseguros.ReadOnly = true;
-            this.accionesActosInseguros.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.accionesActosInseguros.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // idCondicionInsegura
-            // 
-            this.idCondicionInsegura.HeaderText = "Id Consición Insegura";
-            this.idCondicionInsegura.MinimumWidth = 6;
-            this.idCondicionInsegura.Name = "idCondicionInsegura";
-            this.idCondicionInsegura.ReadOnly = true;
-            // 
-            // CondicionInsegura
-            // 
-            this.CondicionInsegura.FillWeight = 149.2386F;
-            this.CondicionInsegura.HeaderText = "Condición Insegura";
-            this.CondicionInsegura.MinimumWidth = 6;
-            this.CondicionInsegura.Name = "CondicionInsegura";
-            this.CondicionInsegura.ReadOnly = true;
-            // 
-            // accionesCondiciones
-            // 
-            this.accionesCondiciones.FillWeight = 50.76142F;
-            this.accionesCondiciones.HeaderText = "";
-            this.accionesCondiciones.Image = ((System.Drawing.Image)(resources.GetObject("accionesCondiciones.Image")));
-            this.accionesCondiciones.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.accionesCondiciones.MinimumWidth = 6;
-            this.accionesCondiciones.Name = "accionesCondiciones";
-            this.accionesCondiciones.ReadOnly = true;
-            this.accionesCondiciones.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.accionesCondiciones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // frmNewAccidente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4488,6 +4488,28 @@
             this.Load += new System.EventHandler(this.frmNewAccidente_Load);
             this.panel1.ResumeLayout(false);
             this.pContenedorAcc.ResumeLayout(false);
+            this.pControlAcciones.ResumeLayout(false);
+            this.pControlAcciones.PerformLayout();
+            this.panel34.ResumeLayout(false);
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            this.pDetallesAccidente.ResumeLayout(false);
+            this.pDetallesAccidente.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.pDatosGenerales.ResumeLayout(false);
+            this.pDatosGenerales.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTestigos)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.pFactoresSeguridad.ResumeLayout(false);
             this.pFactoresSeguridad.PerformLayout();
             this.panel20.ResumeLayout(false);
@@ -4512,28 +4534,6 @@
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleadosConocimiento)).EndInit();
-            this.pControlAcciones.ResumeLayout(false);
-            this.pControlAcciones.PerformLayout();
-            this.panel34.ResumeLayout(false);
-            this.panel33.ResumeLayout(false);
-            this.panel33.PerformLayout();
-            this.panel32.ResumeLayout(false);
-            this.panel32.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel31.PerformLayout();
-            this.pDetallesAccidente.ResumeLayout(false);
-            this.pDetallesAccidente.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.pDatosGenerales.ResumeLayout(false);
-            this.pDatosGenerales.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTestigos)).EndInit();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
             this.pSeccionesDatos.ResumeLayout(false);
             this.pSeccionesDatos.PerformLayout();
             this.panel2.ResumeLayout(false);

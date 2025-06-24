@@ -137,6 +137,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
             {
                 DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumeroNomina.Text).Tables["ConsultaEmpleado"];
 
+                btnImprimirReporte.Enabled = false;
+
                 if (t.Rows.Count > 0)
                 {
                     DataRow dr = t.Rows[0];
@@ -258,6 +260,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
             if (t.Rows.Count > 0)
             {
                 DataRow dr = t.Rows[0];
+
+                btnImprimirReporte.Enabled = true;
 
                 txtCondicion.Text = dr["condicion"].ToString();
                 txtNumAccidente.Text = dr["accidente_no"].ToString();

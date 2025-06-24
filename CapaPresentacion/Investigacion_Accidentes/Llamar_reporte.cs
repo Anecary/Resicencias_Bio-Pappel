@@ -358,7 +358,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 { "Atropello/ choque por vehículo", "Atropello" },
                 { "Sobre esfuerzo/ tensión excesiva/ sobrecarga", "SobreEsfuerzo" },
                 { "Contacto con altas temperaturas", "AltasTemperaturas" },
-                { "Heridas, cortadas por herramientas/ objetos con filo", "Cortadas" },
+                { "Heridas, cortadas por herramientas/ objetos con filo", "Cortada" },
                 { "Incendio", "Incendio" },
                 { "Por caída de objeto", "CaídaObjeto" },
                 { "Atrapado por/ entre", "Atrapado" },
