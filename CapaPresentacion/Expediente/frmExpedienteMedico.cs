@@ -474,6 +474,11 @@ namespace CapaPresentacion.Expediente
                     //LimpiarControles(this);
                     txtNumeroNomina.Focus();
                     limiarFormulario();
+                    btnDatosGenerales.Image = null;
+                    btnNoPatologicos.Image = null;
+                    btnPatologicos.Image = null;
+                    btnEstudiosParaclinicos.Image = null;
+                    btnExploracionFisica.Image = null;
                     //txtCondicion.Clear(); txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
                 }
                 else
