@@ -280,7 +280,7 @@ namespace CapaPresentacion.Nota_Medica
 
                 if (!existe)
                 {
-                    MessageBox.Show("Este empleado no cuenta con un expediente médico.");
+                    RJMessageBox.Show("Este empleado no cuenta con un expediente médico.");
                     return;
                 }
 
