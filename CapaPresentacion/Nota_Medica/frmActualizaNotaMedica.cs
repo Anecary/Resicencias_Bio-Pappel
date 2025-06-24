@@ -164,10 +164,17 @@ namespace CapaPresentacion.Nota_Medica
             {
                 DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNomina.Text).Tables["ConsultaEmpleado"];
 
+                DataRow dr = t.Rows[0];
+
+                if (dr["estado"].ToString() == "I")
+                {
+                    var result = RJMessageBox.Show("Este empleado no se encuentra dado de alta", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtNumNomina.Focus();
+                    return;
+                }
+
                 if (t.Rows.Count > 0)
                 {
-                    DataRow dr = t.Rows[0];
-
                     txtNombreEmpleado.Text =
                         (dr["nombre"] as string ?? "") + " " +
                         (dr["apellido_paterno"] as string ?? "") + " " +
@@ -191,7 +198,6 @@ namespace CapaPresentacion.Nota_Medica
                 else
                 {
                     var result = RJMessageBox.Show(" Número de nómina no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
             }
             else
@@ -256,6 +262,25 @@ namespace CapaPresentacion.Nota_Medica
                 {
                     RJMessageBox.Show("Por favor, ingrese la Id de la consulta y el Número del Expediente.", "Error", 
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                string textoIngresado = cboxNumExpediente2.Text;
+
+                bool existe = false;
+
+                foreach (var item in cboxNumExpediente2.Items)
+                {
+                    if (item.ToString().Equals(textoIngresado, StringComparison.OrdinalIgnoreCase)) // o simplemente Equals(textoIngresado)
+                    {
+                        existe = true;
+                        break;
+                    }
+                }
+
+                if (!existe)
+                {
+                    MessageBox.Show("Este empleado no cuenta con un expediente médico.");
                     return;
                 }
 
