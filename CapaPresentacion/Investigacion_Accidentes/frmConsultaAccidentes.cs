@@ -431,17 +431,16 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
                 if (dr["otro_diagnostico"] != DBNull.Value)
                 {
-                    txtOtro.Text = dr["otro_diagnostico"].ToString();
+                    string otroDiag = dr["otro_diagnostico"].ToString();
+                    txtOtro.Text = otroDiag;
 
-                    // Convertir explícitamente a booleano
-                    bool valor = false;
-                    Boolean.TryParse(dr["otro_diagnostico"].ToString(), out valor);
-                    rbtnOtro.Checked = valor;
+                    rbtnOtro.Checked = !string.IsNullOrWhiteSpace(otroDiag); // Marca si hay texto
                 }
                 else
                 {
                     rbtnOtro.Checked = false;
                 }
+
 
                 txtDiagnosticoFinal.Text = dr["diagnostico_final"].ToString();
                 txtTratamiento.Text = dr["tratamiento"].ToString();
