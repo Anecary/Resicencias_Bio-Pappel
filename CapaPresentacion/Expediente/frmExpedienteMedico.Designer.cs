@@ -220,11 +220,11 @@
             // 
             // pContenedor
             // 
-            this.pContenedor.Controls.Add(this.pExploracionFisica);
-            this.pContenedor.Controls.Add(this.pNoPatologicos);
             this.pContenedor.Controls.Add(this.pDatosGenerales);
             this.pContenedor.Controls.Add(this.pPatologicos);
             this.pContenedor.Controls.Add(this.pEstudiosParaclinicos);
+            this.pContenedor.Controls.Add(this.pExploracionFisica);
+            this.pContenedor.Controls.Add(this.pNoPatologicos);
             this.pContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContenedor.Location = new System.Drawing.Point(0, 145);
             this.pContenedor.Name = "pContenedor";
