@@ -201,6 +201,22 @@ namespace CapaPresentacion.Investigacion_Accidentes
             panelActual = panelAMostrar;
             botonActual = botonPresionado;
         }
+        private void LimpiarIconos(Control parent)
+        {
+            foreach (Control control in parent.Controls)
+            {
+                if (control is Button boton)
+                {
+                    boton.Image = null;
+                }
+
+                // Recursivo para controles hijos
+                if (control.HasChildren)
+                {
+                    LimpiarIconos(control);
+                }
+            }
+        }
 
         private void btnDatosGenerales_Click(object sender, EventArgs e)
         {
@@ -820,6 +836,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 
                 LimpiarControles(this);
                 LimpiarDateTimePickers();
+               
                 txtNumeroNomina.Focus();
                 txtNoAccidente.Clear(); txtNumeroNomina.Clear(); txtNombreEmpleado.Clear(); txtIdEmpleado.Clear(); txtEdad.Clear(); txtPuesto.Clear(); txtAntiguedad.Clear();
 
@@ -827,6 +844,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
 
                 var Llamar_reporte = new Llamar_reporte(0, numeroR);
                 Llamar_reporte.Show();
+                LimpiarIconos(this);
             }
             else
             {
