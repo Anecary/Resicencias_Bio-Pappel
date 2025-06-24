@@ -203,19 +203,11 @@ namespace CapaPresentacion.Investigacion_Accidentes
         }
         private void LimpiarIconos(Control parent)
         {
-            foreach (Control control in parent.Controls)
-            {
-                if (control is Button boton)
-                {
-                    boton.Image = null;
-                }
-
-                // Recursivo para controles hijos
-                if (control.HasChildren)
-                {
-                    LimpiarIconos(control);
-                }
-            }
+            btnDatosGenerales.Image = null;
+            btnDetallesAccidente.Image = null;
+            btnFactoresSeguridad.Image = null;
+            btnSeguimientoCaso.Image = null;
+            btnControlAcciones.Image = null;
         }
 
         private void btnDatosGenerales_Click(object sender, EventArgs e)
