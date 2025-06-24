@@ -860,7 +860,7 @@ namespace CapaPresentacion.Investigacion_Accidentes
             foreach (DataGridViewRow fila in dgvRiesgos.Rows)
             {
                 if (fila.Cells["idRiesgo"].Value != null &&
-                    Convert.ToInt32(fila.Cells["idRiesgo"].Value) == 17)
+                    Convert.ToInt32(fila.Cells["idRiesgo"].Value) == 16)
                 {
                     // Suponiendo que la descripción del riesgo está en la columna de índice 1 (ajusta si es otra)
                     if (fila.Cells[1].Value != null)
@@ -953,8 +953,8 @@ namespace CapaPresentacion.Investigacion_Accidentes
                 {
                     int idRiesgo = Convert.ToInt32(dgvRiesgos.Rows[i].Cells[0].Value);
 
-                    // Omitir si es 17
-                    if (idRiesgo == 17)
+                    // Omitir si es 16
+                    if (idRiesgo == 16)
                         continue;
 
                     Dictionary<string, object> riesgos = new Dictionary<string, object>
