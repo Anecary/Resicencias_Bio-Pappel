@@ -3944,7 +3944,7 @@
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=First(Fields!pieza_equipo_dañada.Value, "DataSet_Accidentes")</Value>
+                            <Value>=First(Fields!pieza_equipo_danada.Value, "DataSet_Accidentes")</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
@@ -5759,6 +5759,9 @@
                 <Height>0.55435cm</Height>
                 <Width>6.51448cm</Width>
                 <ZIndex>8</ZIndex>
+                <Visibility>
+                  <Hidden>true</Hidden>
+                </Visibility>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -5791,6 +5794,9 @@
                 <Height>0.40219cm</Height>
                 <Width>0.39793cm</Width>
                 <ZIndex>9</ZIndex>
+                <Visibility>
+                  <Hidden>true</Hidden>
+                </Visibility>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -6487,6 +6493,9 @@
                 <Height>0.55435cm</Height>
                 <Width>6.51448cm</Width>
                 <ZIndex>8</ZIndex>
+                <Visibility>
+                  <Hidden>true</Hidden>
+                </Visibility>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -6519,6 +6528,9 @@
                 <Height>0.40219cm</Height>
                 <Width>0.39793cm</Width>
                 <ZIndex>9</ZIndex>
+                <Visibility>
+                  <Hidden>true</Hidden>
+                </Visibility>
                 <Style>
                   <Border>
                     <Style>Solid</Style>
@@ -6815,7 +6827,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Acto inseguro en la realización de las actividades:</Value>
+                    <Value>Condición insegura en la realización de las actividades:</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -6826,7 +6838,7 @@
             <Top>18.51542cm</Top>
             <Left>0.0283cm</Left>
             <Height>0.6cm</Height>
-            <Width>8.07954cm</Width>
+            <Width>9.80804cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -8843,8 +8855,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox238</rd:DefaultName>
-                <Top>0.14111cm</Top>
-                <Left>3.10017cm</Left>
+                <Top>0.14647cm</Top>
+                <Left>2.92725cm</Left>
                 <Height>0.49953cm</Height>
                 <Width>0.65796cm</Width>
                 <ZIndex>4</ZIndex>
@@ -8881,7 +8893,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox238</rd:DefaultName>
                 <Top>0.14111cm</Top>
-                <Left>4.078cm</Left>
+                <Left>3.65576cm</Left>
                 <Height>0.49953cm</Height>
                 <Width>3.29058cm</Width>
                 <ZIndex>5</ZIndex>
@@ -8913,7 +8925,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox238</rd:DefaultName>
                 <Top>0.14111cm</Top>
-                <Left>7.59315cm</Left>
+                <Left>7.0169cm</Left>
                 <Height>0.49953cm</Height>
                 <Width>0.65796cm</Width>
                 <ZIndex>6</ZIndex>
@@ -8949,8 +8961,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox238</rd:DefaultName>
-                <Top>0.14111cm</Top>
-                <Left>8.89793cm</Left>
+                <Top>0.14647cm</Top>
+                <Left>7.74541cm</Left>
                 <Height>0.49953cm</Height>
                 <Width>3.73081cm</Width>
                 <ZIndex>7</ZIndex>
@@ -8981,8 +8993,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox238</rd:DefaultName>
-                <Top>0.14111cm</Top>
-                <Left>12.94219cm</Left>
+                <Top>0.14647cm</Top>
+                <Left>11.54678cm</Left>
                 <Height>0.49953cm</Height>
                 <Width>0.65796cm</Width>
                 <ZIndex>8</ZIndex>
@@ -9018,8 +9030,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox238</rd:DefaultName>
-                <Top>0.14111cm</Top>
-                <Left>14.02897cm</Left>
+                <Top>0.14647cm</Top>
+                <Left>12.27529cm</Left>
                 <Height>0.49953cm</Height>
                 <Width>1.02424cm</Width>
                 <ZIndex>9</ZIndex>
@@ -9040,7 +9052,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value />
+                        <Value>=First(Fields!otro_diagnostico.Value, "DataSet_Diagnostico")</Value>
                         <Style>
                           <FontSize>7pt</FontSize>
                         </Style>
@@ -9050,10 +9062,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox238</rd:DefaultName>
-                <Top>0.14111cm</Top>
-                <Left>15.2296cm</Left>
+                <Top>0.14647cm</Top>
+                <Left>13.37009cm</Left>
                 <Height>0.49953cm</Height>
-                <Width>0.65796cm</Width>
+                <Width>2.74992cm</Width>
                 <ZIndex>10</ZIndex>
                 <Style>
                   <Border>
@@ -9874,8 +9886,8 @@
           <DataField>dañosMateriales</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="pieza_equipo_dañada">
-          <DataField>pieza_equipo_dañada</DataField>
+        <Field Name="pieza_equipo_danada">
+          <DataField>pieza_equipo_danada</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="sustituiblePor">
