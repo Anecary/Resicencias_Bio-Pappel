@@ -98,6 +98,7 @@ namespace CapaPresentacion.Empleados
         }
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(cmbTurno.SelectedItem.ToString());
             try
             {
                 // Verificación de campos vacíos

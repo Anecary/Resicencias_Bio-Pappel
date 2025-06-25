@@ -424,6 +424,12 @@
     <Compile Include="Utilerias\frmBitacora.Designer.cs">
       <DependentUpon>frmBitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilerias\frmImportarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilerias\frmImportarEmpleados.Designer.cs">
+      <DependentUpon>frmImportarEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilerias\frmRespaldar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -537,6 +543,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Utilerias\frmBitacora.resx">
       <DependentUpon>frmBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilerias\frmImportarEmpleados.resx">
+      <DependentUpon>frmImportarEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utilerias\frmRespaldar.resx">
       <DependentUpon>frmRespaldar.cs</DependentUpon>

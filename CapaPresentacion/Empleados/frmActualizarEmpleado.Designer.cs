@@ -504,17 +504,17 @@
             this.cmbEstadoCivil.IntegralHeight = false;
             this.cmbEstadoCivil.ItemHeight = 43;
             this.cmbEstadoCivil.Items.AddRange(new object[] {
-            "Soltero",
-            "Casado",
-            "Divorciado",
-            "Viudo",
+            "Soltero(a)",
+            "Casado(a)",
+            "Divorciado(a)",
+            "Viudo(a)",
             "Union Libre"});
             this.cmbEstadoCivil.Location = new System.Drawing.Point(584, 163);
             this.cmbEstadoCivil.MaxDropDownItems = 4;
             this.cmbEstadoCivil.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbEstadoCivil.Name = "cmbEstadoCivil";
             this.cmbEstadoCivil.Size = new System.Drawing.Size(273, 49);
-            this.cmbEstadoCivil.StartIndex = 0;
+            this.cmbEstadoCivil.StartIndex = 1;
             this.cmbEstadoCivil.TabIndex = 2;
             // 
             // cmbEstado

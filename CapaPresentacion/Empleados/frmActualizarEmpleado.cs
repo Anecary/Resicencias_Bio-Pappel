@@ -10,6 +10,7 @@ using System.Linq;
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 
 namespace CapaPresentacion.Empleados
@@ -203,8 +204,10 @@ namespace CapaPresentacion.Empleados
 
         private void btnBuscarEmpleadoNN_Click(object sender, EventArgs e)
         {
+            
             try
             {
+                
                 string numeroNomina = txtNoNomina.Text.Trim();
 
                 if (string.IsNullOrWhiteSpace(numeroNomina))
@@ -239,7 +242,7 @@ namespace CapaPresentacion.Empleados
                 cmbPuesto.SelectedItem = datosEmpleado.puesto;
                 char turno = datosEmpleado.turno;
                 btmCancelar.Enabled = true;
-
+                
                 if (estado == 'A')
                 {
                     btmBaja.Enabled = true;
@@ -247,7 +250,6 @@ namespace CapaPresentacion.Empleados
                     cambioManual = false;
                     rbtEstado.Checked = true;
                     rbtEstado.Enabled = true;
-                    
                     dtpFecha.Value = datosEmpleado.fecha;
 
                     Dictionary<char, string> turnosMap = new Dictionary<char, string>

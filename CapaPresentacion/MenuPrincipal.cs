@@ -907,5 +907,11 @@ namespace CapaPresentacion
             openChildForm(new Utilerias.frmBitacora());
             hideSubMenu();
         }
+
+        private void btnImportarEmpleados_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Utilerias.frmImportarEmpleados());
+            hideSubMenu();
+        }
     }
 }
