@@ -265,25 +265,6 @@ namespace CapaPresentacion.Nota_Medica
                     return;
                 }
 
-                string textoIngresado = cboxNumExpediente2.Text;
-
-                bool existe = false;
-
-                foreach (var item in cboxNumExpediente2.Items)
-                {
-                    if (item.ToString().Equals(textoIngresado, StringComparison.OrdinalIgnoreCase)) // o simplemente Equals(textoIngresado)
-                    {
-                        existe = true;
-                        break;
-                    }
-                }
-
-                if (!existe)
-                {
-                    RJMessageBox.Show("Este empleado no cuenta con un expediente médico.");
-                    return;
-                }
-
                 // Crear la entidad con los valores que vas a insertar
                 ConsultaMedica consulta = new ConsultaMedica
                 {
