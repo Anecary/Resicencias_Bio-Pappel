@@ -139,7 +139,19 @@ namespace CapaPresentacion.Investigacion_Accidentes
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                string consulta = "SELECT e.numero_nomina, e.nombre,  e.apellido_paterno, e.apellido_materno, e.turno,  TIMESTAMPDIFF(YEAR, e.fecha_nacimiento, CURDATE()) AS edad, p.puesto,  TIMESTAMPDIFF(YEAR, e.fecha_ingreso_puesto, CURDATE()) AS años_en_puesto, TIMESTAMPDIFF(MONTH, e.fecha_ingreso_puesto, CURDATE()) % 12 AS meses_en_puesto " +
+                string consulta = "SELECT e.numero_nomina, " +
+                    "CONCAT(e.nombre, ' ', e.apellido_paterno, ' ', e.apellido_materno) AS 'nombre', " +
+                    "CASE " +
+                    "    WHEN LOWER(ia.turno) = 'matutino' THEN 'MAT' " +
+                    "    WHEN LOWER(ia.turno) = 'vespertino' THEN 'VES' " +
+                    "    WHEN LOWER(ia.turno) = 'nocturno' THEN 'NOC' " +
+                    "    WHEN LOWER(ia.turno) = 'mixto' THEN 'MIX' " +
+                    "    ELSE '?' " +
+                    "END AS 'turno', " +
+                    "TIMESTAMPDIFF(YEAR, e.fecha_nacimiento, CURDATE()) AS edad, " +
+                    "p.puesto, " +
+                    "TIMESTAMPDIFF(YEAR, e.fecha_ingreso_puesto, CURDATE()) AS años_en_puesto, " +
+                    "TIMESTAMPDIFF(MONTH, e.fecha_ingreso_puesto, CURDATE()) % 12 AS meses_en_puesto " +
                     "FROM Investigacion_Accidente ia " +
                     "JOIN empleados e ON ia.idempleado = e.idEmpleado " +
                     "JOIN puestos p ON e.idPuesto_Actual = p.idPuesto " +

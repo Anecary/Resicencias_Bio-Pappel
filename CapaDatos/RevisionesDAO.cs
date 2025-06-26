@@ -28,7 +28,7 @@ namespace CapaDatos
                     connection.Open();
 
                     // Crea un comando para ejecutar el procedimiento almacenado
-                    using (MySqlCommand command = new MySqlCommand("SELECT codigo,fecha_emision, fecha_revision, no_revision FROM revisiones", connection))
+                    using (MySqlCommand command = new MySqlCommand("SELECT codigo as 'Código', fecha_emision as 'Fecha de emisión', fecha_revision as 'Fecha de revisión', no_revision as 'Número de revisión' FROM revisiones", connection))
                     {
                         
                         command.CommandType = CommandType.Text;

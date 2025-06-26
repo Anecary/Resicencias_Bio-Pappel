@@ -272,6 +272,9 @@ namespace CapaPresentacion.Empleados
 
         }
 
-        
+        private void dgvEmpleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

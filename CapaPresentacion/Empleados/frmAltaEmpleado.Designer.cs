@@ -317,7 +317,7 @@
             this.txtNoNomina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoNomina.ForeColor = System.Drawing.Color.DimGray;
             this.txtNoNomina.Location = new System.Drawing.Point(56, 41);
-            this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNoNomina.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoNomina.MaxLength = 15;
             this.txtNoNomina.Multiline = false;
             this.txtNoNomina.Name = "txtNoNomina";
@@ -362,7 +362,7 @@
             this.txtidempleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtidempleado.ForeColor = System.Drawing.Color.DimGray;
             this.txtidempleado.Location = new System.Drawing.Point(756, 83);
-            this.txtidempleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtidempleado.Margin = new System.Windows.Forms.Padding(4);
             this.txtidempleado.MaxLength = 32767;
             this.txtidempleado.Multiline = false;
             this.txtidempleado.Name = "txtidempleado";
@@ -399,7 +399,7 @@
             this.txtDomicilio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomicilio.ForeColor = System.Drawing.Color.DimGray;
             this.txtDomicilio.Location = new System.Drawing.Point(361, 125);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomicilio.MaxLength = 32767;
             this.txtDomicilio.Multiline = false;
             this.txtDomicilio.Name = "txtDomicilio";
@@ -435,7 +435,7 @@
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.ForeColor = System.Drawing.Color.DimGray;
             this.txtTelefono.Location = new System.Drawing.Point(52, 125);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.MaxLength = 32767;
             this.txtTelefono.Multiline = false;
             this.txtTelefono.Name = "txtTelefono";
@@ -471,7 +471,7 @@
             this.txtNombreCompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreCompleto.ForeColor = System.Drawing.Color.DimGray;
             this.txtNombreCompleto.Location = new System.Drawing.Point(361, 40);
-            this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreCompleto.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreCompleto.MaxLength = 32767;
             this.txtNombreCompleto.Multiline = false;
             this.txtNombreCompleto.Name = "txtNombreCompleto";
@@ -493,7 +493,7 @@
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(176, 16);
             this.label66.TabIndex = 129;
-            this.label66.Text = "Número de Nomina/NSS";
+            this.label66.Text = "Número de Nómina/NSS";
             // 
             // txtNssBusqueda
             // 
@@ -506,7 +506,7 @@
             this.txtNssBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNssBusqueda.ForeColor = System.Drawing.Color.DimGray;
             this.txtNssBusqueda.Location = new System.Drawing.Point(52, 40);
-            this.txtNssBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNssBusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.txtNssBusqueda.MaxLength = 15;
             this.txtNssBusqueda.Multiline = false;
             this.txtNssBusqueda.Name = "txtNssBusqueda";

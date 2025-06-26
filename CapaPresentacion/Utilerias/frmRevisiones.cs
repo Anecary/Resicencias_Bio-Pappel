@@ -78,6 +78,9 @@ namespace CapaPresentacion.Utilerias
             if (revisionesCN.insertarRevision(revisiones) == 1)
             {
                 RJMessageBox.Show("la revisión ha sido dada de Alta correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DataTable dt = revisionesCN.consultaGeneralRevisiones();
+                dgvRevisiones.DataSource = dt;
+                dgvRevisiones.ClearSelection();
                 txtCodigo.Text = "";
                 txtNumRevision.Text = "";
                 dtpFechaIngreso.Value = DateTime.Now;
