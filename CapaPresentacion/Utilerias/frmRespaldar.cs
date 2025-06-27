@@ -144,28 +144,30 @@ namespace CapaPresentacion.Utilerias
 
                 try
                 {
-                    string rutaMySQL = @"C:\Program Files\MariaDB 11.6\bin\mysql.exe"; // Ajusta si está en otra ruta
+                    if (RJMessageBox.Show("Esta acción sobrescribirá todos los datos actuales con la información de la copia de seguridad seleccionada.", "¿Estás seguro de que deseas restaurar la base de datos?", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    { 
+                        string rutaMySQL = @"C:\Program Files\MariaDB 11.6\bin\mysql.exe"; // Ajusta si está en otra ruta
 
-                    ProcessStartInfo psi = new ProcessStartInfo
-                    {
-                        FileName = rutaMySQL,
-                        Arguments = "-u root -p1234 db_sistemaatenquique",
-                        RedirectStandardInput = true,
-                        UseShellExecute = false,
-                        CreateNoWindow = true
-                    };
-
-                    using (Process proceso = Process.Start(psi))
-                    {
-                        using (StreamReader reader = new StreamReader(rutaArchivo))
+                        ProcessStartInfo psi = new ProcessStartInfo
                         {
-                            proceso.StandardInput.Write(reader.ReadToEnd());
+                            FileName = rutaMySQL,
+                            Arguments = "-u root -p1234 db_sistemaatenquique",
+                            RedirectStandardInput = true,
+                            UseShellExecute = false,
+                            CreateNoWindow = true
+                        };
+
+                        using (Process proceso = Process.Start(psi))
+                        {
+                            using (StreamReader reader = new StreamReader(rutaArchivo))
+                            {
+                                proceso.StandardInput.Write(reader.ReadToEnd());
+                            }
+
+                            proceso.StandardInput.Close();
+                            proceso.WaitForExit();
                         }
-
-                        proceso.StandardInput.Close();
-                        proceso.WaitForExit();
                     }
-
                     RJMessageBox.Show("Restauración completada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
