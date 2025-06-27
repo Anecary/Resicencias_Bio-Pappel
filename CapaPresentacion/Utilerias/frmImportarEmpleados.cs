@@ -84,7 +84,7 @@ namespace CapaPresentacion.Utilerias
         {
             if (tablaDatos.Rows.Count == 0)
             {
-                MessageBox.Show("No hay datos para subir.");
+                RJMessageBox.Show("No hay datos para subir.");
                 return;
             }
 
@@ -148,15 +148,14 @@ namespace CapaPresentacion.Utilerias
 
                             comando.ExecuteNonQuery();
                         }
-
-                        MessageBox.Show("Empleados insertados correctamente.");
-                        btnSubir.Enabled = false;
                     }
                 }
+                RJMessageBox.Show("Empleados insertados correctamente.");
+                btnSubir.Enabled = false;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al insertar datos: " + ex.Message);
+                RJMessageBox.Show("Error al insertar datos: " + ex.Message);
             }
         }
     }
