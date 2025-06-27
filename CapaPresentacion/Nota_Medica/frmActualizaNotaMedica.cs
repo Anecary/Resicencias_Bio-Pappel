@@ -67,15 +67,7 @@ namespace CapaPresentacion.Nota_Medica
 
         private void frmActualizaNotaMedica_Load(object sender, EventArgs e)
         {
-            cboxNumExpediente2.OnSelectedIndexChanged -= cboxNumExpediente2_OnSelectedIndexChanged;
-            cboxNumExpediente2.DataSource = expedientesCN.ConcultaNumExpedientes().Tables["numExpedientes"];
-            cboxNumExpediente2.DisplayMember = "Num_Expediente";
-            cboxNumExpediente2.ValueMember = "Num_Expediente";
-            if (cboxNumExpediente2.Items.Count > 0)
-            {
-                cboxNumExpediente2.SelectedIndex = 0;
-            }
-            cboxNumExpediente2.OnSelectedIndexChanged += cboxNumExpediente2_OnSelectedIndexChanged;
+
         } 
 
         private void limpiarFormulario()
@@ -88,7 +80,7 @@ namespace CapaPresentacion.Nota_Medica
             txtPuesto.Clear();
             txtObservaciones.Clear();
             txtDiagnostico.Clear();
-            cboxNumExpediente2.SelectedIndex = 0;
+            txtNumExpediente.Clear();
             txtIdConsulta.Clear();
             txtFechaNota.Clear();
             txtProceso.Clear();
@@ -163,7 +155,6 @@ namespace CapaPresentacion.Nota_Medica
             if (!string.IsNullOrWhiteSpace(txtNumNomina.Text))
             {
                 DataTable t = empleadosCN.ConsultaEmpleadoNumNomina(txtNumNomina.Text).Tables["ConsultaEmpleado"];
-
                 DataRow dr = t.Rows[0];
 
                 if (dr["estado"].ToString() == "I")
@@ -191,7 +182,7 @@ namespace CapaPresentacion.Nota_Medica
 
                     string nombre = txtNombreEmpleado.Text;
                     string nomenclarura = ObtenerNomenclatura(nombre);
-                    cboxNumExpediente2.Text = nomenclarura + "-" + txtNumNomina.Text;
+                    txtNumExpediente.Text = nomenclarura + "-" + txtNumNomina.Text;
                     int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
                     cargarDataGrid(idEmpleado);
                 }
@@ -258,10 +249,18 @@ namespace CapaPresentacion.Nota_Medica
             try
             {
                 // Validar si los campos no están vacíos (agrega validaciones previas)
-                if (string.IsNullOrEmpty(txtIdConsulta.Text) || string.IsNullOrEmpty(cboxNumExpediente2.Text))
+                if (string.IsNullOrEmpty(txtIdConsulta.Text) || string.IsNullOrEmpty(txtNumExpediente.Text))
                 {
                     RJMessageBox.Show("Por favor, ingrese la Id de la consulta y el Número del Expediente.", "Error", 
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                string numNomina = txtNumNomina.Text;
+                DataTable verificacion = expedientesCN.verificarExpedienteExiste(numNomina).Tables["ExpedienteExiste"];
+                if (verificacion.Rows.Count == 0)
+                {
+                    RJMessageBox.Show("Este empleado no tiene un expediente registrado.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -269,7 +268,7 @@ namespace CapaPresentacion.Nota_Medica
                 ConsultaMedica consulta = new ConsultaMedica
                 {
                     IdConsulta = Convert.ToInt32(txtIdConsulta.Text),
-                    NumExpediente = cboxNumExpediente2.Text
+                    NumExpediente = txtNumExpediente.Text
                 };
 
                 int idEmpleado = Convert.ToInt32(txtIdEmpleado.Text);
@@ -311,11 +310,6 @@ namespace CapaPresentacion.Nota_Medica
             {
                 RJMessageBox.Show("Por favor, ingrese un idConsulta válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
             }
-
-        }
-
-        private void cboxNumExpediente2_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }
