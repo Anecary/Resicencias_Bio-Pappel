@@ -226,23 +226,32 @@ namespace CapaPresentacion.Empleados
 
 
                 char estado = datosEmpleado.estado;
+                System.Windows.MessageBox.Show(estado.ToString());
+                txtNombre.Text = datosEmpleado.nombreCompleto ?? "N/D";
 
-                txtNombre.Text = datosEmpleado.nombreCompleto;
-                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
-                txtSexo.Text = datosEmpleado.sexo.ToString();
-                txtNss.Text = datosEmpleado.nss.ToString();
-                cmbEstadoCivil.SelectedItem = datosEmpleado.estado_civil;
-                txtCp.Text = datosEmpleado.domicilio_CP;
-                cmbEstado.SelectedItem = datosEmpleado.domicilio_estado;
-                txtCiudad.Text = datosEmpleado.domicilio_ciudad.ToString();
-                txtColonia.Text = datosEmpleado.domicilio_colonia.ToString();
-                txtCalle.Text = datosEmpleado.domicilio_calle.ToString();
-                txtNumero.Text = datosEmpleado.domicilio_numero.ToString();
-                txtTelefono.Text = datosEmpleado.telefono.ToString();
-                cmbPuesto.SelectedItem = datosEmpleado.puesto;
-                char turno = datosEmpleado.turno;
+                txtFechaNac.Text = datosEmpleado.fecha_nac == DateTime.MinValue ? "N/D" : datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");
+
+                txtSexo.Text = string.IsNullOrEmpty(datosEmpleado.sexo) ? "N/D" : datosEmpleado.sexo;
+
+                txtNss.Text = string.IsNullOrEmpty(datosEmpleado.nss) ? "N/D" : datosEmpleado.nss;
+
+                cmbEstadoCivil.SelectedItem = string.IsNullOrEmpty(datosEmpleado.estado_civil) ? null : datosEmpleado.estado_civil;
+
+                txtCp.Text = datosEmpleado.domicilio_CP ?? "N/D";
+                cmbEstado.SelectedItem = datosEmpleado.domicilio_estado ?? "N/D";
+                txtCiudad.Text = datosEmpleado.domicilio_ciudad ?? "N/D";
+                txtColonia.Text = datosEmpleado.domicilio_colonia ?? "N/D";
+                txtCalle.Text = datosEmpleado.domicilio_calle ?? "N/D";
+                txtNumero.Text = datosEmpleado.domicilio_numero ?? "N/D";
+                txtTelefono.Text = datosEmpleado.telefono ?? "N/D";
+
+                cmbPuesto.SelectedItem = string.IsNullOrEmpty(datosEmpleado.puesto) ? null : datosEmpleado.puesto;
+
+                char turno = datosEmpleado.turno == '-' ? ' ' : datosEmpleado.turno;
+
                 btmCancelar.Enabled = true;
                 
+
                 if (estado == 'A')
                 {
                     btmBaja.Enabled = true;
@@ -250,7 +259,19 @@ namespace CapaPresentacion.Empleados
                     cambioManual = false;
                     rbtEstado.Checked = true;
                     rbtEstado.Enabled = true;
-                    dtpFecha.Value = datosEmpleado.fecha;
+                    if (datosEmpleado.fecha == DateTime.MinValue)
+                    {
+                        // No hay fecha válida, asignamos fecha actual o alguna predeterminada
+                        dtpFecha.Value = DateTime.Today;
+                        // Opcional: puedes deshabilitar el dtp para que el usuario sepa que no hay fecha
+                        dtpFecha.Enabled = false;
+                    }
+                    else
+                    {
+                        dtpFecha.Value = datosEmpleado.fecha;
+                        dtpFecha.Enabled = true;
+                    }
+
 
                     Dictionary<char, string> turnosMap = new Dictionary<char, string>
                     {

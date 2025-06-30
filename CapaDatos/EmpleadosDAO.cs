@@ -273,9 +273,9 @@ namespace CapaDatos
                 }
             }
         }
-
-        public (string nombreCompleto, DateTime fecha_nac, char sexo, string nss,string estado_civil, string domicilio_CP, 
-            string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero, string telefono, char turno, DateTime fecha, char estado ,string puesto) ConsultaIndivisualActualizar(string numero_nomina)
+        public (string nombreCompleto, DateTime fecha_nac, string sexo, string nss, string estado_civil, string domicilio_CP,
+        string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero,
+        string telefono, char turno, DateTime fecha, char estado, string puesto) ConsultaIndivisualActualizar(string numero_nomina)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -292,31 +292,30 @@ namespace CapaDatos
                         {
                             if (reader.Read()) // Si hay resultados
                             {
-
-                                string nombreCompleto = reader.GetString("nombre_completo");
-                                DateTime fecha_nac = reader.GetDateTime("Fecha_Nacimiento");
-                                char sexo = reader.GetChar("Sexo");
-                                string nss = reader.GetString("Numero_Seguro");
-                                string estado_civil = reader.GetString("Estado_Civil");
-                                string domicilio_CP = reader.GetString("Codigo_Postal");
-                                string domicilio_estado = reader.GetString("Estado");
-                                string domicilio_ciudad = reader.GetString("Ciudad");
-                                string domicilio_colonia = reader.GetString("Colonia");
-                                string domicilio_calle = reader.GetString("Calle");
-                                string domicilio_numero = reader.GetString("Numero").ToString();
-                                string telefono = reader.GetString("Telefono");
-                                Console.WriteLine("todo 1");
+                                string nombreCompleto = reader.IsDBNull(reader.GetOrdinal("nombre_completo")) ? null : reader.GetString("nombre_completo");
+                                DateTime fecha_nac = reader.IsDBNull(reader.GetOrdinal("Fecha_Nacimiento")) ? DateTime.MinValue : reader.GetDateTime("Fecha_Nacimiento");
+                                string sexo = reader.IsDBNull(reader.GetOrdinal("Sexo")) ? null : reader.GetString("Sexo");
+                                string nss = reader.IsDBNull(reader.GetOrdinal("Numero_Seguro")) ? null : reader.GetString("Numero_Seguro");
+                                string estado_civil = reader.IsDBNull(reader.GetOrdinal("Estado_Civil")) ? null : reader.GetString("Estado_Civil");
+                                string domicilio_CP = reader.IsDBNull(reader.GetOrdinal("Codigo_Postal")) ? null : reader.GetString("Codigo_Postal");
+                                string domicilio_estado = reader.IsDBNull(reader.GetOrdinal("Estado")) ? null : reader.GetString("Estado");
+                                string domicilio_ciudad = reader.IsDBNull(reader.GetOrdinal("Ciudad")) ? null : reader.GetString("Ciudad");
+                                string domicilio_colonia = reader.IsDBNull(reader.GetOrdinal("Colonia")) ? null : reader.GetString("Colonia");
+                                string domicilio_calle = reader.IsDBNull(reader.GetOrdinal("Calle")) ? null : reader.GetString("Calle");
+                                string domicilio_numero = reader.IsDBNull(reader.GetOrdinal("Numero")) ? null : reader.GetString("Numero");
+                                string telefono = reader.IsDBNull(reader.GetOrdinal("Telefono")) ? null : reader.GetString("Telefono");
                                 char turno = reader.IsDBNull(reader.GetOrdinal("Turno")) ? '-' : reader.GetString("Turno")[0];
-                                Console.WriteLine("todo 2");
                                 DateTime fecha = reader.IsDBNull(reader.GetOrdinal("Fecha")) ? DateTime.MinValue : reader.GetDateTime("Fecha");
-                                char estado = reader.GetString("estado_Empleado")[0];
-                                string puesto = reader.IsDBNull(reader.GetOrdinal("Puesto")) ? "" : reader.GetString("Puesto");  // Reemplaza si "puesto" puede ser NULL
-                                Console.WriteLine("todo 3");
-                                return (nombreCompleto, fecha_nac, sexo, nss, estado_civil, domicilio_CP, domicilio_estado,domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero ,telefono, turno, fecha, estado,puesto);
+                                char estado = reader.IsDBNull(reader.GetOrdinal("estado_Empleado")) ? '\0' : reader.GetString("estado_Empleado")[0];
+                                string puesto = reader.IsDBNull(reader.GetOrdinal("Puesto")) ? null : reader.GetString("Puesto");
+
+                                return (nombreCompleto, fecha_nac, sexo, nss, estado_civil, domicilio_CP,
+                                        domicilio_estado, domicilio_ciudad, domicilio_colonia, domicilio_calle, domicilio_numero,
+                                        telefono, turno, fecha, estado, puesto);
                             }
                             else
                             {
-                                throw new Exception("No se encontró un empleado con ese NSS.");
+                                throw new Exception("No se encontró un empleado con ese número de nómina.");
                             }
                         }
                     }
@@ -326,8 +325,8 @@ namespace CapaDatos
                     throw new Exception("Error al buscar el empleado: " + ex.Message);
                 }
             }
-
         }
+
 
         public void actualizarEmpleado(EmpleadosCE empleado)
         {
@@ -435,7 +434,7 @@ namespace CapaDatos
                 }
             }
         }
-        public (string numnomina, string nombreCompleto, DateTime fecha_nac, char sexo, string nss, string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa, int idEmpleado) ConsultaEmpleadoNominaONss(string numnomina_nss)
+        public (string numnomina, string nombreCompleto, DateTime fecha_nac, string sexo, string nss, string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa, int idEmpleado) ConsultaEmpleadoNominaONss(string numnomina_nss)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -455,7 +454,7 @@ namespace CapaDatos
                                 string numnomina = reader.GetString("numero_nomina");
                                 string nombreCompleto = reader.GetString("nombre_completo");
                                 DateTime fecha_nac = reader.GetDateTime("fecha_nacimiento");
-                                char sexo = reader.GetChar("sexo");
+                                string sexo = reader.GetString("sexo");
                                 string nss = reader.GetString("nss");
                                 string estado_civil = reader.GetString("estado_civil");
                                 string domicilio = reader.GetString("dom");

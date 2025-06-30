@@ -115,7 +115,7 @@ namespace CapaNegocios
             return datos;  // Devuelve los datos separados
         }
 
-        public (string nombreCompleto, DateTime fecha_nac, char sexo, string nss, string estado_civil, string domicilio_CP,
+        public (string nombreCompleto, DateTime fecha_nac, string sexo, string nss, string estado_civil, string domicilio_CP,
             string domicilio_estado, string domicilio_ciudad, string domicilio_colonia, string domicilio_calle, string domicilio_numero, string telefono, char turno, DateTime fecha, char estado ,string puesto) ConsultaIndivisualActualizar(string numero_nomina)
         {
             if (string.IsNullOrWhiteSpace(numero_nomina))
@@ -166,7 +166,7 @@ namespace CapaNegocios
                 throw new Exception("Error en la capa de negocios: " + ex.Message);
             }
         }
-        public (string numnomina, string nombreCompleto, DateTime fecha_nac, char sexo, string nss, string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa, int idEmpleado) ConsultaEmpleadoNominaONss(string numnomina_nss)
+        public (string numnomina, string nombreCompleto, DateTime fecha_nac, string sexo, string nss, string estado_civil, string domicilio, string domicilio_CP, string telefono, char turno, string puesto, int antiguedad, DateTime fecha_ingreso_empresa, int idEmpleado) ConsultaEmpleadoNominaONss(string numnomina_nss)
         {
             if (string.IsNullOrWhiteSpace(numnomina_nss))
             {

@@ -185,21 +185,28 @@ namespace CapaPresentacion.Empleados
                 }
 
                 var datosEmpleado = negocios.ConsultaEmpleadoNominaONss(numero_nomina);
-                txtnumeronomina.Text = datosEmpleado.numnomina;
-                txtNombre.Text = datosEmpleado.nombreCompleto;
-                txtFechaNac.Text = datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");  // Formato de fecha personalizado
-                txtSexo.Text = datosEmpleado.sexo.ToString();
-                txtNss.Text = datosEmpleado.nss.ToString();
-                txtEstadoCivil.Text = datosEmpleado.estado_civil.ToString();
-                txtDomicilio.Text = datosEmpleado.domicilio.ToString();
-                txtCp.Text = datosEmpleado.domicilio_CP.ToString();
-                txtTelefono.Text = datosEmpleado.telefono.ToString();
 
-                txtTurno.Text = datosEmpleado.turno.ToString();
-                txtAntiguedad.Text = datosEmpleado.antiguedad.ToString();
-                txtPuesto.Text = datosEmpleado.puesto.ToString();
-                txtFechaIngreso.Text = datosEmpleado.fecha_ingreso_empresa.ToString("yyyy-MM-dd");
-                txtIdEmpleado.Text = datosEmpleado.idEmpleado.ToString();
+                txtnumeronomina.Text = string.IsNullOrWhiteSpace(datosEmpleado.numnomina)? "Número de nómina no registrado" : datosEmpleado.numnomina;
+                txtNombre.Text = string.IsNullOrWhiteSpace(datosEmpleado.nombreCompleto)? "Nombre no disponible" : datosEmpleado.nombreCompleto;
+                txtFechaNac.Text = datosEmpleado.fecha_nac == DateTime.MinValue? "Fecha no registrada" : datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");
+                txtSexo.Text = string.IsNullOrWhiteSpace(datosEmpleado.sexo) ? "No especificado" : datosEmpleado.sexo.ToString();
+                txtNss.Text = string.IsNullOrWhiteSpace(datosEmpleado.nss)? "NSS no registrado" : datosEmpleado.nss;
+                txtEstadoCivil.Text = string.IsNullOrWhiteSpace(datosEmpleado.estado_civil)? "No especificado" : datosEmpleado.estado_civil;
+                txtDomicilio.Text = string.IsNullOrWhiteSpace(datosEmpleado.domicilio) ? "Domicilio no registrado" : datosEmpleado.domicilio;
+                txtCp.Text = string.IsNullOrWhiteSpace(datosEmpleado.domicilio_CP) ? "C.P. no registrado" : datosEmpleado.domicilio_CP;
+                txtTelefono.Text = string.IsNullOrWhiteSpace(datosEmpleado.telefono) ? "Teléfono no disponible" : datosEmpleado.telefono;
+                txtTurno.Text = datosEmpleado.turno == '\0' || datosEmpleado.turno == '-' ? "Turno no asignado" : datosEmpleado.turno.ToString();
+                txtAntiguedad.Text = datosEmpleado.antiguedad == 0? "Sin antigüedad registrada" : datosEmpleado.antiguedad.ToString();
+
+                txtPuesto.Text = string.IsNullOrWhiteSpace(datosEmpleado.puesto)
+                    ? "Puesto no asignado" : datosEmpleado.puesto;
+
+                txtFechaIngreso.Text = datosEmpleado.fecha_ingreso_empresa == DateTime.MinValue
+                    ? "Fecha de ingreso no registrada" : datosEmpleado.fecha_ingreso_empresa.ToString("yyyy-MM-dd");
+
+                txtIdEmpleado.Text = datosEmpleado.idEmpleado == 0
+                    ? "ID no asignado" : datosEmpleado.idEmpleado.ToString();
+
 
                 DataTable data = negocios.consultarInvAccidentePorEmpleado(Convert.ToInt32(txtIdEmpleado.Text)).Tables["InvestigacionAccidentePorEmpleado"];
                 dgvHistorico.DataSource = data;
