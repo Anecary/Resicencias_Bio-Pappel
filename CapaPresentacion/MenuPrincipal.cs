@@ -118,7 +118,7 @@ namespace CapaPresentacion
             CargarGraficoCausas();
             LlenarChartTurno();
             LlenarChartSecciones();
-
+            lblTrabajadores.Text = homeCN.ConcultaNumTrabajadores().Tables["TotalEmpleados"].Rows[0][0].ToString();
             hideSubMenu();
             SetInitialView();
         }

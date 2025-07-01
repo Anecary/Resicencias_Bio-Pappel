@@ -1,15 +1,17 @@
-﻿using System;
+﻿using CapaEntidad;
+using ClosedXML.Excel;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClosedXML.Excel;
-using MySql.Data.MySqlClient;
 
 namespace CapaPresentacion.Utilerias
 {
@@ -88,6 +90,9 @@ namespace CapaPresentacion.Utilerias
                 return;
             }
 
+            var listaErrores = new List<CapaEntidad.ErrorFila>();
+            int numeroFila = 1;
+
             try
             {
                 using (var conexion = new MySqlConnection(connectionString))
@@ -96,67 +101,115 @@ namespace CapaPresentacion.Utilerias
 
                     foreach (DataRow fila in tablaDatos.Rows)
                     {
-                        string query = "CALL InsertarEmpleadoExcel(" +
-                            "@numero_Nomina, @nombre, @apellido_Paterno, @apellido_Materno, @fecha_nacimiento, @turno, " +
-                            "@puesto_nombre, @fecha_ingreso_puesto, @fecha_ingreso_empresa, @sexo, @estado_Civil, @NSS, @RFC, " +
-                            "@domicilio_calle, @domicilio_numero, @domicilio_colonia, @domicilio_CP, @domicilio_ciudad, @domicilio_estado, @telefono" +
-                        ")";
-
-                        using (var comando = new MySqlCommand(query, conexion))
+                        try
                         {
-                            comando.Parameters.AddWithValue("@numero_Nomina", fila["numero_Nomina"]);
-                            comando.Parameters.AddWithValue("@nombre", fila["nombre"]);
-                            comando.Parameters.AddWithValue("@apellido_Paterno", fila["apellido_Paterno"]);
-                            comando.Parameters.AddWithValue("@apellido_Materno", fila["apellido_Materno"]);
+                            // Preparar nombre de puesto
+                            string nombrePuesto = fila["puesto"].ToString().Trim();
+                            nombrePuesto = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(nombrePuesto.ToLower());
 
-                            object fechaNacimientoParam;
-                            if (DateTime.TryParse(fila["fecha_nacimiento"].ToString(), out DateTime fechaNacimiento))
-                                fechaNacimientoParam = fechaNacimiento.ToString("yyyy-MM-dd");
-                            else
-                                fechaNacimientoParam = DBNull.Value;
+                            // Verificar si el puesto ya existe
+                            string queryVerificarPuesto = "SELECT COUNT(*) FROM puestos WHERE LOWER(puesto) = LOWER(@nombrePuesto)";
+                            using (var cmdVerificar = new MySqlCommand(queryVerificarPuesto, conexion))
+                            {
+                                cmdVerificar.Parameters.AddWithValue("@nombrePuesto", nombrePuesto);
+                                int cantidad = Convert.ToInt32(cmdVerificar.ExecuteScalar());
 
-                            comando.Parameters.AddWithValue("@fecha_nacimiento", fechaNacimientoParam);
+                                if (cantidad == 0)
+                                {
+                                    // Insertar el puesto si no existe
+                                    string queryInsertarPuesto = "INSERT INTO puestos (puesto) VALUES (@nombrePuesto)";
+                                    using (var cmdInsertar = new MySqlCommand(queryInsertarPuesto, conexion))
+                                    {
+                                        cmdInsertar.Parameters.AddWithValue("@nombrePuesto", nombrePuesto);
+                                        cmdInsertar.ExecuteNonQuery();
+                                    }
+                                }
+                            }
 
-                            comando.Parameters.AddWithValue("@turno", fila["turno"]);
-                            comando.Parameters.AddWithValue("@puesto_nombre", fila["puesto"]);
+                            // Insertar empleado
+                            string query = "CALL InsertarEmpleadoExcel(" +
+                                "@numero_Nomina, @nombre, @apellido_Paterno, @apellido_Materno, @fecha_nacimiento, @turno, " +
+                                "@puesto_nombre, @fecha_ingreso_puesto, @fecha_ingreso_empresa, @sexo, @estado_Civil, @NSS, @RFC, " +
+                                "@domicilio_calle, @domicilio_numero, @domicilio_colonia, @domicilio_CP, @domicilio_ciudad, @domicilio_estado, @telefono" +
+                            ")";
 
-                            object ingresoPuestoParam;
-                            if (DateTime.TryParse(fila["fecha_ingreso_puesto"].ToString(), out DateTime ingresoPuesto))
-                                ingresoPuestoParam = ingresoPuesto.ToString("yyyy-MM-dd");
-                            else
-                                ingresoPuestoParam = DBNull.Value;
-                            comando.Parameters.AddWithValue("@fecha_ingreso_puesto", ingresoPuestoParam);
+                            using (var comando = new MySqlCommand(query, conexion))
+                            {
+                                comando.Parameters.AddWithValue("@numero_Nomina", fila["numero_Nomina"]);
+                                comando.Parameters.AddWithValue("@nombre", fila["nombre"]);
+                                comando.Parameters.AddWithValue("@apellido_Paterno", fila["apellido_Paterno"]);
+                                comando.Parameters.AddWithValue("@apellido_Materno", fila["apellido_Materno"]);
 
-                            object ingresoEmpresaParam;
-                            if (DateTime.TryParse(fila["fecha_ingreso_empresa"].ToString(), out DateTime ingresoEmpresa))
-                                ingresoEmpresaParam = ingresoEmpresa.ToString("yyyy-MM-dd");
-                            else
-                                ingresoEmpresaParam = DBNull.Value;
-                            comando.Parameters.AddWithValue("@fecha_ingreso_empresa", ingresoEmpresaParam);
+                                object fechaNacimientoParam;
+                                if (DateTime.TryParse(fila["fecha_nacimiento"].ToString(), out DateTime fechaNacimiento))
+                                    fechaNacimientoParam = fechaNacimiento.ToString("yyyy-MM-dd");
+                                else
+                                    fechaNacimientoParam = DBNull.Value;
+                                comando.Parameters.AddWithValue("@fecha_nacimiento", fechaNacimientoParam);
 
-                            comando.Parameters.AddWithValue("@sexo", fila["sexo"]);
-                            comando.Parameters.AddWithValue("@estado_Civil", fila["estado_Civil"]);
-                            comando.Parameters.AddWithValue("@NSS", fila["NSS"]);
-                            comando.Parameters.AddWithValue("@RFC", fila["RFC"]);
-                            comando.Parameters.AddWithValue("@domicilio_calle", fila["domicilio_calle"]);
-                            comando.Parameters.AddWithValue("@domicilio_numero", fila["domicilio_numero"]);
-                            comando.Parameters.AddWithValue("@domicilio_colonia", fila["domicilio_colonia"]);
-                            comando.Parameters.AddWithValue("@domicilio_CP", fila["domicilio_CP"]);
-                            comando.Parameters.AddWithValue("@domicilio_ciudad", fila["domicilio_ciudad"]);
-                            comando.Parameters.AddWithValue("@domicilio_estado", fila["domicilio_estado"]);
-                            comando.Parameters.AddWithValue("@telefono", fila["telefono"]);
+                                comando.Parameters.AddWithValue("@turno", fila["turno"]);
+                                comando.Parameters.AddWithValue("@puesto_nombre", nombrePuesto);
 
-                            comando.ExecuteNonQuery();
+                                object ingresoPuestoParam;
+                                if (DateTime.TryParse(fila["fecha_ingreso_puesto"].ToString(), out DateTime ingresoPuesto))
+                                    ingresoPuestoParam = ingresoPuesto.ToString("yyyy-MM-dd");
+                                else
+                                    ingresoPuestoParam = DBNull.Value;
+                                comando.Parameters.AddWithValue("@fecha_ingreso_puesto", ingresoPuestoParam);
+
+                                object ingresoEmpresaParam;
+                                if (DateTime.TryParse(fila["fecha_ingreso_empresa"].ToString(), out DateTime ingresoEmpresa))
+                                    ingresoEmpresaParam = ingresoEmpresa.ToString("yyyy-MM-dd");
+                                else
+                                    ingresoEmpresaParam = DBNull.Value;
+                                comando.Parameters.AddWithValue("@fecha_ingreso_empresa", ingresoEmpresaParam);
+
+                                comando.Parameters.AddWithValue("@sexo", fila["sexo"]);
+                                comando.Parameters.AddWithValue("@estado_Civil", fila["estado_Civil"]);
+                                comando.Parameters.AddWithValue("@NSS", fila["NSS"]);
+                                comando.Parameters.AddWithValue("@RFC", fila["RFC"]);
+                                comando.Parameters.AddWithValue("@domicilio_calle", fila["domicilio_calle"]);
+                                comando.Parameters.AddWithValue("@domicilio_numero", fila["domicilio_numero"]);
+                                comando.Parameters.AddWithValue("@domicilio_colonia", fila["domicilio_colonia"]);
+                                comando.Parameters.AddWithValue("@domicilio_CP", fila["domicilio_CP"]);
+                                comando.Parameters.AddWithValue("@domicilio_ciudad", fila["domicilio_ciudad"]);
+                                comando.Parameters.AddWithValue("@domicilio_estado", fila["domicilio_estado"]);
+                                comando.Parameters.AddWithValue("@telefono", fila["telefono"]);
+
+                                comando.ExecuteNonQuery();
+                            }
                         }
+                        catch (Exception exFila)
+                        {
+                            listaErrores.Add(new ErrorFila
+                            {
+                                NumeroFila = numeroFila,
+                                NumeroNomina = fila["numero_Nomina"]?.ToString() ?? "(sin número)",
+                                MensajeError = exFila.Message
+                            });
+                        }
+
+                        numeroFila++;
                     }
                 }
-                RJMessageBox.Show("Empleados insertados correctamente.");
-                btnSubir.Enabled = false;
+
+                if (listaErrores.Count > 0)
+                {
+                    dataGridViewErrores.DataSource = listaErrores;
+                    dataGridViewErrores.Visible = true;
+                    RJMessageBox.Show("Proceso terminado con errores. Revisa la tabla de errores.");
+                }
+                else
+                {
+                    RJMessageBox.Show("Todos los empleados se insertaron correctamente.");
+                    btnSubir.Enabled = false;
+                }
             }
             catch (Exception ex)
             {
-                RJMessageBox.Show("Error al insertar datos: " + ex.Message);
+                RJMessageBox.Show("Error general: " + ex.Message);
             }
         }
+
     }
 }

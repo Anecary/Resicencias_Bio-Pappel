@@ -47,6 +47,7 @@
     <Compile Include="AccidentesCE.cs" />
     <Compile Include="ConsultaMedicaCE.cs" />
     <Compile Include="EmpleadosCE.cs" />
+    <Compile Include="ErrorFila.cs" />
     <Compile Include="ExpedientesCE.cs" />
     <Compile Include="PuestosCE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
