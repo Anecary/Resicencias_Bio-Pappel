@@ -226,7 +226,7 @@ namespace CapaPresentacion.Empleados
 
 
                 char estado = datosEmpleado.estado;
-                System.Windows.MessageBox.Show(estado.ToString());
+                //System.Windows.MessageBox.Show(estado.ToString());
                 txtNombre.Text = datosEmpleado.nombreCompleto ?? "N/D";
 
                 txtFechaNac.Text = datosEmpleado.fecha_nac == DateTime.MinValue ? "N/D" : datosEmpleado.fecha_nac.ToString("yyyy-MM-dd");
