@@ -236,8 +236,14 @@ namespace CapaPresentacion.Expediente
         }
         static string ObtenerNomenclatura(string nombre)
         {
-            return string.Concat(nombre.Split(' ').Select(palabra => palabra[0]));
+            return string.Concat(
+                nombre.Split(' ')                          // divide por espacios
+                      .Where(palabra => !string.IsNullOrWhiteSpace(palabra)) // filtra vacíos
+                      .Select(palabra => palabra[0])       // toma la primera letra
+            );
         }
+
+
         private void btnDatosGenerales_Click(object sender, EventArgs e)
         {
             MostrarPanel(pDatosGenerales, btnDatosGenerales);
