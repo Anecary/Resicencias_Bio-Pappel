@@ -341,6 +341,7 @@ namespace CapaDatos
                         command.CommandType = CommandType.StoredProcedure;
 
                         command.Parameters.AddWithValue("p_numero_nomina", empleado.NumeroNomina);
+                        command.Parameters.AddWithValue("p_nss", empleado.NSS);
                         command.Parameters.AddWithValue("p_turno", empleado.Turno);
                         command.Parameters.AddWithValue("p_nombre_puesto", empleado.Puesto);
                         command.Parameters.AddWithValue("p_fecha_ingreso_puesto", empleado.FechaIngresoPuesto);

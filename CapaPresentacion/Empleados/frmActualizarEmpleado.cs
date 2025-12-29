@@ -97,6 +97,7 @@ namespace CapaPresentacion.Empleados
                     cmbEstado.SelectedItem == null ||
                     string.IsNullOrWhiteSpace(txtCp.Text) ||
                     cmbEstadoCivil.SelectedItem == null ||
+                    string.IsNullOrWhiteSpace(txtNss.Text) ||
                     string.IsNullOrWhiteSpace(txtCiudad.Text) ||
                     string.IsNullOrWhiteSpace(txtColonia.Text) ||
                     string.IsNullOrWhiteSpace(txtCalle.Text) ||
@@ -114,6 +115,7 @@ namespace CapaPresentacion.Empleados
                 DateTime fecha_nueva = dtpFecha.Value;
                 char turno = cmbTurno.SelectedItem.ToString()[0];
                 string domicilio_cp = txtCp.Text.Trim();
+                string nss=txtNss.Text.Trim();
                 string domicilio_estado = cmbEstado.Text.Trim();
                 string domicilio_ciudad = txtCiudad.Text.Trim();
                 string domicilio_colonia = txtColonia.Text.Trim();
@@ -126,6 +128,7 @@ namespace CapaPresentacion.Empleados
                 EmpleadosCE empleados = new EmpleadosCE
                 {
                     NumeroNomina = numero_nomina,
+                    NSS = nss,
                     EstadoCivil = estado_civil,
                     FechaIngresoPuesto = fecha_nueva,
                     Turno = turno,
@@ -172,6 +175,7 @@ namespace CapaPresentacion.Empleados
             txtNoNomina.Clear();
 
             txtCp.Enabled = false; txtCp.BackColor = Color.WhiteSmoke;
+            txtNss.Enabled = false; txtNss.BackColor = Color.WhiteSmoke;
             txtCiudad.Enabled = false; txtCiudad.BackColor = Color.WhiteSmoke;
             txtColonia.Enabled = false; txtColonia.BackColor = Color.WhiteSmoke;
             txtCalle.Enabled = false; txtCalle.BackColor = Color.WhiteSmoke;
@@ -289,6 +293,7 @@ namespace CapaPresentacion.Empleados
                     txtCp.Enabled = true; txtCp.BackColor = Color.White;
                     cmbEstadoCivil.Enabled = true; cmbEstadoCivil.BackColor = Color.White;
                     txtCiudad.Enabled = true; txtCiudad.BackColor = Color.White;
+                    txtNss.Enabled = true; txtNss.BackColor= Color.White;
                     txtColonia.Enabled = true; txtColonia.BackColor = Color.White;
                     txtCalle.Enabled = true; txtCalle.BackColor = Color.White;
                     txtNumero.Enabled = true; txtNumero.BackColor = Color.White;
