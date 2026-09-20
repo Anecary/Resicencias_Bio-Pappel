@@ -24,10 +24,26 @@ jobs:
           java-version: 17
           distribution: 'zulu'
 
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'
+      - name: Install .NET SDK
+        shell: powershell
+        run: |
+          $dotnetDir = "${{ runner.temp }}\dotnet"
+          New-Item -ItemType Directory -Force -Path $dotnetDir
+
+          Invoke-WebRequest `
+            -Uri https://dot.net/v1/dotnet-install.ps1 `
+            -OutFile "${{ runner.temp }}\dotnet-install.ps1"
+
+          & "${{ runner.temp }}\dotnet-install.ps1" `
+            -Channel 8.0 `
+            -InstallDir $dotnetDir
+
+          echo "$dotnetDir" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+
+      - name: Verify .NET
+        shell: powershell
+        run: |
+          dotnet --version
 
       - name: Cache SonarQube scanner
         id: cache-sonar-scanner
