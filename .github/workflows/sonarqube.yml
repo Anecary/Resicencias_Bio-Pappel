@@ -12,18 +12,21 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      # 1. Descargar el repositorio
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: master
           fetch-depth: 1
 
+      # 2. Java requerido por SonarScanner
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: 17
           distribution: 'zulu'
 
+      # 3. Instalar .NET SDK para poder ejecutar dotnet-sonarscanner
       - name: Install .NET SDK for SonarScanner
         shell: powershell
         run: |
@@ -42,28 +45,45 @@ jobs:
           echo "$dotnetDir" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
           echo "DOTNET_ROOT=$dotnetDir" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
+      # 4. Verificar .NET
       - name: Verify .NET
         shell: powershell
         run: |
           dotnet --version
           dotnet --info
 
-      - name: Cache SonarQube scanner
-        id: cache-sonar-scanner
-        uses: actions/cache@v4
+      # 5. Configurar NuGet
+      - name: Set up NuGet
+        uses: NuGet/setup-nuget@v2
         with:
-          path: ${{ runner.temp }}\scanner
-          key: ${{ runner.os }}-sonar-scanner
-          restore-keys: |
-            ${{ runner.os }}-sonar-scanner
+          nuget-version: 'latest'
 
-      - name: Install SonarQube scanner
-        if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
+      # 6. Restaurar dependencias del proyecto
+      - name: Restore NuGet packages
         shell: powershell
         run: |
-          New-Item -Path ${{ runner.temp }}\scanner -ItemType Directory -Force
-          dotnet tool update dotnet-sonarscanner --tool-path ${{ runner.temp }}\scanner
+          nuget restore ".\Proyecto_Residencias_Bio-Pappel.sln" -NonInteractive
 
+          if ($LASTEXITCODE -ne 0) {
+            throw "NuGet restore failed with exit code $LASTEXITCODE"
+          }
+
+      # 7. Instalar SonarScanner
+      - name: Install SonarQube scanner
+        shell: powershell
+        run: |
+          $scannerDir = "${{ runner.temp }}\scanner"
+
+          New-Item -Path $scannerDir -ItemType Directory -Force
+
+          dotnet tool update dotnet-sonarscanner `
+            --tool-path $scannerDir
+
+          if ($LASTEXITCODE -ne 0) {
+            throw "SonarScanner installation failed with exit code $LASTEXITCODE"
+          }
+
+      # 8. Verificar MSBuild
       - name: Verify MSBuild
         shell: powershell
         run: |
@@ -75,20 +95,36 @@ jobs:
 
           & $msbuild -version
 
+      # 9. Ejecutar análisis SonarQube y compilar la solución
       - name: Build and analyze
         shell: powershell
         run: |
           $scanner = "${{ runner.temp }}\scanner\dotnet-sonarscanner"
           $msbuild = "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
 
+          # Iniciar análisis
           & $scanner begin `
             /k:"bioppapel_test1" `
             /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
             /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}"
 
+          if ($LASTEXITCODE -ne 0) {
+            throw "SonarScanner begin failed with exit code $LASTEXITCODE"
+          }
+
+          # Compilar solución completa
           & $msbuild ".\Proyecto_Residencias_Bio-Pappel.sln" `
             /t:Rebuild `
             /p:Configuration=Debug
 
+          if ($LASTEXITCODE -ne 0) {
+            throw "MSBuild failed with exit code $LASTEXITCODE"
+          }
+
+          # Finalizar análisis y enviar resultados a SonarQube
           & $scanner end `
             /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+
+          if ($LASTEXITCODE -ne 0) {
+            throw "SonarScanner end failed with exit code $LASTEXITCODE"
+          }
