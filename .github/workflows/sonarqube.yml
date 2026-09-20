@@ -1,4 +1,4 @@
-name: SonarQube .NET Analysis
+name: SonarQube .NET Framework Analysis
 
 on:
   push:
@@ -24,10 +24,11 @@ jobs:
           java-version: 17
           distribution: 'zulu'
 
-      - name: Install .NET SDK
+      - name: Install .NET SDK for SonarScanner
         shell: powershell
         run: |
           $dotnetDir = "${{ runner.temp }}\dotnet"
+
           New-Item -ItemType Directory -Force -Path $dotnetDir
 
           Invoke-WebRequest `
@@ -39,11 +40,13 @@ jobs:
             -InstallDir $dotnetDir
 
           echo "$dotnetDir" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          echo "DOTNET_ROOT=$dotnetDir" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
       - name: Verify .NET
         shell: powershell
         run: |
           dotnet --version
+          dotnet --info
 
       - name: Cache SonarQube scanner
         id: cache-sonar-scanner
@@ -51,7 +54,8 @@ jobs:
         with:
           path: ${{ runner.temp }}\scanner
           key: ${{ runner.os }}-sonar-scanner
-          restore-keys: ${{ runner.os }}-sonar-scanner
+          restore-keys: |
+            ${{ runner.os }}-sonar-scanner
 
       - name: Install SonarQube scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
@@ -60,9 +64,31 @@ jobs:
           New-Item -Path ${{ runner.temp }}\scanner -ItemType Directory -Force
           dotnet tool update dotnet-sonarscanner --tool-path ${{ runner.temp }}\scanner
 
+      - name: Verify MSBuild
+        shell: powershell
+        run: |
+          $msbuild = "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
+
+          if (!(Test-Path $msbuild)) {
+            throw "MSBuild was not found at $msbuild"
+          }
+
+          & $msbuild -version
+
       - name: Build and analyze
         shell: powershell
         run: |
-          ${{ runner.temp }}\scanner\dotnet-sonarscanner begin /k:"bioppapel_test1" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}"
-          dotnet build .\Proyecto_Residencias_Bio-Pappel.sln
-          ${{ runner.temp }}\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+          $scanner = "${{ runner.temp }}\scanner\dotnet-sonarscanner"
+          $msbuild = "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
+
+          & $scanner begin `
+            /k:"bioppapel_test1" `
+            /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
+            /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}"
+
+          & $msbuild ".\Proyecto_Residencias_Bio-Pappel.sln" `
+            /t:Rebuild `
+            /p:Configuration=Debug
+
+          & $scanner end `
+            /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
